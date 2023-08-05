@@ -1,0 +1,9 @@
+README.md
+setup.py
+openwid/OpenWeather.py
+openwid/__init__.py
+openwid.egg-info/PKG-INFO
+openwid.egg-info/SOURCES.txt
+openwid.egg-info/dependency_links.txt
+openwid.egg-info/not-zip-safe
+openwid.egg-info/top_level.txt
