@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: conteneurs
+Version: 2.1.2
+Summary: Le package conteneurs définit des conteneurs supplémentaires.
+Home-page: UNKNOWN
+Author: Cyprien BONTRON
+Author-email: c.b.e.python@gmail.com
+Maintainer: Cyprien BONTRON
+Maintainer-email: c.b.e.python@gmail.com
+License: CC-BY-NC (Creative Commons, attribution et non commerciale).
+Download-URL: https://pypi.org/project/conteneurs/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: French
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Free for non-commercial use
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: outils-de-controles (>=2.4.9)
+
+# conteneurs
+
+[![Version](https://img.shields.io/pypi/v/conteneurs.svg)](https://pypi.org/project/conteneurs/) [![PyVersion](https://img.shields.io/pypi/pyversions/conteneurs.svg)](https://pypi.org/project/conteneurs/)
+
+## English version
+### Project's description
+
+conteneurs is a package to provide some containers's types. Those containers can be more suitable to your needs than python's built-in containers such as list, tuple or dict. For example, this package provide a ordered dictionary and a two-way table/two-dimensional array.
+Currantly the package's documentation is writen in french, but the README file is also in english.
+
+## French version
+### Description du projet
+
+Le package "conteneurs" définit plusieurs classes d’objets conteneurs comme un dictionnaire ordonné ou un tableau à deux entrées. Ces classes permettent aux développeurs d’utiliser des conteneurs plus adaptés à leurs besoins que les conteneurs build-in de Python comme les types list, dict ou tuple.
+
+## License
+**Creative Commons Attribution-NonCommercial (CC-BY-NC)**
+©Cyprien BONTRON (c.b.e.python@gmail.com)
+
+
+
