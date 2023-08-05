@@ -1,0 +1,7 @@
+bevy/events/__init__.py,sha256=sO_ITaW0Kptc-vrYNqnOsJExR3mzYqA-81YI_2ET5ns,77
+bevy/events/dispatch.py,sha256=i-eraRP8Tz3w9t7i0cLkwNQqaKwlICshrEXXK_v1aHk,2388
+bevy/events/event.py,sha256=YfkBmoKCoYw9OJyAzrj-ifSwMkkyZ078dyiRkU5X_t4,453
+bevy.events-0.1.4.dist-info/LICENSE,sha256=JnpmFHGtncdHGBgAQPR8vKICZwkfgANkWfJGfr55lcs,1076
+bevy.events-0.1.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+bevy.events-0.1.4.dist-info/METADATA,sha256=1wTsd2KJK2YIwfDEUGUpjUzYPED4EEJ2jnX8miWPGaY,2972
+bevy.events-0.1.4.dist-info/RECORD,,
