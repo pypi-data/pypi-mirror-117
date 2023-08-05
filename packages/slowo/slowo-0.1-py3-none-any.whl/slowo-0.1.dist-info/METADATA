@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: slowo
+Version: 0.1
+Summary: A python implentación of advanced uwuification.
+Home-page: https://www.github.com/gitautas/slowo
+Author: Gintautas Kazlauskas
+Author-email: gintautaskazlauskas@protonmail.com
+License: GPLv3
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: wheel
+
+UNKNOWN
+
