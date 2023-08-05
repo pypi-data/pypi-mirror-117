@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+flake8_required_keyword_arguments.egg-info/PKG-INFO
+flake8_required_keyword_arguments.egg-info/SOURCES.txt
+flake8_required_keyword_arguments.egg-info/dependency_links.txt
+flake8_required_keyword_arguments.egg-info/entry_points.txt
+flake8_required_keyword_arguments.egg-info/requires.txt
+flake8_required_keyword_arguments.egg-info/top_level.txt
