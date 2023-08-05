@@ -1,0 +1,17 @@
+README.md
+setup.py
+syndicate/__init__.py
+syndicate/actor.py
+syndicate/dataspace.py
+syndicate/during.py
+syndicate/gatekeeper.py
+syndicate/idgen.py
+syndicate/patterns.py
+syndicate/relay.py
+syndicate/schema.py
+syndicate/transport.py
+syndicate_py.egg-info/PKG-INFO
+syndicate_py.egg-info/SOURCES.txt
+syndicate_py.egg-info/dependency_links.txt
+syndicate_py.egg-info/requires.txt
+syndicate_py.egg-info/top_level.txt
