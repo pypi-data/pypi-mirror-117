@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: multiprocess_profiler
+Version: 0.1
+Summary: Profile your code, measuring times, calls per function, errors...
+Home-page: https://github.com/12pedro07/multiprocess_profiler
+Author: Pedro Henrique Silva Domingues
+Author-email: 12pedro07@gmail.com
+License: MIT
+Download-URL: https://github.com/12pedro07/multiprocess_profiler/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Time,Profiler,Multiprocess,Multithread
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
