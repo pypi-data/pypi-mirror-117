@@ -1,0 +1,11 @@
+jinja2
+pygments
+flask
+flask_cas
+importlib_resources
+
+[expectations]
+optimism
+
+[test]
+pytest
