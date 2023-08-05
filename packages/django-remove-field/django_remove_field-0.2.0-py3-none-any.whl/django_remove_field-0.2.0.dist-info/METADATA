@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-remove-field
+Version: 0.2.0
+Summary: Handle deletion of django model field without downtime
+License: GPL-3.0-or-later
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
