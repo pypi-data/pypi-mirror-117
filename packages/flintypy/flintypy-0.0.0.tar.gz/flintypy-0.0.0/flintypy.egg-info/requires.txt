@@ -1,0 +1,5 @@
+pytest
+gmpy2
+numpy>=1.16.5
+scipy>=1.5.0
+numba>=0.53.0

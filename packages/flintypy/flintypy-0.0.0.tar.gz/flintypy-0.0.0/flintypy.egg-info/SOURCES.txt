@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+flintypy/__init__.py
+flintypy/v_stat.py
+flintypy.egg-info/.DS_Store
+flintypy.egg-info/PKG-INFO
+flintypy.egg-info/SOURCES.txt
+flintypy.egg-info/dependency_links.txt
+flintypy.egg-info/not-zip-safe
+flintypy.egg-info/requires.txt
+flintypy.egg-info/top_level.txt
+flintypy/test/test_flintypy.py
