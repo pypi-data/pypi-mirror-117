@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "crudrouter"
+version = "0.1.1"
+description = ""
+authors = ["Benjamin Harruff <harruff.benjamin@solute.us>"]
+homepage = "https://code.shipyard.blackpearl.us/bma/sscp/crudrouter"
+repository = "https://code.shipyard.blackpearl.us/bma/sscp/crudrouter"
+exclude = ["tests/*"]
+include = ["LICENSE.md"]
+packages = [{include="crudrouter"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+uvicorn = "^0.11.8"
+fastapi = "^0.62.0"
+tinydb = "^4.5.1"
+loguru = "^0.5.3"
+pydantic = "^1.8.2"
+uuid = "^1.30"
+
+[build-system]
+requires = ["poetry>1.0.0"]
+build-backend = "poetry.masonry.api"
