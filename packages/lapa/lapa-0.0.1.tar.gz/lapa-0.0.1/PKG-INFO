@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: lapa
+Version: 0.0.1
+Summary: Alternative polyadenylation detection from diverse data sources
+Home-page: https://github.com/mortazavilab/lapa
+Author: M. Hasan Çelik
+Author-email: muhammedhasancelik@gmail.com
+License: MIT license
+Description: UNKNOWN
+Keywords: genomics,long read RNA-seq,APA
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6

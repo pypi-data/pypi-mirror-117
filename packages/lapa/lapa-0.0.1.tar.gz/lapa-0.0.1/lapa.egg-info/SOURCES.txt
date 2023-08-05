@@ -1,0 +1,12 @@
+README.md
+setup.py
+lapa/__init__.py
+lapa/genomic_regions.py
+lapa/lapa.py
+lapa/main.py
+lapa.egg-info/PKG-INFO
+lapa.egg-info/SOURCES.txt
+lapa.egg-info/dependency_links.txt
+lapa.egg-info/entry_points.txt
+lapa.egg-info/requires.txt
+lapa.egg-info/top_level.txt
