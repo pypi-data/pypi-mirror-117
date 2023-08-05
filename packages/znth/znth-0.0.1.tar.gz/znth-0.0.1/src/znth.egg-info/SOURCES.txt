@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/znth/__init__.py
+src/znth/hello.py
+src/znth.egg-info/PKG-INFO
+src/znth.egg-info/SOURCES.txt
+src/znth.egg-info/dependency_links.txt
+src/znth.egg-info/top_level.txt
