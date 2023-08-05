@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: uname
+Version: 1.0
+Summary: Get Information About Current Linux Kernel With Assembly Language & C
+Home-page: https://github.com/six519/uname
+Author: Ferdinand Silva
+Author-email: ferdinandsilva@ferdinandsilva.com
+License: UNKNOWN
+Download-URL: https://github.com/six519/uname
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
