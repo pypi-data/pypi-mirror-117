@@ -1,0 +1,12 @@
+nsync_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nsync_cli/client.py,sha256=vgRTC8aZsurgpUZCVnXYknZj1zSx2y_gS432y6-C7Y0,7809
+nsync_cli/config.py,sha256=UwQIWc14PuCr_qtpayqSUE-2tKNtgI2znrIpO--heKI,525
+nsync_cli/main.py,sha256=VfsCkhx04V-dH3ir_N1bBMWAFLboIxITYpNBMJ9M7Gg,3360
+nsync_cli/queries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nsync_cli/queries/file.py,sha256=eOCajmrmTyU91ChpL7M9gyfBYm8hWoKAnT8IMLZRLXQ,709
+nsync_cli/queries/login.py,sha256=prElJewFftfQr9e_R9tHl0JebKXBKUTHFHYUTJAh7bs,213
+nsync_cli/queries/user.py,sha256=TkAdG1jDy_aJPvSzInels9hwL3ta9WeSzvHzQ83_2qA,391
+nsync_cli-0.1.0.dist-info/WHEEL,sha256=u7aFp5MgA5c8sOKcLzJSsA48wySgJDA_tKlolrxlwgk,87
+nsync_cli-0.1.0.dist-info/METADATA,sha256=hy9MKKOHXrsV2ZvGNqgREkdjgQIi_5PK2axqWMkw8cY,693
+nsync_cli-0.1.0.dist-info/LICENSE,sha256=To4apCouftYcgYuEr6LPGY4EASDs9LmUj-Nj8hkE6kM,1069
+nsync_cli-0.1.0.dist-info/RECORD,,
