@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+s3/__init__.py
+s3/_types.py
+s3/_utils.py
+s3/core.py
+s3/s3.py
+tests/__init__.py
+tests/conftest.py
+tests/test_s3.py
+yandex_s3.egg-info/PKG-INFO
+yandex_s3.egg-info/SOURCES.txt
+yandex_s3.egg-info/dependency_links.txt
+yandex_s3.egg-info/not-zip-safe
+yandex_s3.egg-info/requires.txt
+yandex_s3.egg-info/top_level.txt
