@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+./__init__.py
+PySuperTuxKartData.egg-info/PKG-INFO
+PySuperTuxKartData.egg-info/SOURCES.txt
+PySuperTuxKartData.egg-info/dependency_links.txt
+PySuperTuxKartData.egg-info/not-zip-safe
+PySuperTuxKartData.egg-info/requires.txt
+PySuperTuxKartData.egg-info/top_level.txt
