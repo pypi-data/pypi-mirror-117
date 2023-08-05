@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+discord-message-components/__init__.py
+discord_message_components.egg-info/PKG-INFO
+discord_message_components.egg-info/SOURCES.txt
+discord_message_components.egg-info/dependency_links.txt
+discord_message_components.egg-info/top_level.txt
