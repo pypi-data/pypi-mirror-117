@@ -1,0 +1,3 @@
+[console_scripts]
+mutation-load = mutation_load.mutation_load:main
+
