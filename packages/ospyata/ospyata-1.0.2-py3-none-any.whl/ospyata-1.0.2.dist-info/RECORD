@@ -1,0 +1,9 @@
+ospyata/__init__.py,sha256=RGAZP-XHqUz23PJPNxYHmOShw7GUMaWF0S8mbU3SAm8,225
+ospyata/__version__.py,sha256=7jc4VIaVgp9KK94dojUX7PsOJeBzoVXZhImc0SiWgak,145
+ospyata/loadOMIO.py,sha256=lcGwQlNpzhg7alvHKPUK092rDBVAJ9NPeDJlaGZHE9I,2007
+ospyata/manageOsmation.py,sha256=juyEMD1X9WU27SWC1HK7xDtabCA_OjrS9DxY0OC3ir4,2241
+ospyata/writeOMIO.py,sha256=FQaknEfTFkWkt83sSorAzdQ4EGyxkaCwbX2n-r3xuus,1775
+ospyata-1.0.2.dist-info/LICENSE,sha256=ez5o2osVUo8zF1zqUdfmVNt_Vd2QO0uOMMvXun5gYNM,1060
+ospyata-1.0.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+ospyata-1.0.2.dist-info/METADATA,sha256=2yxtQ6391heNsJCFt9GE0QDUpXVUqb6O1qPoXaam5Rs,396
+ospyata-1.0.2.dist-info/RECORD,,
