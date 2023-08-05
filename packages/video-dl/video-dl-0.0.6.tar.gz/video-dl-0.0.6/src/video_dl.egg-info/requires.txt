@@ -1,0 +1,5 @@
+aiohttp
+prettytable
+
+[:platform_system == "Linux"]
+uvloop
