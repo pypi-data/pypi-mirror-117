@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+awsserviceendpoints/__init__.py
+awsserviceendpoints.egg-info/PKG-INFO
+awsserviceendpoints.egg-info/SOURCES.txt
+awsserviceendpoints.egg-info/dependency_links.txt
+awsserviceendpoints.egg-info/top_level.txt
+awsserviceendpoints/data/endpoints.json
