@@ -1,0 +1,3 @@
+[console_scripts]
+boox-annotations-to-anki = boox_annotations_to_anki.cli:main
+
