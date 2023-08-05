@@ -1,0 +1,9 @@
+click
+coverage
+flake8
+GitPython
+pathlib2
+pytest-cov
+python-dotenv>=0.5.1
+Sphinx
+wheel
