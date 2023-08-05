@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+insipher/__init__.py
+insipher/algorithm.py
+insipher/error.py
+insipher.egg-info/PKG-INFO
+insipher.egg-info/SOURCES.txt
+insipher.egg-info/dependency_links.txt
+insipher.egg-info/not-zip-safe
+insipher.egg-info/requires.txt
+insipher.egg-info/top_level.txt
