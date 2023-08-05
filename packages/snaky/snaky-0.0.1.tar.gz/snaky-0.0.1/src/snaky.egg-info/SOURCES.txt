@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/snaky/__init__.py
+src/snaky/enums.py
+src/snaky/snake.py
+src/snaky/snaky_contoller.py
+src/snaky.egg-info/PKG-INFO
+src/snaky.egg-info/SOURCES.txt
+src/snaky.egg-info/dependency_links.txt
+src/snaky.egg-info/top_level.txt
