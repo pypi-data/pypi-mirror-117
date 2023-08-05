@@ -1,0 +1,13 @@
+h2client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h2client/connection.py,sha256=m8igkWIy3lBH6uGSDV9bBLpfmXZ_1QleQki_4hx5ylU,8607
+h2client/diskcached_connection.py,sha256=OZ5yqjVHeijaPUacaLsbA_i0JtIP3FrlPnAc_QQsVgY,12364
+h2client/http2_connection.py,sha256=EJ3Sl7bKxdlPdPZllr0ZGeD752WqYfEyojH38wLD9WY,5437
+h2client/request_connection.py,sha256=hjo1go3QW-UrTmJdxAeMZW0JK-ph2EI1rsxO5yF7v7I,7406
+h2client/session.py,sha256=huitRVcaW3d4ul4qORZQCtprdFqM626Sd3OBXS2kSf8,1034
+h2client/simple_connection.py,sha256=oAPaqdin2-TUsWtJVVKsYMXE35KhiEII8A42WRi2IA4,12326
+h2client/stream_connection.py,sha256=9fpZZiF4luRvRGRYV406_efQHK2TQrWubspt-Vv3xA8,3575
+h2client-0.2.3.dist-info/LICENSE.txt,sha256=9Ofzc7m5lpUDN-jUGkopOcLZC3cl6brz1QhKInF60yg,7169
+h2client-0.2.3.dist-info/METADATA,sha256=hHDSJ-4Kc4oxald1l0TRHF8BavcvTVFfuiGIgnnUMGQ,3375
+h2client-0.2.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+h2client-0.2.3.dist-info/top_level.txt,sha256=fS8LWXazdyXbcMfizexvZtH6BJ8WJJd966wCNBSjg3c,9
+h2client-0.2.3.dist-info/RECORD,,
