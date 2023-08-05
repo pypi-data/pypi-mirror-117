@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mappgene
+Version: 0.1.6
+Summary: Genomic sequence analysis for HPC
+Home-page: UNKNOWN
+Author: Joseph Moon
+Author-email: jmoon1506@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: parsl (>=1.1.0)
+Requires-Dist: pytest (>=6.2.4)
+
+UNKNOWN
+
