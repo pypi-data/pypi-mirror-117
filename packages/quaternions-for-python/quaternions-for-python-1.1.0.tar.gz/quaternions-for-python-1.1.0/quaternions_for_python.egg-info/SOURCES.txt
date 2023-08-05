@@ -1,0 +1,11 @@
+LICENSE.md
+README.rst
+pyproject.toml
+setup.cfg
+quaternions/__init__.py
+quaternions/qmath.py
+quaternions/quaternions.py
+quaternions_for_python.egg-info/PKG-INFO
+quaternions_for_python.egg-info/SOURCES.txt
+quaternions_for_python.egg-info/dependency_links.txt
+quaternions_for_python.egg-info/top_level.txt
