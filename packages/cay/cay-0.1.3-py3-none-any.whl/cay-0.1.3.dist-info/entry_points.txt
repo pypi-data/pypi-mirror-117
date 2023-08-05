@@ -1,0 +1,3 @@
+[console_scripts]
+cay=cay.cli:main
+
