@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cay
+Version: 0.1.2
+Summary: Simple calculator implemented in Python
+Home-page: https://github.com/conao3/cay
+License: MIT
+Author: Naoya Yamashita
+Author-email: conao3@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Project-URL: Repository, https://github.com/conao3/cay
