@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/awca/__init__.py
+src/awca/ocr.py
+src/awca/paraphrasing.py
+src/awca/summarization.py
+src/awca.egg-info/PKG-INFO
+src/awca.egg-info/SOURCES.txt
+src/awca.egg-info/dependency_links.txt
+src/awca.egg-info/not-zip-safe
+src/awca.egg-info/requires.txt
+src/awca.egg-info/top_level.txt

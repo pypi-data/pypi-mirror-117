@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: awca
+Version: 0.0.3.2
+Summary: A toolkit for making ancient world citation analysis, text summarization, paraphrasing and OCR for PDF to CSV
+Home-page: https://github.com/UmbraVenus/awca-tools
+Author: Sage Ren (Umbra Venus)
+Author-email: sage.shijie.ren@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# awca-tools
+ tools and functions for AWCA
+
+## Sample Usage
+### from awca import summarization
+summarization.summarize()
+Input: Text
+Output Text
+
+### from awca import paraphrasing
+paraphrasing.paraphrase()
+Input: Text
+Output: Text
+
+### from awca import ocr
+ocr.populate_csv()
+Input: a list of files
+Output: a csv file
+

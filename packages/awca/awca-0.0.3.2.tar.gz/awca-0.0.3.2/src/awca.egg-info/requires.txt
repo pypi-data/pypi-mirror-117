@@ -1,0 +1,7 @@
+poppler-utils
+pdf2image
+pytesseract
+pillow
+PyPDF3
+torch
+transformers==3.1.0
