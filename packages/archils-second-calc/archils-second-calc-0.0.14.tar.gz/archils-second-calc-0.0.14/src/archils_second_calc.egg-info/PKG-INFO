@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: archils-second-calc
+Version: 0.0.14
+Summary: simple calc
+Home-page: UNKNOWN
+Author: archil chachanidze
+Author-email: archil.chachanidze@gmail.com
+License: UNKNOWN
+Description: simple calc
+Keywords: python,explainable ai
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
