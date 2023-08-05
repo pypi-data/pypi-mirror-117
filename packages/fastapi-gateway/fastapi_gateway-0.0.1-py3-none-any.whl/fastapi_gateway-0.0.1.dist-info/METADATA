@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fastapi-gateway
+Version: 0.0.1
+Summary: FastAPI gateway for microservices.
+Home-page: https://github.com/dotX12/fastapi-gateway
+License: MIT
+Keywords: python,fastapi,gateway,api,microservice,microservices,server side discovery
+Author: dotX12
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: ujson (>=4.1.0,<5.0.0)
+Project-URL: Repository, https://github.com/dotX12/fastapi-gateway
+Description-Content-Type: text/markdown
+
+# fastapi-gateway
+⚙️ Async single entry point for microservices.
+
