@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: libpythonprogoldani
+Version: 0.3
+Summary: Módulo para exemplificar construção de projetos Python no curso PyTools
+Home-page: https://github.com/ggoldani/libpythonpro
+Author: Gustavo Goldani
+Author-email: tech.goldani@gmail.com
+License: MIT
+Description: # libpythonpro
+        
+        Módulo para exemplificar construção de projetos Python no curso PyTools
+        
+        Nesse curso é ensinado como contribuir com projetos de código aberto
+        
+        Link para o curso [Python Pro](https://www.python.pro.br/)
+        
+        [![Build Status](https://travis-ci.com/ggoldani/libpythonpro.svg?branch=master)](https://travis-ci.com/ggoldani/libpythonpro)
+        [![codecov](https://codecov.io/gh/ggoldani/libpythonpro/branch/master/graph/badge.svg?token=EECPMJ5X83)](https://codecov.io/gh/ggoldani/libpythonpro)
+        
+        Suportada versão 3 de Python
+        
+        Instalação:
+        ```console
+        python3 -m venv .venv
+        source .venv/bin/activate
+        pip install -r requirements-dev.txt
+        ```
+        
+        Conferencia de qualidade do código:
+        ```console
+        flake8
+        ```
+        
+        Tópicos a serem abordados:
+         1. Git
+         2. Virtualenv
+         3. Pip
+         
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
