@@ -1,0 +1,14 @@
+alephclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alephclient/api.py,sha256=7UKYfwAWGgUAj5STz4Obt4l1N9510u_8ANhjSGcZ0G4,18991
+alephclient/cli.py,sha256=YgTEHo545C65wjvavtXTPcUmWIYJVX1ITNEvjrNTDIQ,12016
+alephclient/crawldir.py,sha256=hCyGfdwjBV3zDxFpdsOnBwdY5IyZGzQ8h_OBr3dCuik,6079
+alephclient/errors.py,sha256=kS1MUuszeuNp58ntvVW46lOt3AVLfymoLVW7ifxT5Bc,751
+alephclient/fetchdir.py,sha256=JgERyOe5ml_wqCnAdmMdp6QqR6LkQF9RETWudWdZMCE,2645
+alephclient/settings.py,sha256=6mfQ44KbfaT02aSfKkxkW6KObK_PRnhlvvwhcAKfRu4,504
+alephclient/util.py,sha256=IRI9JAQ9HasuNpflOGAJa7cHvEVm9gcL2uzB-slUIiY,545
+alephclient-2.3.4.dist-info/LICENSE,sha256=I-Cu6XAmPimG5Z_AmR89tevllf5eLnaQXmKsT3ZwNYw,1099
+alephclient-2.3.4.dist-info/METADATA,sha256=V3XTL571yOQKDsSSJNI6HkQ2U4avTAKKyEgshgxRKXA,1364
+alephclient-2.3.4.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+alephclient-2.3.4.dist-info/entry_points.txt,sha256=pftn5y2D0zvNW16NgfPjJFacCnDAZrcv-FsKCq8fEFw,53
+alephclient-2.3.4.dist-info/top_level.txt,sha256=yLSWh9RVLNzpC58WETnxH45o1CTnpD5L3aafgTrPWgU,12
+alephclient-2.3.4.dist-info/RECORD,,
