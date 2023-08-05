@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PolymerPlotting/GUI_tools.py
+src/PolymerPlotting/PolymerPlottingGUI.py
+src/PolymerPlotting/__init__.py
+src/PolymerPlotting/polymer_chains.py
+src/PolymerPlotting.egg-info/PKG-INFO
+src/PolymerPlotting.egg-info/SOURCES.txt
+src/PolymerPlotting.egg-info/dependency_links.txt
+src/PolymerPlotting.egg-info/requires.txt
+src/PolymerPlotting.egg-info/top_level.txt

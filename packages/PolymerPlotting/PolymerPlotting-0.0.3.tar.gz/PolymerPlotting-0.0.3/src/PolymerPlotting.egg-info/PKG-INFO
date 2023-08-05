@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: PolymerPlotting
+Version: 0.0.3
+Summary: A package to create a GUI to plot models of polymer chains
+Home-page: https://github.com/cnswoolley10/Polymer-Plotting
+Author: Chris Woolley
+Author-email: cnsw2@cam.ac.uk
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/cnswoolley10/Polymer-Plotting/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Polymer-Plotting
+Plotting various models for polymers in python.
+
+This package should be used to run an easy to use GUI for plotting different models of polymer chains
+
+DISCLAIMER: This program was written by a student with < 1 year coding experience.
+Some bits may not be best optimised, pls no hate, feedback always welcome :)
+
+This is also the first time I've used GitHub and have absolutely no clue what I'm doing.
+
+Python dependencies are: Numpy, Matplotlib and PySimpleGUI.
+
+
