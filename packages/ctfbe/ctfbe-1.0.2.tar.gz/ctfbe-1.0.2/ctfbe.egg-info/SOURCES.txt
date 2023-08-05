@@ -1,0 +1,8 @@
+README.md
+setup.py
+ctfbe/__init__.py
+ctfbe.egg-info/PKG-INFO
+ctfbe.egg-info/SOURCES.txt
+ctfbe.egg-info/dependency_links.txt
+ctfbe.egg-info/requires.txt
+ctfbe.egg-info/top_level.txt
