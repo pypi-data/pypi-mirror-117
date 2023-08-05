@@ -1,0 +1,11 @@
+translate_json/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translate_json/console.py,sha256=lKFItPHZWSZrgLQXXSxsSIKVJH5ZEHJyVbkTjpKDUPo,2770
+translate_json/main.py,sha256=1sP6RwOEP6x1FF3MbRc-dZa2mT75DtSXWRVW5wf2hjg,264
+translate_json/translate.py,sha256=aer0IT-N0OInmGJVIuVZp5yvTRGloizqCui0iM2Uebs,2215
+translate_json/utils.py,sha256=cdrmvDNOHUbFmxNBYtXF0lOfXGzHQTznnFGkUtQVGB0,563
+translate_json-0.0.1.data/scripts/translate-json.py,sha256=pJPUJweEXf5maaCla_VSpxmPbIq9nTwuEkvti9Er0xk,105
+translate_json-0.0.1.dist-info/LICENSE,sha256=OChtsqKLfzv0Xabm47rtHmbHYt7nyWoyqQE1oz48U4U,1090
+translate_json-0.0.1.dist-info/METADATA,sha256=V39IGgupcVa8NczHWOFgLaAmKMKJt4WPpwrqxJIqrGg,5449
+translate_json-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+translate_json-0.0.1.dist-info/top_level.txt,sha256=gnrFVtR-u9udhC2q9tsl1vjfMjkb9ErLlaifsJdtFcc,15
+translate_json-0.0.1.dist-info/RECORD,,
