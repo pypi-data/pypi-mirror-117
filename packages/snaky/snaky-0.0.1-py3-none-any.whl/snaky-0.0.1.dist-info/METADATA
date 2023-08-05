@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: snaky
+Version: 0.0.1
+Summary: Yet another snake game implementation
+Home-page: https://github.com/pypa/sampleproject
+Author: pjsousa
+Author-email: pjgs.sousa@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Snaky
+
+Yet another snake game implementation. Meant to use with all kinds of AI and RL gym's and experiments. See the demo.py to play a single player game written in pyglet.
+
+
+
