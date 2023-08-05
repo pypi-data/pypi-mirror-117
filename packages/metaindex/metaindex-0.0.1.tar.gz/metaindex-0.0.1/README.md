@@ -1,0 +1,68 @@
+# doctag
+
+doctag allows you to find files based on metadata information.
+
+For example, if you want to find all pictures that are have a certain width,
+you could do this:
+
+    doctag find mimetype:image resolution:1200x
+
+
+## Installation
+
+To install doctag, clone the repository and install it through pip:
+
+    git clone https://github.com/vonshednob/doctag
+    cd doctag
+    pip install .
+
+Most modules are optional. If you, for example, want to use doctag for audio
+files and PDFs, you will have to install it like this:
+
+    pip install .[pdf,audio]
+
+These modules exist for indexing:
+
+ - `pdf`, for PDF files,
+ - `audio`, any type of audio/music file,
+ - `image`, any type of image file,
+ - `video`, any type of video file (overlaps somewhat with `audio`),
+ - `ebook`, ebooks and comic book formats,
+ - `yaml`, extra metadata in YAML format.
+
+If you are running doctag on Linux you should consider adding the `xdg`
+module, too.
+
+In case you just want everything, this is your install command:
+
+    pip install .[all]
+
+There is also an experimental FuseFS filesystem. To be able to use it, you
+will have to specify ``fuse`` as an additional module:
+
+    pip install .[all,fuse]
+
+
+## Usage
+
+Before you can use doctag to search for files, you have to initialize the
+cache by telling it where your files to index are, for example:
+
+    doctag index --recursive --index ~/Pictures
+
+Afterwards you can start searching for files by metadata, like this:
+
+    doctag find 
+
+
+## Searching
+
+Search queries for use with `doctag find` allow you to search
+
+ - for files that have a metadata tag: `doctag find resolution?`
+ - for files that have a metadata tag with a certain value: `doctag find title:"dude, where is my car"`
+ - for files that have any metadata tag with a certain value: `doctag find "just anything"`
+
+Each value that you provide is actually a case insensitive regular expression.
+
+
