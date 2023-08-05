@@ -1,0 +1,8 @@
+aybrequests/__init__.py,sha256=brvJoFXA35lVAa2xIZTHNiUQzOd_zPo3MR4wDdmbPqk,86
+aybrequests/request.py,sha256=OI06gYL4D5hAlpVEImZg-y4u3jczr5zxdJqWCYGNgbI,1283
+aybrequests/session.py,sha256=oDMka9PbX3CYr9dMDVPZXP66bPJaatNkGZvDjVWiWfI,525
+aybrequests/url_utils.py,sha256=Ps0PADaYllhHJnFkIR3xuV1Rv9oFyC_OAfs7xVrEick,145
+AYBRequests-0.4.1.dist-info/METADATA,sha256=BsxF8rBffz-hHNuDSGS26jzePASSesTwv_lRqMe7900,458
+AYBRequests-0.4.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+AYBRequests-0.4.1.dist-info/top_level.txt,sha256=2-SX3d9O73C7haj-fLXuN9o5mJ8gKwO3e0LfNZTLJjk,12
+AYBRequests-0.4.1.dist-info/RECORD,,
