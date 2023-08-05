@@ -1,0 +1,3619 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/css/common.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]:hover,
+input[type=number]:focus {
+  -moz-appearance: number-input;
+}
+
+textarea {
+  resize: none;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url(/static/paper_admin/dist/assets/RobotoLight.woff2) format("woff2"), url(/static/paper_admin/dist/assets/RobotoLight.woff) format("woff"), url(/static/paper_admin/dist/assets/RobotoLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(/static/paper_admin/dist/assets/RobotoRegular.woff2) format("woff2"), url(/static/paper_admin/dist/assets/RobotoRegular.woff) format("woff"), url(/static/paper_admin/dist/assets/RobotoRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(/static/paper_admin/dist/assets/RobotoMedium.woff2) format("woff2"), url(/static/paper_admin/dist/assets/RobotoMedium.woff) format("woff"), url(/static/paper_admin/dist/assets/RobotoMedium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(/static/paper_admin/dist/assets/RobotoBold.woff2) format("woff2"), url(/static/paper_admin/dist/assets/RobotoBold.woff) format("woff"), url(/static/paper_admin/dist/assets/RobotoBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  src: url(/static/paper_admin/dist/assets/RobotoLightItalic.woff2) format("woff2"), url(/static/paper_admin/dist/assets/RobotoLightItalic.woff) format("woff"), url(/static/paper_admin/dist/assets/RobotoLightItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url(/static/paper_admin/dist/assets/RobotoItalic.woff2) format("woff2"), url(/static/paper_admin/dist/assets/RobotoItalic.woff) format("woff"), url(/static/paper_admin/dist/assets/RobotoItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url(/static/paper_admin/dist/assets/RobotoMediumItalic.woff2) format("woff2"), url(/static/paper_admin/dist/assets/RobotoMediumItalic.woff) format("woff"), url(/static/paper_admin/dist/assets/RobotoMediumItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url(/static/paper_admin/dist/assets/RobotoBoldItalic.woff2) format("woff2"), url(/static/paper_admin/dist/assets/RobotoBoldItalic.woff) format("woff"), url(/static/paper_admin/dist/assets/RobotoBoldItalic.ttf) format("truetype");
+}
+body {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+.btn i ~ span {
+  margin-left: 5.6px;
+  margin-left: 0.35rem;
+}
+
+@media (min-width: 576px) {
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.list-default {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list-default:not(.list-inline) li + li {
+  margin-top: 5px;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/components/flatpickr/flatpickr.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+.flatpickr-calendar {
+  background: transparent;
+  opacity: 0;
+  display: none;
+  text-align: center;
+  visibility: hidden;
+  padding: 0;
+  -webkit-animation: none;
+  animation: none;
+  direction: ltr;
+  border: 0;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 5px;
+  position: absolute;
+  width: 307.875px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background: #fff;
+  -webkit-box-shadow: 1px 0 0 #e6e6e6, -1px 0 0 #e6e6e6, 0 1px 0 #e6e6e6, 0 -1px 0 #e6e6e6, 0 3px 13px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 0 0 #e6e6e6, -1px 0 0 #e6e6e6, 0 1px 0 #e6e6e6, 0 -1px 0 #e6e6e6, 0 3px 13px rgba(0, 0, 0, 0.08);
+}
+
+.flatpickr-calendar.open,
+.flatpickr-calendar.inline {
+  opacity: 1;
+  max-height: 640px;
+  visibility: visible;
+}
+
+.flatpickr-calendar.open {
+  display: inline-block;
+  z-index: 99999;
+}
+
+.flatpickr-calendar.animate.open {
+  -webkit-animation: fpFadeInDown 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  animation: fpFadeInDown 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.flatpickr-calendar.inline {
+  display: block;
+  position: relative;
+  top: 2px;
+}
+
+.flatpickr-calendar.static {
+  position: absolute;
+  top: calc(100% + 2px);
+}
+
+.flatpickr-calendar.static.open {
+  z-index: 999;
+  display: block;
+}
+
+.flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+1) .flatpickr-day.inRange:nth-child(7n+7) {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+2) .flatpickr-day.inRange:nth-child(7n+1) {
+  -webkit-box-shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
+  box-shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
+}
+
+.flatpickr-calendar .hasWeeks .dayContainer,
+.flatpickr-calendar .hasTime .dayContainer {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.flatpickr-calendar .hasWeeks .dayContainer {
+  border-left: 0;
+}
+
+.flatpickr-calendar.hasTime .flatpickr-time {
+  height: 40px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.flatpickr-calendar.noCalendar.hasTime .flatpickr-time {
+  height: auto;
+}
+
+.flatpickr-calendar:before,
+.flatpickr-calendar:after {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  left: 22px;
+}
+
+.flatpickr-calendar.rightMost:before,
+.flatpickr-calendar.arrowRight:before,
+.flatpickr-calendar.rightMost:after,
+.flatpickr-calendar.arrowRight:after {
+  left: auto;
+  right: 22px;
+}
+
+.flatpickr-calendar.arrowCenter:before,
+.flatpickr-calendar.arrowCenter:after {
+  left: 50%;
+  right: 50%;
+}
+
+.flatpickr-calendar:before {
+  border-width: 5px;
+  margin: 0 -5px;
+}
+
+.flatpickr-calendar:after {
+  border-width: 4px;
+  margin: 0 -4px;
+}
+
+.flatpickr-calendar.arrowTop:before,
+.flatpickr-calendar.arrowTop:after {
+  bottom: 100%;
+}
+
+.flatpickr-calendar.arrowTop:before {
+  border-bottom-color: #e6e6e6;
+}
+
+.flatpickr-calendar.arrowTop:after {
+  border-bottom-color: #fff;
+}
+
+.flatpickr-calendar.arrowBottom:before,
+.flatpickr-calendar.arrowBottom:after {
+  top: 100%;
+}
+
+.flatpickr-calendar.arrowBottom:before {
+  border-top-color: #e6e6e6;
+}
+
+.flatpickr-calendar.arrowBottom:after {
+  border-top-color: #fff;
+}
+
+.flatpickr-calendar:focus {
+  outline: 0;
+}
+
+.flatpickr-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.flatpickr-months {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flatpickr-months .flatpickr-month {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.9);
+  fill: rgba(0, 0, 0, 0.9);
+  height: 34px;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  height: 34px;
+  padding: 10px;
+  z-index: 3;
+  color: rgba(0, 0, 0, 0.9);
+  fill: rgba(0, 0, 0, 0.9);
+}
+
+.flatpickr-months .flatpickr-prev-month.flatpickr-disabled,
+.flatpickr-months .flatpickr-next-month.flatpickr-disabled {
+  display: none;
+}
+
+.flatpickr-months .flatpickr-prev-month i,
+.flatpickr-months .flatpickr-next-month i {
+  position: relative;
+}
+
+.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {
+  /*
+        /*rtl:begin:ignore*/
+  /*
+        */
+  left: 0;
+  /*
+        /*rtl:end:ignore*/
+  /*
+        */
+}
+
+/*
+      /*rtl:begin:ignore*/
+/*
+      /*rtl:end:ignore*/
+.flatpickr-months .flatpickr-prev-month.flatpickr-next-month,
+.flatpickr-months .flatpickr-next-month.flatpickr-next-month {
+  /*
+        /*rtl:begin:ignore*/
+  /*
+        */
+  right: 0;
+  /*
+        /*rtl:end:ignore*/
+  /*
+        */
+}
+
+/*
+      /*rtl:begin:ignore*/
+/*
+      /*rtl:end:ignore*/
+.flatpickr-months .flatpickr-prev-month:hover,
+.flatpickr-months .flatpickr-next-month:hover {
+  color: #959ea9;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-next-month:hover svg {
+  fill: #f64747;
+}
+
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+  width: 14px;
+  height: 14px;
+}
+
+.flatpickr-months .flatpickr-prev-month svg path,
+.flatpickr-months .flatpickr-next-month svg path {
+  -webkit-transition: fill 0.1s;
+  transition: fill 0.1s;
+  fill: inherit;
+}
+
+.numInputWrapper {
+  position: relative;
+  height: auto;
+}
+
+.numInputWrapper input,
+.numInputWrapper span {
+  display: inline-block;
+}
+
+.numInputWrapper input {
+  width: 100%;
+}
+
+.numInputWrapper input::-ms-clear {
+  display: none;
+}
+
+.numInputWrapper input::-webkit-outer-spin-button,
+.numInputWrapper input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.numInputWrapper span {
+  position: absolute;
+  right: 0;
+  width: 14px;
+  padding: 0 4px 0 2px;
+  height: 50%;
+  line-height: 50%;
+  opacity: 0;
+  cursor: pointer;
+  border: 1px solid rgba(57, 57, 57, 0.15);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.numInputWrapper span:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.numInputWrapper span:active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.numInputWrapper span:after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.numInputWrapper span.arrowUp {
+  top: 0;
+  border-bottom: 0;
+}
+
+.numInputWrapper span.arrowUp:after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid rgba(57, 57, 57, 0.6);
+  top: 26%;
+}
+
+.numInputWrapper span.arrowDown {
+  top: 50%;
+}
+
+.numInputWrapper span.arrowDown:after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid rgba(57, 57, 57, 0.6);
+  top: 40%;
+}
+
+.numInputWrapper span svg {
+  width: inherit;
+  height: auto;
+}
+
+.numInputWrapper span svg path {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.numInputWrapper:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.numInputWrapper:hover span {
+  opacity: 1;
+}
+
+.flatpickr-current-month {
+  font-size: 135%;
+  line-height: inherit;
+  font-weight: 300;
+  color: inherit;
+  position: absolute;
+  width: 75%;
+  left: 12.5%;
+  padding: 7.48px 0 0 0;
+  line-height: 1;
+  height: 34px;
+  display: inline-block;
+  text-align: center;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.flatpickr-current-month span.cur-month {
+  font-family: inherit;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  margin-left: 0.5ch;
+  padding: 0;
+}
+
+.flatpickr-current-month span.cur-month:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.flatpickr-current-month .numInputWrapper {
+  width: 6ch;
+  width: 7ch\0 ;
+  display: inline-block;
+}
+
+.flatpickr-current-month .numInputWrapper span.arrowUp:after {
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+}
+
+.flatpickr-current-month .numInputWrapper span.arrowDown:after {
+  border-top-color: rgba(0, 0, 0, 0.9);
+}
+
+.flatpickr-current-month input.cur-year {
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  cursor: text;
+  padding: 0 0 0 0.5ch;
+  margin: 0;
+  display: inline-block;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: inherit;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  vertical-align: initial;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.flatpickr-current-month input.cur-year:focus {
+  outline: 0;
+}
+
+.flatpickr-current-month input.cur-year[disabled],
+.flatpickr-current-month input.cur-year[disabled]:hover {
+  font-size: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  background: transparent;
+  pointer-events: none;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  appearance: menulist;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  height: auto;
+  line-height: inherit;
+  margin: -1px 0 0 0;
+  outline: none;
+  padding: 0 0 0 0.5ch;
+  position: relative;
+  vertical-align: initial;
+  -webkit-box-sizing: border-box;
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  width: auto;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months:focus,
+.flatpickr-current-month .flatpickr-monthDropdown-months:active {
+  outline: none;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+}
+
+.flatpickr-weekdays {
+  background: transparent;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 28px;
+}
+
+.flatpickr-weekdays .flatpickr-weekdaycontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+span.flatpickr-weekday {
+  cursor: default;
+  font-size: 90%;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-weight: bolder;
+}
+
+.dayContainer,
+.flatpickr-weeks {
+  padding: 1px 0 0 0;
+}
+
+.flatpickr-days {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 307.875px;
+}
+
+.flatpickr-days:focus {
+  outline: 0;
+}
+
+.dayContainer {
+  padding: 0;
+  outline: 0;
+  text-align: left;
+  width: 307.875px;
+  min-width: 307.875px;
+  max-width: 307.875px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+}
+
+.dayContainer + .dayContainer {
+  -webkit-box-shadow: -1px 0 0 #e6e6e6;
+  box-shadow: -1px 0 0 #e6e6e6;
+}
+
+.flatpickr-day {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 150px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #393939;
+  cursor: pointer;
+  font-weight: 400;
+  width: 14.2857143%;
+  -ms-flex-preferred-size: 14.2857143%;
+  flex-basis: 14.2857143%;
+  max-width: 39px;
+  height: 39px;
+  line-height: 39px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flatpickr-day.inRange,
+.flatpickr-day.prevMonthDay.inRange,
+.flatpickr-day.nextMonthDay.inRange,
+.flatpickr-day.today.inRange,
+.flatpickr-day.prevMonthDay.today.inRange,
+.flatpickr-day.nextMonthDay.today.inRange,
+.flatpickr-day:hover,
+.flatpickr-day.prevMonthDay:hover,
+.flatpickr-day.nextMonthDay:hover,
+.flatpickr-day:focus,
+.flatpickr-day.prevMonthDay:focus,
+.flatpickr-day.nextMonthDay:focus {
+  cursor: pointer;
+  outline: 0;
+  background: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+.flatpickr-day.today {
+  border-color: #959ea9;
+}
+
+.flatpickr-day.today:hover,
+.flatpickr-day.today:focus {
+  border-color: #959ea9;
+  background: #959ea9;
+  color: #fff;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+  background: #569ff7;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  border-color: #569ff7;
+}
+
+.flatpickr-day.selected.startRange,
+.flatpickr-day.startRange.startRange,
+.flatpickr-day.endRange.startRange {
+  border-radius: 50px 0 0 50px;
+}
+
+.flatpickr-day.selected.endRange,
+.flatpickr-day.startRange.endRange,
+.flatpickr-day.endRange.endRange {
+  border-radius: 0 50px 50px 0;
+}
+
+.flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n+1)),
+.flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n+1)),
+.flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n+1)) {
+  -webkit-box-shadow: -10px 0 0 #569ff7;
+  box-shadow: -10px 0 0 #569ff7;
+}
+
+.flatpickr-day.selected.startRange.endRange,
+.flatpickr-day.startRange.startRange.endRange,
+.flatpickr-day.endRange.startRange.endRange {
+  border-radius: 50px;
+}
+
+.flatpickr-day.inRange {
+  border-radius: 0;
+  -webkit-box-shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
+  box-shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay,
+.flatpickr-day.notAllowed,
+.flatpickr-day.notAllowed.prevMonthDay,
+.flatpickr-day.notAllowed.nextMonthDay {
+  color: rgba(57, 57, 57, 0.3);
+  background: transparent;
+  border-color: transparent;
+  cursor: default;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover {
+  cursor: not-allowed;
+  color: rgba(57, 57, 57, 0.1);
+}
+
+.flatpickr-day.week.selected {
+  border-radius: 0;
+  -webkit-box-shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;
+  box-shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;
+}
+
+.flatpickr-day.hidden {
+  visibility: hidden;
+}
+
+.rangeMode .flatpickr-day {
+  margin-top: 1px;
+}
+
+.flatpickr-weekwrapper {
+  float: left;
+}
+
+.flatpickr-weekwrapper .flatpickr-weeks {
+  padding: 0 12px;
+  -webkit-box-shadow: 1px 0 0 #e6e6e6;
+  box-shadow: 1px 0 0 #e6e6e6;
+}
+
+.flatpickr-weekwrapper .flatpickr-weekday {
+  float: none;
+  width: 100%;
+  line-height: 28px;
+}
+
+.flatpickr-weekwrapper span.flatpickr-day,
+.flatpickr-weekwrapper span.flatpickr-day:hover {
+  display: block;
+  width: 100%;
+  max-width: none;
+  color: rgba(57, 57, 57, 0.3);
+  background: transparent;
+  cursor: default;
+  border: none;
+}
+
+.flatpickr-innerContainer {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.flatpickr-rContainer {
+  display: inline-block;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flatpickr-time {
+  text-align: center;
+  outline: 0;
+  display: block;
+  height: 0;
+  line-height: 40px;
+  max-height: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flatpickr-time:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flatpickr-time .numInputWrapper {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 40%;
+  height: 40px;
+  float: left;
+}
+
+.flatpickr-time .numInputWrapper span.arrowUp:after {
+  border-bottom-color: #393939;
+}
+
+.flatpickr-time .numInputWrapper span.arrowDown:after {
+  border-top-color: #393939;
+}
+
+.flatpickr-time.hasSeconds .numInputWrapper {
+  width: 26%;
+}
+
+.flatpickr-time.time24hr .numInputWrapper {
+  width: 49%;
+}
+
+.flatpickr-time input {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  line-height: inherit;
+  color: #393939;
+  font-size: 14px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.flatpickr-time input.flatpickr-hour {
+  font-weight: bold;
+}
+
+.flatpickr-time input.flatpickr-minute,
+.flatpickr-time input.flatpickr-second {
+  font-weight: 400;
+}
+
+.flatpickr-time input:focus {
+  outline: 0;
+  border: 0;
+}
+
+.flatpickr-time .flatpickr-time-separator,
+.flatpickr-time .flatpickr-am-pm {
+  height: inherit;
+  float: left;
+  line-height: inherit;
+  color: #393939;
+  font-weight: bold;
+  width: 2%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.flatpickr-time .flatpickr-am-pm {
+  outline: 0;
+  width: 18%;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+}
+
+.flatpickr-time input:hover,
+.flatpickr-time .flatpickr-am-pm:hover,
+.flatpickr-time input:focus,
+.flatpickr-time .flatpickr-am-pm:focus {
+  background: #eee;
+}
+
+.flatpickr-input[readonly] {
+  cursor: pointer;
+}
+
+@-webkit-keyframes fpFadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fpFadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.flatpickr-input + .form-control.input {
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.flatpickr-calendar.arrowTop:after {
+  border-bottom-color: #1090c0;
+}
+
+.flatpickr-calendar {
+  margin-top: 3px;
+  width: 262px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.flatpickr-months .flatpickr-month {
+  color: inherit;
+  border-radius: 5px 5px 0 0;
+  background-color: #1090c0;
+}
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+  fill: #fff;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-next-month:hover svg {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.flatpickr-current-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  padding: 0 16px 0 0;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
+  font-weight: 300;
+  background-color: #1090c0;
+}
+
+.flatpickr-weekdays {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #1090c0;
+}
+
+span.flatpickr-weekday {
+  color: inherit;
+}
+
+.flatpickr-days {
+  width: 100%;
+}
+
+.dayContainer {
+  padding: 5px;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+}
+
+.flatpickr-day {
+  max-width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+.flatpickr-day.selected {
+  border-color: #9393ea;
+  background-color: #9393ea;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/components/select2/patches.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+.select2-container--default {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.375;
+}
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+  outline: none;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  border: 1px solid #d0d0d0;
+  -webkit-transition: border-color 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out;
+}
+.select2-container--default .select2-search--dropdown {
+  padding: 4px 4px;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  padding: 6px 6px;
+  padding: 0.375rem 0.375rem;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  border: 1px solid #d0d0d0;
+}
+.select2-container--default .select2-selection--single {
+  height: auto;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #c3c3c3;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding: 8px 0 8px 12px;
+  padding: 0.5rem 0 0.5rem 0.75rem;
+  margin-right: 24px;
+  min-height: 22px;
+  min-height: 1.375rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  color: inherit;
+  line-height: inherit;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  width: 24px;
+  height: 100%;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  margin-top: -3px;
+  border-color: #1d1d1d transparent transparent transparent;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  position: absolute;
+  padding: 0;
+  float: none;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin-right: 24px;
+}
+.select2-container--default .select2-selection--single.select2-selection--clearable .select2-selection__rendered {
+  margin-right: 48px;
+}
+.select2-container--default .select2-selection--single:hover {
+  border-color: #d0d0d0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.select2-container--default .select2-selection--multiple {
+  padding: 0 0 4px 0;
+  min-height: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  margin: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  padding: 3px 28px 3px 8px;
+  margin: 4px 0 0 4px;
+  color: #1d1d1d;
+  border: 1px solid #d0d0d0;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  vertical-align: top;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+  padding: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  padding: 0;
+  left: auto;
+  right: 0;
+  width: 24px;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:before, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:after {
+  content: "";
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -5px;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  background: #909090;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:before {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:after {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove span {
+  display: none;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus {
+  background-color: #dadfe4;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover:before, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover:after, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus:before, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus:after {
+  background-color: #1d1d1d;
+}
+.select2-container--default .select2-selection--multiple .select2-search--inline {
+  display: inline-block;
+  vertical-align: top;
+}
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 4px;
+  margin-left: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  height: 30px;
+}
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field::-webkit-input-placeholder {
+  color: #c3c3c3;
+}
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field::-moz-placeholder {
+  color: #c3c3c3;
+}
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field:-ms-input-placeholder {
+  color: #c3c3c3;
+}
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field::-ms-input-placeholder {
+  color: #c3c3c3;
+}
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field::placeholder {
+  color: #c3c3c3;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered:empty + .select2-search--inline .select2-search__field {
+  margin-left: 12px;
+  margin-left: 0.75rem;
+}
+.select2-container--default .select2-selection--multiple.select2-selection__rendered--clearable {
+  padding-right: 24px;
+}
+.select2-container--default .select2-selection--multiple:hover {
+  border-color: #d0d0d0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 300px;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  color: #FFFFFF;
+  font-weight: normal;
+  background-color: #79aec8;
+}
+.select2-container--default .select2-results__option--selected, .select2-container--default .select2-results__option--highlighted.select2-results__option--selected {
+  color: #1d1d1d;
+  font-weight: normal;
+  background-color: #e9ecef;
+}
+.select2-container--default .select2-results__option--disabled {
+  color: #9a9a9a;
+  font-weight: normal;
+  background-color: transparent;
+  -webkit-transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--disabled {
+  color: #FFFFFF;
+  font-weight: normal;
+  background-color: #79aec8;
+}
+.select2-container--default .select2-results__option--selected.select2-results__option--disabled {
+  background-color: #e9ecef;
+}
+.select2-container--default.select2-container--focus .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: #444444;
+  -webkit-box-shadow: 0 0 0 1px #444444;
+          box-shadow: 0 0 0 1px #444444;
+}
+.select2-container--default.select2-container--open .select2-selection--single,
+.select2-container--default.select2-container--open .select2-selection--multiple {
+  border-color: #444444;
+  -webkit-box-shadow: 0 0 0 1px #444444;
+          box-shadow: 0 0 0 1px #444444;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #1d1d1d transparent;
+}
+
+.select2-dropdown {
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 0 1px #444444;
+          box-shadow: 0 0 0 1px #444444;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  border: 1px solid #444444;
+}
+.select2-dropdown.select2-dropdown--below {
+  margin-top: 1px;
+}
+.select2-dropdown.select2-dropdown--above {
+  margin-bottom: 1px;
+}
+
+.select2-results__option {
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  color: #1d1d1d;
+}
+
+.select2-search + .select2-results .loading-results,
+.select2-search + .select2-results .select2-results__message {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 4px;
+}
+
+.select2-selection__clear {
+  position: relative;
+  width: 24px;
+  border: none;
+  background-color: transparent;
+}
+.select2-selection__clear:before, .select2-selection__clear:after {
+  content: "";
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -6px;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 2px;
+  background: #909090;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+.select2-selection__clear:before {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+.select2-selection__clear:after {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+.select2-selection__clear span {
+  display: none;
+}
+.select2-selection__clear:hover:before, .select2-selection__clear:hover:after {
+  background-color: #1d1d1d;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/components/select2/small.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.select2-container--small {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.375;
+}
+.select2-container--small .select2-selection--single,
+.select2-container--small .select2-selection--multiple {
+  border-radius: 0.25rem;
+}
+.select2-container--small .select2-search--dropdown .select2-search__field {
+  padding: 4.5px 4px;
+  padding: 0.28125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+.select2-container--small .select2-selection--single .select2-selection__rendered {
+  padding: 6px 0 6px 8px;
+  padding: 0.375rem 0 0.375rem 0.5rem;
+  min-height: 19.25px;
+  min-height: 1.203125rem;
+}
+.select2-container--small .select2-selection--multiple {
+  min-height: sum(19.25px, 6px, 2px, 4px);
+  min-height: sum(1.203125rem, 6px, 2px, 4px);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.select2-container--small .select2-selection--multiple .select2-selection__choice {
+  padding: 3px sum(28px) 3px 8px;
+  border-radius: 0.25rem;
+}
+.select2-container--small .select2-selection--multiple .select2-search--inline .select2-search__field {
+  height: sum(19.25px, 6px, 2px);
+  height: sum(1.203125rem, 6px, 2px);
+}
+.select2-container--small.select2-dropdown {
+  border-radius: 0.25rem;
+}
+.select2-container--small .select2-results__option {
+  padding: 6px 8px;
+  padding: 0.375rem 0.5rem;
+}
+.paper-widget--invalid .select2-selection {
+  border-color: #df7d5c;
+  -webkit-box-shadow: 0 0 0 1px #df7d5c;
+          box-shadow: 0 0 0 1px #df7d5c;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/clearable-file-field/clearable-file-field.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.js .clearable-file-field input[type=file] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.clearable-file-field input[type=file].focus + label,
+.clearable-file-field input[type=file]:focus + label {
+  border-color: #444444;
+  -webkit-box-shadow: 0 0 0 1px #444444;
+          box-shadow: 0 0 0 1px #444444;
+}
+.clearable-file-field__state {
+  margin-right: 1.5em;
+}
+.clearable-file-field__button {
+  position: relative;
+  max-width: 100%;
+}
+.no-js .clearable-file-field__button {
+  display: none;
+}
+.clearable-file-field__button i {
+  position: absolute;
+  top: 10.8px;
+  top: 0.675rem;
+  left: 20px;
+  left: 1.25rem;
+}
+.clearable-file-field__button i ~ span {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-left: 1.25rem;
+  max-width: calc(100% - 1.25rem);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/date-field/date-field.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .date-field {
+    max-width: 220px;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/email-field/email-field.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .email-field {
+    max-width: 360px;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/file-field/file-field.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.file-field {
+  position: relative;
+}
+@media (min-width: 576px) {
+  .file-field {
+    max-width: 360px;
+  }
+}
+.file-field input.form-control {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+.file-field__field, .file-field__addon {
+  cursor: pointer;
+}
+.file-field__field--empty {
+  color: #c3c3c3;
+}
+.file-field__field--empty:focus {
+  color: #c3c3c3;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/fk-raw-field/fk-raw-field.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .fk-raw-field {
+    max-width: 360px;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/ip-field/ip-field.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .ip-field {
+    max-width: 360px;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/number-field/number-field.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .number-field {
+    max-width: 360px;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/password-field/password-field.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .password-field {
+    max-width: 360px;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/related-widget-wrapper/related-widget-wrapper.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.related-widget-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.related-widget-wrapper > ul {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.related-widget-wrapper > ul + .related-widget-wrapper__buttons {
+  display: none;
+}
+.related-widget-wrapper > .select-field {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.related-widget-wrapper > .select-field + .related-widget-wrapper__buttons {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media (min-width: 576px) {
+  .related-widget-wrapper > .select-field + .related-widget-wrapper__buttons {
+    margin-left: 0.5rem;
+    margin-top: 0;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
+.related-widget-wrapper > .select-multiple-field {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.related-widget-wrapper > .select-multiple-field + .related-widget-wrapper__buttons {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/select-field/select-field.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .select-field {
+    max-width: 360px;
+  }
+}
+.select-field select,
+.select-field .select2 {
+  width: 100%;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/select-date-field/select-date-field.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+.select-date-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 576px) {
+  .select-date-field {
+    max-width: 360px;
+  }
+}
+.select-date-field .select-field {
+  max-width: none;
+}
+.select-date-field .select-field:nth-of-type(1) {
+  margin-right: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 130px;
+      flex-basis: 130px;
+}
+.select-date-field .select-field:nth-of-type(2) {
+  margin-right: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 70px;
+      flex-basis: 70px;
+}
+.select-date-field .select-field:nth-of-type(3) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 80px;
+      flex-basis: 80px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/select-multiple-field/select-multiple-field.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.multi-wrapper {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.375;
+  border-color: #d0d0d0;
+  border-radius: 0.3rem;
+}
+.multi-wrapper .search-input {
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.375;
+  border-color: #d0d0d0;
+  border-top-left-radius: 4.8px;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 4.8px;
+  border-top-right-radius: 0.3rem;
+}
+.multi-wrapper .search-input::-webkit-input-placeholder {
+  color: #c3c3c3;
+}
+.multi-wrapper .search-input::-moz-placeholder {
+  color: #c3c3c3;
+}
+.multi-wrapper .search-input:-ms-input-placeholder {
+  color: #c3c3c3;
+}
+.multi-wrapper .search-input::-ms-input-placeholder {
+  color: #c3c3c3;
+}
+.multi-wrapper .search-input::placeholder {
+  color: #c3c3c3;
+}
+.multi-wrapper .non-selected-wrapper,
+.multi-wrapper .selected-wrapper {
+  padding: 0;
+  height: 250px;
+  background-color: #ffffff;
+}
+.multi-wrapper .non-selected-wrapper .item.selected,
+.multi-wrapper .selected-wrapper .item.selected {
+  opacity: 1;
+}
+.multi-wrapper .non-selected-wrapper .item.selected {
+  color: #909090;
+  background-color: #e9ecef;
+}
+.multi-wrapper .item {
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
+.multi-wrapper .item:hover {
+  color: #ffffff;
+  border-radius: 0;
+  background-color: #79aec8;
+}
+.multi-wrapper .item-group {
+  padding: 0;
+}
+.multi-wrapper .item-group .group-label {
+  padding: 8px 12px 0;
+  padding: 0.5rem 0.75rem 0;
+  color: #808080;
+  font-weight: 500;
+  font-size: inherit;
+  opacity: 1;
+}
+.multi-wrapper .item-group .item {
+  padding-left: 20px;
+  padding-left: 1.25rem;
+}
+.paper-widget--invalid .multi-wrapper {
+  border-color: #df7d5c;
+  -webkit-box-shadow: 0 0 0 1px #df7d5c;
+          box-shadow: 0 0 0 1px #df7d5c;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/split-datetime-field/split-datetime-field.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.split-datetime-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 576px) {
+  .split-datetime-field {
+    max-width: 360px;
+  }
+}
+.split-datetime-field .date-field {
+  margin-right: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 220px;
+      flex-basis: 220px;
+}
+@media (min-width: 576px) {
+  .split-datetime-field .date-field {
+    max-width: none;
+  }
+}
+.split-datetime-field .time-field {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 130px;
+      flex-basis: 130px;
+}
+@media (min-width: 576px) {
+  .split-datetime-field .time-field {
+    max-width: none;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/text-field/text-field.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.text-field textarea {
+  max-height: 200px;
+}
+@media (min-width: 768px) {
+  .text-field textarea {
+    max-height: 400px;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/time-field/time-field.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .time-field {
+    max-width: 130px;
+  }
+}
+
+.clockpicker-popover .popover-title {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/widgets/uuid-field/uuid-field.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (min-width: 576px) {
+  .uuid-field {
+    max-width: 360px;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/btn-square/btn-square.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.btn-square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 34px;
+  width: 2.125rem;
+  height: 34px;
+  height: 2.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1;
+  text-align: center;
+}
+.btn-square.btn-lg {
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.btn-square.btn-sm {
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.btn-square.disabled, .btn-square:disabled {
+  opacity: 1;
+}
+.btn-square.disabled i, .btn-square:disabled i {
+  opacity: 0.25;
+}
+.btn-square--primary {
+  color: #6060e0;
+}
+.btn-square--secondary {
+  color: #606060;
+}
+.btn-square--success {
+  color: #40b060;
+}
+.btn-square--info {
+  color: #1090c0;
+}
+.btn-square--warning {
+  color: #ffc000;
+}
+.btn-square--danger {
+  color: #d04010;
+}
+.btn-square--light {
+  color: #e9ecef;
+}
+.btn-square--dark {
+  color: #1d1d1d;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/btn-square-group/btn-square-group.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+.btn-square-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.btn-square-group > .btn {
+  border-color: #e9ecef;
+}
+.btn-square-group > .btn:not(:last-child) {
+  margin-right: 2px;
+  margin-right: 0.125rem;
+}
+.btn-square-group > .btn:focus {
+  z-index: 1;
+}
+.btn-square-group > .btn:not(:disabled):hover, .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #e9ecef;
+}
+
+.paper-formset__form.paper-card--primary .btn-square-group > .btn:not(:disabled):hover, .paper-formset__form.paper-card--primary .btn-square-group > .btn:not(.disabled):hover,
+.table-primary .btn-square-group > .btn:not(:disabled):hover,
+.table-primary .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #bbbbf4;
+}
+
+.paper-formset__form.paper-card--secondary .btn-square-group > .btn:not(:disabled):hover, .paper-formset__form.paper-card--secondary .btn-square-group > .btn:not(.disabled):hover,
+.table-secondary .btn-square-group > .btn:not(:disabled):hover,
+.table-secondary .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #c8c2c2;
+}
+
+.paper-formset__form.paper-card--success .btn-square-group > .btn:not(:disabled):hover, .paper-formset__form.paper-card--success .btn-square-group > .btn:not(.disabled):hover,
+.table-success .btn-square-group > .btn:not(:disabled):hover,
+.table-success .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #b5e4c1;
+}
+
+.paper-formset__form.paper-card--info .btn-square-group > .btn:not(:disabled):hover, .paper-formset__form.paper-card--info .btn-square-group > .btn:not(.disabled):hover,
+.table-info .btn-square-group > .btn:not(:disabled):hover,
+.table-info .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #a5d8ea;
+}
+
+.paper-formset__form.paper-card--warning .btn-square-group > .btn:not(:disabled):hover, .paper-formset__form.paper-card--warning .btn-square-group > .btn:not(.disabled):hover,
+.table-warning .btn-square-group > .btn:not(:disabled):hover,
+.table-warning .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #ffe79f;
+}
+
+.paper-formset__form.paper-card--danger .btn-square-group > .btn:not(:disabled):hover, .paper-formset__form.paper-card--danger .btn-square-group > .btn:not(.disabled):hover,
+.table-danger .btn-square-group > .btn:not(:disabled):hover,
+.table-danger .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #f0b8a4;
+}
+
+.paper-formset__form.paper-card--light .btn-square-group > .btn:not(:disabled):hover, .paper-formset__form.paper-card--light .btn-square-group > .btn:not(.disabled):hover,
+.table-light .btn-square-group > .btn:not(:disabled):hover,
+.table-light .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #e9edf2;
+}
+
+.paper-formset__form.paper-card--dark .btn-square-group > .btn:not(:disabled):hover, .paper-formset__form.paper-card--dark .btn-square-group > .btn:not(.disabled):hover,
+.table-dark .btn-square-group > .btn:not(:disabled):hover,
+.table-dark .btn-square-group > .btn:not(.disabled):hover {
+  background-color: #b7afaf;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/delete-inline/delete-inline.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+.delete-inline {
+  position: relative;
+}
+.delete-inline__icon {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+.delete-inline .custom-control {
+  position: static;
+}
+.delete-inline .custom-control-label {
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.delete-inline .custom-control-label:before, .delete-inline .custom-control-label:after {
+  background: transparent;
+  border-color: transparent;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: scale(0.8181);
+          transform: scale(0.8181);
+}
+.delete-inline input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+}
+.delete-inline input:focus ~ .custom-control-label:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent !important;
+}
+.delete-inline input:active ~ .custom-control-label:before {
+  background: transparent;
+  border-color: transparent !important;
+}
+.delete-inline input:checked ~ .custom-control-label {
+  opacity: 1;
+}
+.delete-inline input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #d04010;
+  background-color: #d04010;
+}
+.delete-inline input:checked ~ .custom-control-label:after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3e%3cpath d='M4.5 12l5 5L17 6' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+.delete-inline input:checked ~ .delete-inline__icon {
+  opacity: 0;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/dotted-underline/dotted-underline.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+.dotted-underline {
+  -webkit-text-decoration: underline dotted rgba(68, 68, 68, 0.75);
+          text-decoration: underline dotted rgba(68, 68, 68, 0.75);
+  text-decoration-thickness: 0.25px;
+}
+.dotted-underline:hover {
+  text-decoration: none;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-breadcrumbs/paper-breadcrumbs.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-breadcrumbs__list {
+  padding-left: 8px;
+  padding-left: 0.5rem;
+  padding-right: 8px;
+  padding-right: 0.5rem;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  border-radius: 0;
+  border-bottom: 1px solid #e9ecef;
+}
+@media (min-width: 576px) {
+  .paper-breadcrumbs__list {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-card/paper-card.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-card .card-header {
+  border-top-left-radius: 4px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 4px;
+  border-top-right-radius: 0.25rem;
+}
+@media (max-width: 767.98px) {
+  .paper-card .card-header {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+.paper-card .card-body {
+  background: #fff;
+}
+@media (max-width: 767.98px) {
+  .paper-card .card-body {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+.paper-card .card-body:first-child {
+  border-top-left-radius: 4px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 4px;
+  border-top-right-radius: 0.25rem;
+}
+.paper-card .card-body:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 0.25rem;
+}
+.paper-card .card-subtitle {
+  display: block;
+  color: #444444;
+}
+.paper-card .card-footer {
+  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 0.25rem;
+}
+@media (max-width: 767.98px) {
+  .paper-card .card-footer {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+.paper-card--danger {
+  border-color: #e78b8b;
+}
+.paper-card--danger .card-header {
+  color: #212529;
+  border-color: #e78b8b;
+  background-color: #f4caca;
+}
+.paper-card--danger .card-footer {
+  border-color: #e78b8b;
+}
+.paper-card--warning {
+  border-color: #e9e92f;
+}
+.paper-card--warning .card-header {
+  color: #212529;
+  border-color: #e9e92f;
+  background-color: #fafad0;
+}
+.paper-card--warning .card-footer {
+  border-color: #e9e92f;
+}
+.paper-card--info {
+  border-color: #96badd;
+}
+.paper-card--info .card-header {
+  color: #212529;
+  border-color: #96badd;
+  background-color: #d0e0f0;
+}
+.paper-card--info .card-footer {
+  border-color: #96badd;
+}
+.paper-card--success {
+  border-color: #8edf8e;
+}
+.paper-card--success .card-header {
+  color: #212529;
+  border-color: #8edf8e;
+  background-color: #caf0ca;
+}
+.paper-card--success .card-footer {
+  border-color: #8edf8e;
+}
+.paper-card--primary {
+  border-color: #6dc9f7;
+}
+.paper-card--primary .card-header {
+  color: #212529;
+  border-color: #6dc9f7;
+  background-color: #b6e4fb;
+}
+.paper-card--primary .card-footer {
+  border-color: #6dc9f7;
+}
+.paper-card--secondary {
+  border-color: #c4c4c4;
+}
+.paper-card--secondary .card-header {
+  color: #212529;
+  border-color: #c4c4c4;
+  background-color: #eaeaea;
+}
+.paper-card--secondary .card-footer {
+  border-color: #c4c4c4;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-environment/paper-environment.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-environment {
+  padding: 2px 12px;
+  padding: 0.125rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 1.375;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #444444;
+  background: var(--bg-color);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-error-list/paper-error-list.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.paper-error-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.paper-error-list.invalid-feedback {
+  margin-top: 4px;
+  margin-top: 0.25rem;
+}
+.paper-error-list.invalid-tooltip {
+  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
+  margin-top: 2px;
+}
+.paper-error-list:empty {
+  display: none !important;
+}
+.paper-error-list li:before {
+  content: "• ";
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-form/paper-form.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-form__label {
+  margin-bottom: 0;
+  color: #444444;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 22px;
+  line-height: 1.375rem;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .paper-form__label {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .paper-form__label {
+    margin-bottom: 0.375rem;
+  }
+}
+.paper-form__label:hover {
+  color: #212529;
+}
+.paper-form__row {
+  padding: 12px 16px;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+}
+@media (max-width: 767.98px) {
+  .paper-form__row {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+.paper-form__row:not(:first-of-type) {
+  border-top: 1px dashed #e9ecef;
+}
+.paper-card .paper-form__row:last-child {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.paper-card > .card-body:first-of-type .paper-form__row:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.paper-card > .card-header:first-of-type + .card-body .paper-form__row:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.paper-form__row--readonly .readonly {
+  word-break: break-word;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.paper-form__row--required .paper-form__label:after {
+  content: "*";
+  display: inline-block;
+  position: relative;
+  margin-left: 0.125em;
+  top: -0.2em;
+  color: #d04010;
+  font-weight: bold;
+}
+.paper-form__row--invalid {
+  background-color: #ffe0e0;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-header/paper-header.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+.paper-header {
+  min-height: 44px;
+  min-height: 2.75rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  z-index: 1021;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.paper-header .navbar {
+  min-height: 30px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.paper-header .navbar-nav {
+  margin-right: -6px;
+  margin-right: -0.375rem;
+}
+.paper-header .nav-item {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+}
+.paper-header .nav-link {
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
+  min-width: 30px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.5714285714;
+  text-align: center;
+  color: #333333;
+  border-radius: 0.25rem;
+}
+.paper-header .nav-link:hover, .paper-header .nav-link[aria-expanded=true] {
+  color: #6060e0;
+  background-color: #e9ecef;
+}
+.paper-header .nav-link:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px #444444;
+          box-shadow: 0 0 0 2px #444444;
+}
+.paper-header__burger {
+  min-width: 32px;
+  text-align: center;
+}
+.paper-header__burger:hover {
+  color: #1090c0;
+}
+.paper-header__burger i {
+  -webkit-transform: scale(1.33);
+          transform: scale(1.33);
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-input-group/paper-input-group.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-input-group a.input-group-text {
+  min-width: 36px;
+  min-width: 2.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #9a9a9a;
+  background: #f8f9fa;
+}
+.paper-input-group a.input-group-text:focus {
+  position: relative;
+  z-index: 1;
+}
+.paper-input-group a.input-group-text:hover {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+.paper-input-group a.input-group-text[href] {
+  color: #7575e4;
+}
+.paper-input-group a.input-group-text[href]:not(.disabled):hover {
+  color: #6060e0;
+  background: #e9ecef;
+}
+.paper-input-group a.input-group-text.disabled {
+  cursor: default;
+  color: #9a9a9a;
+  background: #f8f9fa;
+}
+.paper-input-group button.input-group-text {
+  min-width: 36px;
+  min-width: 2.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #7575e4;
+  background: #f8f9fa;
+}
+.paper-input-group button.input-group-text:focus {
+  position: relative;
+  z-index: 1;
+}
+.paper-input-group button.input-group-text:hover {
+  color: #6060e0;
+  background-color: #e9ecef;
+}
+.paper-input-group button.input-group-text.disabled, .paper-input-group button.input-group-text:disabled {
+  cursor: default;
+  color: #9a9a9a;
+  background-color: #f8f9fa;
+}
+.paper-input-group label.input-group-text {
+  min-width: 36px;
+  min-width: 2.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #9a9a9a;
+  background-color: #f8f9fa;
+}
+.paper-input-group label.input-group-text:focus {
+  position: relative;
+  z-index: 1;
+}
+.paper-input-group label.input-group-text:hover {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+.paper-input-group label.input-group-text[for] {
+  color: #7575e4;
+}
+.paper-input-group label.input-group-text[for]:not(.disabled):hover {
+  color: #6060e0;
+  background-color: #e9ecef;
+}
+.paper-input-group label.input-group-text.disabled {
+  cursor: default;
+  color: #9a9a9a;
+  background-color: #f8f9fa;
+}
+.paper-input-group a.input-group-text--primary[href] {
+  color: #7575e4;
+}
+.paper-input-group a.input-group-text--primary[href]:not(.disabled):hover {
+  color: #6060e0;
+}
+.paper-input-group button.input-group-text--primary {
+  color: #7575e4;
+}
+.paper-input-group button.input-group-text--primary:not(.disabled):not(:disabled):hover {
+  color: #6060e0;
+}
+.paper-input-group label.input-group-text--primary[for] {
+  color: #7575e4;
+}
+.paper-input-group label.input-group-text--primary[for]:not(.disabled):hover {
+  color: #6060e0;
+}
+.paper-input-group a.input-group-text--secondary[href] {
+  color: #6d6d6d;
+}
+.paper-input-group a.input-group-text--secondary[href]:not(.disabled):hover {
+  color: #606060;
+}
+.paper-input-group button.input-group-text--secondary {
+  color: #6d6d6d;
+}
+.paper-input-group button.input-group-text--secondary:not(.disabled):not(:disabled):hover {
+  color: #606060;
+}
+.paper-input-group label.input-group-text--secondary[for] {
+  color: #6d6d6d;
+}
+.paper-input-group label.input-group-text--secondary[for]:not(.disabled):hover {
+  color: #606060;
+}
+.paper-input-group a.input-group-text--success[href] {
+  color: #4cbe6c;
+}
+.paper-input-group a.input-group-text--success[href]:not(.disabled):hover {
+  color: #40b060;
+}
+.paper-input-group button.input-group-text--success {
+  color: #4cbe6c;
+}
+.paper-input-group button.input-group-text--success:not(.disabled):not(:disabled):hover {
+  color: #40b060;
+}
+.paper-input-group label.input-group-text--success[for] {
+  color: #4cbe6c;
+}
+.paper-input-group label.input-group-text--success[for]:not(.disabled):hover {
+  color: #40b060;
+}
+.paper-input-group a.input-group-text--info[href] {
+  color: #12a2d8;
+}
+.paper-input-group a.input-group-text--info[href]:not(.disabled):hover {
+  color: #1090c0;
+}
+.paper-input-group button.input-group-text--info {
+  color: #12a2d8;
+}
+.paper-input-group button.input-group-text--info:not(.disabled):not(:disabled):hover {
+  color: #1090c0;
+}
+.paper-input-group label.input-group-text--info[for] {
+  color: #12a2d8;
+}
+.paper-input-group label.input-group-text--info[for]:not(.disabled):hover {
+  color: #1090c0;
+}
+.paper-input-group a.input-group-text--warning[href] {
+  color: #ffc61a;
+}
+.paper-input-group a.input-group-text--warning[href]:not(.disabled):hover {
+  color: #ffc000;
+}
+.paper-input-group button.input-group-text--warning {
+  color: #ffc61a;
+}
+.paper-input-group button.input-group-text--warning:not(.disabled):not(:disabled):hover {
+  color: #ffc000;
+}
+.paper-input-group label.input-group-text--warning[for] {
+  color: #ffc61a;
+}
+.paper-input-group label.input-group-text--warning[for]:not(.disabled):hover {
+  color: #ffc000;
+}
+.paper-input-group a.input-group-text--danger[href] {
+  color: #e84712;
+}
+.paper-input-group a.input-group-text--danger[href]:not(.disabled):hover {
+  color: #d04010;
+}
+.paper-input-group button.input-group-text--danger {
+  color: #e84712;
+}
+.paper-input-group button.input-group-text--danger:not(.disabled):not(:disabled):hover {
+  color: #d04010;
+}
+.paper-input-group label.input-group-text--danger[for] {
+  color: #e84712;
+}
+.paper-input-group label.input-group-text--danger[for]:not(.disabled):hover {
+  color: #d04010;
+}
+.paper-input-group a.input-group-text--light[href] {
+  color: #f8f9fa;
+}
+.paper-input-group a.input-group-text--light[href]:not(.disabled):hover {
+  color: #e9ecef;
+}
+.paper-input-group button.input-group-text--light {
+  color: #f8f9fa;
+}
+.paper-input-group button.input-group-text--light:not(.disabled):not(:disabled):hover {
+  color: #e9ecef;
+}
+.paper-input-group label.input-group-text--light[for] {
+  color: #f8f9fa;
+}
+.paper-input-group label.input-group-text--light[for]:not(.disabled):hover {
+  color: #e9ecef;
+}
+.paper-input-group a.input-group-text--dark[href] {
+  color: #2a2a2a;
+}
+.paper-input-group a.input-group-text--dark[href]:not(.disabled):hover {
+  color: #1d1d1d;
+}
+.paper-input-group button.input-group-text--dark {
+  color: #2a2a2a;
+}
+.paper-input-group button.input-group-text--dark:not(.disabled):not(:disabled):hover {
+  color: #1d1d1d;
+}
+.paper-input-group label.input-group-text--dark[for] {
+  color: #2a2a2a;
+}
+.paper-input-group label.input-group-text--dark[for]:not(.disabled):hover {
+  color: #1d1d1d;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-messages/paper-messages.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+.paper-messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.paper-messages:empty {
+  display: none;
+}
+
+.paper-message {
+  padding: 12px 32px;
+  padding: 0.75rem 2rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.375;
+  border-width: 1px 1px 1px 8px;
+  border-style: solid;
+  border-radius: 0 3px 3px 0;
+  background-repeat: no-repeat;
+  background-size: 1.203125rem 1.203125rem;
+  background-position: 6.375px 12px;
+  background-position: 6.375px 0.75rem;
+}
+.paper-message:not(:first-child) {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+.paper-message--error {
+  border-color: #e78b8b;
+  background-color: #f4caca;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='225' height='225'%3e%3ccircle cx='112.5' cy='112.5' r='92.5' fill='none' stroke='%23d04010' stroke-width='20' stroke-linejoin='round'/%3e%3cpath d='M115 120.86v-57h-5v57z' fill='%23d04010' stroke='%23d04010' stroke-width='20' stroke-linecap='round' stroke-linejoin='round'/%3e%3ccircle cx='112.5' cy='157.5' r='12.5' fill='%23d04010'/%3e%3c/svg%3e");
+}
+.paper-message--warning {
+  border-color: #e9e92f;
+  background-color: #fafad0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='225' height='225'%3e%3cpath d='M215.17 205.17H9.83L112.5 19.83z' fill='none' stroke='%23ffc000' stroke-width='20' stroke-linejoin='round'/%3e%3cpath d='M110 123v57h5v-57z' fill='%23ffc000' stroke='%23ffc000' stroke-width='20' stroke-linecap='round' stroke-linejoin='round'/%3e%3ccircle cx='112.5' cy='86.36' r='12.5' fill='%23ffc000'/%3e%3c/svg%3e");
+}
+.paper-message--debug, .paper-message--info {
+  border-color: #96badd;
+  background-color: #d0e0f0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='225' height='225'%3e%3ccircle cx='112.5' cy='112.5' fill='none' stroke='%231090c0' stroke-width='20' stroke-linejoin='round' r='92.5'/%3e%3cpath d='M110 103v57h5v-57z' fill='%231090c0' stroke='%231090c0' stroke-width='20' stroke-linecap='round' stroke-linejoin='round'/%3e%3ccircle cx='112.5' cy='66.36' r='12.5' fill='%231090c0'/%3e%3c/svg%3e");
+}
+.paper-message--success {
+  border-color: #8edf8e;
+  background-color: #caf0ca;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='225' height='225'%3e%3cpath d='M68.71 110.45l36.42 36.41 59.75-59.75' fill='none' stroke='%2340b060' stroke-width='22' stroke-linecap='round' stroke-linejoin='round'/%3e%3ccircle cx='112.5' cy='112.5' r='92.5' fill='none' stroke='%2340b060' stroke-width='20' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-modal/paper-modal.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-modal-backdrop {
+  opacity: 0;
+}
+
+.paper-modal .modal-header {
+  padding: 12px 16px;
+  padding: 0.75rem 1rem;
+}
+.paper-modal .modal-header:empty {
+  display: none;
+}
+.paper-modal .modal-title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+.paper-modal .modal-body {
+  padding: 16px 16px;
+  padding: 1rem 1rem;
+}
+.paper-modal .modal-footer {
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+}
+.paper-modal .modal-footer:empty {
+  display: none;
+}
+.paper-modal .close {
+  padding: 0 16px;
+  padding: 0 1rem;
+  margin: -12px -16px -12px auto;
+  margin: -0.75rem -1rem -0.75rem auto;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+.paper-modal--preloader .paper-preloader {
+  margin: 10px auto 20px;
+}
+.paper-modal--danger .modal-content {
+  border-color: #e78b8b;
+}
+.paper-modal--danger .modal-header {
+  color: #212529;
+  border-color: #e78b8b;
+  background-color: #f4caca;
+}
+.paper-modal--warning .modal-content {
+  border-color: #e9e92f;
+}
+.paper-modal--warning .modal-header {
+  color: #212529;
+  border-color: #e9e92f;
+  background-color: #fafad0;
+}
+.paper-modal--info .modal-content {
+  border-color: #96badd;
+}
+.paper-modal--info .modal-header {
+  color: #212529;
+  border-color: #96badd;
+  background-color: #d0e0f0;
+}
+.paper-modal--success .modal-content {
+  border-color: #8edf8e;
+}
+.paper-modal--success .modal-header {
+  color: #212529;
+  border-color: #8edf8e;
+  background-color: #caf0ca;
+}
+.paper-modal--primary .modal-content {
+  border-color: #6dc9f7;
+}
+.paper-modal--primary .modal-header {
+  color: #212529;
+  border-color: #6dc9f7;
+  background-color: #b6e4fb;
+}
+.paper-modal--secondary .modal-content {
+  border-color: #c4c4c4;
+}
+.paper-modal--secondary .modal-header {
+  color: #212529;
+  border-color: #c4c4c4;
+  background-color: #eaeaea;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-object-list/paper-object-list.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-object-list {
+  padding-left: 8px;
+  padding-left: 0.5rem;
+}
+.paper-object-list ul {
+  padding-left: 22px;
+  padding-left: 1.375rem;
+  margin-top: 2px;
+  margin-top: 0.125rem;
+}
+.paper-object-list li {
+  list-style-position: inside;
+}
+.paper-object-list li:not(:first-child) {
+  margin-top: 2px;
+  margin-top: 0.125rem;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-page/paper-page.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+.paper-page.js {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+@media (min-width: 1200px) {
+  body:not(.popup) .paper-page {
+    margin-left: 16rem;
+  }
+}
+
+.paper-page__header h1 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.paper-page__toolbar {
+  display: none;
+  width: 240px;
+  width: 15rem;
+}
+@media (min-width: 992px) {
+  .paper-page__toolbar {
+    display: block;
+  }
+}
+.paper-page__toolbar:empty {
+  display: none;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-preloader/paper-preloader.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+  }
+  18% {
+    border-width: 6px;
+  }
+  50% {
+    border-width: 3px;
+  }
+  82% {
+    border-width: 6px;
+  }
+  100% {
+    -webkit-transform: rotate(215deg);
+            transform: rotate(215deg);
+  }
+}
+@keyframes load {
+  0% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+  }
+  18% {
+    border-width: 6px;
+  }
+  50% {
+    border-width: 3px;
+  }
+  82% {
+    border-width: 6px;
+  }
+  100% {
+    -webkit-transform: rotate(215deg);
+            transform: rotate(215deg);
+  }
+}
+.paper-preloader {
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  height: 70px;
+}
+.paper-preloader:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  border-left-color: #6060e0;
+  -webkit-animation: load 0.9s ease-in-out alternate infinite;
+          animation: load 0.9s ease-in-out alternate infinite;
+}
+.paper-preloader__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-animation: pulse 0.75s linear alternate infinite;
+          animation: pulse 0.75s linear alternate infinite;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-sidebar/paper-sidebar.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+.sidebar-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1029;
+  background: rgba(0, 0, 0, 0.33);
+  -webkit-transition: all 0.5s, visibility 0.5s 0s;
+  transition: all 0.5s, visibility 0.5s 0s;
+}
+@media (min-width: 1200px) {
+  .sidebar-shadow {
+    display: none;
+  }
+}
+.sidebar-open .sidebar-shadow {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.5s, visibility 0s 0s;
+  transition: all 0.5s, visibility 0s 0s;
+}
+
+.paper-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 256px;
+  width: 16rem;
+  height: 100vh;
+  will-change: transform;
+  z-index: 1030;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.66);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.66);
+  background: url(/static/paper_admin/dist/assets/menu_bg.jpg);
+  -webkit-transform: translate(-102%, 0);
+          transform: translate(-102%, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+@media (min-width: 1200px) {
+  .paper-sidebar {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+.sidebar-open .paper-sidebar {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.paper-sidebar .navbar {
+  height: 100%;
+}
+.paper-sidebar .navbar-brand {
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  min-height: 46px;
+  min-height: 2.875rem;
+  border-bottom: 1px solid #444444;
+}
+.paper-sidebar .navbar-brand-name {
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  word-break: break-word;
+}
+.paper-sidebar__menu {
+  overflow-y: auto;
+}
+.paper-sidebar__item-list {
+  background: #101010;
+}
+.paper-sidebar__item-list--level-1 {
+  margin-bottom: 20px;
+  background: transparent;
+}
+.paper-sidebar__item-list--level-2 {
+  position: relative;
+  border-bottom: 1px solid #444444;
+}
+.paper-sidebar__item-list--level-2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 1px;
+  height: 100%;
+  z-index: 1;
+  background: #444444;
+}
+.paper-sidebar__item-list--level-2 .paper-sidebar__item--divider {
+  margin-left: 10px;
+}
+.paper-sidebar__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.375;
+  word-break: break-word;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .paper-sidebar__link {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.paper-sidebar__link:focus, .paper-sidebar__link:hover {
+  outline: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+.paper-sidebar__link > i {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+  text-align: left;
+}
+.active > .paper-sidebar__link {
+  color: #fff;
+  background: rgba(172, 172, 239, 0.7);
+}
+
+.paper-sidebar__link--trigger {
+  position: relative;
+  padding-right: 34px;
+}
+.paper-sidebar__link--trigger:after {
+  content: "\f078";
+  position: absolute;
+  top: calc(50% - 0.375rem);
+  right: 12px;
+  right: 0.75rem;
+  font: 10px "FontAwesome";
+  font: 0.625rem "FontAwesome";
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .paper-sidebar__link--trigger:after {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.paper-sidebar__link--trigger[aria-expanded=true]:after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.paper-sidebar__item--divider {
+  height: 1px;
+  background: #444444;
+}
+.paper-sidebar__item--level-1 {
+  padding-left: 0;
+}
+.paper-sidebar__item--level-1 > .paper-sidebar__link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.paper-sidebar__item--level-2 {
+  position: relative;
+  padding-left: 22px;
+}
+.paper-sidebar__item--level-2 > .paper-sidebar__link:before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 17.625px;
+  width: 7px;
+  height: 7px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 1px solid #444444;
+  background: #101010;
+  -webkit-transform: translate(-3px, -4px);
+          transform: translate(-3px, -4px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .paper-sidebar__item--level-2 > .paper-sidebar__link:before {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.paper-sidebar__item--level-2 > .paper-sidebar__link.paper-sidebar__link--trigger:before {
+  left: 0px;
+}
+.paper-sidebar__item--level-2 > .paper-sidebar__link:focus:before, .paper-sidebar__item--level-2 > .paper-sidebar__link:hover:before {
+  background: #acacef;
+}
+.paper-sidebar__item--level-2.active > .paper-sidebar__link:before {
+  content: none;
+}
+.paper-sidebar__item--level-2.open > .paper-sidebar__link:before {
+  background: #acacef;
+}
+.paper-sidebar__item--level-3 > .paper-sidebar__link {
+  padding-left: 24px;
+}
+.paper-sidebar__item--level-4 > .paper-sidebar__link {
+  padding-left: 24px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-table/paper-table.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-table {
+  vertical-align: top;
+  background-color: #fff;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 0.25rem;
+  border: 1px solid #e9ecef;
+}
+.paper-table__small-column {
+  width: 0.1%;
+}
+.paper-table__sort-button {
+  position: relative;
+  padding: 2px 6px;
+  padding: 0.125rem 0.375rem;
+  margin: -2px 0 -2px 2px;
+  margin: -0.125rem 0 -0.125rem 0.125rem;
+  color: #606060;
+  font-size: inherit;
+  vertical-align: baseline;
+  border-radius: 0.125rem;
+}
+.paper-table__sort-button--has-prior {
+  padding-right: 0.6em;
+}
+.paper-table__sort-button span {
+  margin-left: 2px !important;
+  margin-left: 0.125rem !important;
+}
+.paper-table__sortable-cell {
+  position: relative;
+  width: 20px;
+  width: 1.25rem;
+}
+.paper-table__sort-handler {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: move;
+  color: #c3c3c3;
+  border-right: 1px solid #e9ecef;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.paper-table__sort-handler.disabled {
+  color: #e9ecef;
+}
+tr.disabled .paper-table__sort-handler, .paper-table__sort-handler.disabled {
+  cursor: default;
+}
+
+tr:not(.disabled) .paper-table__sort-handler:not(.disabled):hover {
+  color: #333333;
+}
+
+.paper-table th,
+.paper-table td {
+  padding: 12px 12px;
+  padding: 0.75rem 0.75rem;
+  vertical-align: middle;
+  border-top: none;
+}
+.paper-table thead th {
+  padding: 12px 12px;
+  padding: 0.75rem 0.75rem;
+  color: #333333;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border-bottom: 1px solid #d0d0d0;
+}
+.paper-table thead th:first-child {
+  border-top-left-radius: 4px;
+  border-top-left-radius: 0.25rem;
+}
+.paper-table thead th:last-child {
+  border-top-right-radius: 4px;
+  border-top-right-radius: 0.25rem;
+}
+.paper-table thead th a {
+  color: inherit;
+}
+.paper-table thead th .dropdown-item {
+  text-transform: none;
+}
+.paper-table tfoot td {
+  border-top: 1px solid #d0d0d0;
+}
+.paper-table tbody th {
+  font-weight: normal;
+}
+.paper-table tbody tr.selected th, .paper-table tbody tr.selected td {
+  background-color: #fff7e0;
+}
+.paper-table tbody tr:not(:last-child) th, .paper-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid #e9ecef;
+}
+.paper-table--danger thead th {
+  background-color: #f4caca;
+  border-color: #e78b8b;
+}
+.paper-table tbody tr.table-danger th, .paper-table tbody tr.table-danger td {
+  background-color: #f4caca;
+  border-color: #e78b8b;
+}
+.paper-table tbody tr.table-danger:hover th, .paper-table tbody tr.table-danger:hover td {
+  background-color: #f1bdbd;
+}
+.paper-table--warning thead th {
+  background-color: #fafad0;
+  border-color: #e9e92f;
+}
+.paper-table tbody tr.table-warning th, .paper-table tbody tr.table-warning td {
+  background-color: #fafad0;
+  border-color: #e9e92f;
+}
+.paper-table tbody tr.table-warning:hover th, .paper-table tbody tr.table-warning:hover td {
+  background-color: #f9f9c2;
+}
+.paper-table--info thead th {
+  background-color: #d0e0f0;
+  border-color: #96badd;
+}
+.paper-table tbody tr.table-info th, .paper-table tbody tr.table-info td {
+  background-color: #d0e0f0;
+  border-color: #96badd;
+}
+.paper-table tbody tr.table-info:hover th, .paper-table tbody tr.table-info:hover td {
+  background-color: #c4d8ec;
+}
+.paper-table--success thead th {
+  background-color: #caf0ca;
+  border-color: #8edf8e;
+}
+.paper-table tbody tr.table-success th, .paper-table tbody tr.table-success td {
+  background-color: #caf0ca;
+  border-color: #8edf8e;
+}
+.paper-table tbody tr.table-success:hover th, .paper-table tbody tr.table-success:hover td {
+  background-color: #beedbe;
+}
+.paper-table--primary thead th {
+  background-color: #b6e4fb;
+  border-color: #6dc9f7;
+}
+.paper-table tbody tr.table-primary th, .paper-table tbody tr.table-primary td {
+  background-color: #b6e4fb;
+  border-color: #6dc9f7;
+}
+.paper-table tbody tr.table-primary:hover th, .paper-table tbody tr.table-primary:hover td {
+  background-color: #a7dffa;
+}
+.paper-table--secondary thead th {
+  background-color: #eaeaea;
+  border-color: #c4c4c4;
+}
+.paper-table tbody tr.table-secondary th, .paper-table tbody tr.table-secondary td {
+  background-color: #eaeaea;
+  border-color: #c4c4c4;
+}
+.paper-table tbody tr.table-secondary:hover th, .paper-table tbody tr.table-secondary:hover td {
+  background-color: #e2e2e2;
+}
+.paper-table--sortable tbody tr {
+  -webkit-transition: opacity 0.1s, background-color 0.3s;
+  transition: opacity 0.1s, background-color 0.3s;
+}
+.paper-table--sortable tbody tr.sortable-ghost {
+  background-color: #fff2cc !important;
+}
+.paper-table--sortable tbody tr.disabled {
+  opacity: 0.3;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-tabs/paper-tabs.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-tabs .nav {
+  margin-bottom: -6px;
+  margin-bottom: -0.375rem;
+}
+.paper-tabs .nav-item {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-widget/paper-widget.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+@media (max-width: 767.98px) {
+  .paper-widget--checkbox > .custom-control {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.paper-widget--invalid ~ .invalid-feedback,
+.paper-widget--invalid ~ .invalid-tooltip {
+  display: block;
+}
+.paper-widget--invalid .form-control,
+.paper-widget--invalid .custom-file-label {
+  border-color: #df7d5c;
+  -webkit-box-shadow: 0 0 0 1px #df7d5c;
+          box-shadow: 0 0 0 1px #df7d5c;
+}
+.paper-widget--invalid .form-control:focus {
+  border-color: #444444;
+  -webkit-box-shadow: 0 0 0 1px #444444;
+          box-shadow: 0 0 0 1px #444444;
+}
+.paper-widget--invalid .form-control {
+  padding-right: calc(calc(0.6875em + 0.375rem) + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23d04010' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23d04010' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  background-position: right 0.375rem center;
+  background-size: calc(0.6875em + 0.375rem) calc(0.6875em + 0.375rem);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/css/dashboard.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * Только переменные, функции и миксины!
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/css/login.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * Только переменные, функции и миксины!
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+@-webkit-keyframes form_appear {
+  0% {
+    top: -5vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes form_appear {
+  0% {
+    top: -5vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+.login {
+  background: url(/static/paper_admin/dist/assets/login_bg.jpg) center bottom;
+  background-size: cover;
+}
+.login:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5);
+}
+.login .paper-page {
+  margin-left: 0 !important;
+}
+
+.login-card {
+  position: relative;
+  width: 320px;
+  max-width: 100%;
+  border-radius: 0.25rem;
+  -webkit-animation: form_appear 0.8s backwards 0.4s;
+          animation: form_appear 0.8s backwards 0.4s;
+}
+
+.password-reset-link a {
+  color: inherit;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-actions/paper-actions.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.paper-actions__action select {
+  padding-left: 6px;
+  padding-left: 0.375rem;
+  padding-right: 24px;
+  width: auto;
+  min-width: 180px;
+  max-width: 340px;
+}
+.paper-actions__select_across {
+  display: none;
+}
+.paper-actions__button {
+  margin-right: 16px;
+  margin-right: 1rem;
+}
+.paper-actions__tools {
+  padding: 6px 0;
+  padding: 0.375rem 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.paper-actions__counter, .paper-actions__all {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+}
+.paper-actions__question, .paper-actions__clear {
+  margin-left: 6px;
+  margin-left: 0.375rem;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-filter/paper-filter.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-filter {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+.paper-filter:not(:first-child) {
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #e9ecef;
+}
+.paper-filter__title {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.paper-filter__row:not(:first-of-type) {
+  margin-top: 4px;
+  margin-top: 0.25rem;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-search-form/paper-search-form.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-search-form {
+  width: 240px;
+  width: 15rem;
+}
+.paper-search-form__field {
+  position: relative;
+}
+.paper-search-form__icon {
+  position: absolute;
+  top: 6px;
+  top: 0.375rem;
+  left: 8px;
+  left: 0.5rem;
+  color: #9a9a9a;
+  line-height: 1.375;
+}
+.paper-search-form .form-control {
+  padding-left: 28px;
+  padding-left: 1.75rem;
+}
+.paper-search-form .form-control::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  margin: 0;
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+  background: no-repeat url(/static/paper_admin/dist/assets/cross.svg) center;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/css/changelist.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * Только переменные, функции и миксины!
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+/*
+  Суммирует значения (число, px, rem).
+  Возвращает результат в пикселях.
+ */
+/*
+  Конвертирует любое значение (число, px, rem) в px.
+ */
+#result_list .related-widget-wrapper__buttons {
+  display: none;
+}
+#result_list .form-control-lg {
+  height: calc(1.375em + 0.75rem + 2px);
+  padding: 6px 8px;
+  padding: 0.375rem 0.5rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.375;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/paper-formset/paper-formset.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+.paper-formset:not(:first-child) {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+.paper-formset__form {
+  overflow: hidden;
+}
+.paper-formset--tabular .paper-formset__form--invalid {
+  background-color: #ffe0e0;
+}
+.paper-formset--tabular thead th {
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/fast-css-loader/lib/index.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./paper_admin/static/paper_admin/src/bem/scroll-top-button/scroll-top-button.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+@-webkit-keyframes arrow {
+  0% {
+    top: 0.875rem;
+  }
+  25% {
+    top: 0.625rem;
+  }
+  75% {
+    top: 1.125rem;
+  }
+  100% {
+    top: 0.875rem;
+  }
+}
+@keyframes arrow {
+  0% {
+    top: 0.875rem;
+  }
+  25% {
+    top: 0.625rem;
+  }
+  75% {
+    top: 1.125rem;
+  }
+  100% {
+    top: 0.875rem;
+  }
+}
+.scroll-top-button {
+  position: fixed;
+  display: none;
+  right: 16px;
+  right: 1rem;
+  bottom: 32px;
+  bottom: 2rem;
+  width: 48px;
+  width: 3rem;
+  height: 48px;
+  height: 3rem;
+  cursor: pointer;
+  opacity: 0.75;
+  z-index: 1020;
+  font-size: 16px;
+  font-size: 1rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  will-change: transform;
+  border-radius: 50%;
+  background-color: #40b060;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-top-button {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+@media (min-width: 992px) {
+  .scroll-top-button {
+    display: block !important;
+    right: 2rem;
+    bottom: 2.75rem;
+  }
+}
+.scroll-top-button i {
+  position: absolute;
+  left: 16px;
+  left: 1rem;
+  top: 14px;
+  top: 0.875rem;
+  color: #fff;
+  will-change: top;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.scroll-top-button.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.scroll-top-button:hover {
+  opacity: 1;
+}
+.scroll-top-button:hover i {
+  -webkit-animation: arrow 2s linear infinite;
+          animation: arrow 2s linear infinite;
+}
