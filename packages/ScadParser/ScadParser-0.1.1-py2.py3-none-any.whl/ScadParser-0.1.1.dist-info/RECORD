@@ -1,0 +1,10 @@
+scadparser/ScadModel.py,sha256=iol80DhUjq8HKsN4IplPJaVbWyR5gCk6MO3eeaV47h0,1172
+scadparser/ScadParser.py,sha256=oEC0br25ZB0eejDkJaCqU4NMJEa3_iWVt3YENbl3jwI,539
+scadparser/__init__.py,sha256=E-7Ebyv2SWdKXMJmb3Yd1E-I7ubYwZucqvPjLHJ9_kU,43
+scadparser/__main__.py,sha256=Nnjh6l1QixzzACCQmHMn8jXQZAjpG1-BJq5N8C3mM5Q,82
+scadparser/cli.py,sha256=-odkbSIH5nh01Ebz0wMJF_TpMIIynGFIVle70p2IyhU,1606
+ScadParser-0.1.1.dist-info/METADATA,sha256=KG0lUukMXVejZ9slr7FU_86iUPQO0HdJbRXm8JdqUvc,4094
+ScadParser-0.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+ScadParser-0.1.1.dist-info/entry_points.txt,sha256=4fgFAECdbRbYdzOXaKrYhdmYJSiL1oXdkKbRRRzjHqM,51
+ScadParser-0.1.1.dist-info/top_level.txt,sha256=5jZYITogAk-D5HYbAQROy8Hny0E6oO84O7lU699oSI8,11
+ScadParser-0.1.1.dist-info/RECORD,,
