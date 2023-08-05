@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: injective-py
+Version: 0.3.1
+Summary: Injective Python SDK, with Exchange API client
+Home-page: https://github.com/InjectiveLabs/sdk-python
+Author: Injective Labs
+Author-email: max@injectiveprotocol.com
+License: Apache Software License 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+## Injective Python SDK
+
+Note: Apple `M1` processor is not supported
+
+### Dependences
+
+**Ubuntu**
+```bash
+sudo apt install python3.9-dev
+```
+**Fedora**
+```bash
+sudo dnf install python3-devel
+```
+### Quick Start
+```bash
+pip install injective-py
+```
+```python
+import injective.chain_client
+import injective.exchange_api
+```
+
+### Usage
+Requires Python 3.9+
+
+[examples](https://github.com/InjectiveLabs/sdk-python/tree/master/examples): https://github.com/InjectiveLabs/sdk-python/tree/master/examples
+```bash
+$ pipenv shell
+$ pipenv install
+
+# connecting to Injective Exchange API
+# and listening for new orders
+$ python examples/exchange_api_example/examples/example.py
+
+# sending a msg with bank transfer
+# signs and posts a Tx to the Injective Chain
+$ python examples/chain_client_example/examples/example.py
+```
+Upgrade `pip` to the latest version, if you see these warnings:
+```
+WARNING: Value for scheme.platlib does not match. Please report this to <https://github.com/pypa/pip/issues/10151>    
+WARNING: Additional context:   user = True   home = None   root = None   prefix = None
+```
+
+### Development
+
+To copy proto schemas and regenerate GRPC clients:
+
+```bash
+$ pipenv shell
+$ pipenv install --dev
+
+$ make copy-proto
+$ make gen
+```
+
+## License
+
+Apache Software License 2.0
+
+
