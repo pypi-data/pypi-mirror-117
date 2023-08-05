@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+src/Panegyric.egg-info/PKG-INFO
+src/Panegyric.egg-info/SOURCES.txt
+src/Panegyric.egg-info/dependency_links.txt
+src/Panegyric.egg-info/entry_points.txt
+src/Panegyric.egg-info/requires.txt
+src/Panegyric.egg-info/top_level.txt
+src/panegyric/__init__.py
+src/panegyric/text.py
