@@ -1,0 +1,89 @@
+{
+  "app": "superset",
+  "entrypoints": {
+    "preamble": {
+      "css": [],
+      "js": [
+        "/static/assets/6d6cbd5c2aa8d55f7d5c.chunk.js",
+        "/static/assets/88e019e30c9fcfcaa5c5.chunk.js",
+        "/static/assets/preamble.e627b34f8bee32e0eeeb.entry.js"
+      ]
+    },
+    "theme": {
+      "css": [
+        "/static/assets/theme.f42e212bc0dd532dc0c9.entry.css"
+      ],
+      "js": [
+        "/static/assets/theme.f42e212bc0dd532dc0c9.entry.js"
+      ]
+    },
+    "menu": {
+      "css": [],
+      "js": [
+        "/static/assets/6d6cbd5c2aa8d55f7d5c.chunk.js",
+        "/static/assets/88e019e30c9fcfcaa5c5.chunk.js",
+        "/static/assets/menu.18aa9876dd2fbcb1f21d.entry.js"
+      ]
+    },
+    "spa": {
+      "css": [
+        "/static/assets/spa.1cbf8e438bb8438c2a7c.entry.css"
+      ],
+      "js": [
+        "/static/assets/6d6cbd5c2aa8d55f7d5c.chunk.js",
+        "/static/assets/4b3836fbb56fc5b5f90e.chunk.js",
+        "/static/assets/fd4c2d15aa094e6f7480.chunk.js",
+        "/static/assets/spa.1cbf8e438bb8438c2a7c.entry.js"
+      ]
+    },
+    "addSlice": {
+      "css": [],
+      "js": [
+        "/static/assets/6d6cbd5c2aa8d55f7d5c.chunk.js",
+        "/static/assets/4b3836fbb56fc5b5f90e.chunk.js",
+        "/static/assets/fd4c2d15aa094e6f7480.chunk.js",
+        "/static/assets/addSlice.b6c4461bcdcf8d9d5f05.entry.js"
+      ]
+    },
+    "explore": {
+      "css": [
+        "/static/assets/explore.d7c3a707e637e66d6c1a.entry.css"
+      ],
+      "js": [
+        "/static/assets/6d6cbd5c2aa8d55f7d5c.chunk.js",
+        "/static/assets/4b3836fbb56fc5b5f90e.chunk.js",
+        "/static/assets/fd4c2d15aa094e6f7480.chunk.js",
+        "/static/assets/explore.d7c3a707e637e66d6c1a.entry.js"
+      ]
+    },
+    "sqllab": {
+      "css": [
+        "/static/assets/sqllab.f76e18027f37a0d3b280.entry.css"
+      ],
+      "js": [
+        "/static/assets/6d6cbd5c2aa8d55f7d5c.chunk.js",
+        "/static/assets/88e019e30c9fcfcaa5c5.chunk.js",
+        "/static/assets/sqllab.f76e18027f37a0d3b280.entry.js"
+      ]
+    },
+    "profile": {
+      "css": [
+        "/static/assets/profile.4e80300ec89bdcbf05d2.entry.css"
+      ],
+      "js": [
+        "/static/assets/6d6cbd5c2aa8d55f7d5c.chunk.js",
+        "/static/assets/88e019e30c9fcfcaa5c5.chunk.js",
+        "/static/assets/profile.4e80300ec89bdcbf05d2.entry.js"
+      ]
+    },
+    "showSavedQuery": {
+      "css": [
+        "/static/assets/showSavedQuery.377e27b970391198d33e.entry.css"
+      ],
+      "js": [
+        "/static/assets/6d6cbd5c2aa8d55f7d5c.chunk.js",
+        "/static/assets/showSavedQuery.377e27b970391198d33e.entry.js"
+      ]
+    }
+  }
+}
