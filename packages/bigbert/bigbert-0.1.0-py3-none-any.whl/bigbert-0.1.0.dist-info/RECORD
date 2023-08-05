@@ -1,0 +1,14 @@
+bigbert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bigbert/bigbert.py,sha256=nWbIUzjZcOZkMg_bNrfdlkBVSnJUiGS5CD3BtDN56Q4,4545
+bigbert/load_model.py,sha256=IbYRFbQ6VKpkPWFxBlb90wwoUN_NHF2AP9qaEieOP3Y,1397
+bigbert/util.py,sha256=bW25kF53BV3fIs04_YGjiATpzVqVc-wFKbqZ9jet4q0,2855
+bigbert/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bigbert/data/frequency_dictionary_en_82_765.txt,sha256=K0hYMyaaFwYjEFSk5RRQKgL_6bNYNcr6JUfMdzgvxCE,1331899
+bigbert/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bigbert/models/bigbert.h5,sha256=2qD4dMIhhO7-sE1nRVAK4CipzOcQRipaKMdGb5eOO8Q,21104
+bigbert/models/bigru.h5,sha256=tJo0PN0dhMySC5Uhms7jv6tkHD2X0z7krOivUB3l0n0,6978904
+bigbert-0.1.0.dist-info/LICENSE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+bigbert-0.1.0.dist-info/METADATA,sha256=pmzxQxF0m5mBn7N3B6E8yur4UfCHEaC3zyDMKksFiGo,3015
+bigbert-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bigbert-0.1.0.dist-info/top_level.txt,sha256=tODbZOZfPji15j3dwyRjfp3AQOb5pqlpjYYKRyxHrsA,8
+bigbert-0.1.0.dist-info/RECORD,,
