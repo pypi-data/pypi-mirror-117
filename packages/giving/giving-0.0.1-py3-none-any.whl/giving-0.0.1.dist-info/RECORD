@@ -1,0 +1,11 @@
+giving/__init__.py,sha256=4JjLCokO-gdqTk22TALbZxVoKrI3e3_cF5w5j6aYDEw,71
+giving/core.py,sha256=iPkdQNsziZWdidAT4E1LrEMWx_c-9Ewy-54PH5wp_Uo,5335
+giving/executors.py,sha256=o3UbvMTw6Pnb6pbGmGGVRZksjVcxZ6pjrHCLDO3NOXA,436
+giving/obs.py,sha256=9oD5dixfIgM0261odvF7NkY9yY_pfb1WLDyGsWyYkYs,10887
+giving/operators.py,sha256=D7Ermw3-YhD3-YncGuGrNc6K0KELGNbg6dL9pjOc26g,12608
+giving/utils.py,sha256=l-B9W7tKWTMV_cAir44LEPGDDQJtXFZm7PCHEkNpQGM,416
+giving/version.py,sha256=CactNZqrHHYTPrkHKccy2WKXmaiUdtTgPqSjFyVXnJk,18
+giving-0.0.1.dist-info/LICENSE,sha256=4tpAFtB0HjDrvf_AKPSPfay1-sTWxlgKWkP3HAmVhRU,1061
+giving-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+giving-0.0.1.dist-info/METADATA,sha256=JwS_p65D6yHQcRyrXKzCAeuEeWSXmTuBPXJ0ZP1GpaU,499
+giving-0.0.1.dist-info/RECORD,,
