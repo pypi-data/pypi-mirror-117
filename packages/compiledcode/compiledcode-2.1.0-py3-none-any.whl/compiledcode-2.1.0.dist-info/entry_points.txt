@@ -1,0 +1,10 @@
+[scancode_scan]
+scancode-codecommentlines = compiledcode.sourcecode:CodeCommentLinesScanner
+scancode-cppincludes = compiledcode.cppincludes:CPPIncludesScanner
+scancode-dwarf = compiledcode.dwarf:DwarfScanner
+scancode-elf = compiledcode.elf:ELFScanner
+scancode-gwt = compiledcode.gwt:GWTScanner
+scancode-javaclass = compiledcode.javaclass:JavaClassScanner
+scancode-lkmclue = compiledcode.lkmclue:LKMClueScanner
+scancode-makedepend = compiledcode.makedepend:MakeDependScanner
+

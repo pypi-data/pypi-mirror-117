@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: compiledcode
+Version: 2.1.0
+Summary: A ScanCode scan plugin to get lkmclue, dwarf, gwt, cpp includes, code/comments lines generated code and elf info.
+Home-page: https://github.com/nexB/scancode-plugins/binary-analysis/scancode-compiledcode
+Author: nexB
+Author-email: info@aboutcode.org
+License: Apache-2.0
+Keywords: open source,scancode,dwarf,lkmclue,elf,cpp includes,gwt
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+License-File: NOTICE
+License-File: apache-2.0.LICENSE
+License-File: README.rst
+Requires-Dist: commoncode
+Requires-Dist: plugincode
+Requires-Dist: typecode
+Requires-Dist: attrs
+Requires-Dist: pyelftools
+
+A ScanCode scan plugin to get lkmclue, dwarf, gwt, cpp includes, code/comments lines generated code and elf info.
+
