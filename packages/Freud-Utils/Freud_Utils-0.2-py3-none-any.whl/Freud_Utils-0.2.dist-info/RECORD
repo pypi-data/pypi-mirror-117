@@ -1,0 +1,10 @@
+freud_utils/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+freud_utils/file_dataset.py,sha256=6oncsQIYij-_khEO_IbobyoHKAByecFYTsN8TcA_5bw,3898
+freud_utils/json.py,sha256=oSL0sMX37xs5keLEY7z6Zi-pI0Pr97bqlni2SiOpJRE,1180
+freud_utils/version.py,sha256=-cHO5oOHPuBCll4Noe1fIVjbMIhK_d1gaJJcPlbSlt4,20
+freud_utils/worker_init.py,sha256=BD-zWDP12EgXQppHWbeYBOhl3c9YvrvEacqThDPNjeo,724
+Freud_Utils-0.2.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+Freud_Utils-0.2.dist-info/METADATA,sha256=-AGnNeVaDL4r_8OIJIj27aoRnIokt8EjQBCUDCZ2Dio,1925
+Freud_Utils-0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Freud_Utils-0.2.dist-info/top_level.txt,sha256=vTn4B1vbzzjIHn45A_2FxKvVAo4kxMqtqz0eTqQ7VWE,12
+Freud_Utils-0.2.dist-info/RECORD,,
