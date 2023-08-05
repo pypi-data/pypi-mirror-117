@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/deployx_server_sdk.egg-info/PKG-INFO
+src/deployx_server_sdk.egg-info/SOURCES.txt
+src/deployx_server_sdk.egg-info/dependency_links.txt
+src/deployx_server_sdk.egg-info/requires.txt
+src/deployx_server_sdk.egg-info/top_level.txt
+src/dxclient/__init__.py
+src/dxclient/client.py
+src/dxclient/config.py
+src/dxclient/store.py
