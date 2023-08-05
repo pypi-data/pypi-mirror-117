@@ -1,0 +1,10 @@
+Jinja2
+SQLAlchemy
+certifi
+keyring
+pika
+python-dotenv
+pyyaml
+requests
+requests_toolbelt
+tabulate
