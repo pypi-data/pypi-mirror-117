@@ -1,0 +1,7 @@
+README.rst
+setup.py
+pyexample_gg.egg-info/PKG-INFO
+pyexample_gg.egg-info/SOURCES.txt
+pyexample_gg.egg-info/dependency_links.txt
+pyexample_gg.egg-info/requires.txt
+pyexample_gg.egg-info/top_level.txt
