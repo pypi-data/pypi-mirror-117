@@ -1,0 +1,15 @@
+MCF/MCF-GUI.py,sha256=OpF6k7FKHzspzWvKjlXGwHWLgC-woncPGntkkHOn-KQ,34509
+MCF/MCF-parallel.py,sha256=WW62-hfclg-GQnHiWwd9o_cSmqx9samGyC6WcznnGho,10847
+MCF/__init__.py,sha256=pMwCDdHEyo02gtH2i2rko2lkYwarjWJAMXcE-GWRGNA,11
+MCF/helpers.py,sha256=QZpk-zOwd34L3Z0ZZ72ykkzEgJll6leZk9z41cy85u0,2430
+MCF/imagetools.py,sha256=3YzhrBmucblPKeBlatIJgnO9xYaM201zC-XSf2a5cJ0,35116
+MCF/mcf.py,sha256=vjIybf0RKCac_krJgUKrhPZL9HhZZPzGjzWTk_w3_JM,6853
+MCF/mcf_gui.py,sha256=hoPPyJnfyc9EK-3l6b-tL05zjzOolHQPFAIzmqcDHbQ,34855
+MCF/mcf_parallel.py,sha256=e9MJx_XZbGOuca7MrNsSHcSd8WAp96BPxMsqqBEjGIw,11674
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MiniContourFinder-1.0.16.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+MiniContourFinder-1.0.16.dist-info/METADATA,sha256=1h_Fs4g2uJJG749KwYOVj_hbPCZCAxjpSXo66wurAR8,1180
+MiniContourFinder-1.0.16.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+MiniContourFinder-1.0.16.dist-info/entry_points.txt,sha256=PdBQz6nYbr7JBPSiBqCg1mU2kb2gZtz3CXoKkU2rBvs,102
+MiniContourFinder-1.0.16.dist-info/top_level.txt,sha256=O65s2Q08JThh-wWAMgKUW5KOAI6brC17Vxyq7Y4_NZE,10
+MiniContourFinder-1.0.16.dist-info/RECORD,,
