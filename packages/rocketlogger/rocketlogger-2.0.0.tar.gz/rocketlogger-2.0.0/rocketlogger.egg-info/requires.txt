@@ -1,0 +1,16 @@
+numpy
+
+[dataframe]
+pandas
+
+[dev]
+black
+sphinx
+
+[plot]
+matplotlib
+
+[test]
+coverage
+nose
+tox
