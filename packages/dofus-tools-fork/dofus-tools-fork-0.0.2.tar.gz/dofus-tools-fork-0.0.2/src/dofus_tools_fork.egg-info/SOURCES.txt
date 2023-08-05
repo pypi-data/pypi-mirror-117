@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dofus_tools_fork.egg-info/PKG-INFO
+src/dofus_tools_fork.egg-info/SOURCES.txt
+src/dofus_tools_fork.egg-info/dependency_links.txt
+src/dofus_tools_fork.egg-info/top_level.txt
+src/pydofus/__init__.py
+src/pydofus/_binarystream.py
+src/pydofus/d2p.py
+src/pydofus/swl.py
