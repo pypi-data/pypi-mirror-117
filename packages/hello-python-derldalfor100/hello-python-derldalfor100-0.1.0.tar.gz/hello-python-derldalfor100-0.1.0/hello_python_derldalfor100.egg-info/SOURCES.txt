@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+hello_python/__init__.py
+hello_python_derldalfor100.egg-info/PKG-INFO
+hello_python_derldalfor100.egg-info/SOURCES.txt
+hello_python_derldalfor100.egg-info/dependency_links.txt
+hello_python_derldalfor100.egg-info/entry_points.txt
+hello_python_derldalfor100.egg-info/top_level.txt
