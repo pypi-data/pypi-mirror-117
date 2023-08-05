@@ -1,0 +1,6 @@
+click>=8.0.1
+rdflib>=6.0.0
+sqlite-utils>=3.12
+
+[test]
+pytest

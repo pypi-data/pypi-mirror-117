@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+rdf_to_sqlite/__init__.py
+rdf_to_sqlite/cli.py
+rdf_to_sqlite.egg-info/PKG-INFO
+rdf_to_sqlite.egg-info/SOURCES.txt
+rdf_to_sqlite.egg-info/dependency_links.txt
+rdf_to_sqlite.egg-info/entry_points.txt
+rdf_to_sqlite.egg-info/requires.txt
+rdf_to_sqlite.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
