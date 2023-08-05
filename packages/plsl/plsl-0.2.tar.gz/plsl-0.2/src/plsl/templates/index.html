@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='icon.png')}}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PLSL - Server Logging</title>
+
+    <style type="text/css">
+.logo { width: 740px; margin: 40px auto; }
+.body { font-family: "helvetica"; width: 740px; margin: 40px auto; text-align:center;}
+img.c1 { position: absolute; top: 0; right: 0; border: 0; }
+span.c2 { color: #8F5902 }
+span.c9 { color: #ff3838 }
+a { color: #0659BC; border-bottom: 1px dotted #FFFFFF; text-decoration: none; }
+a:hover { color: #0659BC; border-bottom: 1px solid #FFFFFF; }
+
+    </style>
+</head>
+<body>
+<div class="logo" align="center"><a><img src="{{url_for('static', filename='logo.png')}}" alt="logo"></a></div>
+<div class="body">
+
+    {% for key, values in database %}
+    {% for value in values %}
+    <p><code><a style="color: #8F5902;">{{key}}</a> <a style="color: #ff3838;">{{value}}</a></code></p>
+    {% endfor %}
+    {% endfor %}
+
+</div>
+</body>
+</html>
+
+

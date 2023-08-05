@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/plsl/__init__.py
+src/plsl/plsl.py
+src/plsl.egg-info/PKG-INFO
+src/plsl.egg-info/SOURCES.txt
+src/plsl.egg-info/dependency_links.txt
+src/plsl.egg-info/requires.txt
+src/plsl.egg-info/top_level.txt
+src/plsl/static/icon.png
+src/plsl/static/logo.png
+src/plsl/templates/index.html
