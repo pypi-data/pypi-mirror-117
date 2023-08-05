@@ -1,0 +1,6 @@
+shapely
+pyclipper
+numpy
+opencv-python
+pillow
+wget
