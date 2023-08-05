@@ -1,0 +1,15 @@
+spectrafit/__init__.py,sha256=SjWbQ0znXzN-_Z-VFJxTzze9RLD5jWhAyVjvuR2sups,81
+spectrafit/models.py,sha256=Zlo90p_OwW1ps4zkW32lu8tX_Rakorm64tlYIIBRi6I,22237
+spectrafit/plotting.py,sha256=rcHIsGhXgfc1sFpXgVYGLy8C-5Ug10SKEAO3f3vFP8U,2363
+spectrafit/report.py,sha256=jVcUclzjExYGoLxvElsdKerlsan8EZVnQgbQmlmCyko,5765
+spectrafit/spectrafit.py,sha256=g8OJiJKZhSnWeh2KIw2MxiMhS4ItsK8eQgQoEtPUUmg,19826
+spectrafit/test/__init__.py,sha256=pBAczYjZPfvu3HkmWfZtAx9ao61u6wsqNxyUCZweAbk,28
+spectrafit/test/fitting_input.json,sha256=F1iXb0vgNLtONa28OtGsi0CwSLeFCj8LzSkn7WigH8I,2835
+spectrafit/test/fitting_input.toml,sha256=Dfh7djeQHYndcRgnJo5O1UG4G3bT3O8bK8wJ_rov4_k,1654
+spectrafit/test/fitting_input.yaml,sha256=ut4asftV7Kuho0mq4lM1ifNgaRseRmbthkxz5hylQEg,2009
+spectrafit/test/rixs_fecl4.txt,sha256=rqn-tHxbp0U3wd_cSYiEYf4N5KHp8cuVjBshJkg6ZEs,30647
+spectrafit-0.2.4.dist-info/entry_points.txt,sha256=uOutTN4hgQ0t_LB_MH5HIZLtQBkWe4hZjDWCcozMW24,72
+spectrafit-0.2.4.dist-info/LICENSE,sha256=HhTqhrwoJ7npu0MIA2eyYHkyWBie4phdAvTdalyPSYY,1519
+spectrafit-0.2.4.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+spectrafit-0.2.4.dist-info/METADATA,sha256=LvFVecx21NRthqP6JyoS3zFTTmWpWRk-WsSP0sXPs64,5765
+spectrafit-0.2.4.dist-info/RECORD,,
