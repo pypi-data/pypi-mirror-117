@@ -1,0 +1,8 @@
+fastapi_logging/__init__.py,sha256=pKSiHgnmT9O6zhYnWYLM0WGitryXCZSjxbALe7wB-Os,260
+fastapi_logging/logging/__init__.py,sha256=PhaJgsSHzwFguBNp8KsXBnjCBjDe7rywqha0gvMDjwk,77
+fastapi_logging/logging/logging.py,sha256=OAbe1ptfBh2vT9M4QEyH5vruAk66xn4wsqWoNCUPBMg,4062
+fastapi_logging-0.0.1.dist-info/LICENSE,sha256=N4vXVykw0iRbDOEA4wPmYo-tpsh_akDdzn6zOWGvVF0,585
+fastapi_logging-0.0.1.dist-info/METADATA,sha256=-CBAJ1sjGSF8mVvgtmDOg223Fc9iFxRnFMWemedq4B8,2298
+fastapi_logging-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fastapi_logging-0.0.1.dist-info/top_level.txt,sha256=RxDo5q_Ohx_iDKYhbH8vzT5lO_KEmvJHdf0CeDtoEsQ,16
+fastapi_logging-0.0.1.dist-info/RECORD,,
