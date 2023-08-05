@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ray-lightning
+Version: 0.1.1
+Summary: Ray distributed plugins for Pytorch Lightning.
+Home-page: https://github.com/ray-project/ray_lightning_accelerators
+Author: Ray Team
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pytorch-lightning
+Requires-Dist: ray
+
+Custom Pytorch Lightning distributed plugins built on top of distributed computing framework Ray.
+
+
