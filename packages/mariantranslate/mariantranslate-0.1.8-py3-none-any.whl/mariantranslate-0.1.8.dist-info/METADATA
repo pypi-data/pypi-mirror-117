@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: mariantranslate
+Version: 0.1.8
+Summary: Simple translator using Marian NMT.
+Home-page: https://github.com/galuhsahid/mariantranslate
+Author: Galuh Sahid
+Author-email: galuh.sahid@protonmail.com
+License: MIT
+Keywords: translation,translator,translate,language,marian,nmt
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: transformers (>=4.9.2)
+Requires-Dist: sentencepiece (>=0.1.96)
+Requires-Dist: torch (>=1.9.0)
+Provides-Extra: dev
+Requires-Dist: black (>=21.4b0) ; extra == 'dev'
+Requires-Dist: isort (>=5.5.4) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.4) ; extra == 'dev'
+
+# mariantranslate
+Simple translator using Marian NMT.
+
+## installation
+```bash
+$ pip install mariantranslate
+```
+
+or install from source:
+
+```
+$ git clone https://github.com/galuhsahid/mariantranslate
+$ cd mariantranslate
+$ make install_src
+```
+
+## usage
+View the list of available languages [here](https://huggingface.co/Helsinki-NLP).
+
+```python
+from mariantranslate import Translator
+
+lang_from = "en" # source language
+lang_to = "id" # target language
+
+en_id_translator = Translator(lang_from, lang_to)
+en_id_translator.translate("Due to the limited vegetation cover of the Faroe Islands, it is relatively easy to follow the history of geology.")
+
+>>> Karena tumbuhan terbatas menutupi Kepulauan Faroe, relatif mudah untuk mengikuti sejarah geologi.
+```
+
