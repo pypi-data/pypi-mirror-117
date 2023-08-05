@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyshmht3
+Version: 0.1.4
+Summary: provide sharing memory based hash table for python
+Home-page: http://github.com/felix021/pyshmht
+Author: muyakongali
+Author-email: muyakongali@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: python extension sharing memory based hash table
+Platform: UNKNOWN
