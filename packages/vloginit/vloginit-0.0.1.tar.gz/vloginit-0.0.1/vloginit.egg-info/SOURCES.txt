@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+vloginit/__init__.py
+vloginit/__main__.py
+vloginit/main.py
+vloginit/vlog.py
+vloginit.egg-info/PKG-INFO
+vloginit.egg-info/SOURCES.txt
+vloginit.egg-info/dependency_links.txt
+vloginit.egg-info/entry_points.txt
+vloginit.egg-info/not-zip-safe
+vloginit.egg-info/top_level.txt
