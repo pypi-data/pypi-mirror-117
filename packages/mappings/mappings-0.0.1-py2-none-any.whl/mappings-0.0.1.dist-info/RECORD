@@ -1,0 +1,17 @@
+mappings/DatasetOrganisation.py,sha256=qxBqn3ZCAJJ3d0ki6a7huUPlsE4U2oGIdtEWb-DB8tY,3394
+mappings/DatasetOrganisationNormalise.py,sha256=mzEllp8-iZSyNERDG4pwGSdduapSjBn3RclLjzS4BcQ,4125
+mappings/Merger.py,sha256=GgtWQEui8xvxNm9sef37DiWf_kGSHJhDgVrpk0-1n_o,3292
+mappings/NetworkasDiGraph.py,sha256=0EUrsagBEzHJIAPbx-kUTfxmycHLfTtbsRwiQsR8UFc,1468
+mappings/RandomTrail.py,sha256=8W7mAfU5Vca8dEUxvne5ZTwVay8g6g6U-otXTTsIftA,4097
+mappings/TrailsAnalysis.py,sha256=qClfxl9cb2l4L0NcsEofgc2PgOd7_bmeGJzvcHo-LX0,5569
+mappings/__main__.py,sha256=qN2tfqWEr1yVN_NtSKmMhHOe_CRfpVldHQ9mqs9g4F4,1115
+mappings/getFoldChangeCDF.py,sha256=cigSakzUTRjXXtzCMVtgY2wushBgynaZuSv-xF6kr8E,506
+mappings/data/input/NetworkComplete.csv,sha256=aPGo0kU3YLViqxAmfm9fOCtLf4qjQ4C0frVKvj2nrZQ,307815
+mappings/data/input/sampleData_PFalciparumTrophozoiteStage.csv,sha256=dic-Xo83621_ZmQTTAMn5xUqcfpbl7nCCazQoabgFQw,20617
+mappings-0.0.1.dist-info/DESCRIPTION.rst,sha256=17Q2eFS6Nr2lpJClD-zPkApJ2FCDHdWHxOxbwxshX2o,2020
+mappings-0.0.1.dist-info/METADATA,sha256=RmjvWD05It6xMP31xQR1WEVHVrT93sG-JRzxWbYfDCw,3091
+mappings-0.0.1.dist-info/RECORD,,
+mappings-0.0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+mappings-0.0.1.dist-info/entry_points.txt,sha256=_YGo-UsWBachclSORsSuJP3mWfv5_mfaHz-Kb40798c,53
+mappings-0.0.1.dist-info/metadata.json,sha256=MZcCQr_bSIeIQWZ2wCpnmQUDg909MTU1qNQd0ekkrmg,1337
+mappings-0.0.1.dist-info/top_level.txt,sha256=ejFYLXeGh1OExK0-hHj-6cncno6tNLy-b5YcRC7cps0,9
