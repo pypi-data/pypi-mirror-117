@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+ScadParser.egg-info/PKG-INFO
+ScadParser.egg-info/SOURCES.txt
+ScadParser.egg-info/dependency_links.txt
+ScadParser.egg-info/entry_points.txt
+ScadParser.egg-info/top_level.txt
+scadparser/ScadModel.py
+scadparser/ScadParser.py
+scadparser/__init__.py
+scadparser/__main__.py
+scadparser/cli.py
