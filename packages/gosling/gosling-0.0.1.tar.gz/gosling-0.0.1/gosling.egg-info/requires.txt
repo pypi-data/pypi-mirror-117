@@ -1,0 +1,4 @@
+jsonschema
+jinja2
+numpy
+pandas>=0.18
