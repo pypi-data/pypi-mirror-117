@@ -1,0 +1,10 @@
+colorama
+docker
+humanize
+pyyaml
+
+[dev]
+flake8
+pytest
+pytest-mock
+twine
