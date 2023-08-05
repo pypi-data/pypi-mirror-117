@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: galleryman
+Version: 1.0.0
+Summary: A Tool To Manage Your Memories!
+Home-page: https://github.com/0xsapphir3/galleryman
+Author: 0xsapphir3
+Author-email: 0xsapphir3@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pyqt5
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: configparser
+Requires-Dist: pathlib
+Requires-Dist: inquirer
+Requires-Dist: urllib3
+
+UNKNOWN
+
