@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/convolve/__init__.py
+src/convolve_olivernormand.egg-info/PKG-INFO
+src/convolve_olivernormand.egg-info/SOURCES.txt
+src/convolve_olivernormand.egg-info/dependency_links.txt
+src/convolve_olivernormand.egg-info/top_level.txt
