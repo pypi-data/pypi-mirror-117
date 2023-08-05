@@ -1,0 +1,12 @@
+obfuscation_detection/__init__.py,sha256=TgPo3wLzkU_I2BmNMWlLOPtK2pJJ7xLceNSfFwvZk2w,36
+obfuscation_detection/api.py,sha256=G0Sjw-moJj_sXkbvTAQcXXm-vnybjiAnaN8XexvYVp8,3623
+obfuscation_detection/models.py,sha256=vSdnjpaoqitks65kBx1p999upZNVucLwCBx7hhZo3f8,3802
+obfuscation_detection/files/best-resnet-all.pth,sha256=1ml8mZ6MdtzBSaWc-ZhIxQ3bY8sCC3a94nqedetgrc4,18091724
+obfuscation_detection/files/best-resnet-linux.pth,sha256=1BcJeJkbkHWGa9t7cTHzHHHFGitJYfbfA4D87MnXyNI,18091724
+obfuscation_detection/files/best-resnet-windows.pth,sha256=-KmEWIl8H4SpRFgs5KoSCmSv7l2YpCzFgzG2xLNd3QI,18091724
+obfuscation_detection/files/char_dict.pth,sha256=46iWdm7dxs1JkazthZ0peFm6Yeyn99-LQyzOUCIACoI,1135
+obfuscation_detection-0.7.2.dist-info/LICENSE,sha256=ESU2NUTtypVC0VtaZUZYtai4YBoaIeu6QMd1OYPGPQA,11335
+obfuscation_detection-0.7.2.dist-info/METADATA,sha256=5blhooGiCYAEdnDw3LqjWyiyrDeEU7kkAh4dkJcn4do,10485
+obfuscation_detection-0.7.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+obfuscation_detection-0.7.2.dist-info/top_level.txt,sha256=2CZzFsWW102vAZfSDZcpnV8iG16_oiB32buemtDzICE,22
+obfuscation_detection-0.7.2.dist-info/RECORD,,
