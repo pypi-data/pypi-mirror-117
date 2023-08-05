@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pexels-api-py
+Version: 0.0.1
+Summary: Python API package for Pexels.com V1.
+Home-page: https://github.com/meetsohail/pexels-api-py
+Author: Sohail Ahmed
+Author-email: meetsohail360@gmail.com
+License: UNKNOWN
+Keywords: pexels,images,photos,copyright free
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Pexels.com V1 API
+
+### Simple package to fetch photos and videos form pexels.com api.
+
+
