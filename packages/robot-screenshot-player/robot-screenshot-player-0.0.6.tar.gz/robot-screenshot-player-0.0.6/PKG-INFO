@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: robot-screenshot-player
+Version: 0.0.6
+Summary: utility for playing all the screentshot captured during robot execution
+Home-page: https://github.com/Pradeepkumar1qa/Robot-Screenshot-Player
+Author: pradeep kumar
+Author-email: pradeepkmr838@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Pradeepkumar1qa/Robot-Screenshot-Player/issues
+Description: utility for playing all the screentshot captured during robot execution
+Keywords: robot-framework,video-player,automation,screenshot-player
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
