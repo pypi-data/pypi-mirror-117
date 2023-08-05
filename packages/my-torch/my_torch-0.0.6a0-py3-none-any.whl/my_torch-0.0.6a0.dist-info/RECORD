@@ -1,0 +1,13 @@
+mytorch/__init__.py,sha256=apopAEBQtPr4bS-YFsbUMT2L0NAq0UOmZHBGEWkyV7M,100
+mytorch/dataiters.py,sha256=oVuvR0l3YqnnAkjfhYqO_nqSdgAOd-6gcAyK2Vg66Sk,6624
+mytorch/loops.py,sha256=HHThdse_fwBGNfk_XR65_fKuw33z0kl245-eUnoOXL0,12431
+mytorch/lriters.py,sha256=PEyPPy3y-B8hKqHV5y10ncCaM7-9mDyyKxc79ZDGNrI,6422
+mytorch/metrics.py,sha256=HtOWSMC_GA36KJuvjSo0GRBVyQiLseC78bxb7TYJyxA,3568
+mytorch/nlutils.py,sha256=qGXBcsFNNRcI3QB8QIv_RqKIiFEfN1Hyp4DC1FNiibU,2054
+mytorch/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mytorch/utils/goodies.py,sha256=cIJ0n4YtHw3aCdrgwFSkSGz8dL8Mz7dQJ7tPXmVjjZs,14972
+my_torch-0.0.6a0.dist-info/LICENSE,sha256=iNm062BXnBkew5HKBMFhMFctfu3EqG2qWL8oxuFMm80,1210
+my_torch-0.0.6a0.dist-info/METADATA,sha256=zLpP6WEGp2DVfTVRwuqcU3phcAPK8voWNid0w2oJR7U,6072
+my_torch-0.0.6a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+my_torch-0.0.6a0.dist-info/top_level.txt,sha256=keJUGMXx93bQqotKxq9jxVETCmR1rHcVQBVgaUUsl2Q,8
+my_torch-0.0.6a0.dist-info/RECORD,,
