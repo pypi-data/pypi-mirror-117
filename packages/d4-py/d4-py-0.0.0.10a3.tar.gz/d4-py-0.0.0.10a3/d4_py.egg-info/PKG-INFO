@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: d4-py
+Version: 0.0.0.10a3
+Summary: d4.py pre-alpha v0.0.0.10a
+Home-page: https://github.com/namuKR/d4.py
+Author: ast.08
+Author-email: <ast.08e@gmail.com>
+License: UNKNOWN
+Description: d4.py
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
