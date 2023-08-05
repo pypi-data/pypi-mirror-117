@@ -1,0 +1,1 @@
+Wrapper for requests package that includes base settings such as base url

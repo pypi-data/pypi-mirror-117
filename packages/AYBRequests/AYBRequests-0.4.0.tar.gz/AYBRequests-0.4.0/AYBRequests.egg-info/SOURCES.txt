@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+AYBRequests.egg-info/PKG-INFO
+AYBRequests.egg-info/SOURCES.txt
+AYBRequests.egg-info/dependency_links.txt
+AYBRequests.egg-info/requires.txt
+AYBRequests.egg-info/top_level.txt
+aybrequests/__init__.py
+aybrequests/request.py
+aybrequests/session.py
+aybrequests/url.py
