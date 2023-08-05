@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: oarepo-s3-cli
+Version: 0.1.1
+Summary: OArepo S3 upload client
+Home-page: https://github.com/oarepo/oarepo_s3_cli
+Author: Tomas Hlava
+Author-email: hlava@cesnet.cz
+License: MIT
+Keywords: invenio oarepo s3 upload
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: click
+Provides-Extra: all
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: responses ; extra == 'all'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: responses ; extra == 'tests'
+
+# oarepo-s3-cli
+
+..
+    Copyright (C) 2021 CESNET.
+
+    OARepo-S3-CLI is free software; you can redistribute it and/or
+    modify it under the terms of the MIT License; see LICENSE file for more
+    details.
+
+Changes
+=======
+
+Version 0.1.0 (released TBD)
+ - Initial public release.
+
+Version 0.1.1
+ - noninteractive mode added, resume call moved
+
+
+
