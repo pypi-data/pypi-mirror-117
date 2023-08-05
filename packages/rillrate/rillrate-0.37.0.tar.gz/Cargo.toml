@@ -1,0 +1,25 @@
+[package]
+name = "rillrate"
+version = "0.37.0"
+authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/rate-technology/rillrate-py"
+homepage = "https://github.com/rate-technology/rillrate-py"
+documentation = "https://docs.rs/rillrate-py/"
+license = "Apache-2.0"
+readme = "README.md"
+description = "rillrate bindings for python"
+categories = ["development-tools::debugging"]
+keywords = ["logging"]
+
+[lib]
+name = "rillrate"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.14.2"
+rill-protocol = "0.37.0"
+rillrate = "0.37.0"
+
+[features]
+default = ["pyo3/extension-module"]

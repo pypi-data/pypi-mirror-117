@@ -1,0 +1,11 @@
+cargo build $1
+cp target/debug/librillrate.so rillrate/rillrate.so
+
+exit
+
+cargo build $1
+pushd target/debug
+mv librillrate.so rillrate.so
+mv librillrate.dylib rillrate.so
+ls
+popd
