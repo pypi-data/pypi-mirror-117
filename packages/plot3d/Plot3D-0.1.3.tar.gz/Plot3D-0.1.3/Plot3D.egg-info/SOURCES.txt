@@ -1,0 +1,16 @@
+setup.py
+Plot3D.egg-info/PKG-INFO
+Plot3D.egg-info/SOURCES.txt
+Plot3D.egg-info/dependency_links.txt
+Plot3D.egg-info/not-zip-safe
+Plot3D.egg-info/requires.txt
+Plot3D.egg-info/top_level.txt
+plot3d/__init__.py
+plot3d/block.py
+plot3d/connectivity.py
+plot3d/differencing.py
+plot3d/face.py
+plot3d/periodicity.py
+plot3d/point_match.py
+plot3d/read.py
+plot3d/write.py
