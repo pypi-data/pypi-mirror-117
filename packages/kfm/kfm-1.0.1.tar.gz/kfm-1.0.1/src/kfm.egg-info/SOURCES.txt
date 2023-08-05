@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/keyence_file_management/__init__.py
+src/keyence_file_management/well_mapper.py
+src/kfm.egg-info/PKG-INFO
+src/kfm.egg-info/SOURCES.txt
+src/kfm.egg-info/dependency_links.txt
+src/kfm.egg-info/entry_points.txt
+src/kfm.egg-info/requires.txt
+src/kfm.egg-info/top_level.txt
+src/kfm.egg-info/zip-safe
