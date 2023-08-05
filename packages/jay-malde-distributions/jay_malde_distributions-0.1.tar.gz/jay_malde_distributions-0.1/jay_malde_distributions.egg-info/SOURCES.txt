@@ -1,0 +1,10 @@
+setup.py
+jay_malde_distributions/Binomialdistribution.py
+jay_malde_distributions/Gaussiandistribution.py
+jay_malde_distributions/Generaldistribution.py
+jay_malde_distributions/__init__.py
+jay_malde_distributions.egg-info/PKG-INFO
+jay_malde_distributions.egg-info/SOURCES.txt
+jay_malde_distributions.egg-info/dependency_links.txt
+jay_malde_distributions.egg-info/not-zip-safe
+jay_malde_distributions.egg-info/top_level.txt
