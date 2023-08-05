@@ -1,0 +1,13 @@
+GeoAPI/Geocoding.py,sha256=aPEXa39a20CYLq_sQxxaqqZIyQUxJLs6c0tfFpMTthc,3397
+GeoAPI/String_Match.py,sha256=c6Au-Ani_vKwNT4yuuPwWuamcOEVBc0jLme2DJRlaz4,4311
+GeoAPI/__init__.py,sha256=3F-06ppv0yPkAhCl8OS6akq_Cif3JmGhPmwUApUJUPU,238
+GeoAPI/open_addresses.py,sha256=1lVAqaELomPbM_-xmK19M7VgFFA-HTyAbfe6zKAzLtY,3031
+GeoAPI/point_validation.py,sha256=Y6DkDEMI30irQ0mDkhMRNDjDzg7U79WK6SG1DK6EB94,10625
+GeoAPI/preprocessing.py,sha256=lwdpPzd9-f57FXK46uEli0IrQWPoeBPrXGSDEqjS-kE,906
+GeoAPI/visualization.py,sha256=ZJs3kTI90sLw7O23sW9m2sp8PxaT8QI83McFPhAucr0,15099
+geoapidata-0.0.5.dist-info/AUTHORS,sha256=LjQ2hzBQPKe16hoHdOor3fNzEK5ZaJTfbYwMAxXgtZk,29
+geoapidata-0.0.5.dist-info/LICENSE,sha256=VWxZZl35Xcsh-fRkq4waaTajxo-l6I3PVlqP0Xr-pRI,75
+geoapidata-0.0.5.dist-info/METADATA,sha256=X1repogsJX1uLgLz_DA9Jb9wqhzczn7uqE3gzhc7AaY,308
+geoapidata-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+geoapidata-0.0.5.dist-info/top_level.txt,sha256=QzAJtr-_agdlu57wjzi4Cnx85s4XziZdeRDUWl63CCE,7
+geoapidata-0.0.5.dist-info/RECORD,,
