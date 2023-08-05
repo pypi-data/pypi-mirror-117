@@ -1,0 +1,8 @@
+numpy
+
+[docs]
+sphinx==3.5.4
+pydata-sphinx-theme==0.6.3
+
+[tests]
+pytest
