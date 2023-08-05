@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/unitpy/__init__.py
+src/unitpy/unit.py
+src/unitpy.egg-info/PKG-INFO
+src/unitpy.egg-info/SOURCES.txt
+src/unitpy.egg-info/dependency_links.txt
+src/unitpy.egg-info/top_level.txt
