@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pypals/Emotions.py
+pypals/Program.py
+pypals/PyPal.py
+pypals/__init__.py
+pypals/__main__.py
+pypals/_meta.py
+pypals.egg-info/PKG-INFO
+pypals.egg-info/SOURCES.txt
+pypals.egg-info/dependency_links.txt
+pypals.egg-info/requires.txt
+pypals.egg-info/top_level.txt
