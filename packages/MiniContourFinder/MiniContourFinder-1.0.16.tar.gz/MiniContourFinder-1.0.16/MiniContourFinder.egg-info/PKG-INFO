@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: MiniContourFinder
+Version: 1.0.16
+Summary: Lightweight image segmentation software for biological images
+Home-page: https://github.com/isgilman/MiniContourFinder
+Author: Ian S Gilman
+Author-email: ian.gilman@yale.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MiniContourFinder
+### Lightweight image segmentation software for biological images
+Full documentation can be found on [Read the Docs](https://minicontourfinder.readthedocs.io/en/latest/).
+
