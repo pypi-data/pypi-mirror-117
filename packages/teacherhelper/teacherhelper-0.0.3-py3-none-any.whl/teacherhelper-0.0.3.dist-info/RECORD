@@ -1,0 +1,17 @@
+teacherhelper/__init__.py,sha256=GiIXC-KJjQzd25x4EGv-jy5BOzeC0oJ4AznjjARvYks,312
+teacherhelper/__main__.py,sha256=pNEv1r_7fq9FXXOlsufnBS6WxQ2O7KiTE4kc_7rTzwI,1190
+teacherhelper/email_.py,sha256=CIB9HzUhrMJ6EILRXuxNE6C-hawZ9ghslEI4FVfnxlI,4161
+teacherhelper/entities.py,sha256=7p1g4Qu9xpKXpWSjszFyHbsP46Hqw-3-6K7-vvJRcYE,4845
+teacherhelper/helper.py,sha256=rJYpp9e_TpT-uAnXOdHW_Q_3mU-TG37bXJHAsJfGojA,7584
+teacherhelper/oncourse_mixin.py,sha256=XnoYyXt2m1NbwvyEZd48c7DhPiIx99lfZkVmrgVhsm8,6305
+teacherhelper/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teacherhelper/tests/make_mocks.py,sha256=uBeB-j-mBPSTDnUnC4z7weOc-9QpQ5kuTluro5jquyo,3164
+teacherhelper/tests/test_make_mocks.py,sha256=r4RCRislmVBM__ROKr9uWtRZ-ORTkacDkedbBZ_Z3bU,2602
+teacherhelper/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teacherhelper/tools/csv_parser.py,sha256=Nu4nZEkFOQeH5Vjp1jF8Cdgp0SgWAIEuexIHiDPxcSQ,2858
+teacherhelper/tools/docx_utils.py,sha256=L1WXPeAgII6GCiUHdv3W_d4wxLVThWiGJsQNi2shHBA,1988
+teacherhelper-0.0.3.dist-info/LICENSE,sha256=kL70FqYDK6mLsgWtCuXLFVh9g6Wipr6xXMsBd4Mq8FQ,1068
+teacherhelper-0.0.3.dist-info/METADATA,sha256=IPVHpmS_mZsOmdJvNC4HQqiF4-tlAwuwXAGiHPZRP-I,3722
+teacherhelper-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+teacherhelper-0.0.3.dist-info/top_level.txt,sha256=dxTuIknhaTCx8UsY0R7HyNhV9znvxUDNqlSlR_hC7Vw,14
+teacherhelper-0.0.3.dist-info/RECORD,,
