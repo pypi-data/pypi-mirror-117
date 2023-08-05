@@ -1,0 +1,5 @@
+pyobjc-core~=7.3
+pyobjc-framework-Cocoa~=7.3
+
+[dev]
+pytest>=5.2
