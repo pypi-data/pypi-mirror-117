@@ -1,0 +1,5 @@
+django<3.3,>=3.2
+djangorestframework>=3.11.0
+djangorestframework-simplejwt>=4.6.0
+mongoengine>=0.20.0
+django-mongoengine==0.4.6
