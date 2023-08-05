@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dist/popcorngl.egg-info/PKG-INFO
+dist/popcorngl.egg-info/SOURCES.txt
+dist/popcorngl.egg-info/dependency_links.txt
+dist/popcorngl.egg-info/top_level.txt
