@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+createsuperuser/__init__.py
+createsuperuser/apps.py
+createsuperuser/models.py
+createsuperuser/signals.py
+createsuperuser/migrations/0001_initial.py
+createsuperuser/migrations/__init__.py
+django_createsuperuser_signal.egg-info/PKG-INFO
+django_createsuperuser_signal.egg-info/SOURCES.txt
+django_createsuperuser_signal.egg-info/dependency_links.txt
+django_createsuperuser_signal.egg-info/requires.txt
+django_createsuperuser_signal.egg-info/top_level.txt
