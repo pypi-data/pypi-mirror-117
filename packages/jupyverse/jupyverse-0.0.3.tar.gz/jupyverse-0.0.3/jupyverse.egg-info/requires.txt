@@ -1,0 +1,15 @@
+fps
+fps-auth
+fps-contents
+fps-kernels
+fps-terminals
+fps-nbconvert
+fps-yjs
+fps-jupyterlab
+
+[test]
+flake8
+black
+mypy
+pytest
+requests
