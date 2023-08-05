@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+tracardi_key_counter/plugin.py
+tracardi_key_counter.egg-info/PKG-INFO
+tracardi_key_counter.egg-info/SOURCES.txt
+tracardi_key_counter.egg-info/dependency_links.txt
+tracardi_key_counter.egg-info/requires.txt
+tracardi_key_counter.egg-info/top_level.txt
+tracardi_key_counter/service/key_counter.py
+tracardi_key_counter/service/__pycache__/key_counter.cpython-38.pyc
