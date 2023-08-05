@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: v6jail
+Version: 1.3
+Summary: FreeBSD IPv6 Jail Management Utility
+Home-page: https://github.com/paulc/v6jail
+Author: paulc
+Author-email: UNKNOWN
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Programming Language :: Python :: 3
