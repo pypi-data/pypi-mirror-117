@@ -1,0 +1,15 @@
+cryptography
+requests
+threaded
+python-dotenv
+redis
+docker
+pandas
+python-dotenv
+fhirpy
+pika
+loguru
+pytest
+httpx
+pendulum
+GitPython
