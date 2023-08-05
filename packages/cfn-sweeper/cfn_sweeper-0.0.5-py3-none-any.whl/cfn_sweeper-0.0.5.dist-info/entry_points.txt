@@ -1,0 +1,3 @@
+[console_scripts]
+cfn_sweeper = cfn_sweeper.main:main
+
