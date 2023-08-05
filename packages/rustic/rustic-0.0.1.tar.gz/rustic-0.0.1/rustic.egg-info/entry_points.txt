@@ -1,0 +1,3 @@
+[console_scripts]
+rustic = rustic.__main__:main
+

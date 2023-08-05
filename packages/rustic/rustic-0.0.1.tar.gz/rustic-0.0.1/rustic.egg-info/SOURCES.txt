@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.cfg
+setup.py
+rustic/__init__.py
+rustic/__main__.py
+rustic.egg-info/PKG-INFO
+rustic.egg-info/SOURCES.txt
+rustic.egg-info/dependency_links.txt
+rustic.egg-info/entry_points.txt
+rustic.egg-info/not-zip-safe
+rustic.egg-info/top_level.txt
+tests/__init__.py
