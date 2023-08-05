@@ -1,0 +1,10 @@
+parkinglot/__init__.py,sha256=fCZ6__fyFJDn4b-rA2HPnQLffxhQTNPb596sxvBumXo,26
+parkinglot/config.py,sha256=8hq4d79-8LtbzzGMZa1MgiqoR6iU4rfKIwpjvRdYdLc,29
+parkinglot/db.py,sha256=VS7U_4izSDYg88x6i6kfgVKFYTfMjXdkFeT8IbyZzs0,4865
+parkinglot/ocr_validator.py,sha256=J4VCMwmnnvQE5PgBvwRRqrm6nZewSwR8_Fd5pobMtUc,2708
+parkinglot/parkinglot_interface.py,sha256=oWmYPVF5C1HsYM73NEPoGOotZmsdVk6Aq2bEUf0vGFE,595
+parkinglot/utils.py,sha256=QNBkSYdRipLU3U9q8TP468BR74mGQI7uGFbe7WwemvM,375
+parkinglot-0.0.10.dist-info/METADATA,sha256=ElyPNMrwh0siPEH5wGcKBW_5p0pGbZFwIuDlOAmf6_4,756
+parkinglot-0.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+parkinglot-0.0.10.dist-info/top_level.txt,sha256=7lskNWmDewMo4lFDqfC2tzPvwSmPPmb2A37YfE0v7co,11
+parkinglot-0.0.10.dist-info/RECORD,,
