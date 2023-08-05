@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: poetry-exec-plugin
+Version: 0.1.0
+Summary: A plugin for poetry that allows you to execute scripts defined in your pyproject.toml, just like you can in npm or pipenv.
+License: MIT
+Author: keattang
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: poetry (>=1.2.0.a2,<2.0.0)
+Requires-Dist: simple-chalk (>=0.1.0,<0.2.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
