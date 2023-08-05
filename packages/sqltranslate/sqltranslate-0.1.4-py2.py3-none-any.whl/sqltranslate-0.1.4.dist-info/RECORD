@@ -1,0 +1,12 @@
+sqltranslate/DatabaseInfo.py,sha256=laRMEtSauX4G2G_pGV24hXoJRlN3LwzFXesXJy1clys,3730
+sqltranslate/__init__.py,sha256=l8HEL1sm0l-66psdyK__QJq8pzcm737C1yusaRS71zA,204
+sqltranslate/__main__.py,sha256=S0aT_4gVB-cg6Nb2ON-192kwTFUwTPmJdpbVqnihHkc,6770
+sqltranslate/cli.py,sha256=4gBijaevXb5NxOnTDzAUZBEouKNBb-lfoAI8ExCgaAI,414
+sqltranslate/sqltranslate.py,sha256=uMRYpmLUBfyI1mDVcOy8F9I6_yDjvROuwnts-DCWIWg,6366
+sqltranslate-0.1.4.dist-info/AUTHORS.rst,sha256=xrr5edFXyeQ8x9X6fr687tEsTq_pZ1DPrQQKzNPuYh4,90
+sqltranslate-0.1.4.dist-info/LICENSE.txt,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+sqltranslate-0.1.4.dist-info/METADATA,sha256=ycIe8ML9ijDNEiyVMqeOW-1EZynhoKzDuHYyUUXp26U,1021
+sqltranslate-0.1.4.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+sqltranslate-0.1.4.dist-info/entry_points.txt,sha256=P0MW5-l_mI1aTo_YIh6ccdk1q-l-kVcfuFg92wRY1Cc,61
+sqltranslate-0.1.4.dist-info/top_level.txt,sha256=Y3PKmG6ciDA_hA8hfnITrh6zjuDPGmGqBGPv-uAiwb8,13
+sqltranslate-0.1.4.dist-info/RECORD,,
