@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+fiberorient/__init__.py
+fiberorient/metrics.py
+fiberorient/odf.py
+fiberorient/structuretensor.py
+fiberorient/util.py
+fiberorient/vis.py
+fiberorient.egg-info/PKG-INFO
+fiberorient.egg-info/SOURCES.txt
+fiberorient.egg-info/dependency_links.txt
+fiberorient.egg-info/requires.txt
+fiberorient.egg-info/top_level.txt
+fiberorient/data/sh_deg20_n6500.npy
