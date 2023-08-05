@@ -1,0 +1,8 @@
+setup.py
+Orf_sendMsg/__init__.py
+Orf_sendMsg/wxSend.py
+Orf_sendMsg.egg-info/PKG-INFO
+Orf_sendMsg.egg-info/SOURCES.txt
+Orf_sendMsg.egg-info/dependency_links.txt
+Orf_sendMsg.egg-info/requires.txt
+Orf_sendMsg.egg-info/top_level.txt
