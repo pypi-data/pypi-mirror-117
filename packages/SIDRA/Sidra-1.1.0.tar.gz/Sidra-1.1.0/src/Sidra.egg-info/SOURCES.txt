@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bin/Sidra
+src/Sidra/FAST.py
+src/Sidra/__init__.py
+src/Sidra.egg-info/PKG-INFO
+src/Sidra.egg-info/SOURCES.txt
+src/Sidra.egg-info/dependency_links.txt
+src/Sidra.egg-info/top_level.txt
