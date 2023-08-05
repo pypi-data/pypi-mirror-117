@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: aegisml
+Version: 4.0
+Summary: Python image making package for Aegis ML team
+Home-page: https://github.com/lwamuhaji/aegisml
+Author: lwamuhaji
+Author-email: lwamuhaji@gmail.com
+License: UNKNOWN
+Download-URL: https://api.github.com/repos/lwamuhaji/aegisml/tarball
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: gdown
+
+UNKNOWN
+
+
