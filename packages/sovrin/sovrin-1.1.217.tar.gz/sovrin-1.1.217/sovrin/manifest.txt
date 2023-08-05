@@ -1,0 +1,2 @@
+// built from: repo version hash
+https://github.com/sovrin-foundation/sovrin.git 1.1.217 31bba83edc6edbd884bbddaf90201522ff61c2f8
