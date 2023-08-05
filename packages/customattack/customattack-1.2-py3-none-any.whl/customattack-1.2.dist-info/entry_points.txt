@@ -1,0 +1,3 @@
+[console_scripts]
+customattack = customattack.commands.customattack_cli:main
+

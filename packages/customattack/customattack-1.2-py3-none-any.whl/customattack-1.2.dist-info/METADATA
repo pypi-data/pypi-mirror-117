@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: customattack
+Version: 1.2
+Summary: A library for generating text adversarial examples
+Home-page: https://github.com/QData/textattack
+Author: QData Lab at the University of Virginia
+Author-email: ujeong1@asu.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Way to distribute and use CLI
+
+
+<code>
+python setup.py bdist_wheel
+</code>
+
+
+<code>
+twine upload dist/*
+</code>
+
+
