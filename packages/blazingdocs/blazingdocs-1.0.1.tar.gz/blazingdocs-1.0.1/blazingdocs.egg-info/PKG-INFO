@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: blazingdocs
+Version: 1.0.1
+Summary: BlazingDocs Python client
+Home-page: https://blazingdocs.com
+Author: Mentalstack
+Author-email: hello@blazingdocs.com
+License: MIT
+Download-URL: https://github.com/blazingdocs/blazingdocs-python
+Project-URL: Bug Tracker, https://github.com/blazingdocs/blazingdocs-python/issues
+Project-URL: Documentation, https://docs.blazingdocs.com
+Project-URL: Source Code, https://github.com/blazingdocs/blazingdocs-python
+Keywords: doc,docx,pdf,odt,report,document,template,office,openoffice,merge,xml,json,csv
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BlazingDocs Python client
+High-performance document generation API. Generate documents and reports from СSV, JSON, XML with 99,9% uptime and 24/7 monitoring.
+
+## Installation
+
+Run this line from Terminal:
+
+```
+pip install blazingdocs
+```
+
+## Integration basics
+
+### Setup
+
+You can get your API Key at https://app.blazingdocs.com
+
+```python
+client = BlazingClient('API-KEY')
+```
+
+### Getting account info
+
+```python
+account = client.get_account()
+```
+
+### Getting merge templates list
+
+```python
+templates = client.get_templates()
+```
+
+### Getting usage info
+
+```python
+usage = client.get_usage()
+```
+
+### Executing merge
+
+```python
+client = BlazingClient('API-KEY')
+parameters = MergeParameters()
+
+with open('templates/PO-Template.json', 'r', encoding='utf-8') as f:
+    data = f.read()
+
+with open('templates/PO-Template.docx', 'rb') as f:
+    file = FormFile('PO-Template.docx')
+    file.content = f.read()
+
+operation = client.merge_with_form_file(
+    data=data,
+    filename='output.pdf',
+    parameters=parameters,
+    template=file
+)
+```
+
+## Documentation
+
+See more details here https://docs.blazingdocs.com
+
