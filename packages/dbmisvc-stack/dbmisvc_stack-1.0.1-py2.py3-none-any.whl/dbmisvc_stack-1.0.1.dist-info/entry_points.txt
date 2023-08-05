@@ -1,0 +1,3 @@
+[console_scripts]
+dbmisvc-stack = dbmisvc_stack.cli:main
+
