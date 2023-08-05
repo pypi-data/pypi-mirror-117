@@ -1,0 +1,3 @@
+scancode-toolkit
+attr
+pyelftools
