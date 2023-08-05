@@ -1,0 +1,4 @@
+fps
+fastapi-users[sqlalchemy]
+httpx-oauth
+aiosqlite
