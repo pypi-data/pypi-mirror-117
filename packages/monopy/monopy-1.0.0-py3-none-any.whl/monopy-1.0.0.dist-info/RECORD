@@ -1,0 +1,17 @@
+mono/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mono/api/__init__.py,sha256=kf7zWDmw3edN1ON0zSj3cOkbOJ_X23pJ1zeIv-W8Q7g,90
+mono/api/base_api.py,sha256=LSZ_xy5RRXpHr1GvMCZ3Mxf3dnG8AdCJNXseTlleWbc,1405
+mono/api/errors.py,sha256=_QF4eCT_fxods1XIbIa22x-smYbDsIFJJIjH7d4Xi60,160
+mono/api/misc.py,sha256=JzbNkRmC0A87-lKcRmKUBFHqsD2ZyFSJeifpMMYvgkI,432
+mono/api/mono_account.py,sha256=koeockD42gVzMKhicy9yv0GhLuXXspae7JjGLgmbGqQ,1551
+mono/api/mono_user.py,sha256=y9ziMIhozpLu-wMQZBdoONkNZx8CA2EC6JV2yVJHYdE,2038
+mono/api/unlink_acc.py,sha256=H-CNkpD5JC_ot8QhZ1AkmJ7rCzKISDLDVer79qqnZm8,473
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_misc.py,sha256=-ytENvH9akmoW91x80yqzD6kEh2z3dE_J0mPkRp_5n4,945
+tests/test_mono_account.py,sha256=Pc-vrs8jdGzr0hkInDTfvjXL527AlUIK3kCDlrMBy_I,796
+tests/test_mono_user.py,sha256=ZRrmRmDYAE0V9foipDH0FfaZbIh6-vSvPaQsv-ahADM,942
+monopy-1.0.0.dist-info/LICENSE,sha256=8_n6GTv_X8ATxPjXHPoBMCbm4eeeYge97klxJ7zfyHc,1095
+monopy-1.0.0.dist-info/METADATA,sha256=40po1hkTzHEo0GDAHNsYVsuC-lQyqsgZuVO2MtVA3IU,4305
+monopy-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+monopy-1.0.0.dist-info/top_level.txt,sha256=8hJ7Yww8Wqav5Wibm0YZ95tihWLVxujpdaO7Lap3yqg,11
+monopy-1.0.0.dist-info/RECORD,,
