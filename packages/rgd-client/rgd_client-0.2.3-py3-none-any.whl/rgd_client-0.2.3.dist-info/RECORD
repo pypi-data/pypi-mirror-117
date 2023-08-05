@@ -1,0 +1,15 @@
+rgd_client/__init__.py,sha256=csfyuVGz3MSrb9SjwAJf1zAD8NZvwlE3HvdKauW2zTk,78
+rgd_client/_version.py,sha256=2Yx09W2AvfNfvo-Hv4XdtHtnjB0HeqVbBahFO7hpsBo,211
+rgd_client/rgdc.py,sha256=sbRVpbokVsH7sg-korw1N1NBPL8ZCJM6AzK19SqUBkc,12036
+rgd_client/session.py,sha256=bhyciJ712K3_OvgUSDzJ1TCOId_hQOhhezFd-uZlXiE,1805
+rgd_client/types.py,sha256=pzaL_GgQ6xoZKDZPEncPxUv9nTk_ZtbFZKsXPICpOZ8,307
+rgd_client/utils.py,sha256=4VITuKEQ031oiWd9dZBuNkbjVO8Rw1Gu67BuK3_B0-k,6237
+tests/test_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_project/celery.py,sha256=KzTR7B2iQ2vbx5U3BICFDULu5AmJFTTHy9XFCtqXDJs,603
+tests/test_project/settings.py,sha256=dOJeAHbqvS4345I9p_af_kyA7rfPrGAWQEmGsSV5w-w,438
+tests/test_project/urls.py,sha256=6vyDn0Iu_UVQTjCBS3aln7CW4YZn_lKib7YCkIv0A8c,1602
+tests/test_project/wsgi.py,sha256=RRKT3BU_DeBe-4Vgu5vbdMfFL7zJI7AraXdBbyyCus8,173
+rgd_client-0.2.3.dist-info/METADATA,sha256=2RoJZFHmRGgbUWp2IJjzDEHhrLNjWBaRGKMPhTsn31Y,5408
+rgd_client-0.2.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+rgd_client-0.2.3.dist-info/top_level.txt,sha256=LIEPZANM6ouwIl5vxYhhnyArMfDcW5sLwHCKp01GL8I,17
+rgd_client-0.2.3.dist-info/RECORD,,
