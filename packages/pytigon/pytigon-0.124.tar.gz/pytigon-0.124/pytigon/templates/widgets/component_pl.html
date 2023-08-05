@@ -1,0 +1,10 @@
+{% load exfiltry %}
+{% load static %}
+{% if href|has_ext:".vue" %}
+        <script type="text/javascript ">
+</script>
+        
+  {% else %}
+        <script type="module" src="{% static href %}"></script>
+{% endif %}
+
