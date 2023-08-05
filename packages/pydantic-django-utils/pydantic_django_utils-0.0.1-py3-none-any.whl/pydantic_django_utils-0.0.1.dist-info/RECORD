@@ -1,0 +1,9 @@
+pydantic_django_utils/__init__.py,sha256=_9W1g28b0nUx1YlUwoGk1NpidtKqlQUhZA9jNY2sdRA,313
+pydantic_django_utils/drf_errors.py,sha256=AG_vCNeVM6Lnj_V11SihLkxaTGDTRxvDRF-6R_YR-Mo,990
+pydantic_django_utils/openapi.py,sha256=x1Uf-zEwNADrQM1F0DCEYkXLCPB4eCtZv8AeOSFeW8E,3766
+pydantic_django_utils/pydantic_querydict.py,sha256=GCY3pBYrS4YtKn6daQAYYWb3DKZTFRU0ai7yLGKfUxE,2187
+pydantic_django_utils-0.0.1.dist-info/LICENSE,sha256=-eqMePBofW6dEWuNGqw16jl7r3ujHh1uA1FugMdAngk,1058
+pydantic_django_utils-0.0.1.dist-info/METADATA,sha256=PDxlg3G2l7HS8cmdYsLVNw6Yu1OtksUUCCuCAtLImA8,1150
+pydantic_django_utils-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pydantic_django_utils-0.0.1.dist-info/top_level.txt,sha256=rbW53I1ZlBDbl6xLy_jPOFLZWEzehwvJ4gyWA57CGNY,22
+pydantic_django_utils-0.0.1.dist-info/RECORD,,
