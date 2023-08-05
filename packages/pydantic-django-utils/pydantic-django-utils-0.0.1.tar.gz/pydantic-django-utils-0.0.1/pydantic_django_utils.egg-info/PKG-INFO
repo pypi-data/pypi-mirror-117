@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pydantic-django-utils
+Version: 0.0.1
+Summary: Utils to help integrate pydantic into Django projects
+Home-page: https://gitlab.com/matthewhughes/pydantic-django-utils
+Author: Matthew Hughes
+Author-email: matthewhughes934@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Pydanic Django Utils
+====================
+
+Some utils for working with `Django <https://www.djangoproject.com/>`_ and
+`Pydantic <https://pydantic-docs.helpmanual.io/>`_ (and `Django REST Framework
+<https://www.django-rest-framework.org/>`_).
+
+More info in `the docs
+<https://matthewhughes.gitlab.io/pydantic-django-utils/index.html>`_
+
+

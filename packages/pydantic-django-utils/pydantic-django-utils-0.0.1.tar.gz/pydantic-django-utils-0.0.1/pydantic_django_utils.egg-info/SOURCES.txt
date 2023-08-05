@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pydantic_django_utils/__init__.py
+pydantic_django_utils/drf_errors.py
+pydantic_django_utils/openapi.py
+pydantic_django_utils/pydantic_querydict.py
+pydantic_django_utils.egg-info/PKG-INFO
+pydantic_django_utils.egg-info/SOURCES.txt
+pydantic_django_utils.egg-info/dependency_links.txt
+pydantic_django_utils.egg-info/requires.txt
+pydantic_django_utils.egg-info/top_level.txt
+tests/__init__.py
+tests/pydantic_querydict_test.py
+tests/settings.py
