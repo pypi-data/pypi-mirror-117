@@ -1,0 +1,7 @@
+pyqt5
+pillow
+numpy
+configparser
+pathlib
+inquirer
+urllib3
