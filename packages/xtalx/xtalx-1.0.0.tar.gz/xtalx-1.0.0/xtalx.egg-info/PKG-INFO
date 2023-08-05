@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: xtalx
+Version: 1.0.0
+Summary: Python library for the XtalX sensor.
+Home-page: https://github.com/phasesensors/xtalx_python
+Author: Phase Advanced Sensor Systems Corp.
+Author-email: tgreeniaus@phasesensors.com
+License: MIT
+Description: xtalx
+        =====
+        
+        Library for interfacing with the XtalX pressure sensor.
+        
+Keywords: xtalx
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
