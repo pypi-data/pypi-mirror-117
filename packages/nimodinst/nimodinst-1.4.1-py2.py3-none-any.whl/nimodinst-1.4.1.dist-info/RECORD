@@ -1,0 +1,13 @@
+nimodinst/VERSION,sha256=VSKzXVElIy9CSdqN6fNlXXsW_QBnz2I-M0ToN4F88pM,7
+nimodinst/__init__.py,sha256=JeOaysjhFKECVCNNKC_LQzzhW1lkW7wXThbcZAPYHjg,2934
+nimodinst/_converters.py,sha256=0zJqHCJHP6tCSVdtMmzXqEckwhERT3PE0ynTr9pQ7wE,10332
+nimodinst/_library.py,sha256=rd_UAhDmKguCuhQt-kQsgyyRn04u4I53Br9_ZP3ymck,4561
+nimodinst/_library_singleton.py,sha256=RWeEqH3EZkdY8WaEZ6KDaP6LSCV0Nzyi7JDT5YKfmT8,1626
+nimodinst/_visatype.py,sha256=6dbb_0reR_MGfbn37oi4H6xB23UjJxUWSZpLaHjNjP4,659
+nimodinst/errors.py,sha256=KHgusxcWtNwKt8dkbJSSAR9sFMWl-AHyX4uTtcj2RPw,2919
+nimodinst/session.py,sha256=xWjgGotLOJj9x6HAW0WBrO4zkzVB6FTUSvW7tzsIPSw,19156
+nimodinst-1.4.1.dist-info/METADATA,sha256=eeQw7bMAvj2SEAR_5uob6jLlKQBWdthwAbozBzZijIE,8834
+nimodinst-1.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+nimodinst-1.4.1.dist-info/top_level.txt,sha256=sLCEUkb1uYhdgHiaDiCOzW5KI9LaGNIYXzoxD1Ai3Lc,10
+nimodinst-1.4.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+nimodinst-1.4.1.dist-info/RECORD,,
