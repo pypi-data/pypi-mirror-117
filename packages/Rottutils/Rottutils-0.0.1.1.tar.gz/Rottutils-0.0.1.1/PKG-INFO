@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Rottutils
+Version: 0.0.1.1
+Summary: Py library with useful utilities.
+Home-page: https://github.com/Rotthin
+Author: Maciej 'Rotthin' Niziołek
+Author-email: rotthin_dev@protonmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a library with useful utils like clearing the terminal.
+
+0.0.1 (20.08.2021)
+    - clear_term() function added. This function clears the terminal. It works on Mac, Linux and Windows, and probably more platforms.
+
