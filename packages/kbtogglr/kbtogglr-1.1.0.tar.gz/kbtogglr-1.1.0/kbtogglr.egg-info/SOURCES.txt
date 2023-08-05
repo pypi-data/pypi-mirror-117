@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+assets/org.kbtogglr.desktop
+kbtogglr/__init__.py
+kbtogglr/__main__.py
+kbtogglr.egg-info/PKG-INFO
+kbtogglr.egg-info/SOURCES.txt
+kbtogglr.egg-info/dependency_links.txt
+kbtogglr.egg-info/entry_points.txt
+kbtogglr.egg-info/not-zip-safe
+kbtogglr.egg-info/top_level.txt
+kbtogglr/images/off.png
+kbtogglr/images/on.png

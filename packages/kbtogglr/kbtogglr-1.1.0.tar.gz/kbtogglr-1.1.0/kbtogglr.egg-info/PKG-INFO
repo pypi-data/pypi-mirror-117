@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: kbtogglr
+Version: 1.1.0
+Summary: Toggle keyboard on and off for xinput
+Home-page: https://github.com/jshwi/kbtogglr
+Author: Stephen Whitlock
+Author-email: stephen@jshwisolutions.com
+License: MIT
+Keywords: keyboard,xorg,xserver,xinput
+Platform: GNU/Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+kbtogglr
+========
+.. image:: https://github.com/jshwi/kbtogglr/workflows/build/badge.svg
+    :target: https://github.com/jshwi/kbtogglr/workflows/build/badge.svg
+    :alt: audit
+.. image:: https://img.shields.io/badge/python-3.8-blue.svg
+    :target: https://www.python.org/downloads/release/python-380
+    :alt: python3.8
+.. image:: https://img.shields.io/pypi/v/kbtogglr
+    :target: https://img.shields.io/pypi/v/kbtogglr
+    :alt: pypi
+.. image:: https://codecov.io/gh/jshwi/kbtogglr/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/jshwi/kbtogglr
+    :alt: codecov.io
+.. image:: https://readthedocs.org/projects/kbtogglr/badge/?version=latest
+    :target: https://kbtogglr.readthedocs.io/en/latest/?badge=latest
+    :alt: readthedocs.org
+.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+    :target: https://lbesson.mit-license.org/
+    :alt: mit
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+    :alt: black
+
+Simple app designed to toggle laptop keyboard on and off when using a USB keyboard
+
+Prerequisites
+-------------
+    | Python3
+    | This package has only been tested on Gnome
+
+Dependencies
+------------
+xinput
+
+    Debian, Ubuntu etc:
+
+    .. code-block:: console
+
+        $ sudo apt install xinput
+
+    RHEL, Fedora etc:
+
+    .. code-block:: console
+
+        $ sudo dnf install xinput
+
+Install
+-------
+.. code-block:: console
+
+    $ pip install kbtogglr --user
+
+The app should be available in your applications
+
+
