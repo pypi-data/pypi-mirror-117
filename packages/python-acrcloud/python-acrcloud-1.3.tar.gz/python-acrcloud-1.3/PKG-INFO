@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: python-acrcloud
+Version: 1.3
+Summary: Detects the songs from an audio
+Home-page: https://github.com/An0nimia/acrcloud
+Author: An0nimia
+Author-email: An0nimia@protonmail.com
+License: CC BY-NC-SA 4.0
+Description: # acrcloud
+        
+        This project has been created to detects the songs from an audio.
+        
+        # Disclaimer
+        
+        - This project is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+        
+        * ### OS Supported ###
+        	![Linux Support](https://img.shields.io/badge/Linux-Support-brightgreen.svg)
+        	![macOS Support](https://img.shields.io/badge/macOS-Support-brightgreen.svg)
+        	![Windows Support](https://img.shields.io/badge/Windows-Support-brightgreen.svg)
+        
+        * ### Important ###
+        	For get the access key, access secret and host watch (https://www.acrcloud.com/docs/acrcloud/)    
+        	
+        * ### Installation ###
+        	pip3 install acrcloud
+        
+        ### Identify a song
+        Identify a song by an audio
+        ```python
+        import acrcloud
+        
+        config = {
+        	"key": YOUR ACCESS KEY,
+        	"secret": YOUR ACCESS SECRET,
+        	"host": YOUR HOST
+        }
+        
+        audio = "audio.mp3"
+        acr = acrcloud.ACRcloud(config)
+        audio = acr.recognizer(audio)
+        ```
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
