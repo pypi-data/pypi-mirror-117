@@ -1,0 +1,14 @@
+pelican/plugins/math_svg/__init__.py,sha256=EF7EYuwio_WeQU8jZW4rgVh-7jnog6jQtX3arJHomi8,32
+pelican/plugins/math_svg/database.py,sha256=z3PaZWNKl3E3C8TvYamo5h1879tq5GgiTCY0_2LWu9o,2692
+pelican/plugins/math_svg/extension.py,sha256=Up2cLEg0JUCY6c0H1W1XRVrwKXh3RRF9k9mBw2PdiyI,712
+pelican/plugins/math_svg/main.py,sha256=i805koTWN-l9UwKfmoPK8vLUVk9UoaUqeRTJbrU7h6w,1320
+pelican/plugins/math_svg/markdown_extension.py,sha256=Rx2lFLFJ_qie3HgQMJJ4tCImS692odWIuXV5YBXF4MI,2011
+pelican/plugins/math_svg/math_svg.py,sha256=ZqlH13hXvSJ7Cf4AwxvHj-fbUTynZDh5gSG5UWPlmdo,428
+pelican/plugins/math_svg/render.py,sha256=KR-PYSHQNsFD_lu24i2RrB3OfzC6rVhqZ1vetcgdvrg,5675
+pelican/plugins/math_svg/settings.py,sha256=pHF_hIGtm_r6-KnSrHrRZ8PaTlBR2mcVob4NMwBApaw,3362
+pelican/plugins/math_svg/svgo.js,sha256=UxYrP8xSE6JDZWbdl_VQVyx250ovQJrAfmC-hFNfn4U,226
+pelican_math_svg-0.7.0.dist-info/entry_points.txt,sha256=goqY9gNrhfQSJzNlgHne9UTXpOzqKrq_0nDVG8-y--c,71
+pelican_math_svg-0.7.0.dist-info/LICENSE,sha256=zj-4LZ7oChyw5Uj5sFYOrVI3juK06Cb9lFm0rPcHXYk,32387
+pelican_math_svg-0.7.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pelican_math_svg-0.7.0.dist-info/METADATA,sha256=tpWZrE3l-5e0lA3ysf9i3NX2Tsx3Buidu8xQ-AEzOqU,8225
+pelican_math_svg-0.7.0.dist-info/RECORD,,
