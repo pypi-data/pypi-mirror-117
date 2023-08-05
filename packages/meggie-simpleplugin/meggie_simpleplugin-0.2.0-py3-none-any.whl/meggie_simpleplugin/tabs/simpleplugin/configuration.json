@@ -1,0 +1,5 @@
+{
+    "id": "simpleplugin",
+    "name": "Simple plugin",
+    "actions": ["hello"]
+}

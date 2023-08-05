@@ -1,0 +1,13 @@
+meggie_simpleplugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meggie_simpleplugin/configuration.json,sha256=N2KLrlFa1JCfKAnwOdgQlcKX7QMh5eWUz-rGb7Mif44,265
+meggie_simpleplugin/actions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meggie_simpleplugin/actions/hello/__init__.py,sha256=sJKB-GQQp5Sq0FfVEKD4Xbz7lMuPmwSiqkU3wxfj0Co,332
+meggie_simpleplugin/actions/hello/configuration.json,sha256=prJ4oFkhGIxBW_EiO8ek8Y2hNN3Kb6eQ8t7dewOP8AQ,65
+meggie_simpleplugin/tabs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meggie_simpleplugin/tabs/simpleplugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meggie_simpleplugin/tabs/simpleplugin/configuration.json,sha256=5Dd3hXakjTciDzulHZ1xjgche_7zJhT6zW0WyTFlVF4,84
+meggie_simpleplugin/tabs/simpleplugin/ui.py,sha256=tsvxfCAonILEXWovD5vrcNC2ZPaQzEbQw5b7y4LXqs8,230
+meggie_simpleplugin-0.2.0.dist-info/METADATA,sha256=sWKJeNapGdikdRuXln6UklVKtgvIA2SjIvgQxcq-vhA,172
+meggie_simpleplugin-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+meggie_simpleplugin-0.2.0.dist-info/top_level.txt,sha256=qQuYFDYhDj3ruP9jqpWjbL4wAAAdbPaE57vuOzHBv5o,20
+meggie_simpleplugin-0.2.0.dist-info/RECORD,,
