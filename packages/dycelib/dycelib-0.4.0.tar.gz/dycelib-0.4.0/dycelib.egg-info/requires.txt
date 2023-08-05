@@ -1,0 +1,18 @@
+
+[:python_version < "3.9"]
+typing-extensions
+
+[dev]
+beartype
+mike
+mkdocs!=1.2
+mkdocs-exclude
+mkdocs-material
+mkdocstrings
+mypy
+numpy
+pre-commit
+pytest-gitignore
+sympy
+tox
+twine
