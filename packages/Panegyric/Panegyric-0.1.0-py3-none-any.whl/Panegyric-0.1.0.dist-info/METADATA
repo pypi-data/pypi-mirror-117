@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Panegyric
+Version: 0.1.0
+Summary: Automated compliments via text
+Home-page: https://github.com/edwardtheharris/panegyric
+Author: Xander Harris
+Author-email: xandertheharris@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/edwardtheharris/panegyric/issues
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml
+
+# panegyric
+
+[![circle ci build status](https://circleci.com/gh/edwardtheharris/panegyric.svg?style=svg)](https://app.circleci.com/pipelines/github/edwardtheharris/panegyric) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+
+A tool for sending praise via text on a regular schedule.
+
+
