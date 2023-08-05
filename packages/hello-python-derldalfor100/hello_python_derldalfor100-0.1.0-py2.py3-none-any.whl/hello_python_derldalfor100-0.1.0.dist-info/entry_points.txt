@@ -1,0 +1,3 @@
+[console_scripts]
+hello_python = hello_python:_cli
+

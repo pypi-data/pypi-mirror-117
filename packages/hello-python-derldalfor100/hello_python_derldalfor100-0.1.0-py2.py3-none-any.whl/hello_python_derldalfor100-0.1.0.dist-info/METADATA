@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hello-python-derldalfor100
+Version: 0.1.0
+Summary: A script that prints "hello python"
+Home-page: https://github.com/derldalfor100/hello-python-package
+Author: derldalfor100
+Author-email: derldalfor100@gmail.com
+License: Apache License 2.0
+Keywords: hello python insanely useful
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+
+============
+Hello Python
+============
+
+Prints "hello python" to the console!
+
