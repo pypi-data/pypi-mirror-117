@@ -1,0 +1,12 @@
+vema/__init__.py,sha256=PiYmcjKVLk0vgVEDNLEEWhqM0CcNTyZstpCtuOglsfI,54
+vema/__main__.py,sha256=doqtaPYLA3o715G0Pudpq_P_xA-5D6mtc_LSWPk_Y7Q,2549
+vema/src/cli.py,sha256=VEtU6C6Hvh1kObT3YZVnHzxELipsinGGGBEC41Fr8CY,2713
+vema/src/page.py,sha256=l27fm6T7F9trdG2_MIjusgqzxLJXnGVgOL-Ryd_qWl0,1574
+vema/src/vema.py,sha256=nsLUTig0BfNb7CrKoGp_c7sXo77FklPRRUdbjbCO52U,528
+vema/src/exceptions/wrongExtension.py,sha256=KuWrzyuUZVdy6XvGMJOG5Yr8JLkNKD0SNmWMpfo_NJs,202
+vema/src/exceptions/wrongPath.py,sha256=_7vxDMcUQPKia-gcxlBqZIlUFQlnO1mzAmgbAG_7xe0,195
+vema-0.1.4.dist-info/LICENSE,sha256=4LeyLQhOQE2OxRAPJWz1tet4u4QXDemw8N98ECnQbEM,1563
+vema-0.1.4.dist-info/METADATA,sha256=IbhXRJ6xaZt5pXojrPe8SSr1uSqiFD4PunnJ4MRi4KQ,1840
+vema-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vema-0.1.4.dist-info/top_level.txt,sha256=151cAPODpvHnzfLX_cnWAS4M0im3_FQ2Wcq318XKJLY,34
+vema-0.1.4.dist-info/RECORD,,
