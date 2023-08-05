@@ -1,0 +1,8 @@
+opencv-python
+opencv-contrib-pythonpip
+gdown
+PyYAML
+simplejson
+vidgear==0.1.9
+pyzmq
+filterpy==1.4.5
