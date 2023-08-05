@@ -1,0 +1,8 @@
+README.md,sha256=QBLRu3GGA_bObuBxvvO1T310VW8FlKM40FKwpWkJJrQ,1435
+scholar_network/__init__.py,sha256=bjRpUKnlco7RPa3S9A-3eWOZ5zF3DzIsf1I2tONYtoI,357
+scholar_network/helpers.py,sha256=2L_R2qFc084tew_dasZS7x2TCPgte6VoBvhap0rduKg,3630
+scholar_network/models.py,sha256=K4d5L85jGq8oxs5y1F5GzHoBd74SoLTYfuH46pBzovo,8337
+scholar_network/scraping.py,sha256=5f_Wh7NV_Kd4hozvj77HhP-nAK-HqVZlIkOaSR6AqW8,2500
+scholar_network-0.2.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+scholar_network-0.2.1.dist-info/METADATA,sha256=p0-tj7FSogs3AwfcEBKYX-XtHUHnQWdIznGyRow9LIA,1896
+scholar_network-0.2.1.dist-info/RECORD,,
