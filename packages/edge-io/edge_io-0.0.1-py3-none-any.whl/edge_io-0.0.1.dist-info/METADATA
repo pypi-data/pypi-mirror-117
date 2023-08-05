@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: edge-io
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/AhmadLabs/Architect
+Author: Hamza Ahmad
+Author-email: hamza.ahmad@me.com
+License: MIT
+Keywords: python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cached-property (~=1.5)
+Requires-Dist: dacite
+Requires-Dist: pydantic
+Provides-Extra: dev
+
+# Architect
+
+# Build
+```shell
+python setup.py bdist_wheel sdist
+```
+
+# Publish
+```shell
+python3 -m twine upload dist/*
+```
+
+# Install
+```shell
+pip install architect-io
+```
+
+
