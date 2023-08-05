@@ -1,0 +1,7 @@
+groclimateclient/__init__.py,sha256=YYpPjXBrSprmGn1rpilj97UXYPjvY3-at8ZxY3K2IO0,60
+groclimateclient/climate_client.py,sha256=GQy3G8oKZPD5LYcHSNoD__cq5QRDCbqRuEV66MXWsko,12657
+groclimateclient/constants.py,sha256=-aZl6Kkpe2DpYCXjy8_Td_NeN7xfaFrh4UHwCveDHGk,8956
+groclimateclient-0.1.1.dist-info/LICENSE,sha256=J9Lz_uuCi9lWXA5MzQMNmESiRvxyBg64pad6cO1kvOI,1073
+groclimateclient-0.1.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+groclimateclient-0.1.1.dist-info/METADATA,sha256=QqF_FC8Zb6aTTXkLk5RqNAEjfZxkw3wPEIPlD6odbs4,801
+groclimateclient-0.1.1.dist-info/RECORD,,
