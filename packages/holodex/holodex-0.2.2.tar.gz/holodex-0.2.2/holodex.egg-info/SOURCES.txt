@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+holodex/__init__.py
+holodex/client.py
+holodex/http.py
+holodex.egg-info/PKG-INFO
+holodex.egg-info/SOURCES.txt
+holodex.egg-info/dependency_links.txt
+holodex.egg-info/top_level.txt
+holodex/model/__init__.py
+holodex/model/channel_info.py
