@@ -1,0 +1,8 @@
+stocksurferbd/__init__.py,sha256=ExaQOdWNwcgCsahxJG3GbP6tv9Uoixpr2F4Fu_gaFxE,255
+stocksurferbd/fundamental_data_scraper.py,sha256=e14sRDTh9oWUJEulP3jIIWwDDzghMAZUFeEiNxzniqM,10615
+stocksurferbd/price_data_scraper.py,sha256=-VbrcgygwPvTA72oCM2KJA1FZLbhoTlRdJHfkdLj9jo,8986
+stocksurferbd/price_plots.py,sha256=pQeXnTj25FaYWctjyvEUKjzxhI8M82l7cVmRPHb8nu8,10436
+stocksurferbd-0.0.13.dist-info/METADATA,sha256=SXPT4mqeeCAnAv6z3wRMu0i3j5b8ytbkLJlhYDfKwss,4752
+stocksurferbd-0.0.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stocksurferbd-0.0.13.dist-info/top_level.txt,sha256=v5B_bVYqrcAOdejvR0YxlHnzI96Znir8HR-qYLUUhIA,14
+stocksurferbd-0.0.13.dist-info/RECORD,,
