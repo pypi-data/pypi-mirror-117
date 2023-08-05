@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pytigon
+Version: 0.124
+Summary: Pytigon
+Home-page: UNKNOWN
+Author: Sławomir Chołaj
+Author-email: slawomir.cholaj@gmail.com
+License: LGPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+Requires-Dist: Twisted
+Requires-Dist: asgiref
+Requires-Dist: croniter
+Requires-Dist: cython
+Requires-Dist: diskcache
+Requires-Dist: dj-database-url
+Requires-Dist: dj-email-url
+Requires-Dist: django-allauth
+Requires-Dist: django-bootstrap4
+Requires-Dist: django-bulk-update
+Requires-Dist: django-cache-url
+Requires-Dist: django-cors-headers
+Requires-Dist: django-environ-2
+Requires-Dist: django-filer
+Requires-Dist: django-filter
+Requires-Dist: django-graphql-jwt
+Requires-Dist: django-log-viewer
+Requires-Dist: django-mailer
+Requires-Dist: django-mptt
+Requires-Dist: django-polymorphic
+Requires-Dist: django-q
+Requires-Dist: django-q-email
+Requires-Dist: django-sql-explorer
+Requires-Dist: django-widget-tweaks
+Requires-Dist: django-compressor
+Requires-Dist: django-python3-ldap
+Requires-Dist: django-redis
+Requires-Dist: django-select2
+Requires-Dist: easy-thumbnails
+Requires-Dist: graphene-django
+Requires-Dist: html5lib
+Requires-Dist: ldap3
+Requires-Dist: markdown
+Requires-Dist: netifaces
+Requires-Dist: plotly
+Requires-Dist: polib
+Requires-Dist: pscript
+Requires-Dist: pyexcel-odsr
+Requires-Dist: pyquery
+Requires-Dist: pytigon-lib
+Requires-Dist: unidecode
+Requires-Dist: whitenoise
+
+UNKNOWN
+
+
