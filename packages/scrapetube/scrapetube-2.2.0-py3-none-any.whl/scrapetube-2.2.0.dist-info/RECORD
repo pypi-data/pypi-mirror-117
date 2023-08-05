@@ -1,0 +1,9 @@
+list_youtube_channel/__init__.py,sha256=UnXOpAN05CSQCOwLuf83IvX-Zlrty9G4CdVBE7q6ch4,86
+list_youtube_channel/get_channel.py,sha256=3WChD0NOMirCboocM5zYb-ceMrIYqJgdD4aDfz6lRus,7042
+scrapetube/__init__.py,sha256=sOBs-ITKols2O1jbCTwmkDc9UPLrwxO1r8btPg34QWE,85
+scrapetube/scrapetube.py,sha256=4kk-AgbVOfnPAlx0tQRCCSApGlRLBofC7vT9RjPv_zM,7672
+scrapetube-2.2.0.dist-info/LICENSE,sha256=BYIZCcJrWOrt4tv4kLtd2B3_x-_W79WA3qOYrqiYQiw,1072
+scrapetube-2.2.0.dist-info/METADATA,sha256=NuXTLwUWm3eecedfFofI9jhFOiiHH1MONrqAp9p7tK0,1623
+scrapetube-2.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+scrapetube-2.2.0.dist-info/top_level.txt,sha256=_bKLdUlmHTUhm4ZHvUqmlr0_kIjW2_H1ncLQuFYeG8k,11
+scrapetube-2.2.0.dist-info/RECORD,,
