@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: m2lk
+Version: 0.0.2
+Summary: WotLK M2 files parser
+Home-page: https://github.com/Vladimir007/m2lk
+Author: Vladimir Gratinskii
+Author-email: vovangrat@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Vladimir007/m2lk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# m2lk
+WotLK M2 files parser
+
+```python
+from m2lk import M2FileReader, M2, M2Skin
+
+with M2FileReader(filename) as reader:
+    m2 = M2()
+    m2.load(reader)
+
+with M2FileReader(skin_filename) as reader:
+    skin = M2Skin()
+    skin.load(reader)
+```
+And then `m2` can be used as a [structure](#M2Struct).
+
+### M2Field
+Feild's value can be obtained with `value` property. For example:
+```python
+m2.value
+m2.name.value
+```
+The value is a JSON-srializable data.
+
+### M2ArrayField
+M2ArrayField is a subclass of M2Field. Its item can be obtained by index. For example:
+```python
+if len(m2.sequences) > 0:
+    sequence_0_field = m2.sequences[0]  # M2Field instance
+    sequence_0_field.movespeed.value  # float
+```
+
+### M2Struct
+M2Struct is a subclass of M2Field.
+
+`fields` property is a dict `{field_name: field}`.
+For example M2 structure fields can be obtained with `list(m2.fields)`.
+
+Structure field can be obtained by attribute: `getattr(obj, field_name)`. For example:
+```python
+sequences_field = m2.sequences  # M2ArrayField
+```
+
+Structure field's value can be obtained by name: `obj[field_name]`.
+For example JSON-serializable value of `sequences` field:
+```python
+sequences_value = m2['sequences']  # The same as m2.sequences.value
+```
+
+Note: `M2` and `M2Skin` are subclasses of `M2Struct`.
+
+### JSON
+A m2 value can be saved to a json file:
+```python
+import json
+m2_json = json.dumps(m2.value)
+```
+
+And then loaded to a M2 structure:
+```python
+m2 = M2()
+m2.from_json(json.loads(m2_json))
+```
+
+The same is for M2Skin:
+```python
+import json
+skin_json = json.dumps(skin.value)
+skin_new = M2Skin()
+skin_new.from_json(json.loads(skin_json))
+```
+
