@@ -1,0 +1,7 @@
+pytigon-batteries
+wxpython
+wxasync
+PyDispatcher
+pyshortcuts
+libsass
+black
