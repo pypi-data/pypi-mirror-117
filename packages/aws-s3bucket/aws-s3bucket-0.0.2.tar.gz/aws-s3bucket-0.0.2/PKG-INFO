@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: aws-s3bucket
+Version: 0.0.2
+Summary: An S3 Bucket up download helper
+Home-page: https://github.com/pypa/sampleproject
+Author: Christoph Becker
+Author-email: mail@ch-becker.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# S3 Bucket
+
+# Todo
+
+* setup git
+* adjust pkg docs
+* add more docu
+* 
+
+
