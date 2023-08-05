@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: db-modules
+Version: 0.0.4
+Summary: db_modules
+Home-page: UNKNOWN
+Author: Gabe Davis
+Author-email: <youremail@email.com>
+License: UNKNOWN
+Description: Allows my class to be used in other codes
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
