@@ -1,0 +1,9 @@
+lapa/__init__.py,sha256=SskzQnTR3OUjVL6JOqaJcIynyzGLUbU_m3G_mQH84hc,89
+lapa/genomic_regions.py,sha256=fx2f3wOCfWT6S2FazPbBBy9WS8gmHzFmHMtP8jtN9qI,3774
+lapa/lapa.py,sha256=GpbUS5KEhwxEEJMPETEhAfGNCd7qDhuMyJmudhrgUUE,8882
+lapa/main.py,sha256=lYJ3zolwgK7Br7uqDYuYbl4hJc3L2u8-T6u2xgVqHrg,630
+lapa-0.0.1.dist-info/METADATA,sha256=8bdVCWJ47DJYjTwuUu6hhs1yo32b3Vzf2mkNOCT_OY0,653
+lapa-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lapa-0.0.1.dist-info/entry_points.txt,sha256=YuPGdUPoT7dn4-pLNukjmD6v48RNKBy0_ifKW1ckPlQ,58
+lapa-0.0.1.dist-info/top_level.txt,sha256=8P_u4IbTzvk65ed3hapoVv9NhRLnjDcwoqh-J3_-zLE,5
+lapa-0.0.1.dist-info/RECORD,,

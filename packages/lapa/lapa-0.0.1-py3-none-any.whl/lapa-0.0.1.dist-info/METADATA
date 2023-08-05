@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lapa
+Version: 0.0.1
+Summary: Alternative polyadenylation detection from diverse data sources
+Home-page: https://github.com/mortazavilab/lapa
+Author: M. Hasan Çelik
+Author-email: muhammedhasancelik@gmail.com
+License: MIT license
+Keywords: genomics,long read RNA-seq,APA
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: setuptools
+Requires-Dist: tqdm
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: pybigwig
+Requires-Dist: scipy
+Requires-Dist: bamread (>=0.0.9)
+Requires-Dist: pyranges (>=0.0.71)
+Requires-Dist: kipoiseq (>=0.3.0)
+
+UNKNOWN
+
+
