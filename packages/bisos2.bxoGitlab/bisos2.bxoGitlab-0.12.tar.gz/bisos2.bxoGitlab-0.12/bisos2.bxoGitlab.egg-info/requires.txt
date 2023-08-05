@@ -1,0 +1,5 @@
+python-gitlab
+unisos2.icm
+bisos2.common
+bisos2.platform
+blee2.icmPlayer

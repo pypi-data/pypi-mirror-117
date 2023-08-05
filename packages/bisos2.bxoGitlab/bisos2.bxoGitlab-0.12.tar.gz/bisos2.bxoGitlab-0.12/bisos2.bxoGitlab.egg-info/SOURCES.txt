@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+TITLE.txt
+lh-agpl3-LICENSE.txt
+setup.py
+./bin/bxoGitlab.py
+bisos2/__init__.py
+bisos2.bxoGitlab.egg-info/PKG-INFO
+bisos2.bxoGitlab.egg-info/SOURCES.txt
+bisos2.bxoGitlab.egg-info/dependency_links.txt
+bisos2.bxoGitlab.egg-info/namespace_packages.txt
+bisos2.bxoGitlab.egg-info/not-zip-safe
+bisos2.bxoGitlab.egg-info/requires.txt
+bisos2.bxoGitlab.egg-info/top_level.txt
+bisos2/bxoGitlab/__init__.py
