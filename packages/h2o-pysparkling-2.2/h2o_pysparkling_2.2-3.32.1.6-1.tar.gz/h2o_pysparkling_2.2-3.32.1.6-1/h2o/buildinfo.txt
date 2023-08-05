@@ -1,0 +1,1 @@
+versionFromGradle='3.32.1',projectVersion='3.32.1.6',branch='rel-zipf',lastCommitHash='f6e3d13add8eae915181f39cfc7ad9eba4adda41',gitDescribe='jenkins-3.32.1.5-39-gf6e3d13',compiledOn='2021-08-19 18:53:07',compiledBy='jenkins'
