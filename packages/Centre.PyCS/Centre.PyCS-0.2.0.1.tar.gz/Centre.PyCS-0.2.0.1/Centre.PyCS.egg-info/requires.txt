@@ -1,0 +1,4 @@
+ed25519
+thrift
+base58
+base58check
