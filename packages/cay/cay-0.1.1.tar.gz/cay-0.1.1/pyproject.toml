@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cay"
+version = "0.1.1"
+description = "Simple calculator implemented in Python"
+authors = ["Naoya Yamashita <conao3@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.scripts]
+cay = "cay.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
