@@ -1,0 +1,9 @@
+fps_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fps_auth/config.py,sha256=Y8gKZDoATZiAcBNk4OzkiNM6004DLweV-JPD8i8CPxA,363
+fps_auth/models.py,sha256=glwjKcfQhRSnPHsyRrYMGRaOrqqycn2y80iL3nkm95w,1945
+fps_auth/routes.py,sha256=qX3UW0VFc3yjE76xuuDsCfMwGflbFCg05GrtVaCUKbo,3110
+fps_auth-0.0.1.dist-info/METADATA,sha256=UX4wchBYCX_KTzl1caaYM2gmiRnkuwa0N1dB_OX0FjA,284
+fps_auth-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fps_auth-0.0.1.dist-info/entry_points.txt,sha256=HEk8psDxR2OfDyJlYLINBelP9bSPTpc6SCIat1IVd9s,82
+fps_auth-0.0.1.dist-info/top_level.txt,sha256=rnwM30kEfySrbd34ZJNiFgOStSdSFvAJFJYe6btZydE,9
+fps_auth-0.0.1.dist-info/RECORD,,
