@@ -1,0 +1,16 @@
+pybluez2-0.44.dist-info/top_level.txt,sha256=oF7qh3pffVVl2j4dTfeYjkccsrvWRlu7hKkdEViQtjQ,10
+pybluez2-0.44.dist-info/WHEEL,sha256=paN2rHE-sLfyg0Z4YvQnentMRWXxZnkclRDH8E5J6qk,148
+pybluez2-0.44.dist-info/LICENSE,sha256=zS59Y6EQWPGcWLBvuMdZFAznB4g2nc5ubp20DTR1Ah4,17989
+pybluez2-0.44.dist-info/METADATA,sha256=usXT70E3i9PbKm8NVO-2nS2RM-pX-adD7TQxPS4bc40,1029
+pybluez2-0.44.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pybluez2-0.44.dist-info/eager_resources.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pybluez2-0.44.dist-info/RECORD,,
+bluetooth/_bluetooth.cpython-38-x86_64-linux-gnu.so,sha256=zuZZkDd9qYhu1BD7gDDC04h35ZxTReLsgmWDDZRjRwU,308880
+bluetooth/version.py,sha256=M0pDf2LvYybs_QqSGF_uQq7qAxJAsWd8qTkaGRAEkeE,20
+bluetooth/__init__.py,sha256=om02pd1MTsbamMwS3bJwx0dOg2OCGZ9S4x09Af_oBbo,1339
+bluetooth/device.py,sha256=_4lj16ikD88yKCggh9F5ELgxrdJZqoNYOzcThhEP_Lw,228
+bluetooth/btcommon.py,sha256=ZQW3SM45Wg5u-n5HPKOVCwj6yxL4n4YX97-KTyaYzeQ,5982
+bluetooth/address.py,sha256=6Z8cOts0VZ3ej4kJsZB7KWSnH6BFaYMoGF0WsJEY-Tg,1744
+bluetooth/native_socket.py,sha256=7Z29Gq8FKK29lWFVf42J05tEDNpnakN-edJFAaRgG3o,423
+bluetooth/docstrings.py,sha256=LJsiJhxIZ2Ke_FsS_2xudGvFbqOqA0AQDdZSQeaIMwQ,9099
+pybluez2.libs/libbluetooth-5dea44ed.so.3.18.15,sha256=0HdgSfAxBzFzDtZXCBkw47sEPF8Qc5pQyBxdVADjlfw,166544
