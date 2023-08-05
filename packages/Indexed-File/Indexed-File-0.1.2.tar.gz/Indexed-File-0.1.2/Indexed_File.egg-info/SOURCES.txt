@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Indexed_File.egg-info/PKG-INFO
+Indexed_File.egg-info/SOURCES.txt
+Indexed_File.egg-info/dependency_links.txt
+Indexed_File.egg-info/top_level.txt
+indexed_file/__init__.py
+indexed_file/version.py
+tests/__init__.py
+tests/context.py
+tests/test_indexed_file.py
