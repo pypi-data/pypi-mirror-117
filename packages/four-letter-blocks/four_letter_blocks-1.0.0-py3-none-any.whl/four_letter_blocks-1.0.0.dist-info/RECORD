@@ -1,0 +1,14 @@
+four_letter_blocks/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+four_letter_blocks/__main__.py,sha256=XIaWcrMvmm_S9WGHxKbtHYeEXwFHXYH5ca03_FpLzyI,11439
+four_letter_blocks/block.py,sha256=1F19PRfxgHiFk2xN-vGB_gs4bEX9ZwSX3tLA3pvu-UM,2487
+four_letter_blocks/focused_plain_text_edit.py,sha256=yD2QV09eYb9YgTHgkTOOWnmaV1hAsVKHh4RPHkhAslI,337
+four_letter_blocks/grid.py,sha256=ikEMBwXutD8iv6EU1DCKuvcm5TtqXsxxQ_4TwRU4V-w,2222
+four_letter_blocks/main_window.py,sha256=mLhDQstVJOJUPITJl8ajJVtOHfY4nO3EtpzxnI_Il-k,8047
+four_letter_blocks/puzzle.py,sha256=XJxfSn85cHhSozzIzHQTaSaXVczmV6-uc-MeE1jN5rw,10678
+four_letter_blocks/square.py,sha256=zXPOC2PLOKkbWVxPMtluhacoQXIeMTyTpsME_h1bgOk,1408
+four_letter_blocks-1.0.0.dist-info/LICENSE,sha256=1xUbtU-uT1vbMoQykiXs3wqMoh8ww8karg6b25iPQZc,1067
+four_letter_blocks-1.0.0.dist-info/METADATA,sha256=hAAa945V-_169kry2mSTkcbGSy4iijMThN7TVAe-Y_8,3192
+four_letter_blocks-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+four_letter_blocks-1.0.0.dist-info/entry_points.txt,sha256=uM308B2k70vDppb2t5dbtM6jbjyn86kBTaCPqC2XEJA,69
+four_letter_blocks-1.0.0.dist-info/top_level.txt,sha256=shVuNpB1HTBxN2r_G4Y72DWABN1VGzu2lVme0aXhVo0,19
+four_letter_blocks-1.0.0.dist-info/RECORD,,
