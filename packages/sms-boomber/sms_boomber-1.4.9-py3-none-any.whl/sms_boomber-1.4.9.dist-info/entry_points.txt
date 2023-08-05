@@ -1,0 +1,3 @@
+[console_scripts]
+sms-boomber = sms_boomber.__main__:main
+
