@@ -1,0 +1,10 @@
+bencode/__init__.py,sha256=kVfbjgs7CG_uCDrqrkcvq9IqeIPQRcXaIoYwtGwMhZM,236
+bencode/bencode.py,sha256=IGcZYImpe8kq6LjPe0n8xWb3GEta-MsGZcVd0g7eAVc,7431
+bencode/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bencode/torrent.py,sha256=III8cZXvzgBuaZa16dVeK-s0J166Di5CQ_ekvhcIGxY,3568
+bencode/transform.py,sha256=IpPiEkyvfKmr06agM2agsfaZ8VaqjBcnD4kj75_cTZ0,977
+modern_bencode-1.6.1.dist-info/LICENSE,sha256=qSZHesRzlGG93H9laTZTJpddlZy-TFx1Zd_D0eg4rW4,1065
+modern_bencode-1.6.1.dist-info/METADATA,sha256=J0x3d3LYEnjvpx61LutQ3WD9zVycLpnUEA3gnY-dnqI,4402
+modern_bencode-1.6.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+modern_bencode-1.6.1.dist-info/top_level.txt,sha256=8zgQOxcH1jTWWz5GkFrerik9YUm6K7GwOGJ3C4SgSC8,8
+modern_bencode-1.6.1.dist-info/RECORD,,
