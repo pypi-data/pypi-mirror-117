@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+bin/translate-json.py
+translate_json/__init__.py
+translate_json/console.py
+translate_json/main.py
+translate_json/translate.py
+translate_json/utils.py
+translate_json.egg-info/PKG-INFO
+translate_json.egg-info/SOURCES.txt
+translate_json.egg-info/dependency_links.txt
+translate_json.egg-info/requires.txt
+translate_json.egg-info/top_level.txt
