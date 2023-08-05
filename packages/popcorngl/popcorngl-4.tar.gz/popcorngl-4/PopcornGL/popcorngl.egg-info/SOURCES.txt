@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+PopcornGL/PopcornGL/__init__.py
+PopcornGL/PopcornGL/popcorngl.py
+PopcornGL/popcorngl.egg-info/PKG-INFO
+PopcornGL/popcorngl.egg-info/SOURCES.txt
+PopcornGL/popcorngl.egg-info/dependency_links.txt
+PopcornGL/popcorngl.egg-info/top_level.txt
