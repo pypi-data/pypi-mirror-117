@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+         i18n:domain="plone">
+<body>
+
+<div class="cardgrid-view row"
+         tal:define="results context">
+    <tal:listing condition="results">
+        <tal:block repeat="item results">
+            
+            <div class="col-12 col-md-6 col-lg-4 item"
+                     tal:define="obj item/getObject">
+                <div class="br-card">
+                    <div class="card-header">
+                            <a tal:attributes="href string:${obj/absolute_url}/view">
+                                <p class="h5 text-primary-default">
+                                ${item/Title}<br />
+                                        ${item/rights}
+                            </p>
+                            </a>
+                    </div>
+                    <div class="card-content">
+                        <p>${item/description}</p>
+                    </div>
+                </div>
+            </div>
+        </tal:block>
+    </tal:listing>
+    <p class="discreet"
+             tal:condition="not:results"
+             i18n:translate="">
+        No items were found
+    </p>
+</div>
+
+</body>
+</html>

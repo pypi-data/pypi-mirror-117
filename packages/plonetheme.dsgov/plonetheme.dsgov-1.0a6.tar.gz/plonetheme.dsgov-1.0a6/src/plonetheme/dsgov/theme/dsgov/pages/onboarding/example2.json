@@ -1,0 +1,38 @@
+[
+  {
+    "element": "#intro-header",
+    "intro": "Área do Cabeçalho"
+  },
+  {
+    "element": "#intro-nav",
+    "intro": "Área de Navegação"
+  },
+  {
+    "element": "#intro-content",
+    "intro": "Área dos Cards"
+  },
+  {
+    "element": "#intro-card-1",
+    "intro": "Card 1"
+  },
+  {
+    "element": "#intro-card-2",
+    "intro": "Card 2"
+  },
+  {
+    "element": "#intro-card-3",
+    "intro": "Card 3"
+  },
+  {
+    "element": "#intro-card-4",
+    "intro": "Card 4"
+  },
+  {
+    "element": "#intro-card-5",
+    "intro": "Card 5"
+  },
+  {
+    "element": "#intro-footer",
+    "intro": "Área do Rodapé"
+  }
+]

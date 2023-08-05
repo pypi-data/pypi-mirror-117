@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Tag</title>
+    <!-- Fonte Rawline-->
+    <link rel="stylesheet" href="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
+    <!-- Fonte Raleway-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&amp;display=swap"/>
+    <!-- Design System de Governo-->
+    <link rel="stylesheet" href="../../../dsgov.css"/>
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="h5 mt-5">Tag de Interação com Fechamento</p>
+          <div class="br-tag interaction mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+            <button class="br-button close inverted circle" type="button" aria-label="Fechar"><i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="br-tag interaction mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+            <button class="br-button close inverted circle" type="button" aria-label="Fechar"><i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="h5 mt-5">Tag de Interação com Seleção</p>
+          <div class="br-tag interaction-select mx-1 p-1">
+            <input id="tag" type="checkbox" aria-label="selecionar tag" tabindex="0"/>
+            <label for="tag"><i class="fas fa-car" aria-hidden="true"></i>Label
+            </label>
+          </div>
+          <div class="br-tag interaction-select selected mx-1 p-1">
+            <input id="tag01" type="checkbox" aria-label="selecionar tag" checked="checked" tabindex="0"/>
+            <label for="tag01"><i class="fas fa-car" aria-hidden="true"></i>Label
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="h5 mt-5">Tag de Texto com ícone</p>
+          <div class="br-tag text support-03 mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="h5 mt-5">Tag de Texto sem ícone</p>
+          <div class="br-tag text support-03 mb-1"><span>Label</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="h5 mt-5">Tag de Texto Desabilitado</p>
+          <div class="br-tag text info mb-2" disabled="disabled"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="h5 mt-5">Tag com Status</p><span class="br-tag status danger large mb-1 mr-2"></span><span class="br-tag status warning medium mb-1 mr-2"></span><span class="br-tag status success small mb-1 mr-2"></span>
+        </div>
+        <div class="col-md-4">
+          <p class="h5 mt-5">Tag com Contagem</p>
+          <div class="br-tag count danger mb-1"><span>1</span>
+          </div>
+          <div class="br-tag count danger mb-1"><span>10</span>
+          </div>
+          <div class="br-tag count danger mb-1"><span>130</span>
+          </div>
+          <div class="br-tag count danger mb-1"><span>999+</span>
+            <div class="br-tooltip" role="tooltip" info="info" place="top"><span class="text" role="tooltip">99957</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="h5 mt-5">Tag com Ícone</p>
+          <div class="br-tag icon support-03 mb-1"><i class="fas fa-car" aria-hidden="true"></i>
+          </div>
+          <div class="br-tag icon support-04 mb-1"><i class="fas fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="br-tooltip" role="tooltip" info="info" place="top"><span class="text" role="tooltip">Texto do ícone</span>
+          </div>
+          <div class="br-tag icon support-08 mb-1"><i class="fas fa-user" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="h5 mt-5">Tag com Densidades</p>
+          <div class="br-tag text support-03 small mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Alta</span>
+          </div>
+          <div class="br-tag text support-03 medium mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Média</span>
+          </div>
+          <div class="br-tag text support-03 large mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Baixa</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="h5 mt-5">Tag com Distribuição Horizontal</p>
+          <div class="br-tag interaction mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+            <button class="br-button close inverted circle" type="button" aria-label="Fechar"><i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="br-tag interaction mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+            <button class="br-button close inverted circle" type="button" aria-label="Fechar"><i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="br-tag interaction mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+            <button class="br-button close inverted circle" type="button" aria-label="Fechar"><i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-start flex-column">
+          <p class="h5 mt-5">Tag com Distribuição Vertical</p>
+          <div class="br-tag interaction mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+            <button class="br-button close inverted circle" type="button" aria-label="Fechar"><i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="br-tag interaction mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+            <button class="br-button close inverted circle" type="button" aria-label="Fechar"><i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="br-tag interaction mb-1"><i class="fas fa-car" aria-hidden="true"></i><span>Label</span>
+            <button class="br-button close inverted circle" type="button" aria-label="Fechar"><i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../../dsgov.js"></script>
+  </body>
+</html>

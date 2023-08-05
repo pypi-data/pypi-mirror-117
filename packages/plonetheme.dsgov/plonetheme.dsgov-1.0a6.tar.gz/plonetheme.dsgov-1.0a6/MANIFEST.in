@@ -1,0 +1,9 @@
+graft src/plonetheme
+graft docs
+include *.rst
+include *.GPL
+include *.js
+include *.json
+include *.txt
+include tox.ini
+global-exclude *.pyc

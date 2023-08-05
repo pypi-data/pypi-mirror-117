@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Onboarding</title>
+    <!-- Fonte Rawline-->
+    <link rel="stylesheet" href="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
+    <!-- Fonte Raleway-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&amp;display=swap"/>
+    <!-- Design System de Governo-->
+    <link rel="stylesheet" href="../../../dsgov.css"/>
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <p class="h5">Ênfase na Interface</p>
+      <button class="br-button" type="button" data-trigger="onboarding" data-steps="example1.json" id="intro-interface">Ver exemplo
+      </button>
+      <p class="h5 mt-5">Ênfase Textual</p>
+      <button class="br-button" type="button" data-trigger="onboarding" data-steps="example2.json" id="intro-textual">Ver exemplo
+      </button>
+      <div class="mt-3" id="itnro-example">
+        <div class="header" id="intro-header">
+          <div class="p-3 bg-secondary-02">Cabeçalho</div>
+        </div>
+        <div class="row mt-1">
+          <div class="col-sm-3 d-flex" id="intro-nav">
+            <div class="p-3 bg-secondary-02 flex-fill mb-1">Navegação</div>
+          </div>
+          <div class="col-sm-9" id="intro-content">
+            <div class="row">
+              <div class="col-sm-6 mb-1" id="intro-card-1">
+                <div class="card p-3 pb-5 bg-secondary-02">Card 1</div>
+              </div>
+              <div class="col-sm-6 mb-1" id="intro-card-2">
+                <div class="card p-3 pb-5 bg-secondary-02">Card 2</div>
+              </div>
+              <div class="col-sm-4 mb-1" id="intro-card-3">
+                <div class="card p-3 pb-5 bg-secondary-02">Card 3</div>
+              </div>
+              <div class="col-sm-4 mb-1" id="intro-card-4">
+                <div class="card p-3 pb-5 bg-secondary-02">Card 4</div>
+              </div>
+              <div class="col-sm-4 mb-1" id="intro-card-5">
+                <div class="card p-3 pb-5 bg-secondary-02">Card 5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer" id="intro-footer">
+          <div class="p-3 bg-secondary-02">Rodapé</div>
+        </div>
+      </div>
+    </div>
+    <script src="../../../dsgov.js"></script>
+  </body>
+</html>

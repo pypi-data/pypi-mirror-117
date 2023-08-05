@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml">
+
+    <!-- The global sections -->
+    <browser:viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IMainNavigation"
+        class=".common.DSGovSectionsViewlet"
+        layer="plonetheme.dsgov.interfaces.IPlonethemeDsgovLayer"
+        permission="zope2.View"
+        />
+
+</configure>

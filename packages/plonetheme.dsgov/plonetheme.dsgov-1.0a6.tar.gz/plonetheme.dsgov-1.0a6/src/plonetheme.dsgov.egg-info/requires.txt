@@ -1,0 +1,16 @@
+setuptools
+plone.app.themingplugins
+collective.themefragments
+z3c.jbot
+plone.api>=1.8.4
+plone.restapi
+plone.app.dexterity
+plone.app.mosaic
+eea.facetednavigation
+plone.app.registry
+
+[test]
+plone.app.testing
+plone.testing>=5.0.0
+plone.app.contenttypes
+plone.app.robotframework[debug]
