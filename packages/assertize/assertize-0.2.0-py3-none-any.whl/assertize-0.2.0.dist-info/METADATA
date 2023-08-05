@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: assertize
+Version: 0.2.0
+Summary: Convert `self.assertSomething(...)` to `assert something`.
+License: GPL
+Author: Stefane Fermigier
+Author-email: sf@fermigier.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: libcst
