@@ -1,0 +1,9 @@
+crudrouter/__init__.py,sha256=EIUc6ZzAPF9f7fQrnalpVyVOogYE-kOl9kwexiQCsn8,3992
+crudrouter/json_api.py,sha256=ra8qHPW2RZwvLwvsNW6A14VR1xa0TkhH6ws2OzZ9j8k,1015
+crudrouter/tinydb/__init__.py,sha256=NEAFrN3fVi0YevE0jnCewsX8TC_Ee6EXrWrd7-qbwyo,3122
+crudrouter/tinydb/crud.py,sha256=4Qi27b-JIOKjjLSBWdmJ6QBdCuT-UVr9DIDhw6ZQi0k,1269
+LICENSE.md,sha256=8JDkEHH2L_uacr_k98bRJ0FSl_m4BJh0cGxHeQMCiL8,867
+crudrouter-0.1.1.dist-info/LICENSE.md,sha256=8JDkEHH2L_uacr_k98bRJ0FSl_m4BJh0cGxHeQMCiL8,867
+crudrouter-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+crudrouter-0.1.1.dist-info/METADATA,sha256=FWrLbC3Bz7tBJiQLjQiyr0zLdU0wzO8YFOWBvpxKroQ,641
+crudrouter-0.1.1.dist-info/RECORD,,
