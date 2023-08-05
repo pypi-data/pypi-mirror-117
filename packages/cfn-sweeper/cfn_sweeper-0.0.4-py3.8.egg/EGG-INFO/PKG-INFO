@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: cfn-sweeper
+Version: 0.0.4
+Summary: A tool for finding resources unmanaged by cloudformation
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
