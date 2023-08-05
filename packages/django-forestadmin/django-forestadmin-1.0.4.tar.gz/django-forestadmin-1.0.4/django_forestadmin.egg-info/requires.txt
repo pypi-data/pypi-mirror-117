@@ -1,0 +1,9 @@
+Django>=3.2.0
+django-cors-headers==3.7.0
+django-ipware==3.0.7
+importlib-metadata==4.6.3
+marshmallow-jsonapi==0.24.0
+oic==1.2.1
+python-dateutil==2.8.1
+python-jose==3.3.0
+requests==2.25.1
