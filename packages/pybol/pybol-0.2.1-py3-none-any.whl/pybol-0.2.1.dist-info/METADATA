@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pybol
+Version: 0.2.1
+Summary: A library for assembling predefined states of files and directories
+Home-page: UNKNOWN
+Author: Ian Kenney
+Author-email: ian.kenney@asu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyyaml
+Requires-Dist: logger
+
+UNKNOWN
+
