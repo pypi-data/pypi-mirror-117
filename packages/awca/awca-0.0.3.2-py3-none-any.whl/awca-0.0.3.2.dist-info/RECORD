@@ -1,0 +1,9 @@
+awca/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awca/ocr.py,sha256=KqLiLJF3AqDL9cFriwZhHeTyR9p5NxqP_hrckCE5X8M,1783
+awca/paraphrasing.py,sha256=Mjg3YvQHJpr0xpAQLhpeAUsY2Gc32t_7xY1yaUEx4qY,1236
+awca/summarization.py,sha256=XDiiDkuBFsW4kP1h58pj1CFKj6GSFpiRX0yyJ02ruAU,1525
+awca-0.0.3.2.dist-info/LICENSE,sha256=mVDoDNapRJ3SEkEE9WUNNRpOR-Iy9ZAmLSTiOW-EKts,1067
+awca-0.0.3.2.dist-info/METADATA,sha256=fH7u00UuXcva2dFrsPwZq-72d9f-2rZ4MSD_e9eeo_M,912
+awca-0.0.3.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+awca-0.0.3.2.dist-info/top_level.txt,sha256=neTzAjSZolXpYbKQD8D2dsW7_uDsDNLPsnTX1DlVee8,5
+awca-0.0.3.2.dist-info/RECORD,,
