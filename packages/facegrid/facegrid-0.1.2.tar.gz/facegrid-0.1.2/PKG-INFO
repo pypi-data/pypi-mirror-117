@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: facegrid
+Version: 0.1.2
+Summary: Python package for face biometrics and other tools
+Home-page: https://github.com/aaadddiii/facegrid
+Author: Adithya Kurien Peter
+Author-email: adithya.kurien@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
