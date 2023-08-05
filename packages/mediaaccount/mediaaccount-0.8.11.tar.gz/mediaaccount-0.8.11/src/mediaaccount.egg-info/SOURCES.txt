@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mediaaccount/__init__.py
+src/mediaaccount/apiclient.py
+src/mediaaccount/models.py
+src/mediaaccount.egg-info/PKG-INFO
+src/mediaaccount.egg-info/SOURCES.txt
+src/mediaaccount.egg-info/dependency_links.txt
+src/mediaaccount.egg-info/top_level.txt
