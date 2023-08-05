@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/mathtools/__init__.py
+src/mathtools/mathtools.py
+src/mathtools_uio.egg-info/PKG-INFO
+src/mathtools_uio.egg-info/SOURCES.txt
+src/mathtools_uio.egg-info/dependency_links.txt
+src/mathtools_uio.egg-info/top_level.txt
