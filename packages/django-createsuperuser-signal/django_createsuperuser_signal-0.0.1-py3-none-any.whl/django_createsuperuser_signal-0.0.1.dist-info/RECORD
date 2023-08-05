@@ -1,0 +1,11 @@
+createsuperuser/__init__.py,sha256=QGcwEuk_RlhD1CH_QYXcJ9OklD5IfCKvZIT1q7gm6Rs,51
+createsuperuser/apps.py,sha256=i55dSnqzcGAPFg0qrF50bKotRu42gxMpE2s-z5wxkg8,275
+createsuperuser/models.py,sha256=s07Yih_uj4ntvHPLoETJoP7YPVop60iOXboXf8bRJbc,41
+createsuperuser/signals.py,sha256=kCRzrKBuu3hXOlTQWDBJqXdeovXx8ZVPA23OAHko8R8,1542
+createsuperuser/migrations/0001_initial.py,sha256=2gGDb9bcmJ2qRMtz38KiVec4N1PlpcXHD5jc3bqImkM,220
+createsuperuser/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_createsuperuser_signal-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_createsuperuser_signal-0.0.1.dist-info/METADATA,sha256=OZ930Onri63Sb8qnQ5PFyvxcFzUdEM9hUCtVkmbtZx8,2839
+django_createsuperuser_signal-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_createsuperuser_signal-0.0.1.dist-info/top_level.txt,sha256=wzrOvvuTDlhqhmLP0mljny8pzcDmZQcT2c1fNBzAXjY,16
+django_createsuperuser_signal-0.0.1.dist-info/RECORD,,
