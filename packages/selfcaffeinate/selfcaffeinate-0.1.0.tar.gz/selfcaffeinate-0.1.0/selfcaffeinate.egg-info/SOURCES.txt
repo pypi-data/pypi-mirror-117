@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+selfcaffeinate/__about__.py
+selfcaffeinate/__init__.py
+selfcaffeinate/selfcaffeinate.py
+selfcaffeinate/version.py
+selfcaffeinate.egg-info/PKG-INFO
+selfcaffeinate.egg-info/SOURCES.txt
+selfcaffeinate.egg-info/dependency_links.txt
+selfcaffeinate.egg-info/top_level.txt
+selfcaffeinate/config/default.yaml
