@@ -1,0 +1,8 @@
+k3daemonize/__init__.py,sha256=fYf4rHJNgwsAs7VPx_FC5Qy6pWV50JnuT_-MmxOPXU4,413
+k3daemonize/daemonize.py,sha256=gz2yMVpF6BVphSXcxUn90renjGhb1njPjJDAdcX2TCQ,7196
+k3daemonize/setup.py,sha256=fK1xw_KO50Jirqb2kibeHLixats0rjWI6WdyokplPBc,2479
+k3daemonize/synopsis.py,sha256=zzOkkEeHHaS6MfcseAcfS0X5L2dYeUL1ulIwuwKIuro,370
+k3daemonize-0.1.0.dist-info/METADATA,sha256=oh0CPHR8iMpdW8xpRA_KoPNxXQ2n92XQAL7HlfDSLGI,2225
+k3daemonize-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+k3daemonize-0.1.0.dist-info/top_level.txt,sha256=6rISGElsXwZ9VbIUCW0S9wqF5qK5TqtmfhiUh4XVNgU,12
+k3daemonize-0.1.0.dist-info/RECORD,,
