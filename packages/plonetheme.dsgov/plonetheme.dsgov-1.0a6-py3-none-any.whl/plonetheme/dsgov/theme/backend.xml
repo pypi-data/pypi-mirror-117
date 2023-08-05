@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <rules xmlns="http://namespaces.plone.org/diazo"
+         xmlns:css="http://namespaces.plone.org/diazo/css"
+         xmlns:xhtml="http://www.w3.org/1999/xhtml"
+         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+      <xi:include href="++theme++dsgov/backend.xml" />
+      <rules css:if-content="body.viewpermission-view, body.viewpermission-none">
+         <theme href="index.html" />
+
+        <!-- Central column -->
+        <replace css:theme="#content-container" method="raw">
+          <xsl:variable name="central">
+            <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-6</xsl:if>
+            <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-9</xsl:if>
+            <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-9</xsl:if>
+            <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
+          </xsl:variable>
+          <div class="{$central}">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <xsl:apply-templates css:select="#content" />
+              </div>
+            </div>
+            <footer class="row">
+              <div class="col-xs-12 col-sm-12">
+                <xsl:copy-of css:select="#viewlet-below-content" />
+              </div>
+            </footer>
+          </div><!--/row-->
+        </replace>
+
+        <!-- Alert message -->
+        <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
+
+      </rules>
+  </rules>

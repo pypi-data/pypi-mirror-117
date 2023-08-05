@@ -1,0 +1,37 @@
+<tal:statusmsg tal:define="messages view/messages"
+         tal:repeat="message messages">
+    <div class="col-sm-12 col-md-12">
+
+        <div tal:define="mtype message/type | nothing;"
+                 tal:attributes="class string:br-message ${mtype};" role="alert">
+
+
+                <div class="icon" aria-label="informações">
+                    <i tal:attributes="class string:fas fa-${mtype} fa-lg;" aria-hidden="true"></i>
+                </div>
+                <div class="content">
+                    <strong
+                             i18n:domain="plone"
+                             i18n:translate="" tal:content="python:mtype.capitalize()">Info</strong>
+                    <p>
+                        <span class="content"
+                                tal:replace="message/message | nothing"
+                                i18n:translate="">
+                            The status message.
+                        </span>
+                    </p>
+                </div>
+                <div class="close">
+                    <button
+                            class="br-button circle small"
+                            type="button"
+                            aria-label="Fechar"
+                    >
+                        <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+
+    </div>
+</tal:statusmsg>

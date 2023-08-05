@@ -1,0 +1,47 @@
+<configure
+        xmlns="http://namespaces.zope.org/zope"
+        xmlns:browser="http://namespaces.zope.org/browser"
+        xmlns:plone="http://namespaces.plone.org/plone"
+        i18n_domain="plonetheme.dsgov">
+
+    <!-- BEGIN - Mosaic Tiles Customization -->
+    <include package="plone.tiles" file="meta.zcml" />
+
+    <browser:page
+            name="tile_album_view"
+            for="*"
+            layer="plone.app.standardtiles.contentlisting.IContentListingTileLayer"
+            permission="zope2.View"
+            template="templates/tile_album_view.pt"
+    />
+
+        <browser:page
+            name="tile_cardgrid_view"
+            for="*"
+            layer="plone.app.standardtiles.contentlisting.IContentListingTileLayer"
+            permission="zope2.View"
+            template="templates/tile_cardgrid_view.pt"
+    />
+
+    <!-- ./END Mosaic Tiles Customization -->
+
+    <!-- Manage Settings with Registry, Control Panels and Vocabularies -->
+    <browser:page
+            name="dsgov-controlpanel"
+            for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+            class=".controlpanel.DSGovControlPanelView"
+            permission="cmf.ManagePortal"
+    />
+
+    <include package=".viewlets" />
+
+    <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+    <include package="z3c.jbot" file="meta.zcml" />
+    <interface name="plonetheme.dsgov"
+               interface="plonetheme.dsgov.interfaces.IPlonethemeDsgovLayer"
+               type="zope.publisher.interfaces.browser.IBrowserSkinType"
+    />
+
+    <browser:jbot directory="overrides" />
+
+</configure>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="shortcut icon" type="image/x-icon"
+        href="static/favicon.ico" />
+  <title>Template básico</title>
+  <!-- Fonte Rawline-->
+  <link rel="stylesheet" href="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
+  <!-- Fonte Raleway-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&amp;display=swap"/>
+  <!-- Design System de Governo-->
+  <!-- Fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+</head>
+<body>
+<section id="portal-toolbar">
+</section>
+<div class="template-base">
+  <nav id="skip-links">
+    <div class="skip-links" aria-label="Acesso rápido"><a accesskey="1" href="#main-content">Ir para o Conteúdo<strong class="accesskey">1</strong></a><a accesskey="2" href="#main-navigation">Ir para para Navegação<strong class="accesskey">2</strong></a><a accesskey="3" href="#main-searchbox">Ir para para Busca<strong class="accesskey">3</strong></a>
+    </div>
+  </nav>
+  <header class="br-header" id="header" data-sticky="data-sticky">
+    <div class="container-lg">
+      <div class="header-top">
+        <div class="header-logo">
+          <img src="/IFRR/++theme++dsgov/img/govbr-logo.png"/>
+          <div class="header-sign"><a href="https://www.gov.br/mec" target="_blank">Ministério da Educação</a></div>
+        </div>
+        <div class="header-actions">
+
+          <!--
+          <div class="header-links dropdown">
+            <button class="br-button circle small" type="button" data-toggle="dropdown" aria-label="Abrir Acesso Rápido"><i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+            </button>
+            <div class="br-list">
+              <div class="header">
+                <div class="title">Acesso Rápido</div>
+              </div>
+              <a class="br-item" href="javascript:void(0)">Acesso à Informação</a>
+              <a class="br-item" href="javascript:void(0)">Unidades</a>
+              <a class="br-item" href="javascript:void(0)">Acessibilidade</a>
+            </div>
+          </div>
+          -->
+
+          <!--
+          <span class="br-divider vertical mx-half mx-sm-1"></span>
+          <div class="header-functions dropdown">
+            <button class="br-button circle small" type="button" data-toggle="dropdown" aria-label="Abrir Funcionalidades do Sistema"><i class="fas fa-th" aria-hidden="true"></i>
+            </button>
+
+            <div class="br-list">
+              <div class="header">
+                <div class="title">Funcionalidades do Sistema</div>
+              </div>
+              <div class="align-items-center br-item">
+                <button class="br-button circle small" type="button"><i class="fas fa-chart-bar" aria-hidden="true"></i><span class="text">Funcionalidade 1</span>
+                </button>
+              </div>
+              <div class="align-items-center br-item">
+                <button class="br-button circle small" type="button"><i class="fas fa-headset" aria-hidden="true"></i><span class="text">Funcionalidade 2</span>
+                </button>
+              </div>
+              <div class="align-items-center br-item">
+                <button class="br-button circle small" type="button"><i class="fas fa-comment" aria-hidden="true"></i><span class="text">Funcionalidade 3</span>
+                </button>
+              </div>
+              <div class="align-items-center br-item">
+                <button class="br-button circle small" type="button"><i class="fas fa-adjust" aria-hidden="true"></i><span class="text">Funcionalidade 4</span>
+                </button>
+              </div>
+            </div>
+
+          </div>  -->
+
+          <!--<span class="br-divider vertical mx-half mx-sm-1"></span>-->
+          <div class="header-search-trigger">
+            <button class="br-button circle" type="button" aria-label="Abrir Busca" data-toggle="search" data-target=".header-search">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+          <!--
+          <div class="header-login">
+            <div class="header-sign-in">
+              <button class="br-button sign-in small" type="button" data-trigger="login"><i class="fas fa-user" aria-hidden="true"></i><span class="d-sm-inline">Entrar</span>
+              </button>
+            </div>
+            <div class="header-avatar d-none">
+              <div class="avatar dropdown"><span class="br-tag status small danger mr-n1">2</span><span class="br-avatar" title="Fulana da Silva"><span class="image"><img src="https://picsum.photos/id/823/400" alt="Avatar"/></span></span>
+                <button class="br-button circle small" type="button" aria-label="Abrir Menu de usuário" data-toggle="dropdown"><i class="fas fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="br-notification show">
+                  <div class="notification-header">
+                    <div class="row">
+                      <div class="col-10"><span class="text-bold">Fulano da Silva</span><br/><small><a>nome.sobrenome@dominio.gov</a></small></div>
+                    </div>
+                  </div>
+                  <div class="notification-body">
+                    <div class="br-tab">
+                      <nav class="tab-nav">
+                        <ul>
+                          <li class="tab-item">
+                            <button type="button" data-panel="notif-item749" aria-label="notif-item749"><span class="name"><span class="icon"><i class="fas fa-image" aria-hidden="true"></i></span><span class="name">Item</span></span></button>
+                          </li>
+                          <li class="tab-item is-active">
+                            <button type="button" data-panel="notif-item750" aria-label="notif-item750"><span class="name"><span class="icon"><i class="fas fa-image" aria-hidden="true"></i></span><span class="name">Item</span></span></button>
+                          </li>
+                        </ul>
+                      </nav>
+                      <div class="tab-content">
+                        <div class="tab-panel" id="notif-item749">
+                          <div class="br-list">
+                            <button class="br-item" type="button"><i class="fas fa-heartbeat" aria-hidden="true"></i>Link de Acesso
+                            </button><span class="br-divider"></span>
+                            <button class="br-item" type="button"><i class="fas fa-heartbeat" aria-hidden="true"></i>Link de Acesso
+                            </button><span class="br-divider"></span>
+                            <button class="br-item" type="button"><i class="fas fa-heartbeat" aria-hidden="true"></i>Link de Acesso
+                            </button>
+                          </div>
+                        </div>
+                        <div class="tab-panel is-active" id="notif-item750">
+                          <div class="br-list">
+                            <button class="br-item" type="button"><span class="br-tag status small warning"></span><span class="text-bold">Título</span><span class="text-medium mb-2">25 de out</span><span>Nostrud consequat culpa ex mollit aute. Ex ex veniam ea labore laboris duis duis elit. Ex aute dolor enim aute Lorem dolor. Duis labore ad anim culpa. Non aliqua excepteur sunt eiusmod ex consectetur ex esse laborum velit ut aute.</span>
+                            </button><span class="br-divider"></span>
+                            <button class="br-item" type="button"><span class="text-bold">Título</span><span class="text-medium mb-2">24 de out</span><span>Labore nulla elit laborum nulla duis. Deserunt ad nulla commodo occaecat nulla proident ea proident aliquip dolore sunt nulla. Do sit eu consectetur quis culpa. Eiusmod minim irure sint nulla incididunt occaecat ipsum mollit in ut. Minim adipisicing veniam adipisicing velit nostrud duis consectetur aute nulla deserunt culpa aliquip.</span>
+                            </button><span class="br-divider"></span>
+                            <button class="br-item" type="button"><span class="br-tag status small warning"></span><span class="text-bold">Título</span><span class="text-medium mb-2">03 de out</span><span>Duis qui dolor dolor qui sint consectetur. Ipsum eu dolore ex anim reprehenderit laborum commodo. Labore do ut nulla eiusmod consectetur.</span>
+                            </button><span class="br-divider"></span>
+                            <button class="br-item" type="button"><span class="text-bold">Título</span><span class="text-medium mb-2">16 de mai</span><span>Sunt velit dolor enim mollit incididunt irure est. Ad ea Lorem culpa quis occaecat sunt in exercitation nisi. Sit laborum laborum dolor culpa ipsum velit. Non nulla nisi dolore et anim consequat officia deserunt amet qui. Incididunt exercitation irure labore ut Lorem culpa. Dolore ea irure pariatur ullamco culpa veniam amet dolor in fugiat pariatur ut. Sit non ut enim et incididunt tempor irure pariatur ex proident labore cillum dolore nisi.</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-menu">
+          <div class="header-menu-trigger">
+            <div class="br-menu" id="main-navigation">
+              <div class="menu-trigger">
+                <button class="br-button circle small" type="button" data-toggle="menu" aria-label="Abrir Menu Principal"><i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="menu-container">
+                <div class="row">
+                  <div id="toolbar-space"></div>
+                  <div class="col-sm-4 col-lg-3">
+                    <div class="menu-panel">
+                      <div class="menu-header">
+                        <div class="menu-close">
+                          <button class="br-button circle" type="button" arial-label="Fechar o menu" data-dismiss="menu"><i class="fas fa-times" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <div class="menu-title"><img src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/logo-positive.png" alt="Imagem ilustrativa"/></div>
+                      </div>
+                      <nav id="main-menu" class="menu-body">
+                        <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Agrupamento de menu 1</span></a>
+                          <ul>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a></li>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a>
+                              <ul>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 1</span></a></li>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 1</span></a>
+                                  <ul>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                  </ul>
+                                </li>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 1</span></a></li>
+                              </ul>
+                            </li>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Agrupamento de menu 2</span></a>
+                          <ul>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a></li>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a>
+                              <ul>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 2</span></a></li>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 2</span></a>
+                                  <ul>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                  </ul>
+                                </li>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 2</span></a></li>
+                              </ul>
+                            </li>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="menu-folder"><a class="menu-item" href="javascript: void(0)"><span class="content">Agrupamento de menu 3</span></a>
+                          <ul>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a></li>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a>
+                              <ul>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 3</span></a></li>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 3</span></a>
+                                  <ul>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                    <li><a class="menu-item" href="javascript: void(0)"><span class="content">Último nível de menu</span></a></li>
+                                  </ul>
+                                </li>
+                                <li><a class="menu-item" href="javascript: void(0)"><span class="content">Filho do item de menu 3</span></a></li>
+                              </ul>
+                            </li>
+                            <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu</span></a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                      <div class="menu-footer">
+                        <!-- Logos
+                        <div class="menu-logos"><img src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/logo-positive.png" alt="Imagem ilustrativa"/><img src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/logo-positive.png" alt="Imagem ilustrativa"/></div>
+                        -->
+
+                        <!-- Links
+                        <div class="menu-links"><a href="javascript: void(0)">Órgãos do Governo&nbsp;<i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a><a href="javascript: void(0)">Legislação&nbsp;<i class="fas fa-external-link-square-alt" aria-hidden="true"></i></a></div>
+                        -->
+
+                        <!-- Social
+                        <div class="menu-social">
+                          <div class="text-semi-bold mb-1">Título</div>
+                          <div class="sharegroup">
+                            <div class="share"><a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></div>
+                            <div class="share"><a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></div>
+                            <div class="share"><a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></div>
+                            <div class="share"><a class="br-button circle" href="javascript: void(0)" aria-label="Compartilhar por Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></div>
+                          </div>
+                        </div>
+                        -->
+
+                        <!-- Licença
+                        <div class="menu-info">
+                          <div class="text-center text-down-01">Todo o conteúdo deste site está publicado sob a licença <strong>Creative Commons Atribuição-SemDerivações 3.0</strong></div>
+                        </div>
+                        -->
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-scrim" data-dismiss="menu" tabindex="0"></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-info">
+            <div class="header-title"><a href="/">Template básico</a></div>
+            <div class="header-subtitle">Subtítulo do Header</div>
+          </div>
+        </div>
+        <div class="header-search">
+          <div class="br-input has-icon">
+            <label for="main-searchbox">Texto da pesquisa</label>
+            <input class="has-icon" id="main-searchbox" type="search" placeholder="O que você procura?"/>
+            <button class="br-button circle small" type="button" aria-label="Pesquisar"><i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+          <button class="br-button circle search-close" type="button" aria-label="Fechar Busca" data-dismiss="search"><i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div id="global_statusmessage" class="row">
+
+  </div>
+  <main id="main" class="row row-offcanvas row-offcanvas-right">
+    <div class="container">
+      <div class="row" id="container-grid">
+        <div class="col-sm-4 col-md-3" id="container-navigation">
+          <div id="column1-container" class="br-menu auxiliary">
+            <div class="br-menu auxiliary">
+              <div class="menu-trigger">
+                <button class="br-button primary block" type="button" data-toggle="menu">Menu Auxiliar<i class="fas fa-angle-up" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="menu-container">
+                <div class="menu-panel">
+                  <nav id="auxiliary-menu" class="menu-body">
+                    <div class="folder">
+                      <ul>
+                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu auxiliar 1</span></a></li>
+                        <li><a class="menu-item active" href="javascript: void(0)"><span class="content">Item de menu ativo</span></a></li>
+                        <li><a class="menu-item" href="javascript: void(0)"><span class="content">Item de menu auxiliar 3</span></a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+                <div class="menu-scrim" data-dismiss="menu" tabindex="0"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="br-breadcrumb pt-3">
+            <ul class="crumb-list">
+              <li class="crumb home">
+                <div class="br-button circle"><span class="sr-only">Página inicial</span><i class="icon fas fa-home"></i></div>
+              </li>
+              <li class="crumb"><i class="icon fas fa-chevron-right"></i><a href="javascript:void(0)">Tela Anterior</a>
+              </li>
+              <li class="crumb"><i class="icon fas fa-chevron-right"></i><a href="javascript:void(0)">Tela Anterior2</a>
+              </li>
+              <li class="crumb"><i class="icon fas fa-chevron-right"></i><a href="javascript:void(0)">Tela Anterior3</a>
+              </li>
+              <li class="crumb"><i class="icon fas fa-chevron-right"></i><a href="javascript:void(0)">Tela Anterior4</a>
+              </li>
+              <li class="crumb" data-active="active"><i class="icon fas fa-chevron-right"></i><span>Tela Atual</span>
+              </li>
+            </ul>
+          </div>
+          <div id="content-container">
+            <div class="main-content pl-3" id="main-content">
+              <p class="h2">Template básico</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequuntur ratione suscipit voluptatem reprehenderit aut recusandae autem voluptas quo nulla tenetur, quos a dolores enim ad, cum, eius et odio!</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="column2-container">
+        </div>
+
+      </div>
+    </div>
+  </main><!--/row-->
+
+</div><!--/container-->
+
+<footer class="br-footer">
+  <div class="container-lg">
+    <div class="logo text-center">
+
+      <div class="br-list horizontal" data-toggle="data-toggle" data-unique="data-unique">
+        <div class="col-2"><a class="br-item header" href="javascript:void(0)">
+          <div class="content text-down-01 text-bold text-uppercase">Categoria 1</div>
+          <div class="support"><i class="fas fa-angle-up" aria-hidden="true"></i>
+          </div></a>
+          <div class="br-list"><span class="br-divider d-md-none"></span><a class="br-item" href="javascript:void(0)">
+            <div class="content">Deserunt</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Nulla occaecat eiusmod</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Adipisicing culpa et ad consequat</div></a><span class="br-divider d-md-none"></span>
+          </div>
+        </div>
+        <div class="col-2"><a class="br-item header" href="javascript:void(0)">
+          <div class="content text-down-01 text-bold text-uppercase">Categoria 2</div>
+          <div class="support"><i class="fas fa-angle-up" aria-hidden="true"></i>
+          </div></a>
+          <div class="br-list"><span class="br-divider d-md-none"></span><a class="br-item" href="javascript:void(0)">
+            <div class="content">Ex qui laborum consectetur aute commodo</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Ex qui laborum consectetur aute commodo</div></a><span class="br-divider d-md-none"></span>
+          </div>
+        </div>
+        <div class="col-2"><a class="br-item header" href="javascript:void(0)">
+          <div class="content text-down-01 text-bold text-uppercase">Categoria 3</div>
+          <div class="support"><i class="fas fa-angle-up" aria-hidden="true"></i>
+          </div></a>
+          <div class="br-list"><span class="br-divider d-md-none"></span><a class="br-item" href="javascript:void(0)">
+            <div class="content">Ad deserunt nostrud</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Est ex deserunt</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Ad deserunt nostrud</div></a><span class="br-divider d-md-none"></span>
+          </div>
+        </div>
+        <div class="col-2"><a class="br-item header" href="javascript:void(0)">
+          <div class="content text-down-01 text-bold text-uppercase">Categoria 4</div>
+          <div class="support"><i class="fas fa-angle-up" aria-hidden="true"></i>
+          </div></a>
+          <div class="br-list"><span class="br-divider d-md-none"></span><a class="br-item" href="javascript:void(0)">
+            <div class="content">Duis incididunt consectetur</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Est ex deserunt</div></a><span class="br-divider d-md-none"></span>
+          </div>
+        </div>
+        <div class="col-2"><a class="br-item header" href="javascript:void(0)">
+          <div class="content text-down-01 text-bold text-uppercase">Categoria 5</div>
+          <div class="support"><i class="fas fa-angle-up" aria-hidden="true"></i>
+          </div></a>
+          <div class="br-list"><span class="br-divider d-md-none"></span><a class="br-item" href="javascript:void(0)">
+            <div class="content">Adipisicing culpa et ad consequat</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Ad deserunt nostrud</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Nulla occaecat eiusmod</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Est ex deserunt</div></a><span class="br-divider d-md-none"></span>
+          </div>
+        </div>
+        <div class="col-2"><a class="br-item header" href="javascript:void(0)">
+          <div class="content text-down-01 text-bold text-uppercase">Categoria 6</div>
+          <div class="support"><i class="fas fa-angle-up" aria-hidden="true"></i>
+          </div></a>
+          <div class="br-list"><span class="br-divider d-md-none"></span><a class="br-item" href="javascript:void(0)">
+            <div class="content">Adipisicing culpa et ad consequat</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Duis incididunt consectetur</div></a><a class="br-item" href="javascript:void(0)">
+            <div class="content">Est ex deserunt</div></a><span class="br-divider d-md-none"></span>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="copyright"><div class="col-xs-12"></div></div>
+      <div class="colophon"><div class="col-xs-12"></div></div>
+      <div class="site-actions"><div class="col-xs-12"></div></div>
+      -->
+
+      <!--
+    <div class="d-none d-sm-block">
+      <div class="row align-items-end justify-content-between py-5">
+        <div class="col social-network">
+          <p class="text-up-01 text-extra-bold text-uppercase">Redes Sociais</p><a class="mr-3" href="javascript:void(0);"><img src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/button-negative.png" alt="Imagem"/></a><a class="mr-3" href="javascript:void(0);"><img src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/button-negative.png" alt="Imagem"/></a><a class="mr-3" href="javascript:void(0);"><img src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/button-negative.png" alt="Imagem"/></a><a class="mr-3" href="javascript:void(0);"><img src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/button-negative.png" alt="Imagem"/></a>
+        </div>
+        <div class="col assigns text-right"><img class="ml-4" src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/logo-assign-negative.png" alt="Imagem"/><img class="ml-4" src="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/images/logo-assign-negative.png" alt="Imagem"/>
+        </div>
+      </div>
+    </div>
+    -->
+    </div>
+
+
+    <!--
+    <span class="br-divider my-3"></span>
+    <div class="container-lg"><div class="info"><div class="text-down-01 text-medium pb-3 text-center">Texto destinado a exibição de informações relacionadas à&nbsp;<strong>licença de uso.</strong></div></div>
+    -->
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+         i18n:domain="plone">
+<body>
+
+<div class="album-view row"
+         tal:define="results context">
+    <tal:listing condition="results">
+        <tal:block repeat="item results">
+            <div class="col-12 col-md-6 col-lg-4 item"
+                     tal:define="obj item/getObject">
+                    <div class="card-content">
+                            <a tal:attributes="href string:${obj/absolute_url}/view">
+                                <figure style="background-color: black;">
+                                    <img style="object-fit: cover;
+    -webkit-mask-image: linear-gradient(black, transparent);;
+    mask-image: linear-gradient(black, transparent); width: 100%"
+                                         class="image"
+                                             tal:define="scales obj/@@images;
+                                                    image  python: scales.scale('image', scale='large')"
+                                             tal:condition="image" tal:attributes="src image/url">
+                                <figcaption class="title" style="color:white; padding: 10px; margin-top: -80px; font-size: 24px; font-weight: bold">
+                                ${item/Title}<br />
+                                        ${item/rights}
+                                </figcaption>
+                                </figure>
+                            </a>
+                </div>
+            </div>
+        </tal:block>
+    </tal:listing>
+    <p class="discreet"
+             tal:condition="not:results"
+             i18n:translate="">
+        No items were found
+    </p>
+</div>
+
+</body>
+</html>

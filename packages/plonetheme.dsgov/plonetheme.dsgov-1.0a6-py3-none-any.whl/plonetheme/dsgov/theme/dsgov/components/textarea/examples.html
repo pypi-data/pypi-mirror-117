@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Textarea</title>
+    <!-- Fonte Rawline-->
+    <link rel="stylesheet" href="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
+    <!-- Fonte Raleway-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&amp;display=swap"/>
+    <!-- Design System de Governo-->
+    <link rel="stylesheet" href="../../../dsgov.css"/>
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <p class="h5">Textarea padrão</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-id1">Label</label>
+            <textarea id="textarea-id1" placeholder="Exemplo de textarea simples" rows="5" cols="5"></textarea>
+          </div>
+          <p class="text-base mt-1">Texto auxiliar ao preenchimento.</p>
+        </div>
+      </div>
+      <p class="h5 mt-5">Densidades dos Inputs</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-density-id2">Densidade baixa</label>
+            <textarea class="large" id="textarea-density-id2" placeholder="Digite somente números" rows="5" cols="5"></textarea>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-density-id3">Densidade média(padrão)</label>
+            <textarea class="medium" id="textarea-density-id3" placeholder="Digite somente números" rows="5" cols="5"></textarea>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-density-id4">Densidade alta</label>
+            <textarea class="small" id="textarea-density-id4" placeholder="Digite somente números" rows="5" cols="5"></textarea>
+          </div>
+        </div>
+      </div>
+      <p class="h5 mt-5">Validação e estados</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-success">Label</label>
+            <textarea id="textarea-success" placeholder="Exemplo de textarea com sucesso" rows="5" cols="5" data-success="data-success"></textarea>
+            <div class="feedback color-success mt-1"><i class="fas fa-check-circle" aria-hidden="true"></i><span>Campo correto</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-danger">Label</label>
+            <textarea id="textarea-danger" placeholder="Exemplo de textarea com erro" rows="5" cols="5" data-danger="data-danger"></textarea>
+            <div class="feedback color-danger mt-1"><i class="fas fa-times-circle" aria-hidden="true"></i><span>Campo com erro</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-alerta">Label</label>
+            <textarea id="textarea-alerta" placeholder="Exemplo de textarea com alerta" rows="5" cols="5" data-warning="data-warning"></textarea>
+            <div class="feedback color-warning mt-1"><i class="fas fa-times-circle" aria-hidden="true"></i><span>Campo com alerta</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-info">Label</label>
+            <textarea id="textarea-info" placeholder="Exemplo de textarea com informação" rows="5" cols="5" data-info="data-info"></textarea>
+            <div class="feedback color-info mt-1"><i class="fas fa-times-circle" aria-hidden="true"></i><span>Campo com informação</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-id7">Label</label>
+            <textarea id="textarea-id7" placeholder="Exemplo de textarea desabilitado" rows="5" cols="5" disabled="disabled"></textarea>
+            <div class="feedback mt-1"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span>Campo Desabilitado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="h5 mt-5"> Textarea com limite de caracter</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-limit">Label</label>
+            <textarea id="textarea-limit" maxlength="100" placeholder="Exemplo de textarea com limite de 100 caracteres" rows="5" cols="5"></textarea>
+          </div>
+          <p class="text-base mt-1" id="textcharacter">Texto auxiliar ao preenchimento.</p>
+        </div>
+      </div>
+      <p class="h5 mt-5"> Textarea SEM limite de caracteres</p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="br-textarea">
+            <label for="textarea-nolimit">Label</label>
+            <textarea id="textarea-nolimit" placeholder="Exemplo de textarea sem limite de caracteres" rows="5" cols="5"></textarea>
+          </div>
+          <p class="text-base mt-1" id="contcharacter">Texto auxiliar ao preenchimento.</p>
+        </div>
+      </div>
+    </div>
+    <script src="../../../dsgov.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<registry>
+
+<records prefix="plone.resources/barceloneta-controlpanels"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++dsgov/less/controlpanels.plone.less</element>
+    </value>
+</records>
+
+</registry>

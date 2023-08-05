@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Avatar</title>
+    <!-- Fonte Rawline-->
+    <link rel="stylesheet" href="https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css"/>
+    <!-- Fonte Raleway-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&amp;display=swap"/>
+    <!-- Design System de Governo-->
+    <link rel="stylesheet" href="../../../dsgov.css"/>
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto ml-1 mt-5">
+          <p class="h5">Avatar Icônico</p><span class="br-avatar" title="Fulano da Silva"><span class="image"><i class="fas fa-user" aria-hidden="true"></i></span></span>
+        </div>
+        <div class="col-auto ml-1 mt-5">
+          <p class="h5">Avatar Fotográfico</p><span class="br-avatar" title="Fulana da Silva"><span class="image"><img src="https://picsum.photos/id/823/400" alt="Avatar"/></span></span>
+        </div>
+        <div class="col-auto ml-1 mt-5">
+          <p class="h5">Avatar Letra</p><span class="br-avatar" title="Zé da Silva"><span class="image bg-support-01 text-secondary-01">z</span></span>
+        </div>
+      </div>
+      <p class="h5 mt-5">Em telas de Chat</p>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="br-card">
+            <div class="front">
+              <div class="content">
+                <div class="d-flex align-items-center"><span class="br-avatar" title="Fulana da Silva"><span class="image"><img src="https://picsum.photos/id/823/400" alt="Avatar"/></span></span>
+                  <div class="flex-fill mx-3">
+                    <div class="text-primary-default text-up-01">Maria Amorim</div><span>UX Designer</span>
+                  </div>
+                  <div>
+                    <button class="br-button circle" type="button" aria-label="Ver telefone"><i class="fas fa-phone" aria-hidden="true"></i>
+                    </button>
+                    <button class="br-button circle" type="button" aria-label="Enviar comentário"><i class="fas fa-comment" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="br-card">
+            <div class="front">
+              <div class="content">
+                <div class="d-flex"><span class="br-avatar" title="Fulana da Silva"><span class="image"><img src="https://picsum.photos/id/823/400" alt="Avatar"/></span></span>
+                  <div class="flex-fill ml-3">
+                    <div class="br-textarea">
+                      <textarea aria-label="Digite uma informação se o label estiver vazio" placeholder="Digite seu comentário" id="comments"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer">
+                <div class="row justify-content-end">
+                  <div class="col col-xs-12 text-right">
+                    <button class="br-button" type="button">Cancelar
+                    </button>
+                    <button class="br-button primary" type="button">Enviar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="br-card">
+            <div class="front">
+              <div class="content">
+                <div class="text-center">
+                  <button class="br-avatar-action" type="button" data-toggle="avatar" data-target="#avatar-choose" data-visible="data-visible" aria-label="Escolher Avatar"><span class="br-avatar large" title="Fulano da Silva"><span class="image"><i class="fas fa-user" aria-hidden="true"></i></span></span>
+                  </button>
+                </div>
+                <p class="h4 text-center">Clique na imagem acima para trocar sua foto no perfil.</p><span class="feedback info" role="alert"><i class="fas fa-info-circle" aria-hidden="true"></i>Os arquivos devem ser nos formatos PNG ou JPG, e ter no máximo 100MB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../../dsgov.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+@import "variables.plone.less";
+@import "controlpanels.plone.less";
+@import "mixin.forms.plone.less";
+@import "formtabbing.plone.less";
+@import "forms.plone.less";
+@import "contents.plone.less";
+@import "portlets.plone.less";
+
+input {
+    appearance: auto;
+}
+
+.header-title {
+  img {
+    max-height: 50px;
+  }
+  float: left;
+}
+
+.sticky .header-title img {
+  max-height: 30px;
+}
+
+.header-subtitle {
+  float: left;
+}
+
+ul.configlets {
+  padding: 0;
+  margin: 0;
+   > li {
+      list-style-type: none;
+    }
+}
+.inner-configlet {
+  text-align: center;
+}
+
+.portletNavigationTree nav.portletContent > ul > li strong {
+    padding: 10px 15px 10px 15px;
+    border-top: 1px solid #e5e5e5;
+    background: #fcfcfd;
+    color: #696969;
+    display: block;
+    font-weight: 400;
+}
+
+.portlet {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+}
+
+.portlet .portletHeader {
+    background: #f2f1f1;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 13px 15px;
+    color: #696969;
+}
+
+#portlet-prefs ul ul li a::before {
+    content: "•";
+    position: absolute;
+    font-size: 25px;
+    margin-top: -9px;
+    left: 35px;
+    color: #a7daf2;
+}
+
+.br-footer {
+  margin-top: 100px;
+}
+
+a, text-decoration: none {
+  text-decoration: none;
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "intro": "        <div class='text-center'>          <p>            <i class='fas fa-star fa-10x' aria-hidden='true'></i>          </p>          <p class='h6'>Conheça as novidades</p>          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>          <p>Eveniet, dolor, doloribus consequuntur ut voluptatum dolorum, architecto labore earum nobis rerum id magnam ipsum nemo laboriosam officiis at debitis.</p>        </div>      "
+  },
+  {
+    "intro": "        <div class='text-center'>          <p class='h6'>Passo 1</p>          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>          <p>Eveniet, dolor, doloribus consequuntur ut voluptatum dolorum, architecto labore earum nobis rerum id magnam ipsum nemo laboriosam officiis at debitis.</p>          <p>Itaque, doloremque?</p>        </div>      "
+  },
+  {
+    "intro": "     <div class='text-center'>          <p class='h6'>Passo 2</p>          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>          <p>Eveniet, dolor, doloribus consequuntur ut voluptatum dolorum, architecto labore earum nobis rerum id magnam ipsum nemo laboriosam officiis at debitis.</p>          <p>Itaque, doloremque?</p>        </div>      "
+  },
+  {
+    "intro": "        <div class='text-center'>          <p class='h6'>Passo 3</p>          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>          <p>Eveniet, dolor, doloribus consequuntur ut voluptatum dolorum, architecto labore earum nobis rerum id magnam ipsum nemo laboriosam officiis at debitis.</p>          <p>Itaque, doloremque?</p>        </div>      "
+  }
+]

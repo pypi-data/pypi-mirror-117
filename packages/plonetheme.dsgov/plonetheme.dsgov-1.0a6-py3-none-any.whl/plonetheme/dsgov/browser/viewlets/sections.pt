@@ -1,0 +1,13 @@
+<tal:sections
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:metal="http://xml.zope.org/namespaces/metal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     tal:define="portal_tabs view/portal_tabs"
+     tal:condition="portal_tabs"
+     i18n:domain="plone">
+
+        <ul id="portal-globalnav-wrapper">
+          <navtree tal:replace="structure python:view.render_globalnav()" />
+        </ul>
+
+</tal:sections>
