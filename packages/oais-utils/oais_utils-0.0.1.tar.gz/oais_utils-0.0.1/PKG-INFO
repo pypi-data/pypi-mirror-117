@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: oais_utils
+Version: 0.0.1
+Summary: OAIS utilities
+Home-page: https://gitlab.cern.ch/digitalmemory/utils
+Author: Antonio Vivace
+Author-email: antonio.vivace@cern.ch
+License: GPLv3
+Description: # utilities
+        
+        OAIS wide utilities
+        
+        ```bash
+        pip install -e .
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
