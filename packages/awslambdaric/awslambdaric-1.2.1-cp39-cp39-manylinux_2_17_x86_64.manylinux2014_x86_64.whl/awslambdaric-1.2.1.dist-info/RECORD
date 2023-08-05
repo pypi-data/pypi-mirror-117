@@ -1,0 +1,14 @@
+runtime_client.cpython-39-x86_64-linux-gnu.so,sha256=Y7POdZZ9xDCSoxwaHH976ECT2pc9jD7n2IQ3yZ6qfs0,814984
+awslambdaric-1.2.1.dist-info/RECORD,,
+awslambdaric-1.2.1.dist-info/METADATA,sha256=WydHrx0ycEQTIR_2wZZX1Jioe_JXvYchwXPshf4HEEc,7169
+awslambdaric-1.2.1.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+awslambdaric-1.2.1.dist-info/top_level.txt,sha256=E3EAwAm7pOuEmSOOfYcnGZzJWON6nLpyUnwlLfpA4-c,28
+awslambdaric-1.2.1.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+awslambdaric-1.2.1.dist-info/WHEEL,sha256=ts1NGDem03kTrzsJp50lKy9cpDxDoGil0Q-wLa_TR_0,148
+awslambdaric/bootstrap.py,sha256=a83KLRbQ4FjNNCBDHjLyWai8BwrCBL1v2ahP7DFIm8U,12705
+awslambdaric/lambda_runtime_marshaller.py,sha256=AZb5W7CMvFnpsyUTfKpwVRHpSWaDlAsVf-sA6GIRPNI,1755
+awslambdaric/lambda_runtime_client.py,sha256=HKoe1itJ5ldk3v7vbtwHujQ4PHsFGRdCyLhXOPz0riA,3696
+awslambdaric/__main__.py,sha256=KlJvUULiaAs_HA3v8troGGPNspoeRuQ5j6wSdmNQPng,372
+awslambdaric/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awslambdaric/lambda_runtime_exception.py,sha256=Xl_xu7euRuacfUqfEU9XCsitjJc4sK43fi19dASt6kU,719
+awslambdaric/lambda_context.py,sha256=dDDJF8_yJfYmRF7f0QZRDkC6C0sUJC_lExEa58urw-4,4087
