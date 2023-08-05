@@ -1,0 +1,1 @@
+This is a library with useful utils like clearing the terminal.
