@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: procstat
+Version: 0.0.1
+Summary: A tool to count runtime metrics
+Home-page: https://github.com/lorien/procstat
+Author: Gregory Petukhov
+Author-email: lorien@lorien.name
+Maintainer: Gregory Petukhov
+Maintainer-email: lorien@lorien.name
+License: MIT
+Download-URL: https://github.com/lorien/procstat/releases
+Description: # procstat
+        
+        This library helps to count runtime metrics. For specific events you increment manually the
+        corresponding counters. By default the library dumps all counters into stderr each 3 seconds.
+        It also can display the speed of metric is changing.
+        
+        It also can dump metrics into influxdb, will be documented later, see source code for details.
+        
+        Usage:
+        
+        ```
+        import time
+        from procstat import Stat
+        
+        stat = Stat(speed_keys=['foo', 'bar'])
+        while True:
+            stat.inc('foo') # default increment is 1
+            stat.inc('bar', 2)
+            stat.inc('baz', 3)
+            time.sleep(1)
+        ```
+        
+Keywords: statistics counter metric runtime
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
