@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/b23iepy.egg-info/PKG-INFO
+src/b23iepy.egg-info/SOURCES.txt
+src/b23iepy.egg-info/dependency_links.txt
+src/b23iepy.egg-info/top_level.txt
+src/iepy/__init__.py
+src/iepy/addData.py
+src/iepy/data.json

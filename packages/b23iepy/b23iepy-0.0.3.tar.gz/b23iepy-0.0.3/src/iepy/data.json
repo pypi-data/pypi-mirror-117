@@ -1,0 +1,512 @@
+{
+    "01-01": [
+        {
+            "year": 1993,
+            "data": {
+                "cz": {
+                    "summary": "Rozpad Československa",
+                    "description": "Československo se rozdělilo na dva státy Českou a Slovenskou republiku"
+                },
+                "en": {
+                    "summary": "The split of Czechoslovakia",
+                    "description": "Czechoslovakia split into two states the Czech and Slovak republics."
+                }
+            }
+        }
+    ],
+    "06-25": [
+        {
+            "year": 2003,
+            "data": {
+                "cz": {
+                    "summary": "Narodil se tvůrce tohoto modulu.",
+                    "description": "Narodil se Bertik23, tvůrce tohoto modulu."
+                },
+                "en": {
+                    "summary": "The creator of this package was born.",
+                    "description": "Bertik23, the creator of this package was born."
+                }
+            }
+        }
+    ],
+    "08-17": [
+        {
+            "year": 1999,
+            "data": {
+                "cz": {
+                    "summary": "Zemetřesení v Turecku",
+                    "description": "İzmit v Turecku zasáhlo zemětřesení o síle 7.4, zabilo 17 000 lidí."
+                },
+                "en": {
+                    "summary": "Earthquake in Turkey.",
+                    "description": "İzmit, Turkey was hit by a 7.4 magnitude earthquake, killing 17 000 people."
+                }
+            }
+        }
+    ],
+    "08-18": [
+        {
+            "year": 1934,
+            "data": {
+                "cz": {
+                    "summary": "SSSR byl přijat do Společnosti národů",
+                    "description": "Svaz sovětských socialistických republik byl přijat do Společnosti národů."
+                },
+                "en": {
+                    "summary": "USSR was admitted to the League of Nations",
+                    "description": "Union of Soviet Socialist Republics was admitted to the League of Nations."
+                }
+            }
+        },
+        {
+            "year": 1273,
+            "data": {
+                "cz": {
+                    "summary": "Prahu postihla povodeň.",
+                    "description": ""
+                },
+                "en": {
+                    "summary": "Prahu was hit by floods.",
+                    "description": ""
+                }
+            }
+        },
+        {
+            "year": 1813,
+            "data": {
+                "cz": {
+                    "summary": "Napoleon v Čechách.",
+                    "description": "Napoleonova vojska se objevila v Čechách a obsadila mino jiné Liberec, Českou Lípu a Frýdlant. Srabové Rakušáci utekli."
+                },
+                "en": {
+                    "summary": "Napoleon in Bohemia.",
+                    "description": "Napoleon's army entered Bohemia and captured Liberec, Česká Lípa and Frýdlant, among others. The Austrian troops escaped."
+                }
+            }
+        },
+        {
+            "year": 1990,
+            "data": {
+                "cz": {
+                    "summary": "Rollingstones v Praze.",
+                    "description": "Hrají Rollingstones v Praze. Těšíte se?"
+                },
+                "en": {
+                    "summary": "Rollingstones in Prague.",
+                    "description": "Rollingstones are in Prague. Are you looking forward to that?"
+                }
+            }
+        },
+        {
+            "year": 1834,
+            "data": {
+                "cz": {
+                    "summary": "Erupce Vesuvu",
+                    "description": "Sopka Vesuv u Neapole vybuchla a začala chrlit lávu."
+                }
+            }
+        },
+        {
+            "year": 1961,
+            "data": {
+                "cz": {
+                    "summary": "Berlínská zeď dokončena",
+                    "description": "Berlínská zeď, oddělující kapitalistický Západní Berlín od komunistického Východního Německa, byla dokončena."
+                },
+                "en": {
+                    "summary": "Berlin Wall completed",
+                    "description": "The Berlin Wall, separating capitalist West Berlin from communist East Germany, has been completed."
+                }
+            }
+        },
+        {
+            "year": 1998,
+            "data": {
+                "cz": {
+                    "summary": "Zemřel Otto Wichterle",
+                    "description": "S lítostí oznamujeme, že dnes zemřel vynálezce kontaktních čoček, Otto Wichterle."
+                },
+                "en": {
+                    "summary": "Otto Wichterle dies",
+                    "description": "We are sorry to announce that the inventor of contact lenses, Otto Wichterle, has died today."
+                }
+            }
+        }
+    ],
+    "08-19": [
+        {
+            "year": 1969,
+            "data": {
+                "cz": {
+                    "summary": "Protesty proti politice nového komunistickému vedení",
+                    "description": "Na mnoha místech republiky vypukly masové protesty proti nové politice komunistického vedení po vpádu vojsk našich spojenců, států Varšavské smlouvy."
+                },
+                "en": {
+                    "summary": "Protests against the policy of the new communist leadership",
+                    "description": "In many parts of the republic, mass protests broke out against the new policy of the communist leadership after the invasion of the troops of our allies, the Warwaw pact."
+                }
+            }
+        },
+        {
+            "year": 2010,
+            "data": {
+                "cz": {
+                    "summary": "Američani se stáhli z Iráku",
+                    "description": "Poslední americké jednotky se stáhly z Iráku."
+                },
+                "en": {
+                    "summary": "Americans have withdrawn from Iraq",
+                    "description": "The last American troops have withdrawn from Iraq."
+                }
+            }
+        },
+        {
+            "year": 14,
+            "data": {
+                "cz": {
+                    "summary": "Zemřel císař Augustus",
+                    "description": "Dnes ve věku 76 let zemřel první římský císař, Augustus (Gaius Iulius Ceasar Octavianus)."
+                },
+                "en": {
+                    "summary": "Emperor Augustus dies",
+                    "description": "Today, at the age of 76, the first Roman emperor, Augustus (Gaius Iulius Ceasar Octavianus), died."
+                }
+            }
+        }
+    ],
+    "08-20": [
+        {
+            "year": 1400,
+            "data": {
+                "cz": {
+                    "summary": "Václav IV. sesazen z římského trůnu",
+                    "description": "Ode dneška už není Václav IV. římským králem, pravděpodobně ho nahradí jeho bratr Zikmund."
+                },
+                "en": {
+                    "summary": "Wenceslas IV. deposed from the Roman throne",
+                    "description": "As of today, Wenceslas IV is no longer. Roman king, he will probably be replaced by his brother Sigismund."
+                }
+            }
+        },
+        {
+            "year": 1891,
+            "data": {
+                "cz": {
+                    "summary": "Petřínská rozhledna otevřena",
+                    "description": "Dnes byla otevřena Petřínská rozhledna pro veřejnost."
+                },
+                "en": {
+                    "summary": "Petřín Lookout Tower opened",
+                    "description": "Today the Petřín Lookout Tower was opened to the public."
+                }
+            }
+        },
+        {
+            "year": 1968,
+            "data": {
+                "cz": {
+                    "summary": "Invaze Varšavské smlouvy",
+                    "description": "Vojska NDR a Maďarska vstoupili na území ČSSR a začínají nás obsazovat. Co tady sakra chtějí?"
+                },
+                "en": {
+                    "summary": "Invasion of the Warsaw Pact",
+                    "description": "The troops of the GDR and Hungary entered the territory of the Czechoslovak Socialist Republic and began to occupy us. What the hell do they want here?"
+                }
+            }
+        },
+        {
+            "year": 2013,
+            "data": {
+                "cz": {
+                    "summary": "Rozpuštěna sněmovna",
+                    "description": "Sněmovna Parlamentu ČR se usnesla na rozpuštění sněmovny. Budou volby"
+                },
+                "en": {
+                    "summary": "Dissolved House",
+                    "description": "The Chamber of Deputies of the Parliament of the Czech Republic has resolved to dissolve the House. There will be elections"
+                }
+            }
+        },
+        {
+            "year": 2019,
+            "data": {
+                "cz": {
+                    "summary": "Slavia vyhrála zápas 4.pk LM",
+                    "description": "SK Slavia Praha poráží ve 4. předkole Ligy Mistrů Kluž 1:0 a má tak nakročeno do skupinové fáze"
+                }
+            }
+        }
+    ],
+    "08-21": [
+        {
+            "year": 1968,
+            "data": {
+                "cz": {
+                    "summary": "Invaze vojsk Varšavské smlouvy",
+                    "description": "Vojska varšavské smlouvy obsadili Československo. Vedení KSČ bylo zadrženo"
+                },
+                "en": {
+                    "summary": "Invasion of Warsaw Pact troops",
+                    "description": "Warsaw Pact troops occupied Czechoslovakia. The leadership of the Communist Party was detained"
+                }
+            }
+        },
+        {
+            "year": 2008,
+            "data": {
+                "cz": {
+                    "summary": "Barbora Špotáková je zlatá",
+                    "description": "Barbora Špotáková vytvořila nový český a evropský rekord. Na LOH v Pekingu zvítězila s výkonem 71.42 metru."
+                },
+                "en": {
+                    "summary": "Barbora Špotáková is golden",
+                    "description": "Barbora Špotáková set a new Czech and European record. She won the Olympic Games in Beijing with a power of 71.42 meters."
+                }
+            }
+        },
+        {
+            "year": 1942,
+            "data": {
+                "cz": {
+                    "summary": "Začátek bitvy u Stalingradu",
+                    "description": "Německé jednotky překročili řeku Don, za chvíli padne Stalingrad."
+                }
+            }
+        },
+        {
+            "year": 1940,
+            "data": {
+                "cz": {
+                    "summary": "Zemřel Lev Trockij",
+                    "description": "Lev Davidovič Trockij zemřel po atentátu agenta NKVD. Dobře mu tak, nemá se stavět Stalinovi."
+                }
+            }
+        }
+    ],
+    "08-28": [
+        {
+            "year": 2019,
+            "data": {
+                "cz": {
+                    "summary": "Slavia postupuje do skupin LM",
+                    "description": "SK Slavia Praha práží v odvetě 4. předkola Ligy Mistrů Kluž 1:0 a postupuje tak do základní fáze"
+                }
+            }
+        }
+    ],
+    "08-22": [
+        {
+            "year": 1040,
+            "data": {
+                "cz": {
+                    "summary": "Břetislav I. vyhrál bitvu u Brůdku",
+                    "description": "Břetislav I. vyhrál bitvu u Brůdku ve Všebrudském průsmyku, a zahnal tak císaře Jindřicha III."
+                }
+            }
+        },
+        {
+            "year": 1471,
+            "data": {
+                "cz": {
+                    "summary": "Korunovace Vladislava Jagelonského",
+                    "description": "Vladislav Jagelonský byl korunován v chrámu sv. Víta. Co na to Matyáš?"
+                }
+            }
+        },
+        {
+            "year": 1785,
+            "data": {
+                "cz": {
+                    "summary": "Zrušení nevolnictví",
+                    "description": "Je to tu! Josef II. nás osvobodil, zrušil nevolnictví!\\n\\nAha, co? My už jsme 5 let volní a osvobodil maďary? Zavřít je měl"
+                }
+            }
+        },
+        {
+            "year": 1969,
+            "data": {
+                "cz": {
+                    "summary": "Přijat pendrekový zákon",
+                    "description": "Federální shromáždění přijalo tzv. pendrekový zákon, zpřísňuje tresty za protikomunistické projevy. Tak až zase někdy budete nadávat rozhlídněte se, jestli nevidíte Bureše."
+                }
+            }
+        },
+        {
+            "year": 1485,
+            "data": {
+                "cz": {
+                    "summary": "Konec války růží",
+                    "description": "Jindřich Tudor porazil Richarda III., který padl, v bitvě u Bosworthu. Snad je tý šílený válce konec."
+                }
+            }
+        },
+        {
+            "year": 1891,
+            "data": {
+                "cz": {
+                    "summary": "Zemřel Jan Neruda",
+                    "description": "S lístostí oznamujeme, že na zánět pobřišnice vyvolaný rakovinou střev zemřel Jan Neruda. Kde teď budu brát fejetony?"
+                }
+            }
+        }
+    ],
+    "08-23": [
+        {
+            "year": 1436,
+            "data": {
+                "cz": {
+                    "summary": "Zikmund Lucemburský přijíždí do Prahy",
+                    "description": "Velká sláva! Zikmund Lucemburský je v Praze, po 33 letech se k nám vrátil. Snad nám odpustí a bumeme mít nového krále."
+                }
+            }
+        },
+        {
+            "year": 1547,
+            "data": {
+                "cz": {
+                    "summary": "Bartolomějský sněm",
+                    "description": "Bartolomějský sněm za přítomnosti krále Ferdinanda potvrdil dědičné právo Habsburků na český trůn, omezil moc šlechty, zakázal stavovské spolky a vyhradil královi svolávat sněm."
+                }
+            }
+        },
+        {
+            "year": 1973,
+            "data": {
+                "cz": {
+                    "summary": "Miliontá Škodovka",
+                    "description": "Naše úžasná Škodovka vyrobila už milion aut. Miliontým automobilem vyrobeným v Mladé Boleslavi se stal vůz Škoda 1000 MB. Jen tak dál"
+                }
+            }
+        },
+        {
+            "year": 1914,
+            "data": {
+                "cz": {
+                    "summary": "Japonsko vyhlašuje válku německu",
+                    "description": "Máme dalšího protivníka, do Weltkriegu se přidává Japonsko."
+                }
+            }
+        },
+        {
+            "year": 1939,
+            "data": {
+                "cz": {
+                    "summary": "Molotov-Ribbentrop",
+                    "description": "Máme \"spojence\" Ribbentop uzavřel v Moskvě pakt s Molotovem, SSSR na nás nebude útočit a my nepujdem po nich."
+                }
+            }
+        },
+        {
+            "year": 1989,
+            "data": {
+                "cz": {
+                    "summary": "Lidský řetěz Vilnius-Tallinn",
+                    "description": "Dva miliony lidí vytvořily lidský řetěz z Vilniusu až do Tallinnu. Chtějí se trhnout od Svazu, držíme palce."
+                }
+            }
+        }
+    ],
+    "08-24": [
+        {
+            "year": 1290,
+            "data": {
+                "cz": {
+                    "summary": "Poprava Záviše",
+                    "description": "Před hradem Hluboká byl na příkaz Václava II. popraven Záviš z Falkenštejna. Dobře mu tak, nemá se cpát do politiky."
+                }
+            }
+        },
+        {
+            "year": 1978,
+            "data": {
+                "cz": {
+                    "summary": "Socha Klementa Gottwalda bum bum kabum",
+                    "description": "Někdo vyhodil do povětří sochu Klementa Gottwalda. Kdo to byl? Nevíme, ale určitě ho nečeká nic pěkného."
+                }
+            }
+        },
+        {
+            "year": 2006,
+            "data": {
+                "cz": {
+                    "summary": "Pluto už není planeta",
+                    "description": "Devátá planeta sluneční soustavy byla právě degradována do nově vzniklé kategorie trpasličích planet. Tak zní konsenzus vědců na mezinárodním astronomickém kongresu v Praze."
+                }
+            }
+        },
+        {
+            "year": 79,
+            "data": {
+                "cz": {
+                    "summary": "Výbuch Vesuvu",
+                    "description": "Vybuchl Vesuv! Umpřímnou soustrast pozůstalým z Pompejí a Herculanea, jestli to tedy někdo přežil."
+                }
+            }
+        },
+        {
+            "year": 410,
+            "data": {
+                "cz": {
+                    "summary": "Vizigóti dobyli Řím",
+                    "description": "Alarich ante portas!\\n\\nOh, tak už ne, už se svým vizigótským vojskem dobyl Řím. To už ale asi nikoho nezajímá."
+                }
+            }
+        }
+    ],
+    "08-25": [
+        {
+            "year": 1897,
+            "data": {
+                "cz": {
+                    "summary": "Tramvaje jezdí po Liberci",
+                    "description": "Crrr! Vorsicht tramvaj! Už je to tu! V po Reichenbergu se rozjely první staßenbahny."
+                }
+            }
+        },
+        {
+            "year": 1944,
+            "data": {
+                "cz": {
+                    "summary": "Bombardování Brna",
+                    "description": "Američani zabíjejíce 200 lidí bombardují Brno. Už abychom je porazili."
+                }
+            }
+        },
+        {
+            "year": 1990,
+            "data": {
+                "cz": {
+                    "summary": "Železniční nehoda u Spálova",
+                    "description": "Osobní vlak se srazil na nákladním vlakem. U Spálova dnes zemřelo 14 lidí. A já už asi nikdy nepojedu vlakem."
+                }
+            }
+        },
+        {
+            "year": 2006,
+            "data": {
+                "cz": {
+                    "summary": "Kalousek rezignuje na předsedu KDU",
+                    "description": "Miroslav Kalousek rezignoval na post předsedy KDU-ČSL, asi neunesl být ve vládě podporované komunisty."
+                }
+            }
+        },
+        {
+            "year": 1875,
+            "data": {
+                "cz": {
+                    "summary": "Přeplavání La Manche",
+                    "description": "On se neutopil! Matthew Webb to dokázal, přeplaval La Manche vlastní silou, stal se tak prvním plavcem který toto dokázal. Gratulujeme!"
+                }
+            }
+        },
+        {
+            "year": 1991,
+            "data": {
+                "cz": {
+                    "summary": "Bělorusko nezávislost",
+                    "description": "Bělorusko vyhlašuje nezávislost. Odtrhává se tak od rozpadajícího se Sovětského svazu. Hodně štěstí v demokracii přejeme."
+                }
+            }
+        }
+    ]
+}
