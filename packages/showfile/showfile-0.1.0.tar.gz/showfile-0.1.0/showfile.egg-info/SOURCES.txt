@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+showfile/__init__.py
+showfile/main.py
+showfile/theme.py
+showfile.egg-info/PKG-INFO
+showfile.egg-info/SOURCES.txt
+showfile.egg-info/dependency_links.txt
+showfile.egg-info/entry_points.txt
+showfile.egg-info/requires.txt
+showfile.egg-info/top_level.txt
