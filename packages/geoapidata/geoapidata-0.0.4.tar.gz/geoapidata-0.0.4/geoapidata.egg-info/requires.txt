@@ -1,0 +1,4 @@
+geopandas
+unidecode
+sparse_dot_topn
+dash
