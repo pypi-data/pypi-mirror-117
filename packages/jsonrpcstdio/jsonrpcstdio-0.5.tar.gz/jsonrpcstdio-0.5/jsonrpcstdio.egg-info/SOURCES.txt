@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+jsonrpcstdio/__init__.py
+jsonrpcstdio/errors.py
+jsonrpcstdio/message.py
+jsonrpcstdio/server.py
+jsonrpcstdio.egg-info/PKG-INFO
+jsonrpcstdio.egg-info/SOURCES.txt
+jsonrpcstdio.egg-info/dependency_links.txt
+jsonrpcstdio.egg-info/requires.txt
+jsonrpcstdio.egg-info/top_level.txt

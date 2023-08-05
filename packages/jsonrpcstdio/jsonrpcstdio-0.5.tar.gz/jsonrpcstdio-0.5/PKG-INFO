@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jsonrpcstdio
+Version: 0.5
+Summary: Asynchroncous Python implementation of JSON RPC for arbitrary Streams and a particular implementation for JSON RPC of standard IO
+Home-page: UNKNOWN
+Author: amas0
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
