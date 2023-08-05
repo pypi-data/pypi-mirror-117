@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tempfolder
+Version: 0.3.0
+Summary: 🗂 Easily create temporary folders, add files into them and don't worry about deleting them, tempfolder will take care
+Author: Jorge Alvarado
+Author-email: alvaradosegurajorge@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
