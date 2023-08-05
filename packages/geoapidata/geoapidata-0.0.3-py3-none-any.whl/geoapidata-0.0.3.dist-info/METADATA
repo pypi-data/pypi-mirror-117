@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: geoapidata
+Version: 0.0.3
+Summary: GeoAPI do TerraLab
+Home-page: UNKNOWN
+Author: TerraLab
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: geopandas
+Requires-Dist: unidecode
+
+UNKNOWN
+
