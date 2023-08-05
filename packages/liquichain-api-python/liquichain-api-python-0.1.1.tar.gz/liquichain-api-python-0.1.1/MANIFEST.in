@@ -1,0 +1,4 @@
+include LICENSE.txt README.md
+recursive-include liquichain *.py
+prune examples
+prune tests
