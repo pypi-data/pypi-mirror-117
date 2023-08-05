@@ -1,0 +1,16 @@
+LICENSE,sha256=_7PzvGtdt4ZVP9xGQEItwpOxr5Uj10wf9OsJL6oV7Wo,1072
+README.md,sha256=yt49ih9TUWL2u4QFaN157vDazSOzSJlds0oys9fJ9ow,11425
+pynfogen/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+pynfogen/cli/__init__.py,sha256=7g-S448qtIhMCjMR0Jjep5ytqbz0no42Bv9pxy1c940,1421
+pynfogen/cli/artwork.py,sha256=vecSRULxEYQMYQC8rfCfrD3KV_rf50BOc90XYwHAPb8,1639
+pynfogen/cli/config.py,sha256=ZO58w1VH-7j5af1IVykxC74qJl3qlGtbub_MiNu_-X8,1603
+pynfogen/cli/generate.py,sha256=2c_0hpwkrISXcPM1XTwRJPO01WxqhvYk-RA1dnRznGc,3817
+pynfogen/cli/template.py,sha256=rsWCBUUfVTzQ2CDdvaf8ibzjf_wVJTjAOAz-slCllhM,2102
+pynfogen/formatter.py,sha256=N6F8l1LHjXUjC7exw9fe2Lpw22YmKdFMlbL0cEXS98o,4014
+pynfogen/helpers.py,sha256=gBek3IAiBLQ47yQvvT3yD2PvsvBnv5D5ikkQBAYlXwQ,937
+pynfogen/nfo.py,sha256=l_27auWaSLQrLixO22eMntpYkiCc8oUeO6rvLXte53o,13559
+pynfogen-0.4.4.dist-info/entry_points.txt,sha256=caRPSNPHVj-zA366pfdH3h3hTeab52lLtFRf8fPd2v8,40
+pynfogen-0.4.4.dist-info/LICENSE,sha256=_7PzvGtdt4ZVP9xGQEItwpOxr5Uj10wf9OsJL6oV7Wo,1072
+pynfogen-0.4.4.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pynfogen-0.4.4.dist-info/METADATA,sha256=2zFePI5RFyTC7TOuV5IHHFWE-HBgtNENKN258Dze74M,12955
+pynfogen-0.4.4.dist-info/RECORD,,
