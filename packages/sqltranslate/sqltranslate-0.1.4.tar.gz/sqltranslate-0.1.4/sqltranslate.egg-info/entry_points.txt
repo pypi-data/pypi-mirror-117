@@ -1,0 +1,3 @@
+[console_scripts]
+sqltranslate = sqltranslate.__main__:main
+

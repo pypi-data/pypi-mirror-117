@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sqltranslate
+Version: 0.1.4
+Summary: SQL Translate stores database info and generates complex sql queries so people who don't know sql can access the data they need in a user friendly way
+Home-page: https://github.com/joyhe208/pkg_sqltranslate
+Author: Joy He
+Author-email: jh4337@columbia.edu
+License: MIT
+Download-URL: https://github.com/joyhe208/pkg_sqltranslate/archive/refs/tags/0.1.4.tar.gz
+Keywords: sqltranslate
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+
+UNKNOWN
+
