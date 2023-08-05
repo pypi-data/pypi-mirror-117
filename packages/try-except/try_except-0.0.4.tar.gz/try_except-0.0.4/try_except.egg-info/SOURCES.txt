@@ -1,0 +1,4 @@
+try_except.egg-info/PKG-INFO
+try_except.egg-info/SOURCES.txt
+try_except.egg-info/dependency_links.txt
+try_except.egg-info/top_level.txt
