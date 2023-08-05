@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/pandatex/PandaTex.egg-info/PKG-INFO
+src/pandatex/PandaTex.egg-info/SOURCES.txt
+src/pandatex/PandaTex.egg-info/dependency_links.txt
+src/pandatex/PandaTex.egg-info/requires.txt
+src/pandatex/PandaTex.egg-info/top_level.txt
+src/pandatex/pandatex.py
+src/pandatex/PandaTex.egg-info/PKG-INFO
+src/pandatex/PandaTex.egg-info/SOURCES.txt
+src/pandatex/PandaTex.egg-info/dependency_links.txt
+src/pandatex/PandaTex.egg-info/requires.txt
+src/pandatex/PandaTex.egg-info/top_level.txt
+src/pandatex/utils/_texbasics.py
+src/pandatex/utils/_validate.py
