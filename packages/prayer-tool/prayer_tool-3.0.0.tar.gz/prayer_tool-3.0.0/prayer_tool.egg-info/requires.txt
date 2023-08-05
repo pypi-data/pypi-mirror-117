@@ -1,0 +1,4 @@
+gtts
+playsound
+googletrans==3.1.0a0
+requests
