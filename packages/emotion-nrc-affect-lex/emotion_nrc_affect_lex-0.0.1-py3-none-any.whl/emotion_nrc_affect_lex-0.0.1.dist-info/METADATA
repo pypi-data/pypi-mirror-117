@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: emotion-nrc-affect-lex
+Version: 0.0.1
+Summary: find emotion scores from a list of words
+Home-page: https://github.com/tazwar2700/Emotion_NRC_affect_lexicon
+Author: Syed Mahir Tazwar
+Author-email: tazwar2700@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (~=1.1.3)
+
+# Emotion_NRC
+emotion classifiers
+
+
