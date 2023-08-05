@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+twarc_hashtags.py
+twarc_hashtags.egg-info/PKG-INFO
+twarc_hashtags.egg-info/SOURCES.txt
+twarc_hashtags.egg-info/dependency_links.txt
+twarc_hashtags.egg-info/entry_points.txt
+twarc_hashtags.egg-info/requires.txt
+twarc_hashtags.egg-info/top_level.txt
