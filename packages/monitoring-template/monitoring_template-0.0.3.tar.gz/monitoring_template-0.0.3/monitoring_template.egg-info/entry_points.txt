@@ -1,0 +1,3 @@
+[console_scripts]
+monitoring_template = monitoring_template.core:main
+
