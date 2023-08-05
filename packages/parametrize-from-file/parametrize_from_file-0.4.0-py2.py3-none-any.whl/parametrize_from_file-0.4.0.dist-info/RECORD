@@ -1,0 +1,10 @@
+parametrize_from_file/__init__.py,sha256=q2FYS2B_BRTUeLnGPfkpWAIBdRgoryj3IjJk3kn_S6o,888
+parametrize_from_file/errors.py,sha256=13-Aw1Sg6mrOG_nQvzPGhe4k-DNiezUgUhARoiLqlfA,162
+parametrize_from_file/loaders.py,sha256=rrSnfmSQ6oF1F6hQV6W4KxYO_ivusVnQ63CYEtPMNvM,1469
+parametrize_from_file/namespace.py,sha256=x9CpeS-vsl71JGNKBfUFOvYqDT2Uyl1of6UZYDFw3Dw,11630
+parametrize_from_file/parametrize.py,sha256=0q_31geRopNESaz57g7fPgHowfaRui39c_WKjgPfKPI,13777
+parametrize_from_file/voluptuous.py,sha256=eW4hAiOqJb3b88loPmASDCUN_UlgDPL8sJJIObJrZAY,8186
+parametrize_from_file-0.4.0.dist-info/LICENSE.txt,sha256=hV5oaBI3HIjUi61UYZf8laH_cqtaEsuXV60GtWt5Cog,1079
+parametrize_from_file-0.4.0.dist-info/WHEEL,sha256=2adPsdwavOXlr3i4h108dwQdqKgJbVa5zTEEuD11F08,99
+parametrize_from_file-0.4.0.dist-info/METADATA,sha256=UdGyDz66NvRMmgHdbHruo6jef9t3lchmFXTC_2axJ30,3970
+parametrize_from_file-0.4.0.dist-info/RECORD,,
