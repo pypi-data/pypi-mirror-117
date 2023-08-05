@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: image-processing-rbiegelmeyer
+Version: 0.0.1
+Summary: My second package
+Home-page: https://github.com/rbiegelmeyer/image_processing
+Author: Roberto Biegelmeyer
+Author-email: robertobiegel@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: bleach (==4.0.0)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: charset-normalizer (==2.0.4)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: docutils (==0.17.1)
+Requires-Dist: idna (==3.2)
+Requires-Dist: imageio (==2.9.0)
+Requires-Dist: importlib-metadata (==4.6.4)
+Requires-Dist: keyring (==23.1.0)
+Requires-Dist: kiwisolver (==1.3.1)
+Requires-Dist: matplotlib (==3.4.3)
+Requires-Dist: networkx (==2.6.2)
+Requires-Dist: numpy (==1.21.2)
+Requires-Dist: packaging (==21.0)
+Requires-Dist: Pillow (==8.3.1)
+Requires-Dist: pkginfo (==1.7.1)
+Requires-Dist: Pygments (==2.10.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: PyWavelets (==1.1.1)
+Requires-Dist: pywin32-ctypes (==0.2.0)
+Requires-Dist: readme-renderer (==29.0)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: scikit-image (==0.18.2)
+Requires-Dist: scipy (==1.7.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tifffile (==2021.8.8)
+Requires-Dist: tqdm (==4.62.1)
+Requires-Dist: urllib3 (==1.26.6)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.5.0)
+
+# image_processing
+
+Description.
+The package image_processing is used to:
+    Processing:
+        - Histogram Matching
+        - Structural Similarity
+        - Resize Image
+    Utils:
+        - Read Image
+        - Save Image
+        - Plot Image
+        - Plot Result
+        - plot Histrogram
+
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_processing
+
+```bash
+pip install image_processing
+```
+
+## Usage
+```python
+from image_processing.processing import combination`
+```
+
+## Author
+Roberto Biegelmeyer
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
