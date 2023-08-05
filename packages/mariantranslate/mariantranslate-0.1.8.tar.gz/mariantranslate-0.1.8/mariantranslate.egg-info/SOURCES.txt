@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mariantranslate/__init__.py
+mariantranslate/translator.py
+mariantranslate.egg-info/PKG-INFO
+mariantranslate.egg-info/SOURCES.txt
+mariantranslate.egg-info/dependency_links.txt
+mariantranslate.egg-info/requires.txt
+mariantranslate.egg-info/top_level.txt

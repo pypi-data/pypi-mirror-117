@@ -1,0 +1,9 @@
+transformers>=4.9.2
+sentencepiece>=0.1.96
+torch>=1.9.0
+
+[dev]
+black>=21.4b0
+isort>=5.5.4
+flake8>=3.8.3
+pytest>=6.2.4
