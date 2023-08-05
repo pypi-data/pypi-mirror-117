@@ -1,0 +1,14 @@
+README.md
+setup.py
+basefolder/__init__.py
+basefolder/predictnow/__init__.py
+basefolder/predictnow/find_files_with_specific_extensions.py
+basefolder/predictnow/notifier.py
+basefolder/predictnow/pdapi.py
+basefolder/predictnow/predict_result.py
+basefolder/predictnow/training_result.py
+predictnow_api.egg-info/PKG-INFO
+predictnow_api.egg-info/SOURCES.txt
+predictnow_api.egg-info/dependency_links.txt
+predictnow_api.egg-info/requires.txt
+predictnow_api.egg-info/top_level.txt
