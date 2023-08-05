@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: trading212api
+Version: 0.0.1
+Summary: An unofficial API library for Trading212 based on Selenium
+Home-page: https://github.com/auino/trading212api
+Author: Enrico Cambiaso
+Author-email: enrico.cambiaso@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# trading212api
+
+An unofficial API library for Trading212 based on Selenium
+
+### Description ###
+
+This library allows you to interface with [Trading212](http://www.trading212.com) through [Selenium](https://www.selenium.dev).
+Once you log in, the only operation requiring a human interation, you can buy and sell stocks, in both real and practice modes.
+
+### Installation ###
+
+```
+pip install trading212api
+```
+
+Install a [Selenium](https://www.selenium.dev) web driver, e.g., the [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+
+#### Available methods ####
+
+* `enable_real_mode()`: this method is used to enable real/live mode
+* `enable_practice_mode()`: this method is used to enable practice/demo mode
+* `get_stock_info(brw, ticker, backtohome_begin=True, backtohome_end=True)`: starting from a `selenium.webdriver.chrome.webdriver.WebDriver` object `brw`, this method retrieves information from a stock identified by a given `ticker`, optionally, returning home at the begin/end of the method
+* `get_portfolio(brw)`: starting from a `selenium.webdriver.chrome.webdriver.WebDriver` object `brw`, this method returns information on the current portfolio
+* `buy(brw, ticker, amount, max_price=None)`: starting from a `selenium.webdriver.chrome.webdriver.WebDriver` object `brw`, this method buys a stock identified by its own `ticket`, specifying the `amount` in terms of money to invest in the current valuta, plus an optional maximum price `max_price`; returns a boolean value indicating the success of the operation
+* `sell(brw, ticker, amount=None, min_price=None)`: starting from a `selenium.webdriver.chrome.webdriver.WebDriver` object `brw`, this method sells a stock identified by its own `ticket`, specifying the `amount` in terms of number of stocks to sell and an optional minimum price `min_price`; returns a boolean value indicating the success of the operation
+
+### Sample usage ###
+
+```
+# import the library
+import trading212api
+
+# enable practice mode
+enable_practice_mode()
+
+# initiate the connection
+brw = trading212api.initiate_connection('./chromedriver')
+
+# get and print portfolio information
+portfolio = get_portfolio(brw)
+print(portfolio)
+
+# get and print information on a given stock
+stock_info = get_stock_info(brw, 'AAPL')
+print(stock_info)
+
+# buy 10 USD of AAPL
+buy(brw, 'AAPL', 10)
+
+# sell 1 stock of AAPL
+sell(brw, 'AAPL', 1)
+```
+
+### TODO ###
+
+* Improve code readability
+
+### Contacts ###
+
+You can find me on [Twitter](https://twitter.com) as [@auino](https://twitter.com/auino).
+
+
