@@ -1,0 +1,11 @@
+README.md
+setup.py
+webrcon/__init__.py
+webrcon/connector.py
+webrcon/exceptions.py
+webrcon/utils.py
+webrcon.egg-info/PKG-INFO
+webrcon.egg-info/SOURCES.txt
+webrcon.egg-info/dependency_links.txt
+webrcon.egg-info/top_level.txt
+webrcon.egg-info/zip-safe
