@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+easywave/__init__.py
+easywave/__main__.py
+easywave/parser.py
+easywave/protocol.py
+easywave.egg-info/PKG-INFO
+easywave.egg-info/SOURCES.txt
+easywave.egg-info/dependency_links.txt
+easywave.egg-info/entry_points.txt
+easywave.egg-info/requires.txt
+easywave.egg-info/top_level.txt

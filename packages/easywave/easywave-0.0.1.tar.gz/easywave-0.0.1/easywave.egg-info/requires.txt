@@ -1,0 +1,5 @@
+docopt
+pyserial-asyncio
+
+[:python_version < "3.5"]
+typing

@@ -1,0 +1,3 @@
+[console_scripts]
+easywave = easywave.__main__:main
+
