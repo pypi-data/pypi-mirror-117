@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: how2write
+Version: 0.0.1
+Summary: A english-learning helper
+Home-page: https://github.com/ChristophePRAT/How2Write
+Author: Christophe Prat
+Author-email: christopheprat@icloud.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ChristophePRAT/How2Write/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# How2Write
+## What is it?
+`How2Write` is a language learning helper. It tells you word that you need to write. At the end, it gives you a mark out of 10.
+## Usage
+You can use How2Write by running the command: `how2write`.
+
+
