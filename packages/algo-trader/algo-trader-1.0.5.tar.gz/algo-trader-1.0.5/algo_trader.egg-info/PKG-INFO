@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: algo-trader
+Version: 1.0.5
+Summary: Trade execution engine to process API data and transmit orders to Bitmex and other brokers.
+Home-page: https://github.com/dignitas123/algo_trader
+Author: Niclas Hummel
+Author-email: info@algoinvest.online
+License: UNKNOWN
+Description: # Algo Trader Package
+        
+        This is a package for the use of [algoinvest.online](https://www.algoinvst.online)
+        
+        It can connect to a the Signal Provider API and execute orders on Bitmex and other providers.
+        
+        # Install on pythonanywhere or on your PC
+        
+        ```
+        pip install algo-trader
+        ```
+        
+        or
+        
+        ```
+        pip install --upgrade algo-trader
+        ```
+        
+        to upgrade to newest version.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
