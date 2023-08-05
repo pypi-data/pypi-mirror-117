@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: Freud-Utils
+Version: 0.2
+Summary: A simplified framework and utilities for PyTorch.
+Home-page: https://github.com/freud14/freud-utils
+Author: Frédérik Paradis
+Author-email: fredy_14@live.fr
+License: LGPLv3
+Download-URL: https://github.com/freud14/freud-utils/archive/v0.2.zip
+Description: # Freud-Utils
+        
+        [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](http://www.gnu.org/licenses/lgpl-3.0)
+        [![Continuous Integration](https://github.com/freud14/freud-utils/workflows/Continuous%20Integration/badge.svg)](https://github.com/freud14/freud-utils/actions?query=workflow%3A%22Continuous+Integration%22+branch%3Amaster)
+        
+        ## What is Freud-Utils ?
+        
+        Freud-Utils is my personnal collection of mix-and-match utilities related to PyTorch and machine learning.
+        
+        ------------------
+        
+        ## Installation
+        
+        - **Install the stable version of Freud-Utils:**
+        
+        ```sh
+        pip install freud-utils
+        ```
+        
+        - **Install the latest development version of Freud-Utils:**
+        
+        ```sh
+        pip install -U git+https://github.com/freud14/freud-utils.git
+        ```
+        
+        ------------------
+        
+        ## License
+        
+        Freud-Utils is LGPLv3 licensed, as found in the [LICENSE file](https://github.com/freud14/freud-utils/blob/master/LICENSE).
+        
+        ------------------
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

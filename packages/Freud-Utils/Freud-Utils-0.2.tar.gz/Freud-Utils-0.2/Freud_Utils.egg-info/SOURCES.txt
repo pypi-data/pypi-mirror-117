@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Freud_Utils.egg-info/PKG-INFO
+Freud_Utils.egg-info/SOURCES.txt
+Freud_Utils.egg-info/dependency_links.txt
+Freud_Utils.egg-info/requires.txt
+Freud_Utils.egg-info/top_level.txt
+freud_utils/__init__.py
+freud_utils/file_dataset.py
+freud_utils/json.py
+freud_utils/version.py
+freud_utils/worker_init.py
