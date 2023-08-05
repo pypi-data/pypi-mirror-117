@@ -1,0 +1,17 @@
+app_name: 'DEMO'  # 必须
+log_file: 'F:/tmp/data.log'  # 必须
+db_file: 'F:/tmp/data.db'
+FILM_WAV_PATH: s:/users/lingyiwang/count_down.wav
+idr_config: idr_config.yaml
+MODEL_DIR: d:/single_face_model\model
+camera:
+  mode: rgb  # rgb, kinect
+  rgb_id: 0
+  rgb_fps: 60
+drive_ndi_machine_name: DESKTOP-3MRDRLU
+drive_ndi_source_name: Unreal Engine
+guide_video_path: s:/users/lingyiwang/guide.avi
+tracking_adj_angle: 0
+interactive_mode: 0
+UE_ALIVE: true
+show_render: false
