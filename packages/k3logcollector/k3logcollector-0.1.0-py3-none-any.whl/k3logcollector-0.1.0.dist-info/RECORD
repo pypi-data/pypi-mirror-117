@@ -1,0 +1,11 @@
+k3logcollector/__init__.py,sha256=YKbOxT0kl2mVB5LFT29wOAnsOzvk867aJgPrRfn6bnQ,1675
+k3logcollector/cache_flusher.py,sha256=2Ia9YDakVZsLdYHmFYOTfOkMAfg-c_f5YX8jwVZyITI,1909
+k3logcollector/collector.py,sha256=Je0nFZA1Q3NuR-9rKPn4gtraUYk7yciH2O5oz0x0LvI,2355
+k3logcollector/scanner.py,sha256=sPXeGweor6nVa_zAvpCTnkRXvNF2NzJU0dgJgcsB0hk,3832
+k3logcollector/sender.py,sha256=oTJpwK-uAqxrIwjLATe2U0dc2UeZSXpRWFh1dcbVFnM,356
+k3logcollector/setup.py,sha256=guOC63l_-jRRiFI5ItGVHt4oxv2BEE2JRma7I2q0GcY,4413
+k3logcollector/synopsis.py,sha256=LLIJO3KsBvWvefDPW0pAkNGadeGcHThj_gipLo7vWsk,765
+k3logcollector-0.1.0.dist-info/METADATA,sha256=mKQW7jjbm5kvLI53cB1hxRhauOZTlPG3d5Msk-SU5BE,4096
+k3logcollector-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+k3logcollector-0.1.0.dist-info/top_level.txt,sha256=MikR_l-VhtQMpAI0nZJTrZFVDU0ABd3viRScRkt0Ano,15
+k3logcollector-0.1.0.dist-info/RECORD,,
