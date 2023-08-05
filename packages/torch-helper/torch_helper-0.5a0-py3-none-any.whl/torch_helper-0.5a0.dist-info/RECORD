@@ -1,0 +1,8 @@
+pthelper/device.py,sha256=zFss7GEJiVS7GSIGkv2KoKqVveh5A9r6opPUZMcxJZw,375
+pthelper/metrics.py,sha256=94ikIo5kv0g1uRxX49CGu0zdpxxmT3hxwPTEEZqfZJE,6922
+pthelper/model.py,sha256=B6yJ5lGf8XIl8irNlhBMAEcvQuXJLjwxco4DfpdVGZw,960
+torch_helper-0.5a0.dist-info/LICENSE,sha256=4KUPDHHY4yUozHMqrR616GytXCo7oyklf7UsnstYVHk,1078
+torch_helper-0.5a0.dist-info/METADATA,sha256=KGPst7scb7LmdB6ov8KCO2yDulSXmFlm84aeHqig0yE,696
+torch_helper-0.5a0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+torch_helper-0.5a0.dist-info/top_level.txt,sha256=OeXHxF81sHlq3qJQVEC3kxEODq45-hpQ2KFssDOCPnw,9
+torch_helper-0.5a0.dist-info/RECORD,,
