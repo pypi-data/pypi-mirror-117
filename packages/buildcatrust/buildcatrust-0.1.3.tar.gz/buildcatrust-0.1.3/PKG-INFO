@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: buildcatrust
+Version: 0.1.3
+Summary: Utilities for turning one trust store into another.
+Home-page: https://github.com/lukegb/buildcatrust
+Author: Luke Granger-Brown
+Author-email: buildcatrust@lukegb.com
