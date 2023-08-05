@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+obfuscation_detection/__init__.py
+obfuscation_detection/api.py
+obfuscation_detection/models.py
+obfuscation_detection.egg-info/PKG-INFO
+obfuscation_detection.egg-info/SOURCES.txt
+obfuscation_detection.egg-info/dependency_links.txt
+obfuscation_detection.egg-info/requires.txt
+obfuscation_detection.egg-info/top_level.txt
+obfuscation_detection/files/best-resnet-all.pth
+obfuscation_detection/files/best-resnet-linux.pth
+obfuscation_detection/files/best-resnet-windows.pth
+obfuscation_detection/files/char_dict.pth
