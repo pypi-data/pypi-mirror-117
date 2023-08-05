@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: deeplense_domain_adaptation
+Version: 0.0.4
+Summary: A PyTorch-based collection of Unsupervised Domain Adaptation methods applied to strong gravitational lenses
+Home-page: https://github.com/zysymu/Domain-Adaptation-DeepLense
+Author: Marcos Tidball
+Author-email: marcostidball@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/zysymu/Domain-Adaptation-DeepLense/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DeepLense Domain Adaptation
+A PyTorch-based collection of Unsupervised Domain Adaptation methods applied to strong gravitational lenses.
+
