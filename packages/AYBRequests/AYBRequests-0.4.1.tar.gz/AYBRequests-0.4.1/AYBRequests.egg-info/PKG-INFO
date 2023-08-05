@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AYBRequests
+Version: 0.4.1
+Summary: Wrapper for requests package that includes base settings such as base url
+Home-page: https://github.com/TyrantClam/aybrequests
+Author: Joshua Tower
+Author-email: joshua.tower@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8
+
+Wrapper for requests package that includes base settings such as base url
+
