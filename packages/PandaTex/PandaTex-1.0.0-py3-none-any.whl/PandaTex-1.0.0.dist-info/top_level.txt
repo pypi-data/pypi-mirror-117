@@ -1,0 +1,3 @@
+pandatex
+utils/_texbasics
+utils/_validate
