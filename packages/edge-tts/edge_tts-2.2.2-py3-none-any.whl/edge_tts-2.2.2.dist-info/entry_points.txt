@@ -1,0 +1,4 @@
+[console_scripts]
+edge-playback = edgePlayback.__init__:main
+edge-tts = edgeTTS.__init__:main
+
