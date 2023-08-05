@@ -1,0 +1,9 @@
+Django
+Pillow
+fpdf
+fs
+httpie
+httpx
+lxml
+openpyxl
+pyexcel_odsr
