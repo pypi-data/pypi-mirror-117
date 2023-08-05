@@ -1,0 +1,8 @@
+numpy
+nltk
+newspaper3k
+jellyfish
+pylodstorage
+sphinx-rtd-theme
+scikit-learn
+pandas
