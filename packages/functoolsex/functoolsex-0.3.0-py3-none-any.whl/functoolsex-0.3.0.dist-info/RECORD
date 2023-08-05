@@ -1,0 +1,10 @@
+functoolsex/__init__.py,sha256=KMBGzTZjGBRmQtkdGcSfJcsNVoPJ122fu-19kiY9rfI,101
+functoolsex/func.py,sha256=uDzEJ12vDYFaPvfgXMb0woyQNSWOTxCV0roSAQs-qiM,16943
+functoolsex/iters.py,sha256=lnXCJOhCmpynEUDhGvITfA9hBlbLsGTahRDF_W515tY,33099
+functoolsex/recur.py,sha256=Wbluikcjs3bHkPPtte7wkRU1cSgkP-04WAE6xh8PZCs,1402
+functoolsex/tests.py,sha256=8GgqCcj96nWMSgSw2-XRySQLsXKIY5hYkx2TEzkAI14,2479
+functoolsex-0.3.0.dist-info/LICENSE,sha256=7zdyF4YhNkKxpbbavprpZFymBYGZCVj__XAvjr-jFkI,1068
+functoolsex-0.3.0.dist-info/METADATA,sha256=-YgsF-XRE7Gk6tJWoM95gWxucESseREODgV9Vk4ZlN0,1021
+functoolsex-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+functoolsex-0.3.0.dist-info/top_level.txt,sha256=j0lK1vrP5SjQcphnloRTNO2B_Srkm41JhkcvVlW62ww,12
+functoolsex-0.3.0.dist-info/RECORD,,
