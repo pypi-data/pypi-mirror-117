@@ -1,0 +1,7 @@
+ezmysql/__init__.py,sha256=r8FZn05CqsxfSMCg8s5GKVkwRVGGlnav5FzLnGBTB3Q,131
+ezmysql/connection_async.py,sha256=p848QmbaKFlcfCkm802uTzCoxIAsSv3k5LSAQ7xw-ok,6064
+ezmysql/connection_sync.py,sha256=-iPa3_4zbR14y1gmvrdcnAfxnID6Lf0sofkvSWTDHYY,5135
+ezmysql-0.5.1.dist-info/METADATA,sha256=jzgjSutXJevq69CE5tTz_xg6o9DXA6tkhdZf3gFSMps,786
+ezmysql-0.5.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ezmysql-0.5.1.dist-info/top_level.txt,sha256=bvdctpefMTtE9ULhumUv1wl6lvk_RO62LR2Vwi7qFuc,8
+ezmysql-0.5.1.dist-info/RECORD,,
