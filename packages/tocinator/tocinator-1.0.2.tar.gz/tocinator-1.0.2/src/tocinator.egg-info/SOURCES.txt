@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tocinator/__init__.py
+src/tocinator/__main__.py
+src/tocinator/tocinator.py
+src/tocinator.egg-info/PKG-INFO
+src/tocinator.egg-info/SOURCES.txt
+src/tocinator.egg-info/dependency_links.txt
+src/tocinator.egg-info/top_level.txt
