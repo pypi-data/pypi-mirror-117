@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: neau_hpc_utils
+Version: 1.5.0
+Summary: The utils from NEAU HPC Group
+Home-page: https://github.com/yuquanF/neau_hpc_utils
+Author: yuquanfeng
+Author-email: hannerduffly@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+utils
+
+自用
+neau hpc 小组常用工具库
+
