@@ -1,0 +1,10 @@
+kittrans/urls.cpython-37m-x86_64-linux-gnu.so,sha256=OTTRS9ag69nwPLaCoFAu5g0mMkYNv_zF4vc_kARUi9g,82256
+kittrans/__init__.cpython-37m-x86_64-linux-gnu.so,sha256=qCBo2NiMGH2j5g0y6xXDv48cFyFvzGMNqUImNbDGnUk,65816
+kittrans/main.py,sha256=EyzVZS6C-QWybnewEDb17IukOWcY2-8jo0VvtV6fTho,115
+kittrans/models.cpython-37m-x86_64-linux-gnu.so,sha256=8uhdfcTX9k8SAciZcUoz8oqJuJ3whTKWVlESlkkWKjY,830352
+tests/test_login.py,sha256=Qf_iNxyI0J6_K1xQyOlRVdGX5NCQSObKeQF4yWhXa7s,4861
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kittrans-0.1.7.dist-info/METADATA,sha256=oYGCO4Bf9ECzqcAu_7CnpG0Ye6fklC7CELVGfBROstw,196
+kittrans-0.1.7.dist-info/RECORD,,
+kittrans-0.1.7.dist-info/top_level.txt,sha256=MIgznyFusSgFdjuJTZd33nHdicxdmFizrvhHy2Ofius,15
+kittrans-0.1.7.dist-info/WHEEL,sha256=cfvRUISFn-KyIghRtPxlbOPUxm_IrrznxfoFfKl-0iQ,146
