@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: netwey-cli
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/zodman/netwey-cli
+Author: Andres Vargas - zodman
+Author-email: zodman@gmail.com
+License: MIT
+Description: netwey-cli it fetch the information for your netwey.com.mx account
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
