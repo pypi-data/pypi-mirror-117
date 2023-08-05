@@ -1,0 +1,11 @@
+README.txt
+setup.py
+scripts/script
+src/archils_second_calc.egg-info/PKG-INFO
+src/archils_second_calc.egg-info/SOURCES.txt
+src/archils_second_calc.egg-info/dependency_links.txt
+src/archils_second_calc.egg-info/requires.txt
+src/archils_second_calc.egg-info/top_level.txt
+src/simple_calc/__init__.py
+src/simple_calc/calc.py
+src/simple_calc/data/clearai_2.12-0.1.jar
