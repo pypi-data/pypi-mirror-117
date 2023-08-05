@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/callback_executor/__init__.py
+src/callback_executor/executor.py
+src/callback_executor.egg-info/PKG-INFO
+src/callback_executor.egg-info/SOURCES.txt
+src/callback_executor.egg-info/dependency_links.txt
+src/callback_executor.egg-info/top_level.txt
