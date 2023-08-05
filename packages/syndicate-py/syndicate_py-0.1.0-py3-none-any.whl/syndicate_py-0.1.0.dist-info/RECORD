@@ -1,0 +1,14 @@
+syndicate/__init__.py,sha256=9MMMh28W-LfVmPumgnDIm07jS1GG7Ks74Xv5fKuluhA,206
+syndicate/actor.py,sha256=gs3rnplMheEBXYKCDbIwAFBqqkDca7JjKbPtefo6Nm4,14289
+syndicate/dataspace.py,sha256=CWv2z1Uc6fnuBbE1SlgQ7HEx9ZMmT_SyrymPWMkRu58,579
+syndicate/during.py,sha256=7WvFNmibgDYEmrouCUpVrhw4kZyGKP_qYBrnWtR1Fpg,1526
+syndicate/gatekeeper.py,sha256=5dBa0waF8gPhlNy4pdLPJyesrYTSHbdyWd_CCgHYd3s,602
+syndicate/idgen.py,sha256=-cj2bCLLvuVVntEtdRevhm6ozV4r4DZ4e49tFzP-Sno,231
+syndicate/patterns.py,sha256=m21aGPTx-R6AjyZqPLEuuFHlgW2yuxGKAH3ijJ9cU8A,739
+syndicate/relay.py,sha256=1_Xe9x7DCiDxy0nXxOQliU15LjAqQL6zfGVaVhDvU_M,16207
+syndicate/schema.py,sha256=QSrIm3wTq4auWlvj9XsShPHatMEQIGWg4FBm51sbxeg,287
+syndicate/transport.py,sha256=oZf__jShZGZAI_YGj5inus4HeG32kZps3zUrWnHgYRw,660
+syndicate_py-0.1.0.dist-info/METADATA,sha256=shLBGQ_TxFuJI0UkVx7r8FjafTEGtTBz5ZXcvnARpgI,729
+syndicate_py-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+syndicate_py-0.1.0.dist-info/top_level.txt,sha256=GprD5NP8H6ACbLNhvMsSKSkPyMkh94mhHF90QFPxgDY,10
+syndicate_py-0.1.0.dist-info/RECORD,,
