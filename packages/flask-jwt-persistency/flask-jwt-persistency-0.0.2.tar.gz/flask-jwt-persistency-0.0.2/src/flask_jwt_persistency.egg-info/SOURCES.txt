@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/flask_jwt_persistency/__init__.py
+src/flask_jwt_persistency.egg-info/PKG-INFO
+src/flask_jwt_persistency.egg-info/SOURCES.txt
+src/flask_jwt_persistency.egg-info/dependency_links.txt
+src/flask_jwt_persistency.egg-info/top_level.txt
