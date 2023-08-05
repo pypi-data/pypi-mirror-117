@@ -1,0 +1,12 @@
+basefolder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basefolder/predictnow/__init__.py,sha256=AGqQZeOV0lDikCJA6dUVSO-GoUS3UARMOFt2UU6w00w,2405
+basefolder/predictnow/find_files_with_specific_extensions.py,sha256=Poib6XApPTwS0Sy50l5n_T6TyQ5fhDBuvMkOCjVILQQ,554
+basefolder/predictnow/notifier.py,sha256=D5MbtjF_7KAAZQkBFR_ADpfTjZAST5cMgdFGtDzFDvo,1218
+basefolder/predictnow/pdapi.py,sha256=9T5Pjp-UspaMMXfkfH8-WtNSbvKq6Ci30ojBvTZwdkM,14180
+basefolder/predictnow/predict_result.py,sha256=HqmUSU1by1R2bs_g_KUcKkurtLCq_Sjc__0rLMd1fzs,623
+basefolder/predictnow/training_result.py,sha256=uAzkBYBCicB_BwnKu_sAdYtZOjstm0MlZmhf3-jeVDg,2032
+predictnow_api-2.0.0.dist-info/LICENSE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+predictnow_api-2.0.0.dist-info/METADATA,sha256=u23wx3b9_XIKbqSW9ilFUyiulFGko8lbcVNjERJFKuU,8680
+predictnow_api-2.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+predictnow_api-2.0.0.dist-info/top_level.txt,sha256=fQMK9E5Po52J39OrmtrhUxYnCSqor6wdXZOw-zquN-g,11
+predictnow_api-2.0.0.dist-info/RECORD,,
