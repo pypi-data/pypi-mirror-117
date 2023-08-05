@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: installed-packages-diff
+Version: 0.0.0a2
+Summary: Compare packages and versions on servers
+Home-page: https://github.com/cbuschka/installed-packages-diff
+Author: Cornelius Buschka
+Author-email: cbuschka@gmail.com
+License: MIT License
+Description: # installed-packages-diff - Compare packages and versions on servers
+        
+        ## Prerequisites
+        
+        * GNU make
+        * python >= 3.9
+        * pipenv
+        
+        ## Usage
+        
+        ### Setup
+        
+        ```bash
+        make install_deps
+        ```
+        
+        ### Run tests
+        
+        ```bash
+        make tests
+        ```
+        
+        ### Create a config config.yml
+        
+        ```yaml
+        groups:
+          web:
+            servers:
+              - username: root
+                hostname: web-dev
+                excludes:
+                  - "missing"
+              - username: root
+                hostname: web-live
+        ```
+        
+        ### Run installed-packages-diff
+        
+        ```bash
+        make run
+        ```
+        
+        ## License
+        
+        Copyright (c) 2021 by [Cornelius Buschka](https://github.com/cbuschka).
+        
+        [MIT](https://github.com/cbuschka/installed-packages-diff/blob/v0.0.0.alpha.2/license.txt)
+Platform: Posix; MacOS X
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Software Distribution
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
