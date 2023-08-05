@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: magic-toolkit
+Version: 0.8.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: linux
+Requires-Python: >=3.6
+Requires-Dist: termcolor
+
+UNKNOWN
+
+
