@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+
+# The "2" in Vagrant.configure is for configuration version. Don't change it.
+Vagrant.configure("2") do |config|
+  config.vm.define "bxDistro-ub2004-server" do |guest|
+    guest.vm.box = "peru/ubuntu-20.04-server-amd64"
+    guest.vm.hostname = "bxDistro-ub2004-server"
+    config.vm.provider :libvirt do |libvirt|
+      libvirt.driver = "kvm"
+    end
+    ## SHELL PROVISIONING
+    guest.vm.provision "shell", inline: <<-SHELL
+      echo "
+            ## STAGE 1: CREATE bxgenesis
+      "
+      shutdown now
+      exit 0
+SHELL
+  end
+end

@@ -1,0 +1,27 @@
+# -*- mode: ruby -*-
+
+# The "2" in Vagrant.configure is for configuration version. Don't change it.
+Vagrant.configure("2") do |config|
+  config.vm.define "bxDistro-ub2004-5" do |guest|
+    guest.vm.box = "peru/ubuntu-20.04-desktop-amd64"
+    ## guest.vm.box_version = "20201001.01"
+    guest.vm.hostname = "bxDistro-ub2004-5"
+    guest.vm.network "private_network", type: "dhcp"
+    config.vm.provider :libvirt do |libvirt|
+      libvirt.driver = "kvm"
+      # libvirt.host = "localhost"
+      #libvirt.connect_via_ssh = "true"
+      # libvirt.uri = "qemu+ssh://root@localhost"
+      libvirt.management_network_name = "default"
+      libvirt.management_network_address = "192.168.122.0/24"
+    end
+    ## SHELL PROVISIONING
+    guest.vm.provision "shell", inline: <<-SHELL
+      echo "
+            ## STAGE 1: CREATE bxgenesis
+      "
+      shutdown now
+      exit 0
+SHELL
+  end
+end
