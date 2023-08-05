@@ -1,0 +1,3 @@
+[console_scripts]
+how2write = how2write.main:main
+

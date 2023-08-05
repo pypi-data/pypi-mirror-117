@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+how2write/__init__.py
+how2write/main.py
+how2write.egg-info/PKG-INFO
+how2write.egg-info/SOURCES.txt
+how2write.egg-info/dependency_links.txt
+how2write.egg-info/entry_points.txt
+how2write.egg-info/requires.txt
+how2write.egg-info/top_level.txt
