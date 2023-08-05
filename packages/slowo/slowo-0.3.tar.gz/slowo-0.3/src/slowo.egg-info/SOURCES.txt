@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/slowo/__init__.py
+src/slowo/emoji.py
+src/slowo/main.py
+src/slowo/nya.py
+src/slowo/stutter.py
+src/slowo/wepwace.py
+src/slowo.egg-info/PKG-INFO
+src/slowo.egg-info/SOURCES.txt
+src/slowo.egg-info/dependency_links.txt
+src/slowo.egg-info/requires.txt
+src/slowo.egg-info/top_level.txt
