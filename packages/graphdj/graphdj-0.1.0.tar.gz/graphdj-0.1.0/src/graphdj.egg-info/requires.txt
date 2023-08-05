@@ -1,0 +1,4 @@
+Django>=3.2
+graphene-django>=3.0.0b7
+django-filter>=2.4.0
+PyYAML>=5.4.1
