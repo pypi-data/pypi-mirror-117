@@ -1,0 +1,5 @@
+cached-property~=1.5
+dacite
+pydantic
+
+[dev]
