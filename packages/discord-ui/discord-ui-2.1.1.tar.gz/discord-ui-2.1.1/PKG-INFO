@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: discord-ui
+Version: 2.1.1
+Summary: A discord user-interface extension for discord.py
+Home-page: https://github.com/KusoRedsto/discord-ui
+Author: 404kuso, RedstoneZockt
+Author-email: bellou9022@gmail.com, redstoneprofihd@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# discord-message-components is now discord-ui
+## This package has been renamed. Instead use 
+
+```
+pip install discord-ui
+```
+
+New package: https://pypi.org/project/discord-ui/
+
