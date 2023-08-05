@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bats-tda
+Version: 0.0.0
+Summary: Python bindings for the Basic Applied Topology Subprograms
+Home-page: https://github.com/CompTop/BATS.py
+Author: Brad Nelson
+Author-email: bradnelson@uchicago.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/CompTop/BATS.py/issues
+Keywords: algebraic topology,topological data analysis,persistent homology,zigzag homology
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BATS.py
+Python bindings for the [BATS library](https://github.com/CompTop/BATS).
+
+Note that the C++ repository is the main library, and contains more features.  This repository provides bindings for a subset of the functionality of BATS, and is under active development.
+
+Documentation, examples, and tutorials can be found at [comptop.github.io/BATS.py](https://comptop.github.io/BATS.py/#/)
+
+
