@@ -1,0 +1,13 @@
+localhost/login {
+   reverse_proxy "127.0.0.1:4566/login"{
+      header_up Host 127.0.0.1:4566
+   }
+}
+
+localhost/uif_free {
+   reverse_proxy 127.0.0.1:10001
+}
+
+localhost/main {
+   respond "Hello world!"
+}
