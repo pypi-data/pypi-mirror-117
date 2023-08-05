@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bm3d_streak_removal/__init__.py
+bm3d_streak_removal/_internal.py
+bm3d_streak_removal.egg-info/PKG-INFO
+bm3d_streak_removal.egg-info/SOURCES.txt
+bm3d_streak_removal.egg-info/dependency_links.txt
+bm3d_streak_removal.egg-info/requires.txt
+bm3d_streak_removal.egg-info/top_level.txt
+demo/demo.py
+demo/tomobank_00076_exchange_slices.mat
+demo/tomobank_license.txt

@@ -1,0 +1,6 @@
+include bm3d_streak_removal/__init__.py
+include bm3d_streak_removal/_internal.py
+include demo/demo.py
+include demo/tomobank_00076_exchange_slices.mat
+include demo/tomobank_license.txt
+include LICENSE
