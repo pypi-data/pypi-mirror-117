@@ -1,0 +1,2 @@
+0.0.1 (20.08.2021)
+    - clear_term() function added. This function clears the terminal. It works on Mac, Linux and Windows, and probably more platforms.
