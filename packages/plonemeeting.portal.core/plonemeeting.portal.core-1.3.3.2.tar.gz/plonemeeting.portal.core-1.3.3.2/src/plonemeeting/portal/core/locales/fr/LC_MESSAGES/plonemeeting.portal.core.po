@@ -1,0 +1,423 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-07-05 12:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ../content/institution.py:74
+msgid "Active"
+msgstr "Actif"
+
+#: ../content/institution.py:97
+msgid "Additional Meeting query string for list"
+msgstr "Paramètres additionnels pour obtenir la liste des Séances à importer"
+
+#: ../content/institution.py:105
+msgid "Additional Published Items query string"
+msgstr "Paramètres additionnels pour obtenir la liste des Points à importer"
+
+#: ../content/item.py:56
+msgid "Additional data"
+msgstr "Contenu additionnel"
+
+#: ../browser/templates/item.pt:94
+msgid "Annexes"
+msgstr "Annexes"
+
+#: ../browser/templates/item.pt:75
+#: ../faceted/macros.pt:88
+msgid "Attention"
+msgstr "Attention"
+
+#: ../profiles/default/sharing.xml
+msgid "Can manage institution"
+msgstr ""
+
+#: ../browser/sync.py:341
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../content/institution.py:164
+msgid "Categories mappings"
+msgstr "Correspondances des matières"
+
+#: ../browser/templates/item.pt:34
+#: ../content/item.py:64
+#: ../faceted/macros.pt:27
+msgid "Category"
+msgstr "Matière"
+
+#: ../browser/sync.py:328
+msgid "Choose the meeting you want to import in the portal."
+msgstr "Choisissez la Séance que vous souhaitez importer dans le portail."
+
+#: ../setuphandlers.py:55
+msgid "Configuration folder"
+msgstr "Dossier de configuration"
+
+#: ../browser/templates/item.pt:81
+#: ../content/item.py:69
+#: ../content/meeting.py:28
+msgid "Custom info"
+msgstr "Informations complémentaires"
+
+#: ../content/item.py:60
+msgid "Decision"
+msgstr "Décision"
+
+#: ../configure.zcml:43
+msgid "Demo profile for the plonemeeting.portal.core add-on."
+msgstr "Profil de démo pour le module plonemeeting.portal.core."
+
+#: ../profiles/default/types/Institution.xml
+#: ../profiles/default/types/Item.xml
+#: ../profiles/default/types/Meeting.xml
+msgid "Edit"
+msgstr "Editer"
+
+#: ../faceted/preview_meeting.pt:44
+msgid "Edit meeting"
+msgstr "Modifier la séance"
+
+#: ../setuphandlers.py:63
+msgid "Faceted"
+msgstr "Facettes"
+
+#: ../faceted/configure.zcml:19
+msgid "Faceted meeting items preview"
+msgstr "Vue facettes Points (de Séances)"
+
+#: ../faceted/configure.zcml:26
+msgid "Faceted meeting preview"
+msgstr "Vue facettes Séance"
+
+#: ../content/institution.py:232
+msgid "Footer color"
+msgstr "Couleur du pied de page"
+
+#: ../content/institution.py:240
+msgid "Footer text color"
+msgstr "Couleur de texte du pied de page"
+
+#: ../faceted/preview_meeting.pt:61
+#: ../profiles/default/actions.xml
+msgid "Force reimport this meeting"
+msgstr "Réimporter toute cette séance (plus lent)"
+
+#: ../content/institution.py:114
+msgid "Formatting"
+msgstr "Formatage"
+
+#: ../profiles/default/registry.xml
+msgid "Global categories"
+msgstr "Matières globales"
+
+#: ../content/institution.py:61
+msgid "Global category"
+msgstr "Matière globale"
+
+#: ../profiles/default/registry.xml
+msgid "Global category id"
+msgstr "Identifiant de matière globale"
+
+#: ../profiles/default/registry.xml
+msgid "Global category title"
+msgstr "Titre de matière globale"
+
+#: ../content/institution.py:200
+msgid "Header color"
+msgstr "Couleur de l'en-tête"
+
+#: ../faceted/preview_meeting.pt:98
+msgid "Hide meeting infos"
+msgstr "Cacher les informations de la séance"
+
+#: ../browser/sync.py:330
+msgid "Import"
+msgstr "Importer"
+
+#: ../profiles/default/actions.xml
+msgid "Import meeting"
+msgstr "Importer une séance"
+
+#: ../content/institution.py:142
+msgid "Info annex formatting tal expression"
+msgstr "Expression TAL pour le formatage des informations des annexes"
+
+#: ../configure.zcml:34
+msgid "Installs the plonemeeting.portal.core add-on."
+msgstr "Installe le module plonemeeting.portal.core."
+
+#: ../profiles/default/types/Institution.xml
+msgid "Institution"
+msgstr "Institution"
+
+#: ../content/institution.py:33
+msgid "Invalid color parameter, the value should be a correct hexadecimal color"
+msgstr "Paramètre couleur incorrect, la valeur doit être une couleur hexadecimale correcte"
+
+#: ../content/institution.py:27
+msgid "Invalid url parameters, the value should start with '&'"
+msgstr "Paramètres de l'URL invalides, la valeeur doit commencer par '&'"
+
+#: ../profiles/default/types/Item.xml
+msgid "Item"
+msgstr "Point"
+
+#: ../content/institution.py:138
+msgid "Item additional data formatting tal expression"
+msgstr "Expression TAL pour le formatage du contenu additionnel des points"
+
+#: ../content/institution.py:132
+msgid "Item decision formatting tal expression"
+msgstr "Expression TAL pour le formatage des informations des points"
+
+#: ../browser/templates/item.pt:31
+#: ../content/item.py:27
+#: ../faceted/macros.pt:24
+msgid "Item number"
+msgstr "Numéro du point"
+
+#: ../content/institution.py:124
+msgid "Item title formatting tal expression. If empty the default title will be used"
+msgstr "Expression TAL pour le formatage du titre du point. Si laissé vide, le titre du point dans iA.Délib sera utilisé"
+
+#: ../faceted/widgets/sort.py:29
+msgid "Items sort order"
+msgstr "Ordre de tri des points"
+
+#: ../browser/templates/item.pt:68
+#: ../content/item.py:72
+#: ../content/meeting.py:31
+msgid "Last modification in iA.Delib"
+msgstr "Dernière modification dans iA.Délib"
+
+#: ../content/institution.py:224
+msgid "Links text color"
+msgstr "Couleur des liens"
+
+#: ../content/institution.py:56
+msgid "Local category id"
+msgstr "Matière dans iA.Délib"
+
+#: ../content/institution.py:196
+msgid "Logo"
+msgstr "Logo"
+
+#: ../content/institution.py:148
+msgid "Mapping"
+msgstr "Correspondances"
+
+#: ../browser/sync.py:314
+#: ../profiles/default/types/Meeting.xml
+msgid "Meeting"
+msgstr "Séance"
+
+#: ../content/institution.py:86
+msgid "Meeting config ID"
+msgstr "Identifiant de la \"Configuration de séance\" dans iA.Délib"
+
+#: ../browser/sync.py:327
+msgid "Meeting import form"
+msgstr "Importation de Séance"
+
+#: ../content/subscriber.py:30
+msgid "Meetings"
+msgstr "Séances"
+
+#: ../content/institution.py:208
+msgid "Navigation bar color"
+msgstr "Couleur de la barre de navigation"
+
+#: ../content/institution.py:216
+msgid "Navigation bar text color"
+msgstr "Couleur du texte de la barre de navigation"
+
+#: ../faceted/widgets/root_path.py:30
+msgid "Navigation root path"
+msgstr "Chemin de la racine de navigation"
+
+#: ../content/institution.py:84
+msgid "Password"
+msgstr "Mot de passe"
+
+#: ../passwords.py:17
+msgid "Passwords must be at least 8 characters in length."
+msgstr "Les mots de passe doivent être d'au minimum 8 caractères."
+
+#: ../content/institution.py:80
+msgid "Plonemeeting URL"
+msgstr "URL iA.Délib"
+
+#: ../content/institution.py:89
+msgid "Project decision disclaimer"
+msgstr "Avertissement à afficher sur les points en \"Projet de décision\""
+
+#: ../browser/templates/item.pt:58
+#: ../faceted/macros.pt:48
+msgid "Public meeting"
+msgstr "Séance publique du Conseil communal"
+
+#: ../profiles/default/registry.xml
+msgid "Related meeting date"
+msgstr "Date de la séance"
+
+#: ../browser/templates/item.pt:37
+#: ../faceted/macros.pt:30
+msgid "Representative"
+msgstr "Mandataire"
+
+#: ../content/item.py:41
+msgid "Representative group in charge"
+msgstr "Mandataire"
+
+#: ../content/institution.py:68
+msgid "Representative key"
+msgstr "UID mandataire dans iA.Délib"
+
+#: ../content/institution.py:72
+msgid "Representative long values"
+msgstr "Valeur longue de mandataire"
+
+#: ../content/institution.py:70
+msgid "Representative value"
+msgstr "Valeur de mandataire"
+
+#: ../content/institution.py:172
+msgid "Representatives mappings"
+msgstr "Correspondances des mandataires"
+
+#: ../faceted/preview_meeting.pt:93
+msgid "Show meeting infos"
+msgstr "Montrer les informations de la séance"
+
+#: ../content/item.py:30
+msgid "Sortable Item number"
+msgstr ""
+
+#: ../content/institution.py:184
+msgid "Styling"
+msgstr "Styles"
+
+#: ../content/item.py:34
+#: ../content/meeting.py:22
+msgid "UID Plonemeeting"
+msgstr "UID iA.Délib"
+
+#: ../browser/sync.py:283
+msgid "Unexpected meeting count in webservice response !"
+msgstr "Nombre de Séances inatendu dans la réponse du webservice !"
+
+#: ../configure.zcml:52
+msgid "Uninstalls the plonemeeting.portal.core add-on."
+msgstr "Désinstalle le module plonemeeting.portal.core."
+
+#: ../faceted/preview_meeting.pt:52
+#: ../profiles/default/actions.xml
+msgid "Update meeting"
+msgstr "Synchroniser cette séance"
+
+#: ../content/institution.py:82
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: ../profiles/default/types/Institution.xml
+#: ../profiles/default/types/Item.xml
+#: ../profiles/default/types/Meeting.xml
+msgid "View"
+msgstr "Voir"
+
+#: ../faceted/preview_meeting.pt:36
+msgid "View meeting"
+msgstr "Voir la séance"
+
+#: ../browser/sync.py:39
+msgid "Webservice connection error !"
+msgstr "Erreur de connexion au webservice !"
+
+#: ../browser/institution.py:30
+msgid "You see this page because you have permissions to edit it. Otherwise you would have been redirected to Meetings folder. To see the Meetings view, click on Meetings folder."
+msgstr "Vous voyez cette page car vous avez la permission de l'éditer. Sinon, vous auriez été redirigé vers le dossier Séances. Pour voir la vue Séances, cliquez sur le dossier Séances."
+
+#: ../content/institution.py:98
+msgid "additional_meeting_query_string_for_list_description"
+msgstr "Paramètres additionnels au format URL servant à filtrer les séances à importer."
+
+#: ../content/institution.py:106
+msgid "additional_published_items_query_string_description"
+msgstr "Paramètres additionnels au format URL servant à filtrer les points à importer."
+
+#: ../content/institution.py:165
+msgid "categories_mappings_description"
+msgstr "Les points pour lesquels aucune correspondance de matière ne sera trouvée seront ignorés."
+
+#: ../config.py:21
+msgid "category"
+msgstr "Catégorie"
+
+#: ../config.py:22
+msgid "classifier"
+msgstr "Classificateur"
+
+#: ../config.py:17
+msgid "decision"
+msgstr "Décision"
+
+#: ../content/institution.py:92
+msgid "default_in_project_disclaimer"
+msgstr "<p>Ce <em><strong>projet de délibération</strong></em> est un document préparatoire <strong>ayant vocation de permettre aux membres du Conseil communal d'examiner la décision soumise à son approbation.</strong></p> <p>Ce document est par nature <strong>évolutif et susceptible d'être modifié. Ce texte <span style='text-decoration: underline;'>n'a pas encore été adopté</span> par l'autorité communale.</strong></p>"
+
+#: ../content/institution.py:156
+msgid "iA.Delib field to use for category mapping"
+msgstr "Champ iA.Délib à utiliser pour la correspondance des matières"
+
+#: ../config.py:17
+msgid "in_project"
+msgstr "Projet de décision"
+
+#. Default: "Meeting imported !  ${created} created items, ${modified} modified items, ${deleted} deleted items."
+#: ../browser/sync.py:292
+msgid "meeting_imported"
+msgstr "Séance importée !  ${created} points créés, ${modified} points modifiés, ${deleted} points supprimés."
+
+#: ../configure.zcml:34
+msgid "plonemeeting.portal.core"
+msgstr ""
+
+#: ../configure.zcml:43
+msgid "plonemeeting.portal.core (demo)"
+msgstr ""
+
+#: ../configure.zcml:52
+msgid "plonemeeting.portal.core (uninstall)"
+msgstr ""
+
+#: ../config.py:17
+msgid "private"
+msgstr "Privé"
+
+#: ../content/institution.py:69
+msgid "representative_key_description"
+msgstr "Identifiant unique (UID) du groupe en charge dans iA.Délib"
+
+#: ../content/institution.py:73
+msgid "representative_long_value_description"
+msgstr "Affichée sur les pages des points"
+
+#: ../content/institution.py:71
+msgid "representative_value_description"
+msgstr "Affichée dans les filtres et dans les listes de points"
+
+#: ../content/institution.py:173
+msgid "representatives_mappings_description"
+msgstr "Si des correspondances de mandataires sont renseignées ci-dessous, les points pour lesquels aucune correspondance ne sera trouvée seront ignorés."
