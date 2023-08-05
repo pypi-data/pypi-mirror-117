@@ -1,0 +1,6 @@
+numpy
+pandas
+sqlalchemy
+psycopg2-binary
+s3fs==2021.5.0
+pyspark
