@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mcgheepdf/__init__.py
+mcgheepdf/pdf2image.py
+mcgheepdf/pdf2text.py
+mcgheepdf.egg-info/PKG-INFO
+mcgheepdf.egg-info/SOURCES.txt
+mcgheepdf.egg-info/dependency_links.txt
+mcgheepdf.egg-info/top_level.txt
