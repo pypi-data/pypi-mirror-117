@@ -1,0 +1,9 @@
+csbdeep>=0.6.3
+scikit-image
+numba
+
+[test]
+pytest
+
+[tf1]
+csbdeep[tf1]>=0.6.3
