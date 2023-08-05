@@ -1,0 +1,15 @@
+mandaw/__init__.py,sha256=c5oBYYgPfxQciIsgjynrrbE85AyT_qOPef8pU8g_9_8,359
+mandaw/animation.py,sha256=wXKGsofNH9Y5aty_GmyNdTxZmICUkDme1-UrdgQdRkE,389
+mandaw/audio.py,sha256=X4zvtEpjmLBmjQhcfp6WN9bJChgSnNoDyU95tWxDCrQ,374
+mandaw/color.py,sha256=-pGsIZUtOmvs4C-2LPypJ3YlIAuLCj_dAhcs37as3pM,99
+mandaw/gameobject.py,sha256=6dytvAgqmyXP2AXRWB8Ci16g0AZAibMaWXEnJ-xMdfg,1018
+mandaw/input.py,sha256=XZ-dpcpFTIxVLHtwgY1elhrTMbxELXVmb9q1HXRCdaI,243
+mandaw/line.py,sha256=g8EL8pj2sw-Mud-Gd5LcmdZVN5O--3hpyJFN7vFOdvE,301
+mandaw/main.py,sha256=xTcV30k599WJybdjV83JvexrcWDmRtoC5clI46kSKRM,3919
+mandaw/sprite.py,sha256=EeM2AX1ORbzJYJIs73nhBIqlLyfJylv_OKrGuxPR-Xk,4118
+mandaw/text.py,sha256=R22X2UbibLIiUoB79_dLdBVH4qWeCK46aFpcmcXmiRA,638
+mandaw-1.0.7.dist-info/LICENSE,sha256=sj2ms0HoVdF90kBPzePlE1G-ubeK3OfHl4ryn2By7To,1063
+mandaw-1.0.7.dist-info/METADATA,sha256=GatOzC6N0ppEh8d-qNhz_ZPo0gsbIq3Z_n9dGfovBJQ,1310
+mandaw-1.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mandaw-1.0.7.dist-info/top_level.txt,sha256=1P9kEm_qs2CosW5-FGZpoxU1zLBVT8SSs9TlcL937rI,7
+mandaw-1.0.7.dist-info/RECORD,,
