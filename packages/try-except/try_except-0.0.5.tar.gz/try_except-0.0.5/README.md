@@ -1,0 +1,18 @@
+# About
+---
+
+```py
+def try_except(t: func, ex: Exception = None):
+  try:
+    result = t()
+    return result
+  except Exception as e:
+    if isinstance(e,ex):
+      return e
+    elif ex is None:
+      return None
+    else:
+      return False
+```
+
+^^^ This is literally all the code
