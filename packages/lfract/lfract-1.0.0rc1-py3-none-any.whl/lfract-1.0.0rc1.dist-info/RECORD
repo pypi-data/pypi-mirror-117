@@ -1,0 +1,9 @@
+src/arg_handling.py,sha256=t5ue0I5WwxMq8w9p2hvGjlDKY9s4hI25W37IraC32H4,6595
+src/lfract.py,sha256=I7t4y46Ugxu_jLmHvSSwfIPy2hPJd_baXvd6NPBc1Fc,3974
+src/lsystem.py,sha256=_oGF_YCSwozlb0JeQdwQipkSt1ewZRe4HVdD-o9jXdg,8492
+src/turtle.py,sha256=Z5RFpNWz9PzBidTxSncAVlzCD6RUeuJBIeOhhq7sj0A,1980
+lfract-1.0.0rc1.dist-info/entry_points.txt,sha256=Pjz5XH_rM7L05qmWL5W-cOA13dTBNAwPBeIxGdzEye0,42
+lfract-1.0.0rc1.dist-info/LICENSE,sha256=LgCtM7gn9AeRc0pV0qdVUnADF3NPRyMW37LNSgBxx1I,1096
+lfract-1.0.0rc1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+lfract-1.0.0rc1.dist-info/METADATA,sha256=9iKr5N1U9sfCyvW_b_p-rLxY1YDTARCNl6AFRRUwUyE,5430
+lfract-1.0.0rc1.dist-info/RECORD,,
