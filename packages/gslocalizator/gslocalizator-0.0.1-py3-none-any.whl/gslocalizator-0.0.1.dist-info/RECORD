@@ -1,0 +1,11 @@
+gslocalizator/__init__.py,sha256=e4kwf_WN1D3YYa69mcUlO1CWR7kF7VfhEziIlGk8vYA,110
+gslocalizator/localizator.py,sha256=LLnNaiqYRWLD5vE21YVHZq5_SZQZi9Si7YGwhn6yMwA,4247
+gslocalizator/parser.py,sha256=0x058gum5oqlecbqQCTOFaQSshAa4kOPgm4fvPEpEww,1674
+gslocalizator/sheet_tran_task.py,sha256=UKWip9GOpFA6dKnXRPvsglT4N1Y6dTnow8HAnygOylM,2844
+gslocalizator/string_file.py,sha256=ugMM0vM4Qw16pLfQLBgfuhnjxj7A8ZUBXt0t7gfzpAA,2208
+gslocalizator/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gslocalizator/tests/test_sheet_tran_task.py,sha256=d80CUUKh92lR0O9giT0AHixmxYYspSaGd4RnX5ZEVc8,1266
+gslocalizator-0.0.1.dist-info/METADATA,sha256=Px37PWkGyf8wFqFJfoaH71Ry2BfDYJgHXEVHo44qCvQ,1514
+gslocalizator-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gslocalizator-0.0.1.dist-info/top_level.txt,sha256=5N4oUWYsQKVw38-a-0tapiZ9bz3_zSUgbPK3uxRvBiQ,14
+gslocalizator-0.0.1.dist-info/RECORD,,
