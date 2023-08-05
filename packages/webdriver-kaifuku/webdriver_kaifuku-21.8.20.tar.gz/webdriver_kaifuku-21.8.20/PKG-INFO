@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: webdriver_kaifuku
+Version: 21.8.20
+Summary: Restartable webdriver instances
+Home-page: https://github.com/RonnyPfannschmidt-RedHat/webdriver_kaifuku
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# webdriver_kaifuku
+restartable webdriver instances
+
+
