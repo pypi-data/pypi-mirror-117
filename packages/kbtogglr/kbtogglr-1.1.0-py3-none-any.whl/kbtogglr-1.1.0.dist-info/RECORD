@@ -1,0 +1,11 @@
+kbtogglr/__init__.py,sha256=1C_Jt_wL9mq33hi2IJ4Hm2tlFYUA6W4beCe6A-8HqTg,5309
+kbtogglr/__main__.py,sha256=O9z_kYNhA6CD5zPRkyS-upC82R1tBrJO_C2xdtP0yOw,109
+kbtogglr/images/off.png,sha256=p16HNJLuDlPqUBC574_0qw8s4jZfQjrkqhSVzTuzUyk,12996
+kbtogglr/images/on.png,sha256=USzk_VuFHPkWr_dSD9NF9ri0P68b6mH1rCmHYobgarU,1151
+kbtogglr-1.1.0.data/data/share/applications/org.kbtogglr.desktop,sha256=eK-zCzr3hGwRX8ED5bTTPfKv4BupGsEP-LGblbsklno,159
+kbtogglr-1.1.0.dist-info/LICENSE,sha256=cN_OcuKbHE55m67wADlLPKWkcJDVe2t0yhQPKSj7tjA,1073
+kbtogglr-1.1.0.dist-info/METADATA,sha256=uPbPOiOFAzefvarqXaBn4yfVnAiW2IAmqyk9yJZ-ci8,2035
+kbtogglr-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kbtogglr-1.1.0.dist-info/entry_points.txt,sha256=qyIlVi30OZFHCvjylIHE6nm6X5TMJMRn2vvTJzXqnsk,53
+kbtogglr-1.1.0.dist-info/top_level.txt,sha256=jJLO5ic8D8izbmBUPv4IRV286hMOzN4HyTn0HqU6RbY,9
+kbtogglr-1.1.0.dist-info/RECORD,,
