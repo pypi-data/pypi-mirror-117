@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+idkwtfit/__init__.py
+idkwtfit/html2text.py
+idkwtfit/random_color.py
+idkwtfit.egg-info/PKG-INFO
+idkwtfit.egg-info/SOURCES.txt
+idkwtfit.egg-info/dependency_links.txt
+idkwtfit.egg-info/top_level.txt
+idkwtfit/models/__init__.py
+idkwtfit/models/color.py
