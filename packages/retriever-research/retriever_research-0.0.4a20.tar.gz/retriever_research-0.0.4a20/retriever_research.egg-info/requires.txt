@@ -1,0 +1,4 @@
+pykka
+boto3
+psutil
+matplotlib
