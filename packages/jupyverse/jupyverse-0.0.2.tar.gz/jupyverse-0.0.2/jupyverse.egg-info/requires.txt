@@ -1,0 +1,9 @@
+fps
+fastapi-users[sqlalchemy]
+
+[test]
+flake8
+black
+mypy
+pytest
+requests
