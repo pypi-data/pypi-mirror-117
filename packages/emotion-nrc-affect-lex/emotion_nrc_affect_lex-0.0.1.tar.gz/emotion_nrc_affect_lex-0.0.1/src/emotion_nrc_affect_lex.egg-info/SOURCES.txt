@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+dist/emotion_nrc_affect_lex-0.0.1-py3-none-any.whl
+dist/emotion_nrc_affect_lex-0.0.1.tar.gz
+src/emotion.py
+src/__pycache__/emotion.cpython-38.pyc
+src/emotion_nrc_affect_lex.egg-info/PKG-INFO
+src/emotion_nrc_affect_lex.egg-info/SOURCES.txt
+src/emotion_nrc_affect_lex.egg-info/dependency_links.txt
+src/emotion_nrc_affect_lex.egg-info/requires.txt
+src/emotion_nrc_affect_lex.egg-info/top_level.txt
