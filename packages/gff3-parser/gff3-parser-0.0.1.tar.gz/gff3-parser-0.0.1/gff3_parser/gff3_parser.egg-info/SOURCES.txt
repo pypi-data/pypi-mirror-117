@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gff3_parser/gff3_parser.egg-info/PKG-INFO
+gff3_parser/gff3_parser.egg-info/SOURCES.txt
+gff3_parser/gff3_parser.egg-info/dependency_links.txt
+gff3_parser/gff3_parser.egg-info/top_level.txt
