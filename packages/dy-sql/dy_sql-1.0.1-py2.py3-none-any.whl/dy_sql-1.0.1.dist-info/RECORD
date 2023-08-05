@@ -1,0 +1,9 @@
+dysql/__init__.py,sha256=AV1X--yMsQh-vMGEtxS_u9B3MKlMowryvombAzHXoPQ,603
+dysql/connections.py,sha256=WQh9sFo9M2QJUtf4wnZc2w5DMOw1w9oU36w6vwkgxaM,12185
+dysql/mappers.py,sha256=oRn4LqrVfPXtb3ZMUpfMB3lqWIFaYq0zatZiOUNLwzE,6972
+dysql/query_utils.py,sha256=wjO1eUjfs90V8YEM27RroSRulcFSr6CJ8KIrmd0cy7c,9617
+dy_sql-1.0.1.dist-info/LICENSE,sha256=Bfs3NKtP1pZwWgLH0Rlw0QqnT1L__0zn0vM183Xgays,1082
+dy_sql-1.0.1.dist-info/METADATA,sha256=EQA-TpThcUi396xha_R_YygX5glFAuOf1XH4bhO6Jns,646
+dy_sql-1.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+dy_sql-1.0.1.dist-info/top_level.txt,sha256=lA0dnyLMdQ5WxMzsy9E22VfhhnlLylG14QRVHNc85wA,6
+dy_sql-1.0.1.dist-info/RECORD,,
