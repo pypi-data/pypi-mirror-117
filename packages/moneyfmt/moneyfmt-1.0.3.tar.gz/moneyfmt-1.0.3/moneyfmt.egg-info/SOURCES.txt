@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+moneyfmt.py
+setup.cfg
+setup.py
+moneyfmt.egg-info/PKG-INFO
+moneyfmt.egg-info/SOURCES.txt
+moneyfmt.egg-info/dependency_links.txt
+moneyfmt.egg-info/top_level.txt
+moneyfmt.egg-info/zip-safe
