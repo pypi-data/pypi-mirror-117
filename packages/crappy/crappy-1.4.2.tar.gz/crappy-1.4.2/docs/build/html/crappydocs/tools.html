@@ -1,0 +1,1283 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Tools &mdash; Crappy 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tutorials" href="../tutorials.html" />
+    <link rel="prev" title="Links" href="links.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Crappy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../whatiscrappy.html">What is Crappy ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../welcome.html">Welcome to Crappy !</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="block.html">Block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actuators.html">Actuators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blocks.html">Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cameras.html">Cameras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifiers.html">Modifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inouts.html">In / Out</a></li>
+<li class="toctree-l2"><a class="reference internal" href="links.html">Links</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.cameraConfig">Camera configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comedi-bind">Comedi Bind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.discorrel">Discorrel tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.discorrelConfig">Discorrel configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.disve">Disve tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.ft232h">FT232H</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.gpucorrel">GPU Correl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#py-spcm">Py SPCM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.videoextenso">Video extenso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-crappy.tool.videoextensoConfig">Video extenso configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bugs.html">Bug reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Crappy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../welcome.html">Welcome to Crappy !</a> &raquo;</li>
+        
+      <li>Tools</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/crappydocs/tools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tools">
+<h1>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-crappy.tool.cameraConfig">
+<span id="camera-configuration"></span><h2>Camera configuration<a class="headerlink" href="#module-crappy.tool.cameraConfig" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.cameraConfig.</span></span><span class="sig-name descname"><span class="pre">Camera_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class creating a graphical interface to configure a camera.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It will launch <code class="xref py py-meth docutils literal notranslate"><span class="pre">create_window()</span></code> when instanciated. Just call:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Camera_config</span><span class="p">(</span><span class="n">camera</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It takes a single arg: the camera class (it must inherit from
+<cite>crappy.sensor._meta.MasterCam</cite>).</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.apply_settings">
+<span class="sig-name descname"><span class="pre">apply_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.apply_settings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.apply_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Callback for the apply button.</p>
+<p>As its name suggests, it will apply all the edited settings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.convert_img">
+<span class="sig-name descname"><span class="pre">convert_img</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.convert_img"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.convert_img" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the image to <cite>uint</cite> if necessary, then to a <cite>PhotoImage</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.make_new_window">
+<span class="sig-name descname"><span class="pre">make_new_window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ex</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.make_new_window"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.make_new_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hang on, it is not that complicated: given the location of the zoom
+event this will compute the new zoom window.</p>
+<p>It is represented by 4 floats between 0 and 1 <cite>miny</cite>, <cite>minx</cite>, <cite>maxy</cite>,
+<cite>maxx</cite>, default is <cite>0, 0, 1, 1</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.move">
+<span class="sig-name descname"><span class="pre">move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.move"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moving the image when dragging it with the mouse.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.move_window">
+<span class="sig-name descname"><span class="pre">move_window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.move_window"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.move_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given the movement of the mouse, it will recompute the zoom_window.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.on_resize">
+<span class="sig-name descname"><span class="pre">on_resize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.on_resize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.on_resize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recomputes the new shape of the resized image.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.resized">
+<span class="sig-name descname"><span class="pre">resized</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.resized"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.resized" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if window has been resized and saves the new
+coordinates</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.start_move">
+<span class="sig-name descname"><span class="pre">start_move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.start_move"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.start_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>To save the coordinates before actually moving.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.zoom">
+<span class="sig-name descname"><span class="pre">zoom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.zoom"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.zoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>For windows, only one type of wheel event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.zoom_in">
+<span class="sig-name descname"><span class="pre">zoom_in</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.zoom_in"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.zoom_in" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when scrolling in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Camera_config.zoom_out">
+<span class="sig-name descname"><span class="pre">zoom_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Camera_config.zoom_out"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Camera_config.zoom_out" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when scrolling out.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Hist_generator">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.cameraConfig.</span></span><span class="sig-name descname"><span class="pre">Hist_generator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipe</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Hist_generator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Hist_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process to generate the histogram of images.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It only takes a <code class="xref py py-mod docutils literal notranslate"><span class="pre">Pipe</span></code> at <code class="xref py py-meth docutils literal notranslate"><span class="pre">__init__()</span></code>, all the data will be
+transferred through it. See <a class="reference internal" href="#crappy.tool.cameraConfig.Hist_generator.run" title="crappy.tool.cameraConfig.Hist_generator.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code></a> for more info.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.cameraConfig.Hist_generator.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/cameraConfig.html#Hist_generator.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.cameraConfig.Hist_generator.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expects a tuple of 3 args through the pipe:</p>
+<ul class="simple">
+<li><p>out_size (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a>): The dimensions of the output histogram image.</p></li>
+<li><p>hist_range (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a>, e.g.: <cite>(0,256)</cite> for full scale <cite>uint8</cite>): The
+lower and upper value of the histogram.</p></li>
+<li><p>img: A numpy array with the image. If not single channel, it will be
+converted to a single channel.</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="comedi-bind">
+<h2>Comedi Bind<a class="headerlink" href="#comedi-bind" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-crappy.tool.discorrel">
+<span id="discorrel-tool"></span><h2>Discorrel tool<a class="headerlink" href="#module-crappy.tool.discorrel" title="Permalink to this headline">¶</a></h2>
+<p>More documentation coming soon !</p>
+</div>
+<div class="section" id="module-crappy.tool.discorrelConfig">
+<span id="discorrel-configuration"></span><h2>Discorrel configuration<a class="headerlink" href="#module-crappy.tool.discorrelConfig" title="Permalink to this headline">¶</a></h2>
+<p>More documentation coming soon !</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.discorrelConfig.DISConfig">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.discorrelConfig.</span></span><span class="sig-name descname"><span class="pre">DISConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/discorrelConfig.html#DISConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.discorrelConfig.DISConfig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-crappy.tool.disve">
+<span id="disve-tool"></span><h2>Disve tool<a class="headerlink" href="#module-crappy.tool.disve" title="Permalink to this headline">¶</a></h2>
+<p>More documentation coming soon !</p>
+</div>
+<div class="section" id="module-crappy.tool.fields">
+<span id="fields"></span><h2>Fields<a class="headerlink" href="#module-crappy.tool.fields" title="Permalink to this headline">¶</a></h2>
+<p>More documentation coming soon !</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="crappy.tool.fields.remap">
+<span class="sig-prename descclassname"><span class="pre">crappy.tool.fields.</span></span><span class="sig-name descname"><span class="pre">remap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/fields.html#remap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.fields.remap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remaps <cite>a</cite> using given <cite>r</cite> the displacement as a result from
+correlation.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-crappy.tool.ft232h">
+<span id="ft232h"></span><h2>FT232H<a class="headerlink" href="#module-crappy.tool.ft232h" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.Find_serial_number">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.ft232h.</span></span><span class="sig-name descname"><span class="pre">Find_serial_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serial_number</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#Find_serial_number"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.Find_serial_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class used for finding USB devices matching a given serial number, using
+the usb.core.find method.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.ft232h.</span></span><span class="sig-name descname"><span class="pre">ft232h</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">serial_nr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i2c_speed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">100000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spi_turbo</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class for controlling FTDI’s USB to Serial FT232H.</p>
+<p>Communication in SPI and I2C are implemented, along with GPIO control. The
+name of the methods for SPI and I2C communication are those of <code class="xref py py-mod docutils literal notranslate"><span class="pre">smbus</span></code>
+and <code class="xref py py-mod docutils literal notranslate"><span class="pre">spidev</span></code> libraries, in order to facilitate the use and the
+integration in a multi-backend environment. This class also allows to write a
+USB serial number in the EEPROM, as there’s no default serial number on the
+chip.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If using Adafruit’s board, its <cite>I2C Mode</cite> switch should of course be set to
+the correct value according to the chosen mode.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Only for Linux users:</strong> In order to drive the FT232H, the appropriate
+udev rule should be set. This can be done using the <cite>udev_rule_setter</cite>
+utility in <code class="docutils literal notranslate"><span class="pre">crappy</span></code>’s <cite>util</cite> folder. It is also possible to add it
+manually by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ echo &quot;SUBSYSTEM==\&quot;usb\&quot;, ATTR{idVendor}==\&quot;0403\&quot;, MODE=\&quot;0666\&quot;&quot; | sudo tee ftdi.rules &gt; /dev/null 2&gt;&amp;1
+</pre></div>
+</div>
+<p>in a shell opened in <code class="docutils literal notranslate"><span class="pre">/etc/udev/rules.d</span></code>.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For controlling several FT232H from the same computer, it is first necessary
+to set their USB serial numbers. Otherwise an error will be raised. This can
+be done using the crappy utility <code class="docutils literal notranslate"><span class="pre">Set_ft232h_serial_nr.py</span></code>.</p>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.BitMode">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">BitMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.BitMode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.BitMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Commands for changing the bit mode.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">serial_nr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i2c_speed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">100000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spi_turbo</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the arguments validity, initializes the device and sets the locks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – <p>The communication mode, can be :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;SPI&#39;</span><span class="p">,</span> <span class="s1">&#39;I2C&#39;</span><span class="p">,</span> <span class="s1">&#39;GPIO_only&#39;</span><span class="p">,</span> <span class="s1">&#39;Write_serial_nr&#39;</span>
+</pre></div>
+</div>
+<p>GPIOs can be driven in any mode, but faster speeds are achievable in
+<cite>GPIO_only</cite> mode.</p>
+</p></li>
+<li><p><strong>serial_nr</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>, optional) – The serial number of the FT232H to
+drive. In <cite>Write_serial_nr</cite> mode, the serial number to be written.</p></li>
+<li><p><strong>i2c_speed</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>, optional) – <p>In I2C mode, the I2C bus clock frequency
+in Hz. Available values are :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">100E3</span><span class="p">,</span> <span class="mf">400E3</span><span class="p">,</span> <span class="mf">1E6</span><span class="o">.</span>
+</pre></div>
+</div>
+</p></li>
+<li><p><strong>spi_turbo</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>, optional) – Increases the achievable bus speed, but
+may not work with some devices.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><strong>CS pin</strong>:
+The CS pin for selecting SPI devices is always <cite>D3</cite>. This pin is
+reserved and cannot be used as a GPIO. If you want to drive the CS line
+manually, it is possible not to drive the CS pin by setting the SPI
+parameter <a class="reference internal" href="#crappy.tool.ft232h.ft232h.no_cs" title="crappy.tool.ft232h.ft232h.no_cs"><code class="xref py py-attr docutils literal notranslate"><span class="pre">no_cs</span></code></a> to <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> and to drive the CS line from a
+GPIO instead.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mode</span></code>:
+It is not possible to simultaneously control slaves over SPI and I2C,
+due to different hardware requirements for the two protocols. Trying to
+do so will most likely raise an error or lead to inconsistent behavior.</p></li>
+</ul>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.bits_per_word">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">bits_per_word</span></span><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#crappy.tool.ft232h.ft232h.bits_per_word" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of bits per SPI words.</p>
+<p>Can only be set to 8.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.close"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the FTDI interface/port.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.cshigh">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">cshigh</span></span><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#crappy.tool.ft232h.ft232h.cshigh" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the polarity of the CS line is inverted.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.get_gpio">
+<span class="sig-name descname"><span class="pre">get_gpio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gpio_str</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.get_gpio"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.get_gpio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the 3.3V-logic voltage value of the specified pin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>gpio_str</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Name of the GPIO to be read</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>3.3V-logic value corresponding to the input voltage</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.loop">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">loop</span></span><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#crappy.tool.ft232h.ft232h.loop" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the loopback mode is enabled.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.lsbfirst">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">lsbfirst</span></span><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#crappy.tool.ft232h.ft232h.lsbfirst" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, data is sent and received LSB first.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.max_speed_hz">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">max_speed_hz</span></span><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#crappy.tool.ft232h.ft232h.max_speed_hz" title="Permalink to this definition">¶</a></dt>
+<dd><p>The SPI bus clock frequency in Hz.</p>
+<p>In SPI modes <cite>1</cite> and <cite>3</cite>, the actual bus clock frequency is 50% higher than
+the input value because the FT232H is switched to 3-phase clock mode.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.mode">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">mode</span></span><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#crappy.tool.ft232h.ft232h.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>The SPI mode used for communicating with the slave.</p>
+<p>When changing the SPI mode, the bus clock frequency may be reloaded.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.no_cs">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">no_cs</span></span><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#crappy.tool.ft232h.ft232h.no_cs" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the CS line is not driven.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.read_byte">
+<span class="sig-name descname"><span class="pre">read_byte</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.read_byte"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.read_byte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a single byte from an I2C slave, from the register <cite>0</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Value of the read register</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.read_byte_data">
+<span class="sig-name descname"><span class="pre">read_byte_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">register</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.read_byte_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.read_byte_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a single byte from an I2C slave, from the specified register.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p></li>
+<li><p><strong>register</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Index of the register to be read</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Value of the read register</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.read_i2c_block_data">
+<span class="sig-name descname"><span class="pre">read_i2c_block_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">register</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.read_i2c_block_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.read_i2c_block_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a given number of bytes from an I2C slave, starting at the
+specified register.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p></li>
+<li><p><strong>register</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Index of the first register to be read</p></li>
+<li><p><strong>length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Number of bytes to read</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Values of read registers as a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.read_word_data">
+<span class="sig-name descname"><span class="pre">read_word_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">register</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.read_word_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.read_word_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads 2 bytes from an I2C slave, starting at the specified register, and
+returns them as one single value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p></li>
+<li><p><strong>register</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Index of the first register to be read</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Value of the read registers</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.readbytes">
+<span class="sig-name descname"><span class="pre">readbytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">len</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.readbytes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.readbytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the specified number of bytes from an SPI slave.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>len</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Number of bytes to read</p></li>
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the CS line is not driven before
+reading data, and remains in its previous state.</p></li>
+<li><p><strong>stop</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the CS line is not driven after
+reading data, and remains in its previous state.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of read bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.set_gpio">
+<span class="sig-name descname"><span class="pre">set_gpio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gpio_str</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.set_gpio"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.set_gpio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the specified GPIO as an output and sets its output value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gpio_str</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Name of the GPIO to be set</p></li>
+<li><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – 1 for setting the GPIO high, 0 for setting it low</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.threewire">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">threewire</span></span><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#crappy.tool.ft232h.ft232h.threewire" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, indicates that the MISO and MOSI lines are connected
+together. Not currently implemented.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.write_block_data">
+<span class="sig-name descname"><span class="pre">write_block_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">register</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.write_block_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.write_block_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actually calls <a class="reference internal" href="#crappy.tool.ft232h.ft232h.write_i2c_block_data" title="crappy.tool.ft232h.ft232h.write_i2c_block_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write_i2c_block_data()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p></li>
+<li><p><strong>register</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Index of the first register to be written</p></li>
+<li><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of bytes to write</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.write_byte">
+<span class="sig-name descname"><span class="pre">write_byte</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.write_byte"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.write_byte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a single byte to an I2C slave, in register 0.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p></li>
+<li><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The value to write</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.write_byte_data">
+<span class="sig-name descname"><span class="pre">write_byte_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">register</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.write_byte_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.write_byte_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a single byte to an I2C slave, in the specified register.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p></li>
+<li><p><strong>register</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Index of the register to be written</p></li>
+<li><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The value to write</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.write_i2c_block_data">
+<span class="sig-name descname"><span class="pre">write_i2c_block_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">register</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.write_i2c_block_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.write_i2c_block_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes bytes from a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> to an I2C slave, starting at the
+specified register.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p></li>
+<li><p><strong>register</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Index of the first register to be written</p></li>
+<li><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of bytes to write</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.write_word_data">
+<span class="sig-name descname"><span class="pre">write_word_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i2c_addr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">register</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.write_word_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.write_word_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes 2 bytes to an I2C slave from a single int value, starting at the
+specified register.</p>
+<p>Depending on the size of the registers, the next register may be written as
+well.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i2c_addr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – I2C address of the slave</p></li>
+<li><p><strong>register</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Index of the first register to be written</p></li>
+<li><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – The value to write</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.writebytes">
+<span class="sig-name descname"><span class="pre">writebytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.writebytes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.writebytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write bytes from a list to an SPI slave.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of bytes to write</p></li>
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the CS line is not driven before
+reading data, and remains in its previous state.</p></li>
+<li><p><strong>stop</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the CS line is not driven after
+reading data, and remains in its previous state.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.writebytes2">
+<span class="sig-name descname"><span class="pre">writebytes2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.writebytes2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.writebytes2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actually calls the <a class="reference internal" href="#crappy.tool.ft232h.ft232h.writebytes" title="crappy.tool.ft232h.ft232h.writebytes"><code class="xref py py-meth docutils literal notranslate"><span class="pre">writebytes()</span></code></a> method with the same arguments.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.xfer">
+<span class="sig-name descname"><span class="pre">xfer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bits</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.xfer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.xfer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simultaneously reads and write bytes to an SPI slave.</p>
+<p>The number of bytes to read is equal to the number of bytes in the write
+buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – List of bytes to write</p></li>
+<li><p><strong>speed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – Sets the bus clock frequency before issuing the
+command (in Hz)</p></li>
+<li><p><strong>delay</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>) – Not implemented, should be 0.0</p></li>
+<li><p><strong>bits</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – Not implemented, should be 8</p></li>
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the CS line is not driven before
+reading data, and remains in its previous state.</p></li>
+<li><p><strong>stop</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, the CS line is not driven after
+reading data, and remains in its previous state.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of read bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.xfer2">
+<span class="sig-name descname"><span class="pre">xfer2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">6000000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bits</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.xfer2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.xfer2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actually calls the <a class="reference internal" href="#crappy.tool.ft232h.ft232h.xfer" title="crappy.tool.ft232h.ft232h.xfer"><code class="xref py py-meth docutils literal notranslate"><span class="pre">xfer()</span></code></a> method with the same arguments.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h.xfer3">
+<span class="sig-name descname"><span class="pre">xfer3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">6000000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bits</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><a class="reference internal" href="../_modules/crappy/tool/ft232h.html#ft232h.xfer3"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.ft232h.ft232h.xfer3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actually calls the <a class="reference internal" href="#crappy.tool.ft232h.ft232h.xfer" title="crappy.tool.ft232h.ft232h.xfer"><code class="xref py py-meth docutils literal notranslate"><span class="pre">xfer()</span></code></a> method with the same arguments.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="crappy.tool.ft232h.ft232h_i2c_timings">
+<span class="sig-prename descclassname"><span class="pre">crappy.tool.ft232h.</span></span><span class="sig-name descname"><span class="pre">ft232h_i2c_timings</span></span><a class="headerlink" href="#crappy.tool.ft232h.ft232h_i2c_timings" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">crappy.tool.ft232h.I2CTimings</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-crappy.tool.gpucorrel">
+<span id="gpu-correl"></span><h2>GPU Correl<a class="headerlink" href="#module-crappy.tool.gpucorrel" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.gpucorrel.</span></span><span class="sig-name descname"><span class="pre">CorrelStage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img_size</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run a correlation routine on an image, at a given resolution.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Multiple instances of this class are used for the pyramidal correlation in
+<cite>Correl()</cite>.</p>
+<p>Can but is not meant to be used as is.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.debug">
+<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.debug"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>To print debug messages.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>First argument is the level of the message.</p>
+<p>The others arguments will be displayed only if the <cite>self.debug</cite> var is
+superior or equal.</p>
+<p>Also, flag and indentation reflect respectively the origin and the level
+of the message.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.get_disp">
+<span class="sig-name descname"><span class="pre">get_disp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img_d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.get_disp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.get_disp" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method that actually computes the weight of the fields.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.prepare">
+<span class="sig-name descname"><span class="pre">prepare</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.prepare"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.prepare" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes all necessary tables to perform correlation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method must be called everytime the original image or fields are
+set.</p>
+<p>If not done by the user, it will be done automatically when needed.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.resample_d">
+<span class="sig-name descname"><span class="pre">resample_d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.resample_d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.resample_d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resamples <cite>tex_d</cite> and returns it in a <cite>gpuarray</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.resample_orig">
+<span class="sig-name descname"><span class="pre">resample_orig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dev_out</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.resample_orig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.resample_orig" title="Permalink to this definition">¶</a></dt>
+<dd><p>To resample the original image.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Reads <cite>orig.texture</cite> and writes the interpolated <cite>newX*newY</cite> image to the
+<cite>devOut</cite> array.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.set_fields">
+<span class="sig-name descname"><span class="pre">set_fields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fields_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields_y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.set_fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.set_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to give the fields to identify with the routine.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is necessary only once and can be done multiple times, but the
+routine have to be initialized with <a class="reference internal" href="#crappy.tool.gpucorrel.CorrelStage.prepare" title="crappy.tool.gpucorrel.CorrelStage.prepare"><code class="xref py py-meth docutils literal notranslate"><span class="pre">prepare()</span></code></a>, causing a slight
+overhead.</p>
+<p>Takes a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of 2 <cite>(gpu)arrays[Nfields,x,y]</cite> (one
+for displacement along <cite>x</cite> and one along <cite>y</cite>).</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.set_image">
+<span class="sig-name descname"><span class="pre">set_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img_d</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.set_image"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.set_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the image to compare with the original.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Calling this method is not necessary: you can do <cite>.get_disp(image)</cite>.
+This will automatically call this method first.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.set_orig">
+<span class="sig-name descname"><span class="pre">set_orig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.set_orig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.set_orig" title="Permalink to this definition">¶</a></dt>
+<dd><p>To set the original image from a given CPU or GPU array.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If it is a GPU array, it will NOT be copied.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The most efficient method is to write directly over <cite>self.devOrig</cite> with
+some kernel and then run <a class="reference internal" href="#crappy.tool.gpucorrel.CorrelStage.update_orig" title="crappy.tool.gpucorrel.CorrelStage.update_orig"><code class="xref py py-meth docutils literal notranslate"><span class="pre">update_orig()</span></code></a>.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.CorrelStage.update_orig">
+<span class="sig-name descname"><span class="pre">update_orig</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#CorrelStage.update_orig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.CorrelStage.update_orig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Needs to be called after <cite>self.img_d</cite> has been written directly.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.GPUCorrel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.gpucorrel.</span></span><span class="sig-name descname"><span class="pre">GPUCorrel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img_size</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#GPUCorrel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.GPUCorrel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identify the displacement between two images.</p>
+<p>This class is the core of the Correl block. It is meant to be efficient
+enough to run in real-time.</p>
+<p>It relies on <a class="reference internal" href="#crappy.tool.gpucorrel.CorrelStage" title="crappy.tool.gpucorrel.CorrelStage"><code class="xref py py-class docutils literal notranslate"><span class="pre">CorrelStage</span></code></a> to perform correlation on different scales.</p>
+<p class="rubric">Requirements</p>
+<ul class="simple">
+<li><p>The computer must have a Nvidia video card with compute capability
+<cite>&gt;= 3.0</cite></p></li>
+<li><p><cite>CUDA 5.0</cite> or higher (only tested with <cite>CUDA 7.5</cite>)</p></li>
+<li><p><cite>pycuda 2014.1</cite> or higher (only tested with pycuda <cite>2016.1.1</cite>)</p></li>
+</ul>
+<p class="rubric">Presentation</p>
+<p>This class takes a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of fields. These fields will be the base of
+deformation in which the displacement will be identified. When given two
+images, it will identify the displacement between the original and the
+second image in this base as closely as possible lowering square-residual
+using provided displacements.</p>
+<p>This class is highly flexible and performs on GPU for faster operation.</p>
+<p class="rubric">Usage</p>
+<p>At initialization, Correl needs only one unnamed argument: the working
+resolution (as a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>), which is the resolution of
+the images it will be given. All the images must have exactly these
+dimensions. The dimensions must be given in this order: <cite>(y,x)</cite> (like
+<cite>openCV</cite> images)</p>
+<p>At initialization or after, this class takes a reference image. The
+deformations on this image are supposed to be all equal to <cite>0</cite>.</p>
+<p>It also needs a number of deformation fields (technically limited to <cite>~500</cite>
+fields, probably much less depending on the resolution and the amount of
+memory on the graphics card).</p>
+<p>Finally, you need to provide the deformed image you want to process. It
+will then identify parameters of the sum of fields that lowers the square
+sum of differences between the original image and the second one displaced
+with the resulting field.</p>
+<p>This class will resample the images and perform identification on a lower
+resolution, use the result to initialize the next stage, and again util it
+reaches the last stage. It will then return the computed parameters. The
+number of levels can be set with <code class="docutils literal notranslate"><span class="pre">levels=x</span></code>.</p>
+<p>The latest parameters returned (if any) are used to initialize computation
+when called again, to help identify large displacement. It is particularly
+adapted to slow deformations.</p>
+<p>To lower the residual, this program computes the gradient of each parameter
+and uses Newton method to converge as fast as possible. The number of
+iterations for the resolution can also be set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>img_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a>) – tuple of 2 <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>, <cite>(y,x)</cite>, the working
+resolution</p></li>
+<li><p><strong>verbose</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>) – <p>Use <code class="docutils literal notranslate"><span class="pre">verbose=x</span></code> to choose the amount of information
+printed to the console:</p>
+<ul>
+<li><p><cite>0</cite>: Nothing except for errors</p></li>
+<li><p><cite>1</cite>: Only important info and warnings</p></li>
+<li><p><cite>2</cite>: Major info and a few values periodically (at a bearable rate)</p></li>
+<li><p><cite>3</cite>: Tons of info including details of each iteration</p></li>
+</ul>
+<p>Note that <cite>verbose=3</cite> REALLY slows the program down. To be used only for
+debug.</p>
+</p></li>
+<li><p><strong>fields</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>) – <p>Use <code class="docutils literal notranslate"><span class="pre">fields=[...]</span></code> to set the fields. This can be
+done later with <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_fields()</span></code>, however in case when the fields are
+set later, you need to add <code class="docutils literal notranslate"><span class="pre">Nfields=x</span></code> to specify at <code class="xref py py-meth docutils literal notranslate"><span class="pre">__init__()</span></code>
+the number of expected fields in order to allocate all the necessary
+memory on the device.</p>
+<p>The fields should be given as a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a> of 2
+<cite>numpy.ndarrays</cite> or <cite>gpuarray.GPUArray</cite> of the size of the image, each
+array corresponds to the displacement in pixel along respectively <cite>X</cite> and
+<cite>Y</cite>.</p>
+<p>You can also use a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> instead of the <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a> for the common
+fields:</p>
+<ul>
+<li><p>Rigid body and linear deformations:</p>
+<ul class="simple">
+<li><p><cite>’x’</cite>: Movement along <cite>X</cite></p></li>
+<li><p><cite>’y’</cite>: Movement along <cite>Y</cite></p></li>
+<li><p><cite>’r’</cite>: Rotation (in the trigonometric direction)</p></li>
+<li><p><cite>’exx’</cite>: Stretch along <cite>X</cite></p></li>
+<li><p><cite>’eyy’</cite>: Stretch along <cite>Y</cite></p></li>
+<li><p><cite>’exy’</cite>: Shear</p></li>
+<li><p><cite>’z’</cite>: Zoom (dilatation) (<cite>=exx+eyy</cite>)</p></li>
+</ul>
+<p>Note that you should not try to identify <cite>exx</cite>, <cite>eyy</cite> AND <cite>z</cite> at the
+same time (one of them is redundant).</p>
+</li>
+<li><p>Quadratic deformations:</p>
+<p>These fields are more complicated to interpret but can be useful for
+complicated solicitations such as biaxial stretch. <cite>U</cite> and <cite>V</cite>
+represent the displacement along respectively <cite>x</cite> and <cite>y</cite>.</p>
+<ul class="simple">
+<li><p><cite>’uxx’</cite>: <cite>U(x,y) = x²</cite></p></li>
+<li><p><cite>’uyy’</cite>: <cite>U(x,y) = y²</cite></p></li>
+<li><p><cite>’uxy’</cite>: <cite>U(x,y) = xy</cite></p></li>
+<li><p><cite>’vxx’</cite>: <cite>V(x,y) = x²</cite></p></li>
+<li><p><cite>’vyy’</cite>: <cite>V(x,y) = y²</cite></p></li>
+<li><p><cite>’vxy’</cite>: <cite>V(x,y) = xy</cite></p></li>
+</ul>
+</li>
+</ul>
+<p>All of these default fields are normalized to have a max displacement of
+<cite>1</cite> pixel and are centered in the middle of the image. They are generated
+to have the size of your image.</p>
+<p>You can mix strings and tuples at your convenience to perform your
+identification.</p>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">MyFieldX</span><span class="p">,</span> <span class="n">MyFieldY</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p>where <cite>MyfieldX</cite> and <cite>MyfieldY</cite> are numpy arrays with the same shape as
+the images</p>
+<p>Example of memory usage: On a 2048x2048 image, count roughly
+<cite>180 + 100*Nfields</cite> MB of VRAM</p>
+</div>
+</p></li>
+<li><p><strong>img</strong> – <p>The original image. It must be given as a 2D <cite>numpy.ndarray</cite>. This
+block works with <cite>dtype=np.float32</cite>. If the <cite>dtype</cite> of the given image is
+different, it will print a warning and the image will be converted. It
+can be given at <code class="xref py py-meth docutils literal notranslate"><span class="pre">__init__()</span></code> with the kwarg <code class="docutils literal notranslate"><span class="pre">img=MyImage</span></code> or later
+with <code class="docutils literal notranslate"><span class="pre">set_orig(MyImage)</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can reset it whenever you want, even multiple times but it will
+reset the def parameters to <cite>0</cite>.</p>
+</div>
+<p>Once fields and original image are set, there is a short preparation time
+before correlation can be performed. You can do this preparation yourself
+by using <code class="xref py py-meth docutils literal notranslate"><span class="pre">prepare()</span></code>. If not called, it will be done automatically
+when necessary, inducing a slight overhead at the first call of
+<a class="reference internal" href="#crappy.tool.gpucorrel.GPUCorrel.get_disp" title="crappy.tool.gpucorrel.GPUCorrel.get_disp"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_disp()</span></code></a> after setting/updating the fields or original image.</p>
+</p></li>
+<li><p><strong>levels</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>, optional) – Number of levels of the pyramid. More levels
+can help converging with large and quick deformations but may fail on
+images without low spatial frequency. Fewer levels mean that the program
+will run faster.</p></li>
+<li><p><strong>resampling_factor</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>, optional) – The resolution will be divided
+by this parameter between each stage of the pyramid. Low, can allow
+coherence between stages but is more expensive. High, reaches small
+resolutions in less levels and is faster but be careful not to loose
+consistency between stages.</p></li>
+<li><p><strong>iterations</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>, optional) – The MAXIMUM number of iteration to be
+ran before returning the values. Note that if the residual increases
+before reaching <cite>x</cite> iterations, the block will return anyway.</p></li>
+<li><p><strong>mask</strong> (<em>optional</em>) – To set the mask, to weight the zone of interest on the
+images. It is particularly useful to prevent undesired effects on the
+border of the images. If no mask is given, a rectangular mask will be
+used, with border of <cite>5%</cite> the size of the image.</p></li>
+<li><p><strong>show_diff</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>, optional) – Will open a <code class="xref py py-mod docutils literal notranslate"><span class="pre">cv2</span></code> window and print
+the difference between the original and the displaced image after
+correlation. <cite>128 Gray</cite> means no difference, lighter means positive and
+darker negative.</p></li>
+<li><p><strong>kernel_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>, optional) – Where <cite>crappy_install_dir</cite> is the root
+directory of the installation of crappy (<code class="docutils literal notranslate"><span class="pre">crappy.__path__</span></code>).</p></li>
+<li><p><strong>mul</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>, optional) – <p>This parameter is critical. The direction
+will be multiplied by this scalar before being added to the solution. It
+defines how “fast” we move towards the solution. High value, fast
+convergence but risk to go past the solution and diverge (the program
+does not try to handle this and if the residual rises, iterations will
+stop immediately). Low value, probably more precise but slower and may
+require more iterations.</p>
+<p>After multiple tests, 3 was found to be a pretty acceptable value. Don’t
+hesitate to adapt it to your case. Use <code class="docutils literal notranslate"><span class="pre">verbose=3</span></code> and see if the
+convergence is too slow or too fast.</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The compared image can be given directly when querying the displacement
+as a parameter to <a class="reference internal" href="#crappy.tool.gpucorrel.GPUCorrel.get_disp" title="crappy.tool.gpucorrel.GPUCorrel.get_disp"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_disp()</span></code></a> or before, with <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_image()</span></code>. You
+can provide it as a <cite>np.ndarray</cite> just like <cite>orig</cite>, or as a
+<cite>pycuda.gpuarray.GPUArray</cite>.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.GPUCorrel.clean">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">clean</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#GPUCorrel.clean"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.GPUCorrel.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Needs to be called at the end, to destroy the context properly.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.GPUCorrel.debug">
+<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#GPUCorrel.debug"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.GPUCorrel.debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>To print debug info.</p>
+<p>First argument is the level of the message.
+It wil be displayed only if the <cite>self.debug</cite> is superior or equal.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.GPUCorrel.get_disp">
+<span class="sig-name descname"><span class="pre">get_disp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img_d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#GPUCorrel.get_disp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.GPUCorrel.get_disp" title="Permalink to this definition">¶</a></dt>
+<dd><p>To get the displacement.</p>
+<p>This will perform the correlation routine on each stage, initializing with
+the previous values every time it will return the computed parameters
+as a list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.GPUCorrel.get_fields">
+<span class="sig-name descname"><span class="pre">get_fields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#GPUCorrel.get_fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.GPUCorrel.get_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the fields, resampled to size <cite>(y,x)</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.GPUCorrel.get_res">
+<span class="sig-name descname"><span class="pre">get_res</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lvl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#GPUCorrel.get_res"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.GPUCorrel.get_res" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the last residual of the specified level (<cite>0</cite> by default).</p>
+<p>Usually, the correlation is correct when <cite>res &lt; ~1e9-10</cite> but it really
+depends on the images: you need to find the value that suit your own
+images, depending on the resolution, contrast, correlation method etc…
+You can use <a class="reference internal" href="#crappy.tool.gpucorrel.GPUCorrel.write_diff_file" title="crappy.tool.gpucorrel.GPUCorrel.write_diff_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write_diff_file()</span></code></a> to visualize the difference between the
+two images after correlation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.GPUCorrel.set_orig">
+<span class="sig-name descname"><span class="pre">set_orig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#GPUCorrel.set_orig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.GPUCorrel.set_orig" title="Permalink to this definition">¶</a></dt>
+<dd><p>To set the original image.</p>
+<p>This is the reference with which the second image will be compared.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.GPUCorrel.write_diff_file">
+<span class="sig-name descname"><span class="pre">write_diff_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#GPUCorrel.write_diff_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.GPUCorrel.write_diff_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>To see the difference between the two images with the computed
+parameters.</p>
+<p>It writes a single channel picture named <cite>“diff.png”</cite> where <cite>128 gray</cite> is
+exact equality, lighter pixels show positive difference and darker pixels
+a negative difference. Useful to see if correlation succeeded and to
+identify the origin of non convergence.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="crappy.tool.gpucorrel.interp_nearest">
+<span class="sig-prename descclassname"><span class="pre">crappy.tool.gpucorrel.</span></span><span class="sig-name descname"><span class="pre">interp_nearest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ny</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nx</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/gpucorrel.html#interp_nearest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.gpucorrel.interp_nearest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to interpolate the mask for each stage.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="py-spcm">
+<h2>Py SPCM<a class="headerlink" href="#py-spcm" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-crappy.tool.videoextenso">
+<span id="video-extenso"></span><h2>Video extenso<a class="headerlink" href="#module-crappy.tool.videoextenso" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.LostSpotError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.videoextenso.</span></span><span class="sig-name descname"><span class="pre">LostSpotError</span></span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#LostSpotError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.LostSpotError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Tracker">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.videoextenso.</span></span><span class="sig-name descname"><span class="pre">Tracker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">white_spots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">safe_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blur</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Tracker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Tracker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process tracking a spot for videoextensometry.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Tracker.fallback">
+<span class="sig-name descname"><span class="pre">fallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Tracker.fallback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Tracker.fallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the spots are lost.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Tracker.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Tracker.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Tracker.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to be run in sub-process; can be overridden in sub-class</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Video_extenso">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.videoextenso.</span></span><span class="sig-name descname"><span class="pre">Video_extenso</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">white_spots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_thresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_spots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">safe_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">150</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blur</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Video_extenso"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Video_extenso" title="Permalink to this definition">¶</a></dt>
+<dd><p>The basic VideoExtenso class.</p>
+<p>It will detect the spots, save the initial position, and return the measured
+deformation in the most simple way:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>It will always return a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of the spots coordinates (in pixel).</p></li>
+<li><p>It will return <cite>Exx</cite>, <cite>Eyy</cite>, projections of the length of the bounding
+box of the spot on each axis, divided by its original length.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Can detect 2,3 or 4 spots.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Video_extenso.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">white_spots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_thresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_spots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">safe_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">150</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blur</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Video_extenso.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Video_extenso.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the arguments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>white_spots</strong> – Set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if the spots are lighter than the
+surroundings, else set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
+<li><p><strong>update_thresh</strong> – Should the threshold be updated in each round ? If so
+there are lower chances to lose the spots but there will be more noise
+in the measurement.</p></li>
+<li><p><strong>num_spots</strong> – <p>The number of spots to detect. Helps for spot detection and
+allows to force detection of a given number of spots (<cite>“auto”</cite> works
+fine most of the time). Can be set to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;auto&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span>
+</pre></div>
+</div>
+</p></li>
+<li><p><strong>safe_mode</strong> – If set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>, it will try hard to catch the spots
+when losing them. Could result in incoherent values without crash. Set
+to <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> when security is a concern.</p></li>
+<li><p><strong>border</strong> – The number of pixels that will be added to the limits of the
+boundingbox.</p></li>
+<li><p><strong>min_area</strong> – Filters regions with an area smaller than this value among the
+selected regions.</p></li>
+<li><p><strong>blur</strong> – Median blur to be added to the image to smooth out irregularities
+and make detection more reliable.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Video_extenso.detect_spots">
+<span class="sig-name descname"><span class="pre">detect_spots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ox</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Video_extenso.detect_spots"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Video_extenso.detect_spots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detects the spots in <cite>img</cite>, subframe of the full image.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><cite>ox</cite> and <cite>oy</cite> represent the offset of the subframe in the full image.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Video_extenso.enlarged_window">
+<span class="sig-name descname"><span class="pre">enlarged_window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Video_extenso.enlarged_window"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Video_extenso.enlarged_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the slices to get the window around the spot.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Video_extenso.get_def">
+<span class="sig-name descname"><span class="pre">get_def</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Video_extenso.get_def"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Video_extenso.get_def" title="Permalink to this definition">¶</a></dt>
+<dd><p>The “heart” of the videoextenso.</p>
+<p>Will keep track of the spots and return the computed deformation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.Video_extenso.start_tracking">
+<span class="sig-name descname"><span class="pre">start_tracking</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#Video_extenso.start_tracking"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.Video_extenso.start_tracking" title="Permalink to this definition">¶</a></dt>
+<dd><p>Will spawn a process per spot, which goal is to track the spot and
+send the new coordinate after each update.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="crappy.tool.videoextenso.overlapping">
+<span class="sig-prename descclassname"><span class="pre">crappy.tool.videoextenso.</span></span><span class="sig-name descname"><span class="pre">overlapping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">box1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">box2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextenso.html#overlapping"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextenso.overlapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> if <cite>box1</cite> and <cite>box2</cite> are overlapping or included in
+each other</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-crappy.tool.videoextensoConfig">
+<span id="video-extenso-configuration"></span><h2>Video extenso configuration<a class="headerlink" href="#module-crappy.tool.videoextensoConfig" title="Permalink to this headline">¶</a></h2>
+<p>More documentation coming soon !</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="crappy.tool.videoextensoConfig.VE_config">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">crappy.tool.videoextensoConfig.</span></span><span class="sig-name descname"><span class="pre">VE_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ve</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/crappy/tool/videoextensoConfig.html#VE_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#crappy.tool.videoextensoConfig.VE_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../tutorials.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="links.html" class="btn btn-neutral float-left" title="Links" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
