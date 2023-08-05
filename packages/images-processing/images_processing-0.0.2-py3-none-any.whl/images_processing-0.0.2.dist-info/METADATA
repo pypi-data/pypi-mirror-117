@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: images-processing
+Version: 0.0.2
+Summary: image processing Package using Skimage
+Home-page: https://github.com/saldanhayg/ProJeto_Criacao_Pacotes_de_Imagens_Python
+Author: Helio
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image (>=0.16.1)
+
+# Projeto _ Descomplicando a criaÃ§Ã£o de pacotes de processamento de imagens em Python
+
+<h1>
+    <img src="https://i.ibb.co/4fxm5bL/Descomplicando-a-cria-o-de-pacotes-de-processamento-de-imagens-em-Python.jpg" border="0">
+</h1>
+
+Neste projeto sera criado o primeiro pacote de processamento de imagens em Python e disponibilizÃ¡-lo no repositÃ³rio Pypi. 
+ <br>
+Assim  poderÃ¡ ser reutilizado facilmente e compartilhÃ¡-lo com outras pessoas. 
+<br>
+
+### O pacote "image-processing-test" Ã© usado para::
+
+MÃ³dulo "Processing":<br>
+- CorrespondÃªncia de histograma<br>
+- Similaridade estrutural<br>
+- Redimensionar imagem<br>
+<br>
+MÃ³dulo "Utils":<br>
+- Leia a imagem<br>
+- Salvar imagem<br>
+- Plotar imagem<br>
+- Plotar Resultado do grafico<br>
+- Plotar histograma<br>
+
+### Comandos de InstalaÃ§Ã£o 
+
+py -m pip install --upgrade pip<br>
+py -m pip install --user twine<br>
+py -m pip install --user setuptools<br>
+
+py -m pip install --upgrade pip setuptools wheel
+
+### Comandos para criar DistribuiÃ§Ãµes
+
+Para evitar erro : <b>error: invalid command 'bdist_wheel'</b>
+<br>
+Rodei antes : 
+<br>
+pip install wheel
+<br>
+Depois 
+<br>
+python setup.py sdist bdist_wheel 
+<br>
+
+<br>
+
+ApÃ³s completar a instalaÃ§Ã£o, verifique se as pastas abaixo foram adicionadas ao projeto:
+  - build
+  - dist
+  - images_processing.egg-info.
+  
+
+### Comandos para Publicar no Test Pypi
+
+python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+
+
+
+## Me siga nas redes sociais
+
+https://linktr.ee/ygtecnologia 
+<br>
+<br> 
+Investir em conhecimento rende sempre os melhores juros. Benjamim Franklin
+<br>
+<br> 
+OraÃ§Ã£o ! Foco ! AÃ§Ã£o ! Yeshua Hamashia
+
