@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+RachelCore/RachelCore.py
+RachelCore/__init__.py
+RachelCore.egg-info/PKG-INFO
+RachelCore.egg-info/SOURCES.txt
+RachelCore.egg-info/dependency_links.txt
+RachelCore.egg-info/requires.txt
+RachelCore.egg-info/top_level.txt
