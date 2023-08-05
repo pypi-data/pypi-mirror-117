@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: python-acrcloud
+Version: 1.2
+Summary: Detects the songs from an audio
+Home-page: https://github.com/An0nimia/acrcloud
+Author: An0nimia
+Author-email: An0nimia@protonmail.com
+License: CC BY-NC-SA 4.0
+Description: README.md
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
