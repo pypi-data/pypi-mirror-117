@@ -1,0 +1,14 @@
+clickhouse_orm/__init__.py,sha256=aQyXoS_5wD070aC22OuLOpjEwW7CNCn01SK7C8Q0s1M,442
+clickhouse_orm/database.py,sha256=hzx-g-6xqp8SxacCIKLlx-CTo9k-7_dan0FyXSPrTX4,17558
+clickhouse_orm/engines.py,sha256=zl3_94FVsSqYW3KKhOXYeEX8TsOlboPoX5vXLjpssmY,11286
+clickhouse_orm/fields.py,sha256=BM3rOqVQ9UXN1KBaUIqg1XnJ_QiawaQkYh5qW63usx0,24417
+clickhouse_orm/funcs.py,sha256=gvqMG6Skvcmm0CffvBzXWFlkBoOFXD4-xNojWoJ45sw,41730
+clickhouse_orm/migrations.py,sha256=_3_iTv9fxR5Gpmho5CP8Sdeu2lgCV44NliIiFeMKJ0g,10389
+clickhouse_orm/models.py,sha256=Zi9430JdoSWWFtYEuPK_r_BBh-6gDcE1H-bY-_gV06U,22926
+clickhouse_orm/query.py,sha256=hhv05uJeAovvQtXnGJdZhw7QuLQfXmGgpmD5Z12mlKQ,24103
+clickhouse_orm/system_models.py,sha256=EtJ_09Ur61Pf3XC9qIWX86bK-_dYsbGRreknqsR8XVU,6407
+clickhouse_orm/utils.py,sha256=fZ8yaXDww_gm3KqWhOuTCgX_sagE3stqLlxa1eELMMM,5081
+clickhouse_orm-2.2.2.dist-info/LICENSE,sha256=MP0KDNu_tFQJrr35YkSFnwwp2F8p2a7Q1Mi2lOs8FLw,1503
+clickhouse_orm-2.2.2.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+clickhouse_orm-2.2.2.dist-info/METADATA,sha256=a6Qhl30tLZt1-VXtBRl8jmHj3RgKTv02OA6QE1cjjaA,1094
+clickhouse_orm-2.2.2.dist-info/RECORD,,
