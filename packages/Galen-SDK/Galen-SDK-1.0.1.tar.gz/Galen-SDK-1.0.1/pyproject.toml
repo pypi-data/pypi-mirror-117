@@ -1,0 +1,16 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "python-dateutil",
+    "requests"
+#    ,     #might not need stuff in requires list after request
+#    "urllib3",
+#    "six",
+#    "setuptools",
+#    "pip",
+#    "idna",
+#    "chardet",
+#    "certifi"
+]
+build-backend = "setuptools.build_meta"

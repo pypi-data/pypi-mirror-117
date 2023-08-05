@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: Galen-SDK
+Version: 1.0.1
+Summary: Galen Data REST API Python Wrapper
+Home-page: UNKNOWN
+Author: Nathanael Goza
+Author-email: support@galendata.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Galen Data Python SDK
+Galen Data REST API Python Wrapper
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+Install Guide
+
+    Install pip
+    Use pip to install set up tools 'pip install setuptools'
+    Use pip to install this SDK 'pip install Galen-SDK'
+
+Quick Start Guide: 
+
+    Initialize an SDK object. 
+    Login with the login function or the bearer token login function.
+    Now you can use any function you want
+        [more information for each function can be aquired with help() or __doc__ functions]
+    
+
+Basic overview: 
+    
+    Use help(class) or function.__doc__ for more information on how to use them 
+
+
