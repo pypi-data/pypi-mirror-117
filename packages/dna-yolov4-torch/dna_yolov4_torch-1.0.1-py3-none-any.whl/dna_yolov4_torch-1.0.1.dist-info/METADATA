@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dna-yolov4-torch
+Version: 1.0.1
+Summary: YOLO v4 wrapper for DNA framework
+Home-page: https://github.com/kwlee0220/dna-yolov4-torch
+Author: Kang-Woo Lee
+Author-email: kwlee@etri.re.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: opencv-python
+Requires-Dist: opencv-contrib-python
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
