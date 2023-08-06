@@ -1,0 +1,9 @@
+mxnet
+tqdm
+PyBaize>=0.0.5
+
+[test]
+pytest>=4
+pytest-cov>=2.6.0
+pytest-flake8
+EduData>=0.0.4
