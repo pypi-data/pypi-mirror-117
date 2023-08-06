@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: EasyCalculator
+Version: 0.1.0
+Summary: Simple and Easy Calculator
+Home-page: https://github.com/you/your_package
+Author: Supriya Satyappanavar
+Author-email: supriya06ms@gmail.com
+License: Apache License 2.0
+Description: Easy Calculator
+        
+        Add, Subtract, multiply and divide any two numbers.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

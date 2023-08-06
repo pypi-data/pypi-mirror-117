@@ -1,0 +1,9 @@
+README.md
+setup.py
+EasyCalculator/EasyCalculator.py
+EasyCalculator/__init__.py
+EasyCalculator/module.py
+EasyCalculator.egg-info/PKG-INFO
+EasyCalculator.egg-info/SOURCES.txt
+EasyCalculator.egg-info/dependency_links.txt
+EasyCalculator.egg-info/top_level.txt
