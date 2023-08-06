@@ -1,0 +1,9 @@
+cloudcomponents/cdk_developer_tools_notifications/__init__.py,sha256=G8hV_6qv5EcBMwohuGUzYvBeVQ87upsd-skvX8rHHGs,54491
+cloudcomponents/cdk_developer_tools_notifications/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cloudcomponents/cdk_developer_tools_notifications/_jsii/__init__.py,sha256=hWGA1c1kpC-8H_pEJ7PFbsuS6jEJz9If_36m-R-0tFw,805
+cloudcomponents/cdk_developer_tools_notifications/_jsii/cdk-developer-tools-notifications@1.40.1.jsii.tgz,sha256=sGsuNkiJJVR8UC5kphkBjymRE_-h_18ciXfZr0b4mc4,64957
+cloudcomponents.cdk_developer_tools_notifications-1.40.1.dist-info/LICENSE,sha256=DC5mwzjdvc14vNIkGbMDFyOOJTkxI2b_1OtpeNA0A0A,1072
+cloudcomponents.cdk_developer_tools_notifications-1.40.1.dist-info/METADATA,sha256=zV4iQ_78xMfTk0SBKSM8ZImTMSFQOWlFEEFWdA44X9g,7608
+cloudcomponents.cdk_developer_tools_notifications-1.40.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cloudcomponents.cdk_developer_tools_notifications-1.40.1.dist-info/top_level.txt,sha256=B4EWas985OPzDPLZgw2jcOsscXpuQJyowJnB5pl9rpQ,16
+cloudcomponents.cdk_developer_tools_notifications-1.40.1.dist-info/RECORD,,
