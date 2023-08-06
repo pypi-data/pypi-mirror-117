@@ -1,0 +1,7 @@
+README.md
+setup.py
+modelzoo_iitm.egg-info/PKG-INFO
+modelzoo_iitm.egg-info/SOURCES.txt
+modelzoo_iitm.egg-info/dependency_links.txt
+modelzoo_iitm.egg-info/requires.txt
+modelzoo_iitm.egg-info/top_level.txt
