@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+kipy_ldjson_reader/__init__.py
+kipy_ldjson_reader/ldjson.py
+kipy_ldjson_reader.egg-info/PKG-INFO
+kipy_ldjson_reader.egg-info/SOURCES.txt
+kipy_ldjson_reader.egg-info/dependency_links.txt
+kipy_ldjson_reader.egg-info/top_level.txt

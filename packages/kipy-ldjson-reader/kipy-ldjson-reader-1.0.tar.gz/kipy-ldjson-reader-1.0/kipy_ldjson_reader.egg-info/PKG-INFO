@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kipy-ldjson-reader
+Version: 1.0
+Summary: Reads ldjson data streams
+Home-page: https://github.com/peracto/kipy-ldjson-reader
+Author: Gary Ranson
+Author-email: 
+License: MIT License
+Keywords: ldjson
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+
+UNKNOWN
+
