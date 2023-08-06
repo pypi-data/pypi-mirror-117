@@ -1,0 +1,13 @@
+MANIFEST.in
+pyproject.toml
+readme.md
+setup.py
+src/TTFootprints.egg-info/PKG-INFO
+src/TTFootprints.egg-info/SOURCES.txt
+src/TTFootprints.egg-info/dependency_links.txt
+src/TTFootprints.egg-info/top_level.txt
+src/footprints/__init__.py
+src/footprints/agent.py
+src/footprints/ticket.py
+src/footprints/timeline.py
+src/footprints/util.py
