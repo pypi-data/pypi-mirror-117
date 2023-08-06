@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/FreeProxyScraper.py
+src/FreeProxyScraper.egg-info/PKG-INFO
+src/FreeProxyScraper.egg-info/SOURCES.txt
+src/FreeProxyScraper.egg-info/dependency_links.txt
+src/FreeProxyScraper.egg-info/requires.txt
+src/FreeProxyScraper.egg-info/top_level.txt
+src/utils/__init__.py
+src/utils/decos.py
+src/utils/plugins.py
+src/utils/soup.py
