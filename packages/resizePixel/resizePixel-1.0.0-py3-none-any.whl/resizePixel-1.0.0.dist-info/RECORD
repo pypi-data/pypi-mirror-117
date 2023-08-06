@@ -1,0 +1,12 @@
+resizePixel/__init__.py,sha256=OeZbItFFYhbgBbRu4UVeCG9DXo2VQ60U4433y27DjoM,28
+resizePixel/resizePixel.py,sha256=IiDPLzQnwmbZh1ND5S0JlMBh_XQl-v4SxxfBkuyhzkk,934
+resizePixel/version.py,sha256=SsywZSbYeo8WYEKf4QTDhZ12vHPfaMtrhGbcTscQJlg,275
+tests/__init__.py,sha256=D33YDkEVFSB8y1kPFmx969YNaeq1oAHDK7oM0Jxlv8M,121
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_resizePixel.py,sha256=qDL-dn8TWnLG_l6WyoXiZNWupIricv9uWwLo0I2A03s,1039
+tests/unit/test_version.py,sha256=5xdNdIfQobE9Vs3NB_oxCBax-DVPz_I3uRgq4nOlUgw,371
+resizePixel-1.0.0.dist-info/LICENSE,sha256=0iwn6i1faCJte8DfDphN5RsDwusCcJw_yZ-WcumB8bw,1096
+resizePixel-1.0.0.dist-info/METADATA,sha256=xl4xsr3ZwfYsIQRTcMDQJHVMvcSYp_WwjSLphWwyVAU,2947
+resizePixel-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+resizePixel-1.0.0.dist-info/top_level.txt,sha256=nNAfvbt2LjiNJ3fCo4UlcgfOhVsucWe8-dzJRKzbGZs,18
+resizePixel-1.0.0.dist-info/RECORD,,
