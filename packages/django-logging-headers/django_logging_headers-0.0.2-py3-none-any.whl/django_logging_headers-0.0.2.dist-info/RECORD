@@ -1,0 +1,8 @@
+django_logging_headers/__init__.py,sha256=WYwJiLMRNMkwAf3qZsQa1odW6cBSfsHtRkQEhw4BWRY,1823
+django_logging_headers/config.py,sha256=TeVDvuozJ83BgWX_ZX836QXHHES6fElikB-JJUJY_IY,34773
+django_logging_headers/handlers.py,sha256=yd77ClgqnvErfLxxDjZ5Xv4GM1E_a1O2ekO92LIUztU,48297
+django_logging_headers-0.0.2.dist-info/METADATA,sha256=8yACZE7X8rQ4w0fuQ7bWSqW2LxA6eiPIDBCAh1gB36A,269
+django_logging_headers-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_logging_headers-0.0.2.dist-info/entry_points.txt,sha256=swAb3jqQSYz6-pPT0MsnGnOPNg6sZBFrmsWmOTvbwBo,71
+django_logging_headers-0.0.2.dist-info/top_level.txt,sha256=yAOmp3Kklsr8Llj8luOgIGTBC2Q9e9tel3HsZsMQFKk,23
+django_logging_headers-0.0.2.dist-info/RECORD,,
