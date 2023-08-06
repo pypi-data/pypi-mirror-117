@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: TwitterAPI-dylancaponi
+Version: 2.7.5
+Summary: Patch for geduldig/TwitterAPI because Google Cloud Functions do not like Github forks
+Home-page: https://github.com/geduldig/TwitterAPI
+Author: geduldig
+Author-email: boxnumber03@gmail.com
+License: MIT
+Download-URL: https://github.com/dylancaponi/TwitterAPI/tarball/master
+Keywords: twitter
+Platform: UNKNOWN
+
+UNKNOWN
+
