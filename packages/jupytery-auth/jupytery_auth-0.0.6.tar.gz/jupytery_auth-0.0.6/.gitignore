@@ -1,0 +1,25 @@
+# Copyright (c) Datalayer, Inc. https://datalayer.io
+# Distributed under the terms of the MIT License.
+
+# Check with git check-ignore -v **/*
+
+# Exclude
+.*
+*-lock.json
+*-error.log
+*.lock
+*.sqlite
+*.tsbuildinfo
+*.egg-info
+dist
+build
+lib
+__pycache__
+node_modules
+jupytery_auth/labextension
+
+# Include
+!**/.*ignore
+!**/.*rc
+!**/.*rc.js
+!**/.*config

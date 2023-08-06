@@ -1,0 +1,104 @@
+{
+  "name": "@datalayer-jupyter/auth",
+  "version": "0.0.6",
+  "description": "JupyterLab Auth",
+  "private": true,
+  "scripts": {
+    "build": "jlpm run build:lib && jlpm run build:labextension",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "build:lib": "tsc",
+    "clean": "jlpm run clean:lib",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "clean:labextension": "rimraf jupytery_auth/static",
+    "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
+    "eslint": "eslint . --ext .ts,.tsx --fix",
+    "eslint:check": "eslint . --ext .ts,.tsx",
+    "install:extension": "jupyter labextension develop --overwrite .",
+    "example:jupyter:widgets": "tsc --watch",
+    "prepare": "jlpm run clean && jlpm run build",
+    "start": "concurrently \"yarn watch\" \"make jupyterlab-start-watch\"",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:src": "tsc --watch",
+    "watch:labextension": "jupyter labextension watch ."
+  },
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab3",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/datalayer/tree/main/src/jupyter/auth",
+  "bugs": {
+    "url": "https://github.com/datalayer/datalayer/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Eric Charles",
+    "email": "eric@datalayer.io"
+  },
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
+    "schema/*.json"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datalayer/datalayer/tree/main/src/jupyter/auth.git"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "3.1.0",
+    "@jupyterlab/apputils": "3.1.0",
+    "@jupyterlab/docmanager": "3.1.0",
+    "@jupyterlab/filebrowser": "3.1.0",
+    "@jupyterlab/launcher": "3.1.0",
+    "@jupyterlab/mainmenu": "3.1.0",
+    "@jupyterlab/notebook": "3.1.0",
+    "@jupyterlab/settingregistry": "3.1.0",
+    "@jupyterlab/ui-components": "3.1.0",
+    "@material-ui/core": "5.0.0-beta.1",
+    "@material-ui/icons": "5.0.0-beta.1",
+    "@material-ui/lab": "5.0.0-alpha.40",
+    "@material-ui/styles": "5.0.0-beta.1",
+    "date-fns": "2.16.1",
+    "react-redux": "7.2.4",
+    "redux": "4.1.0",
+    "redux-observable": "1.2.0"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "3.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "concurrently": "6.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.3.1",
+    "rimraf": "^3.0.2",
+    "typescript": "4.2.2"
+  },
+  "sideEffects": [
+    "style/*.css"
+  ],
+  "jupyterlab": {
+    "extension": true,
+    "schemaDir": "schema",
+    "outputDir": "jupytery_auth/labextension",
+    "sharedPackages": {
+      "jupyterlab-topbar": {
+        "requiredVersion": "0.6.0",
+        "bundled": false,
+        "singleton": true
+      }
+    },
+    "_build": {
+      "load": "static/remoteEntry.e4e96367bd86e0e97ec5.js",
+      "extension": "./extension",
+      "style": "./style"
+    }
+  }
+}
