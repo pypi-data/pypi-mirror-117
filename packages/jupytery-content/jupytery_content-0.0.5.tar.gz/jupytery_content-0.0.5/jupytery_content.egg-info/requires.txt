@@ -1,0 +1,12 @@
+jupyter_server
+google-cloud-storage
+hybridcontents
+nbformat
+notebook
+jinja2
+
+[test]
+pytest
+pytest-cov
+pylint
+unittest

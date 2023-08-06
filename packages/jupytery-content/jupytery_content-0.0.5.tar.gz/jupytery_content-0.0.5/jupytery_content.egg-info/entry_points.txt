@@ -1,0 +1,3 @@
+[console_scripts]
+jupytery-content = jupytery_content.application:main
+
