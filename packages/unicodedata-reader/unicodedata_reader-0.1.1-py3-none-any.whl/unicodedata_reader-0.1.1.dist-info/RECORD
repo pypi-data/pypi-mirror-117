@@ -1,0 +1,13 @@
+unicodedata_reader/__init__.py,sha256=4IHf5liEAvaQolWgQwvpMiOHxclasJRkM6B7g4SSbPk,89
+unicodedata_reader/bidi_brackets.py,sha256=XU0fGdeMzMmxalXyAm5ER3VUNsGxKrItCepY9q1s9lg,1310
+unicodedata_reader/compressor.py,sha256=cSjYA18PITMq9INjPRIg3SQhhNLkYHvU2m0jqMPbnGA,3592
+unicodedata_reader/dump.py,sha256=y03Gt4d34qMokjQ-XwVTVmyypn98-oya5B3z_yMIToU,1924
+unicodedata_reader/emoji.py,sha256=U_IobU1-mMwGnwd-1ceTQBrRK-blTJoDmtDpgffVAz8,314
+unicodedata_reader/encodings.py,sha256=7wWdbWD2GDwnkWdguJaS0Qs_8lEMEN0O_7FyWFll7tA,512
+unicodedata_reader/entry.py,sha256=nto1DzVHUzWOckmLjEE6DeYjTXJjKhCZYwp6jz8KZ48,7946
+unicodedata_reader/line_break.py,sha256=alc22ry3VSAkxG1QaLhQrX-p5iNbRi7BzwubflK-fsc,524
+unicodedata_reader/reader.py,sha256=vk5TkuRi7uLKMzyJ-N0uA2uyADuJSBaB1-A8PDKo1tE,3228
+unicodedata_reader/vertical_orientation.py,sha256=Kry0ywsGBlR2VsMXBinHGMI7Ud-g4WIe4PuGh73DmTQ,829
+unicodedata_reader-0.1.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+unicodedata_reader-0.1.1.dist-info/METADATA,sha256=uGVY5I6CBB1BNf37ue9g05lSAo0tXMQHfhSyxVgJtcc,2838
+unicodedata_reader-0.1.1.dist-info/RECORD,,
