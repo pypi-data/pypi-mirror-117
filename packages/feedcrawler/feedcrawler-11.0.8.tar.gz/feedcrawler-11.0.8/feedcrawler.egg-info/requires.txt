@@ -1,0 +1,12 @@
+bs4
+docopt
+flask
+imdbpy
+lxml
+passlib
+pycryptodomex
+python-dateutil
+rapidfuzz
+requests
+simplejson
+waitress
