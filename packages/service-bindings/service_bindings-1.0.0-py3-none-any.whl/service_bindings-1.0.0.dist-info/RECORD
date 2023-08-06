@@ -1,0 +1,8 @@
+bindings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bindings/binding.py,sha256=T2FWIlvh8jgFyuGnjKfRGjtxl4FLTpkg1Yseip50dks,4758
+bindings/bindings.py,sha256=1zqTmpGXfXMpAFY2dU27LWteJMWNcslGpOZ1r00cYTw,3706
+bindings/secret.py,sha256=uWBIw6Z6rHOMb5nkGijT2E-IJeXMjIJzVHVoGQluD9Q,1021
+service_bindings-1.0.0.dist-info/LICENSE,sha256=dxUpD5a7X5D2zeeNDFITgJmPkG6J7eB53fhid2Phuow,9534
+service_bindings-1.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+service_bindings-1.0.0.dist-info/METADATA,sha256=aDjVQOaN9pJw_drWPzvIfDilkR1lnTJdc6jxo7yObu8,1956
+service_bindings-1.0.0.dist-info/RECORD,,
