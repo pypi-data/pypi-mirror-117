@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: odoo13-addons-oca-website-cms
+Version: 13.0.20210823.0
+Summary: Meta package for oca-website-cms Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo13-addon-cms-delete-content
+Requires-Dist: odoo13-addon-cms-delete-content-example
+Requires-Dist: odoo13-addon-cms-form
+Requires-Dist: odoo13-addon-cms-form-example
+Requires-Dist: odoo13-addon-cms-info
+Requires-Dist: odoo13-addon-cms-status-message
+
+UNKNOWN
+
