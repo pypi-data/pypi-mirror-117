@@ -1,0 +1,12 @@
+gyerpsdkcore/__init__.py,sha256=B9eqy48kkIV9f3o0PVebp1o5CSnba8FwGKIQLWBTYMI,107
+gyerpsdkcore/api/__init__.py,sha256=G8p9vLS_jN7KQc3W6Vqb0GjaGDAK55Fuy5Z613cQpOc,80
+gyerpsdkcore/api/base.py,sha256=5SXveLv3WsScWFJ_5bYG4RcPnOlcY5cLYMJe7OlFGVo,751
+gyerpsdkcore/api/item.py,sha256=Mput07xS8g-cObqtfxuYeKbw4hYSLeTl55uCVL6VMS8,171
+gyerpsdkcore/api/trade.py,sha256=bSpNykN3f1h1l_12oDUjYnNTfEKgkWLYyowjGfMbH5I,473
+gyerpsdkcore/client/__init__.py,sha256=tnHG7yz-gYHw_fwj2wpFTDD5yTxUGqjmoLAZjN2WEKE,343
+gyerpsdkcore/client/base.py,sha256=6Sijzi_O4BWGmlOmE6cvGmusMOURy24nNfS8nFLIJNE,1901
+gy_erp_sdk_core-0.0.3.dist-info/LICENSE,sha256=PvhXk8RA871abeylJv3Kcppj0aMaQhqC_GCXRBa4Tuo,1062
+gy_erp_sdk_core-0.0.3.dist-info/METADATA,sha256=PsKTGkhM7I3lUShECUOiVM94gggAZi9qgE34dFgXXo0,709
+gy_erp_sdk_core-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gy_erp_sdk_core-0.0.3.dist-info/top_level.txt,sha256=pixy-t9CV6WcXiK0gOTbS7qnh9JRBjpr5hfbSaurLWI,13
+gy_erp_sdk_core-0.0.3.dist-info/RECORD,,
