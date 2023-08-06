@@ -1,0 +1,5 @@
+requests<3.0,>=2.26.0
+boox-annotation-parser<1.0,>=0.1.1
+lln-json-parser<1.0,>=0.1.1
+rich<11.0,>=10.7.0
+appdirs<2.0,>=1.4.4
