@@ -1,0 +1,5 @@
+pyzmq
+PyYAML
+numpy
+networkx
+pytest>=4
