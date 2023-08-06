@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ScraGet.egg-info/PKG-INFO
+ScraGet.egg-info/SOURCES.txt
+ScraGet.egg-info/dependency_links.txt
+ScraGet.egg-info/top_level.txt
