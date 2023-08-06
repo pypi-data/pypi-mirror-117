@@ -1,0 +1,15 @@
+static_sitemaps/__init__.py,sha256=t9AUmAuDO7G6m2P8c_QmgdC0huAjdYqHfOu7_KI7Evo,367
+static_sitemaps/conf.py,sha256=qTi5GYkTkIJQcAy_pDQhwUG_wf9cOyK3ebwrzh_vxb8,3116
+static_sitemaps/generator.py,sha256=PnSrrBp7uwJ8lxHCWon0CRZ24iPJj8cD30YicMBKyoE,7578
+static_sitemaps/tasks.py,sha256=uaCOBrijXhDhUvlwBSuomCjN46Gd9FDCHblTKS6b088,568
+static_sitemaps/urls.py,sha256=iZB1vdmMLBFR4piPVUuu4upVYTx1SQTT5ej-pGZDZf8,595
+static_sitemaps/util.py,sha256=w5uN4EBNX4rztZUCSzUVmBvC4c3InWpginYBur7jn-A,594
+static_sitemaps/views.py,sha256=ik5HpO4FKSFv3UUwJLougy5-LraHXiul2fBbvpC-Oi0,852
+static_sitemaps/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+static_sitemaps/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+static_sitemaps/management/commands/refresh_sitemap.py,sha256=EqPvQWzZwwO9g0K5QORfHAlwfPCSVOPsCBMBDPmK-X0,383
+static_sitemaps/templates/static_sitemaps/sitemap_index.xml,sha256=jtaDW_atRhQ7StfdXAmiTCAZmmjqKjxkYGloetCYH4U,379
+django_sitemap_generator-4.6.0.dist-info/METADATA,sha256=CvUrQZCHBYEuAtYee3cKDhPd2Klekckwlpm0_tqnwSw,1020
+django_sitemap_generator-4.6.0.dist-info/WHEEL,sha256=DgcoKJDfsYFbFLUrngH-aDjJZvn8UqGD3gZyEvGv0dg,92
+django_sitemap_generator-4.6.0.dist-info/top_level.txt,sha256=K3FeZc82Xdsjh3Lq7tZFChCJaiuUABjjtkzt15XbR1E,16
+django_sitemap_generator-4.6.0.dist-info/RECORD,,
