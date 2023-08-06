@@ -1,0 +1,3 @@
+[console_scripts]
+p5-aiogoldsrcrcon = p5.aiogoldsrcrcon:entry_point
+
