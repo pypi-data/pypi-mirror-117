@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: boox-annotation-parser
+Version: 0.1.2
+Summary: Parse annotation file exports from your Boox device, and transform them into JSON, YAML, or whatever you want.
+Home-page: https://github.com/coddingtonbear/boox-annotation-parser
+Author: Adam Coddington
+Author-email: me@adamcoddington.net
+License: MIT
+Project-URL: Issue Tracker, https://github.com/coddingtonbear/boox-annotation-parser/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: pyyaml (>=5.4.1)
+
+======================
+Boox Annotation Parser
+======================
+
+
+
+Parse annotation file exports from your Onyx Boox device, and transform them into JSON, YAML, or whatever you want.
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install boox-annotation-parser
+
+You can also install the in-development version with::
+
+    pip install https://github.com/coddingtonbear/boox-annotation-parser/archive/master.zip
+
+
+Documentation
+=============
+
+To use the project from the command-line
+----------------------------------------
+
+Options:
+
+- ``--input``: (Default: 'stdin') The path to your Boox annotation export file.  If unspecified, reads from stdin.
+- ``--output``: (Default: 'stdout') The path to where you'd like your output written to.  If unspecified, writes to stdout.
+- ``--format``: (Default: 'yaml') The format you'd like your annotations written out in.  Options include:
+  - ``yaml``
+  - ``json``
+  - ``nljson``
+
+::
+
+    boox-annotation-parser --input=/path/to/boox/export.txt --output=/path/to/write/output/to --format=yaml
+
+To use the project as a library
+-------------------------------
+
+.. code-block:: python
+
+    from boox_annotation_parser import parser
+
+    with open('/path/to/boox/export.txt', 'r') as inf:
+        parsed = parser.get_annotations(inf)
+
+
+Development
+===========
+
+To run the tests run::
+
+    pytest
+
+
+Changelog
+=========
+
+0.1.0 (2021-08-19)
+------------------
+
+* First release on PyPI.
+
+
