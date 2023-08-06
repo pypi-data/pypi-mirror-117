@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jupy5-mcintyre
+Version: 0.0.1
+Summary: A simple way to sketch with Python and p5.js in Jupyter
+Home-page: https://github.com/mcintyre/jupy5
+Author: Nick McIntyre
+Author-email: nick@mcintyre.io
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mcintyre/jupy5/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipython (>=7.26.0)
+Requires-Dist: jinja2 (>=3.0.1)
+
+# jupy5
+> A simple way to sketch with Python and p5.js in Jupyter
+
+This little experiment aims to simplify the process of teaching creative coding with Jupyter notebooks. It uses the [Skulpt](https://github.com/skulpt/skulpt/) Python implementation to create a wrapper for [p5.js](https://github.com/processing/p5.js).
+
+
