@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pyG5
+Version: 0.0.1a2
+Summary:      PyQt5 application connecting to X-Plane flifht simulator and displaying a garmin G5     attitude indicator as well as Horizontal Situation indicator  
+Home-page: https://github.com/blauret/pyG5
+Author: Ben Lauret
+Author-email: ben@lauretland.com
+License: MIT license
+Description: # PyG5
+        
+        ## Description
+        
+        This project aims at development a Garmin G5 view targeting a Raspberry Pi
+        display (640x480) in vertical. The intent it to provide a G5 Attitude indicator + G5 Horizontal Situation Indicator stacked on the display in vertical mode. The G5 connects to X-Plane flight simulator
+        
+        It does not require plugin and use the standard DREF UDP interface from X-Plane. It should not require any configuration. Start it and
+        it will connect to X-Plane and fetch the required data.
+        
+        ![demoView](assets/demoView.png)
+        
+        ## Maturity
+        
+        It's currently in pretty early phase. It's functional and should be easy to install but might suffer from issues here and  there.
+        
+        ## Installation
+        
+        ```console
+                > sudo pip install pyG5
+        ```
+        
+        ## Running
+        
+        ```console
+                > pyG5
+        ```
+        
+        ## Developer
+        mk
+        
+        
+        ## License
+        
+        [License files](LICENSE.TXT)
+        
+Keywords: flash,programmer
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
