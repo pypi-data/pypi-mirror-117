@@ -1,0 +1,11 @@
+setup.py
+k3http/__init__.py
+k3http/client.py
+k3http/setup.py
+k3http/synopsis.py
+k3http/util.py
+k3http.egg-info/PKG-INFO
+k3http.egg-info/SOURCES.txt
+k3http.egg-info/dependency_links.txt
+k3http.egg-info/requires.txt
+k3http.egg-info/top_level.txt
