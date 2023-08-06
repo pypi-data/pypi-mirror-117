@@ -1,0 +1,14 @@
+hearbaseline/__init__.py,sha256=1Ke-H93-KpuvTU0YQH7VgGohDDoG4-OAP0J-bKOMcxg,78
+hearbaseline/naive.py,sha256=_JTrHyBzuAFoXIFjWKcPRon-wDSKyuh8l-W12opR8WQ,6286
+hearbaseline/util.py,sha256=agYunGoDbUoidODy2LfaCDlIj9BFZ5nS7W4aVigvRaI,2080
+hearbaseline/wav2vec2.py,sha256=H6pRW9MX313wAoV7F7r9vc3WbwggDGrxSu4xXbsC_2g,4641
+hearbaseline/keras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hearbaseline/keras/naive.py,sha256=OEYhBXMCtcPW8t1Ck2-2YLUnBCh5-AQt8dH6g6Escg0,5361
+hearbaseline/tf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hearbaseline/tf/naive.py,sha256=_OCf6dZBiKBUkjdjkBoGWVoDjjwDgxpEH8gmuM95P3o,5814
+hearbaseline/tf/util.py,sha256=3Kjy4sfMORta2N7abupa6YJPo1vYPzaFiPfIwT2jlfE,1766
+hearbaseline-2021.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hearbaseline-2021.0.3.dist-info/METADATA,sha256=oiWf-VGVogHe9Fv8paHPnW7vBxjEpe5Ojrbxw2L4WEs,3670
+hearbaseline-2021.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hearbaseline-2021.0.3.dist-info/top_level.txt,sha256=JQqkNcdLolGUWADpSmagrr17JarO2lNMQCzbGts7iX0,13
+hearbaseline-2021.0.3.dist-info/RECORD,,
