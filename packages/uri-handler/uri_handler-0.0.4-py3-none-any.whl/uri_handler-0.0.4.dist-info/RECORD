@@ -1,0 +1,15 @@
+uri_handler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uri_handler/errors.py,sha256=grktnQ-fe0S2zrR2CqFqypMtg2FDYUMlUqxGWm7_uDE,117
+uri_handler/handle_uris.py,sha256=w1uAd9aCwF9K5PYXjXJDEgoKGk8dPCe7wPFO78HTrYA,677
+uri_handler/uri_functions.py,sha256=vnbxX1uTvwctihqK6bKcw-fo6xipx0WfGDqSRUaa_T8,2069
+uri_handler/storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uri_handler/storage/filestorage.py,sha256=55KfTT5wFAOimCwewFSrQbVgSuha3U_0zNdxXNwtTiA,3301
+uri_handler/storage/marsh.py,sha256=jye-xxG7v3Ivi7IxdoL-EBgJcfY-fDCU7g2g3UyuQJg,1783
+uri_handler/storage/s3storage.py,sha256=Hhb8Bb5KXhNR7NZO0jjqqkKaHcft9NxghFmPYzz5Mvs,3447
+uri_handler/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uri_handler/utils/_compat.py,sha256=mzmkIF3H7uCvq0Sq9hVEm8ciPE5i-98ADMM-1letYxM,165
+uri_handler/utils/uri_utils.py,sha256=e_pCqU71ls1ptayW-zLE5zVQ9kp47C1y9a-v05_ob8U,1626
+uri_handler-0.0.4.dist-info/METADATA,sha256=Ku77HKQ6HpshMq1KDD8oJstAJClDTcerZvSDQylBFmo,439
+uri_handler-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+uri_handler-0.0.4.dist-info/top_level.txt,sha256=bmUs1eJtJlm-7Z8OTZkgmXAWqbqJBJ_yQhyyGENm-RA,12
+uri_handler-0.0.4.dist-info/RECORD,,
