@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: auto-wizard101
+Version: 1.0.4
+Summary: Automatically complete repetitive tasks in wizard101.
+Home-page: https://github.com/GabeMillikan/auto-wizard101
+Author: gabemillikan
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/GabeMillikan/auto-wizard101/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: keyboard
+Requires-Dist: mss
+
+# auto-Wizard101
+
+This package provides utilities to help automate processes within Wizard101.
+So far, the only supported automation is the auto-completion of the pet dance game.
+See that example [here](https://github.com/GabeMillikan/auto-wizard101/blob/main/examples/autodance.py).
+
