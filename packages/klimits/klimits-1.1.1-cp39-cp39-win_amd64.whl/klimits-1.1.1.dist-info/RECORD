@@ -1,0 +1,9 @@
+_klimits.cp39-win_amd64.pyd,sha256=1L7r0DKJOS91Agg4-4oFik0Fy3_CNfIfHSBwWM17VNs,809984
+klimits/__init__.py,sha256=Dfv3eph08G-PCZTGm18iHXtyh9_1ZaBup5FfRrXQrcg,1826
+klimits/test_trajectory_generation.py,sha256=Dm3P8gIn72hWzrGrmWZXxZH1pWu2pdWk1lfAS53w728,15538
+klimits/trajectory_plotter.py,sha256=mui1BewHkEdfzKex-ift8Q-0WczRVG_TkpmzWpmfjqA,13890
+klimits-1.1.1.dist-info/LICENSE,sha256=CCZsJTFBVXktXoxkgZnXoGEk2skceihUH20PLJOnMFs,1090
+klimits-1.1.1.dist-info/METADATA,sha256=Er_LlyKXWd6pTfQTWNt7rUV8-hsKy5_yWBL41N85Bu8,3980
+klimits-1.1.1.dist-info/WHEEL,sha256=jr7ubY0Lkz_yXH9FfFe9PTtLhGOsf62dZkNvTYrJINE,100
+klimits-1.1.1.dist-info/top_level.txt,sha256=zcNnwYtfC2fb1V09GLe74lkKrFNVVsrnEIMt_6lwkM0,17
+klimits-1.1.1.dist-info/RECORD,,
