@@ -1,0 +1,3 @@
+[console_scripts]
+alertnow-python = reader.__main__:main
+
