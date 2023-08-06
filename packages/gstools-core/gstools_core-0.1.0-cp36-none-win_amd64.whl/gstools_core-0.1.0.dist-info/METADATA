@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gstools-core
+Version: 0.1.0
+Summary: The core functions of GSTools
+Home-Page: https://geostat-framework.org/#gstools
+Author: Lennart Schüler <mostem@posteo.de>
+Author-email: Lennart Schüler <mostem@posteo.de>
+License: LGPL-3.0-or-later
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/GeoStat-Framework/GSTools-Core
+
+# GSTools Core
+
+A Rust implementation of the core algorithms of [GSTools][gstools_link].
+
+
+## Contact
+
+You can contact us via <info@geostat-framework.org>.
+
+
+## License
+
+[LGPLv3][license_link] © 2021
+
+
+[gstools_link]: https://github.com/GeoStat-Framework/GSTools
+[license_link]: https://github.com/GeoStat-Framework/GSTools-Core/blob/main/LICENSE
+
