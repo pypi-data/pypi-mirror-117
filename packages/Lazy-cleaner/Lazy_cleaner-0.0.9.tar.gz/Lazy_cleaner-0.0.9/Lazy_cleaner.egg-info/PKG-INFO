@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: Lazy-cleaner
+Version: 0.0.9
+Summary: ('Quick data cleaning and preprocessing',)
+Home-page: UNKNOWN
+Author: Ahmed Ashraf Khalil
+Author-email: ahmedashraf13131@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python,Clean,Data,preprocessing,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
