@@ -1,0 +1,7 @@
+README.md
+setup.py
+getools.egg-info/PKG-INFO
+getools.egg-info/SOURCES.txt
+getools.egg-info/dependency_links.txt
+getools.egg-info/requires.txt
+getools.egg-info/top_level.txt
