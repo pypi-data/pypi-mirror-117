@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: facata
+Version: 0.0.0
+Summary: A simplified alternative to DBAPI 2.
+Home-page: https://github.com/tlocke/facata
+Maintainer: Tony Locke
+Maintainer-email: tlocke@tlocke.org.uk
+License: MIT
+Keywords: DBAPI database SQL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Provides-Extra: mariadb
+Requires-Dist: mariadb (>=1.0.7) ; extra == 'mariadb'
+Provides-Extra: mysql-connector
+Requires-Dist: mysql-connector-python (>=8.0.26) ; extra == 'mysql-connector'
+Provides-Extra: pg8000
+Requires-Dist: pg8000 (>=1.21.0) ; extra == 'pg8000'
+Provides-Extra: psycopg2
+Requires-Dist: psycopg2-binary (>=2.9.1) ; extra == 'psycopg2'
+
+
+
+Facata
+------
+
+A Python library that provides a simplified alternative to DBAPI 2. It provides
+a facade in front of DBAPI 2 drivers.
+
+
