@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: anaml-client
+Version: 0.4.0
+Summary: Python SDK for Anaml
+Home-page: https://anaml.com
+Author: Simple Machines
+Author-email: hello@simplemachines.com.au
+License: Copyright 2020 Simple Machines Pty Ltd. All Rights Reserved
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.7.10
+Provides-Extra: testing
+Provides-Extra: plotting
+Provides-Extra: pandas
+Provides-Extra: spark
+Provides-Extra: aws
+Provides-Extra: google
