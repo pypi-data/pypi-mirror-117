@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: numer
+Version: 0.0.16
+Summary: Example implementation of gmp and C math.h functions
+Home-page: UNKNOWN
+Author: Ar-Ed
+Author-email: <rased27273333@gmail.com>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,math,gmp,cmath
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
