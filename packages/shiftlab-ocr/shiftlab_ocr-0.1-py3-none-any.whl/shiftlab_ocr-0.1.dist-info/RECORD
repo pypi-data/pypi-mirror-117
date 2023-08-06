@@ -1,0 +1,10 @@
+shift_ocr/__init__.py,sha256=aLG1qY47PvG-mlRidzPdmLTmVd8rDY8oHooi4bJXAoM,100
+shift_ocr/crop.py,sha256=8c_6O1r7v5dakw6satp_1Lq6bzXgAaK7XmqFPwa_6DQ,1164
+shift_ocr/main.py,sha256=acrmAzXDi2o4WXb5NR3Ioh4PpSz9xNJnU7EK2PPxM9k,2017
+shift_ocr/ocr_model.py,sha256=aoao3bxuVLt-uLt2XV_YNYo1FLhVrxhTuQ8HzSnPX58,6233
+shift_ocr/ocr_model_utility.py,sha256=VjtYM8CA6I4L57Fg5MO6SoeTyoxLOsj00Mq5VfoYWN4,1059
+shift_ocr/paths.py,sha256=O6WDuglpsF8uQUnbWIvPya22D2YBted0HGRcIt_gVyI,173
+shiftlab_ocr-0.1.dist-info/METADATA,sha256=N6Ff13i2NtijYLXU_XjaU2mg2n21LhERNRQfOu3OELI,1436
+shiftlab_ocr-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+shiftlab_ocr-0.1.dist-info/top_level.txt,sha256=bTsLcKmMiTLmBI3qBemFy4Yh7JStXG2_bN6JNJZXFco,10
+shiftlab_ocr-0.1.dist-info/RECORD,,
