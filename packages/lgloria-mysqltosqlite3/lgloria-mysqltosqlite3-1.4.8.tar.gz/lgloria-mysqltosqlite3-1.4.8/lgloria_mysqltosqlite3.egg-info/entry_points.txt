@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        lgloriamysql2sqlite=mysql_to_sqlite3.cli:cli
+    
