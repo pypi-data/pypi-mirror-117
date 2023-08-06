@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: libacbf
+Version: 1.0.2
+Summary: A library to read and edit ACBF formatted comic book files and archives.
+Home-page: https://github.com/Grafcube/libacbf
+Author: Grafcube
+License: BSD-3-Clause License
+Download-URL: https://pypi.org/project/libacbf/
+Keywords: python,library,book,comic,ebook,comics,python3,ebooks,acbf
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wheel
+Requires-Dist: lxml
+Requires-Dist: python-magic
+Requires-Dist: py7zr
+Requires-Dist: rarfile
+Requires-Dist: requests
+Requires-Dist: langcodes
+Requires-Dist: python-dateutil
+
+# libacbf
+
+A Python library to read and edit ACBF formatted comic book files and archives.
+
+XML Specifications here: https://acbf.fandom.com/wiki/Advanced_Comic_Book_Format_Wiki
+
+### Installation
+
+```
+pip install libacbf
+```
+
+See [Installation and Dependencies](https://libacbf.readthedocs.io/en/stable/install.html) for moreinformation.
+
+### Documentation
+
+Read the documentation here.
+https://libacbf.readthedocs.io/en/stable/
+
+[Quick Tutorial](https://libacbf.readthedocs.io/en/stable/tutorial.html)
+
+[API Reference](https://libacbf.readthedocs.io/en/stable/libacbf.html)
+
