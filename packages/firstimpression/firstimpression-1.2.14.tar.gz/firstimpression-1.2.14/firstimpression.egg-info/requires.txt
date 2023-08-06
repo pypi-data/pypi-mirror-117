@@ -1,0 +1,8 @@
+requests
+geopy
+wheel
+beautifulsoup4
+lxml
+pytz
+socketIO_client
+requests[security]
