@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+AcdpNet/Core.py
+AcdpNet/FileTrans.py
+AcdpNet/Service.py
+AcdpNet/__init__.py
+acdpnet.egg-info/PKG-INFO
+acdpnet.egg-info/SOURCES.txt
+acdpnet.egg-info/dependency_links.txt
+acdpnet.egg-info/top_level.txt

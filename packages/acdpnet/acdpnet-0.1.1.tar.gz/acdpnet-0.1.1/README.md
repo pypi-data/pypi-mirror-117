@@ -1,0 +1,173 @@
+# Intellen Network Core
+
+起初我在做一些有关于网络通信的程序时，遇到了两台设备在不同网段（不同局域网）的情况，而网上的一些方案比如 MQTT  对于我来说有些麻烦，而且也想用 python 实现这一功能。但是其他使用 python 的方案又有些简陋，功能也不是很多，于是自己开始编写这个项目。
+
+由于是一个人开发，有些文档，注释或示例都没有及时更新，有些 bug 也不能及时发现，所以欢迎大家提交 Issues 和 Pull Requests 。
+
+~~💬 明明是自己水平不够才不想用 MQTT <a title="呵呵" href="https://emojixd.com/x7q1">🙂</a>~~ 
+
+## 项目结构
+
+```
+Intellen Network Core
+├── Client
+│   ├── Core.py       - 核心功能的实现，SDK
+│   └── FileTrans.py  - 文件与命令交互扩展
+├── Server
+│   └── Service.py    - 核心功能的实现
+```
+
+## 内部架构
+
+![NetworkCore.svg(gitee.com)](https://gitee.com/intellen/network/raw/docs/images/NetworkCore.svg)
+
+## ☁️ 快速开始
+
+请确保你已经安装了 Python 3 ，由于这是一个轻量级的项目，在运行核心程序时无需安装任何额外的库，但当你需要运行扩展程序时，请先安装可能需要的依赖库，可以参考以下命令
+
+```python
+# 目前扩展程序也不需要其他第三方库
+```
+
+### 服务端
+
+在一台拥有公网 IP 的服务器上运行 Server/Service.py 文件即可（当然如果你只是想将它用在局域网内也是可以的，甚至还可以在自己的电脑上运行）。
+
+你也可以在这份程序的以下位置修改连接时所需要的密码
+
+```python
+class CoreTree(socketserver.BaseRequestHandler):
+    def setup(self):
+        # Set up data
+        super().setup()
+        # Connect here should send a code which is this so that can continue
+        self.conpwd = 'sf5dfe146' # 在这里修改密码
+        self.bufsize = 4096       # 这是收发数据的缓冲区大小，数字越大速度越快，请根据实际情况修改
+```
+
+### 客户端
+
+请将 Client 下的文件放在你的项目的同一级目录中，当然如果你有其他想法，只要保证能够正确导入这个程序即可。
+
+#### 连接
+
+要创建一个连接，可以使用下面的代码
+
+```python
+from Core import *
+
+host = "link.acdp.top" # 服务器的地址，可以使用域名或者 IPv4 地址
+account = "A03HCY"     # 登录的用户名，非固定，但是如果服务器中已经存在相同的用户名将无法登录
+pwd = "sf5dfe146"      # 这是登录服务器需要的密码，PS.登录只需要服务器的密码
+
+Line = CoreTree(host)      # 创建实例
+Line.connect(account, pwd) # 连接到服务器
+Line.active()              # 开始运行接收和发送数据的服务
+```
+
+#### 发送数据
+
+当我们需要发送一条数据的时候，可以使用下面的代码
+
+```python
+data = "Hi"       # 发送的数据，可以传入字典
+target = "Jacky"  # 接收方，可以传入列表使用一对多模式
+Line.send(data, target)
+```
+
+如果你想了解更多，看下面的表格吧
+
+|   值   |    类型    |    作用    |                           备注                            |
+| :----: | :--------: | :--------: | :-------------------------------------------------------: |
+|  data  | str , dict | 发送的数据 |                         无需编码                          |
+| target | str , list |   接收方   | 如不填，data 中 str 当作命令（给服务端的），dict 直接解析 |
+
+#### 接收数据
+
+在我们需要接收一条数据时，可以使用下面的代码
+
+```python
+data = Line.recv()
+```
+
+这个函数将会直接返回完整的字符串，且无需解码，如果这是一个 dict 或其他数据而并非字符串，请使用下面的代码处理
+
+```python
+import ast
+
+data = ast.literal_eval(data)
+```
+
+#### 自动化
+
+如果你想让程序在有消息时自动处理，你可以接在 #连接 的代码像这样写
+
+```python
+import threading
+
+# 这里演示当有数据时输出内容到控制台
+class Printer(threading.Thread):
+    def __init__(self, tree):
+        super().__init__()
+        self.tree = tree # 通过这个过程可以让我们访问到 recv() 接收数据的函数
+
+    def run(self):
+        while True:
+            data = self.tree.recv() # 从列队中读取数据
+            print(data)             # 输出内容
+
+example = Printer(Line)
+example.start()
+```
+
+## 📄 文件传输与命令控制
+
+在执行远程命令时，两个客户端都需要使用 FileTrans ，它是在 Core 的基础上加入了文件传输与命令控制的扩展。
+
+### 连接
+
+用下面代码实现连接到服务端，创建实例时请使用 Transfer() ，其他步骤均与 Core 一致
+
+```python
+from FileTrans import *
+
+host = "link.acdp.top" # 服务器的地址，可以使用域名或者 IPv4 地址
+account = "A03HCY"     # 登录的用户名，非固定，但是如果服务器中已经存在相同的用户名将无法登录
+pwd = "sf5dfe146"      # 这是登录服务器需要的密码，PS.登录只需要服务器的密码
+
+Line = Transfer(host)      # 创建实例
+Line.connect(account, pwd) # 连接到服务器
+Line.active()              # 开始运行接收和发送数据的服务
+```
+
+### 远程命令控制
+
+远程命令控制能够让你在其他设备上执行命令并且返回结果
+
+#### 发送命令
+
+当两个客户端均使用 Transfer 时，你可以在其中一台设备向另外一台设备发送可执行命令 
+
+```python
+target = "Jacky"             # 要执行命令的设备
+command = "ping acdp.top"    # 要执行的命令
+
+result = Line.cmd(to, ccc)
+```
+
+执行成功会返回结果，如果在执行过程中对方设备下线，会返回 404 。
+
+💬 你也可以让电脑给它自己发送命令 <(*￣▽￣ *)/
+
+### 文件传输
+
+文件传输能够让你对其他设备上的文件进行操作
+
+#### 获取文件列表
+
+当你需要获取远程设备上某一目录下的文件列表，请使用下面的程序
+
+```python
+Line.file('list', 'Jacky', 'D:/') # 获取 Jacky 在 D:/ 下的文件列表
+```
+
