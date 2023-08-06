@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: print_logger
+Version: 1.0.3
+Summary: Print Logger Python print with strict structure
+Home-page: https://github.com/xuanhuan95/print_log
+Author: Huan Nguyen
+Author-email: nguyenxuanhuan.95@gmail.com
+License: MIT
+Keywords: PYTHON,PRINT,LOGGING
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Print Logger
+
+Python print with strict structure
+
+## Install
+
+```bash
+pip install print-logger
+```
+
+## Usage
+
+```python
+from print_logger import print_log, ERROR, INFO, WARNING
+
+# info level
+print_log('message info', INFO)
+# error level
+print_log({'message': 'error'}, ERROR)
+# warning level
+print_log('message warning', WARNING)
+# custom level
+print_log('message custom', 'CUSTOM')
+```
+
+
