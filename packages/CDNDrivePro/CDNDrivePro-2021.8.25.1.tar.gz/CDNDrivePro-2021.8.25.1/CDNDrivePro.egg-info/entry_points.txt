@@ -1,0 +1,4 @@
+[console_scripts]
+CDNDrivePro = CDNDrivePro.__main__:main
+cdrivep = CDNDrivePro.__main__:main
+
