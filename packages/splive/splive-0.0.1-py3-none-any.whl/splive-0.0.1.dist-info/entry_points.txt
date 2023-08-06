@@ -1,0 +1,3 @@
+[console_scripts]
+splicev = splive.__main__:main
+
