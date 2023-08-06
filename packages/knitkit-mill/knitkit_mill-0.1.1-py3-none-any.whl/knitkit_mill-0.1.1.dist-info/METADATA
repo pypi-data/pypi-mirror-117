@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: knitkit-mill
+Version: 0.1.1
+Summary: Mill Binary and Cache is a fat JAR with all of its dependencies.
+Home-page: https://github.com/colin4124
+Author: Leway Colin
+Author-email: colin4124@gmail.com
+License: Apache-2.0 License
+Keywords: mill
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
