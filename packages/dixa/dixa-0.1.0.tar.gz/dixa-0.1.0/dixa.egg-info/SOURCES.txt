@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+dixa/__init__.py
+dixa/base_client.py
+dixa/dixa_client.py
+dixa/errors.py
+dixa/models.py
+dixa/utils.py
+dixa.egg-info/PKG-INFO
+dixa.egg-info/SOURCES.txt
+dixa.egg-info/dependency_links.txt
+dixa.egg-info/not-zip-safe
+dixa.egg-info/requires.txt
+dixa.egg-info/top_level.txt
