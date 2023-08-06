@@ -1,0 +1,3 @@
+[console_scripts]
+yaml-patch=main:cli
+
