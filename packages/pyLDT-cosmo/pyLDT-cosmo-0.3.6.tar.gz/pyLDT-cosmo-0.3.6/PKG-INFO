@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyLDT-cosmo
+Version: 0.3.6
+Summary: Package for PDF calculations in Large Deviation Theory
+Home-page: https://github.com/mcataneo/pyLDT-cosmo
+Author: Matteo Cataneo
+Author-email: mcataneo85@gmail.com
+License: UNKNOWN
+Description: # pyLDT
+        Python code to generate matter PDF predictions in Large Deviation Theory for LCDM and alternative cosmologies
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
