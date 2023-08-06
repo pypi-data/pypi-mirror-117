@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gawain
+Version: 0.0.3
+Summary: Asyncio booru wrapper with spell blocker
+Home-page: https://github.com/sinkaroid/gawain
+Author: sinkaroid
+Author-email: anakmancasan@gmail.com
+License: MIT
+Description: # Gawain
+        Booru armor wrapper
+        
+        ```py
+        import asyncio
+        import gawain
+        
+        async def gel():
+            data = gawain.Load()
+            print(data.search(tags="milf", limit=25, pid=1, block="shota"))
+        
+        
+        async def main():
+            get = [ gel()]
+            await asyncio.gather(*get)
+        
+        asyncio.run(main())
+        ```
+Keywords: booru,wrapper
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
