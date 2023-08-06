@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: crossedwires
+Version: 0.0.3
+Summary: CrossedWires: An Inter-framework ModelDivergence Dataset Generated using HyperparameterOptimization
+Home-page: https://github.com/maxzvyagin/crossedwires
+Author: Max Zvyagin
+Author-email: mzvyagin@anl.gov
+License: UNKNOWN
+Keywords: pytorch,tensorflow,hpo,accuracy
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+Requires-Dist: black
+Requires-Dist: flake8
+Requires-Dist: pre-commit
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tensorflow
+Requires-Dist: cross-framework-hpo
+
+# CrossedWires
+Python package used in order to interact with the CrossedWires dataset, hosted on Google Cloud storage. 
+
+Documentation is available at: https://crossedwires.readthedocs.io/
+
+### How to use:
+
+### How to submit:
+
+
+
