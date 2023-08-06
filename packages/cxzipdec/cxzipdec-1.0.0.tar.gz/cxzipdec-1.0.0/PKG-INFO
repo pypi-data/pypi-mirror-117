@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: cxzipdec
+Version: 1.0.0
+Summary: Drip-in replacement of zipfile._ZipDecrypter for python 3.7+
+Home-page: https://github.com/multiSnow/czipdecrypter
+Author: cognexa
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: zipfile,zip,decryption
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
