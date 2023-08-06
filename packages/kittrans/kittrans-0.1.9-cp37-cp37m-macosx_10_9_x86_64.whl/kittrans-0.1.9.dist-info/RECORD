@@ -1,0 +1,10 @@
+kittrans/__init__.cpython-37m-darwin.so,sha256=y2Gic7qJ5VX1TvBKya7-fUtVv09ofBTCZoU-UncRYpE,38664
+kittrans/main.py,sha256=EyzVZS6C-QWybnewEDb17IukOWcY2-8jo0VvtV6fTho,115
+kittrans/models.cpython-37m-darwin.so,sha256=nqTAwYYTALawT5-HsIra3ZW7tUodL_znSLOIpZcktTM,217176
+kittrans/urls.cpython-37m-darwin.so,sha256=IeCnM8dXK5r-t2UeEI1U7xkBQrjeLjtKyzmLAcfn-OM,51896
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_login.py,sha256=USc6P4mmWkU15_Y3toCAoarsrRaT6qT3MvR_TmI-Ca4,4885
+kittrans-0.1.9.dist-info/METADATA,sha256=PysKLre05OnwjLlqBquF7YR2TU5-D_kgs8R_AEzN0v4,157
+kittrans-0.1.9.dist-info/WHEEL,sha256=MTGYRPpheMM24WbmS90Rp7e0ky6cZJ8CkS_x1qgwoGk,110
+kittrans-0.1.9.dist-info/top_level.txt,sha256=MIgznyFusSgFdjuJTZd33nHdicxdmFizrvhHy2Ofius,15
+kittrans-0.1.9.dist-info/RECORD,,
