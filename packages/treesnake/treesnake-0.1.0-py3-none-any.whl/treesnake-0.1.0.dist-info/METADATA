@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: treesnake
+Version: 0.1.0
+Summary: TreeSnake is a python package for inferring evolutionary trees
+Home-page: UNKNOWN
+License: UNKNOWN
+Keywords: biology,evolution,phylogenetics
+Platform: UNKNOWN
+Requires-Dist: pandas (>=1.2.3)
+
+UNKNOWN
+
