@@ -1,0 +1,5 @@
+paramiko>=2.7.2
+scp==0.13.6
+
+[dev]
+pytest>=6.2.4
