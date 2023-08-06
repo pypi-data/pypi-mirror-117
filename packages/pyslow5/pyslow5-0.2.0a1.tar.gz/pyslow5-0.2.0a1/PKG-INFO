@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyslow5
+Version: 0.2.0a1
+Summary: slow5lib python bindings
+Home-page: https://github.com/hasindu2008/slow5lib
+Author: Hasindu Gamaarachchi
+Author-email: hasindu2008@gmail.com
+License: MIT
+Description: The slow5 python library (pyslow5) allows a user to read slow5 and blow5 files. Visit https://hasindu2008.github.io/slow5lib/pyslow5_api/pyslow5.html
+Keywords: nanopore,slow5,signal
+Platform: UNKNOWN
