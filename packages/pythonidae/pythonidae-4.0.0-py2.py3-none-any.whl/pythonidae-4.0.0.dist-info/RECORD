@@ -1,0 +1,10 @@
+pythonidae/__init__.py,sha256=lRYIv4WgU6uYMtvtrIHofshD-d38GzJQ3A185kJuAkE,2170
+pythonidae/parser.py,sha256=Lv2LQn44vhCGvujZMgP4u43iPoVJEy9mZuxzQ2Znu6Q,1179
+pythonidae/request.py,sha256=ifuqH4wnG0ayOXJgch1Qn9Vz398Aw80iBVRg3-h4f50,2210
+pythonidae/response.py,sha256=aMBRS1STnRPkIk_Kza0CwH7oIr1oF5DscvuUpD0bgdQ,5546
+pythonidae/router.py,sha256=C2LAuFDrw5-TH8KO1RCzLoQeO55ZD0Bz1UjFEPmJKQ8,2575
+pythonidae-4.0.0.dist-info/LICENCE,sha256=ExrlAHDhXLR5an7IS7dGgW34QdNP9-lbBZ_8e6z-3-E,212
+pythonidae-4.0.0.dist-info/METADATA,sha256=LZE3nCe310054qkTZevAoN--BhBoryz9WDXILmlKVDc,1942
+pythonidae-4.0.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pythonidae-4.0.0.dist-info/top_level.txt,sha256=-KUGlPhhrOZvTpDqpEWACEfE-GI1FYq7-IQX2VxvPY0,11
+pythonidae-4.0.0.dist-info/RECORD,,
