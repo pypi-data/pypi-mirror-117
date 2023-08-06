@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+sparkpost_async/__init__.py
+sparkpost_async/email_backend.py
+sparkpost_async/tasks.py
+sparkpost_async.egg-info/PKG-INFO
+sparkpost_async.egg-info/SOURCES.txt
+sparkpost_async.egg-info/dependency_links.txt
+sparkpost_async.egg-info/requires.txt
+sparkpost_async.egg-info/top_level.txt
