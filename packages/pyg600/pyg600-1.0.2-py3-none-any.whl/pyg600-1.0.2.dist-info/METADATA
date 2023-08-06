@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyg600
+Version: 1.0.2
+Summary: Utility program for binding actions to keys on the Logitech G600 gaming mouse
+Home-page: https://github.com/j-waters/pyg600
+Author: James Waters
+Author-email: james@jcwaters.co.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: PyYAML
+Requires-Dist: Click
+Requires-Dist: evdev
+Requires-Dist: pyxdg
+
+UNKNOWN
+
