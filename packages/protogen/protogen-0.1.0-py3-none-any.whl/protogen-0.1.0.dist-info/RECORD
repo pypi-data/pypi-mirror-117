@@ -1,0 +1,6 @@
+protogen/__init__.py,sha256=8c-mQcXr9WNWTK0rtaj6BEIV41gFf_Qhh4fGQFCY9nI,58178
+protogen/_case.py,sha256=P-86KCXbYbP0w8no8yk_dIy8Fii52JLJSorLsNAFcF8,3307
+protogen/grpc_gateway.py,sha256=aTWpsjjKXfIXyhFS0bMLNPV-XoiE5Iqa14rpQiMv-vo,76
+protogen-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+protogen-0.1.0.dist-info/METADATA,sha256=PPXQ6esGp-NGYDdo9LEjX_gnzpWnrhNSKwD9FRZqLoo,10796
+protogen-0.1.0.dist-info/RECORD,,
