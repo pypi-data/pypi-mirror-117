@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dash-chalice
+Version: 0.1
+Summary: Chalice as an alternative to Flask for Plotly Dash
+Home-page: https://github.com/ellwise/dash-chalice
+Author: Elliott Wise
+Author-email: ell.wise@gmail.com
+License: GNU GPL v3
+Description: UNKNOWN
+Platform: UNKNOWN
