@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+vsml/__init__.py
+vsml/__main__.py
+vsml/func.py
+vsml.egg-info/PKG-INFO
+vsml.egg-info/SOURCES.txt
+vsml.egg-info/dependency_links.txt
+vsml.egg-info/top_level.txt
