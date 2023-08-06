@@ -1,0 +1,10 @@
+setuptools
+colorama
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[tests]
+pytest>=4.4
+pytest-cov
