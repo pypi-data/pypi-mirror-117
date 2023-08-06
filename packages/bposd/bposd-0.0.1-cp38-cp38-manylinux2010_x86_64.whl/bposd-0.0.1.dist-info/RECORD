@@ -1,0 +1,13 @@
+bposd-0.0.1.dist-info/top_level.txt,sha256=IzKZg-D9zKmC7ciShuYEYGyZVnEjyVHSwQoJ6vYwzTU,6
+bposd-0.0.1.dist-info/WHEEL,sha256=gH3NKL7Mo7W1aSA0ou9wGYSHiC_jvJj0FnFzB1diX6o,111
+bposd-0.0.1.dist-info/METADATA,sha256=Ov-KMXy_v5Q6jJnZ0JwL1D5mqZtzyH3Z4gollyBqC44,431
+bposd-0.0.1.dist-info/RECORD,,
+bposd/bposd.cpython-38-x86_64-linux-gnu.so,sha256=iQXeXIq8jzZi3C5cqtAl3J7YlHo1pVzuFgGXS8RuQKY,664848
+bposd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bposd/bposd.pxd,sha256=4NKh3lpwU0FlTMPjJOb9Q8cSgaUpmDfw-k9WEyCBKfA,2468
+bposd/__init__.pxd,sha256=p3r7LwmDfeAFUH8ztvR9ZmxtQZDBjyob9KDOUFy_3H0,43
+bposd/bposd.c,sha256=BSrA5CSCWepuSQIIGTO-TcRalD2Dq_0Q_XQLDdZ_f7U,432172
+bposd/include/sort.c,sha256=0mErmqtEnszM03VgVdSUP8E-jHQBLeL74H3FGOFhgYw,2054
+bposd/include/mod2sparse.c,sha256=Fxwjfhp3uRhxOjbo-Sogc6UQHZo4o5ghfFX72oSlrfg,28067
+bposd/include/binary_char.c,sha256=b8Kjt_4cFTNOLFchOtI6QHGAgVHwRmjxFpZ4qp7E8s8,1822
+bposd/include/mod2sparse_extra.c,sha256=9YHyC1B6-hCoy5YPIEv_Mci03yXrYT0i0K0SPjGrHL4,10963
