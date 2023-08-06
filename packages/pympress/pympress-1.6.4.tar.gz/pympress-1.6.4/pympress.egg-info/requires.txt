@@ -1,0 +1,17 @@
+watchdog
+
+[:python_version < "3.4"]
+enum34
+
+[babel]
+babel
+babelgladeextractor
+
+[build_sphinx]
+recommonmark
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-napoleon
+
+[vlc_video]
+python-vlc
