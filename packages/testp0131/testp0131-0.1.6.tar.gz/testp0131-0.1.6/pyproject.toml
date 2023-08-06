@@ -1,0 +1,17 @@
+
+[tool.poetry]
+name = "testp0131"
+version = "0.1.6"
+description = ""
+authors = ["qiujingyu <qiujingyu@momenta.ai>"]
+exclude = ["testp0131/main.py"]
+include = ["doc/aaa.txt","ww.py","testp0131.main.py"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
