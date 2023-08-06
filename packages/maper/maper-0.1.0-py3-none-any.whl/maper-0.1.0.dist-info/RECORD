@@ -1,0 +1,12 @@
+maper/__init__.py,sha256=VPXFhoeBiBBo8a4gR2ypRxOJtYSuSOP43jQTStjn8ME,190
+maper/__main__.py,sha256=53XlkgGK-8x-c8Alb2cSocJ52pZ1uxH6FcWnirgSWX8,107
+maper/bibtex.py,sha256=jE3O-LeybGv9hBCK1au_BMll_kX_OMZ9Ocb4rdC2m0Q,677
+maper/create.py,sha256=eQ7sCdq4Nny3GSA4wSBXm_n5iGx_PFTNPZNtQ2oka7o,2222
+maper/main.py,sha256=FE_Qe3abH1Kcrb3y2Q3kgPG0c5wgy9lC7ZxNkX7FVOw,513
+maper/show.py,sha256=rt2v-eMRG6K8pZ4nBkRDIkRNZXaGxCvAI9EiiI4CsIg,1246
+maper/util.py,sha256=O9vHgC9lQCRk81xGp4ailHz8y05QXSsHbPvlgcTX5qU,449
+maper-0.1.0.dist-info/METADATA,sha256=SHmiiA6bDYTEq3GnaqHHeL4TVw0HnwW-iZzXSudEJCE,2324
+maper-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+maper-0.1.0.dist-info/entry_points.txt,sha256=D3XTYIfxX7GJFmWmztYB_XDmiXYc8uxfntIE-Twi3kU,48
+maper-0.1.0.dist-info/top_level.txt,sha256=clu-hA1_m0XzSVpMtwHAaKkbRflmynEcp5ZK3gykMBA,6
+maper-0.1.0.dist-info/RECORD,,
