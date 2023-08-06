@@ -1,0 +1,13 @@
+goodboy/__init__.py,sha256=hiInbggtMw7wVwo5lrFRsSrDuRsCd6BFtkf4XqYPNVU,171
+goodboy/i18n.py,sha256=CU3DmlDI80jD_6k5U_TfPfsK0lPl__KUG_X2pf5P01Q,546
+goodboy/locale/en/LC_MESSAGES/goodboy.mo,sha256=dvugfMrCSt7obQCcUQNPnGxs7YG0c9JG3Syu70LfUVI,525
+goodboy/locale/en/LC_MESSAGES/goodboy.po,sha256=3zM6agwnFqWnNBnIAAiTpk7iOjteMWaK8pjT4yqmczQ,719
+goodboy/locale/goodboy.pot,sha256=qWWHrMEqIfoPUML2WICDaomyu0oeyhgBG4GbTPtu_lI,662
+goodboy/locale/ru/LC_MESSAGES/goodboy.mo,sha256=dF_kKgqmEmMrqhOiqU2SrnXY4sZQrm9lLD-1wyzUG2w,627
+goodboy/locale/ru/LC_MESSAGES/goodboy.po,sha256=KGscHJlQvVepseyxtq5P8tBDlyaig3aTnoER8LFM7p8,805
+goodboy/schema.py,sha256=HB7asbx5PlVYgfOL1-jAVXhOPVkR25rEN9mamH7o7Uc,1207
+goodboy/types.py,sha256=0w2BqndVBnGHaBpfSDkOnsMcvcXn48stTM10f3oiW5o,1339
+goodboy/validator.py,sha256=Kn7hF7Ye7_P-jnJN4WSRnyMKqelta8gfO0AuwsR35eo,863
+goodboy-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+goodboy-0.1.0.dist-info/METADATA,sha256=gwzTYToL6ILKz6f7HsPXXr5IeINQFn8VJdQzRH9YOAA,251
+goodboy-0.1.0.dist-info/RECORD,,
