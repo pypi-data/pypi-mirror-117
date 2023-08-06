@@ -1,0 +1,10 @@
+numpy
+matplotlib
+appdirs
+PyQt5
+xlrd
+PyShp
+networkx
+ply2atti
+auttitude==0.1.4
+chardet

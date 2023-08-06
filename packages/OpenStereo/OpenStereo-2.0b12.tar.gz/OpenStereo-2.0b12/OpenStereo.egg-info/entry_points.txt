@@ -1,0 +1,3 @@
+[console_scripts]
+openstereo = openstereo.os_base:os_main
+
