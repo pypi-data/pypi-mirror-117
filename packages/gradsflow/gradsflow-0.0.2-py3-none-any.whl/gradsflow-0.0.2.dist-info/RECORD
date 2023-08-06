@@ -1,0 +1,16 @@
+gradsflow/__init__.py,sha256=BMHKV38ty6LhxyIyU5C6XYQlrrMz-n21zNzuwmHdLqk,354
+gradsflow/autotasks/__init__.py,sha256=fEimv02LAGxwuCZoMBMNQBG6y7-2pK-aaHtCIRR7-cU,163
+gradsflow/autotasks/autosummarization.py,sha256=v4s9IBCXJ89LwCywHLDnPwaSYXbqPG3ekfYQHbu_818,3506
+gradsflow/autotasks/autoclassification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gradsflow/autotasks/autoclassification/image.py,sha256=c1s12MkqBPpSbsEtbEfhmbc_pygmx0JcyCRmgmhLvAc,2658
+gradsflow/autotasks/autoclassification/text.py,sha256=5f2wPwWijbxDSH5gcDbqeObcOHCsnQxabYRtcW_LNWU,2813
+gradsflow/core/__init__.py,sha256=9nfVgAc7zYHN-lhAHQsLzSjnDvfmGxh1936b9t5Q4bE,42
+gradsflow/core/autoclassifier.py,sha256=NDnnj77J9JVgqfwzEKo2Q7FzTM7Svb2NgVQN_-yLk6Q,3249
+gradsflow/core/automodel.py,sha256=pzChUkylZnznrjWr93QJarud_dvT0AdD-MZECyymsvg,5707
+gradsflow/utility/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gradsflow/utility/common.py,sha256=-nt591LI5PAxpESz_spnOUO2DulXeMijtbNVWJFBnG4,1291
+gradsflow/utility/optuna.py,sha256=CgO7h4tJ3vLjv9Ma9nSt2adhb8fb0dwIH_7pUwxNmDU,1333
+gradsflow-0.0.2.dist-info/LICENSE,sha256=LS6y8GHuPEy7d3vK8MkicRHHXRlk1JULw_1QwDNEMCk,11361
+gradsflow-0.0.2.dist-info/WHEEL,sha256=o-Q2E8s7BKkCJ1EC2uQdaymZVVu2aUt1e8uTTFpzHVs,81
+gradsflow-0.0.2.dist-info/METADATA,sha256=Xg7g8Diwcexb4pt7FTVvEJlv8fNeJ3Aka_WL95CODqU,4936
+gradsflow-0.0.2.dist-info/RECORD,,
