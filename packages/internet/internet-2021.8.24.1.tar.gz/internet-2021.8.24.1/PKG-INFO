@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: internet
+Version: 2021.8.24.1
+Summary: Python library for working with IP addresses and other internet related functionalities
+Home-page: https://github.com/idin/internet
+Author: Idin
+Author-email: py@idin.ca
+License: MIT
+Description: # internet
+        Python library for working with IP addresses and other internet related functionalities
+        
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
