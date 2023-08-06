@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+checkme/__init__.py
+checkme/checkme.py
+checkme.egg-info/PKG-INFO
+checkme.egg-info/SOURCES.txt
+checkme.egg-info/dependency_links.txt
+checkme.egg-info/top_level.txt
