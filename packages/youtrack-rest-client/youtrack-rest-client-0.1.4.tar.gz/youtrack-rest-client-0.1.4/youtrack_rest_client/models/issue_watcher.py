@@ -1,0 +1,90 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="IssueWatcher")
+
+
+@attr.s(auto_attribs=True)
+class IssueWatcher:
+    """Represents a user who subscribed for notifications about an issue."""
+
+    user: "Union[Unset, user_m.User]" = UNSET
+    issue: "Union[Unset, issue_m.Issue]" = UNSET
+    is_starred: "Union[Unset, bool]" = UNSET
+    id: "Union[Unset, str]" = UNSET
+    type: "Union[Unset, str]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        user: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.user, Unset):
+            user = self.user.to_dict()
+
+        issue: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.issue, Unset):
+            issue = self.issue.to_dict()
+
+        is_starred = self.is_starred
+        id = self.id
+        type = self.type
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update({})
+        if user is not UNSET:
+            field_dict["user"] = user
+        if issue is not UNSET:
+            field_dict["issue"] = issue
+        if is_starred is not UNSET:
+            field_dict["isStarred"] = is_starred
+        if id is not UNSET:
+            field_dict["id"] = id
+        if type is not UNSET:
+            field_dict["$type"] = type
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import issue as issue_m
+            from ..models import user as user_m
+        except ImportError:
+            import sys
+
+            issue_m = sys.modules[__package__ + "issue"]
+            user_m = sys.modules[__package__ + "user"]
+
+        d = src_dict.copy()
+
+        _user = d.pop("user", UNSET)
+        user: Union[Unset, user_m.User]
+        if isinstance(_user, Unset):
+            user = UNSET
+        else:
+            user = user_m.User.from_dict(_user)
+
+        _issue = d.pop("issue", UNSET)
+        issue: Union[Unset, issue_m.Issue]
+        if isinstance(_issue, Unset):
+            issue = UNSET
+        else:
+            issue = issue_m.Issue.from_dict(_issue)
+
+        is_starred = d.pop("isStarred", UNSET)
+
+        id = d.pop("id", UNSET)
+
+        type = d.pop("$type", UNSET)
+
+        issue_watcher = cls(
+            user=user,
+            issue=issue,
+            is_starred=is_starred,
+            id=id,
+            type=type,
+        )
+
+        return issue_watcher

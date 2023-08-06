@@ -1,0 +1,54 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="IssueResolvedActivityItem")
+
+
+try:
+    from ..models import simple_value_activity_item
+except ImportError:
+    import sys
+
+    simple_value_activity_item = sys.modules[__package__ + "simple_value_activity_item"]
+
+
+@attr.s(auto_attribs=True)
+class IssueResolvedActivityItem(simple_value_activity_item.SimpleValueActivityItem):
+    """Represents an event when a user resolves an issue."""
+
+    removed: "Union[Unset, int]" = UNSET
+    added: "Union[Unset, int]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        removed = self.removed
+        added = self.added
+
+        field_dict: Dict[str, Any] = {}
+        _SimpleValueActivityItem_dict = super().to_dict()
+        field_dict.update(_SimpleValueActivityItem_dict)
+        field_dict.update({})
+        if removed is not UNSET:
+            field_dict["removed"] = removed
+        if added is not UNSET:
+            field_dict["added"] = added
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        d = src_dict.copy()
+
+        removed = d.pop("removed", UNSET)
+
+        added = d.pop("added", UNSET)
+
+        issue_resolved_activity_item = cls(
+            removed=removed,
+            added=added,
+        )
+
+        return issue_resolved_activity_item

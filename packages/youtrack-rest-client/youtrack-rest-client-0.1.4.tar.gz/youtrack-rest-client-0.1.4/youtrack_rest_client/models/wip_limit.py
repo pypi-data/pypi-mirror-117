@@ -1,0 +1,80 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="WIPLimit")
+
+
+@attr.s(auto_attribs=True)
+class WIPLimit:
+    """Represents WIP limits for particular column. If they are not satisfied, the column will be highlighted in UI."""
+
+    max_: "Union[Unset, int]" = UNSET
+    min_: "Union[Unset, int]" = UNSET
+    column: "Union[Unset, agile_column_m.AgileColumn]" = UNSET
+    id: "Union[Unset, str]" = UNSET
+    type: "Union[Unset, str]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        max_ = self.max_
+        min_ = self.min_
+        column: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.column, Unset):
+            column = self.column.to_dict()
+
+        id = self.id
+        type = self.type
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update({})
+        if max_ is not UNSET:
+            field_dict["max"] = max_
+        if min_ is not UNSET:
+            field_dict["min"] = min_
+        if column is not UNSET:
+            field_dict["column"] = column
+        if id is not UNSET:
+            field_dict["id"] = id
+        if type is not UNSET:
+            field_dict["$type"] = type
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import agile_column as agile_column_m
+        except ImportError:
+            import sys
+
+            agile_column_m = sys.modules[__package__ + "agile_column"]
+
+        d = src_dict.copy()
+
+        max_ = d.pop("max", UNSET)
+
+        min_ = d.pop("min", UNSET)
+
+        _column = d.pop("column", UNSET)
+        column: Union[Unset, agile_column_m.AgileColumn]
+        if isinstance(_column, Unset):
+            column = UNSET
+        else:
+            column = agile_column_m.AgileColumn.from_dict(_column)
+
+        id = d.pop("id", UNSET)
+
+        type = d.pop("$type", UNSET)
+
+        wip_limit = cls(
+            max_=max_,
+            min_=min_,
+            column=column,
+            id=id,
+            type=type,
+        )
+
+        return wip_limit

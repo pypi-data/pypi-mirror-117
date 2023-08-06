@@ -1,0 +1,83 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="NotificationSettings")
+
+
+@attr.s(auto_attribs=True)
+class NotificationSettings:
+    """Represents the Notifications settings of the YouTrack service."""
+
+    email_settings: "Union[Unset, email_settings_m.EmailSettings]" = UNSET
+    jabber_settings: "Union[Unset, jabber_settings_m.JabberSettings]" = UNSET
+    id: "Union[Unset, str]" = UNSET
+    type: "Union[Unset, str]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        email_settings: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.email_settings, Unset):
+            email_settings = self.email_settings.to_dict()
+
+        jabber_settings: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.jabber_settings, Unset):
+            jabber_settings = self.jabber_settings.to_dict()
+
+        id = self.id
+        type = self.type
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update({})
+        if email_settings is not UNSET:
+            field_dict["emailSettings"] = email_settings
+        if jabber_settings is not UNSET:
+            field_dict["jabberSettings"] = jabber_settings
+        if id is not UNSET:
+            field_dict["id"] = id
+        if type is not UNSET:
+            field_dict["$type"] = type
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import email_settings as email_settings_m
+            from ..models import jabber_settings as jabber_settings_m
+        except ImportError:
+            import sys
+
+            jabber_settings_m = sys.modules[__package__ + "jabber_settings"]
+            email_settings_m = sys.modules[__package__ + "email_settings"]
+
+        d = src_dict.copy()
+
+        _email_settings = d.pop("emailSettings", UNSET)
+        email_settings: Union[Unset, email_settings_m.EmailSettings]
+        if isinstance(_email_settings, Unset):
+            email_settings = UNSET
+        else:
+            email_settings = email_settings_m.EmailSettings.from_dict(_email_settings)
+
+        _jabber_settings = d.pop("jabberSettings", UNSET)
+        jabber_settings: Union[Unset, jabber_settings_m.JabberSettings]
+        if isinstance(_jabber_settings, Unset):
+            jabber_settings = UNSET
+        else:
+            jabber_settings = jabber_settings_m.JabberSettings.from_dict(_jabber_settings)
+
+        id = d.pop("id", UNSET)
+
+        type = d.pop("$type", UNSET)
+
+        notification_settings = cls(
+            email_settings=email_settings,
+            jabber_settings=jabber_settings,
+            id=id,
+            type=type,
+        )
+
+        return notification_settings

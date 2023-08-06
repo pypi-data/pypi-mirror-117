@@ -1,0 +1,47 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="StateBundleElement")
+
+
+try:
+    from ..models import localizable_bundle_element
+except ImportError:
+    import sys
+
+    localizable_bundle_element = sys.modules[__package__ + "localizable_bundle_element"]
+
+
+@attr.s(auto_attribs=True)
+class StateBundleElement(localizable_bundle_element.LocalizableBundleElement):
+    """Represents the state of an issue in YouTrack."""
+
+    is_resolved: "Union[Unset, bool]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        is_resolved = self.is_resolved
+
+        field_dict: Dict[str, Any] = {}
+        _LocalizableBundleElement_dict = super().to_dict()
+        field_dict.update(_LocalizableBundleElement_dict)
+        field_dict.update({})
+        if is_resolved is not UNSET:
+            field_dict["isResolved"] = is_resolved
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        d = src_dict.copy()
+
+        is_resolved = d.pop("isResolved", UNSET)
+
+        state_bundle_element = cls(
+            is_resolved=is_resolved,
+        )
+
+        return state_bundle_element
