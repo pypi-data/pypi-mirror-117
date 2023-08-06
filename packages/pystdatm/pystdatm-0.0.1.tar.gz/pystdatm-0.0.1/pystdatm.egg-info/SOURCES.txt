@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pystdatm/__init__.py
+pystdatm.egg-info/PKG-INFO
+pystdatm.egg-info/SOURCES.txt
+pystdatm.egg-info/dependency_links.txt
+pystdatm.egg-info/top_level.txt
