@@ -1,0 +1,14 @@
+_primitives/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_primitives/argument.py,sha256=uhEvRAAJ890wkKtpu1L4w3QS2HrFX-zzZESzU-IHP0U,406
+_primitives/async_context.py,sha256=UAg1z_FqANozW3Q7cSNuZlVGh8eYS5qN1KDe5HOpJxU,282
+_primitives/awaitable.py,sha256=Z02txbUiaSQkcikxBGrBS61RA7T4jIJf5AJ8YgzDoPk,253
+_primitives/callable.py,sha256=lLeGkSANiVconlmDqNy_0s2sHImolMyDltfLbscRmko,1739
+_primitives/exceptions.py,sha256=yCcbMe3kra4ivUZytaaVxgvzRZkzasKe6rRGkNpoofM,90
+_primitives/ignore.py,sha256=1vdfP983UYySfVEa_TipbT11zroClLIR9Uowe4-9FdU,127
+_primitives/instance.py,sha256=NfsPYZZ_HJkCxQfUguPhYefMHB1AKxQmUHh8ykZsor0,154
+primitives/__init__.py,sha256=tM4xMNlz4bM0nMAsOmDYpcEGf2S2eM70FtyNETvosks,393
+primitives/exceptions.py,sha256=mVKpKu2YZeJm0NRq_Kk8gCi9Dn3BqWC7ZgJJa7Bev2Q,120
+primitives-1.7.0.dist-info/LICENSE,sha256=LJ_rAR8NwahIXjsJ6i3aIhsncGlNu95dFkz63odksNo,1284
+primitives-1.7.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+primitives-1.7.0.dist-info/METADATA,sha256=lsf_-2Lgf_P2DS-scZ5Msf6SM_cB9WPP6Z-oyU7DeS0,5239
+primitives-1.7.0.dist-info/RECORD,,
