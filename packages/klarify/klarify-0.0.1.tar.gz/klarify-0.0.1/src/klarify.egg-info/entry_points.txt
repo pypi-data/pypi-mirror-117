@@ -1,0 +1,3 @@
+[console_scripts]
+klarify = klarify.__main__:main
+

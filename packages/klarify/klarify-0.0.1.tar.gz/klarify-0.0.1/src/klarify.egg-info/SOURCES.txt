@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/klarify/Kustomizer.py
+src/klarify/Parser.py
+src/klarify/Resource.py
+src/klarify/Sorter.py
+src/klarify/__init__.py
+src/klarify/__main__.py
+src/klarify.egg-info/PKG-INFO
+src/klarify.egg-info/SOURCES.txt
+src/klarify.egg-info/dependency_links.txt
+src/klarify.egg-info/entry_points.txt
+src/klarify.egg-info/top_level.txt

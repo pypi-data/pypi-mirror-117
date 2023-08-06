@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: klarify
+Version: 0.0.1
+Summary: Automatic sort and separate for multi-yaml files
+Home-page: https://github.com/thetalorian/klarify
+Author: Samuel Plum
+Author-email: psyborg@taloria.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/thetalorian/klarify/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# klarify
+
+Easy but extendable command line interface for splitting large, multi-part .yaml files for kubernetes configuration into more easily managed and readable chunks, tied together with kustomization files.
+
+Quick notes:
+
+```
+helm template aws-cloudwatch-metrics --namespace amazon-cloudwatch eks/aws-cloudwatch-metrics --set clusterName=my-eks-cluster > amazon-cloudwatch.yaml
+```
+
+Above command generates the amazon-cloudwatch.yaml file in the tests folder. Actual tests coming in future releases, along with documentation. I just wanted to get this initial working version available.
+
+
