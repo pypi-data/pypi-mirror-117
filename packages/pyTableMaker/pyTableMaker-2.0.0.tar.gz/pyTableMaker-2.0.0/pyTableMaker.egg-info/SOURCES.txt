@@ -1,0 +1,13 @@
+LICENSE
+README.md
+example.py
+setup.cfg
+setup.py
+test.py
+pyTableMaker/__init__.py
+pyTableMaker/gui.py
+pyTableMaker/utils.py
+pyTableMaker.egg-info/PKG-INFO
+pyTableMaker.egg-info/SOURCES.txt
+pyTableMaker.egg-info/dependency_links.txt
+pyTableMaker.egg-info/top_level.txt
