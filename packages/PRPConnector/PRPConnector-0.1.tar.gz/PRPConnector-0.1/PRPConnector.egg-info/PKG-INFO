@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PRPConnector
+Version: 0.1
+Summary: Connector for Clients to the PRP-Backend
+Home-page: https://github.com/manuelbieri/PRP-APIConnect
+Author: Manuel Bieri
+Author-email: marbl.ch@outlook.com
+License: MIT
+Download-URL: https://github.com/manuelbieri/PRP-APIConnect/archive/refs/tags/v0.1.tar.gz
+Keywords: API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PRP-Connector
+
+![CI - Tests](https://github.com/manuelbieri/PRP-APIConnect/actions/workflows/ci.yml/badge.svg)
+![PyPi](https://github.com/manuelbieri/PRP-APIConnect/actions/workflows/pypi.yml/badge.svg)
+
