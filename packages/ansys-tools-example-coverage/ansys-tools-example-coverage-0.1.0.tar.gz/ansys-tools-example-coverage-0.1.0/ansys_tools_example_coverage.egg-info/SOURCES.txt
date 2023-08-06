@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+ansys/tools/example_coverage/__init__.py
+ansys/tools/example_coverage/__main__.py
+ansys/tools/example_coverage/_version.py
+ansys/tools/example_coverage/example_coverage.py
+ansys_tools_example_coverage.egg-info/PKG-INFO
+ansys_tools_example_coverage.egg-info/SOURCES.txt
+ansys_tools_example_coverage.egg-info/dependency_links.txt
+ansys_tools_example_coverage.egg-info/top_level.txt
