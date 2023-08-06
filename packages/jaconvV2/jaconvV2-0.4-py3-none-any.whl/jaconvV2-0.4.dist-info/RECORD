@@ -1,0 +1,11 @@
+jaconvV2/__init__.py,sha256=OAdLNjjOgPUMA6s_CvhO4cMH3GW76wUhh_ITiHzb0Go,2603
+jaconvV2/compat.py,sha256=PMJYSk9qmNWfoQ87lvmm1q-Gy-hUWEZe_5sEqyM83fI,261
+jaconvV2/conv_table.py,sha256=_zbM1qo1eXujzbGccqst_0U4nfa3NBT8jO7KjfNVT98,5359
+jaconvV2/jaconv.py,sha256=zf4wMHNPQ8a4g0ugBHy1F2UW_LpB3DwD-4y0DezQ3ak,33711
+jaconvV2-0.4.data/data/CHANGES.rst,sha256=6JP-zKZoERvVWkVablP5Q809kFygbyRpznTl4d5U-Ro,1481
+jaconvV2-0.4.data/data/README.rst,sha256=JuKl6B31SiOjOl1zhYEaTs8vDpGGPVGaGO_0aw5Y1ys,4443
+jaconvV2-0.4.dist-info/LICENSE,sha256=POBbk0DH9RpQhcZX3XkOoehkKQtmqI_ge7b_obhoGtA,1081
+jaconvV2-0.4.dist-info/METADATA,sha256=_5MYVTKi1woRrn4sW92mGKa38g_DQlwGs0MzldZKEUs,7167
+jaconvV2-0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jaconvV2-0.4.dist-info/top_level.txt,sha256=fIPeR7tauvGrDURM_rAWnqCzMQHzsc-HRSeLXMDl-8E,9
+jaconvV2-0.4.dist-info/RECORD,,

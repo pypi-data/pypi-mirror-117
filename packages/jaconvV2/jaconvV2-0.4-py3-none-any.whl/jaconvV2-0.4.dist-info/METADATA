@@ -1,0 +1,268 @@
+Metadata-Version: 2.1
+Name: jaconvV2
+Version: 0.4
+Summary: Pure-Python Japanese character interconverter for Hiragana, Katakana, Hankaku, Zenkaku, as well as Zenkaku or Hankaku Tester
+Home-page: https://github.com/MikimotoH/jaconv
+Author: Miki Liu
+Author-email: MikimotoH@gmail.com
+License: MIT License
+Keywords: Japanese converter,Japanese,text preprocessing,half-width kana,Hiragana,Katakana,Hankaku,Zenkaku,transliteration,Julius
+Platform: POSIX
+Platform: Windows
+Platform: Unix
+Platform: MacOS
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Japanese
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing
+
+jaconvV2
+==========
+|travis| |coveralls| |pyversion| |version| |license|
+
+jaconvV2 (Japanese Converter) can detect whether a character is Zenkaku or Hankaku, and also support interconvertion for Hiragana, Katakana, Hankaku (half-width character) and Zenkaku (full-width character)
+
+`Japanese README <https://github.com/MikimotoH/jaconv/blob/master/README_JP.rst>`_ is available.
+
+INSTALLATION
+==============
+
+::
+
+ $ pip install jaconvV2
+
+
+USAGE
+============
+
+See also `document <http://ikegami-yukino.github.io/jaconv/jaconv.html>`_
+
+.. code:: python
+
+  import jaconvV2
+
+
+  # Test if Zenkaku
+  jaconvV2.is_zen('Ｄ')
+  # => True
+
+  # Test if Hankaku
+  jaconvV2.is_han('D')
+  # => True
+
+
+  # Hiragana to Katakana
+  jaconvV2.hira2kata('ともえまみ')
+  # => 'トモエマミ'
+
+  # Hiragana to half-width Katakana
+  jaconvV2.hira2hkata('ともえまみ')
+  # => 'ﾄﾓｴﾏﾐ'
+
+  # Katakana to Hiragana
+  jaconvV2.kata2hira('巴マミ')
+  # => '巴まみ'
+
+  # half-width character to full-width character
+  # default parameters are followings: kana=True, ascii=False, digit=False
+  jaconvV2.h2z('ﾃｨﾛ･ﾌｨﾅｰﾚ')
+  # => 'ティロ・フィナーレ'
+
+  # half-width character to full-width character
+  # but only ascii characters
+  jaconvV2.h2z('abc', kana=False, ascii=True, digit=False)
+  # => 'ａｂｃ'
+
+  # half-width character to full-width character
+  # but only digit characters
+  jaconvV2.h2z('123', kana=False, ascii=False, digit=True)
+  # => '１２３'
+
+  # half-width character to full-width character
+  # except half-width Katakana
+  jaconvV2.h2z('ｱabc123', kana=False, digit=True, ascii=True)
+  # => 'ｱａｂｃ１２３'
+
+  # an alias of h2z
+  jaconvV2.hankaku2zenkaku('ﾃｨﾛ･ﾌｨﾅｰﾚabc123')
+  # => 'ティロ・フィナーレabc123'
+
+  # full-width character to half-width character
+  # default parameters are followings: kana=True, ascii=False, digit=False
+  jaconvV2.z2h('ティロ・フィナーレ')
+  # => 'ﾃｨﾛ・ﾌｨﾅｰﾚ'
+
+  # full-width character to half-width character
+  # but only ascii characters
+  jaconvV2.z2h('ａｂｃ', kana=False, ascii=True, digit=False)
+  # => 'abc'
+
+  # full-width character to half-width character
+  # but only digit characters
+  jaconvV2.z2h('１２３', kana=False, ascii=False, digit=True)
+  # => '123'
+
+  # full-width character to half-width character
+  # except full-width Katakana
+  jaconvV2.z2h('アａｂｃ１２３', kana=False, digit=True, ascii=True)
+  # => 'アabc123'
+
+  # an alias of z2h
+  jaconvV2.zenkaku2hankaku('ティロ・フィナーレａｂｃ１２３')
+  # => 'ﾃｨﾛ･ﾌｨﾅｰﾚａｂｃ１２３'
+
+  # normalize
+  jaconvV2.normalize('ティロ･フィナ〜レ', 'NFKC')
+  # => 'ティロ・フィナーレ'
+
+  # Hiragana to alphabet
+  jaconvV2.kana2alphabet('じゃぱん')
+  # => 'japan'
+
+  # Alphabet to Hiragana
+  jaconvV2.alphabet2kana('japan')
+  # => 'じゃぱん'
+
+  # Katakana to Alphabet
+  jaconvV2.kata2alphabet('ケツイ')
+  # => 'ketsui'
+
+  # Alphabet to Katakana
+  jaconvV2.alphabet2kata('namba')
+  # => 'ナンバ'
+
+  # Hiragana to Julius's phoneme format
+  jaconvV2.hiragana2julius('てんきすごくいいいいいい')
+  # => 't e N k i s u g o k u i:'
+
+NOTE
+============
+
+jaconvV2.normalize method expand unicodedata.normalize for Japanese language processing.
+
+.. code::
+
+    '〜' => 'ー'
+    '～' => 'ー'
+    "’" => "'"
+    '”'=> '"'
+    '“' => '``'
+    '―' => '-'
+    '‐' => '-'
+    '˗' => '-'
+    '֊' => '-'
+    '‐' => '-'
+    '‑' => '-'
+    '‒' => '-'
+    '–' => '-'
+    '⁃' => '-'
+    '⁻' => '-'
+    '₋' => '-'
+    '−' => '-'
+    '﹣' => 'ー'
+    '－' => 'ー'
+    '—' => 'ー'
+    '―' => 'ー'
+    '━' => 'ー'
+    '─' => 'ー'
+
+
+
+
+
+.. |travis| image:: https://app.travis-ci.com/MikimotoH/jaconv.svg?branch=master
+    :target: https://app.travis-ci.com/MikimotoH/jaconv
+    :alt: travis-ci.org
+
+.. |coveralls| image:: https://coveralls.io/repos/github/MikimotoH/jaconv/badge.svg?branch=master
+    :target: https://coveralls.io/github/MikimotoH/jaconv?branch=master
+    :alt: coveralls.io
+
+.. |pyversion| image:: https://img.shields.io/pypi/pyversions/jaconv.svg
+
+.. |version| image:: https://img.shields.io/pypi/v/jaconv.svg
+    :target: http://pypi.python.org/pypi/jaconv/
+    :alt: latest version
+
+.. |license| image:: https://img.shields.io/pypi/l/jaconv.svg
+    :target: http://pypi.python.org/pypi/jaconv/
+    :alt: license
+
+
+CHANGES
+=======
+
+0.4 (2021-08-24)
+-------------------
+ - Add functions: is_han(char): Check if character is Hankaku
+ - Add Function: is_zen(char): Check if character is Zenkaku
+
+
+0.3 (2021-03-29)
+-------------------
+- Fix bug (alphabet2kana) thanks @Cuddlemuffin007
+- Support Python 3.8 and 3.9
+- Add handy functions: alphabet2kata and kata2alphabet. thanks @kokimame
+- Add function for julius: hiragana2julius
+
+0.2.4 (2018-02-04)
+-------------------
+- Fix bug (kana2alphabet)
+- Support Python 3.7
+- No longer support Python 2.6
+- Add aliases of z2h -> zenkaku2hankaku and h2z -> hankaku2zenkaku
+
+0.2.3 (2018-02-03)
+-------------------
+- Fix bugs (alphabet2kana, kana2alphabet) thanks @letuananh
+
+0.2.2 (2018-01-22)
+-------------------
+- Fix bug (kana2alphabet) thanks @kokimame
+- Support Python 3.6
+
+0.2.1 (2017-09-14)
+-------------------
+- Fix bugs (alphabet2kana, kana2alphabet)
+
+0.2 (2015-04-02)
+------------------
+
+- Change module name jctconv -> jaconv
+- Add alphabet and hiragana interconvert (alphabet2kana, kana2alphabet)
+
+0.1.1 (2015-03-12)
+------------------
+
+- Support Windows
+- Support Python 3.5
+
+
+0.1 (2014-11-24)
+------------------
+
+- Add some Japanese characters to convert table (ゝゞ・「」。、)
+- Decresing memory usage
+- Some function names are deprecated (hankaku2zenkaku, zenkaku2hankaku, H2K, H2hK, K2H)
+
+
+0.0.7 (2014-03-22)
+------------------
+
+z2h and h2z allow mojimoji-like target character type determination.
+Bug fix about Half Kana conversion.
+
+
+
