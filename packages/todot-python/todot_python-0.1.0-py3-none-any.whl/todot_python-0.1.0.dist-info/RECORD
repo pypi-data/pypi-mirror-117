@@ -1,0 +1,14 @@
+todot/__init__.py,sha256=_4_YEr1WIxKVxumOE5ul-Flw2omUrp9rsFNTmR9nsEg,99
+todot/__main__.py,sha256=k04VI60bQDo_J8OrWal8honb4Be2rclnmu8S3Y_1s_A,2308
+todot/cli.py,sha256=V5azsMrT42jHv2GN-Wp8-ckLfz7xNcFYN7xCvefVWcU,2468
+todot/constants.py,sha256=6wHXUg8YbtArJADEVIq71Esnpx9pLRM5IA39F3bgADE,763
+todot/finder.py,sha256=zeiB7aocm2lztREmPtg6SpysfQLeKq3RA2So4vDV-c4,2297
+todot/parser.py,sha256=zMLF03bkF15ALmZfWm-Reyraqfemdyj5Dj12ztQRulc,1538
+todot/printer.py,sha256=EDA7-f40j6vguijMT9YnzZETVJEB_VKV1QFoNJ8bthQ,4663
+todot/todo.py,sha256=XNcVLgyJiknO8-_D3eBpT4Ybp87Wnf65i_UFetV6miU,587
+todot_python-0.1.0.dist-info/LICENSE,sha256=gSuq5cK5Hq0-vOBietDKNXpPH9p85VbeZ8hvbk_DS0Y,1088
+todot_python-0.1.0.dist-info/METADATA,sha256=cvD5aL50bVzCTKPgjMa9KqI5KJhIj9vltxPpxhMqWmM,7018
+todot_python-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+todot_python-0.1.0.dist-info/entry_points.txt,sha256=RtIeRKn-n_hb1N_aFwVGFmSgTypgvkBIYDmcpZ6ZhX4,46
+todot_python-0.1.0.dist-info/top_level.txt,sha256=-AQrxS85ylRJmffCNQR9FCsrmOrgmI1pB4rPIsBAGj8,6
+todot_python-0.1.0.dist-info/RECORD,,
