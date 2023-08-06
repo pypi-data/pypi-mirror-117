@@ -1,0 +1,9 @@
+LICENSE
+README.md
+dime.py
+setup.py
+dime_pytorch.egg-info/PKG-INFO
+dime_pytorch.egg-info/SOURCES.txt
+dime_pytorch.egg-info/dependency_links.txt
+dime_pytorch.egg-info/requires.txt
+dime_pytorch.egg-info/top_level.txt
