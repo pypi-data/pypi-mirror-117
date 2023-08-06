@@ -1,0 +1,13 @@
+rcsb/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+rcsb/utils/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+rcsb/utils/struct/CathClassificationProvider.py,sha256=VVHXa3voBJ1wgA0NAiTyYA37Gas7xRwqUWYxtgI1Dgc,12976
+rcsb/utils/struct/EcodClassificationProvider.py,sha256=h_f0Gphd_UnKc5psK3r3eXYp__SFaop3mwUCj0BfU50,14804
+rcsb/utils/struct/Scop2ClassificationProvider.py,sha256=dL3i8CV8yoYypNhK1v-dugsSpqGL9-MXAAQ7l-CQR_s,18057
+rcsb/utils/struct/ScopClassificationProvider.py,sha256=ybkG7D4hOgpVJPwRPeQVc0WqWhU6wCk2DLHsiFekHgs,16555
+rcsb/utils/struct/__init__.py,sha256=Y1-B3jyFN6qzlQg8lNfh56xUdCwKw4gaOA9TjqXhDgM,154
+rcsb.utils.struct-0.35.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rcsb.utils.struct-0.35.dist-info/METADATA,sha256=XzKVBNrZjswqHZOjg2UrX7rN2hA31VYw70TrqrV1_OA,1951
+rcsb.utils.struct-0.35.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+rcsb.utils.struct-0.35.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+rcsb.utils.struct-0.35.dist-info/top_level.txt,sha256=o9JzKwjXZKvIt99MG_WvJuOnR1DZn6_CIPtgWgUB0E8,5
+rcsb.utils.struct-0.35.dist-info/RECORD,,
