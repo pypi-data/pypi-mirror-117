@@ -1,0 +1,10 @@
+vanidl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vanidl/analyzer.py,sha256=P-L4gt0WPIz9ME9JFj0LWlA4kt1QUGtcS2MRm9X05gk,69429
+vanidl/configuraton.py,sha256=jyyQHz3zxGh0mRZiVmQhJx0ADgEWRZI1DU1cfNeqb1Q,860
+vanidl/constants.py,sha256=kUIcGXlWXksMQAVJzzTmT2w7QyMMuc5-Atw3152Gnjg,918
+vanidl/error_code.py,sha256=oiMmjILEtjR7r0rE9Ngfg79dIvHtkGyLwD_fSbO96DA,2104
+vanidl-0.0.8.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+vanidl-0.0.8.dist-info/METADATA,sha256=GjTLQYFLB6ZXFWP2TD3RcOd4tRnPcLlMA7xg3WDDhVs,3723
+vanidl-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vanidl-0.0.8.dist-info/top_level.txt,sha256=ie1FIEcQHYp13rNzqPwxoTvd70w9fUSGWEb0r-XRlTc,7
+vanidl-0.0.8.dist-info/RECORD,,
