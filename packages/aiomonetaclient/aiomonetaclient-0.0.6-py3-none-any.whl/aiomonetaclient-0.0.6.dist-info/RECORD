@@ -1,0 +1,10 @@
+aiomonetacleint/__init__.py,sha256=VnQrstaD2uzzEDyVIbx61naYLrrXLmVOgrqNNAoZwc4,73
+aiomonetacleint/client.py,sha256=OFXAhgldK3_asvisrIzsL9ai5kIp5HT08ub45PI6_wg,7064
+aiomonetacleint/conf.py,sha256=2i4rziBbNzl8HnhALyVRpq8ig0a1Fs-a2JxbiWRtUN4,68
+aiomonetacleint/decoders.py,sha256=XYA3L2pvAqngSovTxKBJRz6BHe851l8RCQKiEE0skQA,440
+aiomonetacleint/models.py,sha256=mrsbVY83It5UQbRjxBN0lGsU7kMpX3xuTRtj9NKpM1Q,18386
+aiomonetaclient-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aiomonetaclient-0.0.6.dist-info/METADATA,sha256=ZYYE2Ur_z7DO4wRCwZ6bc6_xdiNwqwIkhhXHaV9QY-g,1192
+aiomonetaclient-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aiomonetaclient-0.0.6.dist-info/top_level.txt,sha256=toiXEdG2Eeq6mgzL-SL1zT2bQ7Dd3frK0AEmgwBHPA8,16
+aiomonetaclient-0.0.6.dist-info/RECORD,,
