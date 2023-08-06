@@ -1,0 +1,156 @@
+Metadata-Version: 1.2
+Name: sycc
+Version: 0.5.7
+Summary: 三圆计算器,cmd或shell(Terminal) sycc命令开始运行,ps:ycc是原版,sycc是因作者需要而定制版(不欢迎下载) ycc-tset版本是ycc和sycc测试上传版本
+Home-page: http://pypi.org/project/ycc
+Author: 神秘的·
+Author-email: 3046479366@qq.com
+License: MIT
+Project-URL: pydroid(python for android仅限中国大陆使用, https://wws.lanzoui.com/iK2GFm24t3a
+Project-URL: pydroid文件密码python, https://wws.lanzoux.com/iK2GFm24t3a
+Description: 
+        
+        sycc
+        ====
+        
+        *time-2020-2021*
+        
+        s是Simplify的意思,y是圆的意思,第一个c指代Cylinder（圆柱）,第二个c指代Ring（圆环）,第三个c是指Cylinder（圆柱）
+        
+        三圆整合，看不懂简体中文别用!
+        
+        作者定制版，若想使用原版请到:https://pypi.org/project/ycc/
+        
+        与ycc差别并不大，只要是不恶搞就与sycc没区别，sycc仅仅是优化print和处理异常的方式
+        
+        
+        Install and Upgrade and run
+        -------------------------------------------
+        使用pip下载:
+        
+        ::
+            
+            $pip install sycc
+        
+        
+        使用pip更新:
+        
+        ::
+            
+            pip install --upgrade sycc
+        
+        运行run :
+        
+        ::
+                    
+            $sycc    
+        
+        
+        cmd或linux系统的终端使用
+        就只输入这三个字母
+        在终端或cmd运行这几个命令
+        
+        
+        权利
+        ======
+        **本模块的修改权,解释权,著作权,保护作品完整权,复制权,改编权归作者所有，用户只有使用权,在此强调作者规定用户无复制权**
+        
+        **作品翻译权归作者和用户**
+        
+        
+        提示与警告
+        --------------------------------
+        **LINCENSE/LINCENCE不是原版MIT许可证**
+        
+        **tips:作者定制版本!请勿下载,在使用过程中作者视为管理员非用户**
+        
+        **遵守当地法律，违法概不负责，解释权归作者所有** 
+        
+        *作者制作，严禁盗取源代码*
+        *以下声明协议对作者无效*
+        
+        使用代表您已阅读同意以下协议或提示
+        
+        **IDLE:pydroid,python:>3.6**
+        
+        **严禁盗源**
+        
+        When you use this module and there is a program error, you can find me by the e-mail
+        
+        *qq邮箱*:**lwb29@qq.com**:
+        
+        ::
+            
+            When you are using this project,You will agree to the following.
+        
+            1.Follow your local laws and don't break the law. If you break the law, the author will not take any responsibility 
+        
+            2.When you use the project,please reasonable use .
+        
+            If you find bugs when you're using the project,you can send a emali to 3046479366@qq.com
+        
+            3.The final interpretation belongs to the author .
+        
+            4.Don't steal the source code!If you find someone stealing my source code, you can tell me by email
+        
+            , I will give you some compensation
+            
+            5.中国制造
+        
+        
+        Python in Android
+        -----------------------------
+        *推广*
+        
+        使用方法:https://blog.csdn.net/m0_55474082/article/details/113996741
+        
+        下载链接:https://www.lanzoux.com/b01zxzwhe/
+        
+        密码:python
+        
+        
+        问题
+        =========
+        q:为什么经常出现退出或切换模式?
+        
+        a:如果不及时切换或退出则会出现各种报错,这也不是大家想看到的.
+        
+        q:为什么需要密码?
+        
+        a:此版本为作者定制版,暂不提供他人使用.
+        
+        如果还有其他问题邮箱lwb29@qq.com.
+        
+        
+        New
+        ======
+        1.倒计时动态化
+        
+        2.优化显示
+        
+        3.增加加载进度条
+        
+        4.新的徽标
+        
+        5.print第一次优化
+        
+        6.sycc不支持mac系统,因为作者无法测试
+Keywords: ycc,3y,a_3y,Circle,圆,圆柱,圆环,py,Chinese,sycc,python,windows,linux,3,y,yc,yz
+Platform: UNKNOWN
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Development Status :: 6 - Mature
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Android
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Terminals
+Classifier: Topic :: System :: Shells
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
