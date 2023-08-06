@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: tf-al
+Version: 0.0.2
+Summary: Active learning with tensorflow. Create custom and generic active learning loops. Export and share your experiments.
+Home-page: https://github.com/ExLeonem/tf-al
+License: MIT
+Keywords: active learning,deep learning,tensorflow
+Author: Maksim Sandybekov
+Author-email: maksim.sandybekov@live.de
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1,<2)
+Requires-Dist: scikit-learn (>=0.24.2,<0.25.0)
+Requires-Dist: tensorflow (>=2,<3)
+Requires-Dist: tqdm (>=4.62.2,<5.0.0)
+Project-URL: Repository, https://github.com/ExLeonem/tf-al
+Description-Content-Type: text/markdown
+
+
+# Active learning with tensorflow
+
+
+# Index
+
+1. [Installation](#Installation)
+2. [Getting started](#Getting-started)
+    1. [Model wrapper](#Model-wrapper)
+    2. [Acquisition functions](#Acquisition-functions)
+    1. [Basic active learning loop](#Basic-active-learning-loop)
+3. [Development](#Development)
+    1. [Setup](#Setup)
+    2. [Scripts](#Scripts)
+4. [Contribution](#Contribution)
+5. [Issues](#Issues)
+
+
+
+# Installation
+
+
+```shell
+$ pip install tf-al
+```
+
+
+# Getting started
+
+The library 
+
+
+## Model wrapper
+
+Model wrappers are use to create interfaces to the active learning loop.
+
+
+
+## Acquisition functions
+
+
+
+
+
+## Basic active learning loop
+
+
+```
+import tensorflow as tf
+from tf_al import ActiveLearningLoop, Dataset, Pool
+
+
+
+```
+
+
+
+
+
+
+
+# Development
+
+## Setup
+
+1. Create a virtual env (optional)
+2. [Install and Setup Poetry](https://python-poetry.org/docs/#installation)
+3. Install package dependencies using poetry
+
+
+## Scripts
+
+### Create documentation
+
+To create documentation for the `./active_leanring` directory. Execute following command
+in `./docs`
+
+```shell
+$ make html
+```
+
+### Run tests
+
+To perform automated unittests run following command in the root package directory.
+
+```shell
+$ pytest
+```
+
+To generate additional coverage reports run.
+
+```shell
+$ pytest --cov
+```
+
+
+
+# Contribution
+
+# Issues
