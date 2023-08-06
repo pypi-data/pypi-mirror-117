@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "coverage-lcov"
+version = "0.2.0"
+description = "A simple .coverage to LCOV converter"
+authors = ["Adam Weeden <adamweeden@gmail.com>", "Chay Choong <chaychoong@gmail.com>"]
+repository = "https://github.com/TheCleric/coverage-lcov"
+readme = "README.md"
+keywords = ["coverage"]
+
+[tool.poetry.scripts]
+coverage-lcov = "coverage_lcov.cli:main"
+test = "pytest:main"
+
+[tool.poetry.dependencies]
+python = "^3.6.3"
+coverage = "^5.5"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.5b0"
+isort = "^5.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
