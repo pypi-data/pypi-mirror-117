@@ -1,0 +1,12 @@
+requests
+time
+scrapy
+tqdm
+pandas
+re
+numpy
+json
+jellyfish
+urllib
+os
+sys
