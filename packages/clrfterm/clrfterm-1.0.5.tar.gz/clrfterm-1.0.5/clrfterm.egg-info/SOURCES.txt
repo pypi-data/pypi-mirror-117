@@ -1,0 +1,15 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+clrfterm/__init__.py
+clrfterm/ansi.py
+clrfterm/error.py
+clrfterm/progress.py
+clrfterm/win.py
+clrfterm.egg-info/PKG-INFO
+clrfterm.egg-info/SOURCES.txt
+clrfterm.egg-info/dependency_links.txt
+clrfterm.egg-info/not-zip-safe
+clrfterm.egg-info/requires.txt
+clrfterm.egg-info/top_level.txt
