@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+eazyprofiler/GetStats.py
+eazyprofiler/__init__.py
+eazyprofiler/__main__.py
+eazyprofiler/_version.py
+eazyprofiler/cli.py
+eazyprofiler.egg-info/PKG-INFO
+eazyprofiler.egg-info/SOURCES.txt
+eazyprofiler.egg-info/dependency_links.txt
+eazyprofiler.egg-info/entry_points.txt
+eazyprofiler.egg-info/top_level.txt
