@@ -1,0 +1,8 @@
+README.md
+setup.py
+dtmconverter.egg-info/PKG-INFO
+dtmconverter.egg-info/SOURCES.txt
+dtmconverter.egg-info/dependency_links.txt
+dtmconverter.egg-info/entry_points.txt
+dtmconverter.egg-info/requires.txt
+dtmconverter.egg-info/top_level.txt
