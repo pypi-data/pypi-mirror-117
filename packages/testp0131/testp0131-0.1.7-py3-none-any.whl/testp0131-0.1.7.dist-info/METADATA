@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: testp0131
+Version: 0.1.7
+Summary: 
+Author: qiujingyu
+Author-email: qiujingyu@momenta.ai
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
