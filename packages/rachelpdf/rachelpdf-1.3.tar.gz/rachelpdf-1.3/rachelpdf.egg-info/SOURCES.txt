@@ -1,0 +1,5 @@
+rachelpdf/setup.py
+rachelpdf.egg-info/PKG-INFO
+rachelpdf.egg-info/SOURCES.txt
+rachelpdf.egg-info/dependency_links.txt
+rachelpdf.egg-info/top_level.txt
