@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: MoonrakerPy
+Version: 0.0.2
+Summary: A Python package for interface with the Moonraker API.
+Home-page: https://github.com/alchemyEngine/MoonrakerPy
+Author: Robert Pazdzior
+Author-email: robertp@norbital.com
+License: UNKNOWN
+Description: # MoonrakerPy
+        
+        **WIP!**
+        
+        A Python convenience package for simplified interfacing with the [Moonraker](https://github.com/Arksine/moonraker) API. Essentially a `requests` wrapper.
+        
+        ## Installation
+        From PyPI:
+        
+            pip install moonrakerpy
+        
+        ## Basic Usage
+        
+        ```py
+        import moonrakerpy as moonpy
+        
+        # Instantiate a `MoonrakerPrinter` object using the web/IP address of the target
+        # Moonraker installation.
+        printer = moonpy.MoonrakerPrinter('http://192.168.1.69')
+        
+        # Send arbitrary g-code commands
+        printer.send_gcode('G28 X')
+        
+        # Set temperatures
+        printer.set_extruder_temp(245)
+        printer.set_bed_temp(105)
+        
+        # Read in g-code terminal messages
+        for msg in printer.get_gcode(count=5):
+            printer(msg)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
