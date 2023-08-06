@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: gradsflow
+Version: 0.0.1a1
+Summary: An AutoML Library made with Optuna and PyTorch Lightning
+Home-page: https://docs.gradsflow.com
+Author: Aniket Maurya
+Author-email: hello@gradsflow.com
