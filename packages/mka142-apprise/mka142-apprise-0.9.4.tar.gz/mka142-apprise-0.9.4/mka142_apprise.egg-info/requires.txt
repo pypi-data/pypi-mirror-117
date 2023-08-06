@@ -1,0 +1,7 @@
+PyYAML
+click>=5.0
+cryptography
+markdown
+requests
+requests-oauthlib
+six
