@@ -1,0 +1,10 @@
+aio_databases/__init__.py,sha256=1AMOeqTWFrjk7kZVVFlwI9p4enlei7Hd4zt34nFfg6k,2990
+aio_databases/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_databases/backends/__init__.py,sha256=bvfZaojsPrbg93ubWB7UMKvv399JYoXPX3zW-t2xG_4,4137
+aio_databases/backends/mysql.py,sha256=0o3qq-C7NZpBFbdrmoSA6uhYnb3o5tWCt23NvNIwdPI,3597
+aio_databases/backends/postgres.py,sha256=oaxdydXeWngu1uc8jEw64BW1SBELkXtN6soB4PaaGw4,2700
+aio_databases/backends/sqlite.py,sha256=XwSvOi5qinQyIEvrvRG_FNL7E4ZW0xexFTT1cQ1Kdts,2710
+aio_databases-0.0.8.dist-info/METADATA,sha256=W90JHZL8uHoJq8tVJ6WzaImUQJdFh49xQShDcZtii0M,2792
+aio_databases-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aio_databases-0.0.8.dist-info/top_level.txt,sha256=7zh8uSx6Cwb7mTldAVUL9gWLgMTLgdWJnnQ-gtJb1dQ,14
+aio_databases-0.0.8.dist-info/RECORD,,
