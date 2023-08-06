@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: quant-util
+Version: 1.0.1
+Summary: local quant_util
+Home-page: https://www.python.org/
+Author: linzeming
+Author-email: linzeming1995@outlook.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
