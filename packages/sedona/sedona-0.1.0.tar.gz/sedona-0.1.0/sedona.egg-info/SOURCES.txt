@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+sedona.py
+setup.py
+modules/Converter.py
+modules/Downloader.py
+modules/__init__.py
+sedona.egg-info/PKG-INFO
+sedona.egg-info/SOURCES.txt
+sedona.egg-info/dependency_links.txt
+sedona.egg-info/entry_points.txt
+sedona.egg-info/requires.txt
+sedona.egg-info/top_level.txt
