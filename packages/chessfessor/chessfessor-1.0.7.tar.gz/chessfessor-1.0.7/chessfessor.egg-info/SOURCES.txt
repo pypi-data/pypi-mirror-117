@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+chessfessor/__init__.py
+chessfessor/chessfessor.py
+chessfessor.egg-info/PKG-INFO
+chessfessor.egg-info/SOURCES.txt
+chessfessor.egg-info/dependency_links.txt
+chessfessor.egg-info/entry_points.txt
+chessfessor.egg-info/top_level.txt
+chessfessor/extractors/__init__.py
+chessfessor/extractors/chessdotcom_extractor.py
+chessfessor/extractors/lichess_extractor.py
