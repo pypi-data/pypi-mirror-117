@@ -1,0 +1,6 @@
+setup.py
+syte/__init__.py
+syte.egg-info/PKG-INFO
+syte.egg-info/SOURCES.txt
+syte.egg-info/dependency_links.txt
+syte.egg-info/top_level.txt
