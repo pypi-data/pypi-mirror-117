@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nn-rsa
+Version: 1.0.2
+Summary: rsa加密
+Home-page: http://www.nnzhp.cn/
+Author: HanyangNiu
+Author-email: niuhanyang@163.com
+License: MIT
+Keywords: rsa nn_rsa
+Requires-Dist: rsa (>=4.7.2)
+
+这是一个基于rsa模块模块封装的加密模块
+
+
