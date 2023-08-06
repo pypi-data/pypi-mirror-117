@@ -1,0 +1,6 @@
+Change Log 
+
+===============
+0.0.17
+    fixes logs directory and import error when running get_data script
+0.0.18
