@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: iipg
+Version: 0.0.1
+Summary: This is just a test
+Home-page: UNKNOWN
+Author: edwardzhu
+Author-email: zhuhy163@163.com
+License: PRIVATE
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: scrapy
+
+## Scrapy Tutorial
+
+This is just a demo.
+
