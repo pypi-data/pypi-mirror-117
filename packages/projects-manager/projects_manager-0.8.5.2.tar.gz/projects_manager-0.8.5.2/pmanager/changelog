@@ -1,0 +1,3 @@
+Improvements :
+
+- Fixed run command handling, now execute commands from inside project directory
