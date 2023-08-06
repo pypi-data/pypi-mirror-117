@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aws-xray-sqs-lambda-segment-shim
+Version: 0.4.1
+Summary: aws_xray_sqs_lambda_segment_shim is now called aws_xray_lambda_segment_shim.
+Home-page: https://github.com/sam-martin/aws-xray-lambda-segment-shim
+Author: Sam Martin
+Author-email: samjackmartin+aws-xray-sqsl-lambda-segment-shim@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Requires-Python: >=3.6.0
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: aws-xray-lambda-segment-shimh
+
+aws-xray-sqs-lambda-segment-shim
+=====================================
+
+**RENAMED:** This package is now called `aws-xray-lambda-segment-shim <https://pypi.org/project/aws-xray-lambda-segment-shim/>`__.
+Please use this package instead.
+
+
