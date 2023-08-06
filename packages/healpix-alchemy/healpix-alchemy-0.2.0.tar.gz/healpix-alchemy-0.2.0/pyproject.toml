@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "healpix-alchemy"
+version = "0.2.0"
+description = "SQLAlchemy extensions for HEALPix spatially indexed astronomy data"
+readme = "README.md"
+authors = ["Leo Singer <leo.singer@ligo.org>"]
+license = "BSD-3-clause"
+repository = "https://github.com/skyportal/healpix-alchemy"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Topic :: Database",
+    "Topic :: Scientific/Engineering :: Astronomy"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+astropy = "*"
+astropy_healpix = "*"
+mocpy = "*"
+sqlalchemy = "*"
+
+[tool.poetry.dev-dependencies]
+numpy = "*"
+psycopg2-binary = "*"
+pytest = "*"
+pytest-benchmark = "*"
+pytest-postgresql = "*"
+scipy = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
