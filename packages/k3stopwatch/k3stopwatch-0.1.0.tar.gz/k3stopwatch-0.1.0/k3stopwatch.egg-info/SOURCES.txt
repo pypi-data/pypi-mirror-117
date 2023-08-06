@@ -1,0 +1,10 @@
+setup.py
+k3stopwatch/__init__.py
+k3stopwatch/k3stopwatch.py
+k3stopwatch/setup.py
+k3stopwatch/synopsis.py
+k3stopwatch.egg-info/PKG-INFO
+k3stopwatch.egg-info/SOURCES.txt
+k3stopwatch.egg-info/dependency_links.txt
+k3stopwatch.egg-info/requires.txt
+k3stopwatch.egg-info/top_level.txt
