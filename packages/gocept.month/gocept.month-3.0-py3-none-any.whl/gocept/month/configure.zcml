@@ -1,0 +1,30 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  >
+
+  <include package="zope.security" file="meta.zcml" />
+  <include package="zope.component" file="meta.zcml" />
+
+  <class class=".Month">
+    <allow interface=".IMonth" />
+    <allow attributes="__iadd__" />
+  </class>
+
+  <class class="datetime.date">
+    <implements interface=".interfaces.IDate" />
+  </class>
+
+  <adapter
+    for=".interfaces.IDate"
+    provides=".IMonth"
+    factory=".adapter.Date"
+    />
+
+  <adapter
+    for="str"
+    provides=".IMonth"
+    factory=".adapter.BuiltinStr"
+    />
+
+</configure>
