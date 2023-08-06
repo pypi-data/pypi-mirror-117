@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+query_log_tracer/__init__.py
+query_log_tracer/__version__.py
+query_log_tracer/trace.py
+query_log_tracer.egg-info/PKG-INFO
+query_log_tracer.egg-info/SOURCES.txt
+query_log_tracer.egg-info/dependency_links.txt
+query_log_tracer.egg-info/requires.txt
+query_log_tracer.egg-info/top_level.txt
+scripts/query-log-tracer
+tests/__init__.py
+tests/test_trace.py
+tests/test_version.py
