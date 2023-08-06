@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+pnow/pnow.egg-info/PKG-INFO
+pnow/pnow.egg-info/SOURCES.txt
+pnow/pnow.egg-info/dependency_links.txt
+pnow/pnow.egg-info/requires.txt
+pnow/pnow.egg-info/top_level.txt
