@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: nlp-basictasks
+Version: 0.1.2
+Summary: a simple framework that can quickly build some basic NLP tasks
+Home-page: https://github.com/xianghuisun/nlp-basictasks
+Author: xianghuisun
+Author-email: 2357094733@qq.com
+License: Apache 2.0
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=1.6.0)
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: seqeval
+Requires-Dist: pandas
+
+# nlp-basictasks
+
+## 安装
+```bash
+pip install --index-url https://pypi.org/project/ nlp-basictasks==0.1.2
+```
+
+
+
