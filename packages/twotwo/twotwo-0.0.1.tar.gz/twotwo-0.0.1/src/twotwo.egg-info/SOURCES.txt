@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/twotwo/__init__.py
+src/twotwo/main.py
+src/twotwo.egg-info/PKG-INFO
+src/twotwo.egg-info/SOURCES.txt
+src/twotwo.egg-info/dependency_links.txt
+src/twotwo.egg-info/top_level.txt
