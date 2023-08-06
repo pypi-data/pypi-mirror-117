@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+szu-autoconnect/__init__.py
+szu-autoconnect/only_ui.py
+szu-autoconnect/run.py
+szu_autoconnect.egg-info/PKG-INFO
+szu_autoconnect.egg-info/SOURCES.txt
+szu_autoconnect.egg-info/dependency_links.txt
+szu_autoconnect.egg-info/requires.txt
+szu_autoconnect.egg-info/top_level.txt
