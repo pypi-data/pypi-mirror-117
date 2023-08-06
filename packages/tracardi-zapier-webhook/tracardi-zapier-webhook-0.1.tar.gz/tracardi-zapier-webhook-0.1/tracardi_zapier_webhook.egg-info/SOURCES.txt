@@ -1,0 +1,10 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+tracardi_zapier_webhook/plugin.py
+tracardi_zapier_webhook.egg-info/PKG-INFO
+tracardi_zapier_webhook.egg-info/SOURCES.txt
+tracardi_zapier_webhook.egg-info/dependency_links.txt
+tracardi_zapier_webhook.egg-info/requires.txt
+tracardi_zapier_webhook.egg-info/top_level.txt
