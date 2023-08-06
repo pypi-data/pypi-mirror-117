@@ -1,0 +1,10 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+tracardi_remote_call/plugin.py
+tracardi_remote_call.egg-info/PKG-INFO
+tracardi_remote_call.egg-info/SOURCES.txt
+tracardi_remote_call.egg-info/dependency_links.txt
+tracardi_remote_call.egg-info/requires.txt
+tracardi_remote_call.egg-info/top_level.txt
