@@ -1,0 +1,16 @@
+odc/aio/__init__.py,sha256=tdBPDw1u_SrF-SbfK-r-E8T1DtO7w5X9UCEPfJ274jg,16677
+odc/aws/__init__.py,sha256=RXQZVBuMvNwPhLiODU3OY-2UbzmYWI0P-FsQoBEaVIg,16696
+odc/aws/_find.py,sha256=W4snBoj9rgo0qJymnmXD4hNt3swKbLFGvsTxYfTrlv8,1721
+odc/aws/dns.py,sha256=NPvMW_UweMawppt0MxQ5SwXX8Ex_5WzQ2gMdwC3Jm1U,3473
+odc/aws/inventory.py,sha256=5a0pAySEMkcQ2XhytYS5vj7fbOrGZcfxuTpPt66FTlU,3468
+odc/aws/misc.py,sha256=c0HnSY5yAO4EYY3m3eMvG5DBIY1Qxa9hnpRQ9MbLG1M,2096
+odc/aws/queue.py,sha256=MFVtOjwKPSriYVrvdj0g6bmCp4QIDWMTC9r0sTilN1Y,5242
+odc/azure/__init__.py,sha256=_BMdnZsnM5kSqM8E8G3P8hFx4hnok0aUAXncVlBrzzE,2325
+odc/cloud/_version.py,sha256=XjyJiDibDV_Z51ez3mi17tJbHaMxh3JTg26NJv2NY80,23
+odc/ppt/__init__.py,sha256=4QHIkbRBlBWwMRofTysGz7teD-EoCa2H6PDU0lvtRYA,3792
+odc/ppt/async_thread.py,sha256=pJNStaGBE2MoW2H0sJHKZTQt8N63kDj41kr9R59pY6w,2007
+odc/thredds/__init__.py,sha256=YbUYxDQq2TaENpX-xz9H6SxnryXanvRSa03_fJ8E5E0,2479
+odc_cloud-0.2.0a0.dist-info/METADATA,sha256=JsWg41mTuZLpITb7A4JdiZzChZMQOksvQqlWIFCbK0c,1133
+odc_cloud-0.2.0a0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+odc_cloud-0.2.0a0.dist-info/top_level.txt,sha256=agQvn12dGbaJZ4cQCqKfiCHBYi8LD3P4v9B2ynmsugQ,4
+odc_cloud-0.2.0a0.dist-info/RECORD,,
