@@ -1,0 +1,3 @@
+[console_scripts]
+cropdoi = doiowa.__main__:main
+
