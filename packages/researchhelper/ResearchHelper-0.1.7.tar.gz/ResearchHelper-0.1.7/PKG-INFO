@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: researchhelper
+Version: 0.1.7
+Summary: A repository of useful functions supporting research.
+Home-page: https://www.baschatel.nl/researchhelper
+Keywords: research,network-analysis,plotting,optimization
+Author: Bas Chatel
+Author-email: bastiaan.chatel@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.4.0,<4.0.0)
+Requires-Dist: networkx (>=2.6.2,<3.0.0)
+Requires-Dist: numpy (>=1.20.1,<2.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: scipy (>=1.6.2,<2.0.0)
+Requires-Dist: tqdm (>=4.62.1,<5.0.0)
+Project-URL: Repository, https://github.com/popoiopo/researchhelper
+Description-Content-Type: text/markdown
+
+# Table of Contents
+
+1.  [Welcome to ResearchHelper](#orga7ce240)
+2.  [Sphinx, Pypi](#org6b44add)
+
+
+<a id="orga7ce240"></a>
+
+# Welcome to ResearchHelper
+
+This is a personal repository of functions that I use throughout projects. Besides that, it could obviously also be useful to others! So see if it holds something for you.
+
+
+<a id="org6b44add"></a>
+
+# Sphinx, Pypi
+
+This package is not only for my functionality, but also to practice in making a package and documenting is correctly. For that I'm using Sphinx. The online hosted documentation is found on my website <https://www.baschatel.nl/ResearchHelper>.
+

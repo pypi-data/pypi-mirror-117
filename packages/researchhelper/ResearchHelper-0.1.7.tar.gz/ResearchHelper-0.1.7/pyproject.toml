@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ResearchHelper"
+version = "0.1.7"
+description = "A repository of useful functions supporting research."
+authors = ["Bas Chatel <bastiaan.chatel@gmail.com>"]
+readme = 'README.md'  # Markdown files are supported
+repository = "https://github.com/popoiopo/researchhelper"
+homepage = "https://www.baschatel.nl/researchhelper"
+keywords = ['research', 'network-analysis', 'plotting', 'optimization']
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.20.1"
+matplotlib = "^3.4.0"
+scipy = "^1.6.2"
+pydantic = "^1.8.2"
+tqdm = "^4.62.1"
+networkx = "^2.6.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
