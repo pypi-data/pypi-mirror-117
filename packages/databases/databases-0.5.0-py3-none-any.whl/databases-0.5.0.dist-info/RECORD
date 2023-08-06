@@ -1,0 +1,16 @@
+databases/__init__.py,sha256=B3bNeh--Sl_TW5VWmNCTUbZ-mogoovNy4UNvi3YiRcc,110
+databases/core.py,sha256=GtbU26tY9rzR74luh5ez1zfV5TYtrRBa4Fd-QMG15QM,17741
+databases/importer.py,sha256=UeU5jzybPYKDTLCnip0SD-NJ6JV0mqSPIDYIHGbC1fM,1104
+databases/interfaces.py,sha256=vhHk1_6_ol5F11sgBJqtkFJDfqhqkbXhy55cpKH9zwA,2288
+databases/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+databases/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databases/backends/aiopg.py,sha256=qTM1HnqLP3effI1DjbxxBV2FeJ_hjkK21549js9Tt-g,9980
+databases/backends/mysql.py,sha256=oh3h7wolO_hTHoxBPWXUp-8vdD_JhB1ruamugRugJ_s,9862
+databases/backends/postgres.py,sha256=_AmDN0ER3-mExrdKdUevnzsBsyofrT5MFmuVCu15T2g,11867
+databases/backends/sqlite.py,sha256=a4Kh6onPrpuBgQFnMENtCVwx-a_gi4jWF0r0dUOH_Ik,8918
+databases-0.5.0.data/data/LICENSE.md,sha256=rRqP1p8qMCB3kKToUMl8a-RwjN2E9EnoY7ZMUq6Eu0c,1518
+databases-0.5.0.dist-info/LICENSE.md,sha256=rRqP1p8qMCB3kKToUMl8a-RwjN2E9EnoY7ZMUq6Eu0c,1518
+databases-0.5.0.dist-info/METADATA,sha256=uUVGrNHmP1wnFk18rNx3PjiN3Z48Qilm0jfvvxx3RCk,4823
+databases-0.5.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+databases-0.5.0.dist-info/top_level.txt,sha256=SyMnm1m_TzLrs_3rWyRdm4A054u0rGeToSJum8uz8xg,29
+databases-0.5.0.dist-info/RECORD,,
