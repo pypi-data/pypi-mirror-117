@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+readme.md
+setup.py
+colloid_polymer_phase_diagram/__init__.py
+colloid_polymer_phase_diagram/phase.py
+colloid_polymer_phase_diagram.egg-info/PKG-INFO
+colloid_polymer_phase_diagram.egg-info/SOURCES.txt
+colloid_polymer_phase_diagram.egg-info/dependency_links.txt
+colloid_polymer_phase_diagram.egg-info/requires.txt
+colloid_polymer_phase_diagram.egg-info/top_level.txt
