@@ -1,0 +1,12 @@
+COPYING
+README.md
+pyproject.toml
+setup.cfg
+src/crunchyrollsubdownloader/__init__.py
+src/crunchyrollsubdownloader/crdl.py
+src/crunchyrollsubdownloader.egg-info/PKG-INFO
+src/crunchyrollsubdownloader.egg-info/SOURCES.txt
+src/crunchyrollsubdownloader.egg-info/dependency_links.txt
+src/crunchyrollsubdownloader.egg-info/entry_points.txt
+src/crunchyrollsubdownloader.egg-info/requires.txt
+src/crunchyrollsubdownloader.egg-info/top_level.txt
