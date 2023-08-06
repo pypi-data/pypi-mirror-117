@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: owl-shell-pipeline
+Version: 0.2.0
+Summary: Owl Shell Pipeline
+Home-page: https://eddienko.github.com/owl-shell-pipeline
+Author: Eduardo Gonzalez Solares
+Author-email: e.gonzalezsolares@gmail.com
+License: GNU General Public License v3
+Keywords: imaxt,owl
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: dask
+Requires-Dist: distributed
+Requires-Dist: owl-pipeline-develop
+
+UNKNOWN
+

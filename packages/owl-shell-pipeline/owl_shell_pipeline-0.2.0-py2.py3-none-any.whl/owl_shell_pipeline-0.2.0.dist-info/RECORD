@@ -1,0 +1,8 @@
+shell_pipeline/__init__.py,sha256=pxlztTsls-8sLw8hIuYnPSQHMWxA_kc3rm7meift7v8,174
+shell_pipeline/main.py,sha256=QUC6vOy3nppasMghvPVJn7AF5qw0icV8PUu-aG82__E,1264
+shell_pipeline/schema.py,sha256=6wPjZ0hjiyXgVIsSsOfW1QJDPCGBx8UvldxK8uo-9WM,385
+owl_shell_pipeline-0.2.0.dist-info/METADATA,sha256=u0GFBtQYnxvn-n_Cmpf1ayNDiC4JuQ2jYk4CgTtzr_Y,680
+owl_shell_pipeline-0.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+owl_shell_pipeline-0.2.0.dist-info/entry_points.txt,sha256=pVG9KYNr2m_B5U5n1OkbcM_8gY82OyrHUkcbwugTdI0,40
+owl_shell_pipeline-0.2.0.dist-info/top_level.txt,sha256=W6XwXjZPtXeKIW8qJi5EAbU0InG-te8xqNul_RGajtI,15
+owl_shell_pipeline-0.2.0.dist-info/RECORD,,
