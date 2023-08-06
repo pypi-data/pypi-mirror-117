@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: sklonovani_jmen
+Version: 0.1.1
+Summary: Module for using the API of www.sklonovani-jmen.cz in Python
+Home-page: https://github.com/standakozak/sklonovani_jmen
+Author: Stanislav Kozák
+Author-email: kozakstanda23@gmail.com
+License: MIT
+Download-URL: https://github.com/standakozak/sklonovani_jmen/archive/refs/tags/v_011.tar.gz
+Description: UNKNOWN
+Keywords: sklonovani-jmen,Czech grammar,API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
