@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: synthesized-insight
+Version: 0.2a0
+Summary: Synthesized data insights and evaluation framework.
+Home-page: UNKNOWN
+Author: Synthesized Ltd.
+Author-email: team@synthesized.io
+License: UNKNOWN
+Project-URL: homepage, https://synthesized.io
+Project-URL: documentation, https://docs.synthesized.io/
+Project-URL: repository, https://github.com/synthesized-io/synthesized-insight
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: dev
+License-File: LICENSE.md
+
+# synthesized-insight
+
+
