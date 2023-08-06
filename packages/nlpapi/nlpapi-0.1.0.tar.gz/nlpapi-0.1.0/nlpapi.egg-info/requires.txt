@@ -1,0 +1,6 @@
+spacy
+spacy-pkuseg
+fastapi
+uvicorn
+ujson
+pysbd
