@@ -1,0 +1,5 @@
+mutagen
+pycryptodomex
+requests
+tqdm
+json_database>=0.5.6
