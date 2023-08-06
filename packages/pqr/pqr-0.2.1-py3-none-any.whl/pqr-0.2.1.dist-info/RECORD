@@ -1,0 +1,15 @@
+pqr/__init__.py,sha256=CwQry_B-91tX2_xK6rGlQyv31chg9WcKn0j6eQpNINU,407
+pqr/attribution.py,sha256=Uc8WMvV4mLDnQ_5O40-cdS5Zc2bYWis5ImtzwEmxQwY,1858
+pqr/benchmarks.py,sha256=HtYiIY2mbTc2ZShBZ967RVXc0CQ0kikjDncyJCOlt5s,3751
+pqr/factor_models.py,sha256=mZXP8I8-hWiBwMeB0J9_yxNBoy678ut-ww3Me4GwDtw,6849
+pqr/factors.py,sha256=DkiOY2ni2AK054XppbgKdUPmLZes0zY_Rx9yIBmpwcw,5046
+pqr/metrics.py,sha256=2L-G7a18gwUZdok4Pupnyx3ZevDqR43CWQsrf2eerug,28273
+pqr/plotting.py,sha256=rB7izWIft-aKgLr1qkGsYrzk6x7KaHQzATT9Gw3tRsM,1797
+pqr/portfolios.py,sha256=dH7xXSnH1Oc18pXRa-PHbwtfF4SImFIuuhHwHDLA630,13454
+pqr/tests.py,sha256=hBaHMznjozOjc-YMEI1iXXOJjvUvqe2-mVypgF2n-UY,2636
+pqr/utils.py,sha256=Z-osFZW5uIgtgFVGCn6oHRd65yquQkg0rxqWibIcVfA,1675
+pqr-0.2.1.dist-info/LICENSE,sha256=Kx6kOpq88TWmOXumz7p5pgKt-pT__T7nHggmfKnv7MU,1074
+pqr-0.2.1.dist-info/METADATA,sha256=2yo8ORzqmylKsx24xyLvA7JK_xb_b4iHABYUNh6qiRM,3012
+pqr-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pqr-0.2.1.dist-info/top_level.txt,sha256=JXc_68HPzRZ6hs0U3sdGjvYFqoHfw7WPT5Zci3-SlW0,4
+pqr-0.2.1.dist-info/RECORD,,
