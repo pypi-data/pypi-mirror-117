@@ -1,0 +1,3 @@
+[console_scripts]
+gitlabci-jsonschema-lint = gitlabci_lint:main
+
