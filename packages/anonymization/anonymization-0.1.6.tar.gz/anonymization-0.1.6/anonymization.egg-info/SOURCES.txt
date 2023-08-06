@@ -1,0 +1,5 @@
+anonymization.egg-info/PKG-INFO
+anonymization.egg-info/SOURCES.txt
+anonymization.egg-info/dependency_links.txt
+anonymization.egg-info/requires.txt
+anonymization.egg-info/top_level.txt
