@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: not-dead-yet
+Version: 0.3.0
+Summary: A simple live server implementation.
+License: MIT
+Author: Angus Hollands
+Author-email: goosey15@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
