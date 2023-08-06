@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: cdktf-gitlab-runner
+Version: 0.0.0
+Summary: Construct a CDK tf
+Home-page: https://github.com/neilkuan/cdktf-gitlab-runner.git
+Author: Neil Kuan<guan840912@gmail.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/neilkuan/cdktf-gitlab-runner.git
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cdktf-gitlab-runner
+
+### Example
+
+```python
+# Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+import cdktf_cdktf_provider_google as gcp
+import cdktf as cdktf
+from constructs import Construct
+from ..index import GitlabRunnerAutoscaling
+
+class IntegDefaultStack(cdktf.TerraformStack):
+    def __init__(self, scope, id):
+        super().__init__(scope, id)
+        local = "asia-east1"
+        project_id = f"{process.env.PROJECT_ID}"
+        provider = gcp.GoogleProvider(self, "GoogleAuth",
+            region=local,
+            zone=local + "-c",
+            project=project_id
+        )
+        GitlabRunnerAutoscaling(self, "GitlabRunnerAutoscaling",
+            gitlab_token=f"{process.env.GITLAB_TOKEN}",
+            provider=provider
+        )
+
+app = cdktf.App()
+IntegDefaultStack(app, "gitlab-runner")
+app.synth()
+```
+
+
