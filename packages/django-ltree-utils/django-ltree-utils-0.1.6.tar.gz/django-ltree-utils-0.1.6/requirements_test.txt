@@ -1,0 +1,5 @@
+flake8>=3.9,<3.10
+
+# Not actually used at the moment
+# codecov>=2.0.0
+# coverage==4.4.1
