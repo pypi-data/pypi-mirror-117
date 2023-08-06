@@ -1,0 +1,17 @@
+certifi
+monotonic
+py2neo>=2021.1.4
+six
+
+[:platform_system == "Windows"]
+pyreadline>=2.1
+
+[:python_version < "3.6"]
+click<8.0
+cryptography~=2.0
+docker<5.0
+
+[:python_version >= "3.6"]
+click
+cryptography~=3.0
+docker
