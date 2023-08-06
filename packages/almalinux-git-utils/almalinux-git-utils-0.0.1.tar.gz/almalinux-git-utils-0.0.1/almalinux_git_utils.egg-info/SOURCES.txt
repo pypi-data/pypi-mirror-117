@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+almalinux/gitutils/__init__.py
+almalinux/gitutils/blob_upload.py
+almalinux/gitutils/common.py
+almalinux/gitutils/errors.py
+almalinux/gitutils/get_sources.py
+almalinux_git_utils.egg-info/PKG-INFO
+almalinux_git_utils.egg-info/SOURCES.txt
+almalinux_git_utils.egg-info/dependency_links.txt
+almalinux_git_utils.egg-info/entry_points.txt
+almalinux_git_utils.egg-info/not-zip-safe
+almalinux_git_utils.egg-info/requires.txt
+almalinux_git_utils.egg-info/top_level.txt
