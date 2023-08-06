@@ -1,0 +1,15 @@
+libusbsio/__init__.py,sha256=janGTLezfY-5il_90Fcq6R3C2yW_vGWHmazzkmuWSvY,763
+libusbsio/__main__.py,sha256=nWWNq5lAvBl6mQ3_dOwngYPaRUqbxhnqwhyyK58ykhI,251
+libusbsio/libusbsio.py,sha256=aJyfEuZS3-VOcxnzxI1UOUwCjPt99uoFooJbiRGnkBk,56650
+libusbsio/bin/BSD-3-clause.txt,sha256=ahRxfp6XWWOOtl3Vt0FGu3mCqlUmHWqDGXYG2TNB1oc,1448
+libusbsio/bin/LICENSE-hidapi-bsd.txt,sha256=saUGSD3k_DKnNWg3CqJIv2xfggteKJHKPym4hE6mvzM,1560
+libusbsio/bin/Win32/libusbsio.dll,sha256=6noCnn9I37LgMNU1XLmBGW6H9ZXdYcOoEQnuRvN6i4w,115712
+libusbsio/bin/linux/libusbsio.so,sha256=iVWsdNLKIinVgImxxdzrvz7vEBQykpr2KKHLsTCMW-A,47200
+libusbsio/bin/linux32/libusbsio.so,sha256=OtsovQyfevWGyWj52FkCuv-sb0uLrD5NjOGRa6rwQWM,44888
+libusbsio/bin/osx/libusbsio.dylib,sha256=oc6xhyR44D9AaFoMY7xrsVQlchvH9LKBn2CU62Xepqo,73944
+libusbsio/bin/osx_arm64/libusbsio.dylib,sha256=7ao_pZChX4Vtb5B5KCITzmF3iPSlLeZQfMvQUqqC5Fs,74572
+libusbsio/bin/x64/libusbsio.dll,sha256=WblGO-6mHemHTzA0vc2FSCXnMyvHYXV1-2YknRcGQIE,138752
+libusbsio-2.1.5.dist-info/METADATA,sha256=8ZJiVgTEnkaZGJKvXHJWC5DmYHfJ7wICsSQnbX50X8M,4805
+libusbsio-2.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+libusbsio-2.1.5.dist-info/top_level.txt,sha256=iqFcxaEoSYAGihOnY4fNXB_V-29HYhPnou5ayQlDKlM,10
+libusbsio-2.1.5.dist-info/RECORD,,
