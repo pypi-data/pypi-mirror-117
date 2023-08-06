@@ -1,0 +1,15 @@
+pyinotify
+posttroll>=1.3.0
+trollsift
+netifaces
+watchdog
+pytroll-schedule
+pyyaml
+s3fs
+python-dateutil
+
+[all]
+satpy
+
+[geographic_gatherer]
+satpy
