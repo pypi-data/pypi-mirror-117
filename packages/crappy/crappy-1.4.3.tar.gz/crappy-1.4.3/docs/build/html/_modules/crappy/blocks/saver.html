@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>crappy.blocks.saver &mdash; Crappy 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Crappy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../whatiscrappy.html">What is Crappy ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../welcome.html">Welcome to Crappy !</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bugs.html">Bug reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Crappy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>crappy.blocks.saver</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for crappy.blocks.saver</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">makedirs</span>
+
+<span class="kn">from</span> <span class="nn">.block</span> <span class="kn">import</span> <span class="n">Block</span>
+
+
+<div class="viewcode-block" id="Saver"><a class="viewcode-back" href="../../../crappydocs/blocks.html#crappy.blocks.saver.Saver">[docs]</a><span class="k">class</span> <span class="nc">Saver</span><span class="p">(</span><span class="n">Block</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Will save the incoming data to a file (default `.csv`).</span>
+
+<span class="sd">  Important:</span>
+<span class="sd">    Can only take ONE input, i.e. save labels from only one block. If you want</span>
+<span class="sd">    multiple readings in a single file use the :ref:`Multiplex` block.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="Saver.__init__"><a class="viewcode-back" href="../../../crappydocs/blocks.html#crappy.blocks.saver.Saver.__init__">[docs]</a>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">delay</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="s1">&#39;t(s)&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Sets the args and initializes the parent class.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      filename (:obj:`str`): Path and name of the output file. If the folders</span>
+<span class="sd">        do not exist, they will be created. If the file already exists, the</span>
+<span class="sd">        actual file will be named with a trailing number to avoid overriding</span>
+<span class="sd">        it.</span>
+<span class="sd">      delay (:obj:`float`, optional): Delay between each write in seconds.</span>
+<span class="sd">      labels (:obj:`list`, optional): What labels to save. Can be either a</span>
+<span class="sd">        :obj:`str` to save all labels but this one first, or a :obj:`list` to</span>
+<span class="sd">        save only these labels.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">Block</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">niceness</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">delay</span> <span class="o">=</span> <span class="n">delay</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">labels</span> <span class="o">=</span> <span class="n">labels</span></div>
+
+<div class="viewcode-block" id="Saver.prepare"><a class="viewcode-back" href="../../../crappydocs/blocks.html#crappy.blocks.saver.Saver.prepare">[docs]</a>  <span class="k">def</span> <span class="nf">prepare</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="p">,</span> <span class="s2">&quot;No input connected to the saver!&quot;</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Cannot link more than one block to a saver!&quot;</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">d</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+      <span class="c1"># Create the folder if it does not exist</span>
+      <span class="k">try</span><span class="p">:</span>
+        <span class="n">makedirs</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+      <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+        <span class="k">assert</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">d</span><span class="p">),</span> <span class="s2">&quot;Error creating &quot;</span> <span class="o">+</span> <span class="n">d</span>
+    <span class="k">if</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">):</span>
+      <span class="c1"># If the file already exists, append a number to the name</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[saver] WARNING!&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;already exists !&quot;</span><span class="p">)</span>
+      <span class="n">name</span><span class="p">,</span> <span class="n">ext</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">)</span>
+      <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+      <span class="k">while</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">name</span><span class="o">+</span><span class="s2">&quot;_</span><span class="si">%05d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">i</span> <span class="o">+</span> <span class="n">ext</span><span class="p">):</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">name</span><span class="o">+</span><span class="s2">&quot;_</span><span class="si">%05d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">i</span> <span class="o">+</span> <span class="n">ext</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[saver] Using&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;instead!&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Saver.begin"><a class="viewcode-back" href="../../../crappydocs/blocks.html#crappy.blocks.saver.Saver.begin">[docs]</a>  <span class="k">def</span> <span class="nf">begin</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This is meant to receive data once and adapt the label list.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">last_save</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">t0</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">recv_delay</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">delay</span><span class="p">)</span>  <span class="c1"># To know the actual labels</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">:</span>
+      <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">labels</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+          <span class="c1"># If one label is specified, place it first and</span>
+          <span class="c1"># add the others alphabetically</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">]</span>
+          <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">:</span>
+              <span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+          <span class="c1"># If not a list but not in labels, forget it and take all the labels</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+        <span class="c1"># if it is a list, keep it untouched</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="c1"># If we did not give them (False, [] or None):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+      <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">r</span><span class="p">)</span></div>
+
+  <span class="k">def</span> <span class="nf">loop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">recv_delay</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">delay</span><span class="p">))</span>
+
+  <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">[</span><span class="mi">0</span><span class="p">]])):</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">):</span>
+          <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">((</span><span class="s2">&quot;, &quot;</span> <span class="k">if</span> <span class="n">j</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">i</span><span class="p">]))</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Saver.finish"><a class="viewcode-back" href="../../../crappydocs/blocks.html#crappy.blocks.saver.Saver.finish">[docs]</a>  <span class="k">def</span> <span class="nf">finish</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># Wait to finish last</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">recv_chunk_nostop</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">r</span><span class="p">:</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">r</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
