@@ -1,0 +1,7 @@
+setup.py
+File_SC.egg-info/PKG-INFO
+File_SC.egg-info/SOURCES.txt
+File_SC.egg-info/dependency_links.txt
+File_SC.egg-info/top_level.txt
+lib/File_SC.py
+lib/__init__.py
