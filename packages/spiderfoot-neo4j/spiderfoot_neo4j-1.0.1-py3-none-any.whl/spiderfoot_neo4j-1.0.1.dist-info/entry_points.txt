@@ -1,0 +1,3 @@
+[console_scripts]
+sfgraph=spiderfoot_neo4j.sfgraph:go
+
