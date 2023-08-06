@@ -1,0 +1,5 @@
+{
+    "directory": ".",
+    "max_conn": 15,
+    "big_file_threshold": 104857600
+}
