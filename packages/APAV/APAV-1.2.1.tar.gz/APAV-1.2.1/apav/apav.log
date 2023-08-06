@@ -1,0 +1,93 @@
+28/07/2021 23:33:54 INFO from_epos(491) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+28/07/2021 23:33:55 DEBUG __init__(813) Created <class 'apav.core.roi.RoiRectPrism'> with:
+	center = (0, 0, 0)
+	 widths = (5, 5, 5)
+28/07/2021 23:33:55 DEBUG __init__(860) Created <class 'apav.core.roi.RoiSphere'> with:
+	center = (0, 0, 0)
+	radius = 5
+28/07/2021 23:33:55 DEBUG __init__(923) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height=5
+	axis = x
+28/07/2021 23:33:55 DEBUG __init__(923) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height=5
+	axis = y
+28/07/2021 23:33:55 DEBUG __init__(923) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height=5
+	axis = z
+28/07/2021 23:48:32 INFO from_rrng(332) Reading RRNG file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.RRNG
+28/07/2021 23:48:32 INFO from_epos(491) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+28/07/2021 23:48:32 INFO from_rrng(332) Reading RRNG file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.RRNG
+28/07/2021 23:48:32 INFO from_rrng(332) Reading RRNG file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.RRNG
+28/07/2021 23:48:32 INFO from_pos(472) Reading pos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.pos
+28/07/2021 23:48:32 INFO from_pos(472) Reading pos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.pos
+28/07/2021 23:48:32 INFO from_epos(491) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+28/07/2021 23:48:32 INFO from_apt(236) Reading apt file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.apt
+28/07/2021 23:48:32 INFO from_epos(491) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+28/07/2021 23:48:32 INFO from_epos(491) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+28/07/2021 23:48:32 INFO from_apt(236) Reading apt file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.apt
+28/07/2021 23:48:33 DEBUG __init__(812) Created <class 'apav.core.roi.RoiRectPrism'> with:
+	center = (0, 0, 0)
+	widths = (5, 5, 5)
+28/07/2021 23:48:33 DEBUG __init__(855) Created <class 'apav.core.roi.RoiSphere'> with:
+	center = (0, 0, 0)
+	radius = 5
+28/07/2021 23:48:33 DEBUG __init__(914) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height = 5
+	axis = x
+28/07/2021 23:48:33 DEBUG __init__(914) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height = 5
+	axis = y
+28/07/2021 23:48:33 DEBUG __init__(914) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height = 5
+	axis = z
+21/08/2021 12:16:25 INFO from_rrng(332) Reading RRNG file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.RRNG
+21/08/2021 12:16:25 INFO from_epos(506) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+21/08/2021 12:16:26 INFO from_rrng(332) Reading RRNG file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.RRNG
+21/08/2021 12:16:26 INFO from_rrng(332) Reading RRNG file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.RRNG
+21/08/2021 12:16:26 INFO from_pos(487) Reading pos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.pos
+21/08/2021 12:16:26 INFO from_pos(487) Reading pos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.pos
+21/08/2021 12:16:26 INFO from_epos(506) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+21/08/2021 12:16:26 INFO from_epos(506) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+21/08/2021 12:16:26 INFO to_pos(588) Writing pos file to: /tmp/test_write_pos.pos
+21/08/2021 12:16:26 INFO from_pos(487) Reading pos file: /tmp/test_write_pos.pos
+21/08/2021 12:16:26 INFO to_epos(606) Writing epos file to: /tmp/test_write_epos.epos
+21/08/2021 12:16:26 INFO from_epos(506) Reading epos file: /tmp/test_write_epos.epos
+21/08/2021 12:16:26 INFO from_apt(251) Reading apt file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.apt
+21/08/2021 12:16:26 INFO from_epos(506) Reading epos file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.epos
+21/08/2021 12:16:26 INFO from_apt(251) Reading apt file: /home/zoot/PycharmProjects/apav/apav/utils/../resources/testdata/Si.apt
+21/08/2021 12:16:26 DEBUG __init__(853) Created <class 'apav.core.roi.RoiRectPrism'> with:
+	center = (0, 0, 0)
+	widths = (5, 5, 5)
+21/08/2021 12:16:26 DEBUG __init__(896) Created <class 'apav.core.roi.RoiSphere'> with:
+	center = (0, 0, 0)
+	radius = 5
+21/08/2021 12:16:26 DEBUG __init__(955) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height = 5
+	axis = x
+21/08/2021 12:16:26 DEBUG __init__(955) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height = 5
+	axis = y
+21/08/2021 12:16:27 DEBUG __init__(955) Created <class 'apav.core.roi.RoiCylinder'> with:
+	center = (0, 0, 0)
+	radius = 5
+	height = 5
+	axis = z
+21/08/2021 12:16:27 DEBUG __init__(896) Created <class 'apav.core.roi.RoiSphere'> with:
+	center = (0, 0, 0)
+	radius = 4
