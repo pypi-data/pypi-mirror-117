@@ -1,0 +1,4 @@
+ase
+pint
+psutil
+mpi4py
