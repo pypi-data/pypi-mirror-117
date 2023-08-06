@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+orm_converter/__init__.py
+orm_converter/bases.py
+orm_converter.egg-info/PKG-INFO
+orm_converter.egg-info/SOURCES.txt
+orm_converter.egg-info/dependency_links.txt
+orm_converter.egg-info/requires.txt
+orm_converter.egg-info/top_level.txt
+orm_converter/shared/__init__.py
+orm_converter/shared/exceptions.py
+orm_converter/shared/utils.py
+orm_converter/tortoise_to_django/__init__.py
+orm_converter/tortoise_to_django/field_converter.py
+orm_converter/tortoise_to_django/model_converter.py
