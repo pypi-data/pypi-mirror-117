@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+src/TTFootprints.egg-info/PKG-INFO
+src/TTFootprints.egg-info/SOURCES.txt
+src/TTFootprints.egg-info/dependency_links.txt
+src/TTFootprints.egg-info/top_level.txt
