@@ -1,0 +1,12 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+terragit/__init__.py
+terragit/__main__.py
+terragit/changes.py
+terragit.egg-info/PKG-INFO
+terragit.egg-info/SOURCES.txt
+terragit.egg-info/dependency_links.txt
+terragit.egg-info/entry_points.txt
+terragit.egg-info/top_level.txt
