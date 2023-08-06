@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: kagglerecipes
+Version: 0.0.1
+Summary: Useful code for different Kaggle competitions. Currently covering RSNA-MICCAI Brain Tumor Radiogenomic Classification Kaggle competition.
+Home-page: https://github.com/ayulockin/kagglerecipes/tree/main/
+Author: W&B Internal Team
+Author-email: mein2work@gmail.com
+License: MIT License
+Keywords: wandb kaggle-competition brain-tumor-classification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pip
+Requires-Dist: packaging
+Requires-Dist: torch (>=1.8.0)
+Requires-Dist: tensorflow (>=2.4.3)
+Requires-Dist: fastai (>=2.5.1)
+Requires-Dist: fastcore (>=1.3.26)
+Requires-Dist: albumentations (>=1.0.3)
+Requires-Dist: wandb (>=0.12.0)
+Requires-Dist: nbconvert (==5.6.1)
+Requires-Dist: jupyter-client (==6.1.2)
+Requires-Dist: pydicom
+Requires-Dist: SimpleITK
+Provides-Extra: dev
+
+# Kaggle RSNA-MICCAI Brain Tumor
+> Useful code and scripts for the RSNA-MICCAI Brain Tumor Radiogenomic Classification Kaggle competition
+
+
+This file will become your README and also the index of your documentation.
+
+## Install
+
+`pip install brain_tumor`
+
+## Library Structure:
+- data
+- utils
+- preprocess
+- postprocess
+- viz
+- train
+
+# Sample Dataset 
+
+We are using a subset of dataset for local development and fast prototyping. 
+
+* Download it manually from [here](https://wandb.ai/wandb_fc/rsna-miccai-brain/artifacts/dataset/sample/0c38392ee79fd5f85e97/files).
+* Or download it using this code snippet.
+
+  ```
+  import wandb
+  run = wandb.init()
+  artifact = run.use_artifact('wandb_fc/rsna-miccai-brain/sample:v0', type='dataset')
+  artifact_dir = artifact.download()
+  ```
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+```
+# 1+1
+```
+
+
+
+
+    2
+
+
+
+
