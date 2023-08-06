@@ -1,0 +1,3 @@
+[console_scripts]
+e4l=e4l.__main__:main
+
