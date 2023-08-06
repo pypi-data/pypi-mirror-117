@@ -1,0 +1,3 @@
+[console_scripts]
+sparse = sparse.main:cli
+
