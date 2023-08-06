@@ -1,0 +1,8 @@
+aio-databases>=0.0.9
+pypika
+
+[tests]
+pytest
+pytest-aio
+pytest-mypy
+aiosqlite
