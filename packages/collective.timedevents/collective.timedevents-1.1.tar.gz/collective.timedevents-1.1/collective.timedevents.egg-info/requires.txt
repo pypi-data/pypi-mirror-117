@@ -1,0 +1,6 @@
+setuptools
+zope.session
+
+[test]
+plone.app.testing
+plone.app.contenttypes[test]
