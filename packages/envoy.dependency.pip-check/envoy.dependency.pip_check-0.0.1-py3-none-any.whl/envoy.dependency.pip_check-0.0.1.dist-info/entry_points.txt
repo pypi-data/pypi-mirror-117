@@ -1,0 +1,3 @@
+[console_scripts]
+envoy.pip-check = envoy.dependency.pip_check.cmd:cmd
+
