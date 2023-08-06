@@ -1,0 +1,10 @@
+keras_efficientnet_v2/__init__.py,sha256=o57bNrz75uUDr0BILFamR_LDdTUTi-cpt0HO9Rbob5M,3231
+keras_efficientnet_v2/augment.py,sha256=lhoXWxM7GsW9yzowvftPtdddIV_obf08P_Bqnkb_8mw,35817
+keras_efficientnet_v2/efficientnet_v2.py,sha256=w6pYNnU0UsMSMdZNm5H4VtxYWIjwwt-Is1EabSkjtL8,14679
+keras_efficientnet_v2/progressive_train_test.py,sha256=ayUBtXhu0CzXSSkGExZusNZUB4AeL41rieOwz0pPO_A,7791
+keras_efficientnet_v2/version.py,sha256=mFFUUCx5TqyW1TTFRrWDhXXVMJDMRxXWrkHanVtp9oY,22
+keras_efficientnet_v2-1.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+keras_efficientnet_v2-1.0.8.dist-info/METADATA,sha256=EUywo4UEvx5ZXSni9o59EgV5buGoKS96GP3bDY4O40w,13010
+keras_efficientnet_v2-1.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+keras_efficientnet_v2-1.0.8.dist-info/top_level.txt,sha256=EJ92jCqIoGPrP5JnD-Ksoe7f4MVuvQM48BNWjJqn94U,22
+keras_efficientnet_v2-1.0.8.dist-info/RECORD,,
