@@ -1,0 +1,16 @@
+bundestag/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+bundestag/abgeordnetenwatch.py,sha256=D-_J417Rc-qLwKV9jho-gFNrrkU_oOCeRsijmtuTSiQ,15909
+bundestag/gui.py,sha256=4FYLWvh5IWSl2t8eX3Tb9pX1LdwkqD3DJF7y2n6nJ_s,4970
+bundestag/html_parsing.py,sha256=_A6SxCZ3-hJ5-s3TOw3jbmDcqQt8V6zVH0zX4LmIXM8,10033
+bundestag/poll_clustering.py,sha256=SVy0qjAC5F-5h7qGThMTH0z_ddOvoIyDZcXV5a_eRNI,7573
+bundestag/similarity.py,sha256=HvtQb0Qrm4j1PrSkL4_jKCoNDNQDhNr0im52v2g2dps,7486
+bundestag/test_abgeordnetenwatch.py,sha256=Ratm7OHvrZPjJmEu3pNpG4SDjIICdrTmHRx68QQ1N1E,2475
+bundestag/test_html_parsing.py,sha256=harodyI_2NC2-5zvtmUXCGmjJ8xJeEOa_FDdbHDFIpk,1911
+bundestag/test_poll_clustering.py,sha256=BnPNzxc1a5hTW4M8ukOagsLNqEofN_Z34lwaWZTxKq4,1030
+bundestag/test_similarity.py,sha256=eyACfJ3X65zmYeEwrN1MMKSkdO5Bw8hu-r7nrZf_cSA,1563
+bundestag/test_vote_prediction.py,sha256=bfg-BXPjHZPqoQhO8bTXN8sLhzDikQdFWtDy24gv6JQ,1631
+bundestag/vote_prediction.py,sha256=ydeiUUgiiT8Kmp1QiyrvbcLULf5IV5i_uHe75x1fW2Q,6334
+bundestag-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bundestag-0.0.3.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+bundestag-0.0.3.dist-info/METADATA,sha256=lNIjqFStBJy40kbluxqMghlzhx4kuoX8g3LaW55iWs8,1008
+bundestag-0.0.3.dist-info/RECORD,,
