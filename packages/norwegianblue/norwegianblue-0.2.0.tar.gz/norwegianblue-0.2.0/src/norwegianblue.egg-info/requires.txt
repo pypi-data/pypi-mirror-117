@@ -1,0 +1,12 @@
+appdirs
+httpx<0.20,>=0.19
+pytablewriter[html]>=0.49
+python-dateutil
+python-slugify
+termcolor
+
+[tests]
+freezegun
+pytest
+pytest-cov
+respx>=0.11
