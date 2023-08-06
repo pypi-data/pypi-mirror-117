@@ -1,0 +1,9 @@
+portlets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+portlets/models.py,sha256=n60N3lf83H_kLTD1ZoTpnZu_Mkw7QqwriqkzM3Qei-A,8048
+portlets/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+portlets/templatetags/portlet_tags.py,sha256=cluV2rz-UX4lq4XB6P2MKmIyMTbxrrgNZG35xYyPbF4,2436
+portlets-0.0.1.dist-info/LICENSE,sha256=Ezq_gYpJNAfAUex8dZwCC7zu7--oDJp1ehAkF7EyCno,1051
+portlets-0.0.1.dist-info/METADATA,sha256=DYn8aPOgU-yEtWMCnvqtUAW6epHfV61CTMHRGnvaoBE,516
+portlets-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+portlets-0.0.1.dist-info/top_level.txt,sha256=UOnR_3zv024KbaeTZDllLGOIIrUrG17xhf6cU6MtRhY,9
+portlets-0.0.1.dist-info/RECORD,,
