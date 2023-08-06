@@ -1,0 +1,9 @@
+chili/__init__.py,sha256=LgYB8aYVpK1AYFmEmN280tGe8zV_Xf123Is1GsXrslE,252
+chili/__version__.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+chili/dataclasses.py,sha256=9TX7GlXzFu0wEubTljg9oA0Sjcp2Ff7NVv--lo-ZwNk,467
+chili/hydration.py,sha256=3uMwzluS53lq2ytd1n7MZ1N1batHXowcR76LWWX48Qg,19574
+chili/iso_datetime.py,sha256=FUcG0QvS5jotigFY1wm3GcV56ICuwhVbdM2bLGv1fUA,5548
+chili/typing.py,sha256=yfqP4xYTWIPEx1C4Xzx3phDtgAexOTwyCYsV0R7uCLk,2114
+chili-1.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+chili-1.1.0.dist-info/METADATA,sha256=F89m0EctwPq_SF76CDEJdBhrnwvuqeSaVWsHCZR6Jjw,15846
+chili-1.1.0.dist-info/RECORD,,
