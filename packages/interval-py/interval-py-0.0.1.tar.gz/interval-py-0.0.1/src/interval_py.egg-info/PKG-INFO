@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: interval-py
+Version: 0.0.1
+Summary: Interval arithmetic library for Python
+Home-page: https://github.com/artemmam/intervalpy
+Author: Artem Maminov, Mikhail Posypkin
+Author-email: amaminov@hse.ru
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/amaminov/intervalpy/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python interval library
+Interval library for basic arithmetic operations and mathematical functions
+
+
+
