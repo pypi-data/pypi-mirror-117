@@ -1,0 +1,14 @@
+os
+pandas>="1.1.4"
+h5py>="3.1"
+matplotlib>="3.3"
+numpy>="1.19"
+qt>="5.9"
+lmfit>="1.0"
+python-pptx>="0.6.18"
+scipy>="1.5"
+pathlib
+tkinter
+time
+numbers
+python_version>="3.8"
