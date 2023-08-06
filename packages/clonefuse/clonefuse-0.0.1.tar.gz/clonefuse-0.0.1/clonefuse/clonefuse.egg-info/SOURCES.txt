@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+clonefuse/clonefuse.egg-info/PKG-INFO
+clonefuse/clonefuse.egg-info/SOURCES.txt
+clonefuse/clonefuse.egg-info/dependency_links.txt
+clonefuse/clonefuse.egg-info/top_level.txt
