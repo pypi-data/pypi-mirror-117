@@ -1,0 +1,9 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/clustering.py,sha256=Cl3j9RRSrK4wl2f1nJQrqm6XKXvhNuEpbiVC4cLyiCM,2636
+src/preprocessing.py,sha256=M2_tIAqfQgYL8hbCROjY_-ydv__fkeWNRTd5nYfTnVo,1727
+src/simple_keyword_clusterer.py,sha256=dHcNhR8TsP5a8RlR6T3FEy6CMWAFzBFHuM0iqsnt3VQ,480
+simple_keyword_clusterer-0.12.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+simple_keyword_clusterer-0.12.dist-info/METADATA,sha256=wN-XtRJo1WPbcvL3YW_H-OcK4ZYvuqlmVXKvRXBFhaQ,2956
+simple_keyword_clusterer-0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_keyword_clusterer-0.12.dist-info/top_level.txt,sha256=wpIBAblAaxMvys-rR9mNu41fz3n_xxnl7SQ4X1ZB1WQ,54
+simple_keyword_clusterer-0.12.dist-info/RECORD,,
