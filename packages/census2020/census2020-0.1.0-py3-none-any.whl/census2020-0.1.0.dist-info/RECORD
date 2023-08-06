@@ -1,0 +1,13 @@
+LICENSE.md,sha256=-BQgFoObaBN1qnLdPMVA2dW7eRk7vsVNM5mOl6dHlWs,1054
+census2020/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+census2020/cli.py,sha256=PCK6nWtv8-RoEBIe0QLP5c6Au2U3ibgd5d1SK3WbAqA,1116
+census2020/constants.py,sha256=BP81SwJKKmHhmcT-k34b2o8WfqNRoU24H3l0B-NkN7Y,318
+census2020/downloader.py,sha256=llh04MGVgkr3w9sAanjc32wCfbQz22P1e0dhLbJFVcw,1698
+census2020/parsers.py,sha256=4RyEHFUgbOZK-bwGvAR__NVlwExp5ckZA_RnF7kEoXg,7825
+census2020/readers.py,sha256=pf1j7QkFcet1gzZpnxE5tKZEs_b0kRN4B5apGyoRBrw,1713
+census2020/types.py,sha256=0ZNSKeuXew99vvBxsYVMeXhvA90Hineb_Hk8wpOMlFk,114
+census2020-0.1.0.dist-info/entry_points.txt,sha256=ovkfAkFhXUb3xDnlSjWFEPwgTQpvNEHJULVOy0xTYFw,49
+census2020-0.1.0.dist-info/LICENSE.md,sha256=-BQgFoObaBN1qnLdPMVA2dW7eRk7vsVNM5mOl6dHlWs,1054
+census2020-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+census2020-0.1.0.dist-info/METADATA,sha256=q08cN3JRbZCvDkMfkYHwlb-Rk9jm7fY1-F34bNqPWf0,4004
+census2020-0.1.0.dist-info/RECORD,,
