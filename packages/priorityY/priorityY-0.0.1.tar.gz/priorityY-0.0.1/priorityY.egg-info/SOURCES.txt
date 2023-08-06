@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+README.txt
+setup.py
+priorityY/__init__.py
+priorityY.egg-info/PKG-INFO
+priorityY.egg-info/SOURCES.txt
+priorityY.egg-info/dependency_links.txt
+priorityY.egg-info/top_level.txt
