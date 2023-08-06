@@ -1,0 +1,10 @@
+pypika_orm/__init__.py,sha256=Ku7kTo-PeAxf7U0p_4vqhuyejQym6sOSX9jIGQyCtaU,130
+pypika_orm/dialects.py,sha256=Ki_sOAarHRWfrdkpunOPbYnoaj2CL-tpL64zlRenMbI,2688
+pypika_orm/fields.py,sha256=kazb5_JqkOGxc7jjaKsVeAii-DPtpZo7dpCAGY_pu30,2727
+pypika_orm/manager.py,sha256=b7m5KJ-TRvseIyw5gm4VFC-T3HZO202HUVmPlqbwB-A,1937
+pypika_orm/model.py,sha256=d5KOiUNp9NllGxQW3Sunrv8vpmPQyIlWPC1fkZPEzoE,2384
+pypika_orm/query.py,sha256=VyYJT3EK7xN1jQ2i2RjE2qIo9aweVoODrtkcNVwQI1Y,4999
+pypika_orm-0.0.10.dist-info/METADATA,sha256=pyT0J906hgaBPjJw74ErLStatpiCyT1wN_BbZXTLg7o,3589
+pypika_orm-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pypika_orm-0.0.10.dist-info/top_level.txt,sha256=U8PqR1WESfjCNQxqFuCifd5ThQ8eELrHhQVKyzKFxOM,11
+pypika_orm-0.0.10.dist-info/RECORD,,
