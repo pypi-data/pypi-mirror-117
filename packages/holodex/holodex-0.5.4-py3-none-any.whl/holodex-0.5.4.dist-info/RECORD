@@ -1,0 +1,15 @@
+holodex/__init__.py,sha256=DITpct-LrdIsTgwx2NgH5Ghx5y8Xgz1YMimy1ZV5RTY,22
+holodex/client.py,sha256=zsV_Ct_FDievnhi-TospkwjLndfXSOwfVysxhlqxJE8,1698
+holodex/http.py,sha256=6FWXwmw4XrqgjS-Md_AKqWIqm1yV_LdiNqicrGAoTMI,1203
+holodex/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+holodex/model/autocomplete.py,sha256=viWuNPL5GtGQ44zGYkELAsrvh84nuvmh9ZaT0lF9Lwg,613
+holodex/model/channel_info.py,sha256=4p3WChQIr0BGUlRB4pFBGrrkPEA2_uAyGT9QEPdGmwM,2443
+holodex/model/live.py,sha256=iO8ODnbPyXzDaAAoZTPf5x05_8t6qLvaI31B4L6YVgA,2102
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_autocomplete.py,sha256=mf_ge_DI4torvKh0K73zaNhm-VN5TVM6eLrJSEd_c8c,274
+tests/test_channel_info.py,sha256=hkcUZo9gNaJhHzF6tAlanRLXNC5K78akhrgPpawIxoc,287
+holodex-0.5.4.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+holodex-0.5.4.dist-info/METADATA,sha256=42tGdmghqh2iUGpuD0yi6bxa10QAJinwZZsUNq_MAu8,1337
+holodex-0.5.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+holodex-0.5.4.dist-info/top_level.txt,sha256=4pG0GveTa0Fekn8Qj7qsorNyF1XPJpyQ6qJJkKL5nHM,14
+holodex-0.5.4.dist-info/RECORD,,
