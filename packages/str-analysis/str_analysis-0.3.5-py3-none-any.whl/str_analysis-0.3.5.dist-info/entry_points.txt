@@ -1,0 +1,4 @@
+[console_scripts]
+call_rfc1_canvas_alleles = str_analysis.call_rfc1_canvas_alleles:main
+combine_json_to_tsv = str_analysis.combine_json_to_tsv:main
+
