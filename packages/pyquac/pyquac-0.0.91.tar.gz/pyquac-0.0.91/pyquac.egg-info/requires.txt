@@ -1,0 +1,7 @@
+pandas
+numpy
+jupyter
+ipywidgets
+cufflinks
+dash
+jupyter_dash
