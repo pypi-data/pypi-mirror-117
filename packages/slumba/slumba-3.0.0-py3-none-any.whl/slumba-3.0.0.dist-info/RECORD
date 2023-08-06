@@ -1,0 +1,10 @@
+slumba/__init__.py,sha256=cNJm0nF9bkDkEATx6g0ta2gPJ_vH52PgBq_q2YHDy24,7089
+slumba/aggregate.py,sha256=vPjF6FSl8mQqK7TVY0Hlm5VjpAHz25gmsr4HraTsGWA,4278
+slumba/exceptions.py,sha256=XZxMydhRXWg24bfdtBO_5_2XVfigLuhsHyWLM4dUvAU,650
+slumba/numbaext.py,sha256=E2RdpuNujvyiva37kJFY-Qpc5PWQ-3wy9_r3FlW6kXk,19017
+slumba/scalar.py,sha256=AE5S7txKe8oU8vf6dUJs0PwH3QUX5hAEo8S0KZIDmHE,2071
+slumba/sqlite.py,sha256=kclKPYfqTTmR7kHnZllmmDBnlLCoJOYJ46JutvOZUBs,5371
+slumba-3.0.0.dist-info/LICENSE,sha256=UuKBTO6rKkzQ8OyTxMQty7oKVj46F_KEwAeRoMO7FM8,11352
+slumba-3.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+slumba-3.0.0.dist-info/METADATA,sha256=vYJ0_-MQbaeCdnL-VuW3ASEVq0H2-VOhZPUczfc_eVQ,3785
+slumba-3.0.0.dist-info/RECORD,,
