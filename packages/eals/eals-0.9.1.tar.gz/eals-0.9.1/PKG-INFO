@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: eals
+Version: 0.9.1
+Summary: eALS - Element-wise Alternating Least Squares
+Home-page: https://github.com/newspicks
+Author: Akira Kitauchi
+Author-email: kitauchi@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: joblib (>=1.0.1,<2.0.0)
+Requires-Dist: numba (>=0.53.1,<0.54.0)
+Requires-Dist: numpy (>=1.20.3,<2.0.0)
+Requires-Dist: scipy (>=1.6,<2.0)
+Project-URL: Repository, https://github.com/newspicks/eals
+Description-Content-Type: text/markdown
+
+# eALS - Element-wise Alternating Least Squares
+
+A Python implementation of the element-wise alternating least squares (eALS) for fast online matrix factorization proposed by [arXiv:1708.05024](https://arxiv.org/abs/1708.05024).
+
+## Prerequisites
+
+- Python >= 3.8
+
+## Installation
+
+```sh
+pip install eals
+```
+
+## Usage
+
+```python
+from eals import ElementwiseAlternatingLeastSquares, load_model
+
+# Batch training
+model = ElementwiseAlternatingLeastSquares()
+model.fit(rating_data)
+
+# Learned latent vectors
+model.user_factors
+model.item_factors
+
+# Online training for new data
+model.update_model(user_id, item_id)
+
+# Save and load the model
+model.save("model.joblib")
+model = load_model("model.joblib")
+```
+
+See the [examples](examples/) directory for complete examples.
+
+## Development
+
+### Setup development environment
+
+```sh
+git clone https://github.com/newspicks/eals.git
+cd eals
+poetry run pip install -U pip
+poetry install
+```
+
+### Tests
+
+```sh
+poetry run pytest
+```
+
+Set `USE_NUMBA=0` for faster testing without numba JIT overhead.
+
+```sh
+USE_NUMBA=0 poetry run pytest
+```
+
+To run tests against all supported Python versions, use [tox](https://tox.readthedocs.io/).
+
+```sh
+poetry run tox
+```
+
