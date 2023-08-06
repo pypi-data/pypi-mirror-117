@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pydbexport
+Version: 1.0
+Summary: DB table export
+Home-page: UNKNOWN
+Author: Md. Imrul Hasan
+Author-email: imrulhasan273@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
