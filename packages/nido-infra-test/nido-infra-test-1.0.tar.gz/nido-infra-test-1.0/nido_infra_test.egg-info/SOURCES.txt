@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+nido-infra-test/Class.py
+nido-infra-test/Class2.py
+nido-infra-test/__init__.py
+nido_infra_test.egg-info/PKG-INFO
+nido_infra_test.egg-info/SOURCES.txt
+nido_infra_test.egg-info/dependency_links.txt
+nido_infra_test.egg-info/top_level.txt
