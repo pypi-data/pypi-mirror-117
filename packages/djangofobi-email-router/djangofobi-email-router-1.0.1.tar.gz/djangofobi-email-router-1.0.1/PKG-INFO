@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: djangofobi-email-router
+Version: 1.0.1
+Summary: A django-fobi handler plugin to send the content of a form to different e-mails addresses, depending on a value of a form field.
+License: GPLv3
+Author: KAPT dev team
+Author-email: dev@kapt.mobi
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=1.11)
+Requires-Dist: django-fobi (>=0.17.0,<0.18.0)
