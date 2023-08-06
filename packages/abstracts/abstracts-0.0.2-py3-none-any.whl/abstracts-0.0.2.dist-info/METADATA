@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: abstracts
+Version: 0.0.2
+Summary: Abstract class and interface definitions
+Home-page: https://github.com/phlax/pytooling/abstracts
+Author: Ryan Northey
+Author-email: ryan@synca.io
+Maintainer: Ryan Northey
+Maintainer-email: ryan@synca.io
+License: Apache Software License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.5
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Provides-Extra: publish
+Requires-Dist: wheel ; extra == 'publish'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: pytest-coverage ; extra == 'test'
+Requires-Dist: pytest-patches ; extra == 'test'
+Provides-Extra: types
+Requires-Dist: mypy ; extra == 'types'
+
+
+abstracts
+=========
+
+Abstract class and interface definitions.
+
+Create an ``abstract.Abstraction``
+----------------------------------
+
+An ``Abstraction`` is a ``metaclass`` for defining abstract classes.
+
+Let's define an abstract ``AFoo`` class and give it an abstract ``do_foo``
+method.
+
+Like any python class, an ``Abstraction`` can have any name, but it may
+be helpful to distinguish abstract classes from others by prefixing their
+name with ``A``.
+
+.. code-block:: pycon
+
+   >>> import abc
+   >>> import abstracts
+
+   >>> class AFoo(metaclass=abstracts.Abstraction):
+   ...
+   ...     @abc.abstractmethod
+   ...     def do_foo(self):
+   ...         raise NotImplementedError
+
+Abstract classes **cannot** be instantiated directly.
+
+.. code-block:: pycon
+
+   >>> AFoo()
+   Traceback (most recent call last):
+   ...
+   TypeError: Can't instantiate abstract class AFoo with abstract method... do_foo
+
+
