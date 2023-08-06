@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+deimport.egg-info/PKG-INFO
+deimport.egg-info/SOURCES.txt
+deimport.egg-info/dependency_links.txt
+deimport.egg-info/top_level.txt
