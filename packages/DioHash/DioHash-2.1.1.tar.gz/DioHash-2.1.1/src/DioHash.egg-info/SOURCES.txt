@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+src/DioHash.py
+src/DioHash.egg-info/PKG-INFO
+src/DioHash.egg-info/SOURCES.txt
+src/DioHash.egg-info/dependency_links.txt
+src/DioHash.egg-info/top_level.txt
