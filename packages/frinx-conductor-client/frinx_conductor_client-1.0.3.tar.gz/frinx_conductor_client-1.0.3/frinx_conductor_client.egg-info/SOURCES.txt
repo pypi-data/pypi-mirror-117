@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+conductor/ConductorWorker.py
+conductor/FrinxConductorWrapper.py
+conductor/__init__.py
+conductor/conductor.py
+frinx_conductor_client.egg-info/PKG-INFO
+frinx_conductor_client.egg-info/SOURCES.txt
+frinx_conductor_client.egg-info/dependency_links.txt
+frinx_conductor_client.egg-info/requires.txt
+frinx_conductor_client.egg-info/top_level.txt

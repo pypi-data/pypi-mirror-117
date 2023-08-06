@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: frinx-conductor-client
+Version: 1.0.3
+Summary: Conductor python client
+Home-page: https://github.com/FRINXio/conductor
+Author: Frinx
+Author-email: info@frinx.io
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: conductor
+Platform: UNKNOWN
