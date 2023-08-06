@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: QAOAKit
+Version: 0.1.7
+Summary: A Toolkit for Reproducible Study, Application and Verification of QAOA
+Home-page: UNKNOWN
+Author: Ruslan Shaydulin
+Author-email: ruslan@shaydul.in
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3, <4
+License-File: LICENSE
+Requires-Dist: qiskit (>=0.28.0)
+Requires-Dist: pynauty (==1.0.0)
+Requires-Dist: qiskit-optimization
+Requires-Dist: pandas
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pytest
+Requires-Dist: tqdm
+
+UNKNOWN
+
