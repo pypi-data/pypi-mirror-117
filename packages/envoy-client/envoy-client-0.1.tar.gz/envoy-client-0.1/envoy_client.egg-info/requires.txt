@@ -1,0 +1,3 @@
+requests>=2.20
+xmltodict>=0.12
+pydantic>=1.8

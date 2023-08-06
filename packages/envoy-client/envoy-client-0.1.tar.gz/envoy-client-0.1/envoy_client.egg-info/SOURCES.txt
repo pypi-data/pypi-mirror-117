@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+envoy_client.egg-info/PKG-INFO
+envoy_client.egg-info/SOURCES.txt
+envoy_client.egg-info/dependency_links.txt
+envoy_client.egg-info/requires.txt
+envoy_client.egg-info/top_level.txt
