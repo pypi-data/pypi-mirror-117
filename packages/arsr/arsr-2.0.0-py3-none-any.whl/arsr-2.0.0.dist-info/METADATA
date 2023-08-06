@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: arsr
+Version: 2.0.0
+Summary: Arbitrary Scale Super resolution
+Home-page: https://github.com/epsilon-deltta/arbitrary-sr/
+Author: epsilon
+Author-email: kokomong1316@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: opencv-contrib-python (==4.5.3.56)
+Requires-Dist: opencv-python (==4.5.3.56)
+Requires-Dist: Pillow (==8.3.1)
+
+# arbitrary-sr
+It's about arbitrary scale image super-resolution. 
+
+
