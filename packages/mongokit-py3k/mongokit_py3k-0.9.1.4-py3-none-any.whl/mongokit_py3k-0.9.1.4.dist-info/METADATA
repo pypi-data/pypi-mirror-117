@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mongokit-py3k
+Version: 0.9.1.4
+Summary: Python mongodb kit - Python 3 fork
+Home-page: http://github.com/aquavitae/mongokit-py3-updated/
+Author: sethigoldy
+Author-email: UNKNOWN
+License: New BSD License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Database
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pymongo (>=3.7)
+
+UNKNOWN
+
+
