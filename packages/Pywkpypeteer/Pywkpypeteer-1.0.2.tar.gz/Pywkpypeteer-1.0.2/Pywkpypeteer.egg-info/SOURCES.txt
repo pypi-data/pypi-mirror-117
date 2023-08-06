@@ -1,0 +1,9 @@
+setup.py
+Pywkpypeteer.egg-info/PKG-INFO
+Pywkpypeteer.egg-info/SOURCES.txt
+Pywkpypeteer.egg-info/dependency_links.txt
+Pywkpypeteer.egg-info/requires.txt
+Pywkpypeteer.egg-info/top_level.txt
+pywkpypeteer/__init__.py
+pywkpypeteer/pypeteerutils.py
+test/test.py
