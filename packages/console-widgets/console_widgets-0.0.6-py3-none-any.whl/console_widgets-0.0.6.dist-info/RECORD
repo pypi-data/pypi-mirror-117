@@ -1,0 +1,8 @@
+console_widgets/__init__.py,sha256=slLFoj6FZY40AqNm2JClP8SNy3AYUs3ejGEht4cLBTs,30
+console_widgets/console_widgets.py,sha256=C55kOPhGunxZbKKVqB7NKrIcrrDgxU2BDH95MJ5Bbtw,6094
+console_widgets/errors.py,sha256=iadudi0P8pBaBFR95NZ26vnG50V90uk0JFDUWHgB4Tk,1155
+console_widgets-0.0.6.dist-info/LICENCE,sha256=XDjxKNXJo8XmeF2cyAz8HDqE9JN7HmaLBYVG-c35RCo,1089
+console_widgets-0.0.6.dist-info/METADATA,sha256=rJoQONEyI2GyQVt7epVQDC4421Udyr0RO1gbUCvjZGE,1240
+console_widgets-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+console_widgets-0.0.6.dist-info/top_level.txt,sha256=Yylps3uI_S4Es8rj8SJl2FJDDeJX-KWZgJvEzPWOhs4,16
+console_widgets-0.0.6.dist-info/RECORD,,
