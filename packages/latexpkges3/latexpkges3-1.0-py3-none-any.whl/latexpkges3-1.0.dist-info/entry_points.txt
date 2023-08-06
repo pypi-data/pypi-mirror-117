@@ -1,0 +1,3 @@
+[console_scripts]
+latexpkges3 = latexpkges3:main
+
