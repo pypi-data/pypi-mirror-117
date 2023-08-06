@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qian
+Version: 0.1.1
+Summary: Quantitative Value Investing methods package
+Home-page: https://github.com/qiancapital/qian
+Author: Samson Qian
+Author-email: samsonqian@gmail.com
+License: MIT
+Keywords: quantitative-research value-investing business-analysis valuation cash-flow
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# qian
+
