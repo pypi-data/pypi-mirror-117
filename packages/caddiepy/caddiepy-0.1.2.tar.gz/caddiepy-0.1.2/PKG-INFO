@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: caddiepy
+Version: 0.1.2
+Summary: The python package to the Cancer Driver Drug Interaction Explorer (CADDIE)
+Home-page: http://pypi.python.org/pypi/caddiepy/
+Author: Maiykol
+Author-email: michael.hartung@uni-hamburg.de
+License: LICENSE
+Description: <p align="center">
+          <img alt="CADDIE Logo" src="https://github.com/Maiykol/caddiepy/blob/main/caddie_logo.png?raw=true" />
+        </p>
+        
+        
+        # caddiepy
+        
+        The python package to the Cancer Driver Drug Interaction Explorer (CADDIE). It  provides an interface for a variety of CADDIE functionalities, giving the user the possibility to execute tasks on CADDIE programmatically without using the website.
+        
+        
+        # How to use
+        
+        ## Import
+        Import the module:
+        ```
+        import caddiepy
+        ```
+        
+        ## Examples
+        N.B.: Required datasets for the examples will be downloaded upon execution and stored in the folder 'storage'.
+        
+        - Run the comparison of the CADDIE results against the Drug Sensitivity ranking of GDSC2 (https://www.cancerrxgene.org/) (this may take up to 5 hours):
+        ```
+        caddiepy.examples.GDSC_study.run(algorithm, gene_interaction_dataset, output_folder)
+        ```
+        
+        ## Logging
+        Configure the logging level like this:
+        ```
+        import logging
+        logging.basicConfig(level=logging.INFO)
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
