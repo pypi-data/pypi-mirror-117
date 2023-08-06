@@ -1,0 +1,12 @@
+tlogg/__init__.py,sha256=9gOVAGS8IORMyAJp38eBF5FdsIzjItnmpr4PJiJITGA,5470
+tlogg/__main__.py,sha256=6V9Pken7Zdcp4xItQ4z-kt_kKaiZNB-5N8lh9rQbnOo,1239
+tlogg/app/__init__.py,sha256=_sSK1Of2kU2aeKWUCwoeSd4T4fpJ44q_qOEB4hoVUKU,1274
+tlogg/app/cfg.py,sha256=SSumJDylOdLPUWo_ZcGry2MstvF_OuCTj2nYYN_l9b4,2187
+tlogg/app/fileviewer.py,sha256=F6WbntUzsneNea5CkoBb66CIFJ_mlgBjkXoPndZRnP0,9555
+tlogg/app/glbl.py,sha256=X4qEgYIjQkcAm3__7Ixha8jS02BBmZnW6-DR8Qf7MJc,1412
+tlogg/app/preferences.py,sha256=uCpTUajsJ6gTyzxENVdNiY9I7vW6J0_Sce4lnA-LuSs,6426
+tlogg-0.1.0a2.dist-info/METADATA,sha256=_vDupB7kNkH1T-mlG5R0iYDIzCXOIEkUma_YO7ZSnGY,986
+tlogg-0.1.0a2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tlogg-0.1.0a2.dist-info/entry_points.txt,sha256=YW2KSYNONeMXFQNSlxLOwDdo5-8Mfgkq8rzJHO61AHM,38
+tlogg-0.1.0a2.dist-info/top_level.txt,sha256=GsCCEZGpg5I2tRy_p3uVp5raP6uMfI5RSxDXMnC4lYU,6
+tlogg-0.1.0a2.dist-info/RECORD,,
