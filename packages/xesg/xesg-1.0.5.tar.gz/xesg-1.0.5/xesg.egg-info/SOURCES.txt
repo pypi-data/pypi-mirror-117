@@ -1,0 +1,13 @@
+setup.py
+xesg/__init__.py
+xesg/get.py
+xesg/gui.py
+xesg/html.py
+xesg/pinyin.py
+xesg/printf.py
+xesg/version.py
+xesg/xesapi.py
+xesg.egg-info/PKG-INFO
+xesg.egg-info/SOURCES.txt
+xesg.egg-info/dependency_links.txt
+xesg.egg-info/top_level.txt
