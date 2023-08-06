@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lattice-stocks-data
+Version: 1.0.2
+Summary: An API for gathering RapidAPI stock info
+Home-page: https://lattice.dev/products/stock-market-data
+Author: ashkon@lattice.dev
+License: UNKNOWN
+Project-URL: Source, https://github.com/LatticeData/lattice-stocks-data
+Project-URL: Documentation, https://github.com/LatticeData/lattice-stocks-data/blob/master/README.md#Usage
+Project-URL: Bug Reports, https://github.com/LatticeData/lattice-stocks-data/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+An user friendly library to fetch data related to stock market in no time.
+
+
