@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/spacemake/alnstats.py
+src/spacemake/reporting.py
+src/spacemake_mjens.egg-info/PKG-INFO
+src/spacemake_mjens.egg-info/SOURCES.txt
+src/spacemake_mjens.egg-info/dependency_links.txt
+src/spacemake_mjens.egg-info/entry_points.txt
+src/spacemake_mjens.egg-info/top_level.txt
