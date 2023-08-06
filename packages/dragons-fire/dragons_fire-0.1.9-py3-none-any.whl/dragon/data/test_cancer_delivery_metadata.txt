@@ -1,0 +1,2 @@
+project	collaborator_sample_id	version
+G12345	NA12878	1
