@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kahnfigh/__init__.py
+src/kahnfigh/core.py
+src/kahnfigh/utils.py
+src/kahnfigh.egg-info/PKG-INFO
+src/kahnfigh.egg-info/SOURCES.txt
+src/kahnfigh.egg-info/dependency_links.txt
+src/kahnfigh.egg-info/requires.txt
+src/kahnfigh.egg-info/top_level.txt
