@@ -1,0 +1,15 @@
+minifilter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minifilter/apps.py,sha256=VaKw6wj_eauCDcM1_iXkb4va4c_h6rYosrLQvQoQ1GI,152
+minifilter/filters.py,sha256=Vezkqfe-vnUFrSrDf04CdEG7tSdE3y4xXBpYH9hesMY,1601
+minifilter/forms.py,sha256=zjqHrJhrySXEwlBdAMRGw8J4T8vICGcj2DIv_nL7dNo,239
+minifilter/mixins.py,sha256=uypCBmqmOm2lIhAw8haUVmDeqhc4sRzj_UPF-ZOfiXc,1291
+minifilter/templates/minifilter/includes/pagination.html,sha256=WlPI4t2R8iLLNLjrG5WlyCMLa0jQRu5cgSrN4aT8UX0,825
+minifilter/templates/minifilter/includes/parameters.html,sha256=JS6qCCa2VnNTJwyJJn0ZnUvi2tBNDr6exaH_S_Oz6H0,750
+minifilter/templates/minifilter/includes/search.html,sha256=iQ8qiEY6S3X7QuoOAbcLlFcYDlfp3GvqRvynGSL80Rg,350
+minifilter/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minifilter/templatetags/minifilter_extras.py,sha256=dk_XrNmBWRAy_F1XrsotbaZbrj0YZsk0uX7CLUnIgwU,1318
+django_minifilter-0.0.3.dist-info/LICENSE,sha256=SBZFEqX-badaobopGrA366yfI8wxVamvUJUhooikC6E,1518
+django_minifilter-0.0.3.dist-info/METADATA,sha256=DNgpZyqOjMG6LQKVRXO0pCkeUA-32mUfyPRVmhhrAI0,3855
+django_minifilter-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_minifilter-0.0.3.dist-info/top_level.txt,sha256=lpaZe2kTP8CyIxncBImIHPAWkkrVMedwt5D_IYiXIx8,11
+django_minifilter-0.0.3.dist-info/RECORD,,
