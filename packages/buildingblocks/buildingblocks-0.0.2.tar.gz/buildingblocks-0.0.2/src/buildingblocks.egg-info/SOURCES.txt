@@ -1,0 +1,9 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+setup.py
+src/buildingblocks.egg-info/PKG-INFO
+src/buildingblocks.egg-info/SOURCES.txt
+src/buildingblocks.egg-info/dependency_links.txt
+src/buildingblocks.egg-info/requires.txt
+src/buildingblocks.egg-info/top_level.txt
