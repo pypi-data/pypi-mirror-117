@@ -1,0 +1,10 @@
+setup.py
+fem_probability/Binomialdistribution.py
+fem_probability/Gaussiandistribution.py
+fem_probability/Generaldistribution.py
+fem_probability/__init__.py
+fem_probability.egg-info/PKG-INFO
+fem_probability.egg-info/SOURCES.txt
+fem_probability.egg-info/dependency_links.txt
+fem_probability.egg-info/not-zip-safe
+fem_probability.egg-info/top_level.txt
