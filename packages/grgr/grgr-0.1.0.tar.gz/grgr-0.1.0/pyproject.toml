@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "grgr"
+version = "0.1.0"
+description = "`grgr` is a wrapper library for using `ggplot2` from `python`."
+authors = ["7cm-diameter <from.this.ridiculous.loop@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/7cm-diameter/grgr/wiki"
+repository = "https://github.com/7cm-diameter/grgr"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<3.11"
+rpy2 = "^3.4.5"
+pandas = "^1.3.2"
+numpy = "^1.21.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+python-language-server = {extras = ["all"], version = "^0.36.2"}
+isort = "^5.9.3"
+yapf = "^0.31.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
