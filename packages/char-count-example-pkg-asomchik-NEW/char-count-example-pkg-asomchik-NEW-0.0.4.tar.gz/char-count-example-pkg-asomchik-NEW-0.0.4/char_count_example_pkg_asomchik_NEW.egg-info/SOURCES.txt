@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+char_count_example_pkg_asomchik_NEW.egg-info/PKG-INFO
+char_count_example_pkg_asomchik_NEW.egg-info/SOURCES.txt
+char_count_example_pkg_asomchik_NEW.egg-info/dependency_links.txt
+char_count_example_pkg_asomchik_NEW.egg-info/top_level.txt
+charcount/__init__.py
+charcount/char_count.py
