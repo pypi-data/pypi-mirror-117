@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/SentinelOne4py.egg-info/PKG-INFO
+src/SentinelOne4py.egg-info/SOURCES.txt
+src/SentinelOne4py.egg-info/dependency_links.txt
+src/SentinelOne4py.egg-info/top_level.txt
