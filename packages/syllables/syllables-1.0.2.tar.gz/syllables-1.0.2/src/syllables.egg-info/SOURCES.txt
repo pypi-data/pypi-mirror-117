@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/syllables/VERSION
+src/syllables/__init__.py
+src/syllables.egg-info/PKG-INFO
+src/syllables.egg-info/SOURCES.txt
+src/syllables.egg-info/dependency_links.txt
+src/syllables.egg-info/top_level.txt
+tests/test_syllables.py
