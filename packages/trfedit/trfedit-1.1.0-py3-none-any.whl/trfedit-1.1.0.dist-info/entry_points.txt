@@ -1,0 +1,3 @@
+[console_scripts]
+trfedit = trfedit.__main__:main
+
