@@ -1,0 +1,7 @@
+gongish>=0.5.0
+sqlalchemy>=1.4.0
+pytz>=2021.1
+ujson>=4.0.0
+PyJWT>=2.1.0
+redis>=3.5.3
+user-agents>=2.2.0
