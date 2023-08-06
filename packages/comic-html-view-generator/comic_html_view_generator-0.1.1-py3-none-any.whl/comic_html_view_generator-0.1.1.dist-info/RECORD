@@ -1,0 +1,10 @@
+comic_html_view_generator/__init__.py,sha256=JIoPYYcLHtyIoyijz1l5Wz_s-_swKBvuVopiDkdpvEs,594
+comic_html_view_generator/chvg.py,sha256=AIyjLNpegBb_GaZ4tIFtcBZ10V54zstM-Srtn3ukgTc,17824
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_comic_html_view_generator.py,sha256=PZd0-SpgcYAlcC1KrOZ02_EmCzTWFgkq_nttI0EyzKE,106
+comic_html_view_generator-0.1.1.dist-info/LICENSE,sha256=1i8GWDCqNznMAxFWuWkIBcey6BG0oXjItKzYcl1WHJQ,35142
+comic_html_view_generator-0.1.1.dist-info/METADATA,sha256=Bxx1Nd4xVXASlfD7qPSLBIqQwynXxJYNN4X3ygXc8fc,3803
+comic_html_view_generator-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+comic_html_view_generator-0.1.1.dist-info/entry_points.txt,sha256=27k4zctZ0TIzHLFlLWGVdyvHHAznSV4VNltCVErxg68,83
+comic_html_view_generator-0.1.1.dist-info/top_level.txt,sha256=g6Zo3Ilk82qWTn3lj-XSZGPeu-u0qTwIHKhDP4ADe7Q,32
+comic_html_view_generator-0.1.1.dist-info/RECORD,,
