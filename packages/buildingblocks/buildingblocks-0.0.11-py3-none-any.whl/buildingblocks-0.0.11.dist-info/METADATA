@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: buildingblocks
+Version: 0.0.11
+Summary: some mathematical tools
+Home-page: UNKNOWN
+Author: Pavan Kumar Naraharisetti
+Author-email: naraharisetti@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Use *from buildingblocks import bb* and *bb.interpolate*. Xdata and Ydata are the first two arguments to the function *interpolate*. This (Xdata and Ydata) information is used to build a model and the third argument Xnew is the x-axis values of the interpolated data that the user wishes to have. The function returns Ynew for the given Xnew. The syntax is Ynew=interpolate(Xdata, Ydata, Xnew, iter), where *iter* is number of iterations given by the user (via trial and error)
+
