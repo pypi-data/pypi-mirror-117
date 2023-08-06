@@ -1,0 +1,3 @@
+[console_scripts]
+live-pandoc = live_pandoc.main:main
+
