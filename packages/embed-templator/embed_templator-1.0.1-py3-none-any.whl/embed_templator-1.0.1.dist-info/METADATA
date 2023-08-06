@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: embed-templator
+Version: 1.0.1
+Summary: Uses custom embed templates for your discord botto keep order and consistency.
+Home-page: https://github.com/Sigmanificient/Embed-Templator
+Author: Sigmanificient
+Author-email: edhyjox@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: discord.py
+
+# Embed Templator
+*A Python Template manager for your discord bot to keep your embeds simple consistent*
+
+
