@@ -1,0 +1,7 @@
+setup.py
+cocoatree/__init__.py
+cocoatree.egg-info/PKG-INFO
+cocoatree.egg-info/SOURCES.txt
+cocoatree.egg-info/dependency_links.txt
+cocoatree.egg-info/requires.txt
+cocoatree.egg-info/top_level.txt
