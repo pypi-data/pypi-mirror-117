@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: lln-json-parser
+Version: 0.1.3
+Summary: Parse the JSON export of your saved words and phrases in Language Learning with Netflix so you can use them with other systems (e.g. converting them into Anki flashcards).
+Home-page: https://github.com/coddingtonbear/lln-json-parser
+Author: Adam Coddington
+Author-email: me@adamcoddington.net
+License: MIT
+Project-URL: Issue Tracker, https://github.com/coddingtonbear/lln-json-parser/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Language Learning with Netflix JSON Parser
+
+
+Parse the JSON export of your saved words and phrases in Language Learning with Netflix so you can use them with other systems (e.g. converting them into Anki flashcards).
+
+* Free software: MIT license
+
+
+## Installation
+
+```
+pip install lln-json-parser
+```
+
+You can also install the in-development version with:
+
+```
+pip install https://github.com/coddingtonbear/lln-json-parser/archive/master.zip
+
+```
+
+## Use
+
+```python
+from lln_json_parser.parser import get_entries
+
+with open('/path/to/lln_json_export.json', 'r') as inf:
+    for entry in get_entries(inf):
+        print(entry)
+```
+
+The above will hand you a list of `SavedWord` or `SavedPhrase` instances -- you can find type definitions for what data is available by consulting the `types.py` file.
+
+
