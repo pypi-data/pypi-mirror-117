@@ -1,0 +1,13 @@
+[Unit]
+Description=Sub Manager Service
+
+[Service]
+Type=simple
+ExecStart="{interpreter_path}" -u -m submanager --config-path "{config_path_static}" --dynamic-config-path "{config_path_dynamic}" start
+Restart=on-failure
+RestartSec=60
+TimeoutStartSec=60
+TimeoutStopSec=60
+
+[Install]
+WantedBy=default.target
