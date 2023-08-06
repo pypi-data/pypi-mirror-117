@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mos-interface
+Version: 0.1.0
+Summary: Python interface of MOS
+Home-page: https://github.com/Fuinn/mos-interface-py
+Author: Fuinn
+Author-email: UNKNOWN
+License: BSD 3-Clause License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
