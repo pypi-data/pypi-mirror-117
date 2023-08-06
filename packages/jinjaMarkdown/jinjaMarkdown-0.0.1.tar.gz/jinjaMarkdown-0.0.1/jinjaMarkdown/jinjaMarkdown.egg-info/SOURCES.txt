@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+jinjaMarkdown/jinjaMarkdown.egg-info/PKG-INFO
+jinjaMarkdown/jinjaMarkdown.egg-info/SOURCES.txt
+jinjaMarkdown/jinjaMarkdown.egg-info/dependency_links.txt
+jinjaMarkdown/jinjaMarkdown.egg-info/requires.txt
+jinjaMarkdown/jinjaMarkdown.egg-info/top_level.txt
