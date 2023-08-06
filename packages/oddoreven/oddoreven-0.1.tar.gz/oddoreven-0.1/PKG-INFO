@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: oddoreven
+Version: 0.1
+Summary: Lets play odd or even
+Home-page: https://github.com/georgerahul24/oddoreven
+Author: George Rahul
+Author-email: georgerahul24@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: odddoreven
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
