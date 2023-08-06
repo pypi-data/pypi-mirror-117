@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aws_iam_db/__init__.py
+aws_iam_db/__main__.py
+aws_iam_db/build_db.py
+aws_iam_db/docs.py
+aws_iam_db.egg-info/PKG-INFO
+aws_iam_db.egg-info/SOURCES.txt
+aws_iam_db.egg-info/dependency_links.txt
+aws_iam_db.egg-info/entry_points.txt
+aws_iam_db.egg-info/requires.txt
+aws_iam_db.egg-info/top_level.txt
