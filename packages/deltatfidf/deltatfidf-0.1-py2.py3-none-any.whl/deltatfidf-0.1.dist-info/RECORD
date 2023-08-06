@@ -1,0 +1,10 @@
+deltatfidf/DeltaTfidfTransformer.py,sha256=S8jEcRfTwsMN5hgFu7qWOj1cxLm2NBuiQ1veUKaUdpc,9944
+deltatfidf/DeltaTfidfVectorizer.py,sha256=6IsbVrrAlndquXv3WMcuJRjsvf9uMkzh0GUMKl_2MkA,14969
+deltatfidf/__init__.py,sha256=YrrmBwNkMaprL0o4238tGrIdYh6alKm3a1fKoAQlCU0,177
+deltatfidf/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deltatfidf/tests/test_vectorizer.py,sha256=YxjgC1lgX_-KLY-ArFvVqlD76Egk1_P41wNTr69WAew,596
+deltatfidf-0.1.dist-info/LICENSE,sha256=i-avVXFUf8W6BNbkegvLQaAvR-Jtx1mARZogMmy7Azg,1086
+deltatfidf-0.1.dist-info/METADATA,sha256=7HOgsmgYml14rxiGbEn2kdbu5K6Mdg5pH0EnlQom0vQ,267
+deltatfidf-0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+deltatfidf-0.1.dist-info/top_level.txt,sha256=Kputi40w1d49J7PXdI7hAl6ZOQnQn5WgF-yoZgVxaOU,11
+deltatfidf-0.1.dist-info/RECORD,,

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: deltatfidf
+Version: 0.1
+Summary: DeltaTfidf
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: scipy (>=1.5)
+Requires-Dist: scikit-learn (>=0.24)
+
+UNKNOWN
+
+
