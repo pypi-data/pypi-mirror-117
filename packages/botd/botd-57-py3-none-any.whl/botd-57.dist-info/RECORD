@@ -1,0 +1,15 @@
+botd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botd/all.py,sha256=lrnkoitMKAmtPHVOuw7cwJHDuVmDhoVn6FxLCMrO-Qc,61
+botd/ver.py,sha256=mJ7Sh2Eqr6AQnt4EBHXUYEDaIefBGRLNOJO_38LyKk8,180
+botd-57.data/data/etc/rc.d/botd,sha256=N6mxxJkUMOSGIKDGVklgnfuuLxIAw15s9PltywhoNcM,284
+botd-57.data/data/lib/systemd/system/botd.service,sha256=dx-0cOAqtNANuGt44DI4t8gvdki4Sq2bBKr_nS4IiRs,259
+botd-57.data/data/man/man8/botctl.8.gz,sha256=RjhJYp1Gn83oFbqJ7GjNUM-s991UBUUTizPdf6HPmNc,863
+botd-57.data/data/man/man8/botd.8.gz,sha256=ZxA2GXuc3hzqzVCQJ96Y3TXz5lPRv_YE53WKA4VUaew,861
+botd-57.data/data/share/doc/botd/botd.8.md,sha256=laLAGfAfzkjUWrwQyvBjTx22F3SCdBJiI8HWJJH9uA4,1410
+botd-57.data/scripts/botctl,sha256=SMrM5bl6tx7Rnhwr-Y2KwRkxQRTMbUqs6qE-iXWetII,2195
+botd-57.data/scripts/botd,sha256=a6qP86aT_6npFmVyHosiX0FcKfDc8fZcLcczGJgqkTA,805
+botd-57.dist-info/METADATA,sha256=xTUGKxgDvVECrAuFp9WnZHdokEbXeZ7pJxHzdPHXk5s,1853
+botd-57.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+botd-57.dist-info/top_level.txt,sha256=yzzJ5SH4oRVkswiIEcfuPYqq4SmCaUGvTt7y7IEN1Kw,5
+botd-57.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+botd-57.dist-info/RECORD,,
