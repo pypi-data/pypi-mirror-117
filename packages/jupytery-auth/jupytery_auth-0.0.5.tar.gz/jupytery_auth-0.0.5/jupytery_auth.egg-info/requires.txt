@@ -1,0 +1,4 @@
+nbclassic
+jupyter-server
+pyjwt
+requests
