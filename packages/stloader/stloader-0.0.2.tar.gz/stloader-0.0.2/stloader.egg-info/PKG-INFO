@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: stloader
+Version: 0.0.2
+Summary: Application to load custom and factory firmware on the STLINK-V3
+Home-page: https://github.com/buildxyz-git/stloader
+Author: BuildXYZ
+Author-email: buildxyz@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/buildxyz-git/stloader/archive/refs/tags/v_01.tar.gz
+Description: # stloader
+        stloader is python based commandline utility for flashing any firmware onto a STLINK-V3 MINI probe without erasing the factory ST bootloader. This project includes the work from the following projects
+        - [radioperator](https://github.com/RadioOperator) - [Yet Another Bootloader](https://github.com/RadioOperator/Yet_Another_Bootloader)
+        - [Jean THOMAS](https://github.com/jeanthom) - [stlink-tool](https://github.com/jeanthom/stlink-tool)
+        
+        ## Installation
+        `pip install stloader`
+        ## Usage
+        TODO
+        ## tl;dr
+        ![Alt text](/img/stlink_v3_annotated.jpg?raw=true "ST-LINK-V3 MINI")
+        TODO
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

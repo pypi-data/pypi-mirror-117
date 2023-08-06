@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+stloader.egg-info/PKG-INFO
+stloader.egg-info/SOURCES.txt
+stloader.egg-info/dependency_links.txt
+stloader.egg-info/entry_points.txt
+stloader.egg-info/requires.txt
+stloader.egg-info/top_level.txt
