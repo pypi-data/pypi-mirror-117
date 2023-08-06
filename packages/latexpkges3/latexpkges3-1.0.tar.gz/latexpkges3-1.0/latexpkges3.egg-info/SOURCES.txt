@@ -1,0 +1,9 @@
+LICENSE
+README.md
+latexpkges3.py
+setup.py
+latexpkges3.egg-info/PKG-INFO
+latexpkges3.egg-info/SOURCES.txt
+latexpkges3.egg-info/dependency_links.txt
+latexpkges3.egg-info/entry_points.txt
+latexpkges3.egg-info/top_level.txt
