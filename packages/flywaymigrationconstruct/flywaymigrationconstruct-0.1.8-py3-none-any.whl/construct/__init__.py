@@ -1,0 +1,214 @@
+'''
+# replace this
+'''
+import abc
+import builtins
+import datetime
+import enum
+import typing
+
+import jsii
+import publication
+import typing_extensions
+
+from ._jsii import *
+
+import aws_cdk.aws_ec2
+import aws_cdk.aws_lambda
+import aws_cdk.aws_s3
+import aws_cdk.core
+
+
+class FlywayConstruct(
+    aws_cdk.core.Construct,
+    metaclass=jsii.JSIIMeta,
+    jsii_type="flywaymigrationconstruct.FlywayConstruct",
+):
+    def __init__(
+        self,
+        scope: aws_cdk.core.Construct,
+        id: builtins.str,
+        *,
+        bucket: aws_cdk.aws_s3.IBucket,
+        migration_bucket_secret_arn: builtins.str,
+        security_groups: typing.Mapping[typing.Any, typing.Any],
+        subnet: aws_cdk.aws_ec2.SubnetSelection,
+        vpc: aws_cdk.aws_ec2.IVpc,
+        memory_size: typing.Optional[jsii.Number] = None,
+        timeout: typing.Optional[aws_cdk.core.Duration] = None,
+    ) -> None:
+        '''
+        :param scope: -
+        :param id: -
+        :param bucket: 
+        :param migration_bucket_secret_arn: 
+        :param security_groups: 
+        :param subnet: 
+        :param vpc: 
+        :param memory_size: 
+        :param timeout: 
+        '''
+        params = FlywayConstructParams(
+            bucket=bucket,
+            migration_bucket_secret_arn=migration_bucket_secret_arn,
+            security_groups=security_groups,
+            subnet=subnet,
+            vpc=vpc,
+            memory_size=memory_size,
+            timeout=timeout,
+        )
+
+        jsii.create(FlywayConstruct, self, [scope, id, params])
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name="bucketCodeArn")
+    def bucket_code_arn(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, "bucketCodeArn"))
+
+    @bucket_code_arn.setter
+    def bucket_code_arn(self, value: builtins.str) -> None:
+        jsii.set(self, "bucketCodeArn", value)
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name="flywayLambdaMigration")
+    def flyway_lambda_migration(self) -> aws_cdk.aws_lambda.Function:
+        return typing.cast(aws_cdk.aws_lambda.Function, jsii.get(self, "flywayLambdaMigration"))
+
+    @flyway_lambda_migration.setter
+    def flyway_lambda_migration(self, value: aws_cdk.aws_lambda.Function) -> None:
+        jsii.set(self, "flywayLambdaMigration", value)
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name="handler")
+    def handler(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, "handler"))
+
+    @handler.setter
+    def handler(self, value: builtins.str) -> None:
+        jsii.set(self, "handler", value)
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name="idLambdaCode")
+    def id_lambda_code(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, "idLambdaCode"))
+
+    @id_lambda_code.setter
+    def id_lambda_code(self, value: builtins.str) -> None:
+        jsii.set(self, "idLambdaCode", value)
+
+    @builtins.property # type: ignore[misc]
+    @jsii.member(jsii_name="objectCodeKey")
+    def object_code_key(self) -> builtins.str:
+        return typing.cast(builtins.str, jsii.get(self, "objectCodeKey"))
+
+    @object_code_key.setter
+    def object_code_key(self, value: builtins.str) -> None:
+        jsii.set(self, "objectCodeKey", value)
+
+
+@jsii.data_type(
+    jsii_type="flywaymigrationconstruct.FlywayConstructParams",
+    jsii_struct_bases=[],
+    name_mapping={
+        "bucket": "bucket",
+        "migration_bucket_secret_arn": "migrationBucketSecretArn",
+        "security_groups": "securityGroups",
+        "subnet": "subnet",
+        "vpc": "vpc",
+        "memory_size": "memorySize",
+        "timeout": "timeout",
+    },
+)
+class FlywayConstructParams:
+    def __init__(
+        self,
+        *,
+        bucket: aws_cdk.aws_s3.IBucket,
+        migration_bucket_secret_arn: builtins.str,
+        security_groups: typing.Mapping[typing.Any, typing.Any],
+        subnet: aws_cdk.aws_ec2.SubnetSelection,
+        vpc: aws_cdk.aws_ec2.IVpc,
+        memory_size: typing.Optional[jsii.Number] = None,
+        timeout: typing.Optional[aws_cdk.core.Duration] = None,
+    ) -> None:
+        '''
+        :param bucket: 
+        :param migration_bucket_secret_arn: 
+        :param security_groups: 
+        :param subnet: 
+        :param vpc: 
+        :param memory_size: 
+        :param timeout: 
+        '''
+        if isinstance(subnet, dict):
+            subnet = aws_cdk.aws_ec2.SubnetSelection(**subnet)
+        self._values: typing.Dict[str, typing.Any] = {
+            "bucket": bucket,
+            "migration_bucket_secret_arn": migration_bucket_secret_arn,
+            "security_groups": security_groups,
+            "subnet": subnet,
+            "vpc": vpc,
+        }
+        if memory_size is not None:
+            self._values["memory_size"] = memory_size
+        if timeout is not None:
+            self._values["timeout"] = timeout
+
+    @builtins.property
+    def bucket(self) -> aws_cdk.aws_s3.IBucket:
+        result = self._values.get("bucket")
+        assert result is not None, "Required property 'bucket' is missing"
+        return typing.cast(aws_cdk.aws_s3.IBucket, result)
+
+    @builtins.property
+    def migration_bucket_secret_arn(self) -> builtins.str:
+        result = self._values.get("migration_bucket_secret_arn")
+        assert result is not None, "Required property 'migration_bucket_secret_arn' is missing"
+        return typing.cast(builtins.str, result)
+
+    @builtins.property
+    def security_groups(self) -> typing.Mapping[typing.Any, typing.Any]:
+        result = self._values.get("security_groups")
+        assert result is not None, "Required property 'security_groups' is missing"
+        return typing.cast(typing.Mapping[typing.Any, typing.Any], result)
+
+    @builtins.property
+    def subnet(self) -> aws_cdk.aws_ec2.SubnetSelection:
+        result = self._values.get("subnet")
+        assert result is not None, "Required property 'subnet' is missing"
+        return typing.cast(aws_cdk.aws_ec2.SubnetSelection, result)
+
+    @builtins.property
+    def vpc(self) -> aws_cdk.aws_ec2.IVpc:
+        result = self._values.get("vpc")
+        assert result is not None, "Required property 'vpc' is missing"
+        return typing.cast(aws_cdk.aws_ec2.IVpc, result)
+
+    @builtins.property
+    def memory_size(self) -> typing.Optional[jsii.Number]:
+        result = self._values.get("memory_size")
+        return typing.cast(typing.Optional[jsii.Number], result)
+
+    @builtins.property
+    def timeout(self) -> typing.Optional[aws_cdk.core.Duration]:
+        result = self._values.get("timeout")
+        return typing.cast(typing.Optional[aws_cdk.core.Duration], result)
+
+    def __eq__(self, rhs: typing.Any) -> builtins.bool:
+        return isinstance(rhs, self.__class__) and rhs._values == self._values
+
+    def __ne__(self, rhs: typing.Any) -> builtins.bool:
+        return not (rhs == self)
+
+    def __repr__(self) -> str:
+        return "FlywayConstructParams(%s)" % ", ".join(
+            k + "=" + repr(v) for k, v in self._values.items()
+        )
+
+
+__all__ = [
+    "FlywayConstruct",
+    "FlywayConstructParams",
+]
+
+publication.publish()
