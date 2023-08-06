@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+flit = "3.3.0"
+
+[requires]
+python_version = "3.9"
+
+
+[scripts]
+flit = "flit"
+install = "flit install"
+build = "flit build"
+publish = "flit publish"
+publish-gitlab = "flit publish --repository gitlab"
+publish-local = "flit publish --repository local"
