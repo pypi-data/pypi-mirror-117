@@ -1,0 +1,11 @@
+apd/__init__.py,sha256=t_pYrHXMS5H4_vK85kB5umJbGybZcqU9LvB5B9opDzI,1029
+apd/analysis_data.py,sha256=CdjQ3czbLbOsLy_1AAbnGBceM2tjGDw3e8Xaq6tPIbY,3822
+apd/ap_info.py,sha256=2hiTEPgcuRSBlKq_HPE2vyApDkCYFQEZ0w9zzNVznxU,5488
+apd/cern_sso.py,sha256=ThtsKFokTSVfRZCyxzsUZjJiBPkTNnKFfUvfP9PjTjQ,7552
+apd/command.py,sha256=AFQOldtaCpC48-xNF07LUhEIMWUqPanUKXDLCRccuuY,3054
+apd-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+apd-0.1.1.dist-info/METADATA,sha256=XGlHnEL6EZ-G_18AYnrKMW0H29cckWkhk1gp2OMVRG0,4900
+apd-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+apd-0.1.1.dist-info/entry_points.txt,sha256=ErHM9lrGi7wXJBiEy8R6P0l8ELUgBFqrFo2NF5K7oI4,103
+apd-0.1.1.dist-info/top_level.txt,sha256=gOmxYqb1tjWfzMT5-Aiv1QRAkJmvvsCUYeVQxwGBX7I,4
+apd-0.1.1.dist-info/RECORD,,
