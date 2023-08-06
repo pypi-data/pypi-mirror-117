@@ -1,0 +1,14 @@
+composites/version.py,sha256=ARFl7G-gCe12exBb-FIsJnbsUD5V9okxkHUUdQqb0RA,23
+composites/core.cpython-38-x86_64-linux-gnu.so,sha256=t0b3Lc6jScxp2JXoX8kTLdwcx5xMNUmciBDQFqcAj3c,5893640
+composites/__init__.py,sha256=egVWEOLR_dqS43il09gbpIdat-kM3yIgrfj6C1vePLE,1990
+composites/utils.py,sha256=jfQE6X20Dn47YOo-kFyLv_CgQ8smbfUzDSAPLoZ42ik,11466
+composites/core.pxd,sha256=ntOxlXXK9_DWvWXGYgdOOE5H_CMhbKemFlTvHspE-iw,2555
+composites.libs/libgomp-f7e03b3e.so.1.0.0,sha256=GzmXB1qluHXQUhlsmNKuWncNm8Jezfq1jt5rKrV_8kQ,93080
+composites-0.4.13.data/data/README.md,sha256=K1eEDdIQxDVX4W-kKUjfY0Ey7pEjgPNsKUmc3h1ePhg,2374
+composites-0.4.13.data/data/version.py,sha256=ARFl7G-gCe12exBb-FIsJnbsUD5V9okxkHUUdQqb0RA,23
+composites-0.4.13.data/data/LICENSE,sha256=CF-lnKvB4UJUm3w-LhQXXXOlEjOOEb5aDgHRo4L_Dlc,1310
+composites-0.4.13.dist-info/top_level.txt,sha256=8rFKbL1In6cv0XBeSaI5uG5g6oe1tYJjAc1mLlAvhWU,11
+composites-0.4.13.dist-info/WHEEL,sha256=4jt3s2SccH6o2ToOLXWl8IJUftjHelTzKdBcGG27rIE,148
+composites-0.4.13.dist-info/LICENSE,sha256=CF-lnKvB4UJUm3w-LhQXXXOlEjOOEb5aDgHRo4L_Dlc,1310
+composites-0.4.13.dist-info/METADATA,sha256=YXasrGM9T0maVUUdobTECWEDwsaSkv_OhGiU1GC3DeY,3648
+composites-0.4.13.dist-info/RECORD,,
