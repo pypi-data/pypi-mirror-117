@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fast_transformer_pytorch/__init__.py
+fast_transformer_pytorch/fast_transformer_pytorch.py
+fast_transformer_pytorch.egg-info/PKG-INFO
+fast_transformer_pytorch.egg-info/SOURCES.txt
+fast_transformer_pytorch.egg-info/dependency_links.txt
+fast_transformer_pytorch.egg-info/requires.txt
+fast_transformer_pytorch.egg-info/top_level.txt
