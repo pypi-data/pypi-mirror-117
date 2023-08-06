@@ -1,0 +1,14 @@
+pandas
+numpy
+psycopg2
+h2o
+os
+osgeo
+scipy
+typing
+datetime
+timeit
+inspect
+re
+platform
+boto3
