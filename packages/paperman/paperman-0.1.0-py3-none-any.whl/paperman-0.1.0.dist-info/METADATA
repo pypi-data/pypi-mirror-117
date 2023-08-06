@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: paperman
+Version: 0.1.0
+Summary: latex project and bibliography management utility
+Home-page: UNKNOWN
+Author: zaphB
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: appdirs
+Requires-Dist: argparse
+Requires-Dist: argcomplete
+
+# `paperman` - latex project and bibliography management utility
+
+
+
+
