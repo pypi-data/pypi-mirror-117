@@ -1,0 +1,7 @@
+setup.py
+src/TitleBar/TitleBar.py
+src/TitleBar/__init__.py
+src/TitleBar.egg-info/PKG-INFO
+src/TitleBar.egg-info/SOURCES.txt
+src/TitleBar.egg-info/dependency_links.txt
+src/TitleBar.egg-info/top_level.txt
