@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+neuronmd/__init__.py
+neuronmd/fitzhugh_nagumo.py
+neuronmd/hhmodel.py
+neuronmd/izhikevich.py
+neuronmd.egg-info/PKG-INFO
+neuronmd.egg-info/SOURCES.txt
+neuronmd.egg-info/dependency_links.txt
+neuronmd.egg-info/not-zip-safe
+neuronmd.egg-info/requires.txt
+neuronmd.egg-info/top_level.txt
