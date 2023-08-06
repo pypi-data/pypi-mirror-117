@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: jupytery_react
+Version: 0.0.6
+Summary: Jupytery React
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+[![Datalayer](https://raw.githubusercontent.com/datalayer/datalayer/main/res/logo/datalayer-25.svg?sanitize=true)](https://datalayer.io)
+
+# ⚛️ Jupytery React
+
+> Jupytery React, React.js for Jupyter.
+
+This folder curates techniques to use [React.js](https://reactjs.org) inside the [Jupyter](https://jupyter.org) ecosystem, with a primary focus on wrapping [JupyterLab](https://github.com/jupyterlab/jupyterlab) components into a React.js DOM tree. The JupyterLab UI is built on the [Lumino](https://github.com/jupyterlab/lumino) widgets.
+
+Please open [Issues](https://github.com/datalayer/datalayer/issues) for questions, feature requests, bug reports... We also welcome [Pull Requests](https://github.com/datalayer/datalayer/pulls).
+
+You can find more details on the [documentation website](https://docs.datalayer.io/docs/jupyter/react).
+
+## Develop
+
+You can launch a local storybook and hack the source code. The changes will be automatically built and displayed in your browser.
+
+[![lumino-in-react](./docs/images/lumino-in-react.png)](https://jupytery-react.datalayer.io)
+
+```bash
+# Setup your development environment.
+conda deactivate && \
+  make env-rm # If you want to reset your env.
+make env && \
+  conda activate jupytery-react
+```
+
+```bash
+# Clean, install and build.
+make clean
+make install
+make build
+```
+
+```bash
+# Start the storybook.
+echo open http://localhost:9005
+make storybook
+# To execute code from the storybook, start a separated jupyterlab server.
+make jupyterlab
+```
+
+To build a static storybook website, run `yarn build-storybook`. The generated website will be available under the `storybook/.out` folder.
+
+```bash
+yarn build-storybook && \
+  open storybook/.out/index.html
+```
+
+To deep clean your local repository, run `make clean`.
+
+## Examples
+
+```bash
+# Start a Lumino example.
+echo open http://localhost:8080
+yarn example:lumino
+```
+
+```bash
+# Start a JupyterLab React example.
+echo open http://localhost:8080
+yarn example:jupyter:widgets
+```
+
+## Deploy
+
+You can deploy the storybook in your [Vercel](https://vercel.com) (former Now.js) account. 
+
+Test the build on your local environment.
+
+```bash
+# This will open storybook/.out/index.html in your browser.
+make storybook-build
+```
+
+Ccnfigure a vercel `datalayer-jupyter-storybook` project with:
+
+- Build command: `yarn build:vercel`
+- Output directory: `storybook/.out`.
+
+Then run the following command to deploy in production.
+
+```bash 
+# Deploy the storybook (if you have karma for).
+# open https://datalayer-jupyter.datalayer.io
+make storybook-prod
+```
+
+

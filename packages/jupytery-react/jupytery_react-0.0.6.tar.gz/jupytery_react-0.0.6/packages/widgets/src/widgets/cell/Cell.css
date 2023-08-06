@@ -1,0 +1,14 @@
+/*
+.dla-JupyterCell {
+  height: 100%;
+}
+*/
+.jp-Toolbar {
+  position: relative !important;
+  height: auto !important;
+}
+
+.jp-CodeCell {
+  height: auto !important;
+  top: auto !important;
+}
