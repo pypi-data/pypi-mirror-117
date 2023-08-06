@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+gym_algorithmic/__init__.py
+gym_algorithmic/algorithmic_env.py
+gym_algorithmic/copy_.py
+gym_algorithmic/duplicated_input.py
+gym_algorithmic/repeat_copy.py
+gym_algorithmic/reverse.py
+gym_algorithmic/reversed_addition.py
+gym_algorithmic.egg-info/PKG-INFO
+gym_algorithmic.egg-info/SOURCES.txt
+gym_algorithmic.egg-info/dependency_links.txt
+gym_algorithmic.egg-info/requires.txt
+gym_algorithmic.egg-info/top_level.txt
