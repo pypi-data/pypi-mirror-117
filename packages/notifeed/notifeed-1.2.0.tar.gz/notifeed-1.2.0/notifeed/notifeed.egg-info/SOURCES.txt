@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+notifeed/notifeed.egg-info/PKG-INFO
+notifeed/notifeed.egg-info/SOURCES.txt
+notifeed/notifeed.egg-info/dependency_links.txt
+notifeed/notifeed.egg-info/entry_points.txt
+notifeed/notifeed.egg-info/requires.txt
+notifeed/notifeed.egg-info/top_level.txt
+notifeed/notifications/__init__.py
+notifeed/notifications/base.py
+notifeed/notifications/discord.py
+notifeed/notifications/slack.py

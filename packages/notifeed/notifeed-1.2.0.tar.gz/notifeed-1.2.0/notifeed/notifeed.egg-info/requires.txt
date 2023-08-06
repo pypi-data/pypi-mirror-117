@@ -1,0 +1,7 @@
+aiohttp[speedups]
+appdirs
+atoma
+bs4
+click
+requests
+peewee
