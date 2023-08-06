@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+data/names_gender_dict.json
+nameBinaryGenderMap/__init__.py
+nameBinaryGenderMap/whats_the_gender.py
+nameBinaryGenderMap.egg-info/PKG-INFO
+nameBinaryGenderMap.egg-info/SOURCES.txt
+nameBinaryGenderMap.egg-info/dependency_links.txt
+nameBinaryGenderMap.egg-info/not-zip-safe
+nameBinaryGenderMap.egg-info/top_level.txt
