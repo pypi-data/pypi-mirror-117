@@ -1,0 +1,9 @@
+Target Number,Name,Visit Number,Visit Number First Digit,N,Status,Filters,RA,Dec,Obs. Mag,Obs. Filter,Exp. Mag,Type,Distance,T0,Discovery Date,Comments
+1,ZTF21abjyiiw,"A1,A2,A3,A4,A5,A6,A7,A8,A9,AA,AB",A,12,Q,"F336W,F555W,F814W",309.3299404,66.1064231,17.7,r-ztf,,SN IIb,21.1 Mpc,,,declining but stripped
+2,ZTF21aanxhjv,B1 - BB,B,1,C_B7,visits_G280,46.9492683,40.3113527,18.3,UVW1,<19.0 (UVW1),TDE,74 Mpc,,,
+4,ZTF21abmjivk,D1 - DB,D,11,Q,visits_G280,346.119089,27.3536002,17.9,g-ztf,,SN Ia,115.9 Mpc,,,
+5,ZTF21ablvzhp,E1 - EB,E,3,R,visits_G280,339.228023,-12.5616623,17.2,g-ztf,,SN II,107.7 Mpc,,,
+7,ZTF21abkggoa,G1 - GB,G,11,Q,visits_G280,329.8643266,33.1775295,16.9,g-ztf,,SN II,99.1 Mpc,,,
+8,ZTF21abkdpnw,H1 - HB,H,15,R,visits_G280,286.2508556,34.3922903,16,g-ztf,,SN Ia,53.7 Mpc,,,
+9,ZTF21abcgnqn,I1 - IB,I,1,S_I3,visits_G280,238.4636647,55.5887984,17.9,UVW1,<18.5 (UVW1),TDE,208 Mpc,,,
+99,test,"Z1,Z2,Z3",Z,3,N,visits_G280,45,-45,20,-,-,SN IIb,-,,,
