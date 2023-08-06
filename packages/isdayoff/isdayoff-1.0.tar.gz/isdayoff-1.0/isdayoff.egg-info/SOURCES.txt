@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+isdayoff/__init__.py
+isdayoff/isdayoff.py
+isdayoff/typingapi.py
+isdayoff.egg-info/PKG-INFO
+isdayoff.egg-info/SOURCES.txt
+isdayoff.egg-info/dependency_links.txt
+isdayoff.egg-info/not-zip-safe
+isdayoff.egg-info/requires.txt
+isdayoff.egg-info/top_level.txt
