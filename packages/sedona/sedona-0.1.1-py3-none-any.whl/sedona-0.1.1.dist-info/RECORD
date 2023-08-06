@@ -1,0 +1,10 @@
+sedona.py,sha256=dTuBQF1uQHbDYJpGxw68lSAoH4ef8A695Obg-HLc-PA,770
+modules/Converter.py,sha256=lpApCTzUsBET0-5fU_NHVVp2LgEkn0OXQcgufsAkM8M,675
+modules/Downloader.py,sha256=jJRKP9XU2-CVJDkUXNFfzLjUC9bz3WnSSr2keYrFqrQ,1043
+modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sedona-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sedona-0.1.1.dist-info/METADATA,sha256=1KfNxKKQue2lGHy9okeybiglOT-aJy5b4Qa9N3sVRvs,2024
+sedona-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sedona-0.1.1.dist-info/entry_points.txt,sha256=YqwKLYsf6cNmWco4-KPcBldtYvt7kvV5pnyV42goSvg,58
+sedona-0.1.1.dist-info/top_level.txt,sha256=lAdSjGepnc_qKCS_n_8vO758Q3Fapr0d-GlLfYzs2ag,15
+sedona-0.1.1.dist-info/RECORD,,
