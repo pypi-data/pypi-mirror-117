@@ -1,0 +1,3 @@
+[console_scripts]
+vloginit = vloginit.main:main
+
