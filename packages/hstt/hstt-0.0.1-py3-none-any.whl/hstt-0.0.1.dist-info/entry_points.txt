@@ -1,0 +1,3 @@
+[console_scripts]
+hstt = hstt.main:main
+
