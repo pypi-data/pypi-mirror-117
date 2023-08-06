@@ -1,0 +1,6 @@
+
+[pubsub]
+google-cloud-pubsub<2
+
+[rabbitmq]
+pika<2
