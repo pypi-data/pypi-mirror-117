@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: starlit
+Version: 0.1.0
+Summary: 🌠 Neural Architecture Definition Framework
+License: GNU General Public License v3.0
+Keywords: AI,Architecture Definition,Notation
+Author: Hundgeburth Laurenz
+Author-email: laurenzbeck@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: Linkedin, https://www.linkedin.com/in/laurenz-hundgeburth-50156b219/
+Description-Content-Type: text/markdown
+
+# starlit
+🌠 Neural Architecture Definition Framework
+

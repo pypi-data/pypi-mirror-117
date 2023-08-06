@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "starlit"
+version = "0.1.0"
+description = "🌠 Neural Architecture Definition Framework"
+authors = ["Hundgeburth Laurenz <laurenzbeck@gmail.com>"]
+readme = "README.md"
+#homepage = "https://github.com/LaurenzBeck/starlit"
+license = "GNU General Public License v3.0"
+#repository = "https://github.com/LaurenzBeck/starlit"
+#documentation = "https://github.com/LaurenzBeck/starlit/blob/main/README.md"
+keywords = ["AI", "Architecture Definition", "Notation"]
+packages = [
+    { include = "starlit" }
+]
+include = [
+    "LICENSE"
+]
+
+[tool.poetry.urls]
+"Linkedin" = "https://www.linkedin.com/in/laurenz-hundgeburth-50156b219/"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
