@@ -1,0 +1,8 @@
+androidpublisher/__init__.py,sha256=bwvWpUk0EyEUuvD53CeliZB1Kg0oNPGd4LQm5A7KRo0,23
+androidpublisher/__main__.py,sha256=_2z1RhjIRuhJZljK8DfRqZXrJvobHpsfdOSHUypcNGo,60
+androidpublisher/main.py,sha256=PpGazKGeH_02LcxGu8gJ-Oj5ghyM7BcdWNmH0gon-cA,1067
+androidpublisher/upload.py,sha256=k5QXU24jeHxXQq2xq3-ky9WCNFvPkqEnnkFmQqV5jSQ,2782
+androidpublisher-0.1.5.dist-info/entry_points.txt,sha256=_A_YilkO4rZtU7wkjpu-cJB3Ot57O5uQ-a1Ac4v_Dk4,62
+androidpublisher-0.1.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+androidpublisher-0.1.5.dist-info/METADATA,sha256=esPEmBNISeVRp8TpAVowCoDpO4_zV8CtWqjrtGq7TNM,1290
+androidpublisher-0.1.5.dist-info/RECORD,,
