@@ -1,0 +1,3 @@
+[panel.auth]
+auth0_oidc=panel_auth0_oidc.panel_auth0_oidc:OidcAuth0Handler
+
