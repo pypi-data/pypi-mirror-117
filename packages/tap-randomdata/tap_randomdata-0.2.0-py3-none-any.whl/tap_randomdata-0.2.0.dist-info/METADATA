@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: tap-randomdata
+Version: 0.2.0
+Summary: Singer Tap to generate random data from https://random-data-api.com/
+Home-page: https://github.com/wallace-prado/singer-demo
+Author: Wallace Prado
+Author-email: wprado@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: singer-python (>=5.12.1,<6.0.0)
+Project-URL: Repository, https://github.com/wallace-prado/singer-demo
+Description-Content-Type: text/markdown
+
+# Singer Demo
+
+## Intro
+
+This Singer Tap implements a simple way to generate random data, using https://random-data-api.com/ as source.
+
+## Available Streams
+
+This Tap supports the Streams listed below:
+
+- Company
+- Restaurant
+- Address
+- Vehicle
+- Food
+
+Please, check https://random-data-api.com/documentation for more information.
+
+## Config
+
+To execute the Tap in Sync Mode you have to provide a config.json file.
+
+There is only one required key: record_count. It must be a integer and represents the number of record to be generated.
+
+Please check [sample_file](tap-randomdata/sample_config.json) for an example.

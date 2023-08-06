@@ -1,0 +1,10 @@
+tap_randomdata/__init__.py,sha256=B00w-oZYhHl2C4QmwPrRvnFAhcZgKELTfRtMpCxo1NM,3906
+tap_randomdata/schemas/address.json,sha256=M1CzB-pwFjg808fpAu9N-QOmArpPLid4jxmBAb_vSjo,1387
+tap_randomdata/schemas/company.json,sha256=OkPmdtzOpWQL7fhOgy2r3zC22ieWbeCTu6LWQLo-cds,7109
+tap_randomdata/schemas/food.json,sha256=JL2DjmdsXqgiTgqmXrku_wEbHl9EQy_IM2OLCBhRE-4,3040
+tap_randomdata/schemas/restaurant.json,sha256=uM_N-9zD04kJNtbXeqbFDlndBJNBBUOU0frviTlI9dk,25013
+tap_randomdata/schemas/vehicle.json,sha256=zvAsCQJpSXwEQpXJxlyoWZ68nb7C5r73rSOoacKhJK8,8246
+tap_randomdata-0.2.0.dist-info/entry_points.txt,sha256=rMOl8YJ86xhXRLhWKlfEil03UhcrTh4q7zh-TPlzM64,54
+tap_randomdata-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+tap_randomdata-0.2.0.dist-info/METADATA,sha256=JV0bB0gNULig3zkaOPljHLrmt8OcHXObPIyyXuM9PHY,1238
+tap_randomdata-0.2.0.dist-info/RECORD,,

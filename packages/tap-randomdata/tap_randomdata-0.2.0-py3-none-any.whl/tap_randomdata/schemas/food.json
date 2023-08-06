@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "selected": true,
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 5939,
+            "uid": "f5d39454-de6a-4ac9-89e1-7683a5c8e7fa",
+            "dish": "Chicken Parm",
+            "description": "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast.",
+            "ingredient": "Dried Apricots",
+            "measurement": "1/3 tablespoon"
+        }
+    ],
+    "required": [
+        "id",
+        "uid",
+        "dish",
+        "description",
+        "ingredient",
+        "measurement"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                5939
+            ]
+        },
+        "uid": {
+            "$id": "#/properties/uid",
+            "type": "string",
+            "title": "The uid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "f5d39454-de6a-4ac9-89e1-7683a5c8e7fa"
+            ]
+        },
+        "dish": {
+            "$id": "#/properties/dish",
+            "type": "string",
+            "title": "The dish schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Chicken Parm"
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast."
+            ]
+        },
+        "ingredient": {
+            "$id": "#/properties/ingredient",
+            "type": "string",
+            "title": "The ingredient schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Dried Apricots"
+            ]
+        },
+        "measurement": {
+            "$id": "#/properties/measurement",
+            "type": "string",
+            "title": "The measurement schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "1/3 tablespoon"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,251 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "selected": true,
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 6175,
+            "uid": "5e6cb045-2597-48d1-bc6a-384eb6945a5a",
+            "vin": "2Z7VH246J0R629448",
+            "make_and_model": "Ford Fiesta",
+            "color": "Orange",
+            "transmission": "Manual",
+            "drive_type": "4x4/4-wheel drive",
+            "fuel_type": "E-85/Gasoline",
+            "car_type": "SUV",
+            "car_options": [
+                "Power Locks",
+                "Alloy Wheels",
+                "Airbag: Driver",
+                "Antilock Brakes",
+                "Memory Seats"
+            ],
+            "specs": [
+                "Torsion beam rear suspension w/stabilizer bar",
+                "6.1L SRT V8 \"Hemi\" engine",
+                "Electronic control braking (ECB)",
+                "Body color grille",
+                "Direct-type tire pressure monitor system",
+                "Body color fascias w/bright insert"
+            ],
+            "doors": 4,
+            "mileage": 55061,
+            "kilometrage": 25459,
+            "license_plate": "RZL-5574"
+        }
+    ],
+    "required": [
+        "id",
+        "uid",
+        "vin",
+        "make_and_model",
+        "color",
+        "transmission",
+        "drive_type",
+        "fuel_type",
+        "car_type",
+        "car_options",
+        "specs",
+        "doors",
+        "mileage",
+        "kilometrage",
+        "license_plate"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                6175
+            ]
+        },
+        "uid": {
+            "$id": "#/properties/uid",
+            "type": "string",
+            "title": "The uid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "5e6cb045-2597-48d1-bc6a-384eb6945a5a"
+            ]
+        },
+        "vin": {
+            "$id": "#/properties/vin",
+            "type": "string",
+            "title": "The vin schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2Z7VH246J0R629448"
+            ]
+        },
+        "make_and_model": {
+            "$id": "#/properties/make_and_model",
+            "type": "string",
+            "title": "The make_and_model schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Ford Fiesta"
+            ]
+        },
+        "color": {
+            "$id": "#/properties/color",
+            "type": "string",
+            "title": "The color schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Orange"
+            ]
+        },
+        "transmission": {
+            "$id": "#/properties/transmission",
+            "type": "string",
+            "title": "The transmission schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Manual"
+            ]
+        },
+        "drive_type": {
+            "$id": "#/properties/drive_type",
+            "type": "string",
+            "title": "The drive_type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "4x4/4-wheel drive"
+            ]
+        },
+        "fuel_type": {
+            "$id": "#/properties/fuel_type",
+            "type": "string",
+            "title": "The fuel_type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "E-85/Gasoline"
+            ]
+        },
+        "car_type": {
+            "$id": "#/properties/car_type",
+            "type": "string",
+            "title": "The car_type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "SUV"
+            ]
+        },
+        "car_options": {
+            "$id": "#/properties/car_options",
+            "type": "array",
+            "title": "The car_options schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "Power Locks",
+                    "Alloy Wheels"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/car_options/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/car_options/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Power Locks",
+                            "Alloy Wheels"
+                        ]
+                    }
+                ]
+            }
+        },
+        "specs": {
+            "$id": "#/properties/specs",
+            "type": "array",
+            "title": "The specs schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "Torsion beam rear suspension w/stabilizer bar",
+                    "6.1L SRT V8 \"Hemi\" engine"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/specs/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/specs/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Torsion beam rear suspension w/stabilizer bar",
+                            "6.1L SRT V8 \"Hemi\" engine"
+                        ]
+                    }
+                ]
+            }
+        },
+        "doors": {
+            "$id": "#/properties/doors",
+            "type": "integer",
+            "title": "The doors schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                4
+            ]
+        },
+        "mileage": {
+            "$id": "#/properties/mileage",
+            "type": "integer",
+            "title": "The mileage schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                55061
+            ]
+        },
+        "kilometrage": {
+            "$id": "#/properties/kilometrage",
+            "type": "integer",
+            "title": "The kilometrage schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                25459
+            ]
+        },
+        "license_plate": {
+            "$id": "#/properties/license_plate",
+            "type": "string",
+            "title": "The license_plate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "RZL-5574"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

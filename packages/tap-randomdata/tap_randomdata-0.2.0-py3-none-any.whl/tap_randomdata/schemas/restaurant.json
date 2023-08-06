@@ -1,0 +1,586 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "selected": true,
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 3740,
+            "uid": "b0bd666c-0cab-436d-8747-8fe8ce6652f3",
+            "name": "Smokestack Brasserie",
+            "type": "Burgers",
+            "description": "To deliver an exceptional shopping experience by offering the best service, value, quality, and freshest products while being good stewards of our environment and giving back to the communities we serve.",
+            "review": "Staff was very accommodating but the chef were no nonsense. The ambiance is clean and tranquil which is perfect if youre looking to have a conversation with a date or a friend.",
+            "logo": "https://loremflickr.com/500/500/restaurant",
+            "phone_number": "(372) 570-0562 x7141",
+            "address": "Suite 656 235 Owen Overpass, Edisonburgh, NE 85915-2563",
+            "hours": {
+                "monday": {
+                    "opens_at": "7:34 AM",
+                    "closes_at": "7:25 PM",
+                    "is_closed": true
+                },
+                "tuesday": {
+                    "opens_at": "11:47 AM",
+                    "closes_at": "9:35 PM",
+                    "is_closed": false
+                },
+                "wednesday": {
+                    "opens_at": "9:50 AM",
+                    "closes_at": "6:15 PM",
+                    "is_closed": false
+                },
+                "thursday": {
+                    "opens_at": "7:23 AM",
+                    "closes_at": "3:34 PM",
+                    "is_closed": true
+                },
+                "friday": {
+                    "opens_at": "11:51 AM",
+                    "closes_at": "8:55 PM",
+                    "is_closed": false
+                },
+                "saturday": {
+                    "opens_at": "9:40 AM",
+                    "closes_at": "7:48 PM",
+                    "is_closed": true
+                },
+                "sunday": {
+                    "opens_at": "11:52 AM",
+                    "closes_at": "11:57 PM",
+                    "is_closed": true
+                }
+            }
+        }
+    ],
+    "required": [
+        "id",
+        "uid",
+        "name",
+        "type",
+        "description",
+        "review",
+        "logo",
+        "phone_number",
+        "address",
+        "hours"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                3740
+            ]
+        },
+        "uid": {
+            "$id": "#/properties/uid",
+            "type": "string",
+            "title": "The uid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "b0bd666c-0cab-436d-8747-8fe8ce6652f3"
+            ]
+        },
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Smokestack Brasserie"
+            ]
+        },
+        "type": {
+            "$id": "#/properties/type",
+            "type": "string",
+            "title": "The type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Burgers"
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "To deliver an exceptional shopping experience by offering the best service, value, quality, and freshest products while being good stewards of our environment and giving back to the communities we serve."
+            ]
+        },
+        "review": {
+            "$id": "#/properties/review",
+            "type": "string",
+            "title": "The review schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Staff was very accommodating but the chef were no nonsense. The ambiance is clean and tranquil which is perfect if youre looking to have a conversation with a date or a friend."
+            ]
+        },
+        "logo": {
+            "$id": "#/properties/logo",
+            "type": "string",
+            "title": "The logo schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://loremflickr.com/500/500/restaurant"
+            ]
+        },
+        "phone_number": {
+            "$id": "#/properties/phone_number",
+            "type": "string",
+            "title": "The phone_number schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "(372) 570-0562 x7141"
+            ]
+        },
+        "address": {
+            "$id": "#/properties/address",
+            "type": "string",
+            "title": "The address schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Suite 656 235 Owen Overpass, Edisonburgh, NE 85915-2563"
+            ]
+        },
+        "hours": {
+            "$id": "#/properties/hours",
+            "type": "object",
+            "title": "The hours schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "monday": {
+                        "opens_at": "7:34 AM",
+                        "closes_at": "7:25 PM",
+                        "is_closed": true
+                    },
+                    "tuesday": {
+                        "opens_at": "11:47 AM",
+                        "closes_at": "9:35 PM",
+                        "is_closed": false
+                    },
+                    "wednesday": {
+                        "opens_at": "9:50 AM",
+                        "closes_at": "6:15 PM",
+                        "is_closed": false
+                    },
+                    "thursday": {
+                        "opens_at": "7:23 AM",
+                        "closes_at": "3:34 PM",
+                        "is_closed": true
+                    },
+                    "friday": {
+                        "opens_at": "11:51 AM",
+                        "closes_at": "8:55 PM",
+                        "is_closed": false
+                    },
+                    "saturday": {
+                        "opens_at": "9:40 AM",
+                        "closes_at": "7:48 PM",
+                        "is_closed": true
+                    },
+                    "sunday": {
+                        "opens_at": "11:52 AM",
+                        "closes_at": "11:57 PM",
+                        "is_closed": true
+                    }
+                }
+            ],
+            "required": [
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+            ],
+            "properties": {
+                "monday": {
+                    "$id": "#/properties/hours/properties/monday",
+                    "type": "object",
+                    "title": "The monday schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "opens_at": "7:34 AM",
+                            "closes_at": "7:25 PM",
+                            "is_closed": true
+                        }
+                    ],
+                    "required": [
+                        "opens_at",
+                        "closes_at",
+                        "is_closed"
+                    ],
+                    "properties": {
+                        "opens_at": {
+                            "$id": "#/properties/hours/properties/monday/properties/opens_at",
+                            "type": "string",
+                            "title": "The opens_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "7:34 AM"
+                            ]
+                        },
+                        "closes_at": {
+                            "$id": "#/properties/hours/properties/monday/properties/closes_at",
+                            "type": "string",
+                            "title": "The closes_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "7:25 PM"
+                            ]
+                        },
+                        "is_closed": {
+                            "$id": "#/properties/hours/properties/monday/properties/is_closed",
+                            "type": "boolean",
+                            "title": "The is_closed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "tuesday": {
+                    "$id": "#/properties/hours/properties/tuesday",
+                    "type": "object",
+                    "title": "The tuesday schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "opens_at": "11:47 AM",
+                            "closes_at": "9:35 PM",
+                            "is_closed": false
+                        }
+                    ],
+                    "required": [
+                        "opens_at",
+                        "closes_at",
+                        "is_closed"
+                    ],
+                    "properties": {
+                        "opens_at": {
+                            "$id": "#/properties/hours/properties/tuesday/properties/opens_at",
+                            "type": "string",
+                            "title": "The opens_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "11:47 AM"
+                            ]
+                        },
+                        "closes_at": {
+                            "$id": "#/properties/hours/properties/tuesday/properties/closes_at",
+                            "type": "string",
+                            "title": "The closes_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "9:35 PM"
+                            ]
+                        },
+                        "is_closed": {
+                            "$id": "#/properties/hours/properties/tuesday/properties/is_closed",
+                            "type": "boolean",
+                            "title": "The is_closed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "wednesday": {
+                    "$id": "#/properties/hours/properties/wednesday",
+                    "type": "object",
+                    "title": "The wednesday schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "opens_at": "9:50 AM",
+                            "closes_at": "6:15 PM",
+                            "is_closed": false
+                        }
+                    ],
+                    "required": [
+                        "opens_at",
+                        "closes_at",
+                        "is_closed"
+                    ],
+                    "properties": {
+                        "opens_at": {
+                            "$id": "#/properties/hours/properties/wednesday/properties/opens_at",
+                            "type": "string",
+                            "title": "The opens_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "9:50 AM"
+                            ]
+                        },
+                        "closes_at": {
+                            "$id": "#/properties/hours/properties/wednesday/properties/closes_at",
+                            "type": "string",
+                            "title": "The closes_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "6:15 PM"
+                            ]
+                        },
+                        "is_closed": {
+                            "$id": "#/properties/hours/properties/wednesday/properties/is_closed",
+                            "type": "boolean",
+                            "title": "The is_closed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "thursday": {
+                    "$id": "#/properties/hours/properties/thursday",
+                    "type": "object",
+                    "title": "The thursday schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "opens_at": "7:23 AM",
+                            "closes_at": "3:34 PM",
+                            "is_closed": true
+                        }
+                    ],
+                    "required": [
+                        "opens_at",
+                        "closes_at",
+                        "is_closed"
+                    ],
+                    "properties": {
+                        "opens_at": {
+                            "$id": "#/properties/hours/properties/thursday/properties/opens_at",
+                            "type": "string",
+                            "title": "The opens_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "7:23 AM"
+                            ]
+                        },
+                        "closes_at": {
+                            "$id": "#/properties/hours/properties/thursday/properties/closes_at",
+                            "type": "string",
+                            "title": "The closes_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "3:34 PM"
+                            ]
+                        },
+                        "is_closed": {
+                            "$id": "#/properties/hours/properties/thursday/properties/is_closed",
+                            "type": "boolean",
+                            "title": "The is_closed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "friday": {
+                    "$id": "#/properties/hours/properties/friday",
+                    "type": "object",
+                    "title": "The friday schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "opens_at": "11:51 AM",
+                            "closes_at": "8:55 PM",
+                            "is_closed": false
+                        }
+                    ],
+                    "required": [
+                        "opens_at",
+                        "closes_at",
+                        "is_closed"
+                    ],
+                    "properties": {
+                        "opens_at": {
+                            "$id": "#/properties/hours/properties/friday/properties/opens_at",
+                            "type": "string",
+                            "title": "The opens_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "11:51 AM"
+                            ]
+                        },
+                        "closes_at": {
+                            "$id": "#/properties/hours/properties/friday/properties/closes_at",
+                            "type": "string",
+                            "title": "The closes_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "8:55 PM"
+                            ]
+                        },
+                        "is_closed": {
+                            "$id": "#/properties/hours/properties/friday/properties/is_closed",
+                            "type": "boolean",
+                            "title": "The is_closed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "saturday": {
+                    "$id": "#/properties/hours/properties/saturday",
+                    "type": "object",
+                    "title": "The saturday schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "opens_at": "9:40 AM",
+                            "closes_at": "7:48 PM",
+                            "is_closed": true
+                        }
+                    ],
+                    "required": [
+                        "opens_at",
+                        "closes_at",
+                        "is_closed"
+                    ],
+                    "properties": {
+                        "opens_at": {
+                            "$id": "#/properties/hours/properties/saturday/properties/opens_at",
+                            "type": "string",
+                            "title": "The opens_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "9:40 AM"
+                            ]
+                        },
+                        "closes_at": {
+                            "$id": "#/properties/hours/properties/saturday/properties/closes_at",
+                            "type": "string",
+                            "title": "The closes_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "7:48 PM"
+                            ]
+                        },
+                        "is_closed": {
+                            "$id": "#/properties/hours/properties/saturday/properties/is_closed",
+                            "type": "boolean",
+                            "title": "The is_closed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "sunday": {
+                    "$id": "#/properties/hours/properties/sunday",
+                    "type": "object",
+                    "title": "The sunday schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "opens_at": "11:52 AM",
+                            "closes_at": "11:57 PM",
+                            "is_closed": true
+                        }
+                    ],
+                    "required": [
+                        "opens_at",
+                        "closes_at",
+                        "is_closed"
+                    ],
+                    "properties": {
+                        "opens_at": {
+                            "$id": "#/properties/hours/properties/sunday/properties/opens_at",
+                            "type": "string",
+                            "title": "The opens_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "11:52 AM"
+                            ]
+                        },
+                        "closes_at": {
+                            "$id": "#/properties/hours/properties/sunday/properties/closes_at",
+                            "type": "string",
+                            "title": "The closes_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "11:57 PM"
+                            ]
+                        },
+                        "is_closed": {
+                            "$id": "#/properties/hours/properties/sunday/properties/is_closed",
+                            "type": "boolean",
+                            "title": "The is_closed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
