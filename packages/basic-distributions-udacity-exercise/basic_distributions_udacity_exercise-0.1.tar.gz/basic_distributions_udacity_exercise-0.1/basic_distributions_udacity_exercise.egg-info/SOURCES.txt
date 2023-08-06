@@ -1,0 +1,10 @@
+setup.py
+basic_distributions_udacity_exercise/Binomialdistribution.py
+basic_distributions_udacity_exercise/Gaussiandistribution.py
+basic_distributions_udacity_exercise/Generaldistribution.py
+basic_distributions_udacity_exercise/__init__.py
+basic_distributions_udacity_exercise.egg-info/PKG-INFO
+basic_distributions_udacity_exercise.egg-info/SOURCES.txt
+basic_distributions_udacity_exercise.egg-info/dependency_links.txt
+basic_distributions_udacity_exercise.egg-info/not-zip-safe
+basic_distributions_udacity_exercise.egg-info/top_level.txt
