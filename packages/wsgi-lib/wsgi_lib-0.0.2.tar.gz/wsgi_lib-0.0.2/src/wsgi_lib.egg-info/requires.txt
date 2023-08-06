@@ -1,0 +1,7 @@
+
+[tests]
+pytest
+pytest-mock
+pytest-cov
+flake8
+mypy

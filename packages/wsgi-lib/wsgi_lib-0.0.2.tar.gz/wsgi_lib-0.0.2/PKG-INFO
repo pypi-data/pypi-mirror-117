@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wsgi_lib
+Version: 0.0.2
+Summary: WSGI Lib
+Home-page: UNKNOWN
+Author: Rustem Saitgareev
+Author-email: srustem3@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: tests
+License-File: LICENSE
+
+UNKNOWN
+
