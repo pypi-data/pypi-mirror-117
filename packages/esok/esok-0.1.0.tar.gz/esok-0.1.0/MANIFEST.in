@@ -1,0 +1,5 @@
+recursive-include src/esok/resources *
+include *.md
+include tox.ini
+recursive-include tests *.py
+recursive-include docs *
