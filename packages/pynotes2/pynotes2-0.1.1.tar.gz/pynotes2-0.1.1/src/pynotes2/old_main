@@ -1,0 +1,133 @@
+#!/usr/bin/env python3
+
+"Pynote main script"
+
+from pathlib import Path, PurePath
+import subprocess
+import click
+
+
+# Set HOME directory
+HOME = str(Path.home())
+
+# Define a notes folder inside user's HOME
+NOTES = Path(HOME, "notes/")
+
+# Add shorhand for help page
+CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
+
+def initialize_notes(folder):
+    """
+    Creates a new folder to store your notes.
+    """
+
+    # Initialize notes folder
+    try:
+        # Check if the folder already exists
+        if not Path.exists(NOTES):
+            # Create notes folder
+            subprocess.run(["mkdir", NOTES], check=True)
+            click.echo("Notes folder has been initialized")
+    # Exit because the folder exists
+    except FileExistsError:
+        click.echo("A notes folder already exists")
+
+def get_notes_index(path):
+    """
+    Returns a pager with a numbered list of all notes
+    """
+
+    # Get all the notes' paths
+    notes = Path(path).iterdir()
+    # Index notes
+    index = dict(enumerate(notes, start=1))
+    # Rename them to their base name
+    index = {key: index[key].name for key in index}
+    return index
+
+
+def pretty_print(dictionary):
+    """
+    Print dictionary in a similar way to ls command
+    """
+    for key in dictionary:
+        click.echo(f"{key}\t{dictionary[key]}")
+
+
+def edit_note(index, number):
+    """
+    Opens a note with Nvim
+    """
+
+    try:
+        note = index[number]
+        path = PurePath(NOTES, note)
+        subprocess.run(["nvim", path], check=True)
+    # Exit because the notes name is lacking
+    except NameError:
+        click.echo("Don't know which note to edit")
+
+def create_note(new_note):
+    """
+    Opens a new note with Nvim
+    """
+
+    path = PurePath(NOTES, new_note)
+    try:
+        subprocess.run(["nvim", path], check=True)
+    # Exit because the note already exists
+    except FileExistsError:
+        click.echo("That note already exists")
+
+def remove_note(index, number):
+    """
+    Removes an existing note
+    """
+
+    note = index[number]
+    path = PurePath(NOTES, note)
+    print(path)
+    try:
+        subprocess.run(["rm", path], check=True)
+        click.echo(f"'{note}' has been removed")
+    # Exit because the notes name is lacking
+    except NameError:
+        click.echo("Don't know which note to delete")
+
+# Set CLI parameters
+@click.command(context_settings=CONTEXT_SETTINGS)
+@click.option("-i", "--init", "folder", is_flag=True, help="Initialize a new notes folder")
+@click.option("-v", "--view", is_flag=True, help="View existing notes")
+@click.option("-a", "--add", "new_note", help="Add a new note")
+@click.option("-e", "--edit", "note", type=int, help="Edit an existing note")
+@click.option("-d", "--delete", "trash", type=int, help="Delete an existing note")
+#@click.option("-n", "--name", type=str, help="Select note's name")
+def pynote(init, view, new_note, note, trash):
+    """
+    Notes at the command line with Python
+    """
+
+    # Initialize notes folder
+    if init:
+        initialize_notes(folder)
+
+    index = get_notes_index(NOTES)
+
+   # View all notes
+    if view:
+        pretty_print(index)
+
+   # Add a new note
+    if new_note:
+        create_note(new_note)
+
+   # Edit an existing note
+    if note:
+        edit_note(index, note)
+
+    # Remove a note
+    if trash:
+        remove_note(index, trash)
+
+if __name__ == "__main__":
+    pynote()

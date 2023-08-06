@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pynotes2"
+version = "0.1.1"
+description = "Notes at the command line"
+authors = ["Tomas Masson"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.6*"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+pynote = "src.pynotes2.__main__:pynote"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
