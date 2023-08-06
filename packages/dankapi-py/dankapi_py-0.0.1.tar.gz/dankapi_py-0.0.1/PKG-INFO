@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: dankapi_py
+Version: 0.0.1
+Summary: An easy to use, async ready Python Wrapper for the API DankAPI (https://dankapi.github.io).
+Home-page: https://github.com/dankapi/dankapi_py
+Author: Nimit Grover
+Author-email: dankapi420@gmail.com
+License: MIT
+Description: 
+            This is an API Wrapper for the API DankAPI @ https://dankapi.github.io. It is designed to make the API very easy to use.
+            It is beginner friendly, documented, asynchronous and object oriented.
+        
+            About the API: The API is designed to show information on the famous Discord Bot Dankmemer (https://dankmemer.lol).
+            The API currently shows the shop sale the bot has and the bot's economy system's items.
+            
+Keywords: apiwrapper dankmemer dankmemer-sale dankmemer-api api internet
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
