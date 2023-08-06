@@ -1,0 +1,9 @@
+plogpro/__init__.py,sha256=VrVnkIobTkklS3-caMl1X03xyakR7MyaagHUq4Hv_10,104
+plogpro/logger.py,sha256=rcFHKPDrVl9vS2zfARfEr0wazq0_8B0Pupc7-MATQoU,4252
+plogpro/progressbar.py,sha256=ro8uzRulp6PErrVTiRofLWhst5Qniw37O6yEqI13IpU,3922
+plogpro/settings.py,sha256=95p7vNBJCkmWv5bwl7yJ3j1_FgkgYmYlMVNNsm4UlWY,529
+plogpro-0.1.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+plogpro-0.1.3.dist-info/METADATA,sha256=ffK4al6EiXoeHqRep_sCyeXt7TQFJW7L7xhA3uMt4cE,1254
+plogpro-0.1.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+plogpro-0.1.3.dist-info/top_level.txt,sha256=CZBkiAa55pasIZAdagVU5SM3Jv3mZGPEAeg-hYlFNKg,8
+plogpro-0.1.3.dist-info/RECORD,,
