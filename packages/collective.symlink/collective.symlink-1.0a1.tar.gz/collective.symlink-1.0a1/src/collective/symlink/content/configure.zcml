@@ -1,0 +1,50 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.symlink">
+
+  <browser:page
+    for=".symlink.ISymlink"
+    name="view"
+    class=".symlink.SymlinkView"
+    permission="zope2.View"
+    layer="..interfaces.ICollectiveSymlinkLayer"
+    />
+
+  <browser:page
+    for=".symlink.ISymlink"
+    name="edit"
+    class=".symlink.EditForm"
+    permission="cmf.ModifyPortalContent"
+    layer="..interfaces.ICollectiveSymlinkLayer"
+    />
+
+  <browser:page
+    for=".symlink.ISymlink"
+    name="plone_context_state"
+    permission="zope.Public"
+    class=".symlink.SymlinkContextState"
+    allowed_interface="plone.app.layout.globals.interfaces.IContextState"
+    layer="..interfaces.ICollectiveSymlinkLayer"
+    />
+
+  <!-- events subscribers -->
+  <subscriber
+    for=".symlink.ISymlink
+         zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+    handler=".subscriber.clear_caches"
+    />
+
+  <subscriber
+    for="plone.dexterity.interfaces.IDexterityContent
+         zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+    handler=".subscriber.element_modified"
+    />
+
+  <subscriber
+    for="plone.dexterity.interfaces.IDexterityContent
+         zope.lifecycleevent.interfaces.IObjectCreatedEvent"
+    handler=".subscriber.element_created"
+    />
+
+</configure>

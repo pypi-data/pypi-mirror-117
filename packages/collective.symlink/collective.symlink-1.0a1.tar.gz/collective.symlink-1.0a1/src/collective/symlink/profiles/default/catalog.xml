@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+ <index name="symlink_status" meta_type="KeywordIndex">
+  <indexed_attr value="symlink_status"/>
+ </index>
+</object>

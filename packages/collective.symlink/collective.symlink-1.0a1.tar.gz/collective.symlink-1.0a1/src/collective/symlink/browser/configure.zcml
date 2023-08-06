@@ -1,0 +1,45 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.symlink">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="collective.symlink.interfaces.ICollectiveSymlinkLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.symlink"
+      type="plone"
+      directory="static"
+      />
+
+  <adapter
+    provides="plone.app.content.interfaces.INameFromTitle"
+    factory=".symlinkname.NameFromSymLink"
+    />
+
+  <adapter
+    for="plone.dexterity.interfaces.IDexterityContent"
+    factory=".namechooser.NormalizingNameChooserSymlink"
+  />
+
+  <adapter
+    for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+    factory=".namechooser.NormalizingNameChooserSymlink"
+  />
+
+  <browser:viewlet
+      for="..content.symlink.ISymlink"
+      name="viewlet.symlink"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      class=".editlinkviewlet.EditLinkViewlet"
+      permission="zope.Public"
+      layer="..interfaces.ICollectiveSymlinkLayer"
+      />
+
+</configure>
