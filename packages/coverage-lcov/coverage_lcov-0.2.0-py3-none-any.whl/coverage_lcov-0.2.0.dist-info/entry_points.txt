@@ -1,0 +1,4 @@
+[console_scripts]
+coverage-lcov=coverage_lcov.cli:main
+test=pytest:main
+
