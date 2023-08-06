@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/aiomonetacleint/__init__.py
+src/aiomonetacleint/client.py
+src/aiomonetacleint/conf.py
+src/aiomonetacleint/decoders.py
+src/aiomonetacleint/models.py
+src/aiomonetaclient.egg-info/PKG-INFO
+src/aiomonetaclient.egg-info/SOURCES.txt
+src/aiomonetaclient.egg-info/dependency_links.txt
+src/aiomonetaclient.egg-info/top_level.txt
