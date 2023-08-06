@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "char_pic"
+version = "0.1.5"
+description = "generate char pic demo."
+authors = ["xiaodeng <xiaodengteacher@qq.com>", "xiaodeng1 <xiaodengteacher1@qq.com>"]
+
+license = "Apache-2.0"
+#license = "Propriertary"
+
+maintainers = ["xiaodeng2 <xiaodengteacher2@qq.com>", "xiaodeng3 <xiaodengteacher3@qq.com>", "xiaodeng4 <xiaodengteacher4@qq.com>"]
+
+readme = "README.rst"
+
+homepage = "http://api.xiaodeng.site:8888/"
+repository = "https://github.com/psf/requests"
+documentation = "http://api.xiaodeng.site:8888/"
+keywords = ["char", "pic", "xioadeng"]
+classifiers = ["Programming Language :: Python :: 3", "Topic :: Communications", "Development Status :: 3 - Alpha", "License :: Freeware"]
+packages = [{ include = "char_pic", format = "sdist" }]
+include = ["README.md", "requirements.txt"]
+exclude = ["1.txt"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cowpy = "^1.1.0"
+requests = "^2.26.0"
+
+mysqlclient = { version = "^2.0", optional = true }
+
+[tool.poetry.dev-dependencies]
+PyYAML = "^5.4"
+
+[tool.poetry.extras]
+mysql = ["mysqlclient"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "douban"
+url = "https://pypi.doubanio.com/simple"
+
+[tool.poetry.urls]
+hhh = "http://api.xiaodeng.site:8888/"
+
+
+[tool.poetry.scripts]
+# 可执行程序名称 = "包名.模块名:函数名"
+start_project = "char_pic.start:run"
