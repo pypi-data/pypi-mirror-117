@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: EasyGenerators
+Version: 0.0.2
+Summary: A powerful package of python generators
+Home-page: https://github.com/ProjectsWithPython/EasyGenerators
+Author: Haider Ali
+Author-email: ali075398@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ProjectsWithPython/EasyGenerators/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Easy Generators
+
+**How does this work?**
+
+
+*Let me show you how this module works*
+
+
+**First Example**
+
+
+```python
+from EasyGeneators.generator import odd_generator
+
+for number in odd_generator(0, 10):
+    print(number)
+```
+
+
+**Second Example**
+
+
+```python
+from EasyGeneators.generator import even_generator
+
+for number in even_generator(0, 10):
+    print(number)
+```
+
+
+**Is this open source?**
+
+
+*The answer is yes!!!! Its open source you can contribute add more powerful and cool features to it [Here](https://github.com/ProjectsWithPython/EasyGenerators)*
+
