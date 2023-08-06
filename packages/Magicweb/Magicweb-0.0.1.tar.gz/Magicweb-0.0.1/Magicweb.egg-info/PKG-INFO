@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Magicweb
+Version: 0.0.1
+Summary: A simple web framework
+Home-page: https://replit.com/@IsraelW/webframeworkpypi
+Author: Israel Waldner
+Author-email: imky171@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/magicweb/
+Description: # Magic
+Keywords: Web,Web framework,framework
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
