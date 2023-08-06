@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: char-count-example-pkg-asomchik-NEW
+Version: 0.0.4
+Summary: Char counting test package
+Home-page: https://git.foxminded.com.ua/Asomchik/task-05-package-v2.git
+Author: Asomchik
+Author-email: asomchik@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://git.foxminded.com.ua/Asomchik/task-05-package-v2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+**Introduction**
+
+A small test package providing function which counts a number of one time appearing characters in a string or file given.
+
+**Features**
+- You can use command line interface in a usual Python way:
+
+\>>> python char_count.py [-h] [-f FILE] [-s STRING]
+- Or you can simply *import* char_count() function to your project
+
+
