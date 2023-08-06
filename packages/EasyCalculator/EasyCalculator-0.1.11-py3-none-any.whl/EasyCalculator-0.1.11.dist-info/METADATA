@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: EasyCalculator
+Version: 0.1.11
+Summary: Simple and Easy Calculator
+Home-page: https://github.com/you/your_package
+Author: Supriya Satyappanavar
+Author-email: supriya06ms@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Easy Calculator
+
+Add, Subtract, multiply and divide any two numbers.
+
+Usage:
+
+import EasyCalculator
+
+print(add_two_numbers(3, 2))
+print(subtract_two_numbers(3, 2))
+print(multiply_two_numbers(3, 2))
+print(divide_two_numbers(3, 2))
+
