@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: flimit
+Version: 1.0.0
+Summary: Limit time and memory usage from a function
+Home-page: https://github.com/fortierq/flimit
+License: MIT
+Keywords: limit,time,memory,function
+Author: Quentin Fortier
+Author-email: qpfortier@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Project-URL: Repository, https://github.com/fortierq/flimit
+Description-Content-Type: text/markdown
+
+# Limit time and memory usage of a Python function
+
+## Installation
+
+```
+pip install flimit
+```
+
+## Usage
+
+```python
+from flimit.memory import limit_memory
+from flimit.time import limit_time
+
+@limit_memory(10**9)
+@limit_time(60)
+def f(...):  # f will have a limit of 1 Go allocation memory and 60 seconds computation time
+    ...
+```
+
+## Tests
+
+```
+python -m pytest tests
+```
