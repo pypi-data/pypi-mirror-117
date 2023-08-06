@@ -1,0 +1,13 @@
+README.md
+setup.py
+faissdb/__init__.py
+faissdb/config.py
+faissdb/faissdb.py
+faissdb/faisskv.py
+faissdb/indexer.py
+faissdb/utility.py
+faissdb.egg-info/PKG-INFO
+faissdb.egg-info/SOURCES.txt
+faissdb.egg-info/dependency_links.txt
+faissdb.egg-info/requires.txt
+faissdb.egg-info/top_level.txt
