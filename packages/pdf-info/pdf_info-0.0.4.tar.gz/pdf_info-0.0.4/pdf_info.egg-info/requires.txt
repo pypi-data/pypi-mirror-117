@@ -1,0 +1,6 @@
+PymuPdf
+nltk
+pdfminer
+sklearn
+numpy
+PyPDF2
