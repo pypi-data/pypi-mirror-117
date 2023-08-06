@@ -1,0 +1,6 @@
+honeycomb-beeline>=2.1.0
+google_measurement_protocol>=1.0
+requests>=2.22.0
+
+[:python_version < "3.5"]
+typing>=3.6.0
