@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+newsboat_subscribe.egg-info/PKG-INFO
+newsboat_subscribe.egg-info/SOURCES.txt
+newsboat_subscribe.egg-info/dependency_links.txt
+newsboat_subscribe.egg-info/entry_points.txt
+newsboat_subscribe.egg-info/requires.txt
+newsboat_subscribe.egg-info/top_level.txt
+package_src/__init__.py
+package_src/main.py
