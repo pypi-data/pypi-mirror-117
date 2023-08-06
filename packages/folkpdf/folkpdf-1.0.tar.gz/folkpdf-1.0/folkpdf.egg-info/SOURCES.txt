@@ -1,0 +1,6 @@
+README.md
+setup.py
+folkpdf.egg-info/PKG-INFO
+folkpdf.egg-info/SOURCES.txt
+folkpdf.egg-info/dependency_links.txt
+folkpdf.egg-info/top_level.txt
