@@ -1,0 +1,9 @@
+LICENSE,sha256=t8n_O8-pXq7E0QG3KzykYr6nmpW_I8ak1jv_j1H9Jww,749
+guzzy/__main__.py,sha256=r7bLzchuChr-6qwrsOFLSvPWt5DChp9_5KrMHa62ehI,492
+guzzy/commands/diff.sh,sha256=WkXaA88F9S1LywCAx_ifaHjo10dqfA8M7kHAE9XidU8,102
+guzzy/commands/log.sh,sha256=aRXLNXR1NjwUQyX_9eY3tEwPPrJTlj7AceKRQ3ALEKE,242
+guzzy-0.1.0.dist-info/entry_points.txt,sha256=-dnE2w6PbvxYbIj9sHa2PfakxwNQxBuYJcNZY2DveJM,40
+guzzy-0.1.0.dist-info/LICENSE,sha256=t8n_O8-pXq7E0QG3KzykYr6nmpW_I8ak1jv_j1H9Jww,749
+guzzy-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+guzzy-0.1.0.dist-info/METADATA,sha256=9kvwf-3svjxrnBcT3QHY3zsP3G4d6tk0PH5qNDUHzxs,940
+guzzy-0.1.0.dist-info/RECORD,,
