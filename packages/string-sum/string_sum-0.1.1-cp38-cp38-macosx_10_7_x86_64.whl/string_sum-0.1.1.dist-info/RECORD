@@ -1,0 +1,5 @@
+string_sum-0.1.1.dist-info/METADATA,sha256=JtHAql9OJTSTe_P9YqyN6FDLN59maH_n-CR_LzAh_l0,54
+string_sum-0.1.1.dist-info/WHEEL,sha256=2jIRmEA4D9URQ3tDWRkxkRtmNQ-NoTbrBtksuHinIQA,104
+string_sum/__init__.py,sha256=pf_PPIuUYiEmnwB-Z2W8HQ1Bl5zRMTV6W-A50f4nSm8,26
+string_sum/string_sum.cpython-38-darwin.so,sha256=Vgrs_TpV_9EuZGzNd1t60mRicqS39IY1-sMMba90fHU,286788
+string_sum-0.1.1.dist-info/RECORD,,
