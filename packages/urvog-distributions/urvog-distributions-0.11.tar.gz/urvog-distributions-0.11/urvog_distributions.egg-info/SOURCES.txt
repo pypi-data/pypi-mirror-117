@@ -1,0 +1,10 @@
+setup.py
+urvog-distributions/Binomialdistribution.py
+urvog-distributions/Gaussiandistribution.py
+urvog-distributions/Generaldistribution.py
+urvog-distributions/__init__.py
+urvog_distributions.egg-info/PKG-INFO
+urvog_distributions.egg-info/SOURCES.txt
+urvog_distributions.egg-info/dependency_links.txt
+urvog_distributions.egg-info/not-zip-safe
+urvog_distributions.egg-info/top_level.txt
