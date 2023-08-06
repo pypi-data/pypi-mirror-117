@@ -1,0 +1,10 @@
+alembic
+jupyter_server
+jupyterhub>=1.4.1
+pluggy
+tornado>=6.0.4
+traitlets
+jinja2
+
+[test]
+pytest

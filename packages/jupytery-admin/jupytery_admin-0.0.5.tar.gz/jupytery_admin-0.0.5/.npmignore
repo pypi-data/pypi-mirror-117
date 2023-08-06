@@ -1,0 +1,13 @@
+# Copyright (c) Datalayer, Inc. https://datalayer.io
+# Distributed under the terms of the MIT License.
+
+.cache
+.gorelease.yaml
+node_modules
+dist
+bin
+build
+pkg
+main.go
+*.tgz
+go.*
