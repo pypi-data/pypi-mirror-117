@@ -1,0 +1,3 @@
+[console_scripts]
+arkesel_python = arkesel_python.cli:main
+
