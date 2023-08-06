@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: pyxpad
+Version: 0.6.0
+Summary: "Data visualisation and analysis tool for IDAM",
+Home-page: https://github.com/ZedThree/pyxpad/
+Author: Ben Dudson
+Author-email: benjamin.dudson@york.ac.uk
+Maintainer: Peter Hill
+Maintainer-email: peter.hill@york.ac.uk
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: matplotlib (>=3.1)
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: scipy (>=1.4)
+Requires-Dist: Qt.py (>=1.2)
+Requires-Dist: xdg (>=4.0.1)
+Provides-Extra: qt
+Requires-Dist: PyQt5 (>=5.15.4) ; extra == 'qt'
+Provides-Extra: tests
+Requires-Dist: pytest (>=3.3.0) ; extra == 'tests'
+Requires-Dist: pytest-cov (>=2.12.1) ; extra == 'tests'
+Requires-Dist: pytest-qt (>=4.0.2) ; extra == 'tests'
+
+PyXPad
+======
+
+Data visualisation and analysis tool in Python,
+intended to be familiar to users of XPAD.
+
+Primarily for IDAM data from the MAST tokamak experiment,
+but can be used to view NetCDF files currently.
+
+Ben Dudson, Department of Physics, University of York
+Email: benjamin.dudson@york.ac.uk
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Installation
+------------
+
+You can install PyXPad using pip:
+
+    pip install PyXPad
+
+You can install the latest version from GitHub:
+
+    pip install git+https://github.com/ZedThree/pyxpad.git
+
+Dependencies
+------------
+
+PyXPad requires matplotlib, numpy, scipy, Qt.py and xdg, as well as
+either PyQt4, PyQt5 or PySide.
+
+
