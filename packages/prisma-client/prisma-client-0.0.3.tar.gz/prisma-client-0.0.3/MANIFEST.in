@@ -1,0 +1,17 @@
+include README.md
+include requirements/*.txt
+
+include src/prisma/py.typed
+recursive-include src/prisma/generator/templates/ *.py.jinja
+
+# include the backups of templates that replace modules
+recursive-include src/prisma/ *.py.original
+
+exclude src/prisma/builder.py
+exclude src/prisma/client.py
+exclude src/prisma/enums.py
+exclude src/prisma/models.py
+exclude src/prisma/partials.py
+exclude src/prisma/types.py
+
+global-exclude *.pyc
