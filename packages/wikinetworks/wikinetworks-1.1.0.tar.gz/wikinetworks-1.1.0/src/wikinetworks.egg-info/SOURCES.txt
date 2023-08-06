@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/wikinetworks/__init__.py
+src/wikinetworks/wikinetworks.py
+src/wikinetworks.egg-info/PKG-INFO
+src/wikinetworks.egg-info/SOURCES.txt
+src/wikinetworks.egg-info/dependency_links.txt
+src/wikinetworks.egg-info/requires.txt
+src/wikinetworks.egg-info/top_level.txt
