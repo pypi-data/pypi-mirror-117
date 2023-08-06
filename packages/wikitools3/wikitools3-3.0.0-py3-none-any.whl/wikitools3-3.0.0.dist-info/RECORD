@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=6SNHUjpeNB7WqNbEsYRIo7MqF-eBH3gWrHeH5snvh-Q,189
+wikitools3/LICENSE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+wikitools3/__init__.py,sha256=olBxceIIYRbu7ImIjAfwWHzi5cYGd7PRBPSJRFh9ays,1059
+wikitools3/api.py,sha256=UwdShGQN6bOTLs1wJfNw-_40lv74ESwWwDpjLt5tPi8,17315
+wikitools3/category.py,sha256=JD0piO4b-BVE-j54ygvenLPjG_hMmF9qHgPR1zQ9J3M,5021
+wikitools3/page.py,sha256=swBcYxrlwuqYOmVbiXrM28AEZfDzWjG5wYzZKzIWrwg,31088
+wikitools3/pagelist.py,sha256=uzEERfEEtdtnNqvmMLx2Q80tjlEEXld0lqqZgP8yVZY,6799
+wikitools3/user.py,sha256=wAXmGM6TDhBmnbxgjdfFY69U1kCzgiv5he8pIkRQzL0,8031
+wikitools3/wiki.py,sha256=6k9daFbRPT_qAOvyGx1MzdIRxZVaJ89Oeegy36Rihbc,15257
+wikitools3/wikifile.py,sha256=-dPAIxuOvWDI3hfjRfkx_SpvYZWcaU8hz6IUJUCNPwc,10693
+wikitools3-3.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+wikitools3-3.0.0.dist-info/METADATA,sha256=eoOP_Zt55h0d-U0-Gd3bn1Ln9vSVRGTqyreaCIV4Us4,6596
+wikitools3-3.0.0.dist-info/RECORD,,
