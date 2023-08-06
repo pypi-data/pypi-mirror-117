@@ -1,0 +1,14 @@
+setup.py
+justin_wechat/__init__.py
+justin_wechat/access_token.py
+justin_wechat/customer.py
+justin_wechat/department.py
+justin_wechat/main.py
+justin_wechat/message.py
+justin_wechat/user.py
+justin_wechat.egg-info/PKG-INFO
+justin_wechat.egg-info/SOURCES.txt
+justin_wechat.egg-info/dependency_links.txt
+justin_wechat.egg-info/not-zip-safe
+justin_wechat.egg-info/requires.txt
+justin_wechat.egg-info/top_level.txt
