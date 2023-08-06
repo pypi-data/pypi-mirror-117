@@ -1,0 +1,11 @@
+seqalign/__init__.py,sha256=KakPOOb0N-jyFwYJMML5vJ0lU6hY8xkdWZDAiZYKhDM,1186
+seqalign/atac_seq.py,sha256=v_ofNw8o7dDPfbdzUPYFhQMCqhG-PogS_3kpuR6z4tw,5710
+seqalign/chip_seq.py,sha256=uc4U4NTFiNOz5WjLgFj61aZEtsEPrpBzaithGL8HgoQ,4282
+seqalign/doc.py,sha256=8Ds1jUDAg3oVYikKOgjIBDvq-LQehpIwSGQvVTViTKg,584
+seqalign/seqalign.py,sha256=kSGsENvmhKHCeVLuOZcFwgnib_0ikwrl7p1hcbqZpD4,37248
+seqalign-0.1.6.dist-info/LICENSE,sha256=lN83XrrwSAo3Twrbii-3tTUQufpUNWIOYhyHmxvwCEA,1059
+seqalign-0.1.6.dist-info/METADATA,sha256=53EAa6MyadpHJKOt_7pxHFKKskkYq2VIialxsF9wE2s,1189
+seqalign-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+seqalign-0.1.6.dist-info/entry_points.txt,sha256=IiOx4t6wmy2I69zmUup0-7N1HvkUCR7VrUQY-qOmVxY,134
+seqalign-0.1.6.dist-info/top_level.txt,sha256=CEiPqLYghaMKv0hI1GHtfJnegptNvdYHD08zO77stcI,9
+seqalign-0.1.6.dist-info/RECORD,,
