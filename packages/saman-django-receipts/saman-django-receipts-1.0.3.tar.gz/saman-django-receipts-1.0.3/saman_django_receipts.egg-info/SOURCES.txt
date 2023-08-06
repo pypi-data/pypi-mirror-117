@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+saman_django_receipts.egg-info/PKG-INFO
+saman_django_receipts.egg-info/SOURCES.txt
+saman_django_receipts.egg-info/dependency_links.txt
+saman_django_receipts.egg-info/requires.txt
+saman_django_receipts.egg-info/top_level.txt
