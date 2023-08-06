@@ -1,0 +1,16 @@
+collective.droproles-1.0.0-py2.7-nspkg.pth,sha256=i6xUrA2XwWgxJ31EmKS8F0wCvv6o3Db_2POBVx1bZDM,559
+collective/droproles/__init__.py,sha256=GmV0mWdqvSoaCsbTpEZG4FZsG5r5nRz0NvV0RIlFUnM,60
+collective/droproles/patches.py,sha256=ROsuoezhD94h55VURuQfQ3DrNeJ7EDV7sYYIEygz8bQ,7140
+collective/droproles/testing.py,sha256=w1u2J80MsVaAfOuTkInbT2HLTsxWNT1bUK9_7hT_V6o,649
+collective/droproles/utils.py,sha256=rDTfchdU7-AQYW_DDWlTSRODkaZET2HXEJ5XFDfbeCg,1157
+collective/droproles/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+collective/droproles/tests/test_functional.py,sha256=KmeC8fZI2iB2k1rewwfjOVQ1OFJuCdba6VNXu7_Q9ys,11617
+collective/droproles/tests/test_utils.py,sha256=HIcilgu3XHg3RG_X7_PlCQfxpUVs53sFUFLQVt1DrLU,2138
+collective.droproles-1.0.0.dist-info/LICENSE.GPL,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+collective.droproles-1.0.0.dist-info/LICENSE.rst,sha256=OYShRFX8sGq0LyrVZbTZLjfK6D0h8-Sv9gBXovQFGcg,667
+collective.droproles-1.0.0.dist-info/METADATA,sha256=CyXntUtnAB_knz4fsTOTzcPnON23CncznaXG6KMW6pQ,8972
+collective.droproles-1.0.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+collective.droproles-1.0.0.dist-info/entry_points.txt,sha256=6WD-GIHhN2Y_T4tg_CjfFcOrwZNi8w3aHWMspVDFtT0,53
+collective.droproles-1.0.0.dist-info/namespace_packages.txt,sha256=FyC0xnd95fkjCaKazR3nfIgNqhWMpB0mYBlzALyXKTg,11
+collective.droproles-1.0.0.dist-info/top_level.txt,sha256=FyC0xnd95fkjCaKazR3nfIgNqhWMpB0mYBlzALyXKTg,11
+collective.droproles-1.0.0.dist-info/RECORD,,
