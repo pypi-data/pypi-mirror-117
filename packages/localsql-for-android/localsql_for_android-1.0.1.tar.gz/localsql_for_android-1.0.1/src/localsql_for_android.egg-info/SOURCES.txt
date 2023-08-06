@@ -1,0 +1,7 @@
+setup.py
+src/localsql_for_android.egg-info/PKG-INFO
+src/localsql_for_android.egg-info/SOURCES.txt
+src/localsql_for_android.egg-info/dependency_links.txt
+src/localsql_for_android.egg-info/top_level.txt
+src/pysql/__init__.py
+src/pysql/pysql.py
