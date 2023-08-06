@@ -1,0 +1,14 @@
+venmo_client/__init__.py,sha256=dbfJ2Fri61sR6pT9gFvkxV9KSEtAasXMsmGAtnic-24,135
+venmo_client/auth.py,sha256=acge8wkLYtskATIRj2RH71s08IvL6Xn26rXzHhcQxY8,1444
+venmo_client/cli.py,sha256=8JXfPW6ttTD1Y2KF8OPqC_X5t3P8w4tCcSFfdLmCXXE,2962
+venmo_client/client.py,sha256=9hgcpvAdC5G9QEK6XnZafjTuHatclVtolP5cqHiLbDQ,7768
+venmo_client/console.py,sha256=sxUJ421chUBv3bRPP57WXmL5p863H4V9Woqd_yYcDhQ,354
+venmo_client/model/__init__.py,sha256=F_UG49-JfaElAdmpOHfVjznM5oXOISPhLNCz1PhJ2lk,96
+venmo_client/model/transaction.py,sha256=FVpa8c8UrZHwgKKNhlaRCPNQc3DokEif9UOHlT6jobY,12291
+venmo_client/model/user.py,sha256=JdAouTra1DHda8ne7ou3N_SIX0NntAsmpaw8Xa2VmBA,2915
+venmo_client/util.py,sha256=RfbMFajBnp28VHty47VLkvK_a2omOgUtfeaTnuAgZF0,303
+venmo_client-0.6.0.dist-info/entry_points.txt,sha256=US31p7Q0LPu_1xkG4scAO6w7Tg5MX35f-sXsjQZnCM4,46
+venmo_client-0.6.0.dist-info/LICENSE,sha256=JSXHXN-4VPJp0Q_zKfqiTCSUkXdT8ooaCPXag-WYKKo,1070
+venmo_client-0.6.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+venmo_client-0.6.0.dist-info/METADATA,sha256=6ORSUJo6mU_ELEFmyvHOaG4ZxqJOI_nnhJ6tlLe_XzI,467
+venmo_client-0.6.0.dist-info/RECORD,,
