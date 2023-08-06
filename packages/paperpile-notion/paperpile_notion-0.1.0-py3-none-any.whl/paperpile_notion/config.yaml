@@ -1,0 +1,23 @@
+blocks:
+  articles: <your-articles-page-slug>
+  authors: <your-authors-page-slug>
+
+authors:
+  rollup: true
+
+status:
+  col: "labelsNamed"
+  prefix: "status:"
+  states:
+    unread: { name: "To Read", color: "red", }
+    read: { name: "Done", color: "green", }
+
+
+fields-methods:
+  delim: " - "
+  fields:
+    # Fields should look like this:
+    # <abbr>: { color: <color>, name: <name> }
+  methods:
+    # Methods should look like this:
+    # <abbr>: { color: <color>, name: <name> }
