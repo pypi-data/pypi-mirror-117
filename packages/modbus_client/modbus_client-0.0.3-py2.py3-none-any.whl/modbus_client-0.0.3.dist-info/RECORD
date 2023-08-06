@@ -1,0 +1,6 @@
+modbus_client/__init__.py,sha256=V8-nwQg5ncamuAfaRZSb3CY7jdA885bWDxodR-OjBh0,110
+modbus_client/modbus_client.py,sha256=jmOsnojvPHTGTIJNO_YJQ6ICC9BkkytTVk7wB7l82C0,7286
+modbus_client-0.0.3.dist-info/LICENSE,sha256=F_evj5o6qLHdHLKkxCjRA96E3McyMgNnSgCeo7xMBYk,1085
+modbus_client-0.0.3.dist-info/WHEEL,sha256=2adPsdwavOXlr3i4h108dwQdqKgJbVa5zTEEuD11F08,99
+modbus_client-0.0.3.dist-info/METADATA,sha256=tChoJgu9ZAiSxfCJ6niS2oyyZkaAigOTtSXRvpj6104,232
+modbus_client-0.0.3.dist-info/RECORD,,
