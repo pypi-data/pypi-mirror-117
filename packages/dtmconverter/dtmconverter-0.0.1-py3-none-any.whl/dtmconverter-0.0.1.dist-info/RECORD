@@ -1,0 +1,11 @@
+converter/ContextMenu.py,sha256=qZFCzcb_h5XlsyZ2c-VWNzw7JLbishB9yDhoPLDEeWo,540
+converter/DatapackToBoth.py,sha256=PTP9eQlIK2zeb42IkiWRrIqOeZyizoy6A15yTVmS5rQ,1519
+converter/DatapackToCCPacks.py,sha256=AT7_6Vj0b710bJIvtXd6bHvAUXiIoOvI1jCoB-jDl_I,1463
+converter/DatapackToMod.py,sha256=cmMRPTFvb-TsN6lUobBCOFY1YAKd4F7VhuhA5nx_FuU,1453
+converter/DatapackToOrigins.py,sha256=gHuIRbBGCX6ljfAKWTJMeC3s5Sn5PMjZ7jVQ8aKXykE,1463
+converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtmconverter-0.0.1.dist-info/METADATA,sha256=eyMfJz-5Ri6WYvn2rD9ar_e7bCFXsHPVW2Bawtnt08M,502
+dtmconverter-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dtmconverter-0.0.1.dist-info/entry_points.txt,sha256=BHxV2vwZ9lxEcU0bvEaq0Kzo-3QY-o5AvrDxwqSwILI,207
+dtmconverter-0.0.1.dist-info/top_level.txt,sha256=S1fAf-PtuctgaGFfsn0oaTHY1tVHwOTeNCb8yB7ReqA,10
+dtmconverter-0.0.1.dist-info/RECORD,,
