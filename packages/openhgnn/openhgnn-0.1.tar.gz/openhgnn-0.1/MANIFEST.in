@@ -1,0 +1,2 @@
+include *.md *.ini
+recursive-include OpenHGNN *.md *.ini
