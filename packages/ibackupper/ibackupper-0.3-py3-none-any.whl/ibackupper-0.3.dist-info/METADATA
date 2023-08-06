@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ibackupper
+Version: 0.3
+Summary: A backup helper
+Home-page: https://github.com/mohammad76/ibackupper
+Author: Mohammad Abdi
+Author-email: mohammad_abdi76@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: boto3
+
+# backup maker with s3
+
+this package help you to create and upload backup from a directory to s3 storage.
+
