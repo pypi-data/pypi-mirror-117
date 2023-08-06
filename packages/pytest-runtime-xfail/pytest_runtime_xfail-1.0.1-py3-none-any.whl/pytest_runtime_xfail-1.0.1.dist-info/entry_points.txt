@@ -1,0 +1,3 @@
+[pytest11]
+runtime-xfail=pytest_runtime_xfail
+
