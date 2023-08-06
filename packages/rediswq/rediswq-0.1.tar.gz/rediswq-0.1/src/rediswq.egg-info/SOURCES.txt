@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/rediswq/__init__.py
+src/rediswq.egg-info/PKG-INFO
+src/rediswq.egg-info/SOURCES.txt
+src/rediswq.egg-info/dependency_links.txt
+src/rediswq.egg-info/requires.txt
+src/rediswq.egg-info/top_level.txt
