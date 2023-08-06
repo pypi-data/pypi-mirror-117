@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/portlets/__init__.py
+src/portlets/models.py
+src/portlets.egg-info/PKG-INFO
+src/portlets.egg-info/SOURCES.txt
+src/portlets.egg-info/dependency_links.txt
+src/portlets.egg-info/top_level.txt
+src/portlets/templatetags/__init__.py
+src/portlets/templatetags/portlet_tags.py
