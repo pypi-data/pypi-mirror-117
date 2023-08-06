@@ -1,0 +1,8 @@
+README.md
+msql_cmd.py
+setup.py
+massql/massql.egg-info/PKG-INFO
+massql/massql.egg-info/SOURCES.txt
+massql/massql.egg-info/dependency_links.txt
+massql/massql.egg-info/requires.txt
+massql/massql.egg-info/top_level.txt
