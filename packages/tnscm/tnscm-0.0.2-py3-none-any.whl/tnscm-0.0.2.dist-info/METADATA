@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: tnscm
+Version: 0.0.2
+Summary: TNSCM (Tenable Nessus CLI Manager) by LimberDuck
+Home-page: https://github.com/LimberDuck/tnscm
+Author: Damian Krawczyk
+Author-email: damian.krawczyk@limberduck.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+Requires-Dist: certstore (>=0.0.2)
+Requires-Dist: click (>=8.0.1)
+Requires-Dist: keyring (>=23.0.1)
+Requires-Dist: oauthlib (>=3.1.1)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: pandas (>=1.3.2)
+Requires-Dist: tabulate (>=0.8.9)
+
+# TNSCM
+
+**TNSCM** *(Tenable Nessus CLI Manager)* by LimberDuck is a CLI tool which enables you to perform certain actions on Nessus by (C) Tenable, Inc. via Nessus API.
+
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/tnscm?logo=PyPI)](https://pypi.org/project/tnscm/) [![License](https://img.shields.io/github/license/LimberDuck/tnscm.svg)](https://github.com/LimberDuck/tnscm/blob/main/LICENSE) [![Repo size](https://img.shields.io/github/repo-size/LimberDuck/tnscm.svg)](https://github.com/LimberDuck/tnscm) [![Code size](https://img.shields.io/github/languages/code-size/LimberDuck/tnscm.svg)](https://github.com/LimberDuck/tnscm) [![Supported platform](https://img.shields.io/badge/platform-windows%20%7C%20macos%20%7C%20linux-lightgrey.svg)](https://github.com/LimberDuck/tnscm)
+
+
+Main features
+=============
+
+Initial version of **TNSCM** lets you get Nessus:
+* plugin family list
+* policy list
+* scan list
+* server info
+  * status
+  * licensed IPs
+  * version
+* user list
+
+
+How to
+======
+
+1. Install
+
+    `pip install tnscm`
+
+2. Run
+
+    `tnscm`
+
+Meta
+====
+
+Change log
+----------
+
+See [CHANGELOG].
+
+
+Licence
+-------
+
+MIT: [LICENSE].
+
+
+Authors
+-------
+
+[Damian Krawczyk] created **TNSCM** *(Tenable Nessus CLI Manager)* by LimberDuck.
+
+[Damian Krawczyk]: https://damiankrawczyk.com
+
+[CHANGELOG]: https://github.com/LimberDuck/tnscm/blob/main/CHANGELOG.md
+[LICENSE]: https://github.com/LimberDuck/tnscm/blob/main/LICENSE
+
+
+
+
