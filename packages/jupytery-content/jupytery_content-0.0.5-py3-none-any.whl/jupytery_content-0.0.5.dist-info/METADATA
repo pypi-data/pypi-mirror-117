@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: jupytery-content
+Version: 0.0.5
+Summary: Jupytery Content
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: jupyter-server
+Requires-Dist: google-cloud-storage
+Requires-Dist: hybridcontents
+Requires-Dist: nbformat
+Requires-Dist: notebook
+Requires-Dist: jinja2
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+Requires-Dist: unittest ; extra == 'test'
+
+[![Datalayer](https://raw.githubusercontent.com/datalayer/datalayer/main/res/logo/datalayer-25.svg?sanitize=true)](https://datalayer.io)
+
+# Jupytery Content
+
+## Jupytery Content Google Cloud
+
+```bash
+# Get to https://console.cloud.google.com/billing and copy the Billing Account ID value.
+ACCOUNT_ID=<YOUR_ACCOUNT_ID>
+# Create a new project (project id must be <=30 characters)
+# RAND=$RANDOM
+RAND=78026
+PROJECT_ID="jupytery-content-$RAND"
+# Create a GCloud Project
+gcloud projects create $PROJECT_ID --enable-cloud-apis # [--organization $ORGANIZATION_ID]
+gcloud config set project $PROJECT_ID
+# or, record the PROJECT_ID value of an existing project
+# PROJECT_ID=$(gcloud projects list --filter NAME=<YOUR_PROJECT_NAME> --format="value(PROJECT_ID)")
+# Link billing to the new project.
+gcloud beta billing projects link $PROJECT_ID --billing-account=$ACCOUNT_ID
+# Enable GCloud Services on your Project
+# Enable service on the new project.
+gcloud services enable storage.googleapis.com --project $PROJECT_ID # enable Compute API
+# Create a GCloud Service Account
+SERVICE_ACCOUNT_NAME="example-$RAND"
+SERVICE_ACCOUNT="${SERVICE_ACCOUNT_NAME}@${PROJECT_ID}.iam.gserviceaccount.com"
+gcloud iam service-accounts create $SERVICE_ACCOUNT_NAME --project $PROJECT_ID --display-name "Jupytery Content Example"
+# Assign GCloud Roles to your service account.
+gcloud projects add-iam-policy-binding $PROJECT_ID --member "serviceAccount:$SERVICE_ACCOUNT" --role="roles/storage.admin"
+open https://console.cloud.google.com/iam-admin/serviceaccounts?project=jupytery-content-78026
+```
+
+```bash
+# Install dependencies.
+make install
+# Check env in the Makefile and get a key.
+make key
+# Run the tests.
+make test
+```
+
+```bash
+# Start a jupyterlab example configured with a content bucket.
+make jlab-gcp
+```
+
+
