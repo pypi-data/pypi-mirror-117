@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: py-zypher
+Version: 0.0.1
+Summary: Zypher userbot
+Home-page: https://github.com/Team-Zypher
+Author: ShashankxD
+Author-email: sharmashashank091@gmail.com
+License: UNKNOWN
+Description: Telethon userbot by Team-Zypher
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
