@@ -1,0 +1,10 @@
+docspec_python/__init__.py,sha256=RwHJ4f0PnGWhc0GxXzWbTu2OSlRW_LR4zuHbMjN2VwY,8266
+docspec_python/__main__.py,sha256=d7-vUvgPTTKpkSdVqbT18BaIA-iP4yF7u35ZrF1TTAc,4111
+docspec_python/parser.py,sha256=7PMfKlpAE4vaxqsWJHXTW4I7aEljNVFNOJijy9VD6mA,22504
+docspec_python/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docspec_python-1.1.0.dist-info/LICENSE.txt,sha256=DWcTMuhLaPQZurKHQT2h7S8qmLCOEKgGuZ_kTIgjSiI,1002
+docspec_python-1.1.0.dist-info/METADATA,sha256=r2PuBdOTlOHM5Gija0GsPoYnz4T3S72xWQLZwWsvxss,1124
+docspec_python-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+docspec_python-1.1.0.dist-info/entry_points.txt,sha256=PS0UHcjMG2PAAzuc4nYwr9qJf80RNQ6uB4qvYyDgr1c,65
+docspec_python-1.1.0.dist-info/top_level.txt,sha256=8t5bLRf2sasqidrFlOXw20ekh2lMHXzdKnPwhmmjfmg,15
+docspec_python-1.1.0.dist-info/RECORD,,
