@@ -1,0 +1,10 @@
+msmcauth/__init__.py,sha256=0o_Ps5OIuUZUiUtPfYAOjwjuIPVutSQWBl8JgqrpEl0,1490
+msmcauth/consts.py,sha256=8Qnt3trDiTvQthBwG4uRgrNAJ3Xds8hKhDeSz7yDWeg,703
+msmcauth/errors.py,sha256=kD-ECh2xnQt-GYo5gvX7MKjUsv_rtolVbzDvT6yVXaE,946
+msmcauth/microsoft.py,sha256=UdTldkljkpC-TJCaSdzSJZLDnpr39pjtvhFeLagI6Xw,5155
+msmcauth/types.py,sha256=jVyih2ba7vCXYBWVb5ZCbkb9wC3HM6dTtE5XU89Uhw0,628
+msmcauth/xbox.py,sha256=MiGqx0SR042IVy9E1Uw0yn92CozGK82CG0RahorN8Ms,2815
+msmcauth-0.0.4.dist-info/METADATA,sha256=rdn827vp0SW3yp2c7KHWzHIKAWMuUoy1gvQXMaBgqQY,575
+msmcauth-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+msmcauth-0.0.4.dist-info/top_level.txt,sha256=Ui50oVd_xXron5GAoZKOqyLgWutCyZU5MjyGIpurN9I,9
+msmcauth-0.0.4.dist-info/RECORD,,
