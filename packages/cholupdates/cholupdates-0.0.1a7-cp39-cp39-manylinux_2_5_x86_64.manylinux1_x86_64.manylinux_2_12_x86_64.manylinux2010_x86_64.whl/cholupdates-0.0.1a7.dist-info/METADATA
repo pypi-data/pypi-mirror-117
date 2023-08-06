@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: cholupdates
+Version: 0.0.1a7
+Summary: Efficient Updates to Cholesky Factors after Matrix Modifications
+Home-page: https://cholupdates.readthedocs.io/
+Author: Marvin Pförtner
+Author-email: marvin.pfoertner@icloud.com
+License: MIT
+Keywords: low-rank,rank-1,rank,one,update,downdate,cholesky
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: formatting
+Requires-Dist: black ; extra == 'formatting'
+Requires-Dist: isort ; extra == 'formatting'
+Provides-Extra: linting
+Requires-Dist: pylint ; extra == 'linting'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+# cholupdates: Efficient Updates to Cholesky Factors after Matrix Modifications
+
+[![PyPI](https://img.shields.io/pypi/v/cholupdates?label=PyPI&style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/cholupdates/)
+[![Documentation](https://img.shields.io/readthedocs/cholupdates.svg?label=Documentation&style=flat-square&logo=read%20the%20docs&logoColor=white)](https://cholupdates.readthedocs.io/en/latest/)
+[![Tests](https://img.shields.io/github/workflow/status/marvinpfoertner/cholupdates/Linting%20and%20Testing?label=Tests&style=flat-square&logo=github&logoColor=white)](https://github.com/marvinpfoertner/cholupdates/actions?query=workflow%3ALinting%20and%20Testing)
+[![Test Coverage](https://img.shields.io/codecov/c/github/marvinpfoertner/cholupdates?style=flat-square&logo=codecov&logoColor=white&label=Test%20Coverage)](https://codecov.io/gh/marvinpfoertner/cholupdates)
+
+
