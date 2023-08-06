@@ -1,0 +1,3 @@
+[console_scripts]
+archive-file-urls=archive_file_urls.cli:run
+
