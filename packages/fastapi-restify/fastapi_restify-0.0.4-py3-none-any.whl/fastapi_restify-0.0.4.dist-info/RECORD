@@ -1,0 +1,13 @@
+fastapi_restify/__init__.py,sha256=ukpbvv28qUzHADswETdJOxN98m9pCE_J5aITSy0v2o8,62
+fastapi_restify/file_database.py,sha256=wnzz809UAKIPmf9n9CqDxdoEJ855Yxzeu48TKgS9eTQ,2811
+fastapi_restify/mongo_database.py,sha256=FLGpRVdc-RSNgmeo9cscJH_Mq-VyOdvzKtqWZR8z22Q,3984
+fastapi_restify/response_models.py,sha256=n1eSnzClo-_WI0ZspjLyb2TEbHVLUYW-jJv1p2c93NM,289
+fastapi_restify/restful_app.py,sha256=3Auo8Ypyv4dBBRDEBTLYYV32Z3odD_oO28TjVX4yP9E,5314
+fastapi_restify/restful_router.py,sha256=plsQXdcQRizsA21I7NUI-vAPNUUkUcIl8Hg4mrOrRHQ,3248
+fastapi_restify/uvicorn_server_context.py,sha256=bjaJ_MpXpyHpTAFcNvW2fbvskAE-Bly8AQIp40EEdF4,769
+fastapi_restify/web_server.py,sha256=OB2rxG5AedQo3BJI7qFJbJLY7HsF-IgH9BTLCn_NWWY,1331
+fastapi_restify-0.0.4.dist-info/LICENSE,sha256=Xg2Tk7Ky_8k6LE14k7n5N5lStrkWBqKVP87kUGbNQ2k,1067
+fastapi_restify-0.0.4.dist-info/METADATA,sha256=UX42ZbEyKWefOmjN1jHiBVsJRGOxjsF3b2MXqXxe4Mg,4620
+fastapi_restify-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fastapi_restify-0.0.4.dist-info/top_level.txt,sha256=Nwwkn7uD02x0LBt2xr2pNLFo_SUFUvl0ZZTeJRPWxfw,16
+fastapi_restify-0.0.4.dist-info/RECORD,,
