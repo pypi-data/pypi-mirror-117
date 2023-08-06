@@ -1,0 +1,9 @@
+requests
+
+[aws]
+boto3
+requests-aws4auth
+
+[dev]
+black
+isort
