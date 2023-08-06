@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: Famcy
+Version: 0.0.3
+Summary: Nexuni Co Ltd. Famcy management console framework
+Home-page: https://github.com/nexuni/Famcy.git
+Author: Nexuni Co Ltd. Develop Team
+Author-email: developers@nexuni.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries 
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: alembic (==1.6.5)
+Requires-Dist: boto3 (==1.18.26)
+Requires-Dist: botocore (==1.21.26)
+Requires-Dist: Brotli (==1.0.9)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: charset-normalizer (==2.0.4)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: dash (==1.21.0)
+Requires-Dist: dash-core-components (==1.17.1)
+Requires-Dist: dash-html-components (==1.1.4)
+Requires-Dist: dash-table (==4.12.0)
+Requires-Dist: discover (==0.4.0)
+Requires-Dist: Flask (==2.0.1)
+Requires-Dist: Flask-Compress (==1.10.1)
+Requires-Dist: Flask-Login (==0.5.0)
+Requires-Dist: Flask-Migrate (==3.1.0)
+Requires-Dist: Flask-Sijax (==0.4.1)
+Requires-Dist: Flask-SQLAlchemy (==2.5.1)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: gadgethiServerUtils (==0.3.18)
+Requires-Dist: greenlet (==1.1.1)
+Requires-Dist: idna (==3.2)
+Requires-Dist: importlib-metadata (==4.6.4)
+Requires-Dist: itsdangerous (==2.0.1)
+Requires-Dist: Jinja2 (==3.0.1)
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: Mako (==1.1.5)
+Requires-Dist: Markdown (==3.3.4)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: plotly (==5.2.1)
+Requires-Dist: psycopg2-binary (==2.9.1)
+Requires-Dist: pycryptodomex (==3.10.1)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-editor (==1.0.4)
+Requires-Dist: PyYAML (==5.1)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: s3transfer (==0.5.0)
+Requires-Dist: Sijax (==0.3.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: SQLAlchemy (==1.4.23)
+Requires-Dist: tenacity (==8.0.1)
+Requires-Dist: typing-extensions (==3.10.0.0)
+Requires-Dist: urllib3 (==1.26.6)
+Requires-Dist: Werkzeug (==2.0.1)
+Requires-Dist: zipp (==3.5.0)
+
+# FAMCY Documentation
+Famcy is an Automatic Management Console for You (FAMCY). It is designed for Nexuni Management Console development. It is based in Flask framework and contains various useful plugins for backend management and user dashboard actions. 
+
+## Prerequisites
+
+
+## Installation
+
+
+## Usage
+
+
+## Features
+We provided default services with some default pages in Famcy. 
+
+### D
+
+
