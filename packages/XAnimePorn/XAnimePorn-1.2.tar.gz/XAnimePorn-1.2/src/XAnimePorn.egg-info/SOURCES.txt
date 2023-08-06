@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/XAnimePorn/XAnimePorn.py
+src/XAnimePorn/__init__.py
+src/XAnimePorn.egg-info/PKG-INFO
+src/XAnimePorn.egg-info/SOURCES.txt
+src/XAnimePorn.egg-info/dependency_links.txt
+src/XAnimePorn.egg-info/top_level.txt
