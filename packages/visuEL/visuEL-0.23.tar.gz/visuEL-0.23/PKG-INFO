@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: visuEL
+Version: 0.23
+Summary: visuEL - VISualization of Event Logs: contains an event logs sampler and a visualizer so that thousands of traces from an event logs can be easily visualized using few representatives traces on a SVG
+Home-page: https://github.com/gaelbernard/visuEL/
+Author: Gaël Bernard
+Author-email: gael.bernard@utoronto.ca
+License: MIT
+Download-URL: https://github.com/gaelbernard/visuEL/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: process mining,event logs,visualizer,sampler
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
