@@ -1,0 +1,9 @@
+biopytorch/__init__.py,sha256=MWefcD4fzgqlPfvo7Yq9O2C8tlciDAxdFtBN5spSujk,100
+biopytorch/bioconv2d.py,sha256=cZ-3dUcZIUoMmB3luTAzZyODFOgra-4Cvx8g-VnGn8s,15129
+biopytorch/biolinear.py,sha256=02fJf8I6NsyMNJck7OnFJG9Imyu52QfVBYNmOvztiIo,8932
+biopytorch/biotrainer.py,sha256=BfXp1mb7Vc0Gsa0MlHTyX3n_Ynhk4YUcFhjkS1ZxrbE,6737
+biopytorch-0.0.1.dist-info/LICENSE,sha256=voyZJCvv36s1WJ5XNlm0xzudGQdk9sBiXgyrpU1Ob_Y,1073
+biopytorch-0.0.1.dist-info/METADATA,sha256=fNmbjPvn9nCrSjkIAMTvpTFvTd2MKFG-rn0ckZdp-Ts,4152
+biopytorch-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+biopytorch-0.0.1.dist-info/top_level.txt,sha256=gtK6j8dO4D_7Bn8m0MOj56xp90MB2muveXF61-p4d0I,11
+biopytorch-0.0.1.dist-info/RECORD,,
