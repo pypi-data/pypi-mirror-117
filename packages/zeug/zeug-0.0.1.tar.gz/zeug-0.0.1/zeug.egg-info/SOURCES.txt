@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+zeug/__init__.py
+zeug/utils.py
+zeug.egg-info/PKG-INFO
+zeug.egg-info/SOURCES.txt
+zeug.egg-info/dependency_links.txt
+zeug.egg-info/top_level.txt
