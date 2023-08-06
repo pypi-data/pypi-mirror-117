@@ -1,0 +1,7 @@
+markdown
+requests
+tdqm
+scrapy
+pandas
+numpy
+jellyfish
