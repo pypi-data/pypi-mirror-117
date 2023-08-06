@@ -1,0 +1,30 @@
+/*******************************
+            Button
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+@backgroundColor: @primaryColor;
+
+/* Text */
+@borderRadius: 0px;
+
+/* Icon */
+@iconColor: @white;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hovered */
+@hoverBackgroundColor: @primaryColor;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Basic */
+@basicBorderRadius: @borderRadius;
