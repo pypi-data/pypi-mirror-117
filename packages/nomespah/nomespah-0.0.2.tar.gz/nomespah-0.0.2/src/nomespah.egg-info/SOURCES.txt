@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/nomespah/__init__.py
+src/nomespah/adjectives.py
+src/nomespah/alphabets.py
+src/nomespah/namegenerator.py
+src/nomespah/names.py
+src/nomespah.egg-info/PKG-INFO
+src/nomespah.egg-info/SOURCES.txt
+src/nomespah.egg-info/dependency_links.txt
+src/nomespah.egg-info/top_level.txt
