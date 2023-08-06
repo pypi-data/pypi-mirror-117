@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Plost
+Version: 0.1.0
+Summary: A deceptively simple plotting library for Streamlit
+Home-page: https://github.com/tvst/plost
+Author: Thiago Teixeira
+Author-email: me@thiagot.com
+License: Apache 2
+Description: # 🍅 Plost
+        
+        A deceptively simple plotting library for [Streamlit](https://github.com/streamlit/streamlit).
+        
+        Docs and Python package coming soon! In the meantime, here are some live samples with code:
+        
+        [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/tvst/plost)
+        
+        ## Why the name
+        
+        Because you've been writing _plots_ wrong all this time.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
