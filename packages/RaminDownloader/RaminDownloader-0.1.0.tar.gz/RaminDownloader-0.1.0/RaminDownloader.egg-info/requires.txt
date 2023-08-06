@@ -1,0 +1,4 @@
+Django>=3
+pytest
+requests
+BeautifulSoup4

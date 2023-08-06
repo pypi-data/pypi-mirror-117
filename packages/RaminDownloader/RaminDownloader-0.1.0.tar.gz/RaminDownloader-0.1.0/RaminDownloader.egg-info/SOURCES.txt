@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+RaminDownloader.egg-info/PKG-INFO
+RaminDownloader.egg-info/SOURCES.txt
+RaminDownloader.egg-info/dependency_links.txt
+RaminDownloader.egg-info/requires.txt
+RaminDownloader.egg-info/top_level.txt
