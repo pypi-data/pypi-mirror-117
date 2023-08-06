@@ -1,0 +1,5 @@
+[console_scripts]
+seqalign = seqalign.doc:main
+seqalign-atac-seq = seqalign.atac_seq:main
+seqalign-chip-seq = seqalign.chip_seq:main
+
