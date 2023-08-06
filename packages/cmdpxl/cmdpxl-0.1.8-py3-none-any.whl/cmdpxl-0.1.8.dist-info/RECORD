@@ -1,0 +1,10 @@
+cmdpxl/__init__.py,sha256=7jWViS7nbkP6d0uG_LmboNqSNLsgC6GOOcbYHz0InvE,75
+cmdpxl/datatypes.py,sha256=mNCz_ev-C2uqKDh2xH96yjQ6zEra4gznVaEFzlkpisE,513
+cmdpxl/main.py,sha256=G9-ZmZ8f6U5p2BRBDjaILerD76TDcv5ILrBCNa7qAOA,15436
+cmdpxl/terminal_io.py,sha256=DpnWnZpzrasu2eDZ0z7pJfOF9mJ0F5YcYZWj50VFC-8,1856
+cmdpxl-0.1.8.dist-info/LICENSE,sha256=fYj9hjB7Kjw8ABGrKrHulmbOvRO5LdWFS6R7xZ3mOQE,1091
+cmdpxl-0.1.8.dist-info/METADATA,sha256=NIq2L1q8FoUdL3r7de3u1VUmxDs7dUtrmOasDR50LgM,2573
+cmdpxl-0.1.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cmdpxl-0.1.8.dist-info/entry_points.txt,sha256=AjCVNo3pjpCc9nWBUuzrxzYMxNCmvLsUxbwyQ7V-qMc,45
+cmdpxl-0.1.8.dist-info/top_level.txt,sha256=vkZo9UR3sGw5HSpzRsJ4poL2GaaSsQ-x858fVP0vw5M,7
+cmdpxl-0.1.8.dist-info/RECORD,,
