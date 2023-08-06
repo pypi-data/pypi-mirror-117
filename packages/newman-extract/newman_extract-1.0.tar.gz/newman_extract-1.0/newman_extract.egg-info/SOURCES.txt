@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+newman_extract.egg-info/PKG-INFO
+newman_extract.egg-info/SOURCES.txt
+newman_extract.egg-info/dependency_links.txt
+newman_extract.egg-info/requires.txt
+newman_extract.egg-info/top_level.txt
