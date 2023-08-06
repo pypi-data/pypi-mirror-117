@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "pywgetb3"
+author = "Guilherme Fabrin Franco"
+author-email = "guilherme.fabrin@gmail.com"
+home-page = "https://github.com/guifabrin/pywgetb3"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+description-file = "README.md"
