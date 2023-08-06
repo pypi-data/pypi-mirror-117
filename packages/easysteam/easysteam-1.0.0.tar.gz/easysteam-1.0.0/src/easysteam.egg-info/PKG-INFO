@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: easysteam
+Version: 1.0.0
+Summary: A third-party API to access steam data and values
+Home-page: https://github.com/simpl360/easysteam
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/simpl360/easysteam/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# easysteam
+Currently in development stages, this tool can get Steam marketplace games, software, soundtracks, etc. relatively quickly.
+
+
+## Usage
+Currently the tool only has two functions; Pull, Pull_All.
+
+First create an instance of the class:
+```
+store = Market()
+```
+
+Then you either pull using the steam category link:
+```
+store.Pull('https://store.steampowered.com/genre/Free%20to%20Play/', 'NewReleasesRows')
+```
+
+Or using a name for the category:
+```
+store.Pull('Free to Play, 'NewReleasesRows')
+```
+
+The second input as you can see has 'NewReleasesRows' as the row input. You can set it to either ``NewReleasesRows`` or ``TopSellersRows`` to choose between:
+- New and Trending (for the category)
+- Top Selling (for the category)
+
+

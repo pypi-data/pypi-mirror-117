@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/easysteam/__init__.py
+src/easysteam/store.py
+src/easysteam.egg-info/PKG-INFO
+src/easysteam.egg-info/SOURCES.txt
+src/easysteam.egg-info/dependency_links.txt
+src/easysteam.egg-info/top_level.txt
