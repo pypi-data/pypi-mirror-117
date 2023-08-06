@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: shazib-seriesbox
+Version: 1.0
+Summary: Testing installation of Package
+Home-page: https://github.com/shazib96/seriesbox_public
+Author: Shazib Mustafa
+Author-email: shaojoiya@gmail.com
+License: MIT
+Download-URL: https://github.com/shazib96/seriesbox_public/releases/tag/v1.0
+Project-URL: Bug Tracker, https://github.com/shazib96/seriesbox_public/issues
+Description: # shazib_seriesbox
+        shazib_seriesbox is a Python library for dealing with triangular & Prime function series.
+        # Installation
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install shazib_seriesbox.
+        
+        
+        ```bash
+        pip install shazib_seriesbox
+        ```
+        # Usage
+        ```python
+        from shazib_seriesbox import triangular,Prime 
+        
+        # returns 'triangular series'
+        num = 17
+        trangular(num)
+        
+        #returns 'prime series'
+        num =25
+        Prime(num)
+        ```
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        Please make sure to update tests as appropriate.
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+        
+Keywords: pypi,shazib_seriesbox,tutorial
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown

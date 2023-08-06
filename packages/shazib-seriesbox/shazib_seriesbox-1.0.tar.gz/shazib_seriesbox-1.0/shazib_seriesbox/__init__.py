@@ -1,0 +1,1 @@
+from Series import triangular, Prime

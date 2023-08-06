@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+shazib_seriesbox/Series.py
+shazib_seriesbox/__init__.py
+shazib_seriesbox.egg-info/PKG-INFO
+shazib_seriesbox.egg-info/SOURCES.txt
+shazib_seriesbox.egg-info/dependency_links.txt
+shazib_seriesbox.egg-info/requires.txt
+shazib_seriesbox.egg-info/top_level.txt
