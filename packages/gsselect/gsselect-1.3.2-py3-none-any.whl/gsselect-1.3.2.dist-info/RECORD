@@ -1,0 +1,10 @@
+gsselect/__init__.py,sha256=H4MHIQno6LdhawyX_ci-BWq3ij9z8lZitKVYzolPFUk,31
+gsselect/gemcats.py,sha256=cpFoO7k-reJ8eJduAB-uofFCIbF8suvVnLDg5kgS9fs,2964
+gsselect/gsselect.py,sha256=F-9X6gz3GZYX3w-LibOcM1xPFBYsGculj4KdBPfpmwQ,22926
+gsselect/inpoly.py,sha256=ub2tLZb0yGfvmSdO_ebTZo60Ti3Llu4qL6JSnlljQ_M,1574
+gsselect/parangle.py,sha256=1DpoWbfc1iPnc85YI7JXaaPO42HGH9CXsywNBF-XQB4,1769
+gsselect-1.3.2.dist-info/LICENSE,sha256=JY6dOT0_SRLEdQbJWeSOL9H3lFKTsv-axZZEgYbyi9Y,1817
+gsselect-1.3.2.dist-info/METADATA,sha256=MwHjT5rME4-Ap4m_kf6wmuRY16jGDx_hTqUbnyJUpI0,2476
+gsselect-1.3.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gsselect-1.3.2.dist-info/top_level.txt,sha256=Jmgp0ek_tqq6sJ01QimiCImfvQ_cOPAD36hSIfDQiEk,9
+gsselect-1.3.2.dist-info/RECORD,,
