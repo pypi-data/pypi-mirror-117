@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: djangoaddressesapp
+Version: 0.0.6
+Summary: Django app to register addresses.
+Home-page: https://github.com/juliansantosinfo/djangoaddressesapp
+Author: Julian de Almeida Santos
+Author-email: julian.santos.info@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/juliansantosinfo/djangoaddressesapp
+Description: # djangoaddressesapp
+        
+        **djangoaddressesapp** is a django app to register addresses.
+        
+        ## Features
+        
+        - Complete address registration.
+        - Importance of regions, states and cities directly from the IBGE API.
+        
+        ## Installation
+        
+        - Run `pip install djangoaddressesapp`
+        - Add `djangoauthenticationapp` to `settings.INSTALLED_APPS`
+        
+        ```python
+        INSTALLED_APPS = [
+            'djangoaddressesapp',
+            #...
+        ]
+        ```
+        
+        ## Upgrade
+        
+        - Run `pip install djangoauthenticationapp --upgrade`
+        - Run `python manage.py migrate`
+        - Run `python manage.py collectstatic --clear`
+        - Restart your application server
+        
+Keywords: django,address
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
