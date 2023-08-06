@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nepseutils
+Version: 0.2.2
+Summary: Collection of scripts to interact with NEPSE related websites!
+Home-page: https://github.com/arpandaze/nepseutils
+Keywords: nepse,meroshare,tms
+Author: Daze
+Author-email: dazehere@yandex.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cryptography (>=3.4.7,<4.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: tenacity (>=7.0.0,<8.0.0)
+Project-URL: Repository, https://github.com/arpandaze/nepseutils
+Description-Content-Type: text/markdown
+
+# NEPSE Utils
+Collection of scripts to interact with NEPSE related sites.
+## Installation
+`pip install nepseutils`
+## Usage
+`python -m nepseutils`
+Note: New data file is created on the first launch!
+
+## Commands:
+|  Command      |  Description                 |
+|---------------|------------------------------|
+|`add`          | Add an account               |
+|`remove`       | Remove an account            |
+|`change lock`  | Change unlock password       |
+|`list accounts`| Show list of accounts        |
+|`list results` | Show list of results         |
+|`apply`        | Apply open issues            |
+|`status`       | Check IPO application status |
+|`result`       | Check IPO result             |
+|`exit`         | Exit the shell               |
+
+
