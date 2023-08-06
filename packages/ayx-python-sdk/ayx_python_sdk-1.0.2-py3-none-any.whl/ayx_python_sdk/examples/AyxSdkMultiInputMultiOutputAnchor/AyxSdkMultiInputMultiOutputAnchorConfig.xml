@@ -1,0 +1,25 @@
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDll="Python" EngineDllEntryPoint="main.py" SDKVersion="10.1" ToolFamily="AyxPluginSdkExamples" />
+  <GuiSettings Html="index.html" Icon="icon.png" SDKVersion="10.1">
+    <InputConnections>
+      <Connection AllowMultiple="False" Label="" Name="Input1" Optional="False" Type="Connection" />
+      <Connection AllowMultiple="False" Label="" Name="Input2" Optional="False" Type="Connection" />
+    </InputConnections>
+    <OutputConnections>
+      <Connection AllowMultiple="False" Label="1" Name="Output1" Optional="False" Type="Connection" />
+      <Connection AllowMultiple="False" Label="2" Name="Output2" Optional="False" Type="Connection" />
+    </OutputConnections>
+  </GuiSettings>
+  <Properties>
+    <MetaInfo>
+      <Name>AyxSdkMultiInputMultiOutputAnchor</Name>
+      <Description>Sample tool with two inputs and two outputs. Appends input files together in order and outputs two copies</Description>
+      <ToolVersion>1.0</ToolVersion>
+      <CategoryName>SDK Examples</CategoryName>
+      <SearchTags>python, sdk, select, sample, top, records, python sdk</SearchTags>
+      <Author>Alteryx, Inc.</Author>
+      <Company>Alteryx, Inc.</Company>
+      <Copyright>2020</Copyright>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>

@@ -1,0 +1,24 @@
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDll="Python" EngineDllEntryPoint="main.py" SDKVersion="10.1" ToolFamily="AyxPluginSdkExamples" />
+  <GuiSettings Html="index.html" Icon="icon.png" SDKVersion="10.1">
+    <InputConnections>
+      <Connection AllowMultiple="False" Label="" Name="Input1" Optional="False" Type="Connection" />
+    </InputConnections>
+    <OutputConnections>
+      <Connection AllowMultiple="False" Label="1" Name="Odds" Optional="False" Type="Connection" />
+      <Connection AllowMultiple="False" Label="1" Name="Evens" Optional="False" Type="Connection" />
+    </OutputConnections>
+  </GuiSettings>
+  <Properties>
+    <MetaInfo>
+      <Name>AyxSdkFilterLikeTool</Name>
+      <Description>Sample tool with one input and two outputs. Takes input, applying filter to each row, and outputs only the rows that match the filter</Description>
+      <ToolVersion>1.0</ToolVersion>
+      <CategoryName>SDK Examples</CategoryName>
+      <SearchTags>python, sdk, select, sample, top, records, python sdk</SearchTags>
+      <Author>Alteryx, Inc.</Author>
+      <Company>Alteryx, Inc.</Company>
+      <Copyright>2020</Copyright>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>
