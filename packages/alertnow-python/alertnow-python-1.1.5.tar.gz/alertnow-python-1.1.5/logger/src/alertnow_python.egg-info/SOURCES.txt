@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+logger/src/alertnow_python.egg-info/PKG-INFO
+logger/src/alertnow_python.egg-info/SOURCES.txt
+logger/src/alertnow_python.egg-info/dependency_links.txt
+logger/src/alertnow_python.egg-info/requires.txt
+logger/src/alertnow_python.egg-info/top_level.txt
+logger/src/logger.py
+logger/src/alertnow_python.egg-info/SOURCES.txt
