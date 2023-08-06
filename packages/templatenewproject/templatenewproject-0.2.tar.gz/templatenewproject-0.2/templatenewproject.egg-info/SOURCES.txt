@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+templatenewproject/__init__.py
+templatenewproject/github_api.py
+templatenewproject.egg-info/PKG-INFO
+templatenewproject.egg-info/SOURCES.txt
+templatenewproject.egg-info/dependency_links.txt
+templatenewproject.egg-info/not-zip-safe
+templatenewproject.egg-info/requires.txt
+templatenewproject.egg-info/top_level.txt
