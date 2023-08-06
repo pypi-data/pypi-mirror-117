@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: lgblkb-tools
+Version: 2.1.0
+Summary: Helper tools for lgblkb)
+Author: lgblkb
+Author-email: dbakhtiyarov@nu.edu.kz
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: checksumdir
+Requires-Dist: colorlog
+Requires-Dist: dynaconf
+Requires-Dist: geoalchemy2
+Requires-Dist: geojson
+Requires-Dist: geopandas
+Requires-Dist: invoke
+Requires-Dist: matplotlib
+Requires-Dist: more-itertools
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: ortools
+Requires-Dist: pandas
+Requires-Dist: pyproj
+Requires-Dist: python-box[ruamel.yaml,toml]
+Requires-Dist: python-log-indenter
+Requires-Dist: python-telegram-bot
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: shapely
+Requires-Dist: sortedcontainers
+Requires-Dist: sqlalchemy
+Requires-Dist: ujson (>=4.1.0,<5.0.0)
+Requires-Dist: visilibity
+Requires-Dist: wrapt
