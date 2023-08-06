@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: icarus-nmr
+Version: 0.1.0
+Summary: Pressure Jump Software for time-resolved pressure NMR
+Home-page: https://github.com/vstadnytskyi/icarus-nmr
+Author: Valentyn Stadnytskyi
+Author-email: vstadnytskyi@gmail.com
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: pyserial
+Requires-Dist: pyusb
+Requires-Dist: matplotlib
+Requires-Dist: circular-buffer-numpy
+Requires-Dist: ubcs-auxiliary
+Requires-Dist: pyepics
+Requires-Dist: scipy
+Requires-Dist: psutil
+Requires-Dist: caproto
+
+===============================
+Icarus Pressure Jump for NMR
+===============================
+
+.. image:: https://img.shields.io/pypi/v/icarus-nmr.svg
+        :target: https://pypi.python.org/pypi/icarus-nmr
+
+.. image:: https://zenodo.org/badge/212235996.svg
+        :target: https://zenodo.org/badge/latestdoi/212235996
+
+Pressure Jump Software for time-resolved pressure NMR
+
+* Free software: 3-clause BSD license
+* Documentation: https://vstadnytskyi.github.io/icarus-nmr 
+
+Features
+--------
+
+* TODO
+
+
