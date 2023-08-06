@@ -1,0 +1,8 @@
+groclimateclient/CONTRIBUTING.md,sha256=AvQzCIKexHQiMV8k6MzqSetRP5dnQbHC4m7XW90t8Bc,3243
+groclimateclient/__init__.py,sha256=YYpPjXBrSprmGn1rpilj97UXYPjvY3-at8ZxY3K2IO0,60
+groclimateclient/climate_client.py,sha256=C6U5jdbJUSatEL2N7LhEgmJRDdTDSHoezAo-Uc6whXo,16450
+groclimateclient/constants.py,sha256=-aZl6Kkpe2DpYCXjy8_Td_NeN7xfaFrh4UHwCveDHGk,8956
+groclimateclient-1.0.0.dist-info/LICENSE,sha256=J9Lz_uuCi9lWXA5MzQMNmESiRvxyBg64pad6cO1kvOI,1073
+groclimateclient-1.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+groclimateclient-1.0.0.dist-info/METADATA,sha256=aalrpLDJSgCiS9Aig0KbhL30JIUgtpfDZmVKWrtpx2E,844
+groclimateclient-1.0.0.dist-info/RECORD,,
