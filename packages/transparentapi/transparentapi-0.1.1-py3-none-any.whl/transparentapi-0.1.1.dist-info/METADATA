@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: transparentapi
+Version: 0.1.1
+Summary: Python Client Library for Transparent AI
+Home-page: https://github.com/transparentai-inc/transparentapi-python-client
+Author: Transparent AI
+Author-email: samsonqian@gmail.com
+License: Apache 2.0
+Keywords: explainable-ai
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# transparentapi-python-client
+
