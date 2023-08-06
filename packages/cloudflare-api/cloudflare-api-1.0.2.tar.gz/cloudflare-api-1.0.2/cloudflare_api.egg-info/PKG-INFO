@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: cloudflare-api
+Version: 1.0.2
+Summary: Python client for the Cloudflare v4 API
+Home-page: https://github.com/nikhiljohn10/pycf
+Author: Nikhil John
+Author-email: nikhiljohn1010@gmail.com
+License: MIT
+Description: # pycf
+        Python client for Cloudflare API v4
+        
+        ## Using pip
+        
+        ```
+        pip install cloudflare-api
+        ```
+        
+        Sample code can be found inside [/test.py](https://github.com/nikhiljohn10/pycf/blob/main/test.py) 
+        
+        ## Usage from source
+        
+        ```
+        git clone https://github.com/nikhiljohn10/pycf
+        cd pycf
+        ```
+        
+        Create a `secret.py` in the root directory with following content:
+        ```
+        API_TOKEN = ""
+        ACCOUNT_ID = ""
+        ```
+        The above variable need to be assigned with your own api token and account id from Cloudflare dashboard.
+        
+        Then run the following command in terminal:
+        ```
+        make test
+        ```
+        
+        ## Available endpoints
+        
+        ### Worker Script
+        
+        - [x] list - List all existing workers
+        - [x] upload - Upload a new worker with binding if given
+        - [x] download - Download an existing worker
+        - [x] delete - Delete an existing worker
+        
+        ### Workers KV
+        
+        - [x] list - List all existing Namespaces
+        - [x] id - Find the namespace id of the namespace
+        - [x] create - Create a new namespace
+        - [x] rename - Rename an existing namespace
+        - [x] delete - Delete an existing namespace
+        
+Keywords: cloudflare-api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
