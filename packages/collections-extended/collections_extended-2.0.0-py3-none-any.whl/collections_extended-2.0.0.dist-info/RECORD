@@ -1,0 +1,13 @@
+collections_extended/__init__.py,sha256=JkDaOAWvNwFzNCW6Hi9GB0surpCLk9I516TZDnrRtr0,1375
+collections_extended/_util.py,sha256=Aztg_9FYH2C674vMphcbHBdC-UIrpVJwSjXJFXil9qM,1788
+collections_extended/_version.py,sha256=6dPhnPO_GvUyttkxRJiveCoyRBdn8lmbxlFMeGVegtc,92
+collections_extended/bags.py,sha256=2elWRg0zguEhVnLh6cUnl1X2S1Zm4jXjwYB4yoNCNR8,14131
+collections_extended/bijection.py,sha256=CvRWZRgBWtg8IZABk2pbh8I7sugTcmmV_6mRx9uJQv8,2291
+collections_extended/indexed_dict.py,sha256=bJp87jzHcdTaQxGR3COySVZVlVSEHHUaRmOwTXfHg68,10335
+collections_extended/range_map.py,sha256=IvKGDuPJITjn5mlt_-cIL6ZnOcdz1_cKb5z_rVqwkjo,11229
+collections_extended/sentinel.py,sha256=KR-bvbCtB_eHsdcWUbXxMQ_OTeAzTm743XpblOIraKU,853
+collections_extended/setlists.py,sha256=b-dKZoKpEgPyTJsltZA_qYGgRAMaY3juWuDH0zUd6M4,15019
+collections_extended-2.0.0.dist-info/LICENSE,sha256=c7p036pSC0mkAbXSFFmoUjoUbzt1GKgz7qXvqFEwv2g,10273
+collections_extended-2.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+collections_extended-2.0.0.dist-info/METADATA,sha256=wz7IOZ7RDOzgGxY-gU6dPACEDzZghHMPO_lBEEpW6k0,4930
+collections_extended-2.0.0.dist-info/RECORD,,
