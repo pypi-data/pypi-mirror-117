@@ -1,0 +1,4 @@
+pywebcopy
+py7zr
+pyyaml
+rich
