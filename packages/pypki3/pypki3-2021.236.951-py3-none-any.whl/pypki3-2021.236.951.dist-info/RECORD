@@ -1,0 +1,8 @@
+pypki3/README.md,sha256=5TD37koRfD3M2wCEBAzHG4_UvzZCXRL9SxiZx4dbNE0,110
+pypki3/__init__.py,sha256=OMlOpF12cDMykNGYBTuQ8Pfz8CdDDEkRs4N2EiN4Ayw,343
+pypki3/config.py,sha256=ENcuu0QevdBA59z-oefFMnPTL4Bo5gRr_W96A8_6Q40,9530
+pypki3/exceptions.py,sha256=nmnipITNDwCuJnmrDufpbsRtgM3VbMc4T0lxWiAZysI,43
+pypki3-2021.236.951.dist-info/LICENSE,sha256=JvZMgDsH386oLqMXkLh_z1v8dk1jUTz-xq-Be2LWvrw,1056
+pypki3-2021.236.951.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pypki3-2021.236.951.dist-info/METADATA,sha256=nvxcHFTOMC0XlX3vV3iLOy0gvcJhcK7du0FbTdbyMG4,4565
+pypki3-2021.236.951.dist-info/RECORD,,
