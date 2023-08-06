@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+KNMI14ext/__init__.py
+KNMI14ext/extract_KNMI14.py
+KNMI14ext/quicksample.py
+KNMI14ext.egg-info/PKG-INFO
+KNMI14ext.egg-info/SOURCES.txt
+KNMI14ext.egg-info/dependency_links.txt
+KNMI14ext.egg-info/requires.txt
+KNMI14ext.egg-info/top_level.txt
