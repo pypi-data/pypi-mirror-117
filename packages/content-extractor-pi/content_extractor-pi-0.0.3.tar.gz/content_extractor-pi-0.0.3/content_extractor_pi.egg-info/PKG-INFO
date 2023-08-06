@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: content-extractor-pi
+Version: 0.0.3
+Summary: Content extractor for files containing text
+Home-page: https://gitlab.com/qarik/data-science/gcp_docunderstanding_spike/-/tree/content_extractor
+Author: Paolo Italiani
+Author-email: paoita@hotmail.it
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
