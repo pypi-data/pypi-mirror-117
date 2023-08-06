@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+debug_calls/__init__.py
+debug_calls/decorators.py
+debug_calls/py.typed
+debug_calls.egg-info/PKG-INFO
+debug_calls.egg-info/SOURCES.txt
+debug_calls.egg-info/dependency_links.txt
+debug_calls.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: debug-calls
+Version: 0.1.0
+Summary: A decorator for logging calls to functions and their given arguments.
+Home-page: https://github.com/capruce/debug_calls
+Author: Luis Morera De La Cruz
+Author-email: capruce@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/capruce/debug_calls
+Project-URL: Bug Tracker, https://github.com/capruce/debug_calls/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Hellooooooo
+
+
