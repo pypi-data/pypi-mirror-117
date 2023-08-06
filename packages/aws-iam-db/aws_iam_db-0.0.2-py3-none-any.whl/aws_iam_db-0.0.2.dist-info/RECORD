@@ -1,0 +1,10 @@
+aws_iam_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_iam_db/__main__.py,sha256=pPjIu2m0NTwXQJfieHpXDr0xFNGmyWpd0267F0HQir0,276
+aws_iam_db/build_db.py,sha256=kDNjSmVedSDDYvEjp7c5QN1JJStGQtWW9M1GBbMvedY,5810
+aws_iam_db/docs.py,sha256=3yzEF0LEIMdREhLTcria29VhnSB6gE99zph_ATwhKJc,14750
+aws_iam_db-0.0.2.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+aws_iam_db-0.0.2.dist-info/METADATA,sha256=WOzr7oNv2PmvlStTBCcMwzC55JnQoWY3CdpMaJglC1c,1852
+aws_iam_db-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_iam_db-0.0.2.dist-info/entry_points.txt,sha256=NEmD9lJrkvga6_d6nGcqLnj9vbm8eyY0zNFOFX222ec,57
+aws_iam_db-0.0.2.dist-info/top_level.txt,sha256=6FiFD0keyO7K5A-Tyxbtz2wcWSJ3_CLfHwIXGJ6Wrgs,11
+aws_iam_db-0.0.2.dist-info/RECORD,,
