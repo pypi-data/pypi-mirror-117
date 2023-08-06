@@ -1,0 +1,3 @@
+[console_scripts]
+quickdeploy = nginx_quickdeploy.main:main
+

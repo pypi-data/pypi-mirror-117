@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+nginx_quickdeploy/__init__.py
+nginx_quickdeploy/file_operations.py
+nginx_quickdeploy/main.py
+nginx_quickdeploy/misc.py
+nginx_quickdeploy/system_operations.py
+nginx_quickdeploy/validation.py
+nginx_quickdeploy/version.json
+nginx_quickdeploy.egg-info/PKG-INFO
+nginx_quickdeploy.egg-info/SOURCES.txt
+nginx_quickdeploy.egg-info/dependency_links.txt
+nginx_quickdeploy.egg-info/entry_points.txt
+nginx_quickdeploy.egg-info/top_level.txt
