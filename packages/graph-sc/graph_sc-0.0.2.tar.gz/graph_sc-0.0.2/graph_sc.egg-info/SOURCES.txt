@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+graph_sc/__init__.py
+graph_sc/models.py
+graph_sc/my_test.py
+graph_sc/train.py
+graph_sc.egg-info/PKG-INFO
+graph_sc.egg-info/SOURCES.txt
+graph_sc.egg-info/dependency_links.txt
+graph_sc.egg-info/requires.txt
+graph_sc.egg-info/top_level.txt
+graph_sc/data/worm_neuron_cell.h5
