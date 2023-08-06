@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: puck-me
+Version: 0.1.2
+Summary: 
+Author: Nathan
+Author-email: nathansaccon10@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: html5lib (>=1.1,<2.0)
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
+Requires-Dist: pandas (>=1.3.1,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
