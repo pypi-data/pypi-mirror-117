@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nlpapi
+Version: 0.1.1
+Summary: A language-agnostic API for basic NLP tasks.
+Home-page: https://github.com/errata-ai/nlpapi
+Author: Joseph Kato
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: spacy
+Requires-Dist: spacy-pkuseg
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: ujson
+Requires-Dist: pysbd
+
+
+# nlpapi
+
+> A language-agnostic API for basic NLP tasks.
+
+

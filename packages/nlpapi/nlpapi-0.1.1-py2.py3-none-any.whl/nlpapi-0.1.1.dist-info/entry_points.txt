@@ -1,0 +1,3 @@
+[console_scripts]
+nlpapi = nlpapi.cli:cli
+
