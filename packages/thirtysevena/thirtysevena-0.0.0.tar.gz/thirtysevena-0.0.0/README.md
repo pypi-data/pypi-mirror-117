@@ -1,0 +1,330 @@
+This is a library that provides access to 37AUSTEN's proprietary algorithms.
+
+## Installation
+
+```
+
+pip install thirtysevena 
+
+```
+## Full API Documentation 
+
+The full API documentation can be found via https://www.37austen.com/api/documentation 
+
+## Usage:
+
+The functions in this library are:
+
+1. Login
+2. Token Refresh
+3. Future Movement Algorithm 
+4. Future Movement Group Algorithm 
+5. Future Movement FX Algorithm 
+6. Future Movement Token Algorithm 
+7. Correlation Algorithm 
+
+The accepted licence types are:
+
+1. Trial - t 
+2. Single User - s 
+3. Enterprise - e 
+
+## Token Refresh
+
+```
+
+import thirtysevena as tsa
+
+email = "name@email.com"
+password = "notpassword"
+licence = "e"
+
+client = tsa.Client(email, password, licence)
+client.token_refresh()
+
+```
+
+## Future Movement Algorithm Example
+
+```
+import thirtysevena as tsa
+
+email = "name@email.com"
+password = "notpassword"
+licence = "e"
+
+client = tsa.Client(email, password, licence)
+client.login()
+
+data = {
+
+"Asset_Label" : "Gamestop", "Security_Identifier" : "Equity", "Timeframe" : "Daily", "Data_Periods" : 10, "Direction_and_MR" : 1,
+
+"Date_P1" : "2020-12-01 00:00:00", "Open_P1" : 17.11, "High_P1" : 17.4, "Low_P1" : 15.76, "Close_P1" : 15.8,
+
+"Date_P2" : "2020-12-02 00:00:00", "Open_P2" : 15.7, "High_P2" : 16.68, "Low_P2" : 15.38, "Close_P2" : 16.58,
+
+"Date_P3" : "2020-12-03 00:00:00", "Open_P3" : 16.48, "High_P3" : 16.64, "Low_P3" : 15.87, "Close_P3" : 16.12,
+
+"Date_P4" : "2020-12-04 00:00:00", "Open_P4" : 16.3, "High_P4" : 17.29, "Low_P4" : 16.26, "Close_P4" : 16.9,
+
+"Date_P5" : "2020-12-07 00:00:00", "Open_P5" : 17.0, "High_P5" : 17.5, "Low_P5" : 16.22, "Close_P5" : 16.35,
+
+"Date_P6" : "2020-12-08 00:00:00", "Open_P6" : 16.37, "High_P6" : 17.21, "Low_P6" : 15.93, "Close_P6" : 16.94,
+
+"Date_P7" : "2020-12-09 00:00:00", "Open_P7" : 13.92, "High_P7" : 14.73, "Low_P7" : 13.225, "Close_P7" : 13.66,
+
+"Date_P8" : "2020-12-10 00:00:00", "Open_P8" : 13.12, "High_P8" : 14.41, "Low_P8" : 13.05, "Close_P8" : 14.12,
+
+"Date_P9" : "2020-12-11 00:00:00", "Open_P9" : 13.91, "High_P9" : 14.0, "Low_P9" : 13.02, "Close_P9" : 13.31,
+
+"Date_P10" : "2020-12-14 00:00:00", "Open_P10" : 13.34, "High_P10" : 13.4335, "Low_P10" : 12.14, "Close_P10" : 12.72,
+
+"Date_P11" : "2020-12-15 00:00:00", "Open_P11" : 12.72
+
+}
+
+response = client.future_movement(data)
+
+```
+
+## Future Movement Group Algorithm Example
+
+```
+import thirtysevena as tsa
+
+email = "name@email.com"
+password = "notpassword"
+licence = "e"
+
+client = tsa.Client(email, password, licence)
+client.login()
+
+data = {
+
+"Asset_Label" : "Hypothetical Asset", "Security_Identifier" : "Index", "Timeframe" : "Daily", "Data_Periods" : 30, "Direction_and_MR":1,
+
+"Date_P1":"2020-02-03 00:00:00","Open_P1":26189.61,"High_P1":26512.58,"Low_P1":26145.59,"Close_P1":26356.98,
+
+"Date_P2":"2020-02-04 00:00:00","Open_P2":26491.66,"High_P2":26730.26,"Low_P2":26491.66,"Close_P2":26675.98,
+
+"Date_P3":"2020-02-05 00:00:00","Open_P3":26869.32,"High_P3":26926.12,"Low_P3":26641.92,"Close_P3":26786.74,
+
+"Date_P4":"2020-02-06 00:00:00","Open_P4":27174.53,"High_P4":27608.22,"Low_P4":27029.49,"Close_P4":27493.7,
+
+"Date_P5":"2020-02-07 00:00:00","Open_P5":27356.28,"High_P5":27410.58,"Low_P5":27224.12,"Close_P5":27404.27,
+
+"Date_P6":"2020-02-10 00:00:00","Open_P6":27092.15,"High_P6":27314.64,"Low_P6":27044.88,"Close_P6":27241.34,
+
+"Date_P7":"2020-02-11 00:00:00","Open_P7":27514.25,"High_P7":27674.81,"Low_P7":27436.99,"Close_P7":27583.88,
+
+"Date_P8":"2020-02-12 00:00:00","Open_P8":27717.22,"High_P8":27892.48,"Low_P8":27614.83,"Close_P8":27823.66,
+
+"Date_P9":"2020-02-13 00:00:00","Open_P9":27953.65,"High_P9":27953.65,"Low_P9":27695.6,"Close_P9":27730.0,
+
+"Date_P10":"2020-02-14 00:00:00","Open_P10":27698.56,"High_P10":27960.66,"Low_P10":27695.59,"Close_P10":27815.6,
+
+"Date_P11":"2020-02-17 00:00:00","Open_P11":27766.71,"High_P11":28055.58,"Low_P11":27766.71,"Close_P11":27959.6,
+
+"Date_P12":"2020-02-18 00:00:00","Open_P12":27766.5,"High_P12":27771.3,"Low_P12":27496.25,"Close_P12":27530.2,
+
+"Date_P13":"2020-02-19 00:00:00","Open_P13":27486.46,"High_P13":27697.46,"Low_P13":27448.6,"Close_P13":27655.81,
+
+"Date_P14":"2020-02-20 00:00:00","Open_P14":27767.28,"High_P14":27767.28,"Low_P14":27383.13,"Close_P14":27609.16,
+
+"Date_P15":"2020-02-21 00:00:00","Open_P15":27450.46,"High_P15":27484.53,"Low_P15":27264.78,"Close_P15":27308.81,
+
+"Date_P16":"2020-02-24 00:00:00","Open_P16":27105.35,"High_P16":27105.35,"Low_P16":26813.22,"Close_P16":26820.88,
+
+"Date_P17":"2020-02-25 00:00:00","Open_P17":26722.39,"High_P17":26914.05,"Low_P17":26667.04,"Close_P17":26893.23,
+
+"Date_P18":"2020-02-26 00:00:00","Open_P18":26479.9,"High_P18":26776.06,"Low_P18":26479.9,"Close_P18":26696.49,
+
+"Date_P19":"2020-02-27 00:00:00","Open_P19":26529.17,"High_P19":26849.57,"Low_P19":26419.97,"Close_P19":26778.62,
+
+"Date_P20":"2020-02-28 00:00:00","Open_P20":26249.06,"High_P20":26313.55,"Low_P20":25989.41,"Close_P20":26129.93,
+
+"Date_P21":"2020-03-02 00:00:00","Open_P21":26077.73,"High_P21":26375.91,"Low_P21":26077.73,"Close_P21":26291.68,
+
+"Date_P22":"2020-03-03 00:00:00","Open_P22":26419.13,"High_P22":26527.75,"Low_P22":26233.39,"Close_P22":26284.82,
+
+"Date_P23":"2020-03-04 00:00:00","Open_P23":26321.56,"High_P23":26372.48,"Low_P23":26038.39,"Close_P23":26222.07,
+
+"Date_P24":"2020-03-05 00:00:00","Open_P24":26348.16,"High_P24":26805.58,"Low_P24":26315.36,"Close_P24":26767.87,
+
+"Date_P25":"2020-03-06 00:00:00","Open_P25":26397.78,"High_P25":26408.8,"Low_P25":26084.23,"Close_P25":26146.67,
+
+"Date_P26":"2020-03-09 00:00:00","Open_P26":25134.02,"High_P26":25321.28,"Low_P26":24948.38,"Close_P26":25040.46,
+
+"Date_P27":"2020-03-10 00:00:00","Open_P27":25285.68,"High_P27":25578.61,"Low_P27":24978.97,"Close_P27":25392.51,
+
+"Date_P28":"2020-03-11 00:00:00","Open_P28":25459.96,"High_P28":25493.23,"Low_P28":25140.38,"Close_P28":25231.61,
+
+"Date_P29":"2020-03-12 00:00:00","Open_P29":24657.67,"High_P29":24657.67,"Low_P29":24117.94,"Close_P29":24309.07,
+
+"Date_P30":"2020-03-13 00:00:00","Open_P30":22519.32,"High_P30":24184.48,"Low_P30":22519.32,"Close_P30":24032.91,
+
+"Date_P31":"2020-03-16 00:00:00","Open_P31":23317.81
+
+}
+
+response = client.future_movement_group(data)
+
+```
+
+## Future Movement FX Algorithm Example
+
+```
+import thirtysevena as tsa
+
+email = "name@email.com"
+password = "notpassword"
+licence = "e"
+
+client = tsa.Client(email, password, licence)
+client.login()
+
+data = {
+
+"Asset_Label" : "GBP/EUR", "Security_Identifier" : "FX", "Timeframe" : "Daily", "Data_Periods" : 10, "Dierction_and_MR" : 1,
+
+"Date_P1" : "2021-02-08 00:00:00", "Open_P1" : 1.1401, "High_P1" : 1.1412, "Low_P1" : 1.1373, "Close_P1" : 1.1401,
+
+"Date_P2" : "2021-02-09 00:00:00", "Open_P2" : 1.1403, "High_P2" : 1.1411, "Low_P2" : 1.1366, "Close_P2" : 1.1404,
+
+"Date_P3" : "2021-02-10 00:00:00", "Open_P3" : 1.1402, "High_P3" : 1.1425, "Low_P3" : 1.1387, "Close_P3" : 1.14,
+
+"Date_P4" : "2021-02-11 00:00:00", "Open_P4" : 1.1411, "High_P4" : 1.1424, "Low_P4" : 1.1381, "Close_P4" : 1.1411,
+
+"Date_P5" : "2021-02-12 00:00:00", "Open_P5" : 1.1385, "High_P5" : 1.1434, "Low_P5" : 1.1372, "Close_P5" : 1.1383,
+
+"Date_P6" : "2021-02-15 00:00:00", "Open_P6" : 1.1442, "High_P6" : 1.147, "Low_P6" : 1.1439, "Close_P6" : 1.1441,
+
+"Date_P7" : "2021-02-16 00:00:00", "Open_P7" : 1.1467, "High_P7" : 1.1495, "Low_P7" : 1.1441, "Close_P7" : 1.1464,
+
+"Date_P8" : "2021-02-17 00:00:00", "Open_P8" : 1.1486, "High_P8" : 1.1519, "Low_P8" : 1.1467, "Close_P8" : 1.1484,
+
+"Date_P9" : "2021-02-18 00:00:00", "Open_P9" : 1.151, "High_P9" : 1.1569, "Low_P9" : 1.1491, "Close_P9" : 1.151,
+
+"Date_P10" : "2021-02-19 00:00:00", "Open_P10" : 1.1551, "High_P10" : 1.1568, "Low_P10" : 1.1523, "Close_P10" : 1.1551,
+
+"Date_P11" : "2021-02-22 00:00:00", "Open_P11" : 1.1569
+
+}
+
+response = client.future_movement_fx(data)
+
+```
+
+## Future Movement Token Algorithm Example
+
+```
+import thirtysevena as tsa
+
+email = "name@email.com"
+password = "notpassword"
+licence = "e"
+
+client = tsa.Client(email, password, licence)
+client.login()
+
+data = {
+
+"Asset_Label" : "Example Token", "Security_Identifier" : "Token", "Timeframe" : "Daily", "Data_Periods" : 10, "Direction_and_MR" : 1,
+
+"Date_P1" : "2021-07-26 00:00:00", "Open_P1" : 1.174122334, "High_P1" : 1.174398184, "Low_P1" : 1.174122334, "Close_P1" : 1.174260259,
+
+"Date_P2" : "2021-07-27 00:00:00", "Open_P2" : 1.174260259, "High_P2" : 1.174260259, "Low_P2" : 1.174122334, "Close_P2" : 1.174122334,
+
+"Date_P3" : "2021-07-28 00:00:00", "Open_P3" : 1.174122334, "High_P3" : 1.174398184, "Low_P3" : 1.174122334, "Close_P3" : 1.174122334,
+
+"Date_P4" : "2021-07-29 00:00:00", "Open_P4" : 1.174398184, "High_P4" : 1.174398184, "Low_P4" : 1.1739845279999999, "Close_P4" : 1.1739845279999999,
+
+"Date_P5" : "2021-07-30 00:00:00", "Open_P5" : 1.1739845279999999, "High_P5" : 1.174398184, "Low_P5" : 1.1739845279999999, "Close_P5" : 1.1739845279999999,
+
+"Date_P6" : "2021-08-02 00:00:00", "Open_P6" : 1.1739845279999999, "High_P6" : 1.174260259, "Low_P6" : 1.1739845279999999, "Close_P6" : 1.1739845279999999,
+
+"Date_P7" : "2021-08-03 00:00:00", "Open_P7" : 1.173846722, "High_P7" : 1.1739845279999999, "Low_P7" : 1.173846722, "Close_P7" : 1.1739845279999999,
+
+"Date_P8" : "2021-08-04 00:00:00", "Open_P8" : 1.173846722, "High_P8" : 1.174260259, "Low_P8" : 1.173846722, "Close_P8" : 1.173846722,
+
+"Date_P9" : "2021-08-05 00:00:00", "Open_P9" : 1.174260259, "High_P9" : 1.174260259, "Low_P9" : 1.1739845279999999, "Close_P9" : 1.1739845279999999,
+
+"Date_P10" : "2021-08-06 00:00:00", "Open_P10" :1.1739845279999999, "High_P10" : 1.1739845279999999, "Low_P10" : 1.1739845279999999,"Close_P10" : 1.1739845279999999,
+
+"Date_P11" : "2021-08-07 00:00:00", "Open_P11" :1.173846722
+
+}
+
+response = client.future_movement_token(data)
+
+```
+
+## Future Movement Correlation Algorithm Example
+
+```
+import thirtysevena as tsa
+
+email = "name@email.com"
+password = "notpassword"
+licence = "e"
+
+client = tsa.Client(email, password, licence)
+client.login()
+
+data = {
+
+"A1_Asset_Label" : "Asset A", "A2_Asset_Label" : "Asset B", "A1_Security_Identifier" : "Equity", "A2_Security_Identifier" : "Equity", 
+
+"Timeframe" : "Daily", "Data_Periods" : 10,
+
+"A1_Date_P1" : "2020-12-01 00:00:00", "A1_Open_P1" : 17.11, "A1_High_P1" : 17.4, "A1_Low_P1" : 15.76, "A1_Close_P1" : 15.8,
+
+"A1_Date_P2" : "2020-12-02 00:00:00", "A1_Open_P2" : 15.7, "A1_High_P2" : 16.68, "A1_Low_P2" : 15.38, "A1_Close_P2" : 16.58,
+
+"A1_Date_P3" : "2020-12-03 00:00:00", "A1_Open_P3" : 16.48, "A1_High_P3" : 16.64, "A1_Low_P3" : 15.87, "A1_Close_P3" : 16.12,
+
+"A1_Date_P4" : "2020-12-04 00:00:00", "A1_Open_P4" : 16.3, "A1_High_P4" : 17.29, "A1_Low_P4" : 16.26, "A1_Close_P4" : 16.9,
+
+"A1_Date_P5" : "2020-12-07 00:00:00", "A1_Open_P5" : 17.0, "A1_High_P5" : 17.5, "A1_Low_P5" : 16.22, "A1_Close_P5" : 16.35,
+
+"A1_Date_P6" : "2020-12-08 00:00:00", "A1_Open_P6" : 16.37, "A1_High_P6" : 17.21, "A1_Low_P6" : 15.93, "A1_Close_P6" : 16.94,
+
+"A1_Date_P7" : "2020-12-09 00:00:00", "A1_Open_P7" : 13.92, "A1_High_P7" : 14.73, "A1_Low_P7" : 13.225, "A1_Close_P7" : 13.66,
+
+"A1_Date_P8" : "2020-12-10 00:00:00", "A1_Open_P8" : 13.12, "A1_High_P8" : 14.41, "A1_Low_P8" : 13.05, "A1_Close_P8" : 14.12,
+
+"A1_Date_P9" : "2020-12-11 00:00:00", "A1_Open_P9" : 13.91, "A1_High_P9" : 14.0, "A1_Low_P9" : 13.02, "A1_Close_P9" : 13.31,
+
+"A1_Date_P10" : "2020-12-14 00:00:00", "A1_Open_P10" : 13.34, "A1_High_P10" : 13.4335, "A1_Low_P10" : 12.14, "A1_Close_P10" : 12.72,
+
+"A2_Date_P1" : "2020-12-01 00:00:00", "A2_Open_P1" : 17.11, "A2_High_P1" : 17.4, "A2_Low_P1" : 15.76, "A2_Close_P1" : 15.8,
+
+"A2_Date_P2" : "2020-12-02 00:00:00", "A2_Open_P2" : 15.7, "A2_High_P2" : 16.68, "A2_Low_P2" : 15.38, "A2_Close_P2" : 16.58,
+
+"A2_Date_P3" : "2020-12-3 00:00:00", "A2_Open_P3" : 16.48, "A2_High_P3" : 16.64, "A2_Low_P3" : 15.87, "A2_Close_P3" : 16.12,
+
+"A2_Date_P4" : "2020-12-04 00:00:00", "A2_Open_P4" : 16.3, "A2_High_P4" : 17.29, "A2_Low_P4" : 16.26, "A2_Close_P4" : 16.9,
+
+"A2_Date_P5" : "2020-12-07 00:00:00", "A2_Open_P5" : 17.0, "A2_High_P5" : 17.5, "A2_Low_P5" : 16.22, "A2_Close_P5" : 16.35,
+
+"A2_Date_P6" : "2020-12-08 00:00:00", "A2_Open_P6" : 16.37, "A2_High_P6" : 17.21, "A2_Low_P6" : 15.93, "A2_Close_P6" : 16.94,
+
+"A2_Date_P7" : "2020-12-09 00:00:00", "A2_Open_P7" : 13.92, "A2_High_P7" : 14.73, "A2_Low_P7" : 13.225, "A2_Close_P7" : 13.66,
+
+"A2_Date_P8" : "2020-12-10 00:00:00", "A2_Open_P8" : 13.12, "A2_High_P8" : 14.41, "A2_Low_P8" : 13.05, "A2_Close_P8" : 14.12,
+
+"A2_Date_P9" : "2020-12-11 00:00:00", "A2_Open_P9" : 13.91, "A2_High_P9" : 14.0, "A2_Low_P9" : 13.02, "A2_Close_P9" : 13.31,
+
+"A2_Date_P10" : "2020-12-14 00:00:00", "A2_Open_P10" : 13.34, "A2_High_P10" : 13.4335, "A2_Low_P10" : 12.14, "A2_Close_P10" : 12.72
+
+}
+
+response = client.correlation(data)
+
+```
+
+## License
+Copyright 2021 37AUSTEN
+
+This repository is licensed under MIT license. See LICENSE for details.
