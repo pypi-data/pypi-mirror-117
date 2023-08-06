@@ -1,0 +1,17 @@
+pokepalette/__init__.py,sha256=g4eeagcFhJJjjRSfMOb-SqVdIWDSnCb-pK9hOXiR3Og,69
+pokepalette/_nbdev.py,sha256=FyTsb19-XuK75EVBz3z1y6H5bYQLIH6FKKRZpeg0O6k,422
+pokepalette/core.py,sha256=D82UJAT5HilmS5BYLtb8wQALrnJB_L02yDkTEzDNOMI,774
+pokepalette/pokemon_colours.json,sha256=fMEUayEsBPN1_yEzVznW71zm_q54GaBt6A9EU5QkpbQ,77185
+pokepalette/pokemon_colours.py,sha256=PxV8BtQ__MtsU6-wYcarj6cJeebUtBZ0rAsz_keuIXM,80568
+pokepalette-0.0.6.dist-info/.ipynb_checkpoints/PKG-INFO-checkpoint,sha256=6kXnJa3tGPwT3L_PypMgqeuwWdNMkjCL5X3pFd6NNAk,3184
+pokepalette-0.0.6.dist-info/.ipynb_checkpoints/SOURCES-checkpoint.txt,sha256=7YjNVAz2YANbGTHvbmfjdyu-aJeCzteakcBwFzsPN-k,379
+pokepalette-0.0.6.dist-info/.ipynb_checkpoints/dependency_links-checkpoint.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pokepalette-0.0.6.dist-info/.ipynb_checkpoints/entry_points-checkpoint.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pokepalette-0.0.6.dist-info/.ipynb_checkpoints/not-zip-safe-checkpoint,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pokepalette-0.0.6.dist-info/.ipynb_checkpoints/requires-checkpoint.txt,sha256=K0MlYYYitK5GjTQxPNIXkXUuYzzPyReZjMRL1k8yfhQ,32
+pokepalette-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pokepalette-0.0.6.dist-info/METADATA,sha256=n6RoOvBHwvVtfCxD19JzGzW7p3fzIG8FkqfRqKwz58Q,2797
+pokepalette-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pokepalette-0.0.6.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pokepalette-0.0.6.dist-info/top_level.txt,sha256=CVdy5cgca3OAhJ6_UIMoNA_U4lUNxQgnnQww9PGFmxw,12
+pokepalette-0.0.6.dist-info/RECORD,,
