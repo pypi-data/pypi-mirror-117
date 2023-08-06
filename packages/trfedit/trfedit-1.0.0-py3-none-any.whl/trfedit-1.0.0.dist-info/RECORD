@@ -1,0 +1,17 @@
+trfedit/CrosstablePage.py,sha256=hULMBcJbyI49QZfz50L9KiiR3k6CGgd4S2O6XYWTpek,3763
+trfedit/GamesDialog.py,sha256=bjqNSXmMFngPu3ACHJM5p91AffVIwIJQrrgO4c835JY,5865
+trfedit/MenuBar.py,sha256=MfjCoKEBvoqpp2nLQq2oAHll2LXHQK-PKgNVqcRT9M0,1799
+trfedit/PlayerBackend.py,sha256=0w3DqA14w6QmE09plDNu5xR1dkJ1HdMWpWpdkj0iGR0,7543
+trfedit/RoundDatesBackend.py,sha256=LJCc4OMZmz0ngHal09XEt5hATSC9SvkOa9pznH4Yjis,1685
+trfedit/TournamentPage.py,sha256=KTcPbL38TjOP0-hgTcd09cSCR5_2JYv3qft0RSDDdeY,3525
+trfedit/TreeView.py,sha256=SgZJPqYOf83Vz61CUN00pMNIvEXLtfShQPb8P9WLCv4,2806
+trfedit/TreeViewPage.py,sha256=sWjw1GZySmK9_gR1q1m20NLAm8JwOtLvnjWIYlo_ad4,1938
+trfedit/Window.py,sha256=qVcH4YbmuCqDphv99RMkjFD6PRqFzaTAKnHZfXGJ0vk,8678
+trfedit/XXFieldsBackend.py,sha256=zle79nDbdZNm-w5QKIAn8TRzrGlV5ERT6IUPdJGiQbY,2408
+trfedit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trfedit/__main__.py,sha256=F98xnKvY-zxToxJa_dA7f7iCUaRM2YWoWfz7RF2kPzg,503
+trfedit-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+trfedit-1.0.0.dist-info/METADATA,sha256=1SXwjysS6lDCkxI1NOzgnTgtAhwP1m2krGFN8NUNNdk,1080
+trfedit-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+trfedit-1.0.0.dist-info/top_level.txt,sha256=5R1IdbA2TsATz96hDHmPcAFgOy1C-ObwyKvuq4dZTAQ,8
+trfedit-1.0.0.dist-info/RECORD,,
