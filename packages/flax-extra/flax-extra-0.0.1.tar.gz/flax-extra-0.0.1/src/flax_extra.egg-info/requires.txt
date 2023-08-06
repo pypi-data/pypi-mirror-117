@@ -1,0 +1,13 @@
+redex
+flax
+tensorflow
+
+[development]
+numpy
+pylint
+
+[docs]
+sphinx
+furo
+nbsphinx
+ipykernel
