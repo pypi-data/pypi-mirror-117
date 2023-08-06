@@ -1,0 +1,11 @@
+powersddp/__init__.py,sha256=9ATHKYa-wmH6OlZkIvYi7Az5MMYHRuxBtuUxpqxFANc,43
+powersddp/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+powersddp/core/api.py,sha256=Q_6neRpXTFGR7cBL3QVZFgJAAudEkNy8WYkiE9317bo,46
+powersddp/core/system.py,sha256=suZgM1IuKLAkohiqfCySyDsrEGrEfFuj4QIOqLKLfm0,7006
+powersddp/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+powersddp/utils/_solver.py,sha256=slZ6IThBONlZLuarwevgjnboUK04osAcJFE9A_lzA88,6886
+powersddp/utils/_yml.py,sha256=xs4UJwO2QBVHuoSP81atzYtlL1wbdK1M8Z-1K1TCbfk,593
+powersddp-0.0.1.dist-info/LICENSE.md,sha256=7EkAsutHGEtzvZSIciXTuFVuOAbUHjNb8-H_N9y8xPg,1062
+powersddp-0.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+powersddp-0.0.1.dist-info/METADATA,sha256=koCJiuevjh8yheoYeX45KLEwI0JvmywXGMrUDFs3A10,4675
+powersddp-0.0.1.dist-info/RECORD,,
