@@ -1,0 +1,3 @@
+[console_scripts]
+propertylistings = propertylistings.scripts.propertylistings:cli
+
