@@ -1,0 +1,6 @@
+termcolor
+python-Levenshtein
+beautifulsoup4
+lxml
+Unidecode
+kraken==3.0.0.0b24
