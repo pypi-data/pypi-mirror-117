@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: streaminguploadserver
+Version: 0.0.1
+Summary: Streaming upload server in Python extended from http.server
+Home-page: https://github.com/NteRySin/streaminguploadserver
+Author: NteRySin
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/NteRySin/streaminguploadserver/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Streaming Upload Server
+
+Streaming upload server in Python extended from [uploadserver](https://github.com/Densaugeo/uploadserver).
+
+The only difference with [uploadserver](https://github.com/Densaugeo/uploadserver) is that the upload is done via streaming, the other functionalities are the same.
+
+## Usage
+```
+python3 -m streaminguploadserver
+```
+
+## Options
+```
+python3 -m streaminguploadserver --help
+```
+
+## Installation
+```
+pip3 install git+https://github.com/NteRySin/streaminguploadserver
+```
+
+## Development
+```
+git clone https://github.com/NteRySin/streaminguploadserver
+cd streaminguploadserver
+make test
+```
+
+

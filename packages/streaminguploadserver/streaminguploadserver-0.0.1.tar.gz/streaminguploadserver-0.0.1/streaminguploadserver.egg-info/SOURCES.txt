@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+streaminguploadserver/__init__.py
+streaminguploadserver/__main__.py
+streaminguploadserver.egg-info/PKG-INFO
+streaminguploadserver.egg-info/SOURCES.txt
+streaminguploadserver.egg-info/dependency_links.txt
+streaminguploadserver.egg-info/requires.txt
+streaminguploadserver.egg-info/top_level.txt

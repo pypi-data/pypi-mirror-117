@@ -1,0 +1,3 @@
+streaming_form_data>=1.10.0
+tqdm>=4.0.0
+uploadserver>=2.0.0
