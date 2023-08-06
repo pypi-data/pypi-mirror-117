@@ -1,0 +1,14 @@
+autotoloka/__init__.py,sha256=4x4y1JF6LsXaFHc6XURkWwkQ433VWZG9b9iP_Dt1fxY,389
+autotoloka/create_pool.py,sha256=dYW2hhC74b0NPFAhF94C7dWjcVgBpGMtR1_HJ4VAygI,2228
+autotoloka/create_task.py,sha256=Ue-DexEUiON5iQHxwQvZILrPaSxesNUbyuruK0xis80,623
+autotoloka/handler.py,sha256=_62NnWroeCz1M27GmlwahR_AuQWYAmCQtKX-V213Csc,23960
+autotoloka/json_data.py,sha256=fIn2swzRIplFKa0kO0r-89zSlrnuGwXpJ6JyspgvuDY,507
+autotoloka/pipeline.py,sha256=wjJRFXjzfMA1Ep3JbOgMZQnhK7S-EccP-FciQ6CEefQ,6535
+autotoloka/test.py,sha256=8OG3pvnFpi0lk7TNjelRzfZy_7Kotvsj8qwZwbZXdCU,695
+autotoloka/utils.py,sha256=8k7kR3Mh9R88FExSa1RfFzOAg4SC9qZQYN8SUIQZ7-c,2770
+autotoloka/json_files/collecting_images.json,sha256=HhIvuZ_wAMXHuxoNDnpv1bgVqn5YMyFtnZqyobLV4xg,5623
+autotoloka/json_files/validating_segmentation.json,sha256=mppjTYqO3TyANrGeWmV4_zoHbJ6qYDjJvSvj4z3znNY,3280
+autotoloka-0.0.18.dist-info/METADATA,sha256=_JX4s-fcPd_Hczr8AfPCcpegg2YBsB4qnMG_MwW-SoM,3924
+autotoloka-0.0.18.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+autotoloka-0.0.18.dist-info/top_level.txt,sha256=3DoDYz-uqJ5Fk0ekJv4OBTXb77Qle80NqY9YyflwQ3g,11
+autotoloka-0.0.18.dist-info/RECORD,,
