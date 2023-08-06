@@ -1,0 +1,14 @@
+jinja2
+pygments
+markdown
+importlib_resources
+
+[expectations]
+optimism
+
+[server]
+flask
+flask_cas
+
+[test]
+pytest
