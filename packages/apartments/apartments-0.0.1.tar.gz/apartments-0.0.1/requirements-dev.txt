@@ -1,0 +1,13 @@
+httpx
+bs4
+tenacity
+cchardet
+lxml
+Faker
+datefinder
+pytest
+black
+flake8
+pylint
+pre-commit
+flit
