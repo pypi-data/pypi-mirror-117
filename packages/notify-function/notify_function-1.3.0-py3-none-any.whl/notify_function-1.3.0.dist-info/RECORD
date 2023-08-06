@@ -1,0 +1,8 @@
+notifier/__init__.py,sha256=LCv1PaP-QQlmIVBCaSk15smrCU25IKJWqs25liCFObA,6154
+notifier/discord_class.py,sha256=8JPN88acsAhszVAv1jJjVl4rDJGGef_Muj3U0LSFQKc,1933
+notifier/telegram_class.py,sha256=HOgf2k3fg8PVulDOEbPjIJq2ZFdAV5BKLr41G4EzhbQ,1349
+notify_function-1.3.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+notify_function-1.3.0.dist-info/METADATA,sha256=NL64yWD5oo3s5xWLvLtzQSTla4kpoZAYoDmRwL54Upo,3496
+notify_function-1.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+notify_function-1.3.0.dist-info/top_level.txt,sha256=rEjihPRFfOZHRCUHynthusyL1KJLXMy1Y2aKM-D-VYs,9
+notify_function-1.3.0.dist-info/RECORD,,
