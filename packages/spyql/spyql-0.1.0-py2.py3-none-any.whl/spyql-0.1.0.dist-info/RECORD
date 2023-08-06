@@ -1,0 +1,16 @@
+spyql/__init__.py,sha256=9mORAe3VIoX1tEZziZhIoRhoqff651XwbakUhGnwWz4,24
+spyql/cli.py,sha256=4LTLdc05emjb6HBvcVOxjuFaqfHxFM6HWxI3P3imnSc,8082
+spyql/log.py,sha256=BX3-yyyUvStJUMEGOBHVdpDGF-xU_7zLY0BbmQvwVN8,2499
+spyql/nulltype.py,sha256=fXEOHueCjHTunn15VYuS5FwbwrpEUNC7JFvJbRN9Lr0,6059
+spyql/output_handler.py,sha256=nwOS8Az3cXGTlWWfMLZcZgow3TzWyARJA7pzJC8dtZ8,884
+spyql/processor.py,sha256=FzEA1z_aCNJgqdxPLAXR9Vnuz-5bRVZaItdKvCeID4s,16100
+spyql/quotes_handler.py,sha256=JoXhqTJ_UYNyxKYXep-gfWIehGO7R51I0QWrdgycpT8,1631
+spyql/utils.py,sha256=80ytiGsugYtlsYwvEONN8K4Y0wI64X_JwQ8OhRZX_XE,631
+spyql/writer.py,sha256=yB5O-UfocqIyEMesqt6nbPrCroabvHcYb9UulFlWIzE,6620
+spyql-0.1.0.dist-info/AUTHORS.rst,sha256=QTfjxrBj4m7g0pw0W0wAy7jCFyKFgY7IX8QAaIjoZaA,177
+spyql-0.1.0.dist-info/LICENSE,sha256=3zvonMfofyNtzMTnNkPDR3q38ojxjo1PoSXUxcQVDJI,1069
+spyql-0.1.0.dist-info/METADATA,sha256=jtfMGgOX5psr7bmrhl9eqVQNsAZ7B9gaqd2eR2ONJxk,11262
+spyql-0.1.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+spyql-0.1.0.dist-info/entry_points.txt,sha256=-PV_L6bzI_uyl_bltORlBHVWarvY6WHXCer65NStEEc,42
+spyql-0.1.0.dist-info/top_level.txt,sha256=3dJ9bp40xzYekq19JdiMObDg7HutfqLT_9YCuf6cvk4,6
+spyql-0.1.0.dist-info/RECORD,,
