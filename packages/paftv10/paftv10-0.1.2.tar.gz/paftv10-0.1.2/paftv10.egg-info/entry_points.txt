@@ -1,0 +1,3 @@
+[console_scripts]
+paftv10 = paftv.paftv:main
+
