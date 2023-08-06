@@ -1,0 +1,15 @@
+integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+integrations/__version__.py,sha256=98EVLO0R54fKlG_MNNTYGo-9GddjHVanWklyQ2z8MIE,17
+integrations/admin.py,sha256=GILadEH-k7HtMqr9jrsVrujTCFf4bc4jNCIm1G_joF0,281
+integrations/apps.py,sha256=UrO7e0vHM1SC2FpNEB651yS0T3dObtQ9Yh2nS0uK0dI,105
+integrations/models.py,sha256=J-t9N7KY-5ycOPAkZL_pX0frbz3ZtZ8HtebLutY_9lw,1670
+integrations/tests.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+integrations/urls.py,sha256=BJ876tDJW_7iR0HGjudw-jr2ZMaaLaKuvW-r2ZmMgh8,166
+integrations/views.py,sha256=ENTtSj89j4ln4I5l4S9_andiVkM4n4Gku2UXmSXaDew,142
+integrations/migrations/0001_initial.py,sha256=GyWZ5bDoRlvv60eNsPofEKr1eFCwoJSCJjH88Anm_0g,1757
+integrations/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_integrations-0.1.0.dist-info/LICENSE.mit.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_integrations-0.1.0.dist-info/METADATA,sha256=G8QUG7hAsrEjgs0KRH6AWt1Kq-PPAZJ73FVDsML0EaA,4585
+django_integrations-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_integrations-0.1.0.dist-info/top_level.txt,sha256=z--C6GM6eXMOHJsVCXv5bM-rljtQQDbGFlNoo44fd70,13
+django_integrations-0.1.0.dist-info/RECORD,,
