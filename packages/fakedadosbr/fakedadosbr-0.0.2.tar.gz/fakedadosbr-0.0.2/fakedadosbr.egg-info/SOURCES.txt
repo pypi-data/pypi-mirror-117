@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fakedadosbr/__init__.py
+fakedadosbr.egg-info/PKG-INFO
+fakedadosbr.egg-info/SOURCES.txt
+fakedadosbr.egg-info/dependency_links.txt
+fakedadosbr.egg-info/not-zip-safe
+fakedadosbr.egg-info/requires.txt
+fakedadosbr.egg-info/top_level.txt
