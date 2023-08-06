@@ -1,0 +1,12 @@
+spectrogrism/__init__.py,sha256=-tfN-lAyNDZKj4itSo3dx5rkg3xnnYkZ13JSs1ULskE,648
+spectrogrism/distortion.py,sha256=8qveZkzOOut85_FKnk-_4M3eAFOiipGLGxt7DMGnl74,29913
+spectrogrism/mcmc.py,sha256=Xdkf8yunHdZg1Uv3Ip86T6s7HbnXc2ddxhL2nfzEQzw,6010
+spectrogrism/nisp.py,sha256=2n6oSbzsNG3j69Dmy20d9jJ52Ne0bZa7c6Y55Fc709w,22041
+spectrogrism/polyfit.py,sha256=u8ZpU4cHIB6dmedV4fihYx8EJjZ8LgGFwhodIRuJPU4,584
+spectrogrism/snifs.py,sha256=cvJExktOZ_D8NmWWIg2YCK4-vuuZw-8ws_YwS_9Eiaw,4018
+spectrogrism/spectrogrism.py,sha256=CmGqA0uAWnNDMoGNRfYq7jWA8r9EmnXArv-ptzif9Uo,64174
+spectrogrism-0.9.dist-info/LICENSE,sha256=0GmtG5Z4GXCvpfFu8zTkYlu-OQ3FY1yexNooYvXJCK4,1532
+spectrogrism-0.9.dist-info/METADATA,sha256=6WmofMubJ7qhObnh2SRDHPA8bIY0BO6_GWEtUrPOeeE,1783
+spectrogrism-0.9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+spectrogrism-0.9.dist-info/top_level.txt,sha256=jJe94uel5vLqVywxeL37BwpW6eoYwJJilprve3UiviE,13
+spectrogrism-0.9.dist-info/RECORD,,

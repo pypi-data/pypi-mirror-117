@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: spectrogrism
+Version: 0.9
+Summary: Grism-based spectrograph modeling
+Home-page: https://gitlab.in2p3.fr/ycopin/spectrogrism
+Author: Yannick Copin
+Author-email: y.copin@ipnl.in2p3.fr
+License: BSD 3-Clause License
+Keywords: astronomy,astrophysics
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: astropy
+Requires-Dist: iminuit (>2.0.0)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: xarray
+Provides-Extra: docs
+Requires-Dist: nbsphinx ; extra == 'docs'
+Provides-Extra: mcmc
+Requires-Dist: emcee ; extra == 'mcmc'
+Requires-Dist: corner ; extra == 'mcmc'
+Provides-Extra: plot
+Requires-Dist: mpld3 ; extra == 'plot'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+Grism-based Spectrograph Modeling
+=================================
+
+This module implements an ad-hoc grism-based spectrograph optical model. It
+provides a flexible chromatic mapping between the input focal plane and the
+output detector plane, based on an effective simplified ray-tracing model of
+the key optical elements defining the spectrograph (collimator, prism, grating,
+camera), described by a restricted number of physically-motivated distortion
+parameters.
+
+* `Code repository <https://gitlab.in2p3.fr/ycopin/spectrogrism/>`_
+* `Documentation <https://ycopin.pages.in2p3.fr/spectrogrism/>`_
+
+
