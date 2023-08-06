@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fugle_realtime_revision
+Version: 0.2.9
+Summary: Fugle Realtime Python is a Python package to query realtime stock quote of Taiwan market through API provided by Fugle.
+Home-page: https://github.com/taiwan-tradingview/fugle_realtime_revision
+Author: KB
+Author-email: taiwan.tradingview@gmail.com
+License: MIT
+Description: 
+        ##### 本套件為fugle-realtime的修正版，版權為fugle-realtime，若有侵害版權疑慮，請來信或留言告知，我們將儘速移除相關內容。
+        
+        ---------------------------------------------------------------
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown

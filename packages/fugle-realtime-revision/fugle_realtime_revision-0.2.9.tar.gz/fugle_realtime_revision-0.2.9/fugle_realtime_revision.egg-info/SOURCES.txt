@@ -1,0 +1,9 @@
+README.md
+setup.py
+fugle_realtime/__init__.py
+fugle_realtime/intraday.py
+fugle_realtime_revision.egg-info/PKG-INFO
+fugle_realtime_revision.egg-info/SOURCES.txt
+fugle_realtime_revision.egg-info/dependency_links.txt
+fugle_realtime_revision.egg-info/requires.txt
+fugle_realtime_revision.egg-info/top_level.txt
