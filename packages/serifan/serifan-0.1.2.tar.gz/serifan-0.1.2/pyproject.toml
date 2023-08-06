@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "serifan"
+version = "0.1.2"
+description = "Python wrapper for the Shortboxed API"
+authors = ["Brian Pepple <bdpepple@gmail.com>"]
+license = "GPL-3.0-or-later"
+maintainers = ["Brian Pepple <bdpepple@gmail.com>"]
+readme = "README.rst"
+packages = [
+	{ include = "serifan" },
+]
+include = [
+    { path = "tests", format = "sdist" }
+]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Topic :: Internet",
+]
+keywords= ["comics", "comic"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+marshmallow = "^3.13.0"
+requests = "^2.26.0"
+
+# Optional dependencies
+sphinx-rtd-theme = {version="^0.5.2", optional=true}
+sphinxcontrib-napoleon = {version="^0.7", optional=true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^2.12.1"
+pytest-mock = "^3.6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 95
+target-version = [ "py38",]
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/bpepple/serifan"
+"Bug Tracker" = "https://github.com/bpepple/serifan/issues"
+
+[tool.poetry.extras]
+docs = ["sphinx-rtd-theme", "sphinxcontrib-napoleon"]
