@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ardkit
+Version: 0.1.0
+Summary: Ardkit, the open source cloud
+License: GPL-3.0-or-later
+Author: Ardustri
+Author-email: ardkit@ardustri.org
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
