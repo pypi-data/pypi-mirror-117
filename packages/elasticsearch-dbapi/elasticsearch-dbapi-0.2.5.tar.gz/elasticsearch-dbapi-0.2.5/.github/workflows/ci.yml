@@ -1,0 +1,113 @@
+# Python unit tests
+name: Python
+
+on:
+  push:
+    branches: ['master']
+  pull_request:
+    branches: ['master']
+
+jobs:
+  lint:
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        python-version: [3.7]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python-dev
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+      - name: black
+        run: black --check setup.py es
+      - name: flake8
+        run: flake8 es
+      - name: mypy
+        run: mypy es
+
+  tests:
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        python-version: [3.6, 3.7, 3.8]
+    services:
+      elasticsearch:
+        image: elasticsearch:7.3.2
+        env:
+          discovery.type: single-node
+        ports:
+          - 9200:9200
+      opendistro:
+        image: amazon/opendistro-for-elasticsearch:1.12.0
+        env:
+          discovery.type: single-node
+        ports:
+          - 19200:9200
+      opendistro_new:
+        image: amazon/opendistro-for-elasticsearch:1.13.0
+        env:
+          discovery.type: single-node
+        ports:
+          - 29200:9200
+      elasticsearch_7_10:
+        image: elasticsearch:7.10.1
+        env:
+          discovery.type: single-node
+        ports:
+          - 39200:9200
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python-dev
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          pip install -e .
+      - name: Run tests on Elasticsearch
+        run: |
+          export ES_URI="http://localhost:9200"
+          export ES_PORT=9200
+          nosetests -v --with-coverage --cover-package=es es.tests
+      - name: Run tests on Elasticsearch 7.10.X
+        run: |
+          export ES_URI="http://localhost:39200"
+          export ES_PORT=39200
+          nosetests -v --with-coverage --cover-package=es es.tests
+      - name: Run tests on Opendistro
+        run: |
+          export ES_DRIVER=odelasticsearch
+          export ES_URI="https://admin:admin@localhost:19200"
+          export ES_PASSWORD=admin
+          export ES_PORT=19200
+          export ES_SCHEME=https
+          export ES_USER=admin
+          nosetests -v --with-coverage --cover-package=es es.tests
+      - name: Run tests on Opendistro 13
+        run: |
+          export ES_DRIVER=odelasticsearch
+          export ES_URI="https://admin:admin@localhost:29200"
+          export ES_PASSWORD=admin
+          export ES_PORT=29200
+          export ES_SCHEME=https
+          export ES_USER=admin
+          export ES_V2=True
+          nosetests -v --with-coverage --cover-package=es es.tests
+      - name: Upload code coverage
+        run: |
+          bash <(curl -s https://codecov.io/bash) -cF python
