@@ -1,0 +1,3 @@
+QSwitchControl
+QSwitchControl/Classic
+QSwitchControl/Modern
