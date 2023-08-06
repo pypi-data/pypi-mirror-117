@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+trtokenizer/__init__.py
+trtokenizer/errors.py
+trtokenizer/tr_non_suffixes
+trtokenizer/tr_tokenizer.py
+trtokenizer.egg-info/PKG-INFO
+trtokenizer.egg-info/SOURCES.txt
+trtokenizer.egg-info/dependency_links.txt
+trtokenizer.egg-info/requires.txt
+trtokenizer.egg-info/top_level.txt
