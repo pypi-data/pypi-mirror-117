@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mtba
+Version: 0.1.0
+Summary: meituan ba auth
+Home-page: https://github.com/pydtools/mtba/
+Author: huoyinghui
+Author-email: hyhlinux@163.com
+Requires-Python: >=3.5,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Bug Tracker, https://github.com/pydtools/mtba/issues
+Project-URL: Documentation, https://github.com/pydtools/mtba/wiki
+Project-URL: Repository, https://github.com/pydtools/mtba/
+Project-URL: github, https://github.com/pydtools/mtba/
