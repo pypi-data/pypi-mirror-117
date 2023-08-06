@@ -1,0 +1,13 @@
+CHANGES.md
+MANIFEST.in
+README.md
+setup.py
+docs/README.md
+learn_python_ms.egg-info/PKG-INFO
+learn_python_ms.egg-info/SOURCES.txt
+learn_python_ms.egg-info/dependency_links.txt
+learn_python_ms.egg-info/top_level.txt
+sample_package/__init__.py
+sample_package/__version__.py
+sample_package/another_process.py
+sample_package/main.py
