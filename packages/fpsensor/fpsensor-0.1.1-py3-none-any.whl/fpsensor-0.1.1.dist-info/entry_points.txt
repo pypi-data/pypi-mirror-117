@@ -1,0 +1,8 @@
+[console_scripts]
+cover=scripts.poetry:run_coverage
+docs=scripts.poetry:run_docs
+html=scripts.poetry:run_html
+linter=scripts.poetry:run_linter
+test=scripts.poetry:run_test
+version=scripts.poetry:run_version
+
