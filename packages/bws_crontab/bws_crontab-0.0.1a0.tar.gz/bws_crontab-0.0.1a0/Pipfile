@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flit = "3.2.0"
+
+
+[scripts]
+flit = "flit"
+install = "flit install"
+build = "flit build"
+publish-pub = "flit publish"
+publish = "flit publish --repository maujagroup"
+publish-local = "flit publish --repository local"
+test = "python -m unittest discover test '*test.py'"
