@@ -1,0 +1,11 @@
+lcdata/__init__.py,sha256=P1V9sGoyji6sw8KsEjEmgcTddIRjU87f8OHTVG6pcF4,51
+lcdata/dataset.py,sha256=nPuFY7H35wb44F06nliSroUwiG2NeQ1Czlqkbl4sVy0,17465
+lcdata/schema.py,sha256=PXal8y0Zovc6qxbXf5oT-Je0wguY_I44VTYUtlc5ah8,7105
+lcdata/utils.py,sha256=IrUFAHMlnzpNnbp5GD8uS8O6NFjcqIxWWMfd1WmC9Es,5271
+lcdata/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lcdata/tests/test_dataset.py,sha256=DFz1uHW7B9GRXBanQTbkL9qsE-WQR7n9VqOdBTX2ATw,4643
+lcdata-0.1.dist-info/LICENSE,sha256=hkgM35Kb8MNY_WaDBUvGWlfA-qTHU611WKLhpkYMNx0,1067
+lcdata-0.1.dist-info/METADATA,sha256=nVe6fNVFRwl8Ds--JaeTyjDPUeWrWUyp44F4ZayRu-o,2185
+lcdata-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+lcdata-0.1.dist-info/top_level.txt,sha256=9gPa2o6BOT6vGtpVjLtjUPOAaK5FoFKzfK5xD6C3zBE,7
+lcdata-0.1.dist-info/RECORD,,
