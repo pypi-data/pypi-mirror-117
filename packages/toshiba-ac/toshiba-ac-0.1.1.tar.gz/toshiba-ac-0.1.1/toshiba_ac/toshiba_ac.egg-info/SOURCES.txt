@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+toshiba_ac/toshiba_ac.egg-info/PKG-INFO
+toshiba_ac/toshiba_ac.egg-info/SOURCES.txt
+toshiba_ac/toshiba_ac.egg-info/dependency_links.txt
+toshiba_ac/toshiba_ac.egg-info/requires.txt
+toshiba_ac/toshiba_ac.egg-info/top_level.txt
