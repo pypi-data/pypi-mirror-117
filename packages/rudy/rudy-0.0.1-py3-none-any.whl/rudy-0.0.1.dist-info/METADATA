@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rudy
+Version: 0.0.1
+Summary: a really stupid matrix bot
+Home-page: https://git.sr.ht/~jrb/rudy
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matrix-nio[e2e] (>=0.10.0)
+
+rudy
+====
+
+a really stupid matrix bot
+
+

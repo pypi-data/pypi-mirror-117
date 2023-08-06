@@ -1,0 +1,9 @@
+rudy/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+rudy/callbacks.py,sha256=V35xcYf1CiWy4ct6T01-3mj6wxpyFZxWDNNOshg5_-w,862
+rudy/data.py,sha256=gxs-2BRE3ANPX7eIbaaSZU5vssYByph1hdgVjB5oP38,1892
+rudy/main.py,sha256=fxjIyKWQKbKnHjHiO8juCwzUnGduX_PX5mRBAKEdvxE,689
+rudy-0.0.1.data/scripts/rudy,sha256=GBbGaXP59TTzQhPdhZWkhcMktjMJKRo4DQSqJAcJli4,105
+rudy-0.0.1.dist-info/METADATA,sha256=Bf24yqxmm9oPX9tQHDQCmoWEDUgZQvIr9G6OEgbYU7Y,602
+rudy-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+rudy-0.0.1.dist-info/top_level.txt,sha256=saw1_eBFAYQPJI37iMrp3NDmnwYo5Rr_ge0XMRFzwfM,5
+rudy-0.0.1.dist-info/RECORD,,
