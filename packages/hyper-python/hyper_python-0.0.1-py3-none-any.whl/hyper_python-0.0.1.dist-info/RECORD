@@ -1,0 +1,10 @@
+hyper/__init__.py,sha256=5kEH6GM887IeB7K9TTv3MpbUyu_o6GluMpDVqk1EI8k,84
+hyper/error.py,sha256=-qrfLpo_U-0_jq_a8DcDWgmg9UNAO1GsBvOzhzr88yg,882
+hyper/license.py,sha256=6MjuZ_HFiTzB0H-exKb2vmctADmfFritUPLJABPFpIw,2557
+hyper/mapper.py,sha256=_pCmFTZ2ZlfZ6C4VoWDL4axAzvARwAsKivP-yverRQ4,777
+hyper/requestor.py,sha256=k5K_gaxMPZx7eU7SCbVcOIq79DdRpx9Lr12Jz0t1naY,272
+hyper_python-0.0.1.dist-info/LICENSE,sha256=jDntUNAUFQIiyoJfGfD0dwT7xPvxN168uZIYAyot_18,1061
+hyper_python-0.0.1.dist-info/METADATA,sha256=DCjSivMYqydGDqHWba8zSGJE-UpmRyAecLTPXRoJbS4,2504
+hyper_python-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hyper_python-0.0.1.dist-info/top_level.txt,sha256=gqwaUdzad0ThCoi_omNuS78rqGYOUvCGa2386tpAMo0,6
+hyper_python-0.0.1.dist-info/RECORD,,
