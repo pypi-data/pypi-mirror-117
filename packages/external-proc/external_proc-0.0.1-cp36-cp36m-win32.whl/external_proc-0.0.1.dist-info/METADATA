@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: external-proc
+Version: 0.0.1
+Summary: pybind11 extension
+Home-page: UNKNOWN
+Author: pro100parenek
+Author-email: pro100parenek@instagram.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires: pybind11
+Requires-Python: >=3.6,<4.0
+
+UNKNOWN
+
+
