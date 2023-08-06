@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: serverclient
+Version: 0.0.2
+Summary: Make a Server and client with socket.
+Home-page: UNKNOWN
+Author: S.B.Subbu Rakesh (India)
+Author-email: thevastofficial@gmail.com
+License: UNKNOWN
+Keywords: python,Server,Client,socket server,socket Client,sockets
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+UNKNOWN
+
