@@ -1,0 +1,9 @@
+setup.py
+pytobot/__init__.py
+pytobot/pytobot.py
+pytobot.egg-info/PKG-INFO
+pytobot.egg-info/SOURCES.txt
+pytobot.egg-info/dependency_links.txt
+pytobot.egg-info/entry_points.txt
+pytobot.egg-info/requires.txt
+pytobot.egg-info/top_level.txt
