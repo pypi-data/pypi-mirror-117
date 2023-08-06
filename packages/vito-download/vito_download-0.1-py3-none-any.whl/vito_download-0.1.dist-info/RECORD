@@ -1,0 +1,14 @@
+vito_download/__init__.py,sha256=WkKkF-LsBJu3iYuLqNCQdR5l50H8beIJB4PCD4Raybo,359
+vito_download/_version.py,sha256=Rv0aYjyIT3g_hQkBRs0VW5ftLVRByu-C9NUeQoujarQ,18465
+vito_download/config.py,sha256=n87pFByOwyxE1HomSn3Mv8fLrjHq2vbB8dj9jmvoczA,1595
+vito_download/convenience.py,sha256=xI7lr8vORBRyHQoJBgIJ_JWZhJqyb3-rmHEVbIBd_rg,1486
+vito_download/download.py,sha256=0ncRm0xdOxc6yvHvTpux3701AEZUT2tHn8GZmv0xVOw,6066
+vito_download/extract.py,sha256=tLmUwsN2pyIJT9WrkqkAk87FqlLYmLrQu4pb-P9QSKw,942
+vito_download/query.py,sha256=kuxdnWQ107r3YgpL2Rdw8JF85x3zrygI-fws20xTgww,463
+vito_download/read.py,sha256=LrtqTgJZBFyOhuvnagWanKg6RFPWQVOJ2v6AGm1v5ko,3261
+vito_download/to_netcdf.py,sha256=5U6AXC6ajupwWr6GAt_BpnUgsKCnf8OWqMdxZrlxhGY,466
+vito_download-0.1.dist-info/LICENSE,sha256=ID1BAt-HNjRd2E8QZBdIR9j-C8gwEQEJ6FOFyFl8eKs,1069
+vito_download-0.1.dist-info/METADATA,sha256=6jfCLO0yiUc4W30QeHEc5AUOZ6-NZw8rJXj9Jizsiiw,303
+vito_download-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vito_download-0.1.dist-info/top_level.txt,sha256=lXZ--q7qWdqbtHuetSMscDvBCdcuYxMPMhUh-UFLcwM,14
+vito_download-0.1.dist-info/RECORD,,
