@@ -1,0 +1,7 @@
+aiohttp
+prettytable
+protobuf
+PyExecJS
+
+[:platform_system == "Linux"]
+uvloop
