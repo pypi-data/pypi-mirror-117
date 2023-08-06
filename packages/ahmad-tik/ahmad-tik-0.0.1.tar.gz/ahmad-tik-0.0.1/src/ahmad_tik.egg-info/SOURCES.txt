@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/ahmad_tik/__init__.py
+src/ahmad_tik/my_class.py
+src/ahmad_tik.egg-info/PKG-INFO
+src/ahmad_tik.egg-info/SOURCES.txt
+src/ahmad_tik.egg-info/dependency_links.txt
+src/ahmad_tik.egg-info/top_level.txt
