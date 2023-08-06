@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: lastfmget
+Version: 0.0.7
+Summary: Last.fm API for retrieving scrobbling data.
+Home-page: https://github.com/D3r3k23/LastFmGet
+Author: Derek Henderson
+Author-email: derekhenderson818@gmail.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/D3r3k23/LastFmApi/issues
+Keywords: lastfm,scrobble
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# LastFmGet
+
+[![Unit Tests](https://github.com/D3r3k23/LastFmGet/actions/workflows/test.yaml/badge.svg)](https://github.com/D3r3k23/LastFmGet/actions/workflows/test.yaml)
+
+
