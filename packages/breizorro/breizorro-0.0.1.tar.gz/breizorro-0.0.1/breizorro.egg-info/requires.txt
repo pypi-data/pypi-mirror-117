@@ -1,0 +1,5 @@
+astropy
+bokeh
+numpy
+regions
+scipy

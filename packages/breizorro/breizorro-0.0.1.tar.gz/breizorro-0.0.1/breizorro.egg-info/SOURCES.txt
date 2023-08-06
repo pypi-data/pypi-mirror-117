@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+breizorro/__init__.py
+breizorro/breizorro.py
+breizorro.egg-info/PKG-INFO
+breizorro.egg-info/SOURCES.txt
+breizorro.egg-info/dependency_links.txt
+breizorro.egg-info/requires.txt
+breizorro.egg-info/top_level.txt
+breizorro/bin/breizorro

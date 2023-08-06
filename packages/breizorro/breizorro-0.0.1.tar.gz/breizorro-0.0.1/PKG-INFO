@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: breizorro
+Version: 0.0.1
+Summary: Creates a binary mask given a FITS image
+Home-page: https://github.com/ratt-ru/breizorro
+Author: Ian Heywood & RATT
+Author-email: ian.heywood@physics.ox.ac.uk
+License: GNU GPL 3
+Description: =========
+        breizorro
+        =========
+        
+        A tool for creating a binary mask given a FITS image
+        
+Keywords: fits dataset models mask
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
