@@ -1,0 +1,16 @@
+curp/__about__.py,sha256=gXdcgouHt7D68WsR9W0L5mAtTynXxy0XNDzGRzFMSk0,1241
+curp/__init__.py,sha256=8d_Zg__49DggnuW4ZGIrGo2AKjQ_klXjnB9iC8TwZ-I,2235
+curp/altisonantes.py,sha256=MSPgBrH0dZWu3tXlJJB16hEEwS7WpRt8oExrSNov_Sk,1656
+curp/chars.py,sha256=in0Ff7rMhl2P4Dy4xi0kRspW8S_dlRDY6iKAiXKvZTs,1368
+curp/cli.py,sha256=0bA_jCFNpwRQ4yH7W6kWD5FTcxexCXd3cTH7REchGrk,1148
+curp/curp.py,sha256=UCJcYfl9VzLtWAVTUnumQzBWNkq0CDlbTrW-zMBNuhE,17506
+curp/estados.py,sha256=7jl0qRfm-y_wmILVJ1x62Gum1Q7Dd0bP5auoA6ww8NQ,2238
+curp/exceptions.py,sha256=zMyKCTVxsWAUnz30a3vI2x0gPZ5HyHDd6IB6SDOtpKM,1094
+curp/features.py,sha256=OUL3EqFVU-Gxalrn2YbEcVcWNbGLeNXhqMKmYel9SyI,2986
+curp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CURPSuite-2.3.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+CURPSuite-2.3.0.dist-info/METADATA,sha256=BdQc0fcdIdtN8Pva7S-yD_MKPP8rrU7KwFW3-JoSQ7Y,2600
+CURPSuite-2.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+CURPSuite-2.3.0.dist-info/entry_points.txt,sha256=aFUl1gcYOnZk_PoYAJFG-nifYLWLfhrKp1webOB1YO8,40
+CURPSuite-2.3.0.dist-info/top_level.txt,sha256=vpNcODB6XfjlbOzR2aCGA7W6DEpN5qujdxPu1Ton3UY,5
+CURPSuite-2.3.0.dist-info/RECORD,,
