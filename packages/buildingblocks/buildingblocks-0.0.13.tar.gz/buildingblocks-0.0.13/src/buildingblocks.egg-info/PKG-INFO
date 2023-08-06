@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: buildingblocks
+Version: 0.0.13
+Summary: Some Mathematical Tools for Data Curation and Analysis
+Home-page: UNKNOWN
+Author: Pavan Kumar Naraharisetti
+Author-email: naraharisetti@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# *IMPORTING PACKAGE AND MODULE
+## *syntax*
+*from buildingblocks import bb* 
+
+# *INTERPOLATE in ONE STEP* 
+## *syntax*
+**Ynew = bb.interpolate(Xdata, Ydata, Xnew, iter)**
+
+## **Description:** Given (Xdata and Ydata) data is used to build a model. Xdata and Ydata are the first two arguments to the function *interpolate*.
+The third argument Xnew is the x-axis values of the interpolated data that the user wishes to have. 
+The function returns Ynew for the given Xnew. *iter* is number of iterations given by the user (between 1 and 150)
+
+## *Example*
+import matplotlib.pyplot as plt
+import numpy as np
+from buildingblocks import bb
+
+Xdata=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+Ydata=[2.841, 3.909, 4.141, 4.243, 5.041, 6.720, 8.656, 9.989, 10.412, 10.455, 11.000, 12.463, 14.420, 15.990, 16.650, 16.712, 17.038, 18.249, 20.149, 21.9129]
+Xnew=list(np.linspace(1, 20,191))
+
+
+Ynew=bb.interpolate(Xdata,Ydata,Xnew,40)
+plt.figure()
+plt.plot(Xdata,Ydata,'*')
+plt.plot(Xnew,Ynew)
+
+# *INTERPOLATE in TWO STEPS and use the Model* 
+## *syntax*
+**ParameterSet=buildmodel(Xdata,Ydata,40)**
+**Ynew=usemodel(Xnew,ParameterSet)**
+
+## **Description:** Given (Xdata and Ydata) data is used to build a model. Xdata and Ydata are the first two arguments to the function *buildmodel*.
+Its returns a set of parameters *ParameterSet* and this is passed to *usemodel* to predict the required Ynew using *usemodel* with Xnew as argument. 
+*iter* is number of iterations given by the user (between 1 and 150)
+
+## *Example*
+import matplotlib.pyplot as plt
+import numpy as np
+from buildingblocks import bb
+
+Xdata=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+Ydata=[2.841, 3.909, 4.141, 4.243, 5.041, 6.720, 8.656, 9.989, 10.412, 10.455, 11.000, 12.463, 14.420, 15.990, 16.650, 16.712, 17.038, 18.249, 20.149, 21.9129]
+Xnew=list(np.linspace(1, 20,191))
+
+
+ParaSet=buildmodel(Xdata,Ydata,40)
+Ynew=usemodel(Xnew,ParaSet)
+
+plt.figure()
+plt.plot(Xdata,Ydata,'*')
+plt.plot(Xnew,Ynew)
+
+
+
+
+
