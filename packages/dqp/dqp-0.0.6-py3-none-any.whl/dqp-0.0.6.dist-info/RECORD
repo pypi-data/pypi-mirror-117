@@ -1,0 +1,6 @@
+dqp/__init__.py,sha256=Bs14snCQfkRZPxYfLq-haC5mArtZpKcML3Sa9y9LRYs,72
+dqp/queue.py,sha256=WCVc1tb9KRZJlNqfJ6CaHWsw1Fv1Mswe1fLYWa2Srn8,7806
+dqp/storage.py,sha256=TJUPkkrEg0kNYnd8IG4aYxzWTClnTG6U1SX25Oi3fII,1636
+dqp-0.0.6.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+dqp-0.0.6.dist-info/METADATA,sha256=sGxlReGr5FdZpLTRoeupsZDwBTgcrO_-huDPLq8Tt5I,1838
+dqp-0.0.6.dist-info/RECORD,,
