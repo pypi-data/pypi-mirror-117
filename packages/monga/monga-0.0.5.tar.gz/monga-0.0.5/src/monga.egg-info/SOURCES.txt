@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/monga/__init__.py
+src/monga/aggregate.py
+src/monga/count.py
+src/monga/filter.py
+src/monga/find.py
+src/monga/find_one.py
+src/monga/find_one_and_update.py
+src/monga/insert_one.py
+src/monga/monga.py
+src/monga.egg-info/PKG-INFO
+src/monga.egg-info/SOURCES.txt
+src/monga.egg-info/dependency_links.txt
+src/monga.egg-info/top_level.txt
