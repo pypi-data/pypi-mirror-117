@@ -1,0 +1,10 @@
+dp_sqlalchemy_wrapper/__init__.py,sha256=nn3xL1M2pcOtOir9qFRKUjBK8B537j0KQ0_1qrK-gp8,172
+dp_sqlalchemy_wrapper/base_config.py,sha256=Ma7RkiP4O-4hPFnpAHqkZjkxlnoFP2VVLXKCS7VACvM,1816
+dp_sqlalchemy_wrapper/base_db.py,sha256=4przhxO6ZXmvxwjp-LBKGDxpqShZ5VjYZ3x_O5E5yM0,2737
+dp_sqlalchemy_wrapper/declarative_util.py,sha256=2RipTCdmHl9RsmWWCdrRnoCGxLGK8gCYVmqKUTafNDQ,578
+dp_sqlalchemy_wrapper/json_fill.py,sha256=Rl4NuNi_uID4gDRbTItAXplTE5ti6jN_mLLNfi5RS_k,1462
+dp_sqlalchemy_wrapper-2.3.0.dist-info/LICENSE,sha256=FxyTkqfqhD92Hhq8ZlSNtxXCc2KARsN59jh6Ks1bW5s,1327
+dp_sqlalchemy_wrapper-2.3.0.dist-info/METADATA,sha256=d7lQRJxolhfyTZrDuOEi3tgA3SCteENAiUoKR8dG7Hc,1522
+dp_sqlalchemy_wrapper-2.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dp_sqlalchemy_wrapper-2.3.0.dist-info/top_level.txt,sha256=mCZqiMMiViMHJrtj4TJBRNdmLljQT3kuWd-iLrOYaDc,22
+dp_sqlalchemy_wrapper-2.3.0.dist-info/RECORD,,
