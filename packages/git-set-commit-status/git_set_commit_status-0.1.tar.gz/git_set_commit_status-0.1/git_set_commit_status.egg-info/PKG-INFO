@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: git-set-commit-status
+Version: 0.1
+Summary: Set commit status of pull/push/merge request.
+Home-page: https://github.com/Nebojsa92/git_set_commit_status
+Author: Nebojša Stevanović
+Author-email: nebojsa992@gmail.com
+License: GNU GPLv3
+Platform: UNKNOWN
+License-File: LICENSE
+
+# git_set_commit_status
+Python package for setting git status. Useful for CI software.
+Specify webhook request body or specify options manually.
+
+Implemented for:
+ - github
+ - gitlab
+
+
