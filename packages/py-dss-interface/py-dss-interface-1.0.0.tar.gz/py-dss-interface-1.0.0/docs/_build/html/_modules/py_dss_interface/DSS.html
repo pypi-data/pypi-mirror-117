@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>py_dss_interface.DSS &mdash; py_dss_interface 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> py_dss_interface
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">How to Use py-dss-interface Python package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">src</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">py_dss_interface</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>py_dss_interface.DSS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for py_dss_interface.DSS</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: iso-8859-15 -*-</span>
+<span class="kn">import</span> <span class="nn">ctypes</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">ActiveClass</span><span class="p">,</span> <span class="n">Bus</span><span class="p">,</span> <span class="n">CapControls</span><span class="p">,</span> <span class="n">Capacitors</span><span class="p">,</span> <span class="n">Circuit</span><span class="p">,</span> <span class="n">CktElement</span><span class="p">,</span> <span class="n">CMathLib</span><span class="p">,</span> <span class="n">CtrlQueue</span><span class="p">,</span> <span class="n">DSSElement</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">DSSExecutive</span><span class="p">,</span> <span class="n">DSSInterface</span><span class="p">,</span> <span class="n">DSSProgress</span><span class="p">,</span> <span class="n">DSSProperties</span><span class="p">,</span> <span class="n">ErrorOpenDSS</span><span class="p">,</span> <span class="n">Fuses</span><span class="p">,</span> <span class="n">Generators</span><span class="p">,</span> <span class="n">ISources</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">LineCodes</span><span class="p">,</span> <span class="n">Lines</span><span class="p">,</span> <span class="n">Loads</span><span class="p">,</span> <span class="n">LoadShapes</span><span class="p">,</span> <span class="n">Meters</span><span class="p">,</span> <span class="n">Monitors</span><span class="p">,</span> <span class="n">Parallel</span><span class="p">,</span> <span class="n">Parser</span><span class="p">,</span> <span class="n">PVSystems</span><span class="p">,</span> <span class="n">Sensors</span><span class="p">,</span> <span class="n">VSources</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">Solution</span><span class="p">,</span> <span class="n">Text</span><span class="p">,</span> <span class="n">Topology</span><span class="p">,</span> <span class="n">Transformers</span><span class="p">,</span> <span class="n">XYCurves</span>
+<span class="kn">from</span> <span class="nn">.utils.System</span> <span class="kn">import</span> <span class="n">System</span>
+
+<span class="n">DLL_NAME_WIN</span> <span class="o">=</span> <span class="s2">&quot;OpenDSSDirect.dll&quot;</span>
+<span class="n">DLL_NAME_LINUX</span> <span class="o">=</span> <span class="s2">&quot;libopendssdirect.so&quot;</span>
+
+
+<div class="viewcode-block" id="DSSDLL"><a class="viewcode-back" href="../../py_dss_interface.html#py_dss_interface.DSS.DSSDLL">[docs]</a><span class="k">class</span> <span class="nc">DSSDLL</span><span class="p">(</span><span class="n">ActiveClass</span><span class="p">,</span> <span class="n">Bus</span><span class="p">,</span> <span class="n">CapControls</span><span class="p">,</span> <span class="n">Capacitors</span><span class="p">,</span> <span class="n">Circuit</span><span class="p">,</span> <span class="n">CktElement</span><span class="p">,</span> <span class="n">CMathLib</span><span class="p">,</span> <span class="n">CtrlQueue</span><span class="p">,</span> <span class="n">DSSElement</span><span class="p">,</span>
+             <span class="n">DSSExecutive</span><span class="p">,</span> <span class="n">DSSInterface</span><span class="p">,</span> <span class="n">DSSProgress</span><span class="p">,</span> <span class="n">DSSProperties</span><span class="p">,</span> <span class="n">ErrorOpenDSS</span><span class="p">,</span> <span class="n">Fuses</span><span class="p">,</span> <span class="n">Generators</span><span class="p">,</span> <span class="n">Lines</span><span class="p">,</span> <span class="n">Loads</span><span class="p">,</span>
+             <span class="n">ISources</span><span class="p">,</span> <span class="n">LineCodes</span><span class="p">,</span> <span class="n">LoadShapes</span><span class="p">,</span> <span class="n">Meters</span><span class="p">,</span> <span class="n">Monitors</span><span class="p">,</span> <span class="n">Parallel</span><span class="p">,</span> <span class="n">Parser</span><span class="p">,</span> <span class="n">PVSystems</span><span class="p">,</span> <span class="n">Sensors</span><span class="p">,</span> <span class="n">Solution</span><span class="p">,</span> <span class="n">Text</span><span class="p">,</span>
+             <span class="n">Topology</span><span class="p">,</span> <span class="n">Transformers</span><span class="p">,</span> <span class="n">VSources</span><span class="p">,</span> <span class="n">XYCurves</span><span class="p">):</span>
+    <span class="n">dll_folder</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">dll_path</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">my_dss_version</span><span class="p">:</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span>
+    <span class="n">dss_obj</span><span class="p">:</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span>
+    <span class="n">started</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">memory_commands</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">class_commands</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># TODO need to be able to get different dll names:</span>
+    <span class="c1">#  https://www.youtube.com/watch?v=74hCbYfdZdU&amp;list=PLhdRxvt3nJ8x74v7XWcp6iLJL_nCOjxjK&amp;index=9&amp;t=2827s</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dll_folder_param</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dll_by_user</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="c1"># TODO: dss_write_allowforms</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Class to create an OpenDSS object</span>
+<span class="sd">        :param dll_folder_param: None will use the OpenDSS available within the package. The dll path allows to use a</span>
+<span class="sd">        different OpenDSS</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">started</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">dll_folder_param</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">dll_by_user</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">dll_folder_param</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dss_obj</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dll_folder_param</span><span class="p">,</span> <span class="n">dll_by_user</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">started</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">elif</span> <span class="n">dll_by_user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">dll_folder_param</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">dll_folder_param</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))),</span> <span class="s2">&quot;dll&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">System</span><span class="o">.</span><span class="n">detect_platform</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;Linux&#39;</span><span class="p">:</span>
+                <span class="n">dll_folder_param</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">dll_folder_param</span><span class="p">)</span>
+                <span class="n">dll_by_user</span> <span class="o">=</span> <span class="n">DLL_NAME_LINUX</span>
+            <span class="k">elif</span> <span class="n">System</span><span class="o">.</span><span class="n">detect_platform</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;Windows&#39;</span><span class="p">:</span>
+                <span class="n">dll_folder_param</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">dll_folder_param</span><span class="p">)</span>
+                <span class="n">dll_by_user</span> <span class="o">=</span> <span class="n">DLL_NAME_WIN</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">dll_path</span> <span class="o">=</span> <span class="n">System</span><span class="o">.</span><span class="n">get_architecture_path</span><span class="p">(</span><span class="n">dll_folder_param</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dll_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dll_path</span><span class="p">,</span> <span class="n">dll_by_user</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dss_obj</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dll_file_path</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">started</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="c1"># elif dll_folder_param is None and dll_by_user is not None:</span>
+        <span class="c1">#     print(&quot;To specific a dll you MUST define the base folder&quot;)</span>
+        <span class="c1">#     exit()</span>
+        <span class="k">elif</span> <span class="n">dll_folder_param</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">dll_by_user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please specify a DLL in the defined folder.&quot;</span><span class="p">)</span>
+            <span class="n">exit</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">started</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load_json</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_allocate_memory</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">check_started</span><span class="p">():</span>
+                <span class="nb">print</span><span class="p">(</span>
+                    <span class="s2">&quot;OpenDSS Started successfully! </span><span class="se">\n</span><span class="s2">OpenDSS </span><span class="si">{}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">my_dss_version</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OpenDSS Failed to Start&quot;</span><span class="p">)</span>
+                <span class="n">exit</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;An error occur!&quot;</span><span class="p">)</span>
+            <span class="n">exit</span><span class="p">()</span>
+
+
+<div class="viewcode-block" id="DSSDLL.check_started"><a class="viewcode-back" href="../../py_dss_interface.html#py_dss_interface.DSS.DSSDLL.check_started">[docs]</a>    <span class="k">def</span> <span class="nf">check_started</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dss_obj</span><span class="o">.</span><span class="n">DSSI</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_int32</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_int32</span><span class="p">(</span><span class="mi">0</span><span class="p">)))</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="c1"># TODO: Need refactor this call to use a method that already exists</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">my_dss_version</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dss_obj</span><span class="o">.</span><span class="n">DSSS</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_int32</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)))</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span></div>
+
+<div class="viewcode-block" id="DSSDLL.load_json"><a class="viewcode-back" href="../../py_dss_interface.html#py_dss_interface.DSS.DSSDLL.load_json">[docs]</a>    <span class="k">def</span> <span class="nf">load_json</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">dir_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">dir_path</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="s1">&#39;configurations.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_f</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_f</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;structured_data&#39;</span><span class="p">]:</span>
+                <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">n</span><span class="p">[</span><span class="s1">&#39;types&#39;</span><span class="p">]:</span>
+                    <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
+                        <span class="n">ctype</span> <span class="o">=</span> <span class="s1">&#39;c_char_p&#39;</span>
+                    <span class="k">elif</span> <span class="n">t</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">:</span>
+                        <span class="n">ctype</span> <span class="o">=</span> <span class="s1">&#39;c_double&#39;</span>
+                    <span class="n">command_</span> <span class="o">=</span> <span class="s1">&#39;self.dss_obj.&#39;</span> <span class="o">+</span> <span class="n">n</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">t</span> <span class="o">+</span> <span class="s1">&#39;.restype&#39;</span> <span class="o">+</span> <span class="s1">&#39; = &#39;</span> <span class="o">+</span> <span class="s1">&#39;ctypes.&#39;</span> <span class="o">+</span> <span class="n">ctype</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">memory_commands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">command_</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_allocate_memory</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dss_obj</span><span class="o">.</span><span class="n">DSSPut_Command</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dss_obj</span><span class="o">.</span><span class="n">DSSProperties</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">memory_commands</span><span class="p">:</span>
+            <span class="n">exec</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Paulo Radatz.
+      <span class="lastupdated">
+        Last updated on Aug 26, 2021.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
