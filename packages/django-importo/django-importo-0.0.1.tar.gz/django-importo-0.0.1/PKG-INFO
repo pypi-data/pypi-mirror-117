@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: django-importo
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Andy Babic
+Author-email: andyjbabic@gmail.com
+License: MIT
+Keywords: django migrate legacy data import wagtail pages image documents models utility
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 2
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: lint
+Provides-Extra: test
+License-File: LICENSE
+
+# django-importo
+
+NOTE: This is still very much a work-in-progress. Don't expect anything to work yet!
+
+Management commands and utilities for importing large amounts of data from various sources. The app is tested for compatibility with:
+- Django >= 3.1
+- Wagtail >= 2.12
+
+## Get started
+
+1. Install this app with `pip install django-importo`
+2. Add `importo` to your `INSTALLED_APPS`
+
+
