@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: jspeechrecognizer
+Version: 0.3-beta
+Summary: A Speech Recognition library that combines wakeword detection, speech recognition, and voice activity detection.
+Home-page: https://github.com/bossauh/JSpeechRecognizer
+Author: Philippe Mathew
+Author-email: philmattdev@gmail.com
+License: apache-2.0
+Download-URL: https://github.com/bossauh/JSpeechRecognizer/archive/refs/tags/v_0.3-beta.tar.gz
+Description: UNKNOWN
+Keywords: speech,recognition,vad,wakeword
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
