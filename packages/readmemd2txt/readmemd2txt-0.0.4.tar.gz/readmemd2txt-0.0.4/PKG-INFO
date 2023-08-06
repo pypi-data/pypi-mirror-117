@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: readmemd2txt
+Version: 0.0.4
+Summary: Quick and dirty converter: README.md > pure text
+License: GPLv3
+Author: suizokukan
+Author-email: suizokukan@orange.fr
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "readmemd2txt"
+version = "0.0.4"
+description = "Quick and dirty converter: README.md > pure text"
+authors = ["suizokukan <suizokukan@orange.fr>"]
+license = "GPLv3"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+readmemd2txt = "readmemd2txt.readmemd2txt:main"
+
+[options.entry_points]
+readmemd2txt = "readmemd2txt.readmemd2txt:main"
