@@ -1,0 +1,9 @@
+gitpython
+python-dotenv
+docker
+docker-compose
+minio
+mysqlclient
+psycopg2
+pika
+kafka-python
