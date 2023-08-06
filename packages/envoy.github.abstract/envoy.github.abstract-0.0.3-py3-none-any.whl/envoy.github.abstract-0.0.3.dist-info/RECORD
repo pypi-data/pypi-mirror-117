@@ -1,0 +1,8 @@
+envoy/github/abstract/__init__.py,sha256=KgKS3sZkVC9irKkmkcIolbNOPwHFps0EKnUYUMzLykc,325
+envoy/github/abstract/abstract.py,sha256=5JTV56ewitbHQvrqgnfolqVKMmIZgTFPKVVsvOWk1q0,9759
+envoy/github/abstract/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_abstract.py,sha256=sj_rwmbkeAmKMiBVFaBw_38fugLAFpxD4KPKIVtrOzM,215
+envoy.github.abstract-0.0.3.dist-info/METADATA,sha256=Z2EPYs4u_B8zRTYqdMdYTzQsqW96dLFVsoBv3n_xMxA,1551
+envoy.github.abstract-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+envoy.github.abstract-0.0.3.dist-info/top_level.txt,sha256=42VlDpOTLTbLBqHGkve70aKsXydFXDYZ1t1ycKQlkoI,12
+envoy.github.abstract-0.0.3.dist-info/RECORD,,
