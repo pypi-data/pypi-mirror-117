@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: arsr
+Version: 1.0.0
+Summary: Arbitrary Scale Super resolution
+Home-page: https://github.com/epsilon-deltta/arbitrary-sr/
+Author: epsilon
+Author-email: kokomong1316@gmail.com
+License: MIT
+Description: # arbitrary-sr
+        It's about arbitrary scale image super-resolution. 
+        
+Platform: UNKNOWN
+Requires-Python: >=3
