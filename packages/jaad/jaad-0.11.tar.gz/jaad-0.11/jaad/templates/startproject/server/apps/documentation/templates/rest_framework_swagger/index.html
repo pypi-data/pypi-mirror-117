@@ -1,0 +1,20 @@
+{% extends "rest_framework_swagger/base.html" %}
+{% load static %}
+
+{% block logoAndName %}
+    <a id="logo">
+        <img class="link" height="30" width="30" src="{% static 'rest_framework_swagger/logo_small.png' %}" alt="Swagger Logo"/>
+        <span class="logo__title">API documentation</span>
+    </a>
+{% endblock %}
+
+{% block title %}API Documentation{% endblock %}
+
+
+{% block favicon %}
+        <link rel="icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+    {% endblock %}
+
+{% block extra_styles %}
+    <link href='{% static "css/documentation.css" %}' rel='stylesheet' type='text/css'/>
+{% endblock %}

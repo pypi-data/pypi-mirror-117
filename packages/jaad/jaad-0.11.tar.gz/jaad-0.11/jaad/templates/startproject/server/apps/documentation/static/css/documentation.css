@@ -1,0 +1,17 @@
+.swagger-section #header {
+    background-color: #005eb8;
+}
+
+.footer {
+    display: none;
+}
+
+.swagger-section .header__btn:hover, .swagger-section #auth_container .authorize__btn:hover {
+    background-color: #004ab8;
+}
+
+.swagger-section a.header__btn, .swagger-section #auth_container .authorize__btn {
+    background-color: #1175d5;
+    border: thin solid gray
+}
+
