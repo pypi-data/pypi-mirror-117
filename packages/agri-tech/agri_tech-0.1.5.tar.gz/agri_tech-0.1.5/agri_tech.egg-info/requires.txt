@@ -1,0 +1,8 @@
+PDAL
+GDAL
+scipy
+rasterio
+geopandas
+requests
+shapely
+ipywidgets
