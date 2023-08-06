@@ -1,0 +1,8 @@
+README.md
+setup.py
+cyberspace/__init__.py
+cyberspace.egg-info/PKG-INFO
+cyberspace.egg-info/SOURCES.txt
+cyberspace.egg-info/dependency_links.txt
+cyberspace.egg-info/not-zip-safe
+cyberspace.egg-info/top_level.txt

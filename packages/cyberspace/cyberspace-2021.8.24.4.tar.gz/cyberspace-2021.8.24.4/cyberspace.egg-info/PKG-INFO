@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cyberspace
+Version: 2021.8.24.4
+Summary: Python library for interacting with IP addresses
+Home-page: https://github.com/idin/cyberspace
+Author: Idin
+Author-email: py@idin.ca
+License: MIT
+Description: # cidr
+        Functions to work with IP addresses
+        
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
