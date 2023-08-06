@@ -1,0 +1,4 @@
+biopython
+pyhg19
+tempfifo
+cutadapt
