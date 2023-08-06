@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: vigenpy
+Version: 0.1.2
+Summary: # vigenpy Video Generation Package  Project URL: https://pypi.org/project/vigenpy/ Github URL: https://github.com/vermavinay982/vigenpy  ## Installing Library ```bash pip install vigenpy ```  ## Sample Code to Start Using ```python from vigenpy.video import stack_video videos = ['archery.mp4','cycling.mp4'] stack_video(videos, axis=0)  ```
+Home-page: https://github.com/vermavinay982/vigenpy
+Author: Vinay Verma
+Author-email: vermavinay982@gmail.com
+Maintainer: Vinay Verma
+Maintainer-email: vermavinay982@gmail.com
+License: Proprietary
+Platform: Windows
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Requires-Python: >=3.7
+
+# vigenpy
+Video Generation Package
+
+Project URL: https://pypi.org/project/vigenpy/
+Github URL: https://github.com/vermavinay982/vigenpy
+
+## Installing Library
+```bash
+pip install vigenpy
+```
+
+## Sample Code to Start Using
+```python
+from vigenpy.video import stack_video
+videos = ['archery.mp4','cycling.mp4']
+stack_video(videos, axis=0) 
+```
+
