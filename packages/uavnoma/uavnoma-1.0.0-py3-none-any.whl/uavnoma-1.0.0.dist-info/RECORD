@@ -1,0 +1,10 @@
+uavnoma/__init__.py,sha256=b5P-kzqtmiUr4FJlMYzWhm-9UpIo39JZWPDCjh-O-Xw,788
+uavnoma/command_line.py,sha256=fP8a_YReseZUWp4y_7ugRJoCC8qBuQnEPhX-glgcyDc,17379
+uavnoma/generate_values.py,sha256=c1AKViRG5neyUK9Niir0OPtRPFK8JJXKBR0Po3oyCqM,4738
+uavnoma/performance_metrics.py,sha256=TeuOb0f7W62Ul0hyTgAXZN6AjQVz6_jTXI8FVCZDV6Q,4711
+uavnoma-1.0.0.dist-info/LICENSE.txt,sha256=9HuNmV8CwrwHycJR5EczbrWRWnXuurkM8Ue-Eq5ZIZo,1085
+uavnoma-1.0.0.dist-info/METADATA,sha256=APNXjulDLOe1trCrxVIQXnsxoEHJuMDcmxl8aHcOw4M,4007
+uavnoma-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+uavnoma-1.0.0.dist-info/entry_points.txt,sha256=26-uRztzytpODrFGi3kfWCcTogETEGx4AhoBbAmf1YQ,55
+uavnoma-1.0.0.dist-info/top_level.txt,sha256=qW6DIAMR-I39vhdvBA8g-uSDvaNRlCsnfYrR2tOZ194,8
+uavnoma-1.0.0.dist-info/RECORD,,

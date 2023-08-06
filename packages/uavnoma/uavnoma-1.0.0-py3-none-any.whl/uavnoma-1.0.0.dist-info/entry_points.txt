@@ -1,0 +1,3 @@
+[console_scripts]
+uavnoma = uavnoma.command_line:main
+
