@@ -1,0 +1,9 @@
+physics/__init__.py,sha256=1UB-Qr9EQXPb8FmNyTSg_65QNrVieBH20mqdmZUv68c,70
+physics/errors.py,sha256=gOWGsdvu8cG0i8YMPMqp_TnmNSTPFWrXXZu44ZsITVA,37
+physics/quantities.py,sha256=2K94BzraLpiNCLf32-GwCCw5OfChygRYa1hdQmsKG-c,5288
+physics/utils.py,sha256=pgdELIsCALVsOugu9wrNgF70cJ1r3pB5sdmI94YjuXQ,107
+SciPhy-0.0.1.dist-info/LICENSE.txt,sha256=leA3vfy8-0ZEATGKJ30a_FQ1oWhGEfOaNWqqWrYjqIQ,1093
+SciPhy-0.0.1.dist-info/METADATA,sha256=dtGBOxHciXTGGEYpTZj13C-o1PbsOXGDylncwmP2EkE,541
+SciPhy-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SciPhy-0.0.1.dist-info/top_level.txt,sha256=aws060Zz-1h0Kx76JzcE1gLA_AfS1lrRtTCsyUYwDvM,8
+SciPhy-0.0.1.dist-info/RECORD,,
