@@ -1,0 +1,6 @@
+requests[socks]
+FreeProxyScraper
+fake-useragent
+
+[dev]
+pytest
