@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: planpy
+Version: 0.0.2
+Summary: An open source library for project management
+Home-page: https://github.com/basanovase/planpy
+Author: Flynn
+Author-email: flynn.mclean@gmail.com
+License: MIT
+Description: # planpy
+        
+        An open source library for project management
+        
+        
+        Usage:
+        
+        
+        import planpy
+        
+        new_project = planpy.project("My new project")
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
