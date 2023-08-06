@@ -1,0 +1,8 @@
+gitlabci_lint/__init__.py,sha256=f5AXip3ybnxIvH3-2Buq6ixKO7bSuNYdpNU0RXYFO7Y,2006
+gitlabci_lint/gitlab-ci.json,sha256=ofQAQNW5jVb3G1FxDcFDaWTYkyetSqSdBBghS4Be3cI,55060
+gitlabci_jsonschema_lint-0.0.1.dist-info/LICENSE,sha256=ul9tTS3fmZzAYdrJx6usmcBUnoQdpke3cUU06O_hr-8,1071
+gitlabci_jsonschema_lint-0.0.1.dist-info/METADATA,sha256=DW_pk5e__8MpUx0GhW3Ku-bRKZgg3Bn3zUZp4-bc5Bk,478
+gitlabci_jsonschema_lint-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+gitlabci_jsonschema_lint-0.0.1.dist-info/entry_points.txt,sha256=jeG1MFXEN-DGwhREB4T2mtbKcGXGUPzEWHKT3Lr3zeU,65
+gitlabci_jsonschema_lint-0.0.1.dist-info/top_level.txt,sha256=UDmUR2FhSNGROpkcqYYVwMEJlk4FXCut9KM8qQE0P5I,14
+gitlabci_jsonschema_lint-0.0.1.dist-info/RECORD,,
