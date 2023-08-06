@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vtk-module
+Version: 0.0.1
+Summary: fixes the vtk problems
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # Introduciton
+        
+        This is a package to prepare the visualization with paraview for micromagnetic output files.
+        
+        # Installation
+        
+        Run the following to install:
+        '''
+        pip install vtk-module
+        '''
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

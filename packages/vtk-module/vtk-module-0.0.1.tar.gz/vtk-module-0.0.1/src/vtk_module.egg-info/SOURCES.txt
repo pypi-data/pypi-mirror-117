@@ -1,0 +1,9 @@
+README.md
+licence.txt
+setup.py
+src/vtk_util.py
+src/vtk_module.egg-info/PKG-INFO
+src/vtk_module.egg-info/SOURCES.txt
+src/vtk_module.egg-info/dependency_links.txt
+src/vtk_module.egg-info/requires.txt
+src/vtk_module.egg-info/top_level.txt
