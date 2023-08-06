@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: parselcode
+Version: 1.0.0
+Summary: Substitution based Cipher to Encrypt/Decrypt by mapping word structure to hindu birth chart houses
+Home-page: https://github.com/Puru-Malhotra/parselcode
+Author: Puru Malhotra
+Author-email: purumalhotra99@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+# parselcode
+
+The Parselcode package can be used to implement a Cipher technique using custom functions for encyrpting and decrypting ascii characters.
+
+<I>Current Version: </I>1.0.0
+
+<I>Requires: </I>Python 3.0+
+
+# Inspiration
+The creation of the package is inspired by mapping the strenghts associated in Hindu birth chart houses with fragments (anu's) of a character. This results in creating a series of integer codes for the given text, character by character. The codes are controlled by random parameters to ensure non-repetition of code for same characters.
+
+# Installation
+You can install the Parselcode package from PyPI
+
+```python 
+pip install parselcode
+```
+
+# Usage
+
+<h3>Import the necessary classes</h3>
+
+```python 
+import parselcode.main as pc
+```
+
+<h3>Create a Parselcode object</h3>
+
+```python 
+obj = pc.Cipher()
+```
+
+<h3>Encryption</h3>
+
+```python 
+ciphertext = obj.encrypt(plaintext)
+```
+
+<h3>Decryption</h3>
+
+```python 
+plaintext = obj.decrypt(ciphertext)
+```
+
+# Example
+```python 
+ciphertext = obj.encrypt("test")
+for i in ciphertext:
+    print(i, end = " ")
+```
+
+```0 3 9 8 9 9 12 11 -1 9 8 4 11 6 -1 6 7 10 9 8 -1 5 7 8 8 2 -1 2 7 3 7 0 -2 11 8 5 8 6 1 0 8 4 7 0 0 2 8 3 7 0 -1 6 8 4 7 0 -1 1 9 3 8 8 1 0 9 4 7 1 0 0 9 0 8 2 -1 1 8 11 8 9 -1 0 10 3 8 11 0 9 10 3 7 7 -1 8 9 10 8 10 -1 0 9 10 9 8 -2 11 11 3 9 5 0 6 11 1 8 5 -1 10 10 7 9 3 -1 6 10 7 10 0 -1 5 0 3 5 7 13 9 14 8 -1 8 11 11 13 2 -1 7 11 6 11 6 -1 10 12 3 10 4 0 0 12 10 10 5 0 0 11 9 10 1 0 10 11 5 8 0 -1 6 11 6 8 10 -2 1 11 10 9 7 -2 0 12 10 9 10 0 10 12 8 7 9 -1 8 12 6 8 8 -2 6 12 9 9 6 -2 5 13 11 9 11 0 7 14 0 7 11 -1 8 13 6 8 10 -2 9 13 8 9 9 -2 9 15 0 10 3 0 4 15 1 8 7 -1 11 14 7 8 10 -1 7 14 5 9 7 -1 9 0 3 6 7 7 4 13 6 -1 8 5 6 11 9 -1 5 5 3 9 6 -1 6 6 7 7 9 -1 7 7 10 7 9 -1 6 5 9 8 5 1 3 5 11 6 7 -1 9 5 10 7 7 -2 3 6 0 8 4 -2 2 7 0 8 7 1 5 7 3 6 10 0 0 7 0 8 2 -1 1 7 2 9 0 -1 5 8 3 8 11 1 2 8 6 7 4 -1 9 7 11 8 9 -1 0 8 0 9 8 -1 3 9 5 9 7 0 11 9 5 8 3 0 2 8 10 9 2 0 1 8 10 9 11 0 6 0 3 0 8 8 4 13 4 -1 5 6 10 11 11 -1 10 6 1 10 4 -1 11 5 10 8 10 -1 11 5 7 7 10 0 0 6 6 9 2 1 3 6 1 7 6 0 7 5 11 7 7 0 0 5 11 7 8 -1 11 7 4 9 2 1 1 7 0 7 5 0 0 6 11 8 7 -1 3 7 1 9 4 -1 3 8 3 9 3 0 10 8 0 7 9 -1 11 7 10 9 1 -1 5 7 11 9 10 -1 8 9 2 9 6 0 6 8 11 8 6 -1 11 8 7 9 4 -1 9 8 7 10 0 0 0 ```
+
+```python
+print(obj.decrypt(ciphertext))
+```
+
+```test```
+
+
+# Thank You
+
+If you liked this package, found it useful or have a feedback, I would love to hear your views. Do write me at [email](mailto:purumalhotra99@gmail.com).
+
+Created by - Puru Malhotra
+
+
