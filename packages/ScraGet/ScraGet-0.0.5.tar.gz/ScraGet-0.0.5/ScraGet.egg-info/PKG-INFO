@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ScraGet
+Version: 0.0.5
+Summary: A package that makes interacting with Scratch API easier
+Home-page: https://github.com/Quantum-Codes/ScraGet
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Quantum-Codes/ScraGet/issues
+Description: # ScraGet
+        ScraGet - A Scratch API package for Python<br>
+        This is a package that makes it easy to get data form:.<br>
+        1. Scratch -- Made by [Scratch developers](https://github.com/LLK/scratch-rest-api)
+        2. ScratchDB -- Made by [@DatOneLefty](https://Scratch.mit.edu/users/DatOneLefty)<br>
+        
+        This package is used **without any password!**<br>
+        You don't need to Memorize any links!
+        
+        ## To install:<br>
+        `pip install ScraGet`<br>
+        
+        WIP currently
+        
+        ## Docs:
+        documentation coming soon on wiki page
+        
+        ## Basic usage:
+        ### Get user ID from scratch
+        ```python
+        import ScraGet #import package
+        user = ScraGet.get_user() #create object
+        user.updateScratch("griffpatch") #update data
+        print(user.id) #print required info
+        ```
+        ### Get user ID from scratchDB
+        ```python
+        import ScraGet #import package
+        user = ScraGet.get_user() #create object
+        user.updateScratchDB("griffpatch") #update data
+        print(user.id) #print required info
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
