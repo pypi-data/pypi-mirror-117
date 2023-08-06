@@ -1,0 +1,3 @@
+[console_scripts]
+gnome-pomodoro-client=gnome_pomodoro_client.__main__:main
+

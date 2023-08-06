@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gnome-pomodoro-client
+Version: 0.1.0
+Summary: A simple dbus client for gnome-pomodoro.
+Author: Angus Hollands
+Author-email: goosey15@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyGObject (>=3.40.1,<4.0.0)
+Requires-Dist: pydbus (>=0.6.0,<0.7.0)
