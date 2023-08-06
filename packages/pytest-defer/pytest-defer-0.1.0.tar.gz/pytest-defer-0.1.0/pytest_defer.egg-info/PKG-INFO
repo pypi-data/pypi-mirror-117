@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytest-defer
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Miki Tebeka
+Author-email: miki@353solutions.com
+License: MIT
+Description: # pytest_defer - A "defer" fixture for pytest
+        
+        
+        ```python
+        def test_example(defer):
+            # All functions appended to defer will execute at test end in reverse order
+            instance1 = spin_instance()
+            defer.append(lambda: delete_instance(instance1))  # called second
+            instance2 = spin_instance()
+            defer.append(lambda: delete_instance(instance2))  # called first
+        
+            # Test code using instance1 & instance2
+            ...
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
