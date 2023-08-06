@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: OscarScrapper
+Version: 0.0.3
+Summary: ///
+Home-page: https://github.com/omasamo/Final-Project-JEM207
+Author: Yann Aubineau, Samuel Bozon
+Author-email: yann.aubineau@gmail.com, samuel.bozon@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: scrapy
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: jellyfish
+
+UNKNOWN
+
