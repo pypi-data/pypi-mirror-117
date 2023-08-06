@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: tf-al
+Version: 0.0.1
+Summary: Active learning with tensorflow. Create custom and generic active learning loops. Export and share your experiments.
+Home-page: https://github.com/ExLeonem/tf-al
+License: MIT
+Keywords: active learning,deep learning,tensorflow
+Author: Maksim Sandybekov
+Author-email: maksim.sandybekov@live.de
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.18.5,<2.0.0)
+Requires-Dist: scikit-learn (>=0.24.2,<0.25.0)
+Requires-Dist: tensorflow (>=2.6.0,<3.0.0)
+Requires-Dist: tensorflow-datasets (>=4.4.0,<5.0.0)
+Project-URL: Repository, https://github.com/ExLeonem/tf-al
+Description-Content-Type: text/markdown
+
+
+# Active learning in tensorflow
+
+
+# TODO
+
+[ ] Adding [poetry](https://python-poetry.org/)?
+
+# Index
+
+1. [Installation](#Installation)
+2. [Getting started](#Getting-started)
+    1. [Model wrapper](#Model-wrapper)
+    1. [Generic loop](#Basic-loop)
+3. [Development](#Development)
+    1. [Setup](#Setup)
+    2. [Scripts](#Scripts)
+4. [Contribution](#Contribution)
+5. [Issues](#Issues)
+
+
+# Installation
+
+# Getting started
+
+## Model wrapper
+
+
+
+
+
+# Development
+
+## Setup
+
+1. Create a virtual env
+1. [Install and Setup Poetry](https://python-poetry.org/docs/#installation)
+2. []
+
+
+## Scripts
+
+### Create documentation
+
+To create documentation for the `./active_leanring` directory. Execute following command
+in `./docs`
+
+```shell
+$ make html
+```
+
+### Run tests
+
+To perform automated unittests run following command in the root package directory.
+
+```shell
+$ pytest
+```
+
+To generate additional coverage reports run.
+
+```shell
+$ pytest --cov
+```
+
+
+
+# Contribution
+
+# Issues
