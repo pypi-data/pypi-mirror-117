@@ -1,0 +1,13 @@
+pnu-about
+pnu-anagram
+pnu-b2bt
+pnu-basename
+pnu-echobox
+pnu-fortune
+pnu-mtoc
+pnu-ngc
+pnu-prep
+pnu-rot13
+pnu-strfile
+pnu-true
+pnu-unicode2ascii
