@@ -1,0 +1,8 @@
+README.md
+setup.py
+oppy.egg-info/PKG-INFO
+oppy.egg-info/SOURCES.txt
+oppy.egg-info/dependency_links.txt
+oppy.egg-info/not-zip-safe
+oppy.egg-info/requires.txt
+oppy.egg-info/top_level.txt
