@@ -1,0 +1,3 @@
+[console_scripts]
+run_GUI = dai_post_processor.run_GUI:main
+
