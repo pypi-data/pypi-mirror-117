@@ -1,0 +1,3 @@
+[console_scripts]
+dsp = mac_notifier.main:dsp
+
