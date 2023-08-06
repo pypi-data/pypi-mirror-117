@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: logwas
+Version: 0.0.1
+Summary: Jeu de stratégie sur plateau
+Home-page: UNKNOWN
+Author: Bouhdid Wassim
+Author-email: <mail.wassim@hotmail.com>
+License: UNKNOWN
+Description: Un packet vous permettant de jouer a un petit jeu de stratégie sur plateau
+Keywords: python,war,strategy,game,pygame
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
