@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/agilentaspparser_egonik.egg-info/PKG-INFO
+src/agilentaspparser_egonik.egg-info/SOURCES.txt
+src/agilentaspparser_egonik.egg-info/dependency_links.txt
+src/agilentaspparser_egonik.egg-info/top_level.txt
