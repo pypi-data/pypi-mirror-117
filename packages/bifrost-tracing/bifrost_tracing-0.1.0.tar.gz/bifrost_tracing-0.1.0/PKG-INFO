@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: bifrost_tracing
+Version: 0.1.0
+Summary: Bifrost Tracing traces codes used in a notebook
+Home-page: https://github.com/jaahn96/bifrost_tracing
+Author: Jay Ahn
+Author-email: aju960219@gmail.com
+License: BSD license
+Keywords: bifrost_tracing
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===============
+Bifrost Tracing
+===============
+
+
+.. image:: https://img.shields.io/pypi/v/bifrost_tracing.svg
+        :target: https://pypi.python.org/pypi/bifrost_tracing
+
+.. image:: https://img.shields.io/travis/jaahn96/bifrost_tracing.svg
+        :target: https://travis-ci.com/jaahn96/bifrost_tracing
+
+.. image:: https://readthedocs.org/projects/bifrost-tracing/badge/?version=latest
+        :target: https://bifrost-tracing.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Bifrost Tracing traces codes used in a notebook
+
+
+* Free software: BSD license
+* Documentation: https://bifrost-tracing.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-06-29)
+------------------
+
+* First release on PyPI.
+
+
