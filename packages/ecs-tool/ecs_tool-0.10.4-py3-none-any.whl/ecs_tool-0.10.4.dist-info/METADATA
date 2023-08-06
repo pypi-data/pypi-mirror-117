@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ecs-tool
+Version: 0.10.4
+Summary: ecs-tool tries to eliminate common caveats for your day-to-day work with Elastic Container Service (ECS).
+Home-page: https://github.com/whisller/ecs-tool
+License: MIT
+Keywords: aws,ecs,cli
+Author: Daniel Ancuta
+Author-email: whisller@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: arrow (>=1.1.0,<2.0.0)
+Requires-Dist: asciiplot (>=0.1.1,<0.2.0)
+Requires-Dist: boto3 (>=1.9,<2.0)
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: click-log (>=0.3.2,<0.4.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: rich (>=10.3.0,<11.0.0)
+Project-URL: Repository, https://github.com/whisller/ecs-tool
+Description-Content-Type: text/markdown
+
+# PROJECT MOVED
+Project moved to https://github.com/whisller/lucyna This repository is kept as read only
+
