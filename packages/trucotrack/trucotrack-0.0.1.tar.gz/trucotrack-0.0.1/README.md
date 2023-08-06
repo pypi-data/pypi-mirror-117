@@ -1,0 +1,121 @@
+# Truco Tracker - A Motion Capture Listener
+
+This program is intended to serve as a helper when trying to use MediaPipe to track movements. It defines a CSV file format for some of the tracked possibilities and lets you easily call the tracker from a command line.
+
+In a typical workflow, you'll use this program to generate your motion capture files and then import the files in your application of choice. It was initially developed to facilitate using MediaPipe generated data from Blender.
+
+## File Format
+
+### Hands
+
+The first columns in the file describe the information that's being tracked:
+
+| Column Name | Type | Description |
+| --- | --- | --- |
+| frame_number | Integer | Number of the frame that the line represents |
+| hand_index | Integer | Number of the hand in the actual scene |
+| hand_score | Float | Confidence assigned to the detection of the hand |
+| hand_handness | String | Handness (left or right) of the hand |
+
+The rest of the columns correspond to node positions in three orthogonal axis,
+**x**, **y** and **z**.
+
+In order to simplify the following list, we'll write **wrist_{x|y|z}** for the trio of columns
+**wrist_x**, **wrist_y** and **wrist_z**.
+
+| Column Name | Type | Description |
+| --- | --- | --- |
+| wrist_{x\|y\|z} | Float | Position of the marker in each of the axes |
+| thumb_cmc_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| thumb_mcp_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| thumb_ip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| thumb_tip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| index_finger_mcp_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| index_finger_pip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| index_finger_dip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| index_finger_tip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| middle_finger_mcp_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| middle_finger_pip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| middle_finger_dip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| middle_finger_tip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| ring_finger_mcp_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| ring_finger_pip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| ring_finger_dip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| ring_finger_tip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| pinky_mcp_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| pinky_pip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| pinky_dip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+| pinky_tip_{x\|y\|z\} | Float | Position of the marker in each of the axes |
+
+## Command Line
+
+Use `-h` to display the command line help.
+
+```bash
+trucotrack -h
+```
+
+```
+usage: trucotrack [-h] [--video VIDEO] [--camera CAMERA] [--output OUTPUT] [--interval INTERVAL] [--first FIRST] [--last LAST] [--dynamic DYNAMIC] [--hands HANDS] [--flip FLIP] [--draw DRAW]
+
+Uses MediaPipe to generate CSV files from videos or camera live streams with the records of the tracked movements.
+
+optional arguments:
+  -h
+ --help           show this help message and exit
+  --video VIDEO        [filename] Existing video to be tracked. If empty, --camera will be used
+  --camera CAMERA      [int] Number that identifies the camera to use
+  --output OUTPUT      [filename] Text file that will store the records
+  --interval INTERVAL  [int] Number of records to store in memory before writing them
+  --first FIRST        [int] First frame to capture
+  --last LAST          [int] Last frame to capture
+  --dynamic DYNAMIC    [yes|no] Run a continuous detection of hands
+  --hands HANDS        [int] Number of hands to track
+  --flip FLIP          [yes|no] Flip the image horizontally
+  --draw DRAW          [yes|no] Draw the tracking points
+```
+
+### Examples
+
+#### Track from a camera
+
+Track from the first camera and store the results in a file named **camera.csv**.
+
+```bash
+trucotrack \
+  --camera 0 \
+  --output camera.csv
+```
+
+This command won't stop tracking until you press Esc. or the disk gets full.
+
+#### Track the first frame from a camera
+
+Track one frame from the first camera and store the results in a file named **still.csv**.
+
+```bash
+trucotrack \
+  --camera 0 \
+  --last 1 \
+  --output still.csv
+```
+
+#### Track a range of frames from a video
+
+Track the video **recording.mp4** from frame **50** to **55** and save the results in a
+file named **from-50-to-55.csv**.
+
+```bash
+trucotrack \
+  --video recording.mp4 \
+  --first 50 --last 55 \
+  --output from-50-to-55.csv
+```
+
+### Dependencies
+
+To update the `requirements.txt` file, run:
+
+```
+pipreqs --force
+```

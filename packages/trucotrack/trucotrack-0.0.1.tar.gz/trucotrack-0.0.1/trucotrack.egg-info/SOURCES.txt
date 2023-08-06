@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+trucotrack/__init__.py
+trucotrack/__main__.py
+trucotrack/cli.py
+trucotrack.egg-info/PKG-INFO
+trucotrack.egg-info/SOURCES.txt
+trucotrack.egg-info/dependency_links.txt
+trucotrack.egg-info/entry_points.txt
+trucotrack.egg-info/requires.txt
+trucotrack.egg-info/top_level.txt
+trucotrack/trackers/__init__.py
+trucotrack/trackers/mediapipe_hand.py
+trucotrack/writers/__init__.py
+trucotrack/writers/csv_writer.py
