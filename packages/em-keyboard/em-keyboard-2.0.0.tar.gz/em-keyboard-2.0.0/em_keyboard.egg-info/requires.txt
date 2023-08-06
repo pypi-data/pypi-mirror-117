@@ -1,0 +1,7 @@
+
+[:platform_system == "Darwin"]
+xerox
+
+[tests]
+pytest
+pytest-cov
