@@ -1,0 +1,11 @@
+vcsinfo/__init__.py,sha256=0fLuFkG4G7WFZaX2oNXtcdA_r9oMRcz6g1rzAMKfOdA,9741
+vcsinfo/git.py,sha256=pAxWdVC0tv9gjB6ZPfEn4e1EgD6yT3WRSQVd2NzBz-U,8736
+vcsinfo/hg.py,sha256=09SqdWlchtlgvdve5zqZHUu6Vxsln4Aw9yXJff11fmk,3051
+vcsinfo/perforce.py,sha256=Sv_4orFUBlE5iB82yG_gNnWhm-Dwlty5PjsJKa9mgy0,7199
+vcsinfo/py_info.py,sha256=vwx3YdNTKNp-4LWV_cLlUH9P106fBIrNe1KKNd8ZWQo,3853
+vcsinfo-1.0.0.data/scripts/vcsinfo,sha256=LEQupA6eov_u63-KiLEdpRPu9VY-4G1ira9VizXPwKw,2693
+vcsinfo-1.0.0.dist-info/LICENSE,sha256=Bfs3NKtP1pZwWgLH0Rlw0QqnT1L__0zn0vM183Xgays,1082
+vcsinfo-1.0.0.dist-info/METADATA,sha256=8PvHHtJnXe7WptsMFbNR4IRfJjhxX0If9N3TaltEvSw,2367
+vcsinfo-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vcsinfo-1.0.0.dist-info/top_level.txt,sha256=PZa4AX4zn_IEyWRmhrwJ5GfIf1LKctWxHLGjSaCQgyE,8
+vcsinfo-1.0.0.dist-info/RECORD,,
