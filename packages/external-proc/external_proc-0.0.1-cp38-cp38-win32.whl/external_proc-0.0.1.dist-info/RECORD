@@ -1,0 +1,10 @@
+external_proc/__init__.py,sha256=pXDIC0B_HVHEbN511GvjgELqJZCNj8rB3BPdaQiXHTc,266
+external_proc/_external_proc.cp38-win32.pyd,sha256=B5vUaQK_69gvSQCgW8BsWLE-dLy16vK26M9eeRmi0hM,230912
+external_proc/_external_proc.pyi,sha256=16qXslFdf0_aVf2BnC5b6N6U9gWUPvldkQvsEQl98oM,5134
+external_proc/external_proc.py,sha256=BCxl46OH6kTdGMsG5k300jeCOQq841e_zE83OcrUhB4,7892
+external_proc/get_proc_x32.exe,sha256=lNpO4Au3GkzC3DXEywF15AZRErsB1bqL0VrdlCmctA4,1408
+external_proc/get_proc_x64.exe,sha256=HgRuk5CqRDL1uFx7Q4bBsSyCAHzKaz_DbsoUmbzUiSI,1584
+external_proc-0.0.1.dist-info/METADATA,sha256=sYujZJqwzXs2sU0Xv4wGBadUA2a8FLPIkJsbGk_otG0,527
+external_proc-0.0.1.dist-info/WHEEL,sha256=sanSYrmzbAT-r2kLE2awKIGLX9GqwV3YKvxv8-Pld6Y,96
+external_proc-0.0.1.dist-info/top_level.txt,sha256=tmYuszwNOa2eqMy3JnLcTl2TjIQiDs0idNGFzJlCwyc,14
+external_proc-0.0.1.dist-info/RECORD,,
