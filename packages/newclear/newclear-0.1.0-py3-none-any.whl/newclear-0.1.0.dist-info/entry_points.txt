@@ -1,0 +1,3 @@
+[console_scripts]
+newclear=newclear.main:main
+

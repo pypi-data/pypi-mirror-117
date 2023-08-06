@@ -1,0 +1,9 @@
+newclear/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+newclear/cli_generator.py,sha256=tALzgDdNLosFmoQHtA7muvmy6SzbsxLrf3_zSo3FhwE,1495
+newclear/command_generator.py,sha256=SQPyeDXTYz7B5XOpb2ufO_rIvbCYwLKMWuSCTTY3T3M,2498
+newclear/group_generator.py,sha256=fauiHJwK0v5FrFfc2xvkX41S_txeB6hFR4VOC7-19lM,5750
+newclear/main.py,sha256=I9xIBeyqyyNX6j0hje7rlEUfFs4PYwsHrERA1Z61rzg,1098
+newclear-0.1.0.dist-info/entry_points.txt,sha256=C2Nck08bNFNRWvSiHG8v42_GUqgsG2uoMU6G1A8e1Wo,47
+newclear-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+newclear-0.1.0.dist-info/METADATA,sha256=E91Whfac3sorL6YNt1u0HDOtwmpwnbRKC_6VsLc76IM,522
+newclear-0.1.0.dist-info/RECORD,,
