@@ -1,0 +1,6 @@
+setup.py
+kisaan_shopping.egg-info/PKG-INFO
+kisaan_shopping.egg-info/SOURCES.txt
+kisaan_shopping.egg-info/dependency_links.txt
+kisaan_shopping.egg-info/requires.txt
+kisaan_shopping.egg-info/top_level.txt
