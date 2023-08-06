@@ -1,0 +1,10 @@
+numpy
+pandas
+h5py
+dotmap
+matplotlib
+seaborn
+torch
+tensorboard
+pickle5
+rich==9.13.0
