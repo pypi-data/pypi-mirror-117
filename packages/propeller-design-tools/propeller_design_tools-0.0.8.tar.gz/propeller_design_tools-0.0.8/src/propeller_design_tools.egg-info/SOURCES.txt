@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/propeller_design_tools/__init__.py
+src/propeller_design_tools/funcs.py
+src/propeller_design_tools.egg-info/PKG-INFO
+src/propeller_design_tools.egg-info/SOURCES.txt
+src/propeller_design_tools.egg-info/dependency_links.txt
+src/propeller_design_tools.egg-info/top_level.txt
