@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: rediswq
+Version: 0.1
+Summary: A Redis-based work queue
+Home-page: https://github.com/vringar/rediswq
+Author: vringar
+Author-email: h_dieter@mail.ru
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/vringar/rediswq/issues
+Project-URL: Source, https://github.com/vringar/rediswq/
+Description: # RedisWQ
+        
+        This package is based on the `rediswq.py` file that the
+        [Kubernetes Tutorial for Fine Parallel Processing Using a Work Queue](https://kubernetes.io/docs/tasks/job/fine-parallel-processing-work-queue/) uses.
+        
+        While the code itself seems to be quite solid, there are currently no tests
+        and no documentation available.
+        
+        I'm hoping to add both in the future.
+        
+Keywords: redis,distributed
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test

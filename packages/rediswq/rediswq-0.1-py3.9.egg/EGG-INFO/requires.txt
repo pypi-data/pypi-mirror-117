@@ -1,0 +1,11 @@
+redis
+
+[dev]
+mypy
+black
+flake8
+check-manifest
+
+[test]
+tox
+coverage
