@@ -1,0 +1,17 @@
+useis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+useis/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+useis/clients/old_api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+useis/clients/old_api_client/api_client.py,sha256=6YXDNzRyB_vDIM1VXfEBojx7KA8cmzlxq1E3_hbsApg,25234
+useis/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+useis/core/project_manager.py,sha256=zfGOItx_G1RuN9X5T-fGHZSHMe2stYOOhcoAdTswv0s,21419
+useis/processors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+useis/processors/nlloc.py,sha256=IBRFQhaLGWaPBMX2zI0QR8ZJpuL7u1q976bxRh5dkwk,15713
+useis/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+useis/settings/nlloc_settings_template.toml,sha256=OqKcV_98FLsQFFMuhIiZ5LDHTvQuuH5sgohPJCPA8jI,398
+useis/settings/services_settings_template.toml,sha256=-N9NM-x_gOKb5Sp_-8NGL1D_Qe82esZeCUSIeBL7IzI,46
+useis/settings/settings.py,sha256=-Hj2fDz6NAS2H2w6GGPENXvmfgdSCHXHXqKZm4FVgLg,880
+useis/settings/settings_template.toml,sha256=Ji79xFGXRLEX5rXskXegJR2GkkrryIAzWfRaDqExI6A,11604
+useis-0.6.1.dist-info/LICENSE,sha256=wFpJQ0hDb8-0nAD3q8iPyIY53RRdSnjbVRlLzrjU8NY,1076
+useis-0.6.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+useis-0.6.1.dist-info/METADATA,sha256=qdieJOSawObYp4JDcCNnUCCd1oTwrJ6GglgkW-0xwYI,703
+useis-0.6.1.dist-info/RECORD,,
