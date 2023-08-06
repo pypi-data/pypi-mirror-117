@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "poetry-vendoring"
+version = "0.1.0"
+description = ""
+authors = ["mohamedarzikiwm <mohamed.a@wemaintain.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+poetry = "^1.1.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+foo-command = "poetry_vendoring.plugin:VendorPlugin"
