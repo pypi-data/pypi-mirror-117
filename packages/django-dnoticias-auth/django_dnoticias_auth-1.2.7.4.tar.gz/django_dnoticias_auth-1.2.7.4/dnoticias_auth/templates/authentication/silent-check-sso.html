@@ -1,0 +1,14 @@
+<html>
+
+<body>
+    <script>
+        {% if not request.user.is_authenticated %}
+            window.location.href = '{% url "oidc_authentication_init" %}'
+        {% else %}
+            console.log('Logged wtf {{ request.user.email }}')
+            window.parent.postMessage('MI MENSAJE SI', window.location.href)
+        {% endif %}
+    </script>
+</body>
+
+</html>
