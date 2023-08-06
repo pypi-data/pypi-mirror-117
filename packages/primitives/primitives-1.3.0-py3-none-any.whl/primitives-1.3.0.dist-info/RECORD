@@ -1,0 +1,11 @@
+_primitives/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_primitives/argument.py,sha256=uhEvRAAJ890wkKtpu1L4w3QS2HrFX-zzZESzU-IHP0U,406
+_primitives/awaitable.py,sha256=Z02txbUiaSQkcikxBGrBS61RA7T4jIJf5AJ8YgzDoPk,253
+_primitives/callable.py,sha256=lLeGkSANiVconlmDqNy_0s2sHImolMyDltfLbscRmko,1739
+_primitives/exceptions.py,sha256=yCcbMe3kra4ivUZytaaVxgvzRZkzasKe6rRGkNpoofM,90
+primitives/__init__.py,sha256=UniVFVHn4cEafoJ-4QukSNtdZ-QRMFlFF_sGHiDstLA,223
+primitives/exceptions.py,sha256=mVKpKu2YZeJm0NRq_Kk8gCi9Dn3BqWC7ZgJJa7Bev2Q,120
+primitives-1.3.0.dist-info/LICENSE,sha256=LJ_rAR8NwahIXjsJ6i3aIhsncGlNu95dFkz63odksNo,1284
+primitives-1.3.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+primitives-1.3.0.dist-info/METADATA,sha256=54L7voEfEkDEI20HeLK1hDPYKH3nYRebiXV5eyqfMUQ,4698
+primitives-1.3.0.dist-info/RECORD,,
