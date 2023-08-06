@@ -1,0 +1,8 @@
+hid
+milc>=1.4.2
+pyusb
+setuptools>=45
+hjson
+jsonschema>=3
+pygments
+qmk-dotty-dict
