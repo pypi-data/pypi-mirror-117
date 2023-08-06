@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/conduce/__init__.py
+src/conduce/conduce.py
+src/conduce.egg-info/PKG-INFO
+src/conduce.egg-info/SOURCES.txt
+src/conduce.egg-info/dependency_links.txt
+src/conduce.egg-info/requires.txt
+src/conduce.egg-info/top_level.txt

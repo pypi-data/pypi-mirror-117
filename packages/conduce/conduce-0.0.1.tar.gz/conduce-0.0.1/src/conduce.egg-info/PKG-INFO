@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: conduce
+Version: 0.0.1
+Summary: A config util package to reduce key value pairs to flat strings
+Home-page: https://github.com/selphaware/conduce
+Author: Usman Ahmad
+Author-email: uahmad3013@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/selphaware/conduce/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Config (YAML) Reducer - a config util package
+
+<b>some.yaml</b>:<br>
+alpha:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;beta:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gamma: \"hello\"<br><br>
+<b>example.py</b>: <br>
+from conduce import conduce <br>
+cfg = conduce.read_config(\"some.yaml\", \"some/path/to/yaml\")<br>
+cfg(\'alpha.beta.gamma\') &nbsp;&nbsp; # gives us \"hello\"
+
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
