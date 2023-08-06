@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: toshiba-ac
+Version: 0.1.0
+Summary: Toshiba AC controller - allows to control Toshiba HVAC systems with WiFi
+Home-page: https://github.com/KaSroka/Toshiba-AC-control
+Author: Kamil Sroka
+Author-email: kamilsroka92@gmail.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: toshiba,ac,hvac
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
