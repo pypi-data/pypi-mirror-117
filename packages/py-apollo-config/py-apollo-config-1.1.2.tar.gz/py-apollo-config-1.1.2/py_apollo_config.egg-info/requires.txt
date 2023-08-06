@@ -1,0 +1,2 @@
+config-registry
+py-apollo-client
