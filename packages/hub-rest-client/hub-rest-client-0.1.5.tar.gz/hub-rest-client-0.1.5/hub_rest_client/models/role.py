@@ -1,0 +1,104 @@
+from typing import Any, Dict, List, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="Role")
+
+
+@attr.s(auto_attribs=True)
+class Role:
+    """ """
+
+    id: "Union[Unset, str]" = UNSET
+    aliases: "Union[Unset, List[alias_m.Alias]]" = UNSET
+    key: "Union[Unset, str]" = UNSET
+    name: "Union[Unset, str]" = UNSET
+    description: "Union[Unset, str]" = UNSET
+    permissions: "Union[Unset, List[permission_m.Permission]]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        id = self.id
+        aliases: Union[Unset, List[Dict[str, Any]]] = UNSET
+        if not isinstance(self.aliases, Unset):
+            aliases = []
+            for aliases_item_data in self.aliases:
+                aliases_item = aliases_item_data.to_dict()
+
+                aliases.append(aliases_item)
+
+        key = self.key
+        name = self.name
+        description = self.description
+        permissions: Union[Unset, List[Dict[str, Any]]] = UNSET
+        if not isinstance(self.permissions, Unset):
+            permissions = []
+            for permissions_item_data in self.permissions:
+                permissions_item = permissions_item_data.to_dict()
+
+                permissions.append(permissions_item)
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update({})
+        if id is not UNSET:
+            field_dict["id"] = id
+        if aliases is not UNSET:
+            field_dict["aliases"] = aliases
+        if key is not UNSET:
+            field_dict["key"] = key
+        if name is not UNSET:
+            field_dict["name"] = name
+        if description is not UNSET:
+            field_dict["description"] = description
+        if permissions is not UNSET:
+            field_dict["permissions"] = permissions
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import alias as alias_m
+            from ..models import permission as permission_m
+        except ImportError:
+            import sys
+
+            alias_m = sys.modules[__package__ + "alias"]
+            permission_m = sys.modules[__package__ + "permission"]
+
+        d = src_dict.copy()
+
+        id = d.pop("id", UNSET)
+
+        aliases = []
+        _aliases = d.pop("aliases", UNSET)
+        for aliases_item_data in _aliases or []:
+            aliases_item = alias_m.Alias.from_dict(aliases_item_data)
+
+            aliases.append(aliases_item)
+
+        key = d.pop("key", UNSET)
+
+        name = d.pop("name", UNSET)
+
+        description = d.pop("description", UNSET)
+
+        permissions = []
+        _permissions = d.pop("permissions", UNSET)
+        for permissions_item_data in _permissions or []:
+            permissions_item = permission_m.Permission.from_dict(permissions_item_data)
+
+            permissions.append(permissions_item)
+
+        role = cls(
+            id=id,
+            aliases=aliases,
+            key=key,
+            name=name,
+            description=description,
+            permissions=permissions,
+        )
+
+        return role
