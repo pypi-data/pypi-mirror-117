@@ -1,0 +1,6 @@
+lucyparser>=0.1.7
+Django>=2.0
+djangorestframework>=3.10.0
+
+[full]
+elasticsearch-dsl~=6.4.0
