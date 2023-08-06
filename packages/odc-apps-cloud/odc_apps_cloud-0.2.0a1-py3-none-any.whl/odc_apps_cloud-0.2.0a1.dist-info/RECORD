@@ -1,0 +1,14 @@
+odc/apps/cloud/__init__.py,sha256=ZygAIkX6Nbjag1czWdQa-yP-GM1mBE_9ss21Xh__JFc,34
+odc/apps/cloud/_version.py,sha256=5zSI7joVgP1lYYkcIpaAInIFJcfsLbHeVsfkC8Quunc,24
+odc/apps/cloud/azure_to_tar.py,sha256=rCpdV3EIOnWWrmRNAE_gmL7aTT57NTfMDCsJ__S759Q,1574
+odc/apps/cloud/gs_to_tar.py,sha256=_pAPdJvq3EgZeWfnwE70sXeH48LkW3vT30TSRfpuVss,2216
+odc/apps/cloud/redrive_to_queue.py,sha256=zzISDK8dRnTXXucuf2vhXhijJKhPREOnnqwKxDZ-Vpw,1162
+odc/apps/cloud/s3_find.py,sha256=iYGMUO0BA2Xk7EXyFcCVjfZME-bVWg_66IXkwy6pYDs,1768
+odc/apps/cloud/s3_inventory.py,sha256=HlUB_du4THs1yHoQmchi9udjhejknochS6i8NQwvZZk,2878
+odc/apps/cloud/s3_to_tar.py,sha256=fYNRJ_YOCE2IbT0pe2OVAkeyCVDGvlwOm0nZq6VUdJc,3040
+odc/apps/cloud/thredds_to_tar.py,sha256=dbnBLj3mWk6x-k3-7VwkETGnlnlFbfTsmnEoFEsaCbY,1884
+odc_apps_cloud-0.2.0a1.dist-info/METADATA,sha256=Yr9Q3UWXEx9HCCEwp3fT5my3uCmu9fZlH3RzYylbpQ8,845
+odc_apps_cloud-0.2.0a1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+odc_apps_cloud-0.2.0a1.dist-info/entry_points.txt,sha256=6_O77Z1ksQN50SgMi7mldgBggaSfpnD5fcwQ5-Pgzp4,364
+odc_apps_cloud-0.2.0a1.dist-info/top_level.txt,sha256=agQvn12dGbaJZ4cQCqKfiCHBYi8LD3P4v9B2ynmsugQ,4
+odc_apps_cloud-0.2.0a1.dist-info/RECORD,,
