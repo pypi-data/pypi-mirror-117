@@ -1,0 +1,11 @@
+datareservoirio/__init__.py,sha256=FOF_NCiLDWxveMP7OtmkIXwyMTazCH-Q4zT9vDDMsVs,651
+datareservoirio/_constants.py,sha256=Fjp9_gg8CKyZddvnrLItNBtE28InbiuLE0qZyXGl2Hw,3388
+datareservoirio/appdirs.py,sha256=yk5fUxikWtbdj2_MsrtXmrQ1VkyUCQdVNFFVzvdvWtw,8738
+datareservoirio/authenticate.py,sha256=6KfvC6FqQ3CX7W73jOImxaflVGPevdr8iPyyBCTak40,8038
+datareservoirio/client.py,sha256=4yeXJfKOxiLDJfNwS-_wtJj-izkhRIpQlzSeX7nCTDA,17757
+datareservoirio/environments.py,sha256=YYBt__PiOWYGBlTJltJ1rssbPv3KljTIY4TqHV3ngw8,1257
+datareservoirio/globalsettings.py,sha256=fob-6-C5tmWt6AHWQ6k2Ur4G9ogPzHl0dx0nSGSH2eg,70
+datareservoirio-0.10.0.dist-info/METADATA,sha256=MtDLV6IJzOfMAex7-_KvvlA_S6SI4BrGcz4Xdy14YP8,1911
+datareservoirio-0.10.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+datareservoirio-0.10.0.dist-info/top_level.txt,sha256=hwYQI15akw3wy8oWft_vO_Le9X1iYuTPI2qETa0-ELg,16
+datareservoirio-0.10.0.dist-info/RECORD,,
