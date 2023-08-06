@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: apartments
+Version: 0.0.1
+Summary: apartments API library
+Home-page: https://github.com/irahorecka/apartments
+Author: Ira Horecka
+Author-email: ira89@icloud.com
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Dist: httpx>=0.18.0
+Requires-Dist: beautifulsoup4>=4.9.0
+Requires-Dist: tenacity>=7.0.0
+Requires-Dist: cchardet>=2.1.0
+Requires-Dist: lxml>=4.6.0
+Requires-Dist: Faker>=8.11.0
+Requires-Dist: datefinder>=0.7.0
+
+apartments
+==========
+A fast and expressive apartments.com API wrapper
+
