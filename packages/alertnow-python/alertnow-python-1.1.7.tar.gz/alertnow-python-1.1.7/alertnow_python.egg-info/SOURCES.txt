@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+alertnow_python.egg-info/PKG-INFO
+alertnow_python.egg-info/SOURCES.txt
+alertnow_python.egg-info/dependency_links.txt
+alertnow_python.egg-info/requires.txt
+alertnow_python.egg-info/top_level.txt
+logger/src/common/configuration/httpClientConfig.py
+logger/src/common/dto/logCreateDto.py
+logger/src/common/dto/logRequestDto.py
+logger/src/common/enums/logLevel.py
+logger/src/common/enums/platform.py
