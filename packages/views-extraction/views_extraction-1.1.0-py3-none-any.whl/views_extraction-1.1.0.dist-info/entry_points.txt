@@ -1,0 +1,3 @@
+[console_scripts]
+views_extraction = views_extraction.__main__:main
+
