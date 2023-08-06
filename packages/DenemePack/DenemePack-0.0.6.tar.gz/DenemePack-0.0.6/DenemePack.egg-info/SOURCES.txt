@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+DenemePack.egg-info/PKG-INFO
+DenemePack.egg-info/SOURCES.txt
+DenemePack.egg-info/dependency_links.txt
+DenemePack.egg-info/not-zip-safe
+DenemePack.egg-info/top_level.txt
+Phi/__init__.py
+Phi/finished_methods.py
