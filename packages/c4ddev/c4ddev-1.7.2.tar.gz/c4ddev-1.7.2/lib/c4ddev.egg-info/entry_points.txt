@@ -1,0 +1,3 @@
+[console_scripts]
+c4ddev = c4ddev.__main__:main
+
