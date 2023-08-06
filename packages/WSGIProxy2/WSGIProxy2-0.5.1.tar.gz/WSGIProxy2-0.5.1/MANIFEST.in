@@ -1,0 +1,14 @@
+graft docs
+prune docs/_build
+prune .github/
+prune .tox/
+graft wsgiproxy
+include *.rst
+include *_fixt.py
+global-exclude *.pyc
+global-exclude __pycache__
+include *.py
+include *.txt
+include COPYING
+include buildout.cfg
+include *.ini
