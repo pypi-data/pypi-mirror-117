@@ -1,0 +1,37 @@
+.centre  { text-align: center;}
+.left  { text-align: left;}
+.right  { text-align: right;}
+
+td.right {text-align: right; font-weight:bold;}
+
+td.top {vertical-align: top;
+	margin-top: 10px}
+
+.git_commit {color:#555;
+	     font-size:80%}
+
+table.wide {width: 100%;}
+
+.banner {border: 1px solid #7f7fff;
+	 background: #efefff;
+	 padding: 0.5em;
+	 float: right;
+	 width: 50%}
+
+ul {list-style-type: none}
+
+li.hori {display:inline;
+	 padding-left:10px;}
+
+img.bare {display: block;}
+
+.iconbox {position: relative;
+	  width:48px;
+	  height:48px;
+	  display:inline-block;
+	 vertical-align:middle;}
+
+.icontext {position: absolute;
+	   width:100%;
+	   font-size:16px;
+	   text-align:center;}

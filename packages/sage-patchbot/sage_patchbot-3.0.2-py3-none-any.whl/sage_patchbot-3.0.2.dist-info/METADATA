@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: sage-patchbot
+Version: 3.0.2
+Summary: bot for automatic test of sagemath trac tickets
+Home-page: https://github.com/sagemath/sage-patchbot
+Author: SageMath Developers
+License: GPL
+Keywords: sagemath
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyflakes
+Requires-Dist: pycodestyle
+
+# PATCHBOT
+
+The patchbot only needs a Sage source install (clone of git repository)
+and is started with
+
+    `python3 -m sage_patchbot.patchbot --sage-root=XXX [other options]`
+
+Type `--help` for a list of options, though most configuration is done via an optional JSON config file.
+
+For more documentation on running a patchbot, see [this page][1].
+
+[1]: https://wiki.sagemath.org/patchbot
+
+# SERVER
+
+The server needs a Python with Flask and mongodb installed.
+
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/sagemath/sage-patchbot.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sagemath/sage-patchbot/context:python)
+
+

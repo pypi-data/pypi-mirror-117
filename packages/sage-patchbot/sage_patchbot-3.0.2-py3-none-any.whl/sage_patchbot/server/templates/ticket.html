@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>#{{ticket}} Patchbot Results</title>
+<link rel="shortcut icon" href="/blob/{{status}}" />
+{% endblock %}
+
+{% block body %}
+<h2>
+<div class="iconbox">
+<img class="bare" alt="{{status}}" src="/ticket/{{ticket}}/status.svg" height="48px">
+</div>
+{{ticket}}
+<a href="http://trac.sagemath.org/sage_trac/ticket/{{ticket}}">
+{{info.title}}
+</a>
+</h2>
+
+<div>
+<table>
+{% for key, value in sort_fields(info.items()): %}
+<tr>
+<td class='right'>{{key}}:</td>
+<td>{{value|safe}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+
+<hr>
+
+<table class="wide">
+{% for report in reports: %}
+<tr>
+<td colspan="2">
+<ul>
+<li class="hori"><img alt="{{report.status}}" width="48px" src="/svg/{{report.status}}"></li>
+<li class="hori">{{report.status}}</li>
+<li class="hori">{{report.base|safe}}</li>
+<li class="hori"><a href='/ticket/?machine={{'&machine='.join(report.machine)}}&amp;status=open'>{{'/'.join(report.machine)}}</a></li>
+<li class="hori">{{report.time}}</li>
+<li class="hori"><a href='{{report.log}}'>log</a></li>
+<li class="hori"><a href='{{report.log}}?short'>shortlog</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="top">
+{% if 'git_base' in report %}
+Patchbot version: {{report.patchbot_version}}<br/>
+Branch: {{report.git_branch}}<br/>
+{% if 'python_version' in report %}
+Using <span style="background-color: #b3ffe7;">Python {{report.python_version}}</span><br/>
+{% endif %}
+Commit: <span class='git_commit'>{{report.git_commit}}</span> ({{report.git_commit_human}})<br/>
+Base: <span class='git_commit'>{{report.git_base}}</span> ({{report.git_base_human}})<br/>
+Merge: <span class='git_commit'>{{report.git_merge}}</span> ({{report.git_merge_human}})
+{% else %}
+{{report.patch_list|safe}}
+{% endif %}
+</td>
+<td class="top">
+<ul>
+{% for plugin_tuple in report.get('plugins', []) %}
+{% set plugin, status, data = normalize_plugin(plugin_tuple) %}
+<li>
+<img height="16" alt="{{['PluginFailed', 'PluginPassed'][status]}}" src="/svg/{{['SmallPluginFailed', 'SmallPluginPassed'][status]}}">
+<a href='{{report.log}}?plugin={{plugin}}'>{{plugin}}</a>
+{% if 'base_log' in report %}
+(<a href='{{report.log}}?plugin={{plugin}}&amp;diff={{report.base_log}}&amp;ticket={{ticket}}&amp;base={{report.raw_base}}'>diff</a>)
+{% endif %}
+{% if data %}
+(<a href='plugin/{{plugin}}/{{report.time}}/'>data</a>)
+{% endif %}
+{% endfor %}
+</ul>
+</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}
