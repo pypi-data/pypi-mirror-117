@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+itoptop/__init__.py
+itoptop/datamodel.py
+itoptop/exceptions.py
+itoptop/itop.py
+itoptop/parallel.py
+itoptop/schema.py
+itoptop.egg-info/PKG-INFO
+itoptop.egg-info/SOURCES.txt
+itoptop.egg-info/dependency_links.txt
+itoptop.egg-info/requires.txt
+itoptop.egg-info/top_level.txt
