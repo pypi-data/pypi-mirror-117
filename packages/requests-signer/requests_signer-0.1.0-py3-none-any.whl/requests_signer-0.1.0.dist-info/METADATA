@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: requests-signer
+Version: 0.1.0
+Summary: Create and send v4 signed requests
+Home-page: UNKNOWN
+Author: Brandon Norris
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: boto3
+
+UNKNOWN
+
+
