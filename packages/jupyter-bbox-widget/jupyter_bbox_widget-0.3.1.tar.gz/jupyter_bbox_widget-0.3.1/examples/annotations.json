@@ -1,0 +1,78 @@
+{
+    "fruit.jpg": [
+        {
+            "x": 198,
+            "y": 159,
+            "width": 97,
+            "height": 115,
+            "label": "apple"
+        },
+        {
+            "x": 414,
+            "y": 212,
+            "width": 107,
+            "height": 161,
+            "label": "apple"
+        }
+    ],
+    "fruit2.jpg": [
+        {
+            "x": 153,
+            "y": 128,
+            "width": 203,
+            "height": 204,
+            "label": "apple"
+        },
+        {
+            "x": 511,
+            "y": 240,
+            "width": 116,
+            "height": 173,
+            "label": "apple"
+        },
+        {
+            "x": 702,
+            "y": 225,
+            "width": 92,
+            "height": 162,
+            "label": "apple"
+        }
+    ],
+    "fruit3.jpg": [
+        {
+            "x": 161,
+            "y": 186,
+            "width": 168,
+            "height": 128,
+            "label": "apple"
+        },
+        {
+            "x": 455,
+            "y": 262,
+            "width": 161,
+            "height": 145,
+            "label": "apple"
+        },
+        {
+            "x": 653,
+            "y": 163,
+            "width": 145,
+            "height": 192,
+            "label": "apple"
+        },
+        {
+            "x": 102,
+            "y": 293,
+            "width": 200,
+            "height": 207,
+            "label": "grapefruit"
+        },
+        {
+            "x": 292,
+            "y": 334,
+            "width": 148,
+            "height": 126,
+            "label": "lemon"
+        }
+    ]
+}
