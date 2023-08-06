@@ -1,0 +1,7 @@
+PyYAML>=5.4
+appdirs>=1.4
+pysimplegui>=4.33
+
+[rendering]
+Markdown>=3.3
+rpy2>=3.4.3
