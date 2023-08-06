@@ -1,0 +1,13 @@
+orm_converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orm_converter/bases.py,sha256=A9uQ-aiz94W4xL2riG7gwBvqTCeXBsLSjf0Qm-8YHu4,2163
+orm_converter/shared/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orm_converter/shared/exceptions.py,sha256=xYUiw-z5i7jeNy5gjumpLxBOLMgS5bdSz4Kz9CfPaVY,49
+orm_converter/shared/utils.py,sha256=YpQpzn10q6veNHNW4dUlSJj5h2h2EvXargtRBbqRDPA,217
+orm_converter/tortoise_to_django/__init__.py,sha256=yOMv0AEJ0rj7Y2hZEsvKHKsAIUsxUPdqneFyQNuBOuU,258
+orm_converter/tortoise_to_django/field_converter.py,sha256=K_j4XNwEyvmLaHIEmed_jbgJsvdTFNYlTXbNGyReoU8,5472
+orm_converter/tortoise_to_django/model_converter.py,sha256=7Kcvh9Xq9KZN9pJMB6WMoO8uLz5ZoQfVN2Pldl9JiUw,5352
+orm_converter-0.2.1b2.dist-info/LICENSE,sha256=Gqt4OBPOdDW2mgy3YmqT7G5MEE9CjCBNKFJ6AGW_b20,1083
+orm_converter-0.2.1b2.dist-info/METADATA,sha256=CybPvKt3it7AQjnFlu5aMPitIpRmxOBCKZ1rmPZUL6g,3072
+orm_converter-0.2.1b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+orm_converter-0.2.1b2.dist-info/top_level.txt,sha256=e1LO-TA3R8VvFuQId4UViAFppIxB0KEmxlz5YT5A0mU,14
+orm_converter-0.2.1b2.dist-info/RECORD,,
