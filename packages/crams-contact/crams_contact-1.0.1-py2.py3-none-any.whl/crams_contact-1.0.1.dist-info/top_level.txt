@@ -1,0 +1,2 @@
+crams_contact
+crams_manager
