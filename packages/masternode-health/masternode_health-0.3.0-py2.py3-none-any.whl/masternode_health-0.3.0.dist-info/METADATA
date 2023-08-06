@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: masternode-health
+Version: 0.3.0
+Summary: This script is designed for collecting server & DeFiChain node information of your system and send them to the DeFiChain Masternode Health API
+Home-page: http://pypi.python.org/pypi/masternode_health
+Author: Christian Sandrini
+Author-email: mail@chrissandrini.ch
+License: LICENSE.md
+Platform: UNKNOWN
+Requires-Python: >2.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: psutil
+
+[![Tests](https://github.com/defichain-api/masternode-health-server/actions/workflows/package.yml/badge.svg?branch=master)](https://github.com/defichain-api/masternode-health-server/actions/workflows/package.yml) [![codecov](https://codecov.io/gh/defichain-api/masternode-health-server/branch/master/graph/badge.svg?token=WWRB5IZN7A)](https://codecov.io/gh/defichain-api/masternode-health-server) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+
+
+
+
+# Masternode Health Server
+This script is designed for collecting server & DeFiChain node information of your system and send them to the [DeFiChain Masternode Health API](https://github.com/defichain-api/masternode-health).
+
+For a closed look in it's functionality there's a [detailled documentation](https://docs.defichain-masternode-health.com/).
+
+# Installation
+
+- Install pip3 (pip from python v3. Some operating systems just name it ```pip```)
+- Run ```pip3 install masterhode-health```
+
+# Upgrade to the current release
+
+```
+pip3 install --upgrade masternode-health
+```
+
+# Create API key
+This scripts needs a DeFiChain Masternode Health API key. Take a look at the [documentation](https://docs.defichain-masternode-health.com/#get-an-api-key).
+
+# Usage
+
+```
+masternode-health --help
+usage: masternode-health [-h] [--max-block-seconds MAX_BLOCK_SECONDS] [--rpcuser RPCUSER] [--rpcpassword RPCPASSWORD] [--rpchost RPCHOST] [--verbose] [--defi-path DEFI_PATH]
+                         [--api-key API_KEY]
+
+DefiChain Masternode Monitor
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --max-block-seconds MAX_BLOCK_SECONDS
+                        Alert if node did not try to calculate hash within max-block-seconds (default: 30 seconds)
+  --rpcuser RPCUSER     RPC username
+  --rpcpassword RPCPASSWORD
+                        RPC password
+  --rpchost RPCHOST     RPC host (default: http://localhost:8554)
+  --verbose             Prints stats to stdout
+  --defi-path DEFI_PATH
+                        Path to your .defi folder. Example: /home/defi/.defi
+  --api-key API_KEY     API Key
+```
+
+You can manually run it with
+
+```
+masternode-health --rpcuser user --rpcpassword password --defi-path /home/user/.defi --verbose --api-key=xxx
+
+----- [ server stats ] -----
+Load Average:     0.13   
+Memory Total:      125 GB
+Memory Used:         3 GB
+Disk Total:        933 GB
+Disk Used:          53 GB
+
+----- [ node info ] -----
+Uptime:             4 days, 1:54:14                                             
+Local Block Height: 1135336                                                     
+Local Block Hash:   844b3007709ced3828d5ec49174523b118b7ce7ebd75d2aafb0a27d8fc50d17e
+Operator ..xzy:     Online                                                      
+Operator ..oyx:     Online
+```
+
+Add into crontab to check every 5 minutes
+
+```
+*/5 * * * * masternode-health --rpcuser user --rpcpassword password --defi-path /home/user/.defi --api-key=xxx
+```
+
+# Bugs or suggestions?
+Open issue or submit a pull request to
+[https://github.com/defichain-api/masternode-health-server](https://github.com/defichain-api/masternode-health-server)
+
+# License
+MIT
+
+
