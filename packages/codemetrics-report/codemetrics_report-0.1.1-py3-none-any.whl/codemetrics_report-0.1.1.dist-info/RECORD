@@ -1,0 +1,12 @@
+codemetrics_report/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+codemetrics_report/cli.py,sha256=-7ewN5kRynaVUIYL4NAydkxMiSw2idLjSXnvUvA06LY,1529
+codemetrics_report/codemetrics_template.html,sha256=BPDLOpKV7Z33iVJfZkMyp2K6nkjHtfYpP1ajj-pL4dY,3544
+codemetrics_report/filter.py,sha256=cjUm-RX10CJN7MxsjXeWdEX00u8aXD6ZdJTX-hpimPM,1612
+codemetrics_report/report.py,sha256=ZZpV6KwmTX9hzbkzt6E76-Z1sw7Yk3yOTuk1zaJ98Wo,2936
+codemetrics_report/vis.py,sha256=0JBxuWBW_R6cYQAer2wUR7nrW_DVADaIjbBrydvnh0I,2005
+codemetrics_report-0.1.1.dist-info/LICENSE.md,sha256=mh-aB3lwwSy_L6ZgvDOm9KmEmr4CXQbrJ7qWmkpbdGw,1056
+codemetrics_report-0.1.1.dist-info/METADATA,sha256=XDKDsLi4CKqsAwy1_wMMmVapJ1z2VQq1CC60BdD_X1s,1916
+codemetrics_report-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+codemetrics_report-0.1.1.dist-info/entry_points.txt,sha256=EgJRmAX4xl5JTebWPD-byT5-EuSuJU0xRsPx2FsF-m8,100
+codemetrics_report-0.1.1.dist-info/top_level.txt,sha256=rdhUj-i_aOCrme95fAscERQhml6C6Q8FKAV82UJ7xgA,19
+codemetrics_report-0.1.1.dist-info/RECORD,,
