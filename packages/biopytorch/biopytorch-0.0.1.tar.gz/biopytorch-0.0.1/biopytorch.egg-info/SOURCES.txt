@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+biopytorch/__init__.py
+biopytorch/bioconv2d.py
+biopytorch/biolinear.py
+biopytorch/biotrainer.py
+biopytorch.egg-info/PKG-INFO
+biopytorch.egg-info/SOURCES.txt
+biopytorch.egg-info/dependency_links.txt
+biopytorch.egg-info/requires.txt
+biopytorch.egg-info/top_level.txt
