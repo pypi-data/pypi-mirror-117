@@ -1,0 +1,8 @@
+[console_scripts]
+dtb = converter.DatapackToBoth:main
+dtc = converter.DatapackToCCPacks:main
+dtm = converter.DatapackToMod:main
+dtmc_install = converter.ContextMenu:install
+dtmc_uninstall = converter.ContextMenu:uninstall
+dto = converter.DatapackToOrigins:main
+
