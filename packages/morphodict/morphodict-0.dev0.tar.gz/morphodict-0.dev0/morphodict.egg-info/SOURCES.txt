@@ -1,0 +1,6 @@
+README.md
+setup.py
+morphodict.egg-info/PKG-INFO
+morphodict.egg-info/SOURCES.txt
+morphodict.egg-info/dependency_links.txt
+morphodict.egg-info/top_level.txt

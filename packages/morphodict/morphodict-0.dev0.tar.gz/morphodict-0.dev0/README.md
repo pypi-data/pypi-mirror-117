@@ -1,0 +1,21 @@
+# Morphodict
+
+[Morphodict] is an intelligent dictionary application. It currently powers
+the [itwêwina Plains Cree Dictionary][itwêwina], with support for
+additional languages in development.
+
+See the documentation at [morphodict.readthedocs.io][documentation] for
+more information.
+
+[Morphodict]: https://github.com/UAlbertaALTLab/cree-intelligent-dictionary
+[itwêwina]: https://itwewina.altlab.app
+[documentation]: https://morphodict.readthedocs.io/
+
+While the source code is freely available under the Apache 2.0 license,
+this project is not yet pip-installable; see the [documentation] for how
+to run it from a checkout of the source code.
+
+In accordance with [recommendations], this package reserves the
+`morphodict` name for a future release.
+
+[recommendations]: https://discuss.python.org/t/pypi-as-a-project-repository-vs-name-registry-a-k-a-pypi-namesquatting-e-g-for-fedora-packages/4045/14
