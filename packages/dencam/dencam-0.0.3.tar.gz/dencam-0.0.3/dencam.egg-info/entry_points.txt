@@ -1,0 +1,3 @@
+[console_scripts]
+dencam = dencam.__main__:main
+

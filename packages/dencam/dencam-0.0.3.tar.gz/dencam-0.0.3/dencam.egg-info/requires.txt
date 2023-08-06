@@ -1,0 +1,4 @@
+pyyaml
+rpi.gpio
+picamera
+netifaces
