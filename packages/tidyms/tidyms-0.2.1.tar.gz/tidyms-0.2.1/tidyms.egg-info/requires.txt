@@ -1,0 +1,15 @@
+pandas
+pyopenms
+numpy
+pyyaml
+statsmodels
+scipy
+scikit-learn
+bokeh
+xlrd
+cerberus
+seaborn
+ipython
+pytest
+openpyxl
+requests
