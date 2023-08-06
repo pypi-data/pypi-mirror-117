@@ -1,0 +1,9 @@
+{# Model: InterfaceIPv4Container #}
+{% if params | default(none) is not none %}
+{%   if params.addresses | default(none) is not none %}
+{%     for entry in params.addresses %}
+ ip address {{ entry.address | ipaddr('address') }} {{ entry.address | ipaddr('netmask') }}{% if entry.secondary | default(none) is sameas true %} secondary{% endif %}
+
+{%     endfor %}
+{%   endif %}
+{% endif %}

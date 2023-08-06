@@ -1,0 +1,14 @@
+{% if params | default(none) is not none %}
+{# Loop over groups #}
+{%   for group in params %}
+{%     for server in group.servers %}
+{%       with params = server %}
+{%         include 'ios_aaa_server_tacacs.j2' %}
+{%       endwith %}
+{%     endfor %}
+{%     with params = group %}
+{%       include 'ios_aaa_group_tacacs.j2' %}
+{%     endwith %}
+{# Loop over servers in group #}
+{%   endfor %}
+{% endif %}

@@ -1,0 +1,26 @@
+{% if params | default(none) is not none %}
+{%   if params.process_id | default(none) is not none %}
+ ip router isis {{ params.process_id }}
+{%   endif %}
+{%   if params.circuit_type | default(none) is not none %}
+ isis circuit-type {{ params.circuit_type }}
+{%   endif %}
+{%   if params.network_type | default(none) is not none %}
+ isis network {{ params.network_type }}
+{%   endif %}
+{# Metric Section #}
+{%   if params.metric | default(none) is not none %}
+{%     for item in params.metric %}
+ isis metric {{ item.metric }} {{ item.level }}
+{%     endfor %}
+{%   endif %}
+{# Authentication Section #}
+{%   if params.authentication | default(none) is not none %}
+{%     if params.authentication.mode | default(none) is not none %}
+ isis authentication mode {{ params.authentication.mode }}
+{%     endif %}
+{%     if params.authentication.keychain | default(none) is not none %}
+ isis authentication key-chain {{ params.authentication.keychain }}
+{%     endif %}
+{%   endif %}
+{% endif %}

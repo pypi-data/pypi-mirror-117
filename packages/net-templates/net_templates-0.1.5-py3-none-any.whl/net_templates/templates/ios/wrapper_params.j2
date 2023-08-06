@@ -1,0 +1,7 @@
+{% if params | default(none) is not none and template_name | default(none) is not none %}
+{%   for item in params %}
+{%     with params = item %}
+{%       include template_name %}
+{%     endwith %}
+{%   endfor %}
+{% endif %}

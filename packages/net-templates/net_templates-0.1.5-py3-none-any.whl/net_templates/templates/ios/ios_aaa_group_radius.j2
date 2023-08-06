@@ -1,0 +1,12 @@
+{% if params | default(none) is not none %}
+aaa group server radius {{ params.name }}
+{%   for server in params.servers %}
+ server name {{ server.name }}
+{%   endfor %}
+{%   if params.vrf | default(none) is not none %}
+ ip vrf forwarding {{ params.vrf }}
+{%   endif %}
+{%   if params.src_interface | default(none) is not none %}
+ ip radius source-interface {{ params.src_interface }}
+{%   endif %}
+{% endif %}

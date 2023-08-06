@@ -1,0 +1,18 @@
+{% if params | default(none) is not none %}
+{%   if params.type == 'single-hop' %}
+{%     set template_type = "single-hop" %}
+{%   elif params.type == 'multi-hop' %}
+{%     set template_type = "single-hop" %}
+{%   endif %}
+bfd-template {{ template_type }} {{ params.name }}
+{%   if (params.min_rx | default(none) is not none) and (params.min_tx | default(none) is not none) %}
+ interval {% if params.microseconds | default(none) is not none %}microseconds {% endif %}min-tx {{ params.min_tx }} min-rx {{ params.min_rx }} multiplier {{ params.multiplier }}
+{%   elif params.both | default(none) is not none %}
+ interval {% if params.microseconds | default(none) is sameas true %}microseconds {% endif %}both {{ params.both }} multiplier {{ params.multiplier }}
+{%   endif %}
+{%   if params.authentication | default(none) is not none %}
+{%     if params.authentication.method is defined and params.authentication.method in ['md5','meticulous-md5','meticulous-sha-1','sha-1'] %}
+ authentication {{ params.authentication.method }} keychain {{ params.authentication.keychain }}
+{%     endif %}
+{%   endif %}
+{% endif %}

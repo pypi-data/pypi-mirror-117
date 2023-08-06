@@ -1,0 +1,6 @@
+{% if params | default(none) is not none and session_type | default(none) in ['server', 'peer'] %}
+{%   if session_type | default(none) is not none %}
+ntp {{ session_type }}{% if params.vrf | default(none) is not none %} vrf {{ params.vrf }}{% endif %} {{ params.server }}{% if params.key_id | default(none) is not none %} key {{ params.key_id }}{% endif %}{% if params.src_interface | default(none) is not none and params.vrf | default(none) is none %} source {{ params.src_interface }}{% endif %}{% if params.prefer | default(none) is sameas true %} prefer{% endif %}
+
+{%   endif %}
+{% endif %}

@@ -1,0 +1,24 @@
+{% if params %}
+{% if params.send_community %}
+{{ ' ' * indent }}neighbor {{ id }} send-community {{ params.send_community }}
+{% endif %}{# params.send_comunity is defined #}
+{% if params.route_reflector_client | default(none) is not none and params.route_reflector_client is sameas true %}
+{{ ' ' * indent }}neighbor {{ id }} route-reflector-client
+{% endif %}{# params.route_reflector_client is defined #}
+{% if params.next_hop_self and params.next_hop_self is sameas true %}
+{{ ' ' * indent }}neighbor {{ id }} next-hop-self
+{% endif %}{# params.route_reflector_client is defined #}
+{% if params.fall_over | default(none) is not none and params.fall_over is mapping %}
+{%   if params.fall_over.enabled | default(false) is sameas true %}
+{%     if params.fall_over.type is defined %}
+{%       if params.fall_over.type == "route-map" %}
+{{ ' ' * indent }}neighbor {{ id }} fall-over route-map {{ params.fall_over.route_map }}
+{%       elif params.fall_over.type == "bfd" %}
+{{ ' ' * indent }}neighbor {{ id }} fall-over bfd
+{%       endif %}
+{%     else %}
+{{ ' ' * indent }}neighbor {{ id }} fall-over
+{%     endif %}
+{%   endif %}
+{% endif %}{# params.route_reflector_client is defined #}
+{% endif %}

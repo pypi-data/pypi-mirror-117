@@ -1,0 +1,12 @@
+{# Model: ServiceInstanceRewrite #}
+{% macro rewrite(params)  %}
+{{ params.action }} {{ params.tag }}{% if params.symetric | default(none) is sameas True %} symetric{% endif %}
+{% endmacro %}
+{% if params | default(none) is not none %}
+{%   if params.ingress | default(none) is not none %}
+  rewrite ingress tag {{ rewrite(params.ingress) }}
+{%   endif %}
+{%   if params.egress | default(none) is not none %}
+  rewrite egress tag {{ rewrite(params.egress) }}
+{%   endif %}
+{% endif %}

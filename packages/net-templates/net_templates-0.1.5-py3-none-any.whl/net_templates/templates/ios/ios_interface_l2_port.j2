@@ -1,0 +1,40 @@
+{% if params is defined %}
+{%   if params.mode %}
+{%     if params.mode == "access" %}
+ switchport mode access
+{%       if params.untagged_vlan %}
+ switchport access vlan {{ params.untagged_vlan }}
+{%       endif %}
+{%     elif params.mode == "trunk" %}
+{%       if params.encapsulation  %}
+{%         if params.encapsulation == "dot1q" %}
+ switchport trunk encapsulation dot1q
+{%         elif params.encapsulation == "isl" %}
+ switchport trunk encapsulation isl
+{%         elif params.encapsulation == "negotiate" %}
+ switchport trunk encapsulation negotiate
+{%         endif %}
+{%       endif %}
+ switchport mode trunk
+{%       if params.untagged_vlan %}
+ switchport trunk native vlan {{ params.untagged_vlan }}
+{%       endif %}
+{%       if params.allowed_vlans %}
+ switchport trunk allowed vlan {{ params.allowed_vlans | to_vlan_range }}
+{%       else %}
+{%         if INCLUDE_DEFAULTS is sameas true %}
+ switchport trunk allowed vlan all
+{%       endif %}
+{%       endif %}
+{%     elif params.mode == "negotiate" %}
+ switchport mode negotiate
+{%     endif %}
+{%   endif %}
+{%   if params.negotiation is sameas true %}
+{%     if INCLUDE_DEFAULTS is sameas true %}
+ no switchport nonegotiate
+{%     endif %}
+{%   elif params.negotiation is sameas false %}
+ switchport nonegotiate
+{%   endif %}
+{% endif %}

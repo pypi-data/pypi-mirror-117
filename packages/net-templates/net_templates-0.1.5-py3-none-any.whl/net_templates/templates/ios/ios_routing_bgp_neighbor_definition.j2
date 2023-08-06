@@ -1,0 +1,24 @@
+{% if params %}
+{# Neighbor Description #}
+{%   if params.description %}
+{{ ' ' * indent }}neighbor {{ id }} description {{ params.description }}
+{%   elif (bgp_params.use_name_for_description is sameas true | default(false) ) and not(is_peergroup | default(false)) %}
+{{ ' ' * indent }}neighbor {{ id }} description {{ params.name }}
+{%   endif %}
+{# Neighbor Source Interface #}
+{%   if params.src_interface %}
+{{ ' ' * indent }}neighbor {{ id }} update-source {{ params.src_interface }}
+{%   endif %}
+{# Neighbor Password #}
+{%   if params.key %}
+{{ ' ' * indent }}neighbor {{ id }} password {{ params.key.encryption_type }} {{ params.key.value }}
+{%   endif %}{# if params.password is defined #}
+{# Neighbor HA Mode #}
+{%   if params.ha_mode | default(none) is not none %}
+{{ ' ' * indent }}neighbor {{ id }} ha-mode {{ params.ha_mode }}
+{%   endif %}{# if params.password is defined #}
+{# Neighbor Version #}
+{%   if params.version %}
+{{ ' ' * indent }}neighbor {{ id }} version {{ params.version }}
+{%   endif %}{# if params.password is defined #}
+{% endif %}

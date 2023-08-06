@@ -1,0 +1,19 @@
+{% if interface is defined %}
+{%   set name, params = interface.name, interface %}
+{% elif interface is undefined %}
+{%   set name, params = name, params %}
+{% endif %}
+interface {{ name }}
+{% if params.description is defined %}
+ description {{ params.description }}
+{% endif %}
+{% if params.l2_port is defined and params.l2_port is mapping %}
+{%   with params = params.l2_port %}
+{%     include 'ios_interface_l2.j2' %}
+{%   endwith %}
+{% endif %}
+{% if params.l3_port is defined and params.l3_port is mapping %}
+{%   with params = params.l3_port %}
+{%     include 'ios_interface_l3.j2' %}
+{%   endwith %}
+{% endif %}

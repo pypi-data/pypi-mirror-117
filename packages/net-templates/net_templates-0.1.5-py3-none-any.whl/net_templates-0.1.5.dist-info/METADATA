@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: net-templates
+Version: 0.1.5
+Summary: Network Config Templates
+Home-page: UNKNOWN
+Author: Miroslav Hudec <http://github.com/mihudec>
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: net-models
+Requires-Dist: pydantic
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+Requires-Dist: typing-extensions
+Requires-Dist: jmespath
+
+UNKNOWN
+
+

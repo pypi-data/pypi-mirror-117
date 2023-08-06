@@ -1,0 +1,20 @@
+{% if params | default(none) is not none %}
+{# Exec #}
+{%   for method in params.exec | default([]) %}
+{%     with authorization_type = 'exec', params = method %}
+{%       include 'ios_aaa_authorization_method.j2' %}
+{%     endwith %}
+{%   endfor %}
+{# Commands #}
+{%   for method in params.commands | default([]) %}
+{%     with authorization_type = 'commands', params = method %}
+{%       include 'ios_aaa_authorization_method.j2' %}
+{%     endwith %}
+{%   endfor %}
+{%   if params.authorize_console | default(none) is sameas true %}
+aaa authorization console
+{%   endif %}
+{%   if params.authorize_config_commands | default(none) is sameas true %}
+aaa authorization config-commands
+{%   endif %}
+{% endif %}

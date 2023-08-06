@@ -1,0 +1,9 @@
+{% macro dot1qEncapsulation(params)  %}
+{{ params.vid_range | to_vlan_range }}{% if params.cos | default(none) is not none %} cos {{ params.cos }}{% endif %}{% if params.etype | default(none) is not none %} etype {{ params.etype }}{% endif %}
+{% endmacro %}
+{% if params | default(none) is not none %}
+{%   if params.encapsulation_type == 'dot1q' %}
+  encapsulation dot1q {% if params.outer_tag | default(none) is not none %}{{ dot1qEncapsulation(params=params.outer_tag) }}{% if params.inner_tag | default(none) is not none %} second-dot1q {{ dot1qEncapsulation(params=params.inner_tag) }}{% endif %}{% endif %}
+
+{%   endif %}
+{% endif %}

@@ -1,0 +1,4 @@
+{% if params | default(none) is not none %}
+logging discriminator {{ params.name }}{% for action in params.actions %} {{ action.match }} {{ action.action }} {{ action.value }}{% endfor %}
+
+{% endif %}

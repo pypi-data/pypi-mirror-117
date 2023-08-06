@@ -1,0 +1,50 @@
+{% if params %}
+{%   if params.afi in ['vpnv4', 'l2vpn'] %}
+{%     set NEIGHBOR_DEFINITION_ALLOWED = false %}
+{%     set PEERGROUP_DEFINITION_ALLOWED = false %}
+{%     set peer_groups = routing.bgp.peer_groups | default([]) %}
+{%   else %}
+{%     set NEIGHBOR_DEFINITION_ALLOWED = true %}
+{%     set PEERGROUP_DEFINITION_ALLOWED = true %}
+{%     set peer_groups = params.peer_groups | default([]) %}
+{%   endif %}
+ address-family {{ params.afi }}{% if params.safi | default(none) is not none %} {{ params.safi }}{% endif %}{% if params.vrf | default(none) is not none %} vrf {{ params.vrf }}{% endif %}
+
+{%   if params.additional_paths | default(none) is not none %}
+  bgp additional-paths {{ params.additional_paths }}
+{%   endif %}{# bgp_additional_paths_install #}
+{%   if params.import_path | default(none) is not none %}
+{%     if params.import_path.selection | default(none) is not none %}
+  import path selection {{ params.import_path.selection }}
+{%     endif %}{# params.import_path.selection #}
+{%     if params.import_path.limit | default(none) is not none %}
+  import path limit {{ params.import_path.limit }}
+{%     endif %}{# params.import_path.selection #}
+{%   endif %}{# params.import_path #}
+{%   if params.redistribute is defined and params.redistribute is iterable %}
+{%     for redistribute in params.redistribute %}
+  redistribute {{ redistribute.type }}{% if redistribute.route_map | default(none) is not none %} route-map {{ redistribute.route_map }}{% endif %}{% if redistribute.metric | default(none) is not none %} metric {{ redistribute.metric }}{% endif %}
+
+{%     endfor %}
+{%   endif %}{# if params.redistribute #}
+{%   if params.config_lines | default(none) is not none  %}
+{%     for config_line in params.config_lines %}
+{{ config_line }}
+{%     endfor %}
+{%   endif %}
+{%   if params.peer_groups | default(none) is not none  %}
+{%     for peer_group in params.peer_groups %}
+{%       with indent = 2, params = peer_group %}
+{%         include 'ios_routing_bgp_peer_group.j2' %}
+{%       endwith %}
+{%     endfor %}
+{%   endif %}
+{%   if params.neighbors | default(none) is not none  %}
+{%     for neighbor in params.neighbors %}
+{%       with indent = 2, params = neighbor %}
+{%         include 'ios_routing_bgp_neighbor.j2' %}
+{%       endwith %}
+{%     endfor %}
+{%   endif %}{# params.neighbors is defined #}
+ exit-address-family
+{% endif %}

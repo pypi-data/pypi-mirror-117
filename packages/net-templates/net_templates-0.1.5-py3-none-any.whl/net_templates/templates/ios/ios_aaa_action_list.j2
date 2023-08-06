@@ -1,0 +1,1 @@
+{% if params | default(none) is not none %}{% for action in params %}{% if action.action == 'group' %}group {{ action.group }}{% if not loop.last %} {% endif %}{% else %}{{ action.action }}{% if not loop.last %} {% endif %}{% endif %}{% endfor %}{% endif %}

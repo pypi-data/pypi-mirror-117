@@ -1,0 +1,19 @@
+{% if params | default(none) is not none %}
+{%   if PLATFORM_CDP_DEFAULT_ON | default(true) %}{# platform has cdp enable by default #}
+{%     if params.enabled | default(none) is sameas true %}
+{%       if INCLUDE_DEFAULTS | default(false) is sameas true %}{# include default value #}
+ cdp enable
+{%       endif %}{# endif INCLUDE_DEFAULTS #}
+{%     elif params.enabled | default(none) is sameas false %}{# params.enabled is false #}
+ no cdp enable
+{%     endif %}{# endif params.enabled #}
+{%   elif PLATFORM_CDP_DEFAULT_ON |  default(none) is sameas false %}{# platform has no cdp enable by default #}
+{%     if params.enabled | default(none) is sameas true %}{# params.enabled is true #}
+ cdp enable
+{%     elif params.enabled | default(none) is sameas false %}{# params.cdp is false #}
+{%       if INCLUDE_DEFAULTS | default(false) is sameas true %}{# include default value #}
+ no cdp enable
+{%       endif %}{# endif INCLUDE_DEFAULTS #}
+{%     endif %}{# endif params.enabled #}
+{%   endif %}{# endif PLATFORM_CDP_DEFAULT_ON #}
+{% endif %}{# endif params is defined #}

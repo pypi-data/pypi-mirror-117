@@ -1,0 +1,13 @@
+{% if params | default(none) is not none %}
+line {{ params.line_type }} {{ params.line_range[0] }}{% if params.line_range.length == 2 %} {{ params.line_range[1] }}{% endif %}
+
+{%   if params.exec_timeout | default(none) is not none %}
+ exec-timeout {{ params.exec_timeout // 60 }} {{ params.exec_timeout % 60 }}
+{%   endif %}
+{# AAA Config Section #}
+{%   if params.aaa_config | default(none) is not none %}
+{%     with params = params.aaa_config %}
+{%       include 'ios_line_aaa.j2' %}
+{%     endwith %}
+{%   endif %}
+{% endif %}

@@ -1,0 +1,13 @@
+{% if params | default(none) is not none %}
+{%   for access_type, access_group in params.items() %}
+{%     if access_type == 'serve_only' %}
+ntp access-group serve-only {{ access_group }}
+{%     elif access_type == 'query_only' %}
+ntp access-group query-only {{ access_group }}
+{%     elif access_type == 'serve' %}
+ntp access-group serve {{ access_group }}
+{%     elif access_type == 'peer' %}
+ntp access-group peer {{ access_group }}
+{%     endif %}
+{%   endfor %}
+{% endif %}

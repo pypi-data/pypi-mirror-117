@@ -1,0 +1,55 @@
+{% if params | default(none) is not none %}
+{%   if params.process_id | default(none) is not none and params.area | default(none) is not none %}
+ ip ospf {{ params.process_id }} area {{ params.area }}
+{%   endif %}
+{%   if params.network_type | default(none) is not none %}
+ ip ospf network {{ params.network_type }}
+{%   endif %}
+{%   if params.cost | default(none) is not none %}
+ ip ospf cost {{ params.cost }}
+{%   endif %}
+{%   if params.priority | default(none) is not none %}
+ ip ospf priority {{ params.priority }}
+{%   endif %}
+{# Authentication Section #}
+{%   if params.authentication | default(none) is not none %}
+{%     with auth = params.authentication %}
+{%       if auth.method | default(none) is none %}
+ ip ospf authentication
+{%       elif auth | default(none) is not none %}
+{%         if auth.method == 'message-digest' %}
+ ip ospf authentication message-digest
+{%         elif auth.method == 'key-chain' %}
+ ip ospf authentication key-chain {{ auth.keychain }}
+{%         elif auth.method == 'null' %}
+ ip ospf authentication null
+{%         endif %}
+{%         if auth.method in [None, 'message-digest'] %}
+ ip ospf authentication-key {% if auth.key.encryption_type != 0 %}{{ auth.key.encryption_type }} {% endif %}{{ auth.key.value }}
+{%         endif %}
+{%       endif %}
+{%     endwith %}
+{%   endif %}
+{# Timets Section #}
+{%   if params.timers | default(none) is not none %}
+{%     if params.timers.hello | default(none) is not none %}
+ ip ospf hello-interval {{ params.timers.hello }}
+{%     endif %}
+{%     if params.timers.dead | default(none) is not none %}
+ ip ospf dead-interval {{ params.timers.dead }}
+{%     endif %}
+{%     if params.timers.retransmit | default(none) is not none %}
+ ip ospf retransmit-interval {{ params.timers.retransmit }}
+{%     endif %}
+{%   endif %}
+{# BFD Section #}
+{%   if params.bfd | default(none) is not none %}
+{%     if params.bfd is sameas true %}
+ ip ospf bfd
+{%     elif params.bfd is sameas false %}
+ ip ospf bfd disable
+{%     elif params.bfd == 'strict-mode' %}
+ ip ospf bfd strict-mode
+{%     endif %}
+{%   endif %}
+{% endif %}

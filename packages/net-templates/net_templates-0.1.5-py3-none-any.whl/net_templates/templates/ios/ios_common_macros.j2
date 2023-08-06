@@ -1,0 +1,3 @@
+{% macro stateMacro() %}
+{% if state | default(none) == 'absent' %}no {% endif %}
+{% endmacro %}

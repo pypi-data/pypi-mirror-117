@@ -1,0 +1,31 @@
+{# VRF Model #}
+{% if params | default(none) is not none %}
+vrf definition {{ params.name }}
+{%   if params.description | default(none) is not none %}
+ description {{ params.description }}
+{%   endif %}
+{%   if params.rd | default(none) is not none %}
+ rd {{ params.rd }}
+{%   endif %}
+{%   if params.address_families | default(none) is not none %}
+{%     for af in params.address_families %}
+ !
+ address-family {{ af.afi }}{% if af.safi | default(none) is not none %} {{ af.safi }}{% endif %}
+
+{%       if af.route_targets | default(none) is not none %}
+{%         for rt in af.route_targets %}
+{%           if rt.action == 'both' %}
+  route-target export {{ rt.rt }}{% if rt.rt_type | default(none) is not none %} {{ rt.rt_type }}{% endif %}
+
+  route-target import {{ rt.rt }}{% if rt.rt_type | default(none) is not none %} {{ rt.rt_type }}{% endif %}
+
+{%           else %}
+  route-target {{ rt.action }} {{ rt.rt }}{% if rt.rt_type | default(none) is not none %} {{ rt.rt_type }}{% endif %}
+
+{%           endif %}
+{%         endfor %}
+{%       endif %}
+ exit-address-family
+{%     endfor %}
+{%   endif %}
+{% endif %}
