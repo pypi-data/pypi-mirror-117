@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pygamemode
+Version: 0.1.2
+Summary: A Python wrapper for the GameMode client API.
+Home-page: https://github.com/aforren1/pygamemode
+Author: Alexander Forrence
+Author-email: alex.forrence@gmail.com
+License: BSD 3
+Description: [![Latest PyPI Release](https://img.shields.io/pypi/v/pygamemode.svg)](https://pypi.org/project/pygamemode/)
+        [![Build](https://github.com/aforren1/pygamemode/actions/workflows/build.yml/badge.svg)](https://github.com/aforren1/pygamemode/actions/workflows/build.yml)
+        
+        A Python wrapper for the GameMode client API (https://github.com/FeralInteractive/gamemode).
+        
+        To use this effectively, you'll need to install GameMode on your system. See either your system's package manager or the build instructions [here](https://github.com/FeralInteractive/gamemode/blob/master/README.md#development-).
+        
+        Example usage:
+        
+        ```python
+        import gamemode as gm
+        
+        if gm.request_start() != 0:
+            msg = gm.error_string()
+            raise ValueError('Failed to request gamemode start: {}...'.format(msg))
+        
+        # ...do things here...
+        
+        if gm.request_end() != 0:
+            msg = gm.error_string()
+            raise ValueError('Failed to request gamemode end: {}...'.format(msg))
+        ```
+        
+        See [test.py](https://github.com/aforren1/pygamemode/blob/master/test.py) for all available calls.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/markdown

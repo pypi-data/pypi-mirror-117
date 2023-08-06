@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pygamemode.c
+setup.cfg
+setup.py
+pygamemode.egg-info/PKG-INFO
+pygamemode.egg-info/SOURCES.txt
+pygamemode.egg-info/dependency_links.txt
+pygamemode.egg-info/top_level.txt
