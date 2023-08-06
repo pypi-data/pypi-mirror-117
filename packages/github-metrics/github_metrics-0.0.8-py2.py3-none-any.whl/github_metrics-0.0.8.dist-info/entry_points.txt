@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        github_metrics=github_metrics.run:cli
+    
