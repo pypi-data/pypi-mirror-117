@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.py
+test/test_passport_data.py
+test/test_visa_status.py
+visa_cli/__init__.py
+visa_cli/visa_status.py
+visa_cli.egg-info/PKG-INFO
+visa_cli.egg-info/SOURCES.txt
+visa_cli.egg-info/dependency_links.txt
+visa_cli.egg-info/entry_points.txt
+visa_cli.egg-info/requires.txt
+visa_cli.egg-info/top_level.txt
