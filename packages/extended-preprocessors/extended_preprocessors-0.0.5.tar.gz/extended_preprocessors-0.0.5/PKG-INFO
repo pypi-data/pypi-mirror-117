@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: extended_preprocessors
+Version: 0.0.5
+Summary: A set of useful preprocessors for machine learning.
+Home-page: https://github.com/vikozlov89/extended_preprocessors
+Author: Vladislav Kozlov
+Author-email: vlad.kozlov.ds@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/vikozlov89/extended_preprocessors/archive/refs/tags/v_0_0_5.tar.gz
+Description: UNKNOWN
+Keywords: ML,preprocessing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
