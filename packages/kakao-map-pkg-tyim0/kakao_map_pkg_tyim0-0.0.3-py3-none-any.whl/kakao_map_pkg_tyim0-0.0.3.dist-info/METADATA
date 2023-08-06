@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: kakao-map-pkg-tyim0
+Version: 0.0.3
+Summary: A package parsing kakao map
+Home-page: UNKNOWN
+Author: tyim0
+Author-email: tylim@iseeya.co.kr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+2021.08.25 - tyim0
+================
+
+프로그램 설명서
+
+1. 개발환경
+
+    Python 3.9
+
+    Chrome 92.0.4515.159
+
+
+2. 동작 방법
+
+    /kakao_map/main.py 실행 혹은 
+
+    /kakao_map/dist/main/main.exe 실행
+
+    실행 후 화면에 "Type search keyword : " 문구가 나오면 검색하고자 하는 키워드를 입력
+
+    프로그램 동작이 끝나면 /data.csv 파일을 열어 데이터 확인
+
