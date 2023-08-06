@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bposd
+Version: 0.0.1
+Summary: BP+OSD
+Home-page: https://roffe.eu
+Author: Joschka Roffe
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: ldpc
+Requires-Dist: numpy
+
+This module provides an implementation of the belief        propagagation + ordered statistics decoder for quantum LDPC codes.
+
