@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: OneSnipe
+Version: 0.0.6
+Summary: The successor of GeoSnipe, a pythonic Minecraft username sniper based on AsyncIO.
+Home-page: https://github.com/Geographs/OneSnipe
+Author: Geographs
+Author-email: 87452561+Geographs@users.noreply.github.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/Geographs/OneSnipe
+Project-URL: Bug Tracker, https://github.com/Geographs/OneSnipe/issues
+Project-URL: Website, https://onesnipe.xyz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
