@@ -1,0 +1,9 @@
+carlo_distributions/Binomialdistribution.py,sha256=77MIpTERxxtbJnIEpAPYqVAc6Yor-nt1raMGPYLB_VA,8702
+carlo_distributions/Gaussiandistribution.py,sha256=dKXYnPU93j3oUjtIF1Qtnv95YnHsoBsLj0UggtFvh20,3626
+carlo_distributions/Generaldistribution.py,sha256=Jbs8PYHA_UZjAX_DI6FB38V0gPxSJNRemF--A4xP2PM,932
+carlo_distributions/__init__.py,sha256=UBerRgPxD5fvzOzpXAxkfFZyY5RMOu0TJDro4ONhtpA,157
+carlo_distributions-0.0.1.dist-info/LICENSE.txt,sha256=K45J8BDG9GISo8dWcmbgGXgCTC63vNicQiJYKcvLPEs,1074
+carlo_distributions-0.0.1.dist-info/METADATA,sha256=xPB19ifeu5wJqfUe1JRDrqwG6a8KwY9j06JheeGrflI,588
+carlo_distributions-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+carlo_distributions-0.0.1.dist-info/top_level.txt,sha256=EHhsHGzP-pmUz4z8AmazGy72txeUGOxdSytYEq29574,20
+carlo_distributions-0.0.1.dist-info/RECORD,,
