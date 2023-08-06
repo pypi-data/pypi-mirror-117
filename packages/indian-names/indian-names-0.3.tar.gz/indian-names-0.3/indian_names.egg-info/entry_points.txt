@@ -1,0 +1,3 @@
+[console_scripts]
+indian-names = indian_names.main:main
+

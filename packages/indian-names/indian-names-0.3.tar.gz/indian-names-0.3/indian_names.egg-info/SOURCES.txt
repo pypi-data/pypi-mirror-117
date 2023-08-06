@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+indian_names/__init__.py
+indian_names/first.female.names
+indian_names/first.male.names
+indian_names/last.names
+indian_names/main.py
+indian_names.egg-info/PKG-INFO
+indian_names.egg-info/SOURCES.txt
+indian_names.egg-info/dependency_links.txt
+indian_names.egg-info/entry_points.txt
+indian_names.egg-info/top_level.txt
