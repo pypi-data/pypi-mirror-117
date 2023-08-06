@@ -1,0 +1,16 @@
+tabular_automl/__init__.py,sha256=UbTknnHTTb2Ryzpkl-tqMpQv9SdXhL2DUGF0-UjVkNw,89
+tabular_automl/automl.py,sha256=ntHL9GktlqOPB3pvRyUHB8ip9SNCWZ_rzlBD_QaNHFE,3705
+tabular_automl/data.py,sha256=SRQJ9Nza7-2oZBt8P4X15NK31KzwFOjrGKGD6jpCTa0,1263
+tabular_automl/exceptions.py,sha256=PnVCfkQcpJVpsI7LXAuHdT1WK7wRxUlsE67SNyzXeuU,299
+tabular_automl/settings.py,sha256=x43qFQrwRPpZsMSiX7VQ8jSERZCH6E3mDv3KiqyF9L8,300
+tabular_automl/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabular_automl/tests/test_automl.py,sha256=wBkY7fCGN5nHuiwjny1qwGNhxqxXviBAZcweaR3kprg,2119
+tabular_automl/tests/test_data.py,sha256=y0DYZq1km27J70fPiN2tRaZYAny82UFD1pcleUjOCYU,1651
+web_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_app/app.py,sha256=NGzkiTz1_r_KSOaUpW-GC53smLMWJmOnXR-EDcLHHXw,2379
+web_app/settings.py,sha256=OE7H6uEpgup4SsjMqtwx6uAM7RzbAIpFANe9FFNC_ls,66
+tabular_automl-0.2.0a1.dist-info/LICENSE,sha256=G6rqR1D6-zKMa7nNMB0p1MQHoCSfeMK2wl9OkpbW3-k,1072
+tabular_automl-0.2.0a1.dist-info/METADATA,sha256=eb1AjqYckm27R0oEk4RrXM3clDS-QL1P7-Y8MqaVq3I,2151
+tabular_automl-0.2.0a1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tabular_automl-0.2.0a1.dist-info/top_level.txt,sha256=IbKDerx3e6fOUG3b7At34h051mSEGAVHeU3kudc02G4,23
+tabular_automl-0.2.0a1.dist-info/RECORD,,
