@@ -1,0 +1,7 @@
+pandas
+requests
+scipy
+shap
+#enum34
+sklearn
+
