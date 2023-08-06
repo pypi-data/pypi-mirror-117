@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ezq
+Version: 2.0.0
+Summary: Simple wrapper for python multiprocessing.
+Home-page: https://github.com/metaist/ezq
+Author: Metaist LLC
+Author-email: metaist@metaist.com
+License: MIT
+Download-URL: https://github.com/metaist/ezq
+Keywords: simple,multiprocessing,queue,subprocesses
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE.md
+
+Simple wrapper for python multiprocessing.
+
