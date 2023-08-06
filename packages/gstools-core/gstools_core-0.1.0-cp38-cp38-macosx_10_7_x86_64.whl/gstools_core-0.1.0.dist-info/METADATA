@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: gstools-core
+Version: 0.1.0
+Summary: The core functions of GSTools
+Author: Lennart Schüler <mostem@posteo.de>
+Author-email: Lennart Schüler <mostem@posteo.de>
+License: LGPL-3.0-or-later
