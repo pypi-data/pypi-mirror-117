@@ -1,0 +1,10 @@
+graphene_sqlalchemy_auto/__init__.py,sha256=50TY9r4tr-QJEQ1byJIDhJyaARnPcGjscnHiuy-gzAQ,76
+graphene_sqlalchemy_auto/filter.py,sha256=WXKKUoVHNDiPodZgaLbv-iWDKOEcQsxXDhCxkRJYGLk,2168
+graphene_sqlalchemy_auto/mutation.py,sha256=IcbG-ikELPWr2TEhThkCONVhg1mv1OYjJa5BWITHBOg,7983
+graphene_sqlalchemy_auto/query.py,sha256=iiby3hGgJC6_o9m_q8T1FDyRHTCHCDELhWGJ7dfj5MM,4059
+graphene_sqlalchemy_auto/types.py,sha256=FmltfF_rPj3yv_NolaxnQLlFux59Pjn3rwNOjQuXw3g,3966
+graphene_sqlalchemy_auto-1.4.0.dist-info/LICENSE,sha256=Oshs1jcVcJIyoBiCIUVfjGdhhDy3AYM5vvPp8hrb7oA,1063
+graphene_sqlalchemy_auto-1.4.0.dist-info/METADATA,sha256=iRoiUdz1EM4r9VLI7IB9Q7nMMbXsNlEmkKS7-qtZNs0,3040
+graphene_sqlalchemy_auto-1.4.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+graphene_sqlalchemy_auto-1.4.0.dist-info/top_level.txt,sha256=SKvO1kXOAGSQy5iGiBfitXWhsK8MR9CDWLc3yqSsKD8,25
+graphene_sqlalchemy_auto-1.4.0.dist-info/RECORD,,
