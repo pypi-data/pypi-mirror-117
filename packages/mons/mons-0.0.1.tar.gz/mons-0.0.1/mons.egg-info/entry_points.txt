@@ -1,0 +1,3 @@
+[console_scripts]
+mons = mons:main
+
