@@ -1,0 +1,6 @@
+setup.py
+colorgnomehat/colorgnomehat.py
+colorgnomehat.egg-info/PKG-INFO
+colorgnomehat.egg-info/SOURCES.txt
+colorgnomehat.egg-info/dependency_links.txt
+colorgnomehat.egg-info/top_level.txt
