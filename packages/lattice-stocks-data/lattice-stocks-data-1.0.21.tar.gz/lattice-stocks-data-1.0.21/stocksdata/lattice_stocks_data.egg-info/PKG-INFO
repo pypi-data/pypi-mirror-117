@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lattice-stocks-data
+Version: 1.0.21
+Summary: An API for gathering RapidAPI stock info
+Home-page: https://lattice.dev/products/stock-market-data
+Author: ashkon@lattice.dev
+License: UNKNOWN
+Project-URL: Source, https://github.com/LatticeData/lattice-stocks-data
+Project-URL: Documentation, https://github.com/LatticeData/lattice-stocks-data/blob/master/README.md#Usage
+Project-URL: Bug Reports, https://github.com/LatticeData/lattice-stocks-data/issues
+Project-URL: Get your key, https://rapidapi.com/lattice-data-lattice-data-default/api/stock-market-data/
+Description:  An easy-to-use library for quick access to stock market information. Complete stock market data is available from Yahoo Finance and many other sources in one convenient package. To successfully use this library you will need an API key for the Lattice Stock Market Data API that powers it. Navigate to RapidAPI to sign up for a free API key and then save it to an environment variable called STOCK_DATA_X_RAPID_API_KEY in your environment. The library will automatically load that environment variable and use it to authenticate API calls made under the hood.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
