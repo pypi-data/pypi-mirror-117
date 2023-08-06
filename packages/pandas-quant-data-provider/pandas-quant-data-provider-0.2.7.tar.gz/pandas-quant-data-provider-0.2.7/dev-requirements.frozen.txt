@@ -1,0 +1,6 @@
+doltpy==2.0.9
+ipykernel==6.2.0
+jupyter-client==7.0.1
+lxml==4.6.3
+Markdown==3.3.4
+requests==2.26.0
