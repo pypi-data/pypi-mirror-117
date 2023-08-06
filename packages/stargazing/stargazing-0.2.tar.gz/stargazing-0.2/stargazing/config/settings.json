@@ -1,0 +1,41 @@
+{
+    "saved_youtube_player_urls": {
+        "lofi radio": "https:\/\/www.youtube.com\/watch?v=5qap5aO4i9A&ab_channel=LofiGirl",
+        "ambient radio": "https:\/\/www.youtube.com\/watch?v=qt_urUz42vI&ab_channel=MusicLab",
+        "tokyo cafe radio": "https:\/\/www.youtube.com\/watch?v=6uddGul0oAc&ab_channel=CafeMusicBGMchannel",
+        "rainy jazz radio": "https:\/\/www.youtube.com\/watch?v=89XPBelvrZk&ab_channel=CafeMusicBGMchannel"
+    },
+    "interval_times": [
+        [
+            1200,
+            600
+        ],
+        [
+            1800,
+            600
+        ],
+        [
+            2400,
+            1200
+        ],
+        [
+            2700,
+            900
+        ],
+        [
+            3000,
+            600
+        ],
+        [
+            3600,
+            0
+        ]
+    ],
+    "last_project_name": "default",
+    "last_interval_time": [
+        3600,
+        0
+    ],
+    "last_autostart": false,
+    "last_volume": 80
+}
