@@ -1,0 +1,5 @@
+bitcoinX
+
+[testing]
+rabin
+ecdsa
