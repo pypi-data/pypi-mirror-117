@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pywikipathways
+Version: 0.0.1
+Summary: Python Client Package for WikiPathways
+Home-page: https://github.com/kozo2/pywikipathways
+Author: Kozo Nishida
+Author-email: kozo.nishida@gmail.com
+Maintainer: Kozo Nishida
+Maintainer-email: kozo.nishida@gmail.com
+License: MIT License
+Keywords: data visualization,visualization,wikipathways,bioinformatics,graph,network
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+
+# pywikipathways
+Python Client Package for the WikiPathways API
+
+Use this package to interface with the WikiPathways API.
+It provides programmatic access to WikiPathways content in multiple data and image formats.
+
+## Try pywikipathways with Google Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kozo2/pywikipathways/blob/main/docs/pywikipathways_Overview.ipynb)
+
+## Installation
+```
+pip install pywikipathways
+```
+
+## Documentation
+https://pywikipathways.readthedocs.io
+
+
