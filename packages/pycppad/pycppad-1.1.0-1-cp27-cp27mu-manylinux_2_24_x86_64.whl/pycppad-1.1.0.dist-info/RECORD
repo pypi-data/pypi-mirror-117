@@ -1,0 +1,8 @@
+openrobots.libs/libcppad_lib.so.712.7,sha256=_rjdKbEKwVeyK02Pm_puh5m-OqDHjKc2CDk543t2a9Q,113912
+openrobots.libs/libpycppad.so,sha256=XNgbXtPmD2_FrZKq3iZeFw-sHybn92Avu0EaMJmYMKA,4000792
+pycppad/__init__.py,sha256=S7Cte6xbqAHk29-WmD9H-sqcTstemXYonIk1eQXSVaY,102
+pycppad/pycppad.so,sha256=ccAIYgV9fl38ce3W91Nk65uyI9PvHPCMesGZzVvrjB0,22560
+pycppad-1.1.0.dist-info/METADATA,sha256=eI2BMKaqXCiqbLXsziMS5NXJJ6Lq8AwZ909IC2nK8cU,1221
+pycppad-1.1.0.dist-info/WHEEL,sha256=ilbB-tZLCCg4WqkLalUI7Fyfu4skRIj3-_SFBRyhQr4,240
+pycppad-1.1.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pycppad-1.1.0.dist-info/RECORD,,
