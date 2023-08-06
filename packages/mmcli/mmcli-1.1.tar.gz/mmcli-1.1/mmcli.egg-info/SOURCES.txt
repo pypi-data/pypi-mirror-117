@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+mmcli/helper.py
+mmcli/mmcli.py
+mmcli/mmclient.py
+mmcli.egg-info/PKG-INFO
+mmcli.egg-info/SOURCES.txt
+mmcli.egg-info/dependency_links.txt
+mmcli.egg-info/requires.txt
+mmcli.egg-info/top_level.txt
