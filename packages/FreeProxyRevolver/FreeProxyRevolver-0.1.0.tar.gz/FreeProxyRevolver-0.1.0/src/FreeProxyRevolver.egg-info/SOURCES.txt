@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/FreeProxyRevolver.py
+src/FreeProxyRevolver.egg-info/PKG-INFO
+src/FreeProxyRevolver.egg-info/SOURCES.txt
+src/FreeProxyRevolver.egg-info/dependency_links.txt
+src/FreeProxyRevolver.egg-info/requires.txt
+src/FreeProxyRevolver.egg-info/top_level.txt
