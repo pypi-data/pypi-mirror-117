@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fiberlib/__init__.py
+src/fiberlib.egg-info/PKG-INFO
+src/fiberlib.egg-info/SOURCES.txt
+src/fiberlib.egg-info/dependency_links.txt
+src/fiberlib.egg-info/top_level.txt
