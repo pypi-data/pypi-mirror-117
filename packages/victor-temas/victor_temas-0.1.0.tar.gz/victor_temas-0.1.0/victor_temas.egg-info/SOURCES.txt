@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+victor_temas/__init__.py
+victor_temas/__version__.py
+victor_temas/victor_themes.py
+victor_temas.egg-info/PKG-INFO
+victor_temas.egg-info/SOURCES.txt
+victor_temas.egg-info/dependency_links.txt
+victor_temas.egg-info/requires.txt
+victor_temas.egg-info/top_level.txt

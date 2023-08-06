@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: victor-temas
+Version: 0.1.0
+Summary: Victor Temas
+Home-page: https://gitlab.com/gpam/victor/SERVICES/temas
+Author: GPAM
+Author-email: gpam@gmail.com
+License: Apache-2.0
+Project-URL: Documentation, https://gitlab.com/gpam/victor/SERVICES/victor-pecas
+Project-URL: Code, https://gitlab.com/gpam/victor/SERVICES/victor-pecas
+Project-URL: Issue tracker, https://gitlab.com/victor/SERVICES/victor-pecas/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Victor Temas
+
+## Modo de uso
+Importe a classe VictorThemes, do arquivo victor_temas/victor_themes.py
+Instancie a classe VictorThemes com os parametros: tfidf, vectorizer e o DataFrame de temas.
+O método predict recebe um texto não processado e retorna uma lista de resultados sobre o texto para cada tema, cada elemento é uma tupla contendo:
+1. Pertinência não limitada
+2. Similaridade mínima entre o texto de entrada e os textos do tema analisado
+3. Similaridade média entre o texto de entrada e os textos do tema analisado
+4. Similaridade máxima entre o texto de entrada e os textos do tema analisado
+5. A lista de temas sendo analisada
+6. O número de amostras contidas nesse tema.
+
+Os parâmetros opcionais da funcao predict são:
+1. ordenar_por. Domínio:['pertinencia','similaridade'], valor default:'pertinencia'.
+Define a ordem de ordenacão da lista de saída do método predict. 
+Caso seja 'pertinencia', ordena os elementos por maior 
+
+limiar_pert=-10000, limiar_sim=0
+
+Exemplo:    
+    
+    from victor_temas import VictorThemes
+ 
+    vt=VictorThemes(TFIDF_PATH, VEC_PATH,THEMES_PATH)
+    vt.predict(texto)
+
