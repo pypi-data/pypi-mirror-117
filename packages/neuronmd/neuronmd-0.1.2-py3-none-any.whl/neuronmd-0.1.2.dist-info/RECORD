@@ -1,0 +1,9 @@
+neuronmd/__init__.py,sha256=fjVA8embzr-ZwTZJOU6IH78a90HOOZ5cP4Ux6HBziv0,103
+neuronmd/fitzhugh_nagumo.py,sha256=hFo7FF-CL4toQzNwIQO8z0MRioRZaXJuA01oBLTn8o0,2933
+neuronmd/hhmodel.py,sha256=acZU_1GuBK1QlbDXqNCwW0czXKjZbRuck8TChcHLCm4,4836
+neuronmd/izhikevich.py,sha256=8AVLwV6gosqKbgQInB639qafB2iG5Ujv4M4vhB_1MHM,3250
+neuronmd-0.1.2.dist-info/LICENSE,sha256=8MmS1ZrUrVb2ckghyDxNTKYj5ZxDuhQczIqIR-Cln9s,1071
+neuronmd-0.1.2.dist-info/METADATA,sha256=6kme0SMSwrJsgt6gM_KbC0RGcOqj2Jz8Of3KJb1ku7E,3888
+neuronmd-0.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+neuronmd-0.1.2.dist-info/top_level.txt,sha256=BDECytvFtsU-i_Xj-WxQBWheJmkpNheH1bMLCR7KV3o,9
+neuronmd-0.1.2.dist-info/RECORD,,
