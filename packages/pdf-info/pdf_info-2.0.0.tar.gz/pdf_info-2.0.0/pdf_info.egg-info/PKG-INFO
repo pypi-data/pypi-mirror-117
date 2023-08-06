@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: pdf-info
+Version: 2.0.0
+Summary: This package extracts important information from a pdf document such as heading, paragraphs and important keywords!!!
+Home-page: UNKNOWN
+Author: Satyam Prakash
+License: UNKNOWN
+Description: 
+        #  Data extractor for PDF documents - pdf-info
+        
+          
+          
+          
+        
+        A command line tool and Python library to support your analysis of pdf documents.
+        
+          
+        
+        Extracts important fetures from a document like headers, paragraphs, important keywords and subscripts.
+        
+          
+        
+        Returns a vector of relevant details!!
+        
+          
+        
+        ##  Installation
+        
+          
+          
+          
+        
+        ### Install `pdf-info` using pip
+        
+        `pip install pdf-info`
+        
+          
+          
+          
+        
+        ###  Use as Python Library
+        
+          
+        
+        You can easily add `pdf-info` to your own Python scripts as library.
+        
+          
+        
+        `from pdf_info import pdf_info_class`
+        `ob = pdf_info_class()`
+        `result = ob.pdf_info('path/to/my/file.pdf',page_number,tag)`
+        
+          
+        
+        ####  List of tags supported are - "headers", "paragraphs", "keywords", "subscripts".
+        
+          
+          
+        
+        ##  Maintainers
+        
+          
+        
+        -  [Satyam Prakash](https://github.com/satprak)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
