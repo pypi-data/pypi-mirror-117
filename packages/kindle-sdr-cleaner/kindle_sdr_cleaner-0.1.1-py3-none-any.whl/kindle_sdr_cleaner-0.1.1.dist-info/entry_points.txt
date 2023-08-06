@@ -1,0 +1,3 @@
+[console_scripts]
+kindle-sdr-cleaner=kindle_sdr_cleaner:main
+
