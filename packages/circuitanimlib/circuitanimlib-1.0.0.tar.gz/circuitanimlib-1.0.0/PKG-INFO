@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: circuitanimlib
+Version: 1.0.0
+Summary: An extension to manim that allows for easy circuit animations
+Home-page: https://github.com/weras2/circuitanim
+Author: Juan Enrique Perez De Jesus
+Author-email: minego410@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/weras2/circuitanim/issues
+Project-URL: Documentation, https://weras2.github.io/circuitanim/
+Project-URL: Source Code, https://github.com/weras2/circuitanim
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Testing!
+
