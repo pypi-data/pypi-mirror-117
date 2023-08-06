@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/rizamonga/__init__.py
+src/rizamonga/aggregate.py
+src/rizamonga/count.py
+src/rizamonga/filter.py
+src/rizamonga/find.py
+src/rizamonga/find_one.py
+src/rizamonga/find_one_and_update.py
+src/rizamonga/insert_one.py
+src/rizamonga/monga.py
+src/rizamonga.egg-info/PKG-INFO
+src/rizamonga.egg-info/SOURCES.txt
+src/rizamonga.egg-info/dependency_links.txt
+src/rizamonga.egg-info/top_level.txt
