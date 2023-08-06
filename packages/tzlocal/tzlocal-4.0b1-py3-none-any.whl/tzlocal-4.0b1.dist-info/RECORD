@@ -1,0 +1,11 @@
+tzlocal/__init__.py,sha256=gwxdfBuHqBc-_arc_EI2Whk7U80Ffld6r2TP3-fJuxI,189
+tzlocal/unix.py,sha256=zr-Ng23VS8yHuyzg2aDMg--rkf23-DlduU7obxhUNX8,7391
+tzlocal/utils.py,sha256=9Lhk3QzWkVIdF5z9s4Q5bimpJ9DkS3SKLbnbucKx9oY,1673
+tzlocal/win32.py,sha256=cJZ9Ae0ygn4LBkMaoIN0sJJenNn12XodRrY-9wlUY5g,3425
+tzlocal/windows_tz.py,sha256=xOckc070mdQu9Yu4Dz5NKgL2wNFlDOd3iX11YuR6Uqo,31547
+tzlocal-4.0b1.dist-info/LICENSE.txt,sha256=2ZqyCa6xaq0sJckP_YPBqYHikP__dqQgoqsD4D8EG4w,1060
+tzlocal-4.0b1.dist-info/METADATA,sha256=XxfVMv0BP9_2j1igHwENQSBO5aINHpxmG3_1CrwkGEc,10069
+tzlocal-4.0b1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tzlocal-4.0b1.dist-info/top_level.txt,sha256=QR6vZWP520waETnkotApPQPyVh9VnjoYPoAVHLK1DrE,8
+tzlocal-4.0b1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tzlocal-4.0b1.dist-info/RECORD,,
