@@ -1,0 +1,8 @@
+cdpam/__init__.py,sha256=EppVJw3gg34-B0-gCBG5yOFZE6YVmxfcd_pxURCeFbU,912
+cdpam/cdpam.py,sha256=KDHenMnzssQxIfxVHwClUyT39bviJA0DHSKHGBna-x4,2130
+cdpam/models.py,sha256=XnyUtITRMABLqDkjRICGnKh68B-LuqLKdbKpZbasYyw,17197
+cdpam/CDPAM_trained/scratchJNDdefault_best_model.pth,sha256=RTyLbt7hqU8BICNhVkNv8o_k2NiESF5KZ2lcjoVwvf4,106120042
+cdpam-0.0.5.dist-info/METADATA,sha256=LbL23z23I54ShmXfXKSYId8S7UVvzL0BmYb6QvhY96I,1684
+cdpam-0.0.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+cdpam-0.0.5.dist-info/top_level.txt,sha256=i4HnqWrLtSHfdxk49Q4pfPbGA0GkXsKqDDYz5ar9DnI,6
+cdpam-0.0.5.dist-info/RECORD,,
