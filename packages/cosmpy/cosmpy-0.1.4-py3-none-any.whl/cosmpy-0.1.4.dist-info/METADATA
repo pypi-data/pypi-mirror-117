@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: cosmpy
+Version: 0.1.4
+Summary: A library for interacting with the cosmos networks
+Home-page: https://github.com/fetchai/cosmpy
+Author: Fetch.AI Limited
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/fetchai/cosmpy/issues
+Project-URL: Source, https://github.com/fetchai/cosmpy
+Keywords: cosmos,gaia,fetchhub,fetchai
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: ecdsa
+Requires-Dist: bech32
+Requires-Dist: requests
+Requires-Dist: google-api-python-client
+Requires-Dist: protobuf
+Requires-Dist: grpcio
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: tox (==3.24.1) ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'dev'
+Requires-Dist: black (==21.6b0) ; extra == 'dev'
+Requires-Dist: mypy (==0.910) ; extra == 'dev'
+Requires-Dist: bandit (==1.7.0) ; extra == 'dev'
+Requires-Dist: safety (==1.10.3) ; extra == 'dev'
+Requires-Dist: isort (==5.9.3) ; extra == 'dev'
+Requires-Dist: darglint (==1.8.0) ; extra == 'dev'
+Requires-Dist: vulture (==2.3) ; extra == 'dev'
+Requires-Dist: pylint (==2.9.6) ; extra == 'dev'
+Requires-Dist: liccheck (==0.6.2) ; extra == 'dev'
+Requires-Dist: flake8-copyright (==0.2.2) ; extra == 'dev'
+Requires-Dist: grpcio-tools (<=1.32.0) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+# Cosmpy
+
+[![Checks amd Tests](https://github.com/fetchai/cosmpy/actions/workflows/workflow.yml/badge.svg)](https://github.com/fetchai/cosmpy/actions/workflows/workflow.yml)
+
+A python library for interacting with cosmos based blockchain networks
+
+## Installing
+
+To install the project use:
+
+    pip3 install cosmpy
+
+## Getting started
+
+Below is a simple example using the `SigningCosmWasmClient` and the `RestClient` channel.
+
+    from cosmpy.clients.signing_cosmwasm_client import SigningCosmWasmClient
+    from cosmpy.common.rest_client import RestClient
+
+    channel = RestClient("http://<rest endpoint addres>")
+    client = SigningCosmWasmClient(private_key, channel, "<chain id>")
+
+    res = client.get_balance(client.address, "stake")
+    print(f"Balance: {res.balance.amount} {res.balance.denom}")
+
+## Extra Resources
+
+* [Github Repo](https://github.com/fetchai/cosmpy)
+* [Bug Reports](https://github.com/fetchai/cosmpy/issues)
+* [Discussions](https://github.com/fetchai/cosmpy/discussions)
+
+
