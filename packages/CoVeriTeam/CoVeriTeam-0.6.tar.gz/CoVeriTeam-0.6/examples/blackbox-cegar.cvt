@@ -1,0 +1,84 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// Create a refiner from any invariant generator.
+// Creates from a violation witness a path program and
+// runs the invariant generator on that path program.
+//fun create_path_program_refiner(inv_generator) {
+//  path_program_generator = ActorFactory.create(WitnessInstrumentor, "actors/cpa-witnesses-instrumentor.yml");
+//  return SEQUENCE(path_program_generator, inv_generator);
+//}
+
+// Create a verifier that uses the information of invariant witnesses
+// from any verifier.
+// Creates from an invariant witness a program that adds for each invariant
+// in the invariant witness an assumption to the corresponding program location.
+// The verifier is then run on that instrumented program.
+//fun create_witness_processor(verifier) {
+//  inv_program_generator = ActorFactory.create(WitnessInstrumentor, "actors/cpa-witness-instrumentor.yml");
+//  return SEQUENCE(inv_program_generator, inv_generator);
+//}
+
+fun drop_witness(actor) {
+  dropped = SEQUENCE(actor, Rename({'verdict': 'verdict', 'witness': 'garbage'}));
+  pipethrough = PARALLEL(dropped, Identity({'witness'}));
+  return pipethrough;
+}
+
+// Create the blackbox-cegar procedure from the given components
+fun create_blackbox_cegar(verifier, validator, refiner) {
+  validator_rejects = ELEMENTOF(verdict, {TRUE});
+  refiner_if_unreachable = ITE(validator_rejects, refiner);
+
+  verdict_is_false = ELEMENTOF(verdict, {FALSE});
+  validator_witness_drop = drop_witness(validator);
+  validate_and_refine = SEQUENCE(validator_witness_drop, refiner_if_unreachable);
+  // no else specified -> if verdict is not FALSE, stop
+  if_false_validate_and_refine = ITE(verdict_is_false, validate_and_refine);
+
+  cegar_chain = SEQUENCE(verifier, if_false_validate_and_refine);
+  cegar_chain_witness_passthrough = PARALLEL(cegar_chain, Rename({'witness': 'witness2'}));
+
+  joiner = Joiner(Witness, {'witness', 'witness2'}, 'witness');
+  witness_join = PARALLEL(joiner, Identity({'verdict'}));
+  single_iteration = SEQUENCE(cegar_chain_witness_passthrough, witness_join);
+  cycle = REPEAT('witness', single_iteration);
+  return cycle;
+}
+
+prog = ArtifactFactory.create(CProgram, prog_path);
+spec = ArtifactFactory.create(BehaviorSpecification, spec_path);
+initial_witness = ArtifactFactory.create(Witness, "");
+init_verdict = ArtifactFactory.create(Verdict, "FALSE");
+inputs = {'program':prog, 'spec':spec, 'witness': initial_witness, 'verdict': init_verdict};
+
+// VERIFIER //
+// 2 Options: Use verifier that can read in correctness witnesses, or create such a verifier
+// Option 1
+// the type of the actor is ProgramValidator, not ProgramVerifier.
+// Reason: we use invariant witnesses as additional input. This input interface is defined by validators.
+verifier = ActorFactory.create(ProgramValidator, "../actors/cpa-predicate-NoCegar.yml");
+// Option 2
+// verifier = create_witness_processor(ActorFactory.create(ProgramVerifier, CONFIG_FOR_VERIFIER));
+
+// WITNESS VALIDATOR //
+// Use any existing witness validator here.
+witness_validator = ActorFactory.create(ProgramValidator, "../actors/cpa-validate-violation-witnesses.yml");
+
+// REFINER //
+// 2 Options: Use predicate refiner or create refiner from any invariant generator
+// Option 1
+refiner = ActorFactory.create(ProgramValidator, "../actors/cpa-predicate-craig-interpolation.yml");
+// Option 2
+// refiner = create_path_program_refiner(ArtifactFactory.create(ProgramVerifier, CONFIG_FOR_INV_GEN));
+
+full_procedure = create_blackbox_cegar(verifier, witness_validator, refiner);
+
+result = execute(full_procedure, inputs);
+
+print(result);
+
