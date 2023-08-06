@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: newsboat-subscribe
+Version: 1.0.1
+Summary: Subscribe to youtube videos
+Home-page: https://github.com/jnbli/newsboat-subscribe
+Author: Jonathan Li
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/jnbli/newsboat-subscribe/issues
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
