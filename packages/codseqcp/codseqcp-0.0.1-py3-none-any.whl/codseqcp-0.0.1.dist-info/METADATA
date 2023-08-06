@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: codseqcp
+Version: 0.0.1
+Summary: Pipeline for Clustering Homologous Coding or Genomic Sequence from Raw Fastq Reads
+Home-page: https://github.com/CodSeqCP01
+Author: Edson Ishengoma
+Author-email: edson.ishengoma@muce.ac.tz
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
