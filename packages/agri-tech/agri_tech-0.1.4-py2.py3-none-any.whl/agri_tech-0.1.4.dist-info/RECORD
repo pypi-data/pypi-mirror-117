@@ -1,0 +1,15 @@
+agri_tech/__init__.py,sha256=rvsTYYUiXTH1Kg5skSIrL57Z7DWvXpv0p0KRj7ZvmTY,132
+agri_tech/agri_tech.py,sha256=Y7WIwmG9SJ0r1VFTiYAfVMel_0lW3Z5brh7-nuxGjag,4947
+agri_tech/cli.py,sha256=8Le1iVl5U9zEcCdBinfRzApPksFPJNpIfxoi3jOv0Ik,442
+agri_tech/filename.txt,sha256=xj296KM6GBO-s02YgC7zdeH8m8qwqVQseLLwgQDa9c0,51991
+agri_tech/data/filename.txt,sha256=xj296KM6GBO-s02YgC7zdeH8m8qwqVQseLLwgQDa9c0,51991
+agri_tech-0.1.4.dist-info/.ipynb_checkpoints/PKG-INFO-checkpoint,sha256=ij2Bc60oljIKQx0T5lfWoOnOAnsfsudS6SuLeGkVgiI,2191
+agri_tech-0.1.4.dist-info/.ipynb_checkpoints/dependency_links-checkpoint.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+agri_tech-0.1.4.dist-info/.ipynb_checkpoints/top_level-checkpoint.txt,sha256=m0yTNGz34s9-CpBKXTaXyL-V-y1MCyPF6xtwPwzzXtk,10
+agri_tech-0.1.4.dist-info/AUTHORS.rst,sha256=gN4FwhfGNdkucwvasfcdLb0TfnEhoqTvPjGCRA5IsAU,161
+agri_tech-0.1.4.dist-info/LICENSE,sha256=elLLkgMAXbGQmmVcclEUWtOcSAwg9tvoU-yhvQIx5i4,1072
+agri_tech-0.1.4.dist-info/METADATA,sha256=5_i45HSx-JjcJWsW2uMIVMlbuoHbmQQl5Z7L7darMy8,2003
+agri_tech-0.1.4.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+agri_tech-0.1.4.dist-info/entry_points.txt,sha256=aEtpBJuhXMqnk43x6eKbK2KUWdu9-YMQUKU5YFA02A4,50
+agri_tech-0.1.4.dist-info/top_level.txt,sha256=m0yTNGz34s9-CpBKXTaXyL-V-y1MCyPF6xtwPwzzXtk,10
+agri_tech-0.1.4.dist-info/RECORD,,
