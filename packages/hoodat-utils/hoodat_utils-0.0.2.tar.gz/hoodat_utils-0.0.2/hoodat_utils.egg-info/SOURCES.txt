@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+hoodat_utils/__init__.py
+hoodat_utils/env.py
+hoodat_utils/facenet_embeddings.py
+hoodat_utils/frame_object.py
+hoodat_utils/hoodat_sqlalchemy.py
+hoodat_utils/models.py
+hoodat_utils/retrain_facenet.py
+hoodat_utils/s3.py
+hoodat_utils.egg-info/PKG-INFO
+hoodat_utils.egg-info/SOURCES.txt
+hoodat_utils.egg-info/dependency_links.txt
+hoodat_utils.egg-info/requires.txt
+hoodat_utils.egg-info/top_level.txt
