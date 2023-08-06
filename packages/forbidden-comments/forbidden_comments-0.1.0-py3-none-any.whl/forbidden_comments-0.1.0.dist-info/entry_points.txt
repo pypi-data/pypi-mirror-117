@@ -1,0 +1,3 @@
+[console_scripts]
+forbidden_comments=forbidden_comments.__main__:app
+
