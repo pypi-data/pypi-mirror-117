@@ -1,0 +1,2 @@
+BSP_Sample_ID	Old_Collaborator_Sample_ID	New_Collaborator_Sample_ID	Old_Individual_Alias	New_Individual_Alias	Sample_LSID	Root_Sample_ID
+BSP_sample	NA12878	NA12878_new	NA12878_patientA	NA12878_patientB	broadinstitute:sample_lsid	SM-abcd
