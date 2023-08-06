@@ -1,0 +1,10 @@
+tfsp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfsp/__main__.py,sha256=SAUT4X0uJ1HmeS4LBwjc6ewvRn42JLCDLILK8etHNYQ,327
+tfsp/_version.py,sha256=sBvZKLSprkiPLvvjL0DM8Teceq9S0EKEizm5SoZt43I,142
+tfsp/tag_from_spotify.py,sha256=d1YEVnWYMvPL3BpNUae9g3zNMavgKuUial3hhQu0oE0,2169
+tag_from_spotify-0.2.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+tag_from_spotify-0.2.1.dist-info/METADATA,sha256=epNedB8zv8oLoeYRCTQb3SKvyiJ8JP7budwGqJKAlfE,2186
+tag_from_spotify-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tag_from_spotify-0.2.1.dist-info/entry_points.txt,sha256=OHVCVA6rjMhinyiwgjEWwclTdZfdbWQSDpdx2ClziuI,45
+tag_from_spotify-0.2.1.dist-info/top_level.txt,sha256=lVGoqYGE-wqFYfU0LC76E5cIzxFGmcDcDumPxA6eNho,5
+tag_from_spotify-0.2.1.dist-info/RECORD,,
