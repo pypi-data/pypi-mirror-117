@@ -1,0 +1,9 @@
+skip_ssg/server.py,sha256=bU0iSsyGOpuGeA3tz4r7vme-W7pCelFlqGZYdaRqmf4,1245
+skip_ssg/skip.py,sha256=Z2oQbbAH2dgNjUd6cWXkWYOmYKGf882Ab_Q4nJTWpDc,7148
+skip_ssg/sources.py,sha256=jtW1SeFm7vA13ChQr-Rv4Lj2vR8Nvdzdt2iNPSFEpNc,8602
+skip_ssg/watchers.py,sha256=V7coiWyim49bQvx7KARTOkCUzW0VpFrIPqIKo18cVuE,643
+skip_ssg-0.1.11.dist-info/entry_points.txt,sha256=bT9xJY_o_OCBpHKpOHF9EZPVl_ozPb4uKcG9k7uyAXU,43
+skip_ssg-0.1.11.dist-info/LICENSE.txt,sha256=cxfxnQ3J948ghQQgojuCC_YJjE70xKWJG0WOdb3cbSo,1058
+skip_ssg-0.1.11.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+skip_ssg-0.1.11.dist-info/METADATA,sha256=ll8pQ0r_x1pmTIKsgG3nICYVF6l9HykpfcrxmLZNdTg,1459
+skip_ssg-0.1.11.dist-info/RECORD,,
