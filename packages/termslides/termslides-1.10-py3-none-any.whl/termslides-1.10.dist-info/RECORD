@@ -1,0 +1,14 @@
+termslides/__init__.py,sha256=EL-HTu3ATEw_4ImYbBxfmVgviK1VeJm61v5g9equh5A,563
+termslides/effects.py,sha256=qpZ488qxm1mDc5j-os5s0AlAdTHy_3A4VfNidlM-a2s,18191
+termslides/renderers.py,sha256=TXMKQqnA-OfOVqb66q4hVXkvezvQN5DTnCJpE7eW7zI,2411
+termslides/termslides.py,sha256=AzoAUgbAzi-X5YmL39MDodan8hFDegXLNFbnPSf6aOY,6026
+termslides/widgets.py,sha256=AMEW3YWKCopYZAIgub3ye5XT__zJrIxH9j7S7CDfqwc,18134
+termslides/lib/plantuml.1.2021.9.jar,sha256=ezyQGrJwMl2Tqv14GSQzApdDqg1RV8OWdnp4K8a1A5k,8383820
+tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/test_import.py,sha256=wlxV7GM7cIYycW95cfn3FUkXdKENG4zdIKnFryYBHOI,919
+termslides-1.10.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+termslides-1.10.dist-info/METADATA,sha256=xmAfEO6V8-wTfi_3Vn2Hao67D4RQGv2hCIVEhLXAc8s,5523
+termslides-1.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+termslides-1.10.dist-info/entry_points.txt,sha256=D65jQiRadE89eQAEj6obO3HPIhzerWRRc7C0pCpHfLE,54
+termslides-1.10.dist-info/top_level.txt,sha256=cMCm29NdxCiZ5N7J3JC9k79dbIpTYn7fZEt50zHd3kE,17
+termslides-1.10.dist-info/RECORD,,
