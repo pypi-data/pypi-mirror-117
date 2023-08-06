@@ -1,0 +1,14 @@
+installed_packages_diff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+installed_packages_diff/__main__.py,sha256=dLyK31NLxSR8Kg4tRAlBAAxdbr7eyqNfeStbyRVqp3c,82
+installed_packages_diff/config.py,sha256=M8cXSFp598uPT6Rg0iPvQVgxg8oeDqtqBFJo-vJPGa0,2674
+installed_packages_diff/differ.py,sha256=95rvZGD1p3syZSmsk6SdtMi70OP_u5fOnMPLWCMqdXw,1744
+installed_packages_diff/fetcher.py,sha256=VQJzj_kW_xkzS_Tkcfu8kgq-CPzG3wq398tt36lhe5Q,1216
+installed_packages_diff/main.py,sha256=P7E2LPuyfJEe5cJbTkRDbcaj7YuviPF-43dSmyD7OFY,1891
+installed_packages_diff/package.py,sha256=ueZT-HcSl7bNmKenMt56WmtagMoA05FbBeqEcePN0AE,760
+installed_packages_diff/package_list.py,sha256=vPCQyJSoVC2tQQtmEq1VXjqhn9Ir4NHJIImBNYTJVok,335
+installed_packages_diff/printing.py,sha256=Nv5E9zskpbVE09iGOQXerNOCuQhzhj--Vskmu2ZZrGI,273
+installed_packages_diff-2.0.0.dist-info/METADATA,sha256=4x8YCiHG2t2bUFSFHvDtJqNmawtEfk2ao5th-3H43po,2351
+installed_packages_diff-2.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+installed_packages_diff-2.0.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+installed_packages_diff-2.0.0.dist-info/top_level.txt,sha256=Hz9J5M5pqHZhtgr8BxvtP2BgPmiRpjHHqxztcbEVsIY,24
+installed_packages_diff-2.0.0.dist-info/RECORD,,
