@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: views_extraction
+Version: 1.1.1
+Summary: This project extracts the view data of every post from WordPress.
+Home-page: https://github.com/AbhisarAnand/LPBI-Data-Extraction-Project
+Author: Abhisar Anand, Srinivas Sriram
+Author-email: abhisar.muz@gmail.com, srinivassriram06@gmail.com
+License: UNKNOWN
+Description: # LPBI Data Extraction Project
+        ### Thank you for visiting! ![](https://visitor-badge.glitch.me/badge?page_id=AbhisarAnand.LPBI_Data_Extraction_Project)
+        
+        This repository contains code which extracts the view data of every post from WordPress.
+        
+        ## Documentation
+        The documentation can be found at: [https://lpbi-views-project.sidepage.co/](https://lpbi-views-project.sidepage.co/)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
