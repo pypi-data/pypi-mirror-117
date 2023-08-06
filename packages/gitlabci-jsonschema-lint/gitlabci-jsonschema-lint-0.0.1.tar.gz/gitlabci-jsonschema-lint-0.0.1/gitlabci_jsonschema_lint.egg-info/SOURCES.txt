@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gitlabci_jsonschema_lint.egg-info/PKG-INFO
+gitlabci_jsonschema_lint.egg-info/SOURCES.txt
+gitlabci_jsonschema_lint.egg-info/dependency_links.txt
+gitlabci_jsonschema_lint.egg-info/entry_points.txt
+gitlabci_jsonschema_lint.egg-info/requires.txt
+gitlabci_jsonschema_lint.egg-info/top_level.txt
+gitlabci_lint/__init__.py
+gitlabci_lint/gitlab-ci.json

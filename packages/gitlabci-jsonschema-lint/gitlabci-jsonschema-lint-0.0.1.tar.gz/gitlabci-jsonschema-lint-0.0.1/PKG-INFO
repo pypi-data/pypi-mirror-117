@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: gitlabci-jsonschema-lint
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/bagerard/gitlabci-jsonschema-lint
+Maintainer: Bastien Gerard
+Maintainer-email: bast.gerard@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: gitlab-ci linter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Quality Assurance
