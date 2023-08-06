@@ -1,0 +1,3 @@
+[console_scripts]
+jupytery-federation = jupytery_federation.application:main
+
