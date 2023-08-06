@@ -1,0 +1,10 @@
+setup.py
+rai_distributions/Binomialdistribution.py
+rai_distributions/Gaussiandistribution.py
+rai_distributions/Generaldistribution.py
+rai_distributions/__init__.py
+rai_distributions.egg-info/PKG-INFO
+rai_distributions.egg-info/SOURCES.txt
+rai_distributions.egg-info/dependency_links.txt
+rai_distributions.egg-info/not-zip-safe
+rai_distributions.egg-info/top_level.txt
