@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: time-tracker
+Version: 0.1.3
+Summary: 
+Author: Jose Cabeda
+Author-email: jecabeda@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: python-dotenv (>=0.12.0,<0.13.0)
+Requires-Dist: typer (==0.3.2)
+Description-Content-Type: text/markdown
+
+# `time-tracker`
+
+Time tracker cli
+
+**Usage**:
+
+```console
+$ time-tracker [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `log`
+* `track`: Run depending on mode
+
+## `time-tracker log`
+
+**Usage**:
+
+```console
+$ time-tracker log [OPTIONS]
+```
+
+**Options**:
+
+* `-l, --last`: Open last log file  [default: False]
+* `-o, --output`: Return log file content to terminal  [default: False]
+* `--help`: Show this message and exit.
+
+## `time-tracker track`
+
+Run depending on mode
+
+**Usage**:
+
+```console
+$ time-tracker track [OPTIONS]
+```
+
+**Options**:
+
+* `-w, --workDuration INTEGER`: Set work time (minutes)  [default: 25]
+* `-b, --breakDuration INTEGER`: Set break time (minutes)  [default: 5]
+* `-B, --bigBreakDuration INTEGER`: Set break time (minutes)  [default: 30]
+* `-m, --mode [manual|pomodoro]`: Set pomodoro mode. This will change the flow of work to 4 work sessions with small breaks and finish with a big Break  [default: pomodoro]
+* `-p, --prompt`: Set if it should prompt to go for next session  [default: True]
+* `--help`: Show this message and exit.
+
