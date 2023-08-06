@@ -1,0 +1,10 @@
+faissdb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faissdb/config.py,sha256=mgMq9KvARIibylX03pr4HEKUizQVhjcanICLI0yH6n4,215
+faissdb/faissdb.py,sha256=ioqKfSDF0lqAXfNDoxCSiJ4f5mwK9Au-xK2DYI7nIOU,2826
+faissdb/faisskv.py,sha256=3vZiSvbLDGWWflfrnWXzJnN_HMioGU7h8Ktr04rCdk0,2887
+faissdb/indexer.py,sha256=P84BAMtNyvcS6ytgpJXcDrSkoN1SM3xgn-4XOnkMaDU,317
+faissdb/utility.py,sha256=kWDWV1sdSCrHaDUzMKymP76cRGrSGZ1qSneS8XYxGqs,684
+faissdb-1.0.0.dist-info/METADATA,sha256=zTCSBSE4FR9Yel97Rt8aJNzFAd1iVDrN0QP7qEMCN74,1163
+faissdb-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+faissdb-1.0.0.dist-info/top_level.txt,sha256=LlTG18yVD0mjIXGzMxom77EC0bUGBpFMoRiezmJKNY8,8
+faissdb-1.0.0.dist-info/RECORD,,
