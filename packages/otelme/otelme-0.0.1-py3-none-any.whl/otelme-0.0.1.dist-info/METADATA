@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: otelme
+Version: 0.0.1
+Summary: otelme pronounced "Oh, tell me"
+Keywords: instrumentation,opentelemetry,otel,tracing,observability
+Author-email: Ryan Scott Brown <otelme@ryansb.com>
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: opentelemetry-distro[otlp]
+Requires-Dist: opentelemetry-instrumentation
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-html ; extra == "test"
+Provides-Extra: test
