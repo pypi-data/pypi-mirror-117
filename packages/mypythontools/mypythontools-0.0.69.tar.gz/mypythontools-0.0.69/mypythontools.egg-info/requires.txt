@@ -1,0 +1,13 @@
+mylogging>=3.0.4
+sphinx
+pyinstaller
+pytest
+setuptools
+wheel
+twine
+EelForkExcludeFiles
+GitPython
+pandas
+pytest
+pytest-cov
+phmdoctest
