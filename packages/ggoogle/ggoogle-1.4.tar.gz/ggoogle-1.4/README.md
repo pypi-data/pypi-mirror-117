@@ -1,0 +1,18 @@
+# python-ggoogle
+
+
+simple cli utility to search from terminal
+***
+works only with firefox yet
+***
+installation
+- run ```pip install ggoogle```
+- add ```~/.local/bin``` to $PATH
+or
+- run ```sudo ln -s /home/$USER/.local/bin /bin```
+***
+usage
+- ```g some query``` will open new firefox tab with 'some query' in google search
+- ```g -p some query``` will do same but in private tab
+- ```g``` will open google search page
+***
