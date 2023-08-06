@@ -1,0 +1,3 @@
+[console_scripts]
+div = div.cli:main
+

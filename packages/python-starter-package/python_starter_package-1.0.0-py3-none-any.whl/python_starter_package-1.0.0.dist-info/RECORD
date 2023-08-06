@@ -1,0 +1,10 @@
+div/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+div/cli.py,sha256=ZLbYz0t2GgdyMI6_I9zSNelZmw45OEjRD_AQzos5_sw,947
+div/lib.py,sha256=3Z9PgFQqTQEiCY_je1ihIL_XNOnLorrUIIAapP1Zb40,438
+div/py.typed,sha256=UaCuPFa3H8UAakbt-5G8SPacldTOGvJv18pPjUJ5gDY,93
+python_starter_package-1.0.0.dist-info/LICENSE.txt,sha256=Xud1CWGFh15TF3dRgdtT-m9oEfD9LdxxdSY1rMNS9Mg,1076
+python_starter_package-1.0.0.dist-info/METADATA,sha256=d-oz0oCHB0GvyfBslFQYCO7X-KsmkMFkZ2ihh8tw5yc,8706
+python_starter_package-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+python_starter_package-1.0.0.dist-info/entry_points.txt,sha256=Xm9dorHU2yskJsMhwF5h12ZwSkO1Bg-6Y0Nm1oPl5yo,38
+python_starter_package-1.0.0.dist-info/top_level.txt,sha256=5Wx1iuy0PhN8tUmbMd02X32fYh0FSzzs69N8iVx9ajE,4
+python_starter_package-1.0.0.dist-info/RECORD,,
