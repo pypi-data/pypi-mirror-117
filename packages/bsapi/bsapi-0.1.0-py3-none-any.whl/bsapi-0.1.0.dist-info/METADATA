@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bsapi
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Requires-Dist: urllib3
+Requires-Dist: importlib ; python_version == "2.6"
+
+UNKNOWN
+
