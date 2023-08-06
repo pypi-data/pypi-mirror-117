@@ -1,0 +1,8 @@
+Pillow<9,>=8
+PyGObject<4,>=3
+boto3<2,>=1
+numpy<2,>=1
+opencv-contrib-python<5,>=4
+pycairo<2,>=1
+rsa<4,>=3
+ruamel.yaml<1,>=0
