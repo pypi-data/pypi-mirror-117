@@ -1,0 +1,7 @@
+README.md
+setup.py
+trading212api/__init__.py
+trading212api.egg-info/PKG-INFO
+trading212api.egg-info/SOURCES.txt
+trading212api.egg-info/dependency_links.txt
+trading212api.egg-info/top_level.txt
