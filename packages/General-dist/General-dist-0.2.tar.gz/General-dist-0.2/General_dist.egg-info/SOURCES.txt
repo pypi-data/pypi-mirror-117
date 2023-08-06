@@ -1,0 +1,10 @@
+setup.py
+General_dist.egg-info/PKG-INFO
+General_dist.egg-info/SOURCES.txt
+General_dist.egg-info/dependency_links.txt
+General_dist.egg-info/not-zip-safe
+General_dist.egg-info/top_level.txt
+Generaldist/Binomialdistribution.py
+Generaldist/Gaussiandistribution.py
+Generaldist/Generaldistribution.py
+Generaldist/__init__.py
