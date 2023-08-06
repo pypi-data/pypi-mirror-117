@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: aioaccount
+Version: 0.0.2
+Summary: Utility for user account creation.
+Home-page: https://aioaccount.readthedocs.io/en/latest/
+Author: WardPearce
+Author-email: wardpearce@protonmail.com
+License: AGPL-3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bcrypt
+Requires-Dist: password-strength
+Requires-Dist: databases[postgresql]
+Requires-Dist: databases[mysql]
+Requires-Dist: databases[sqlite]
+Requires-Dist: sqlalchemy (==1.3.20)
+Requires-Dist: motor
+Requires-Dist: email-validator
+Requires-Dist: aiosmtplib
+Requires-Dist: async-timeout
+Requires-Dist: aiojobs
+Requires-Dist: jinja2
+Requires-Dist: asynctest
+Requires-Dist: cryptography
+Requires-Dist: sphinx-material
+Requires-Dist: sphinxcontrib-trio
+
+# aioaccount
+Utility for user account creation, modification & email confirmation.
+
+## Installation
+`pip3 install aioaccount`
+
+## Docs
+[aioaccount.readthedocs.io](https://aioaccount.readthedocs.io/en/latest/)
+
+## Features
+- Security.
+- Easy to use.
+- Removes common boilerplate code.
+- SMTP support.
+- Email template support with jinja2.
+- Mongodb, postgresql, mysql & sqlite support.
+- Full unit tests.
+- Full documentation.
+- Uses aiojobs to spawn SMTP background jobs.
+
+## Security
+- All passwords are hashed using bcrypt.
+- Password policies.
+- Password reset code expiration.
+- Email validation.
+
+## Thanks to
+- bcrypt
+- password-strength
+- databases
+- sqlalchemy
+- motor
+- email-validator
+- aiosmtplib
+- aiojobs
+- jinja2
+- asynctest
+- sphinx
+- sphinx material
+- Everyone who helped to make these packages
+
+
