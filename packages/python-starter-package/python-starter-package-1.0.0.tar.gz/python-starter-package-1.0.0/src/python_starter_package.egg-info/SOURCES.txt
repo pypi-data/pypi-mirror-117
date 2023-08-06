@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/div/__init__.py
+src/div/cli.py
+src/div/lib.py
+src/div/py.typed
+src/python_starter_package.egg-info/PKG-INFO
+src/python_starter_package.egg-info/SOURCES.txt
+src/python_starter_package.egg-info/dependency_links.txt
+src/python_starter_package.egg-info/entry_points.txt
+src/python_starter_package.egg-info/not-zip-safe
+src/python_starter_package.egg-info/requires.txt
+src/python_starter_package.egg-info/top_level.txt
