@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: eazyprofiler
+Version: 0.1.2
+Summary: EazyProfiler is forked version of Lazyprofiler which is a simple utility to collect CPU, GPU, RAM and GPU Memorystats while the program is running.
+Home-page: https://github.com/damianospark/eazyprofiler
+Author: Damianos Park
+Author-email: damianospark@gmail.com
+License: MIT
+Keywords: eazyprofiler
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
