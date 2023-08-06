@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: qualitylib
+Version: 0.0.1
+Summary: methods and methods for assessment of quality
+Home-page: https://github.com/raamana/qualitylib
+Author: Pradeep Reddy Raamana
+Author-email: raamana@gmail.com
+License: Apache Software License 2.0
+Keywords: qualitylib
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+
+==========
+qualitylib
+==========
+
+methods and metrics for the assessment of quality in medical imaging (initial focus on MRI and neuroimaging)
+
+
+Features
+--------
+
+ * image quality metrics
+ * predictive models
+ * quality assessment methods
+ * anything else relevant
+
+
+
+=======
+History
+=======
+
+0.0.1 (2021-08-25)
+------------------
+
+* First release on PyPI.
+
+
