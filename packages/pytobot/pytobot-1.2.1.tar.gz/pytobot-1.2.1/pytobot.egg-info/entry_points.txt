@@ -1,0 +1,3 @@
+[console_scripts]
+pytobot = pytobot.pytobot:main
+
