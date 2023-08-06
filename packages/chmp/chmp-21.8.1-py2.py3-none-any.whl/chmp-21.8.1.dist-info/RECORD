@@ -1,0 +1,16 @@
+chmp/cb.py,sha256=UgwD2t69A2iI2xzepHIF0u6jLG0izvK7UXC_BLK61QA,6895
+chmp/ds.py,sha256=fwYTtjcoOKRy2ZBpyuGhBc3dNgvfY_qWJAkuD4SJVSc,42513
+chmp/parser.py,sha256=slQtcgQi12uPmXthz_kCrbugweb_UqTGDefPcmz96tw,10894
+chmp/rl/__init__.py,sha256=8mRxTwWWCTlPqR0hN_cV1d4Xvo_eWorbXVnWcL1D_VA,7974
+chmp/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chmp/tools/__main__.py,sha256=KRElc4jiOXMxj6MXxLOsKoWfGjocPu391rTind-2CZM,2649
+chmp/tools/mddocs.py,sha256=gSEpso42e_-XBBC4Fi0SaM1tgoOr30mGnVrSkofmRSo,20696
+chmp/tools/papers.py,sha256=zw3s4s4L_LK1m5Gqc1VE-RhMI00OEN_VfDXDAMoNccg,3216
+chmp/tools/profiler.py,sha256=b7YPIT_QzWT_OxVzU_Qe1ElSrQeTZBWJofY2yDoigt0,3881
+chmp/torch_utils/__init__.py,sha256=LuL3CT1_-WuBQSRWQRKKq4cI_5WRaOHrxFEBBWVC9e8,16321
+chmp/torch_utils/_net.py,sha256=m8mU7szgoRJI9dLhbritc9bOJgUn81wD4yN0h5lPy3E,9352
+chmp/torch_utils/engine.py,sha256=ZmA-XESsyLUjWIouDIBDaAW5VdUbQVRxLoma4evwcDw,439
+chmp-21.8.1.dist-info/METADATA,sha256=9iHsDGcKALwyw97zuaGhRNBt-c51NH4-jHRtnGJMzJA,771
+chmp-21.8.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+chmp-21.8.1.dist-info/top_level.txt,sha256=hk5xNxGASXONZ82dDV8bAxwraZLIqi8Ub0HugAdi_Zo,5
+chmp-21.8.1.dist-info/RECORD,,
