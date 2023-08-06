@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nnrunner
+Version: 0.0.6
+Summary: nn runner
+Home-page: UNKNOWN
+Author: Example Author
+Author-email: dark.qvark@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tornado (==6.1)
+
+1) python3 -m build
+2) twine upload dist/*  --verbose
+
