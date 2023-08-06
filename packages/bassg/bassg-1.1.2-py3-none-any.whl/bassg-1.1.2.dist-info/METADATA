@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bassg
+Version: 1.1.2
+Summary: bassg - Basic Agile Static Site Generator
+Home-page: https://github.com/HunterLawson/bassg
+Author: Hunter Lawson
+Author-email: hawson7@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: click
+Requires-Dist: markdown
+Requires-Dist: Jinja2
+
+# BASSG
+bassg - Basic Agile Static Site Generator
+
+
