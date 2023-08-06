@@ -1,0 +1,6 @@
+sqlalchemy>=1.4
+
+[json_fill]
+dp_json_util>=2.0
+
+[test]

@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dp-sqlalchemy-wrapper
+Version: 2.3.0
+Summary: A slim wrapper around sqlalchemy to simplify database setup and common operations
+Home-page: https://github.com/dataPuzzler/dp_sqlalchemy_wrapper
+Author: Lukas Seppelfricke
+Author-email: data.puzzler@gmail.com
+License: UNKNOWN
+Description: .. image:: https://github.com/dataPuzzler/dp_sqlalchemy_wrapper/actions/workflows/test.yml/badge.svg?branch=master&event=workflow_dispatch
+        	:target: https://github.com/dataPuzzler/dp_sqlalchemy_wrapper/actions/workflows/test.yml/badge.svg?branch=master&event=workflow_dispatch
+        	:alt: Unit-tests Badge
+        
+        dp_sqlalchemy_wrapper
+        =====================
+        
+        *dp_sqlalchemy_wrapper* is a slim wrapper around sqlalchemy to accelerate database setup and to ease common database operations.
+        
+        Installing
+        ----------
+        
+        Install and update using `pip`:
+        
+        .. code-block:: text
+        
+            # Default Installation 
+            pip install dp_sqlalchemy_wrapper
+            
+            # With facility to populate tables from json data
+            pip install dp_sqlalchemy_wrapper[json_fill] 
+        
+Keywords: sqlalchemy,wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/x-rst
+Provides-Extra: json_fill
+Provides-Extra: test
