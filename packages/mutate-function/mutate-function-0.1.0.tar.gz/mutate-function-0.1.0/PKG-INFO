@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mutate-function
+Version: 0.1.0
+Summary: 
+Author: mark-todd
+Author-email: markpeter.todd@hotmail.co.uk
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
