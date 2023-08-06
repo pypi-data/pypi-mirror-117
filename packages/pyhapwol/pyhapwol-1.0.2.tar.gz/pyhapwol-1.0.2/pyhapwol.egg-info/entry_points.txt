@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pyhapwol=pyhapwol.__main__:main
+    
