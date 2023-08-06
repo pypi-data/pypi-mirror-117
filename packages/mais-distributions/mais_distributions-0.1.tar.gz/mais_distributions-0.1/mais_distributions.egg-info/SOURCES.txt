@@ -1,0 +1,10 @@
+setup.py
+mais_distributions/Binomialdistribution.py
+mais_distributions/Gaussiandistribution.py
+mais_distributions/Generaldistribution.py
+mais_distributions/__init__.py
+mais_distributions.egg-info/PKG-INFO
+mais_distributions.egg-info/SOURCES.txt
+mais_distributions.egg-info/dependency_links.txt
+mais_distributions.egg-info/not-zip-safe
+mais_distributions.egg-info/top_level.txt
