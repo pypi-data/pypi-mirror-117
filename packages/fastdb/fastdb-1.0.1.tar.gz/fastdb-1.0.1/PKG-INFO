@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fastdb
+Version: 1.0.1
+Summary: Faster database operations using Python
+Author-email: Sarmad Gulzar <sarmadgulzar@hotmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/sarmadgulzar/fastdb
+
+# fastdb
+
+## Firestore Example:
+
+> NOTE: Make sure to export `GOOGLE_APPLICATION_CREDENTIALS` in environment variables which points to the service account file.
+
+```py
+from fastdb.firestore import Firestore
+
+fs = Firestore()
+
+user = fs.client.collection("users").document("4GH5IOyQVYCMMrdwRm0D").get()
+
+```
+
