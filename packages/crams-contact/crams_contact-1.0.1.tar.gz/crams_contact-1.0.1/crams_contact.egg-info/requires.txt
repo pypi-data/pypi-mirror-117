@@ -1,0 +1,2 @@
+merc-common>=1.0.0
+crams_log>=1.0.0
