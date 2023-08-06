@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+zentx/__init__.py
+zentx.egg-info/PKG-INFO
+zentx.egg-info/SOURCES.txt
+zentx.egg-info/dependency_links.txt
+zentx.egg-info/top_level.txt
