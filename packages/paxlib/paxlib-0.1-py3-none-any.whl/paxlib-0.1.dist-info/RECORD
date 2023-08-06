@@ -1,0 +1,11 @@
+pax/__init__.py,sha256=WV_s0ed5NR4I6zGRwIw_LTRYFi11CV8GPzwUjVN_8Jo,158
+pax/autograd.py,sha256=AMV73_y59SdUMbRvQ_o4Wr-Yl_PU8EEvX9dM41rhRpg,3728
+pax/modules.py,sha256=niF_PSbOubiwJF4jEJ4sa84-88fwHCw_hFQs2llvlK8,818
+pax/optim.py,sha256=3J7YkZAGtCIHvfCbshYvwVs3W2Ti3M9sXaF5zgRrVYM,2803
+pax/tree_util.py,sha256=JYx1YnrO0Y-cCYY3XFjz1DUuW72xR0rDwBySLrd1M7c,156
+pax/utils.py,sha256=ODQEKQNtAFRuLAUcZxtinxPIitL5mupIhqOsMe4d-js,414
+paxlib-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+paxlib-0.1.dist-info/METADATA,sha256=E5C4x7kKCld3nlSWy7tkR1Sd8wU5JAiY09LHfQps-W8,265
+paxlib-0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+paxlib-0.1.dist-info/top_level.txt,sha256=0KX7Lj0yPZNABpdghPQOfSHdtyFW-cIQgwlqAtj_evk,4
+paxlib-0.1.dist-info/RECORD,,
