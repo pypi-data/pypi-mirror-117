@@ -1,0 +1,83 @@
+[package]
+name = "peace-performance-python"
+version = "1.1.2"
+authors = ["Pure-Peace <940857703@qq.com>"]
+edition = "2018"
+
+[lib]
+name = "peace_performance_python"
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+# You can choose whether to be asynchronous or not
+# And other features
+default = ["osu", "taiko", "fruits", "mania", "async_tokio", "all_included"]
+
+score_v2_buff = ["peace-performance/score_v2_buff"]
+relax_nerf = ["peace-performance/relax_nerf"]
+ppysb_edition = ["peace-performance/ppysb_edition"]
+
+# game modes
+osu = ["peace-performance/osu"]
+taiko = ["peace-performance/taiko"]
+fruits = ["peace-performance/fruits"]
+mania = ["peace-performance/mania"]
+
+# osu!standard version
+all_included = ["peace-performance/all_included"]
+no_leniency = ["peace-performance/no_leniency"]
+no_sliders_no_leniency = ["peace-performance/no_sliders_no_leniency"]
+
+
+# Features
+sync = []
+async_tokio = [
+    "tokio",
+    "peace-performance/async_tokio",
+    "pyo3-asyncio/tokio-runtime",
+]
+async_std = [
+    "async-std",
+    "peace-performance/async_std",
+    "pyo3-asyncio/async-std-runtime",
+]
+
+# Irrelevant Features
+rust_logger = ["log", "timed", "pretty_env_logger"]
+
+
+[dependencies]
+pyo3 = { version = "0.14", features = ["extension-module"] }
+paste = "1.0"
+
+# Rust logger optional
+log = { version = "0.4", optional = true }
+timed = { version = "0.2.1", optional = true }
+pretty_env_logger = { version = "0.4.0", optional = true }
+
+# Async optional
+pyo3-asyncio = { version = "0.14", optional = true }
+tokio = { version = "1.9", optional = true }
+async-std = { version = "1.9", optional = true }
+
+
+# Peace-performance
+peace-performance = { version = "0.4.0", default-features = false }
+
+
+# Don't optimize the release build (built by maturin / tox) for this module, as
+# it's a test module.
+# [profile.release]
+# debug = true
+# opt-level = 0
+
+
+# link-time-optimization
+# Enabling makes the compiled program size smaller and higher performance, 
+# but it will extend compilation time.
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
