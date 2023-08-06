@@ -1,0 +1,84 @@
+from typing import Any, Dict, List, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="TransitivegroupsPage")
+
+
+try:
+    from ..models import base_page
+except ImportError:
+    import sys
+
+    base_page = sys.modules[__package__ + "base_page"]
+
+
+@attr.s(auto_attribs=True)
+class TransitivegroupsPage(base_page.BasePage):
+    """ """
+
+    transitivegroups: "Union[Unset, List[user_group_m.UserGroup]]" = UNSET
+    additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
+
+    def to_dict(self) -> Dict[str, Any]:
+        transitivegroups: Union[Unset, List[Dict[str, Any]]] = UNSET
+        if not isinstance(self.transitivegroups, Unset):
+            transitivegroups = []
+            for transitivegroups_item_data in self.transitivegroups:
+                transitivegroups_item = transitivegroups_item_data.to_dict()
+
+                transitivegroups.append(transitivegroups_item)
+
+        field_dict: Dict[str, Any] = {}
+        _BasePage_dict = super().to_dict()
+        field_dict.update(_BasePage_dict)
+        field_dict.update(self.additional_properties)
+        field_dict.update({})
+        if transitivegroups is not UNSET:
+            field_dict["transitivegroups"] = transitivegroups
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import user_group as user_group_m
+        except ImportError:
+            import sys
+
+            user_group_m = sys.modules[__package__ + "user_group"]
+
+        d = src_dict.copy()
+
+        transitivegroups = []
+        _transitivegroups = d.pop("transitivegroups", UNSET)
+        for transitivegroups_item_data in _transitivegroups or []:
+            transitivegroups_item = user_group_m.UserGroup.from_dict(transitivegroups_item_data)
+
+            transitivegroups.append(transitivegroups_item)
+
+        transitivegroups_page = cls(
+            transitivegroups=transitivegroups,
+        )
+
+        transitivegroups_page.additional_properties = d
+        return transitivegroups_page
+
+    @property
+    def additional_keys(self) -> List[str]:
+        return list(self.additional_properties.keys())
+
+    def __getitem__(self, key: str) -> Any:
+        return self.additional_properties[key]
+
+    def __setitem__(self, key: str, value: Any) -> None:
+        self.additional_properties[key] = value
+
+    def __delitem__(self, key: str) -> None:
+        del self.additional_properties[key]
+
+    def __contains__(self, key: str) -> bool:
+        return key in self.additional_properties
