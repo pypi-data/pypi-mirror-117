@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: click-plus
+Version: 0.0.1b31
+Summary: collection of click extensions
+Home-page: https://github.com/cav71/click-plus
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# click-plus
+
+### Introduction
+This is a work in progress to provide a collection of click extensions.
+
+#### click.plus.extension
+Support for reusable  groups of click arguments/options across scripts [here..](README.EXTENSION.MD)
+
+
