@@ -1,0 +1,3 @@
+[console_scripts]
+neureca-train = neureca.cmd:neureca_train_command
+

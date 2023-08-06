@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: neureca
+Version: 0.0.1
+Summary: A framework for building conversational recommender systems
+Home-page: https://github.com/hojinYang/neureca
+Author: Hojin Yang
+Author-email: hojin.yang7@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: click (==7.1.2)
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: joblib (==1.0.1)
+Requires-Dist: numpy (==1.20.2)
+Requires-Dist: pandas (==1.2.3)
+Requires-Dist: pytorch-crf (==0.7.2)
+Requires-Dist: pytorch-lightning (==1.2.7)
+Requires-Dist: scikit-learn (==0.24.1)
+Requires-Dist: scipy (==1.6.2)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: spacy (==3.0.6)
+Requires-Dist: summarizers (==1.0.4)
+Requires-Dist: tokenizers (==0.10.2)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: torch (==1.8.1)
+Requires-Dist: TorchCRF (==1.1.0)
+Requires-Dist: torchmetrics (==0.3.1)
+Requires-Dist: tqdm (==4.60.0)
+Requires-Dist: transformers (==4.5.0)
+Requires-Dist: typer (==0.3.2)
+
+# <center>Neureca💡 for Conversational Recommender Systems</center>
+
+This repository contains source code for Neureca💡 project. Neureca💡 is a framework for building conversational recommender (ConvRec) systems. It is also an open-source project that helps any ML researchers develop ConvRec system and contribute to key components easily. Neureca💡 is still under development stage.
+
+## installation
+
+```
+pip install neureca
+```
+
+## usage
+1. train NLU model(i.e. intent recognizer, item attribute recognizer) and Recommender model using your own dataset
+
+```
+neureca-train intent  
+neureca-train attribute 
+nuereca-train recommender
+```
+2. create main.py under your project directory
+
+
+
+```python
+from pathlib import Path
+from neureca import Neureca, NLU, Recommender, Explainer, Manager
+from stages import greeting_stage
+
+# load the latest trained version of each model if version is not speicfied in arguament
+nlu = NLU()  
+recommender = Recommender()
+explainer = Explainer()
+dialogue_manager = Manager(initial_stage=greeting_stage)
+
+#create nureca instance
+neureca = Neureca(
+    nlu=nlu,
+    recommender=recommender,
+    explainer=explainer,
+    dialogue_manager=dialogue_manager,
+    path=Path.cwd(),
+)
+
+if __name__ == '__main__':
+    neureca.run(env="cli")  # env: cli or web
+```
+3. run neureca
+```
+python main.py
+```
+
+![chat](./example.png)
+
+
+For more information, please visit [docs](./docs).
+
