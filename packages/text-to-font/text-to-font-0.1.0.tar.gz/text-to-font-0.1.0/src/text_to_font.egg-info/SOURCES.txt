@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/text_to_font/__init__.py
+src/text_to_font/transformations.py
+src/text_to_font.egg-info/PKG-INFO
+src/text_to_font.egg-info/SOURCES.txt
+src/text_to_font.egg-info/dependency_links.txt
+src/text_to_font.egg-info/requires.txt
+src/text_to_font.egg-info/top_level.txt

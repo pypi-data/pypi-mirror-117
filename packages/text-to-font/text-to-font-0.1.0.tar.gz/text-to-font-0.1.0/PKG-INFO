@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: text-to-font
+Version: 0.1.0
+Summary: Turns text into ascii art
+Home-page: https://github.com/pypa/text-to-font
+Author: Emil Kovacev
+Author-email: emilkovacev@gmail.com
+License: 'MIT'
+Project-URL: Bug Tracker, https://github.com/pypa/text-to-font/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# texttofont
+Take a .ttf file and generate ascii art using the font for text. Use any symbols for generating the font + fun mode where each character is built up of itself in ascii art
+
+## Instructions
+Run `pip install text-to-font`
+
+The following code prints the ascii art for `"Hello!"` in string format
+
+```python
+from text_to_font.transformations import word_to_ascii
+
+print(word_to_ascii(
+    phrase='Hello!', 
+    font_size=12, 
+    kerning=1,
+    font_path='~/fonts/somefont.ttf'  # defaults to built-in 'slkscr.ttf' (SilkScreen) font
+))
+```
+
+
