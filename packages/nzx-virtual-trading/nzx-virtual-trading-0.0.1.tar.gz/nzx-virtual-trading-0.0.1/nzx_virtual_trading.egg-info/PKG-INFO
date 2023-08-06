@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nzx-virtual-trading
+Version: 0.0.1
+Summary: Wrapper To Control NZX Virtual Trader
+Home-page: UNKNOWN
+Author: Harry Ludemann
+Author-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: nzx virtual trading,harryludemann,nzx virtual,virtual trading,nzx
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
