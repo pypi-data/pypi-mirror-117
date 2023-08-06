@@ -1,0 +1,2 @@
+include src/freeplane_tools/data/*
+global-exclude *.pyc
