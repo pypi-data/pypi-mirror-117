@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: newsboat-subscribe
+Version: 1.0.2
+Summary: Subscribe to youtube videos
+Home-page: https://github.com/jnbli/newsboat-subscribe
+Author: Jonathan Li
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/jnbli/newsboat-subscribe/issues
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (>=42)
+Requires-Dist: wheel
+Requires-Dist: beautifulsoup4
+
+# Newsboat Subscribe
+
+## Installation
+```
+pip install newsboat-subscribe
+```
+
+## Usage
+```
+subscribe <youtube channel url> [<youtube channel url>...]
+```
+### Example: Subscribing to Github's youtube channel
+```
+subscribe https://www.youtube.com/c/GitHub/videos
+```
+
+
