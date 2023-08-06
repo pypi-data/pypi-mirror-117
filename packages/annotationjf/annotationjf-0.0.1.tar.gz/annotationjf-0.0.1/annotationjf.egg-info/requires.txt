@@ -1,0 +1,4 @@
+pandas
+pybiomart
+pkg_resources
+setuptools
