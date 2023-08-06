@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: faker-wifi-essid
+Version: 0.3.1
+Summary: Faker provider for Wi-Fi ESSIDs.
+Home-page: https://github.com/SkypLabs/faker-wifi-essid
+Author: Paul-Emmanuel Raoul
+Author-email: skyper@skyplabs.net
+License: MIT
+Download-URL: https://github.com/SkypLabs/faker-wifi-essid/archive/v0.3.1.zip
+Keywords: faker faker-library faker-provider faker-generator wifi essid
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5, <4
+Requires-Dist: Faker (<9.0,>=4.1)
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=3.2) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=0.5.0) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: pylint ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+
+=================
+Faker Wi-Fi ESSID
+=================
+
+|PyPI Package| |Build Status|
+
+`Faker <https://github.com/joke2k/faker/>`__ provider for Wi-Fi ESSIDs.
+
+.. image:: docs/_static/img/faker_wifi_essid_demo.gif
+   :target: https://asciinema.org/a/191287
+   :alt: Faker Wi-Fi ESSID - Demo
+
+Usage
+=====
+
+.. code-block:: python
+
+   # Import Faker.
+   from faker import Faker
+   # Import the WifiESSID class from Faker Wi-Fi ESSID.
+   from faker_wifi_essid import WifiESSID
+
+   # Create an instance of Faker.
+   fake = Faker()
+   # Add Faker Wi-Fi ESSID to the Faker providers.
+   fake.add_provider(WifiESSID)
+
+   # Call 'wifi_essid()' to get a random fake Wi-Fi ESSID.
+   fake.wifi_essid()
+
+License
+=======
+
+`MIT <https://opensource.org/licenses/MIT>`__
+
+.. |Build Status| image:: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test.yml/badge.svg?branch=develop
+   :target: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test.yml
+   :alt: Build Status
+.. |PyPI Package| image:: https://badge.fury.io/py/faker-wifi-essid.svg
+   :target: https://badge.fury.io/py/faker-wifi-essid
+   :alt: PyPI Package
+
+
