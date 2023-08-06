@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+itsybitsy/__init__.py
+itsybitsy/url_normalize.py
+itsybitsy/util.py
+itsybitsy/spider/__init__.py
+itsybitsy/spider/asynchronous.py
+itsybitsy/spider/multithreaded.py
+itsybitsy_test.egg-info/PKG-INFO
+itsybitsy_test.egg-info/SOURCES.txt
+itsybitsy_test.egg-info/dependency_links.txt
+itsybitsy_test.egg-info/requires.txt
+itsybitsy_test.egg-info/top_level.txt
+test/test_util.py
