@@ -1,0 +1,15 @@
+LICENSE
+pyproject.toml
+setup.cfg
+run_elmer/__init__.py
+run_elmer/export.py
+run_elmer/run.py
+run_elmer.egg-info/PKG-INFO
+run_elmer.egg-info/SOURCES.txt
+run_elmer.egg-info/dependency_links.txt
+run_elmer.egg-info/requires.txt
+run_elmer.egg-info/top_level.txt
+run_elmer/runners/__init__.py
+run_elmer/runners/docker.py
+tests/__init__.py
+tests/test_mesh.py
