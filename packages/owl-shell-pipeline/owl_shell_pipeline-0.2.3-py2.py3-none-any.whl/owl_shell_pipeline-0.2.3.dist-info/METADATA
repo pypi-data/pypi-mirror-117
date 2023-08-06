@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: owl-shell-pipeline
+Version: 0.2.3
+Summary: Owl Shell Pipeline
+Home-page: https://eddienko.github.com/owl-shell-pipeline
+Author: Eduardo Gonzalez Solares
+Author-email: e.gonzalezsolares@gmail.com
+License: GNU General Public License v3
+Keywords: imaxt,owl
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: dask
+Requires-Dist: distributed
+Requires-Dist: owl-pipeline-develop
+
+Owl Shell Pipeline
+==================
+
+This is an `Owl Pipeline <https://eddienko.github.io/owl-pipeline>`__ that runs
+a script in the cluster.
+
+
+Install
+-------
+
+.. code-block:: bash
+
+  curl -O https://raw.githubusercontent.com/eddienko/owl-shell-pipeline/main/shell_pipeline/signature.yaml
+  owl admin pdef add signature.yaml
+
+
+Pipeline Definition
+-------------------
+
+An example pipeline definition file is:
+
+  .. code-block:: yaml
+
+    # Version of the configuration file
+    version: 1
+
+    # Name of the pipeline
+    name: shell
+
+    command: |
+      echo "Hello"
+      sleep 300
+
+    # output directory (optional)
+    # - sets the directory where the script is run
+    # - stores pipeline logs
+    # output: /storage/user/output
+
+    resources:
+      cores: 1
+      workers: 1
+      memory: 1
+
+
