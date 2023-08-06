@@ -1,0 +1,13 @@
+# Dev/Deployment
+sphinx
+sphinx_rtd_theme
+nose
+coverage
+pypi-publisher
+dill
+gitdb2==3.0.1
+psutil==5.4.2
+GitPython
+paho-mqtt
+watchdog==2.1.3
+PyQt5==5.15.4
