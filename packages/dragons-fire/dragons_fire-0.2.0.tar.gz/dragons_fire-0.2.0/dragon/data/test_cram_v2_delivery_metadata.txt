@@ -1,0 +1,3 @@
+project	collaborator_sample_id	version	data_type
+G94794	CHMI_CHMI3_WGS2		WGS
+G96830	NA12878		WGS
