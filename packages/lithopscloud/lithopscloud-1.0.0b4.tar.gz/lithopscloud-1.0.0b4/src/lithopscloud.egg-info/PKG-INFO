@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lithopscloud
+Version: 1.0.0b4
+Summary: Interactive tool for lithops configuration lithops
+Home-page: https://github.com/lithops-cloud/lithopscloud
+Author: kpavel
+Author-email: kpavel@il.ibm.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lithopscloud
+
