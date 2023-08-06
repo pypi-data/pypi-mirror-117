@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: newclear
+Version: 0.1.0
+Summary: New style CLI builder
+Author: Adrien Pensart
+Author-email: crunchengine@gmail.com
+Requires-Python: >=3.8,<3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click-skeleton (>=0.15,<0.16)
+Requires-Dist: defopt (>=6.0.1,<7.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: makefun (>=1.9.3,<2.0.0)
+Requires-Dist: ordered-set (>=4.0.2,<5.0.0)
+Requires-Dist: returns (>=0.16.0,<0.17.0)
