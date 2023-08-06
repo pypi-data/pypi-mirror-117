@@ -1,0 +1,5 @@
+histogram/__init__.py,sha256=uODomfpwCSepGhMlhEqbbJcar3Ou4AiW-4ecMFgMZYg,80
+histogram/_pandas.py,sha256=tPOszCbqpxPgGrexwQBref7DdzBX1HC0cn7LOgQId-w,908
+histogram_py-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+histogram_py-0.1.0.dist-info/METADATA,sha256=TDiU4FXVGqc5XNjSA_Rep7jKq7TlBwEpnsNbiOlCXNY,808
+histogram_py-0.1.0.dist-info/RECORD,,
