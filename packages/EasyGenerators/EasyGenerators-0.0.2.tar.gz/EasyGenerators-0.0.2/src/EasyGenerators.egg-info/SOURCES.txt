@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/EasyGenerators/__init__.py
+src/EasyGenerators/generators.py
+src/EasyGenerators.egg-info/PKG-INFO
+src/EasyGenerators.egg-info/SOURCES.txt
+src/EasyGenerators.egg-info/dependency_links.txt
+src/EasyGenerators.egg-info/top_level.txt
