@@ -1,0 +1,6 @@
+pytest_runtime_xfail.py,sha256=caByvzj-gyWW8Kmoj8SofJjx1yqAtTK1YSh0CaFL2OY,327
+pytest_runtime_xfail-1.0.3.dist-info/entry_points.txt,sha256=IPI1hUinOzMVDOEeMbobnJzuEjxLv6cA51ShUTv6wjk,47
+pytest_runtime_xfail-1.0.3.dist-info/LICENSE,sha256=rm7--VXFg8vxm2Mc7gMZsB7SKL7H5De4F3XJKaA4ShU,1068
+pytest_runtime_xfail-1.0.3.dist-info/WHEEL,sha256=VUbF57hf4yRZWWrOOjp25Fr4BQX9EtnVSbnP2vNxHDM,81
+pytest_runtime_xfail-1.0.3.dist-info/METADATA,sha256=lI0bDkRi_Yb9CdkVc8aTKHajVp8UUTMEMS3fwpVwfXE,5381
+pytest_runtime_xfail-1.0.3.dist-info/RECORD,,
