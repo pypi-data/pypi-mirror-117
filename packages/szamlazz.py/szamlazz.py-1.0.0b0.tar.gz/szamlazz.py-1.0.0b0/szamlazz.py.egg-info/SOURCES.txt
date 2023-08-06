@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+szamlazz/__init__.py
+szamlazz/client.py
+szamlazz/models.py
+szamlazz/utils.py
+szamlazz/version.py
+szamlazz.py.egg-info/PKG-INFO
+szamlazz.py.egg-info/SOURCES.txt
+szamlazz.py.egg-info/dependency_links.txt
+szamlazz.py.egg-info/requires.txt
+szamlazz.py.egg-info/top_level.txt
