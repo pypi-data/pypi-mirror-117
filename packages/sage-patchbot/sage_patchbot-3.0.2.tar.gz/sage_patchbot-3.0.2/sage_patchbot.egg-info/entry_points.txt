@@ -1,0 +1,3 @@
+[console_scripts]
+patchbot = sage_patchbot.patchbot:main
+
