@@ -1,0 +1,11 @@
+giving/__init__.py,sha256=N9erJ9EXwnsvE2BSWFN2eUrumlPnTwIjYWYiadxVC90,85
+giving/core.py,sha256=rE_TyrzXbtjurtMhgMfl7t_thBf6wwguj8mUbKfaivk,6752
+giving/executors.py,sha256=I26SbvpRLGl_0k3oGodrT_z_gUzQyDskULMCzu5eleI,3666
+giving/obs.py,sha256=8Hd4TobGa84gWthG2dTIgNSJ3lRY4P6WEv4dBeLKAjs,9883
+giving/operators.py,sha256=9VZ8LXRLTj2V-S-9OML5YjBUyzeRgRtfElDMgJs7OdY,16617
+giving/utils.py,sha256=l-B9W7tKWTMV_cAir44LEPGDDQJtXFZm7PCHEkNpQGM,416
+giving/version.py,sha256=zWVHf3DqIS6sYe780DU38lmTH_EXQUcBK32nOsBO7ao,18
+giving-0.0.2.dist-info/LICENSE,sha256=4tpAFtB0HjDrvf_AKPSPfay1-sTWxlgKWkP3HAmVhRU,1061
+giving-0.0.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+giving-0.0.2.dist-info/METADATA,sha256=vFn35R5s_5ufnz-MbUI5SUbeTEwpBzsoVN9eWBEoIUI,499
+giving-0.0.2.dist-info/RECORD,,
