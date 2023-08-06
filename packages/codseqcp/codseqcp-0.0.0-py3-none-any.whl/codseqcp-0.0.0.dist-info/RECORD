@@ -1,0 +1,8 @@
+codseqcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codseqcp/codseqcp.py,sha256=kjmqxo40vQ1os9DTsALNNQpe7EUcnPrjjhHDwRlTCn0,14051
+codseqcp/run_augustus.py,sha256=nDsHQFbHFKkmoHE6RiThmQvO4qaavXHkkeFtZTTaLTE,6308
+codseqcp/run_spades.py,sha256=4qib_KPjJA1Ncm3xLGh30ByHW8WBf1Ris2QLg2B6FO8,4478
+codseqcp-0.0.0.dist-info/METADATA,sha256=uhK8zeN2fAi5ndL4hXbbOSN7dcwBK3qOXhPG6UlMQpQ,292
+codseqcp-0.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+codseqcp-0.0.0.dist-info/top_level.txt,sha256=TY1DLAnlcfbV70K5RIvKsQUMYtlr3sz83BB-DviLp04,9
+codseqcp-0.0.0.dist-info/RECORD,,
