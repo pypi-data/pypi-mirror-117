@@ -1,0 +1,17 @@
+zodipy/__init__.py,sha256=TM8HEgmWdq7lbto_5XvSTH1nlZgqiJO0vSWb-v5HLb0,48
+zodipy/_components.py,sha256=1vOfq1SR-YWwKwayk-qDgcFHb0srnqPiOP65W5q9xac,10009
+zodipy/_coordinates.py,sha256=lXkUe2Yi0uGUdtXe_jrFNA2THPGvCl9ArCHEtZtFy0A,2462
+zodipy/_emissivities.py,sha256=FCJW2dgOqf6hXqY43wLO4PhXkqZhDM9OyNeFhWaBgUs,871
+zodipy/_functions.py,sha256=Cx0HxWmma5Ybjt-B_aDYM8ChhfMsDnL-KEwc40R-lCY,1094
+zodipy/_integration_config.py,sha256=QdcyLGL0zjXXezEmDEq10tCpsi0xQk1qdRMR2iWIjeY,1358
+zodipy/_model.py,sha256=L0fee1fBYXm2E4SGe9Lj161VINgAK2duZgR3MgeuCO8,1923
+zodipy/_simulation.py,sha256=UeXUVxBAV0PyW_jWDCz0kA9CdlvUzJXoERpoq8CR2wo,5543
+zodipy/emissivities.py,sha256=GMxAoPFZ0xnpAr98ZbTtPScgQBRaMxFybVzqvTjbamI,1199
+zodipy/integration_configs.py,sha256=ePi6Lo_NZ7it1NcrXpget7YLhbsCcWFQumi8A0HdeXo,1018
+zodipy/models.py,sha256=4mJMrydkl8kY4dPvYT_-87g9HNukY6O0vIVutcCjFBU,673
+zodipy/parameters.py,sha256=BC4deD1usWI2z1VQZ-LMDwGJrGnhcsc-dIkGyMXFRq4,1232
+zodipy/zodi.py,sha256=kcR_6zzU2mAMOKcYHz3AKCHKYPKQGlHm1quwYB5iHrw,4856
+zodipy-0.1.8.dist-info/LICENSE,sha256=Dp-X0NVkUb8dRSZrEASYdK7aRRGSXRCzIcqj5bvWcy4,1066
+zodipy-0.1.8.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+zodipy-0.1.8.dist-info/METADATA,sha256=Xuyt34YHsjIOtBV3dF66fMnRwAnFlLKmRCT2e1WC-Bc,4575
+zodipy-0.1.8.dist-info/RECORD,,
