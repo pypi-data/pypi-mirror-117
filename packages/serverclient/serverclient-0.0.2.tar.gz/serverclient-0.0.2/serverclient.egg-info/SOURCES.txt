@@ -1,0 +1,7 @@
+setup.py
+lib/__init__.py
+lib/serverclient.py
+serverclient.egg-info/PKG-INFO
+serverclient.egg-info/SOURCES.txt
+serverclient.egg-info/dependency_links.txt
+serverclient.egg-info/top_level.txt
