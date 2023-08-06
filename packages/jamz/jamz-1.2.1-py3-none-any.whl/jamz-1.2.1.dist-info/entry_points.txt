@@ -1,0 +1,3 @@
+[console_scripts]
+jamz=jamz.jamz:main
+
