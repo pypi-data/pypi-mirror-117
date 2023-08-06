@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nido-infra-test
+Version: 1.0
+Summary: Repositorio de teste de deploy automatico no pypi
+Home-page: https://github.com/user/notopoloko
+Author: Notopoloko
+Author-email: amarals16@hotmail.com
+License: MIT
+Download-URL: https://github.com/user/notopoloko/archive/v_01.tar.gz
+Keywords: TESTE,NIDO,UNB
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
