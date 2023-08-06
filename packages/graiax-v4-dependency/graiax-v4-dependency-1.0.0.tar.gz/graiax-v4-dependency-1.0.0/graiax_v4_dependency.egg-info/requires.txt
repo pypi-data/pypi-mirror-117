@@ -1,0 +1,6 @@
+graia-application-mirai==0.19.2
+graia-broadcast==0.8.11
+graia-scheduler==0.0.4
+graia-saya==0.0.9
+graia-component-selector==0.0.6
+graia-template==0.0.4
