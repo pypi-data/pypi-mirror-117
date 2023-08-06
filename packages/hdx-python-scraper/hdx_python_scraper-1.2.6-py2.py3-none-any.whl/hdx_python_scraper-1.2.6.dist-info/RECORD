@@ -1,0 +1,17 @@
+hdx/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+hdx/scraper/__init__.py,sha256=QcRDT1cyarEM3KwISajR8p-uICFci4BicLzQObRY6g0,2970
+hdx/scraper/csvoutput.py,sha256=4kvEJfaS97qcr_kKs3RQIj9C7558fS8FzNsGM5LcJR8,1875
+hdx/scraper/exceloutput.py,sha256=5V7GrS-jq7Z9IT2PnziszmlPNDBzI3lM_M33TvNvvpQ,2166
+hdx/scraper/googlesheets.py,sha256=fSstDnpdaS-_hQthI51pqMxr521WtKsR-6E6bcfQxBs,2735
+hdx/scraper/jsonoutput.py,sha256=PvN3iYiGg6XuNY5zOUFqsxxLz_eAp3q50FicqtPVylo,9428
+hdx/scraper/nooutput.py,sha256=GSToVG_oeZ-RckIEcTZPPnxFnMpOZz8uEcTaL9EpoEA,2897
+hdx/scraper/readers.py,sha256=GvQz4L2qpwH8x5F2JkEGk6Uxh1oJpR5WhD_m8pYRnCE,7329
+hdx/scraper/rowparser.py,sha256=_Nu6D2wfH0iU1k0wiLe1LG12vAsED5NOQnz8udPVyGE,12434
+hdx/scraper/scrapers.py,sha256=f0FdsWUO8omKCpjLoi3p-ceCBOaDeJCGcUaQo8iucS4,15823
+hdx/scraper/version.txt,sha256=PP3XZe61jmbow_ljgcG-wbwzB5i9ZhqLLvJeoEEgV60,5
+hdx_python_scraper-1.2.6.dist-info/LICENSE,sha256=wc-4GpMn-ODs-U_bTe1YCiPVgvcjzrpYOx2wPuyAeII,1079
+hdx_python_scraper-1.2.6.dist-info/METADATA,sha256=Z5ez06cOOnbT_TplpVcB11lJChZjKMThqYyYvwZuu0A,28261
+hdx_python_scraper-1.2.6.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+hdx_python_scraper-1.2.6.dist-info/top_level.txt,sha256=cfo3TyDjnu-B1jb_itPPFQCH00c5VT5GuZ30eNrGmlI,4
+hdx_python_scraper-1.2.6.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hdx_python_scraper-1.2.6.dist-info/RECORD,,
