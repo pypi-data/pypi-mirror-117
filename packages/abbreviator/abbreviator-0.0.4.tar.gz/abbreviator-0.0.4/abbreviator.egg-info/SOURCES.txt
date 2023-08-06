@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+abbreviator/__init__.py
+abbreviator/core.py
+abbreviator.egg-info/PKG-INFO
+abbreviator.egg-info/SOURCES.txt
+abbreviator.egg-info/dependency_links.txt
+abbreviator.egg-info/requires.txt
+abbreviator.egg-info/top_level.txt
