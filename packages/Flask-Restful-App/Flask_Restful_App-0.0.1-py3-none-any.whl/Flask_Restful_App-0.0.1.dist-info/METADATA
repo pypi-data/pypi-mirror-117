@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Flask-Restful-App
+Version: 0.0.1
+Summary: 示例
+Home-page: UNKNOWN
+Author: jiaoxn
+Author-email: 2438822080@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# flask-restful-cli
+
