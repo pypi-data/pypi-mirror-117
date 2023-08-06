@@ -1,0 +1,10 @@
+matrix_webhook/__main__.py,sha256=Ad3b9sNhkj1p0jNsNBSxT3FyH35ourAuPNlRAlUCw80,280
+matrix_webhook/app.py,sha256=N4asF31TL7glqKN4bTflDO7yLaM9RKRm8dCO-hkx3tY,1269
+matrix_webhook/conf.py,sha256=BRYzgSPVC3yeA9hjHuc2dOcRvMOXI-BF5ndsl5wjYxA,1794
+matrix_webhook/formatters.py,sha256=phxv3w7xiUk7Ji-RFPwwe_dS4zCRUJ6R7aEtRV_aqj8,1190
+matrix_webhook/handler.py,sha256=asudJSGooJSORTe9gvtcaw2vnXl04P1OxnU6-PDDsmk,2803
+matrix_webhook/utils.py,sha256=xq26fmJ3xYqCSix4jPeeKIbx8i7X_hzh3IvVB4hOkZY,1630
+matrix_webhook-3.2.0.dist-info/LICENSE,sha256=Wi7kgsWUlK-XIKHuTLbaaISeDcwWvSP6XAhYJczWsRk,1320
+matrix_webhook-3.2.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+matrix_webhook-3.2.0.dist-info/METADATA,sha256=EW-mC_uoTJN1qxSC7lbiV3VvKWE65S6bX-YxaWi11X8,4080
+matrix_webhook-3.2.0.dist-info/RECORD,,
