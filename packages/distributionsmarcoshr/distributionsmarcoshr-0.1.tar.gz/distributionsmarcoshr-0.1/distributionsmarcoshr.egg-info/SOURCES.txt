@@ -1,0 +1,10 @@
+setup.py
+distributionsmarcoshr/Binomialdistribution.py
+distributionsmarcoshr/Gaussiandistribution.py
+distributionsmarcoshr/Generaldistribution.py
+distributionsmarcoshr/__init__.py
+distributionsmarcoshr.egg-info/PKG-INFO
+distributionsmarcoshr.egg-info/SOURCES.txt
+distributionsmarcoshr.egg-info/dependency_links.txt
+distributionsmarcoshr.egg-info/not-zip-safe
+distributionsmarcoshr.egg-info/top_level.txt
