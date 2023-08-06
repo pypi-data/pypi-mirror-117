@@ -1,0 +1,15 @@
+botd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botd/all.py,sha256=lrnkoitMKAmtPHVOuw7cwJHDuVmDhoVn6FxLCMrO-Qc,61
+botd/ver.py,sha256=jPTAj787T9wy2kLdlyZi8FFFMkUEFa6Ar-a-6A0Ekmk,180
+botd-56.data/data/etc/rc.d/botd,sha256=N6mxxJkUMOSGIKDGVklgnfuuLxIAw15s9PltywhoNcM,284
+botd-56.data/data/lib/systemd/system/botd.service,sha256=dx-0cOAqtNANuGt44DI4t8gvdki4Sq2bBKr_nS4IiRs,259
+botd-56.data/data/man/man8/botctl.8.gz,sha256=B0wROjFuvFIgfXCR4KSoynTsy9134tC2P8GQO38hKwA,656
+botd-56.data/data/man/man8/botd.8.gz,sha256=qWbbiL2PsvQqEcKiLc7ClK4ZnohhHeZcnbxMSPadwS0,654
+botd-56.data/data/share/doc/botd/botd.8.md,sha256=VqGY0Eu9ZyOmWNKAH-HT2N9mT6MWhdwwKV0OOy0lNP0,969
+botd-56.data/scripts/botctl,sha256=SMrM5bl6tx7Rnhwr-Y2KwRkxQRTMbUqs6qE-iXWetII,2195
+botd-56.data/scripts/botd,sha256=a6qP86aT_6npFmVyHosiX0FcKfDc8fZcLcczGJgqkTA,805
+botd-56.dist-info/METADATA,sha256=20brn1S4DC_IuvdyXy32geRkzj65fgtket5N2cSwWXk,5208
+botd-56.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+botd-56.dist-info/top_level.txt,sha256=yzzJ5SH4oRVkswiIEcfuPYqq4SmCaUGvTt7y7IEN1Kw,5
+botd-56.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+botd-56.dist-info/RECORD,,

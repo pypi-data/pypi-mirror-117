@@ -1,0 +1,54 @@
+#!python
+# This file is placed in the Public Domain.
+
+import os
+import readline
+import sys
+import termios
+import time
+
+
+wd = "/var/lib/botd/"
+
+from bot.irc import Cfg
+
+Cfg.channel = "#botd"
+Cfg.nick = "botd"
+Cfg.username = "botd"
+Cfg.realname = "24/7 channel daemon"
+
+
+from bot.run import Runtime, fmt, spl
+from bot.tbl import Table
+
+
+import bot.all
+
+
+class Kernel(Runtime):
+
+    def error(self, txt):
+        self.log(txt)
+
+    def log(self, txt):
+        print(txt)
+        sys.stdout.flush()
+        
+
+k = Kernel()
+tbl = Table()
+
+
+def main(): 
+    k.writepid()
+    k.log("BOTD started at %s (%s)" % (time.ctime(time.time()), k.pid()))
+    k.log(fmt(k.cfg))
+    k.cfg.mod += ",irc"
+    tbl.scan("bot,botd")
+    k.start()
+    for mn in spl(k.cfg.mod):
+        k.init("bot.%s" % mn)
+    k.wait()
+
+
+main()
