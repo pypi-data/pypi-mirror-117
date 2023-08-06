@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: playvision-devops-tools
+Version: 0.0.4
+Summary: Playvision devops tools
+Home-page: UNKNOWN
+Author: Dmitriy Shelestovskiy
+Author-email: one@sonhador.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Build a package:
+```
+pip install setuptools wheel
+python ./setup.py  sdist bdist_wheel
+```
+
+Then upload to PyPI:
+
+```
+twine upload ./dist/*
+```
+
+
