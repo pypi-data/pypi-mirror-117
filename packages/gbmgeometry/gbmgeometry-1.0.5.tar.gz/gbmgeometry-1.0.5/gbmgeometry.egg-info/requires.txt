@@ -1,0 +1,10 @@
+numba
+numpy
+matplotlib
+pyerfa
+astropy<4.1
+sympy
+healpy
+spherical_geometry
+h5py
+ipyvolume>=0.6.0a2
