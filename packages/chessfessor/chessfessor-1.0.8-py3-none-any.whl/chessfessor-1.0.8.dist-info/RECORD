@@ -1,0 +1,10 @@
+chessfessor/__init__.py,sha256=camR76Fd2-rt2bdisWM9VUfhkFHD5miu3shXmtzffyQ,25
+chessfessor/chessfessor.py,sha256=Q9SINFz6H1GI349aBYkQmsAavKQCBvraU5SyONdtDp8,1130
+chessfessor/extractors/__init__.py,sha256=IdNDidj8p6n9A8OXjnMre_TwOBB5nbMZimuN7nXH01Q,69
+chessfessor/extractors/chessdotcom_extractor.py,sha256=LVH21QAd4PdfEUkOzSQglcgT9mPq5pa49WjBBJW4-VM,864
+chessfessor/extractors/lichess_extractor.py,sha256=4Elb3-ECFfP731BdlJH4PHQHl6b8e9MI-H7Pux9nplM,296
+chessfessor-1.0.8.dist-info/LICENSE,sha256=aFo2a_yYTC7ZZxlWdaDkV4AGyBuMmLJPwL4NbRfN1zA,1084
+chessfessor-1.0.8.dist-info/METADATA,sha256=1ezN2oNPujQWo2oeeVmdHa7nJVNWNsbjlPRJJxds8o8,3099
+chessfessor-1.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+chessfessor-1.0.8.dist-info/top_level.txt,sha256=t9_SqgVqb6y7OlESLmpJfrQjz4gqi2iXzNk4Ajq2Qc4,12
+chessfessor-1.0.8.dist-info/RECORD,,
