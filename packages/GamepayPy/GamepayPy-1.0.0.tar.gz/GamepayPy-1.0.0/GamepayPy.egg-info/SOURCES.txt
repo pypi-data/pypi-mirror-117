@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+GamepayPy/GamepayPy.py
+GamepayPy/__init__.py
+GamepayPy.egg-info/PKG-INFO
+GamepayPy.egg-info/SOURCES.txt
+GamepayPy.egg-info/dependency_links.txt
+GamepayPy.egg-info/not-zip-safe
+GamepayPy.egg-info/top_level.txt
