@@ -1,0 +1,5 @@
+#!python
+
+from breizorro.breizorro import main
+
+main()
