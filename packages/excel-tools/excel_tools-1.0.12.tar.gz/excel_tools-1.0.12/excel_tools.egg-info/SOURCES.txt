@@ -1,0 +1,11 @@
+setup.py
+excel_tools/__init__.py
+excel_tools/_xls.py
+excel_tools/_xlsx.py
+excel_tools/base_reader.py
+excel_tools/utils.py
+excel_tools.egg-info/PKG-INFO
+excel_tools.egg-info/SOURCES.txt
+excel_tools.egg-info/dependency_links.txt
+excel_tools.egg-info/requires.txt
+excel_tools.egg-info/top_level.txt
