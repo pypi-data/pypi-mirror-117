@@ -1,0 +1,13 @@
+kubeobject/__init__.py,sha256=K3L2Wq1_bNZnIuUPEarHmSnWOJ6DReHb_IDyaO86MQU,718
+kubeobject/customobject.py,sha256=K3yvZOK9DAr1lKYV45cZW6uRpOrtXy4ZO35eNOpchhQ,9506
+kubeobject/exceptions.py,sha256=dQcezzTVJX4U4zJuJwVgxAvosfIpB87QtUCNn-YVWig,51
+kubeobject/kubeobject.py,sha256=IHcu2pyO5Urc1m7QuUkOick4SDyf09VHVHHuCKNmVy8,8544
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_custom_object.py,sha256=tHu-84HLfuQadHlKiRy_RymT7mWrPmec5NgBMnZQGDo,9467
+tests/test_generate_random_name.py,sha256=0NQrMTfkH4KVbDFSc3n38uq007Y81p0zyhOXROZCxdk,1836
+tests/test_kubeobject.py,sha256=_Ck5Mer6CCPFc-I9c7PUMK3KnVWkAdN1smSqPsURohs,8860
+kubeobject-0.2.0.dist-info/LICENSE,sha256=_m7oOQJ2O5EoyaYZYkvtIoCH3yTFlXHRjdQFVSLbWfc,11343
+kubeobject-0.2.0.dist-info/METADATA,sha256=dSWht7oN5jhU29uihYrrKbv1Mc-Qnuy4e3XBfuMBU0Y,2287
+kubeobject-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+kubeobject-0.2.0.dist-info/top_level.txt,sha256=OeJb3165ff7ga_P_d6brtrWO4hRbEMe3Xls4P2W-w_8,17
+kubeobject-0.2.0.dist-info/RECORD,,
