@@ -1,0 +1,11 @@
+simple_keyword_clusterer/__init__.py,sha256=_MJLrd9Ql9IIzq-ECgubm1VzbATMrn7pgXGIoUFf4k0,39
+simple_keyword_clusterer/blacklist.txt,sha256=woCefz3t08Gu8WxoprdIahk_0TMsqWDr9N9pbLMiHMg,67
+simple_keyword_clusterer/clustering.py,sha256=Cl3j9RRSrK4wl2f1nJQrqm6XKXvhNuEpbiVC4cLyiCM,2636
+simple_keyword_clusterer/preprocessing.py,sha256=xDUwCWLHVcGcdxwCl4lJHvEwMxUB3o4xyMUnVt6oVp0,1766
+simple_keyword_clusterer/simple_keyword_clusterer.py,sha256=ytMVqP3JuLLEJtQdHNEfZZk7ypPdq2_iIETPRaZpQAc,494
+simple_keyword_clusterer/to_normalize.txt,sha256=nSYx0HTYkTQWVJ_1kV2bc-Z6ME6aTG0R8Tz7NX3_Yfk,50
+simple_keyword_clusterer-0.19.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+simple_keyword_clusterer-0.19.dist-info/METADATA,sha256=Lad2gy2Rbu6mGg7NkuJBZDoeOyz9YszDLJa-YDiXrps,2927
+simple_keyword_clusterer-0.19.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_keyword_clusterer-0.19.dist-info/top_level.txt,sha256=37GfLJkMsATVa31MCD7DUU8tdbPNcq17P17-SBZb4kU,25
+simple_keyword_clusterer-0.19.dist-info/RECORD,,
