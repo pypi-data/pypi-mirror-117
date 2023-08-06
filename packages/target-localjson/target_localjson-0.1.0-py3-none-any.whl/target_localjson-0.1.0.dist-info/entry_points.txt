@@ -1,0 +1,3 @@
+[console_scripts]
+target-localjson=target_localjson:main
+
