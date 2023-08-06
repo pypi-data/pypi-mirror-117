@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: SciPhy
+Version: 0.0.3a0
+Summary: Science stuff
+Home-page: https://github.com/Shlol762/SciPy
+Author: Shlok
+Author-email: wizard1net@gmail.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/Shlol762/SciPy/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Random
+
