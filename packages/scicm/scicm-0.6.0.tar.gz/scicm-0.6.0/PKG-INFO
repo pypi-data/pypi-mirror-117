@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scicm
+Version: 0.6.0
+Summary: Science Colour Maps is a small package containing several colour maps created using viscm.
+Home-page: https://github.com/MBravoS/scicm
+Author: Matías A. Bravo Santa Cruz
+Author-email: matias.bravo@icrar.org
+License: BSD-3-Clause
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
