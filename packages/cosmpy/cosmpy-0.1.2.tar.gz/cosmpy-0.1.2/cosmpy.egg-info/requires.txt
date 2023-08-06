@@ -1,0 +1,17 @@
+ecdsa
+bech32
+requests
+google-api-python-client
+protobuf
+grpcio
+grpcio-tools
+
+[dev]
+check-manifest
+flake8
+black
+mypy
+
+[test]
+coverage
+pytest
