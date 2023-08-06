@@ -1,0 +1,10 @@
+README.md
+setup.py
+django_logging_headers/__init__.py
+django_logging_headers/config.py
+django_logging_headers/handlers.py
+django_logging_headers.egg-info/PKG-INFO
+django_logging_headers.egg-info/SOURCES.txt
+django_logging_headers.egg-info/dependency_links.txt
+django_logging_headers.egg-info/entry_points.txt
+django_logging_headers.egg-info/top_level.txt
