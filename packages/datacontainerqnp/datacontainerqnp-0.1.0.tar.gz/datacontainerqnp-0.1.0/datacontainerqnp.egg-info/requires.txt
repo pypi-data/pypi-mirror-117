@@ -1,0 +1,3 @@
+stockutilitiesqnp
+pandas
+requests
