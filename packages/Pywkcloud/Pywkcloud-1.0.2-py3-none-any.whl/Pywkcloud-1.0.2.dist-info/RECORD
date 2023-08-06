@@ -1,0 +1,9 @@
+pywkcloud/__init__.py,sha256=bO4ntDw-uWBYvDkoRYFdl8QHEGNMfF61sybCmmH7ZX8,51
+pywkcloud/storage/__init__.py,sha256=R3pYrJpr9XgrnFQIp9wr45BTfaPG6now2zwSFxKjJcs,183
+pywkcloud/storage/kodo_utils.py,sha256=y5YoTKB3cCHtvfUBFy0P4kb5SwgrJhiMHtD4ZPfI0Oc,1991
+pywkcloud/storage/oss_utils.py,sha256=NmKzp8k8ifAyH7vO2TOdjTpUeHHP9LFQa9Jhv4Gn3L4,1415
+pywkcloud/storage/storage_base.py,sha256=X0OFndZZEm74ElBQdlQg_fngBau6vtPsU9x9BasWjyU,2781
+Pywkcloud-1.0.2.dist-info/METADATA,sha256=S5FU54CHVfWRJhNSA6e16-2Z1knH9aeBCdNM-HwF6Sk,259
+Pywkcloud-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Pywkcloud-1.0.2.dist-info/top_level.txt,sha256=CSZ34rGjl4I3ISwiUsKRSXzlFLeuDgf0Sxx4AOoGkuM,10
+Pywkcloud-1.0.2.dist-info/RECORD,,
