@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+goldenowl/__init__.py
+goldenowl.egg-info/PKG-INFO
+goldenowl.egg-info/SOURCES.txt
+goldenowl.egg-info/dependency_links.txt
+goldenowl.egg-info/requires.txt
+goldenowl.egg-info/top_level.txt
+goldenowl/portfolio/__init__.py
+goldenowl/portfolio/holding.py
+test/test_basic.py
+test/test_holding.py
