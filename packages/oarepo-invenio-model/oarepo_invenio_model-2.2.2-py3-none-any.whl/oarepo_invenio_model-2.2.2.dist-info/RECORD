@@ -1,0 +1,14 @@
+oarepo_invenio_model/__init__.py,sha256=K4LdfQEzaKRqYeVxD6MO31sb7HV-2RACY8vupVzoHpg,775
+oarepo_invenio_model/version.py,sha256=zFChEZ3ZFLkNJiPebOfXlWaJJA_EGUiPwOe5IbX3mo8,1406
+oarepo_invenio_model/datamodels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oarepo_invenio_model/datamodels/invenio-record-v1.0.0.json5,sha256=kmd1Xe9dSXQmwTF7ojKmlISTqpV9M-we80zfEE_QOhc,1562
+oarepo_invenio_model/included_mappings/v7/invenio-v1.0.0.json,sha256=0bnbV3AByY_fdT1HkXTrkpINyhR2hLpIsjZifd4ZPkk,268
+oarepo_invenio_model/jsonschemas/__init__.py,sha256=m7UQhnKgPA2WUOAuo-GU0LXW4g_b3SetqsEjfdDVgsY,468
+oarepo_invenio_model/jsonschemas/invenio-v1.0.0.json,sha256=ejoBthOMbULqVm4vAebhiGCKzGGhMk9R9AvPronSwFA,1883
+oarepo_invenio_model/marshmallow/__init__.py,sha256=TmVwQknliC2IdA5hGiEIH_di9ozld9K-jKqk9imltM8,2309
+oarepo_invenio_model-2.2.2.dist-info/LICENSE,sha256=oxlvOW3GiojF5mcapEzPff39MfADzIw5Qt8iOonks8c,1062
+oarepo_invenio_model-2.2.2.dist-info/METADATA,sha256=hfHCiOBUhLA8wjeVGBgNyZzLbTrmnQWY_ASlOe0AxMU,4224
+oarepo_invenio_model-2.2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+oarepo_invenio_model-2.2.2.dist-info/entry_points.txt,sha256=e0CZFH9bbc_wO_EHvGbJgCNbT2SYACBYmXl__DC5q0A,266
+oarepo_invenio_model-2.2.2.dist-info/top_level.txt,sha256=riOt27hovGPQ108gfiVtIH8xdXi0K2U9ntsa2X7E5Jg,21
+oarepo_invenio_model-2.2.2.dist-info/RECORD,,
