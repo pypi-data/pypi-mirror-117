@@ -1,0 +1,10 @@
+FreeProxyScraper.py,sha256=lEh6D_FXApvPIYo9kWvACDTQzP0rBp-i1k7MHW9EDCw,1541
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/decos.py,sha256=VgGKKpttSKxUdm7kac8yV_yr0s2Y46dcuUZ-1mkEkDM,684
+utils/plugins.py,sha256=FuB6kO9zUep_nnx2rSa9ZZW_0zRDMAUckL33tcNxUAE,4261
+utils/soup.py,sha256=hdDT7ZNinrSLpKvZ08qnXZhndaZvbpZ48SdgHji2-Y0,721
+FreeProxyScraper-0.1.0.dist-info/LICENSE,sha256=6s07DDiC8n144axr_XEKOq157rm9N94YoZrNxSYbNZ8,1089
+FreeProxyScraper-0.1.0.dist-info/METADATA,sha256=0-t_9gD0VpSI8-WZIGEGMc2uiynaMSum4ir7I0_1rGU,2382
+FreeProxyScraper-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+FreeProxyScraper-0.1.0.dist-info/top_level.txt,sha256=HfKj7OQYfc8KqLVURwToH9e-4sIcKrRwvIZXJdsTr-c,23
+FreeProxyScraper-0.1.0.dist-info/RECORD,,
