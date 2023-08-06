@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cannlytics
+Version: 0.0.8
+Summary: Cannlytics is simple, easy-to-use, end-to-end cannabis analytics software designed to make your data and information accessible.
+Home-page: https://github.com/cannlytics/cannlytics
+Author: Cannlytics
+Author-email: contact@cannlytics.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Cannlytics makes cannabis analysis **simple** and **easy** through data accessibility. We believe that everyone in the cannabis industry should be able to access rich, valuable data quickly and easily and that you will be better off for it.
+
