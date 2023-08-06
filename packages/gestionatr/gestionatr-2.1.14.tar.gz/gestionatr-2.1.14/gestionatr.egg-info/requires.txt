@@ -1,0 +1,6 @@
+click
+libcomxml
+lxml
+suds-community
+workdays
+zeep
