@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dragon
+Version: 1.5
+Summary: A powerful toolkit targeting Apple development research, and packaging.
+Home-page: https://github.com/DragonBuild/dragon
+Author: kritanta
+License: UNKNOWN
+Platform: UNKNOWN
+Requires: pyyaml
+License-File: LICENSE
+
+UNKNOWN
+
