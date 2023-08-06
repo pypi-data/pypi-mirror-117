@@ -1,0 +1,10 @@
+dixa/__init__.py,sha256=2hd4uqcnq0mXAmR6TvABWGlk0grkcFNk_QhLtyjvOkY,244
+dixa/base_client.py,sha256=rPBqfzVwOb0amPK73Gzb1cKGiaI1Om1IshI7pxtoEn4,3213
+dixa/dixa_client.py,sha256=X5nULpVfOR2H5DTrwcvBSJ6q8Lyu2Pr-km7WTj8tsag,13836
+dixa/errors.py,sha256=C37RXY7WdVca8waWGBb6BlnYy4CWbkvVmKXZGawGW3I,550
+dixa/models.py,sha256=xCud9R2ojm1QRpraRL4U-AsrOAWMy1pCy1TnU3kw6BM,5457
+dixa/utils.py,sha256=VVo_f9Rw4tEkQorIEK7GKvicEJ3oc6ciW6rSZQuLztU,2388
+dixa-0.1.0.dist-info/METADATA,sha256=if1oHFOyOAYkOQK65CaiXwIQ-DlsHU9Ti75BmdTwZfg,4884
+dixa-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dixa-0.1.0.dist-info/top_level.txt,sha256=hDHG9NGg2UzQNBs60rAoa1s_pGU8EsbdXbyAciNK9q0,5
+dixa-0.1.0.dist-info/RECORD,,
