@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+embed_templator/__init__.py
+embed_templator/embed_templator.py
+embed_templator/exceptions.py
+embed_templator.egg-info/PKG-INFO
+embed_templator.egg-info/SOURCES.txt
+embed_templator.egg-info/dependency_links.txt
+embed_templator.egg-info/requires.txt
+embed_templator.egg-info/top_level.txt
