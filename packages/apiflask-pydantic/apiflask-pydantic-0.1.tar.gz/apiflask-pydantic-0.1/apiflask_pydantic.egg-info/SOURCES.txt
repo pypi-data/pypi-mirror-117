@@ -1,0 +1,7 @@
+setup.py
+apiflask_pydantic/__init__.py
+apiflask_pydantic.egg-info/PKG-INFO
+apiflask_pydantic.egg-info/SOURCES.txt
+apiflask_pydantic.egg-info/dependency_links.txt
+apiflask_pydantic.egg-info/not-zip-safe
+apiflask_pydantic.egg-info/top_level.txt
