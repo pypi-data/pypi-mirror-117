@@ -1,0 +1,2 @@
+include versioneer.py
+include apihelpers4py/_version.py

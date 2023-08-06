@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+apihelpers4py/__init__.py
+apihelpers4py/_version.py
+apihelpers4py/io.py
+apihelpers4py.egg-info/PKG-INFO
+apihelpers4py.egg-info/SOURCES.txt
+apihelpers4py.egg-info/dependency_links.txt
+apihelpers4py.egg-info/requires.txt
+apihelpers4py.egg-info/top_level.txt
+test/test_apihelpers4py_init.py
+test/test_apihelpers4py_io.py
