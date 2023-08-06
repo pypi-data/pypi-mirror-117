@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+Handtracker.egg-info/PKG-INFO
+Handtracker.egg-info/SOURCES.txt
+Handtracker.egg-info/dependency_links.txt
+Handtracker.egg-info/requires.txt
+Handtracker.egg-info/top_level.txt

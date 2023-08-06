@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Handtracker
+Version: 0.0.1
+Summary: Soura
+Home-page: UNKNOWN
+Author: Soura Kanti Haldar
+Author-email: sourakantihaldar8@gmail.com
+License: UNKNOWN
+Description: It is package or module used to trackhands. It can track the hands very easily and perfect for beginners. With this you can creat awesome projects. It uses open Cv2 to do the process.
+Keywords: arithmetic,math,mathematics,python tutorial,avi upadhyay,soura kanti,opencv2,handtracking,mediapipe,cv2,python,soura,package,module,numpy,hand tracker,soura,halder
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
