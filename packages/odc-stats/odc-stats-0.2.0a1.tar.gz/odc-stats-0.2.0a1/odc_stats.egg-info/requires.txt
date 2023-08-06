@@ -1,0 +1,17 @@
+botocore
+click
+dask
+datacube
+distributed
+numpy
+odc_aio
+odc_algo
+odc_aws
+odc_dscache
+odc_io
+odc_stac
+pandas
+pystac>=1.0.0
+toolz
+tqdm
+xarray
