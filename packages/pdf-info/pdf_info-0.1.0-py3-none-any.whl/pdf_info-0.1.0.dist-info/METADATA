@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pdf-info
+Version: 0.1.0
+Summary: Demo
+Home-page: UNKNOWN
+Author: Satyam&Piyush
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PymuPdf
+Requires-Dist: nltk
+Requires-Dist: pdfminer
+Requires-Dist: sklearn
+Requires-Dist: numpy
+Requires-Dist: PyPDF2
+
+Demo
+
+
