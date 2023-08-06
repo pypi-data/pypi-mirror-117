@@ -1,0 +1,17 @@
+pppine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pppine/django.py,sha256=G5lV6X4aBp6uUj7vsZUfuO9Bw5YN8ozbN8mA1B1Zx3Y,3543
+pppine/middleware.py,sha256=JLv_0bHbTLMgw2YIMsxKYHdc2-rwMcHe99-FHwtiPtw,940
+pppine/misc.py,sha256=aYvcJf6fxxuoOAa2Uhi1A2yzVAuqFRB1a9jhCFkDOEA,9851
+pppine/encoders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pppine/encoders/json.py,sha256=icK7DVyYU7dFRZ2ynw_tYQ_AcLBlA1dL5FiElBtjVt8,1941
+pppine/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pppine/python/contact.py,sha256=lz-4K5pFk6YsFFA2mBaYLHNc6uDuFfJzBEpQJrtVF-w,5509
+pppine/python/datetime.py,sha256=f_lOw_M01W2VSv2VkhW0Qe9CziiNbQZtZmHoPXCeGG8,4247
+pppine/python/general.py,sha256=tPigBv6EbbZVYr5Hg7NXz6x-Xzh9BWoOGg5h-6aozaI,6570
+pppine/python/generators.py,sha256=DN1eWJ0x2Ggg9D8WDWkQJMPR1lNUWSvuE_---8wxZJY,2613
+pppine/python/url.py,sha256=4W7Q3MA29yaH0vM_QRduovPAPzf9MoWwJbr8ckAyN7k,901
+pppine-1.3.2.dist-info/LICENSE,sha256=CK9PhDkt8yU3hJj7LJd7OoG_MQbf1DLGOM22cEEZIFk,1090
+pppine-1.3.2.dist-info/METADATA,sha256=Mpd1UfbhPo3oWWY2vVUOZ7Ds0Nz7n0o-7_qwjjN68h0,5041
+pppine-1.3.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pppine-1.3.2.dist-info/top_level.txt,sha256=ykdb_z2Wng7FyoGK4p-tAujcOK0CmZyQtS8VgJXjrRU,7
+pppine-1.3.2.dist-info/RECORD,,
