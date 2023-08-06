@@ -1,0 +1,9 @@
+etc/lithopscloud/defaults.yaml,sha256=p37dboLkoEw4xJl1nfBynVoVwR1AkW7a2UiuFu-dbkE,524
+lithopscloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lithopscloud/vpc_config_helper.py,sha256=sv-sJ0yw-vf8jKNTiyUmDwc9_2eMwCOVzarHt6wq-s0,34178
+lithopscloud-1.0.0b3.data/scripts/lithopscloud,sha256=58jT0y5nT-lJrjqsRHcjX98i207wkG2l6LXK1BsJ8n4,213
+lithopscloud-1.0.0b3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lithopscloud-1.0.0b3.dist-info/METADATA,sha256=2JVPWa2qHRsSzQ8l3cTY-TrrAib2AtQBaxCl_3FW2WY,525
+lithopscloud-1.0.0b3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+lithopscloud-1.0.0b3.dist-info/top_level.txt,sha256=DfUN2tM4IwnGO8OR7Ma_kkECF2F1gN3UtCETH0n8jvQ,13
+lithopscloud-1.0.0b3.dist-info/RECORD,,
