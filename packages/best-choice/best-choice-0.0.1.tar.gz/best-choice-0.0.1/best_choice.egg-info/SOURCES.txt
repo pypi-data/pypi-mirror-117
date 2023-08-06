@@ -1,0 +1,7 @@
+README.md
+setup.py
+best_choice.egg-info/PKG-INFO
+best_choice.egg-info/SOURCES.txt
+best_choice.egg-info/dependency_links.txt
+best_choice.egg-info/top_level.txt
+bestchoice/__init__.py
