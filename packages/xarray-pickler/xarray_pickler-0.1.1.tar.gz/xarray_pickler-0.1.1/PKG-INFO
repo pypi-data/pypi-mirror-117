@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: xarray_pickler
+Version: 0.1.1
+Summary: Simple package to speed up 'multi-file open' operations for xarray datasets. Uses a cache of pickle files to store the metadata in the `xarray.Dataset` object.
+Home-page: https://github.com/cedadev/xarray_pickler
+Author: Elle Smith
+Author-email: eleanor.smith@stfc.ac.uk
+License: BSD - see LICENSE file in top-level package directory
+Keywords: xarray_pickler
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Security
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: docs
+Provides-Extra: dev
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+==============
+xarray-pickler
+==============
+
+
+.. image:: https://img.shields.io/pypi/v/xarray_pickler.svg
+        :target: https://pypi.python.org/pypi/xarray-pickler
+
+.. image:: https://github.com/cedadev/xarray-pickler/workflows/build/badge.svg
+        :target: https://github.com/cedadev/xarray-pickler/actions
+        :alt: Build Status
+
+.. image:: https://readthedocs.org/projects/xarray-pickler/badge/?version=latest
+        :target: https://xarray-pickler.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Simple package to speed up 'multi-file open' operations for xarray datasets. Uses a cache of pickle files to store the metadata in the `xarray.Dataset` object.
+
+
+* Free software: BSD - see LICENSE file in top-level package directory
+* Documentation: https://xarray-pickler.readthedocs.io.
+
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
