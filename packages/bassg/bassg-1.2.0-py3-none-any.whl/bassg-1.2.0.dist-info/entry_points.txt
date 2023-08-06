@@ -1,0 +1,3 @@
+[console_scripts]
+bassg = bassg:cli
+
