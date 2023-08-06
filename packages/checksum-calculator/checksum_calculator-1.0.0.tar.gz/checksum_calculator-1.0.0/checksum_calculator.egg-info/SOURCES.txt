@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+checksum_calculator/__init__.py
+checksum_calculator.egg-info/PKG-INFO
+checksum_calculator.egg-info/SOURCES.txt
+checksum_calculator.egg-info/dependency_links.txt
+checksum_calculator.egg-info/top_level.txt

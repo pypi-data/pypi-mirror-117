@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: checksum_calculator
+Version: 1.0.0
+Summary: Simple checksum calculator
+Home-page: https://gitlab.com/olive007/checksum-calculator
+Author: SECRET Olivier
+Author-email: pypi-package-checksum_calculator@devo.live
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Checksum Calculator
+
+## Type of checksum supported
+
+- checksum8 xor
+- checksum8 modulo 256
+- checksum8 2s complement
+
+## Issues/Bug report or improvement ideas
+https://gitlab.com/olive007/case-convert/-/issues
+
+## License
+GNU Lesser General Public License v3 or later (LGPLv3+)
+
+
