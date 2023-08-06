@@ -1,0 +1,6 @@
+setup.py
+sgraphic/__init__.py
+sgraphic.egg-info/PKG-INFO
+sgraphic.egg-info/SOURCES.txt
+sgraphic.egg-info/dependency_links.txt
+sgraphic.egg-info/top_level.txt
