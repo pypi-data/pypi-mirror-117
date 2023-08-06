@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: scrape-data-cleaner
+Version: 0.0.20
+Summary: A package for cleaning forms of scraped data and convert them to normal text.
+Home-page: UNKNOWN
+Author: Alexander Njogu
+Author-email: Alexander@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com:xaander1/scraped-data-cleaner.git
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Scrape Data Cleaner
+Clean scraped data fields to recieve your disired text without unicodes,spaces and other unessesary quirks.
+# Installation
+`pip install scrape-data-cleaner`
+# Usage
+```python
+from cleaner import string_cleaner,price_cleaner,remove_char
+print(string_cleaner('Iphone 8   plus   '))
+print(price_cleaner(remove_char('USD 100')))
+```
+
