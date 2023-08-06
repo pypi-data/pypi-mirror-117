@@ -1,0 +1,3 @@
+[console_scripts]
+jankigen = jankigen.__main__:main
+
