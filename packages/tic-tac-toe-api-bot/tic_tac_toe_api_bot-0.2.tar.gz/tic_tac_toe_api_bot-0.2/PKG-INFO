@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: tic_tac_toe_api_bot
+Version: 0.2
+Summary: simple bot for tic tac toe
+Home-page: https://github.com/ruslan-ilesik/tic-tac-toe-bot-pip-package
+Author: lesikr
+Author-email: UNKNOWN
+License: MIT
+Description: [GitHub:](https://github.com/ruslan-ilesik/tic-tac-toe-bot-pip-package)
+        
+Keywords: tic_tac_toe bot api game_api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
