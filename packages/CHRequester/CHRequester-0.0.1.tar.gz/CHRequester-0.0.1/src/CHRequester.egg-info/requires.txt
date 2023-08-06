@@ -1,0 +1,2 @@
+requests>=2.26
+pwntools>=4.6.0

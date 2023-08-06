@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/CHRequester.egg-info/PKG-INFO
+src/CHRequester.egg-info/SOURCES.txt
+src/CHRequester.egg-info/dependency_links.txt
+src/CHRequester.egg-info/requires.txt
+src/CHRequester.egg-info/top_level.txt
+src/ch_requester/__init__.py
+src/ch_requester/nc_requester.py
+src/ch_requester/url_requester.py
