@@ -1,0 +1,8 @@
+README.md
+hexdump.py
+pyproject.toml
+setup.cfg
+simple_hexdump.egg-info/PKG-INFO
+simple_hexdump.egg-info/SOURCES.txt
+simple_hexdump.egg-info/dependency_links.txt
+simple_hexdump.egg-info/top_level.txt
