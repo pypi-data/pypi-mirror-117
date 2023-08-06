@@ -1,0 +1,15 @@
+Resiliparse-0.3.15.dist-info/top_level.txt,sha256=iwOzBXN0My7I-RCfTJKD4IrJage9Z8lzzfMsOUJ62HU,12
+Resiliparse-0.3.15.dist-info/WHEEL,sha256=6B0vZ-Dd34LpGZN_4Y_GbBSl1fSb7keGXRzuHUFcOBA,152
+Resiliparse-0.3.15.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+Resiliparse-0.3.15.dist-info/METADATA,sha256=lIDlsu5yvwguSxB8BIH4xRHT0_l4ZDIlwZPXhu5z3Bk,1482
+Resiliparse-0.3.15.dist-info/RECORD,,
+resiliparse/parse.pxd,sha256=ji03BRN-GxpogQTI4VVIdZDd0N51lEqvlGYHTxe2RRI,1075
+resiliparse/README.md,sha256=SK2MOrT19VafRF18PUiX8vpp11MMsy84MKlLmmH2KZs,1088
+resiliparse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resiliparse/process_guard.cpython-310-x86_64-linux-gnu.so,sha256=0W7QuQtwUyKtpO3yB-ut4zgZdsv2g6gRGFbzEggnv84,1169432
+resiliparse/itertools.cpython-310-x86_64-linux-gnu.so,sha256=JGqp9WrKWEsImNkR5VJJzqjmXq83KKqCyIl80f8uoy4,576392
+resiliparse/parse.cpython-310-x86_64-linux-gnu.so,sha256=xHzaO1uXfd2AfC5Z8lILoDwQ8WA1970y0LtcBXtK8P4,1044640
+resiliparse/__init__.pxd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resiliparse/process_guard.pxd,sha256=y0nIp8-uWu08s36yqLJs1hsrrGsQlS3b7_2asa_YBHs,1866
+resiliparse/itertools.pxd,sha256=atGmpZoAgIja6HdW4SDRRJkKr143Zucm6Zg0-W1OdcE,580
+Resiliparse.libs/libuchardet-d105c2de.so.0.0.6,sha256=4h8VRm7xTK9G7KHupHGiLf9GLlVBmM_gsazAPizmdnU,148680
