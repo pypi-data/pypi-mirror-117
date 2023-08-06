@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+jsonfilelogger/__init__.py
+jsonfilelogger/logger.py
+jsonfilelogger.egg-info/PKG-INFO
+jsonfilelogger.egg-info/SOURCES.txt
+jsonfilelogger.egg-info/dependency_links.txt
+jsonfilelogger.egg-info/top_level.txt
+tests/__init__.py
+tests/test_logger.py
