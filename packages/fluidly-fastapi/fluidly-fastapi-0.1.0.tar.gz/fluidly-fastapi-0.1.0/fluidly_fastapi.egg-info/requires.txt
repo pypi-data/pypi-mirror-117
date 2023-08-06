@@ -1,0 +1,3 @@
+fastapi
+fluidly-structlog
+fluidly-auth
