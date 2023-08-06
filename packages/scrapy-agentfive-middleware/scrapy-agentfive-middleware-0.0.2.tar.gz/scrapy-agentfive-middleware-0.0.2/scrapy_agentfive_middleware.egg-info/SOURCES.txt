@@ -1,0 +1,9 @@
+README.md
+setup.py
+agentfive_middleware/__init__.py
+agentfive_middleware/middleware.py
+scrapy_agentfive_middleware.egg-info/PKG-INFO
+scrapy_agentfive_middleware.egg-info/SOURCES.txt
+scrapy_agentfive_middleware.egg-info/dependency_links.txt
+scrapy_agentfive_middleware.egg-info/requires.txt
+scrapy_agentfive_middleware.egg-info/top_level.txt
