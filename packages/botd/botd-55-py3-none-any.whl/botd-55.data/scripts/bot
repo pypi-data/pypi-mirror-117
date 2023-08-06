@@ -1,0 +1,78 @@
+#!python
+# This file is placed in the Public Domain.
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+import os
+import sys
+import termios
+import time
+
+wd = os.path.expanduser("~/.bot")
+
+from obj.run import Client, Runtime
+from obj.tbl import Table
+from obj.trc import get_exception
+
+
+class Kernel(Runtime):
+
+    def error(self, txt):
+        print(txt)
+        sys.stdout.flush()
+        
+    def log(self, txt):
+        if "PING" in txt or "PONG" in txt:
+            return
+        print(txt)
+        sys.stdout.flush()
+
+
+class Console(Client):
+
+    def handle(self, clt, e):
+        k.put(e)
+        e.wait()
+
+    def poll(self):
+        return input("> ")
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+clt = Console()
+k = Kernel()
+t = Table()
+
+import bot.all
+
+def wrap(func):
+    fd = sys.stdin.fileno()
+    old = termios.tcgetattr(fd)
+    try:
+        func()
+    except KeyboardInterrupt:
+        pass
+    except PermissionError as ex:
+        print(str(ex))
+    except Exception as ex:
+        print(get_exception())
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, old)
+
+
+def main():
+    k.boot()
+    t.scan("bot")
+    if k.cfg.txt:
+        return k.cmd(k.cfg.otxt)
+    if k.opts("c") or k.cfg.m:
+        k.start()
+        k.init(k.cfg.m)
+        clt.start()
+        k.wait()
+
+
+wrap(main)
