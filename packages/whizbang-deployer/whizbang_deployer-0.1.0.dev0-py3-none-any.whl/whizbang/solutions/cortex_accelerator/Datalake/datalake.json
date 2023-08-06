@@ -1,0 +1,21 @@
+{
+  "containers": [
+    {
+      "container-name": "maindl",
+      "folder-names": [
+        {
+          "directory": "DROPBOX",
+          "subdirectories": "null"
+        },
+        {
+          "directory": "JOBS",
+          "subdirectories": "null"
+        },
+        {
+          "directory": "STATE_CONFIG",
+          "subdirectories": "null"
+        }
+      ]
+    }
+  ]
+}

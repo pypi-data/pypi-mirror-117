@@ -1,0 +1,92 @@
+app reg naming - 
+
+02 - dacpac against state db 
+
+03-configure-sql-adw.sql --> datawarehouse (password needs to be set line 9) 49 through 70 replaces the create dw-script
+(line 52 not needed because that is done is the 'create-master-credentials' script) (FOUND TO BE FALSE - ERROR: User or role 'datafactory' does not exist in this database. (15410) (SQLExecDirectW)")
+(line 81 DataLake Location will need to be injected
+
+04 - also run against datawarehouse
+
+
+
+follow up/todo
+log password (line 9 of configure-sql-adw)
+line 52 -revisit, should match up to the scripts rather tham modify if possible
+
+
+sql_server statement error: ('42000', '[42000] [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Password validation failed. The password does not meet policy requirements because it is not complex enough. (40632) (SQLExecDirectW)')
+sql_server statement error: ('42000', "[42000] [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Parse error at line: 1, column: 1: Incorrect syntax near 'GO\n'. (103010) (SQLExecDirectW)")
+sql_server statement error: ('42000', "[42000] [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]User or role 'datafactory' does not exist in this database. (15410) (SQLExecDirectW)")
+sql_server statement error: ('42000', "[42000] [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Parse error at line: 3, column: 1: Incorrect syntax near 'GO\uffff'. (103010) (SQLExecDirectW)")
+
+
+
+connection strings needed in kv:
+example:
+sql-state-db-connection-string:
+example - Server=tcp:cortex-eus-sql-hsdev1.database.windows.net,1433;Initial Catalog=cortex-eus-state-db-hsdev1;Persist Security Info=False;User ID=sqladmin;Password=password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+
+sql-dw-jdbc-connection-string:
+example:
+jdbc:sqlserver://cortex-eus-sql-hsdev1.database.windows.net:1433;database=cortex-eus-dw-hsdev1;user=sqladmin@cortex-eus-sql-hsdev1;password=password;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+
+
+ad-tenant-id DONE
+
+Previously recorded Directory (Tenant) ID 
+
+adb-access-token-id (scoped to user? how do we go about this? service principal?)
+
+Previously recorded ADB Access Token 
+
+adb-app-reg-id  AzureDatabricks app id
+
+Previously recorded Application (Client) ID 
+
+adb-app-reg-secret
+
+Previously recorded “Value” from Registered Application configuration 
+
+adb-workspace-url DONE
+
+Previously recorded URL from ADB Workspace 
+
+adl-access-key (Probably not needed, using managed identity...)
+
+Access key found in ADLS Access Keys 
+
+Can use Key1 or Key2 
+
+adl-storage-name DONE
+
+Name of ADLS resource 
+
+sql-dw-connection-string 
+
+Connection string for Synapse Pool 
+
+Retrieved in same way as previous SQL database example 
+
+sql-dw-jdbc-connection-string 
+
+Databricks notebook requires JDBC connection string for leveraging Polybase 
+
+Retrieved in same way as previous SQL database example 
+
+Select JDBC tab from top of selection window to change connection string type 
+
+sql-state-db-connection-string 
+
+Connection string for “state database” in Azure SQL 
+
+Retrieved in same way as previous SQL database example 
+
+sql-server-admin-password DONE
+
+Admin password for Azure SQL 
+
+sql-server-admin-username DONE
+
+Username for Azure SQL 

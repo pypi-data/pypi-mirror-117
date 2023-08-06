@@ -1,0 +1,20 @@
+[
+  {
+    "assignee": "AzureDatabricks",
+    "assignee_type": "serviceprincipal",
+    "role": "contributor",
+    "scope_name": "datalake"
+  },
+  {
+    "assignee": "datafactory",
+    "assignee_type": "serviceprincipal",
+    "role": "contributor",
+    "scope_name": "datalake"
+  },
+  {
+    "assignee": "datafactory",
+    "assignee_type": "serviceprincipal",
+    "role": "contributor",
+    "scope_name": "sqlserver"
+  }
+]

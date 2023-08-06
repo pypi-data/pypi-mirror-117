@@ -1,0 +1,76 @@
+{
+    "instance_pools": [
+      {
+        "enable_elastic_disk": true,
+        "node_type_id": "Standard_DS3_v2",
+        "min_idle_instances": 0,
+        "idle_instance_autotermination_minutes": 20,
+        "preloaded_spark_versions": [
+          "7.3.x-scala2.12"
+        ],
+        "max_capacity": 100,
+        "instance_pool_name": "H16StandardPool-Spark3"
+      }
+    ],
+    "clusters": [
+      {
+        "cluster_name": "DataEngineering-Interactive",
+        "spark_version": "7.3.x-scala2.12",
+        "num_workers": "0",
+        "autotermination_minutes": "45",
+        "instance_pool_name": "H16StandardPool-Spark3",
+        "cluster_log_conf": {
+          "dbfs": {
+            "destination": "dbfs:/cluster-logs"
+          }
+        },
+        "spark_conf": {
+          "spark.sql.session.timeZone": "UTC",
+          "spark.scheduler.mode": "FIFO",
+          "spark.sql.files.maxPartitionBytes": "134217728",
+          "spark.sql.sources.partitionOverwriteMode": "DYNAMIC",
+          "spark.sql.broadcastTimeout": "600",
+          "spark.sql.execution.arrow.pyspark.enabled": "true",
+          "spark.databricks.optimizer.dynamicPartitionPruning": "true",
+          "spark.sql.adaptive.enabled": "true",
+          "spark.databricks.cluster.profile": "serverless",
+          "spark.databricks.io.cache.maxMetaDataCache": "10g",
+          "spark.databricks.io.cache.maxDiskUsage": "1024g",
+          "spark.databricks.delta.preview.enabled": "true",
+          "spark.databricks.io.cache.compression.enabled": "false",
+          "spark.driver.maxResultSize": "10g",
+          "spark.databricks.io.cache.enabled": "true",
+          "spark.databricks.repl.allowedLanguages": "sql,python,r",
+          "spark.databricks.chauffeur.enableIdleContextTracking": "true",
+          "spark.databricks.workspace.multipleResults.enabled": "true"
+        },
+        "spark_env_vars": {
+          "DATALAKE_ACCOUNT": "\"cortexncusadlhsdev1\"",
+          "KEY_VAULT": "\"cortex-ncus-kv-hsdev2\""
+        }
+      },
+      {
+        "cluster_name": "CTX-Interactive",
+        "spark_version": "7.3.x-scala2.12",
+        "num_workers": "0",
+        "autotermination_minutes": "45",
+        "instance_pool_name": "H16StandardPool-Spark3",
+        "cluster_log_conf": {
+          "dbfs": {
+            "destination": "dbfs:/cluster-logs"
+          }
+        },
+        "spark_conf": {
+          "spark.databricks.repl.allowedLanguages": "python,sql",
+          "spark.databricks.acl.dfAclsEnabled": "true",
+          "spark.databricks.cluster.profile": "serverless",
+          "spark.databricks.delta.preview.enabled": "true",
+          "spark.databricks.workspace.multipleResults.enabled": "true"
+        },
+        "spark_env_vars": {
+          "DATALAKE_ACCOUNT": "\"cortexncusadlhsdev1\"",
+          "KEY_VAULT": "\"cortex-ncus-kv-hsdev2\""
+        }
+      }
+    ]
+}
