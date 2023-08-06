@@ -1,0 +1,11 @@
+safdie/__init__.py,sha256=-Z0HR428whV2AG11SE7cLnlCxPMMR-VVr-3P6L6fefI,133
+safdie/command.py,sha256=_kdY3j8srjNEUht_mBNrHrrAixS-s-MghQ9wl_Pe8NQ,797
+safdie/command_runner.py,sha256=63KORU2bBCUfDVy5Q2_piW2zZRIFHJTO_NJgGmDuRH0,3254
+safdie/finder.py,sha256=ufC3DlBpMFvQKEP3BuyM6pqtOphTSDspBwx5Ew5QGw4,1200
+safdie/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safdie/tests/test_command_runner.py,sha256=U82MjEh9mtzhp13Hm0a5AkuW69590mGw71MX7HQ8er0,933
+safdie-1.0.0.dist-info/LICENSE,sha256=DEUtBgRKAbBCECJDJRb87nOJh22tzKBG1RIw1H-KoTg,1103
+safdie-1.0.0.dist-info/METADATA,sha256=ydd_855YU4ibZlSjdPyIHd3Gb9Y8qVKobZxtgSlJ__M,5580
+safdie-1.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+safdie-1.0.0.dist-info/top_level.txt,sha256=eFMcrd0mfGj0VqSzKs8w5HzzSmJIKxvqyEUCLRfC0EA,7
+safdie-1.0.0.dist-info/RECORD,,
