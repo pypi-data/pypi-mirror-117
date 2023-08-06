@@ -1,0 +1,3 @@
+[pytest11]
+fixture_typecheck = pytest_fixture_typecheck
+
