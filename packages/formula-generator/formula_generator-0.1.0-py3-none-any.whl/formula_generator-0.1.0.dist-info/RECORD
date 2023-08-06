@@ -1,0 +1,14 @@
+project/FormulaGenerator.py,sha256=7R7mX257bEbAMLpqZmRsCxNBf6VWJlEe-m6JRRfsfpI,9179
+project/__init__.py,sha256=C9pEmrxSRUMWIIgb-u1HLwb3rYONvYRG95sXQXDkhi8,111
+project/main.py,sha256=89nmij4vdrTzl6asb6bDMxEYodPfR9KCekKJMnR6cmM,15164
+project/main2.py,sha256=z4vBW2znwidazsnbG1nso508J7z8XkIDKSPW2JVIXOg,4462
+project/package/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+project/package/parseFormula.py,sha256=qS242iY9TinGrQfC3SLUyTUhLUBlkTWhiGhht0lLJ0c,7000
+project/package/parseTree.py,sha256=LxmXki6SJH1wXXosNZ5kz2QXb39yPcroVkYUJAEAO1k,5362
+project/package/propParser.py,sha256=aEjeYPEE_gyst77H0MUZ-_3kupfuIJILS5pEg0pvf8w,5172
+project/package/parse/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+project/package/parse/parser.py,sha256=0naHn1Grn9Zg0bzbf-Ky0RMksArk4Y6fVsrwjJ0IRr0,4866
+formula_generator-0.1.0.dist-info/METADATA,sha256=0ivoakSDdIrSla9MDGXGlMtL9Brq431uP_FK4fRE65o,265
+formula_generator-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+formula_generator-0.1.0.dist-info/top_level.txt,sha256=TlF2bnXqjOJKLBaN9-1i4CXAglwTmZ1h474uDQoYzWY,8
+formula_generator-0.1.0.dist-info/RECORD,,
