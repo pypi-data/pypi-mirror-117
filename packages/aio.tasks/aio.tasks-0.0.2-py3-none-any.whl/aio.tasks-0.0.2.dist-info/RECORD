@@ -1,0 +1,17 @@
+aio/tasks/__init__.py,sha256=5D6zkZoZf2oR5HkgIlMDEsqUe1sWiMmu4QGocB6_4Hk,247
+aio/tasks/exceptions.py,sha256=S2NOm8PPc7iiY7xM7AayveR0AtAxIdu_SxrRBNzLab4,346
+aio/tasks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio/tasks/tasks.py,sha256=6osXtBxS2ZrAPfkhSYOvI4ooxEBslUnn6DulJ6Z6CGY,15172
+build/lib/aio/tasks/__init__.py,sha256=5D6zkZoZf2oR5HkgIlMDEsqUe1sWiMmu4QGocB6_4Hk,247
+build/lib/aio/tasks/exceptions.py,sha256=S2NOm8PPc7iiY7xM7AayveR0AtAxIdu_SxrRBNzLab4,346
+build/lib/aio/tasks/tasks.py,sha256=6osXtBxS2ZrAPfkhSYOvI4ooxEBslUnn6DulJ6Z6CGY,15172
+build/lib/build/lib/aio/tasks/__init__.py,sha256=5D6zkZoZf2oR5HkgIlMDEsqUe1sWiMmu4QGocB6_4Hk,247
+build/lib/build/lib/aio/tasks/exceptions.py,sha256=S2NOm8PPc7iiY7xM7AayveR0AtAxIdu_SxrRBNzLab4,346
+build/lib/build/lib/aio/tasks/tasks.py,sha256=6osXtBxS2ZrAPfkhSYOvI4ooxEBslUnn6DulJ6Z6CGY,15172
+build/lib/build/lib/tests/test_task.py,sha256=GOE1N-2b0GiT5Ax6LFhtgz1yEEeebiDNJTkFFo-tZDI,38951
+build/lib/tests/test_task.py,sha256=GOE1N-2b0GiT5Ax6LFhtgz1yEEeebiDNJTkFFo-tZDI,38951
+tests/test_task.py,sha256=GOE1N-2b0GiT5Ax6LFhtgz1yEEeebiDNJTkFFo-tZDI,38951
+aio.tasks-0.0.2.dist-info/METADATA,sha256=P9t6r5ccvf7qrqJkw2JFMiGjDSFcvwrjNXFtsBBMo60,4444
+aio.tasks-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aio.tasks-0.0.2.dist-info/top_level.txt,sha256=l7szRUxciIxEnvTbuDgEi7SoniDglvXGu9A1Y9Pc7KU,21
+aio.tasks-0.0.2.dist-info/RECORD,,
