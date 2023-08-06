@@ -1,0 +1,10 @@
+envoy/github/abstract/__init__.py,sha256=5dQYG2ihlhTMFv1C4ptN5cLnBv85_-OVY6eRXhg-23U,387
+envoy/github/abstract/assets.py,sha256=3Z-pMXMAuqS9Lqc27y1sL8C0KLyt_y7MEBA_UfhmtvA,3507
+envoy/github/abstract/manager.py,sha256=om-GKMg_NFsDBPUU5elDZFm2S8bSZAxQsVuFBL4YVHc,3567
+envoy/github/abstract/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envoy/github/abstract/release.py,sha256=AU5b9Mq0r1k6khjnRdn_hiN2TU3CJTdORtPg-4Uqivc,3572
+tests/test_abstract.py,sha256=sj_rwmbkeAmKMiBVFaBw_38fugLAFpxD4KPKIVtrOzM,215
+envoy.github.abstract-0.0.5.dist-info/METADATA,sha256=MEo-HUWnn2woxfoTqsOMgu0Bh_OMLJmlgROECdBEOKs,1551
+envoy.github.abstract-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+envoy.github.abstract-0.0.5.dist-info/top_level.txt,sha256=42VlDpOTLTbLBqHGkve70aKsXydFXDYZ1t1ycKQlkoI,12
+envoy.github.abstract-0.0.5.dist-info/RECORD,,
