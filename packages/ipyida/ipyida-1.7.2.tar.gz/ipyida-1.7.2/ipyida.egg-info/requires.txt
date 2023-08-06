@@ -1,0 +1,6 @@
+ipykernel>=4.6
+qtconsole>=4.3
+jupyter-client<6.1.13
+
+[:python_version >= "3"]
+qasync
