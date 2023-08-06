@@ -1,0 +1,7 @@
+numpy
+jyutping
+pypinyin
+onnxruntime
+pyworld
+more-itertools
+tqdm
