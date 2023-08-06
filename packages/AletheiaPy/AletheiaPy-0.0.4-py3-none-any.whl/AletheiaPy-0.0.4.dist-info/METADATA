@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: AletheiaPy
+Version: 0.0.4
+Summary: AletheiaPy is a Python wrapper of Aletheia API, which provides access to financial data.
+Home-page: https://github.com/lliang17/AletheiaPy
+Author: Lyndon Liang
+Author-email: lyndon.y.liang@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+# AletheiaPy
+
+AletheiaPy is a Python wrapper of [Aletheia API](https://aletheiaapi.com/), which provides access to financial data.
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install AletheiaPy
+```
+
+## Usage
+
+Note that an API key is required to use the client. AletheiaPy essentially follows [Aletheia API's usage](https://aletheiaapi.com/docs/). Note that AletheiaPy currently supports GET requests only.
+
+```python
+from Aletheia import Client
+
+# Initialize Client
+key = "333acb16de254844ab64783232d2ba66" # Example from Aletheia's website
+theia = Client(key)
+
+# Get a stock summary for a security
+theia.StockData("FB")
+```
+
