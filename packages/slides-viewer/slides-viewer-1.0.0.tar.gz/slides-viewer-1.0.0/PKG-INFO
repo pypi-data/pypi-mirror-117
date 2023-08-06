@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: slides-viewer
+Version: 1.0.0
+Summary: Viewer for live presentations, based on manim-presentation for now
+Home-page: https://github.com/lafeychine/slides-viewer/
+License: GPL-3.0-or-later
+Author: Vincent Lafeychine
+Author-email: vincent.lafeychine@gmail.com
+Maintainer: Vincent Lafeychine
+Maintainer-email: vincent.lafeychine@gmail.com
+Requires-Python: >=3.9,<3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jsonschema (>=3.2.0,<4.0.0)
+Requires-Dist: pyside2 (==5.15.2)
+Project-URL: Repository, https://github.com/lafeychine/slides-viewer/
+Description-Content-Type: text/markdown
+
+# Slides Viewer
+
+Viewer for live presentations, based on [manim-presentation](https://github.com/galatolofederico/manim-presentation) *for now*.
+
+
+
+### License
+
+The code is released as Free Software under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) license.
