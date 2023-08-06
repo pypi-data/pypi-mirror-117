@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: live-pandoc
+Version: 0.1.1
+Summary: A program for live rendering a pandoc command
+Home-page: http://github.com/blockjoe/live-pandoc
+Author: blockjoe
+Author-email: blockjoe46@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: watchdog
+
+# live-pandoc
+
+live-pandoc is simple script designed to run a pandoc command against a file when changes to that file are detected.
+
+## Installation
+
+```sh
+pip install live-pandoc
+```
+
+## Quickstart
+
+live-pandoc was designed to be used identically to how pandoc would be used.
+
+For example, if running the following pandoc command:
+
+```sh
+pandoc README.md -o README.pdf
+```
+
+The live-pandoc command would run as:
+
+```sh
+live-pandoc README.md -o README.pdf
+```
+
+When changes are detected in `README.md`, `pandoc README.md -o README.pdf` will be run.
+
+
