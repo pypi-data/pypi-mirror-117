@@ -1,0 +1,13 @@
+xlsx_provider/VERSION,sha256=TKwna27F1Mcc2Wyi57di6xJUOa28hyHeVhMQbRNF_i0,6
+xlsx_provider/__init__.py,sha256=9o1JPvmOfvQK9gGzoxRLZO5wA2-qvjDxUDeRPIDNhNg,562
+xlsx_provider/commons.py,sha256=8l0lKWh6pt5A2twg2kcRzg8Hsmi55916NEmqYmUbruA,2931
+xlsx_provider/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xlsx_provider/operators/from_xlsx_operator.py,sha256=RaEcfewZnyvUt55cNKFesp1ByfXyLFupV5b_sTuUGk4,11433
+xlsx_provider/operators/from_xlsx_query_operator.py,sha256=Wf7irDV8jiHRvp6wbq5eA89BTxPq5qQg-YlhRI8zA1M,6442
+xlsx_provider/operators/to_xlsx_operator.py,sha256=uAW2lcPYPP1Kv__Nsyc5bu_zDPs-OU0QhQ2gA2b3obA,1536
+airflow_provider_xlsx-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_provider_xlsx-0.0.3.dist-info/METADATA,sha256=ZtbkN-2jwhQG-C_oQVmE-g_r8DSc1b868eDWpSCcY_o,1493
+airflow_provider_xlsx-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+airflow_provider_xlsx-0.0.3.dist-info/entry_points.txt,sha256=IGzBP9qZIdmsv2MnGwHW3UnEPYtHCxIeSpp5u3_fTuQ,84
+airflow_provider_xlsx-0.0.3.dist-info/top_level.txt,sha256=OybBq1dVz0c8m-c5O4E_jZPRcjVdqQ6339I8Yv-mz3k,14
+airflow_provider_xlsx-0.0.3.dist-info/RECORD,,
