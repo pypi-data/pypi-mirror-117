@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: finn
+Version: 0.0.1
+Summary: QNN dataflow compiler for Xilinx FPGAs
+Home-page: https://github.com/Xilinx/finn
+Author: Yaman Umuroglu
+Author-email: yamanu@xilinx.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+
+FINN is not yet pip-installable due to complex dependencies. Please visit github.com/Xilinx/finn to install.
+
