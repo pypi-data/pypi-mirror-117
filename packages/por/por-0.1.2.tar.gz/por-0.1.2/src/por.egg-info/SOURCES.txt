@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/por/scraper.py
+src/por.egg-info/PKG-INFO
+src/por.egg-info/SOURCES.txt
+src/por.egg-info/dependency_links.txt
+src/por.egg-info/requires.txt
+src/por.egg-info/top_level.txt
+src/por/sphinx_extensions/__init__.py
+src/por/sphinx_extensions/processor/html_translator.py
+src/por/sphinx_extensions/processor/parser.py
+src/por/sphinx_extensions/processor/roles.py
+src/por/sphinx_extensions/processor/transforms/contents.py
+src/por/sphinx_extensions/processor/transforms/title.py
