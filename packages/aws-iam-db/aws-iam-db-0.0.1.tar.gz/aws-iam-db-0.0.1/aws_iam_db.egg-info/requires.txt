@@ -1,0 +1,4 @@
+typer
+beautifulsoup4
+sqlalchemy
+requests
