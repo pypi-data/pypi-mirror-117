@@ -1,0 +1,2 @@
+sqlalchemy
+preset-aurora-data-api>=0.2.8
