@@ -1,0 +1,3 @@
+[console_scripts]
+slides-viewer=slides_viewer.console:main
+
