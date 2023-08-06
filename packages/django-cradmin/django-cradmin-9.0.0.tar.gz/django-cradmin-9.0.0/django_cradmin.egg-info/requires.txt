@@ -1,0 +1,3 @@
+Django<4.0.0,>=3.2.0
+html2text
+ievv_opensource<9.0.0,>=8.0.0
