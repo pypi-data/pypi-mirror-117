@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+data/corrections/list_films_right.csv
+data/corrections/list_films_wrong.csv
+data/corrections/list_names_right.csv
+data/corrections/list_names_wrong.csv
+src/Oscarscrapper.egg-info/PKG-INFO
+src/Oscarscrapper.egg-info/SOURCES.txt
+src/Oscarscrapper.egg-info/dependency_links.txt
+src/Oscarscrapper.egg-info/top_level.txt
+src/Oscarscrapper_package/Oscarscrapper.py
+src/Oscarscrapper_package/__init__.py
