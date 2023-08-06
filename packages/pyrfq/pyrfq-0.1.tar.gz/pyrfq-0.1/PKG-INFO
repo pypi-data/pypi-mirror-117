@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: pyrfq
+Version: 0.1
+Summary: Python wrapper for the RFQ-Viewer APIg
+Home-page: https://git.drwholdings.com/msalasevicius/pyrfq
+Author: Morkus Salasevicius
+Author-email: ms1419@imperial.ac.uk
+License: MIT
+Download-URL: https://git.drwholdings.com/msalasevicius/pyrfq/archive/v_0.1.tar.gz
+Description: UNKNOWN
+Keywords: RFQ
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
