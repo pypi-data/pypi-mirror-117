@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "skip_ssg"
+version = "0.2.0"
+description = "A simple python-based static site generator"
+authors = ["Harry Eldridge <heldridge@protonmail.com>"]
+readme = "README.md"
+repository = "https://github.com/heldridge/skip"
+keywords = ["ssg", "static-site-generator", "markdown"]
+license = "MIT"
+
+[tool.poetry.scripts]
+skip = 'skip_ssg.skip:main'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+watchgod = "^0.7"
+Markdown = "^3.3.4"
+python-frontmatter = "^1.0.0"
+Jinja2 = "^3.0.1"
+gitignore-parser = "^0.0.8"
+arrow = "^1.1.1"
+Pygments = "^2.9.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+pyproject-flake8 = "^0.0.1-alpha.2"
+mypy = "^0.910"
+coverage = "^5.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203,"
