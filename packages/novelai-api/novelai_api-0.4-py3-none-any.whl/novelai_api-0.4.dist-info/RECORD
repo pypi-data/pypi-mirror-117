@@ -1,0 +1,11 @@
+novelai_api/NovelAIError.py,sha256=vlQkTIzVtyhacxShh4gVN_sGtEVfnu6lDz92JZ-hfOc,233
+novelai_api/NovelAI_API.py,sha256=q7bTYd8eqX3VkXipDnsQNPPpYhkAKZ7c1t9GQy5QgBU,931
+novelai_api/__init__.py,sha256=pdEtxvSlkwXkCpWXQJMlXFVY2ecVJao11gSlS_7hZM8,97
+novelai_api/_high_level.py,sha256=KZx1wEb6W2xvqxe6gHMF9zsSwrrrI5dmEDp_luNeidw,4608
+novelai_api/_low_level.py,sha256=ovJldr-F4YLd86LimU93jSpQTLbsMBSfeBcaVi-4z2s,14400
+novelai_api/utils.py,sha256=chPOI9cnZCl4Q7W_o4mTYAwchSacplXo5SCLB6x12Ag,2837
+novelai_api-0.4.dist-info/LICENSE,sha256=i7WY2tlv60kjSrjEUHc_MGyvaurVHcxcUAK5LyEd_mI,1063
+novelai_api-0.4.dist-info/METADATA,sha256=QlLrLDJTKvgrE18dk70MQ4zdObn5H3dnXIT7BjgTX1A,873
+novelai_api-0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+novelai_api-0.4.dist-info/top_level.txt,sha256=XQ1Pvfr_i00BgnHF6xSgsa1Hca8ko9Uj-a4_qTsBbww,12
+novelai_api-0.4.dist-info/RECORD,,
