@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/monga.egg-info/PKG-INFO
+src/monga.egg-info/SOURCES.txt
+src/monga.egg-info/dependency_links.txt
+src/monga.egg-info/top_level.txt
