@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: neuronmd
+Version: 0.1.0
+Summary: Package for simulating spiking neuron models
+Home-page: https://github.com/sowmyamanojna/neuronmd
+Author: N Sowmya Manojna
+Author-email: sowmyamanojna@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
