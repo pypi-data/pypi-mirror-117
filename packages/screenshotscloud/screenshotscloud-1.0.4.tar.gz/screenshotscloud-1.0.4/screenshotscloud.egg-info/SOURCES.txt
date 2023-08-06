@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.cfg
+setup.py
+screenshotscloud/__init__.py
+screenshotscloud.egg-info/PKG-INFO
+screenshotscloud.egg-info/SOURCES.txt
+screenshotscloud.egg-info/dependency_links.txt
+screenshotscloud.egg-info/top_level.txt
