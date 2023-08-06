@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: text-prepender
+Version: 0.1.0
+Summary: Add text (like legal text) to the top of code without breaking it.
+Home-page: https://github.com/dontirun/text-prepender
+Author: Arun Donti
+Author-email: dontirun@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/dontirun/text-prepender/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+<!--
+Copyright 2021 Arun Donti
+SPDX-License-Identifier: MIT
+-->
+# Text Prepender
+
+[![PyPI version](https://badge.fury.io/py/text-prepender.svg)](https://badge.fury.io/py/text-prepender)
+
+Created in mind to add Legal Text to the top of code
+
+text-prepender recursively goes through a specified directory/list of files, and adds text to the top of supported filetypes.
+If there is a filetype that you want to add/know how to add, please make a pull request!
+
+### Parameters
+
+Optional parameters:
+
+| Command Line         | Input                | Description                                                                  |
+| -------------------- | -------------------- | ---------------------------------------------------------------------------- |
+| -h, --help           |                      | Get description of text-prepender                                            |
+| -p, --path           | dirpath              | The path to the directory which text-prepender will start at (default: '.')  |
+| -t, --text-file      | filepath             | The path to the file which text-prepender will start at (default: NOTICE)    |
+| -i, --extra-ignores  | space delimited list | Additional file paths/names to ignore. Ex. (-i file1 path1 path2)            |
+| -v, --enable-verbose |                      | Flag to turn on verbose logging to list skipped files at the end             |
+
+## To Run:
+
+```bash
+# run on all files in current directory
+text-prepender
+# text-prepender --path path/to different directory
+```
+
+or
+
+```bash
+# run on a specific set of files
+text-prepender file1 path/to/file2
+```
+
+`text-prepender --text-file path/to/file`
+
+## pre-commit
+
+If you'd like text-prepender to be run automatically when making changes to files in your Git repository, you can install [pre-commit](https://pre-commit.com/) and add the following text to your repositories' `.pre-commit-config.yaml`:
+
+```yaml
+  repos:
+  - repo: https://github.com/dontirun/text-prepender
+      rev: v0.1.0 # The version of text-prepender
+      hooks:
+      - id: text-prepender
+      #  args:
+      #    - '--text-file'
+      #    - 'NOTICE'
+```
+## Manual Build
+
+1. Clone the repo
+2. Build the package
+   - `pip install build`
+   - `python -m build`
+3. Install the latest version of the package
+   - whl
+     - `pip install dist/text_prepender-x.x.x-py3-none-any.whl`
+   - .tar.gz
+     - `pip install dist/text-prepender-x.x.x.tar.gz`
+
+</details>
+
+
