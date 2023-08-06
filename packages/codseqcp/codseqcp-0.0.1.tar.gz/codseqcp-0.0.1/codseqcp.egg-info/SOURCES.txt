@@ -1,0 +1,10 @@
+README.txt
+setup.py
+CODSEQCP/__init__.py
+CODSEQCP/codseqcp.py
+CODSEQCP/run_augustus.py
+CODSEQCP/run_spades.py
+codseqcp.egg-info/PKG-INFO
+codseqcp.egg-info/SOURCES.txt
+codseqcp.egg-info/dependency_links.txt
+codseqcp.egg-info/top_level.txt
