@@ -1,0 +1,12 @@
+rdf_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rdf_to_sqlite/cli.py,sha256=Szhmf_QYG3pJXKgSPwIPjvUz6_IRpQbKa3GgVMfCM5w,1014
+rdf_to_sqlite/mappings.py,sha256=GPWu7d0-SCqCHOBh7iPgwIRCdbZV-JTygP8DBhRvZog,3855
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=Z_zfwl60sldqSBALhqnxCqoBzYX-w1DZrHtVPw86pzk,6156
+tests/test_mappings.py,sha256=mXfpZfsNdrNKZTKCQtSrho955zWoDi4CEeRjuKDOI0s,5912
+rdf_to_sqlite-0.2.dist-info/LICENSE,sha256=qXY_kdc5IZge0jXqrQ8dniXqRppS2xt30JveaUIPTHY,1056
+rdf_to_sqlite-0.2.dist-info/METADATA,sha256=trF1JfFRWx2C2cDQzlKY52QihszvBMQlNgAHN9RglLU,3454
+rdf_to_sqlite-0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+rdf_to_sqlite-0.2.dist-info/entry_points.txt,sha256=pZrhqz_FqZcVpHPbKRfREuDl1GqC0ZtRPRAADFYtS3g,75
+rdf_to_sqlite-0.2.dist-info/top_level.txt,sha256=K4M2ah6OEjJMQASG6IDriyviJfznn5JLkypcrLVcPOU,20
+rdf_to_sqlite-0.2.dist-info/RECORD,,
