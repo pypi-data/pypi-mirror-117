@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+lru/__init__.py
+lru_od.egg-info/PKG-INFO
+lru_od.egg-info/SOURCES.txt
+lru_od.egg-info/dependency_links.txt
+lru_od.egg-info/top_level.txt
