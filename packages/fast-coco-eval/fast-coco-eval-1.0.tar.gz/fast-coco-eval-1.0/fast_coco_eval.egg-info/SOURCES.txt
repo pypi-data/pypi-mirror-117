@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+csrc/vision.cpp
+csrc/coco_eval/cocoeval.cpp
+csrc/coco_eval/cocoeval.h
+fast_coco_eval/__init__.py
+fast_coco_eval/fast_eval_api.py
+fast_coco_eval.egg-info/PKG-INFO
+fast_coco_eval.egg-info/SOURCES.txt
+fast_coco_eval.egg-info/dependency_links.txt
+fast_coco_eval.egg-info/requires.txt
+fast_coco_eval.egg-info/top_level.txt
