@@ -1,0 +1,11 @@
+phjokes/__init__.py,sha256=z6VrbjcXcukXl0ewadPGMlOfE3moKES_s0qqmaEI_6U,60
+phjokes/main.py,sha256=J4xfANv_vvA7KcUDZ86M2-ngDD5tP0xVBdzZFP-TEao,1097
+phjokes/jokes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phjokes/jokes/jokes.py,sha256=6IhZxPygQqO6iIG2IcSPIsD4oQJNBNizbzEkyq6K0UI,175478
+phjokes/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phjokes/utils/helpers.py,sha256=9uoeHIkJ91uPaqtGI2MA57PFML8kHf0KNPou1F8oZkA,786
+phjokes-0.0.1.dist-info/LICENCE.md,sha256=UtdGkFt7lQIR60UREMM_3eDIvhI7qFwG4rt5YPQ04GI,1064
+phjokes-0.0.1.dist-info/METADATA,sha256=AlEIs1kYICXmqlw0aPFI-g71yKewt1AsISBI7rmcm_c,696
+phjokes-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+phjokes-0.0.1.dist-info/top_level.txt,sha256=aZvwPlGlGt-tuPeInfmlO-ul_KpjJBUrsIZo14Qlehg,8
+phjokes-0.0.1.dist-info/RECORD,,
