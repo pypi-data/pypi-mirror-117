@@ -1,0 +1,10 @@
+pulpcore/cli/deb/__init__.py,sha256=zXfnphXdUk5NAMZS7AkjEoKOd4xemIkcIHJ93Xlsha0,403
+pulpcore/cli/deb/context.py,sha256=ThNpgWdNNFapRj1bsAbT2VBJFrv6ZTDRGduJO7Q45Bs,1269
+pulpcore/cli/deb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulpcore/cli/deb/remote.py,sha256=0JMVirrRiXPo-NA7nWoCM5hGdQCxv7QZ_qIdROFSkaI,1553
+pulpcore/cli/deb/repository.py,sha256=56qxtBWUa1wl5k4p82xeSypOkqiM-LwtsBncRXoPWjk,3142
+pulp_cli_deb-0.0.1.dist-info/METADATA,sha256=0QJNWTlsIJrRIWJvoHGqGr_ncJBfr3QDssFj2QLWIoM,674
+pulp_cli_deb-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pulp_cli_deb-0.0.1.dist-info/entry_points.txt,sha256=eSI3XdrUwngGn6OB6gJAL3aWFJwD0YbARPd9SQm9_Ks,43
+pulp_cli_deb-0.0.1.dist-info/top_level.txt,sha256=v1J0AeNxNhm8YE5-xQe1G1YbfoMRZ_u9DAg_Gi7omeY,9
+pulp_cli_deb-0.0.1.dist-info/RECORD,,
