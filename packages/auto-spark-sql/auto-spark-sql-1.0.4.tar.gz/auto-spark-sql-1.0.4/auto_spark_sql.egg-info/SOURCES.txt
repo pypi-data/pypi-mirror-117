@@ -1,0 +1,8 @@
+README.md
+setup.py
+autoSaprkSql/__init__.py
+auto_spark_sql.egg-info/PKG-INFO
+auto_spark_sql.egg-info/SOURCES.txt
+auto_spark_sql.egg-info/dependency_links.txt
+auto_spark_sql.egg-info/requires.txt
+auto_spark_sql.egg-info/top_level.txt
