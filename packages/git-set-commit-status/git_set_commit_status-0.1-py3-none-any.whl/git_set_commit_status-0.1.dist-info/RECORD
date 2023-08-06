@@ -1,0 +1,9 @@
+git_set_commit_status/__init__.py,sha256=eYHybw5KFWGz_2frZDPGkjLm3Zll_ODYyLBrjyVD4Kw,57
+git_set_commit_status/consts.py,sha256=xpkzw_b8hXtQqYFegRDdzG0YVGGJkPAGlgrKz8xH6FM,749
+git_set_commit_status/set_status.py,sha256=z80VO-A-Wpj6IpuLmvshOgfxNQA-9xQycMXm_R_yRkA,3020
+git_set_commit_status/utils.py,sha256=d9dWr2MUTurCJ2E6b0LgjqEVl5EBvvusPTKesL_H3BA,2865
+git_set_commit_status-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+git_set_commit_status-0.1.dist-info/METADATA,sha256=GtYtNZ_zLuY-5J00mbHUcy-5isGJwfXFmAVSiz3SSHo,489
+git_set_commit_status-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+git_set_commit_status-0.1.dist-info/top_level.txt,sha256=H6NayaSdxx3K9AWTRTO2VCMzAhu9RuFw9bLhbWPEye8,22
+git_set_commit_status-0.1.dist-info/RECORD,,
