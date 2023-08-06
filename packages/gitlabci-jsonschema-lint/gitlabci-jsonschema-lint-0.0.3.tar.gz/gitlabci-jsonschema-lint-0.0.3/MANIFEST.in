@@ -1,0 +1,2 @@
+# Include the json schema
+include gitlabci_lint/gitlab-ci.json
