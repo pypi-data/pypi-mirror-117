@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: timequota
+Version: 0.0.3
+Summary: Manage the time of your script
+Home-page: https://github.com/AravRS/timequota
+Author: AravRS
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: prettytable
+
+# timequota
+
+```python
+from timequota import TimeQuota
+
+tq = TimeQuota(69)
+
+# ...
+
+tq.update()
+
+for i in range(âˆž):
+
+    # ...
+
+    exceeded = tq.track()
+    if exceeded:
+        # ...
+        break
+```
+
+[[Demo Notebook]](https://github.com/AravRS/timequota/blob/main/demo.ipynb)
+[[Changelog]](https://github.com/AravRS/timequota/blob/main/CHANGELOG.md)
+[[GitHub]](https://github.com/AravRS/timequota)
+
+
