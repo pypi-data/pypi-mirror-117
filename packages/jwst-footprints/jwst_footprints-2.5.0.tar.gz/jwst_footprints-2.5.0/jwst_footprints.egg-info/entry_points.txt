@@ -1,0 +1,3 @@
+[gui_scripts]
+jwst_footprints = jwst_footprints.gui.footprints:main
+

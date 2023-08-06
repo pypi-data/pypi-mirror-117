@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jwst_footprints
+Version: 2.5.0
+Summary: The JWST NIRSpec Observation Visualization Tool is a Python application that provides a simultaneous view of both NIRSpec and NIRCam fields of view on a given sky position, for assistance in planning NIRCam pre-imaging for NIRSpec.
+Home-page: https://github.com/spacetelescope/jwst_footprints
+Author: Leonardo Ubeda
+Author-email: lubeda@stsci.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE.md
+
+UNKNOWN
+
