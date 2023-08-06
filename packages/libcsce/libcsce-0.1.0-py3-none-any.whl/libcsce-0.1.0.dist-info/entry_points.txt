@@ -1,0 +1,4 @@
+[console_scripts]
+csce=libcsce.bin.csce:main
+list-cs-settings=libcsce.bin.list_cs_settings:main
+
