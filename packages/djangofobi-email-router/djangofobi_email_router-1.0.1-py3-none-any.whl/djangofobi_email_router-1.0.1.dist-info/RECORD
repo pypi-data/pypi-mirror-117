@@ -1,0 +1,10 @@
+djangofobi_email_router/__init__.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+djangofobi_email_router/fobi_form_handlers.py,sha256=4h0lK3y0sxTKy524vaYmGM8codENLfCzwPF1uce0-zY,2788
+djangofobi_email_router/forms.py,sha256=b0P7dsesqJlKpQguAPEu6A5UCBJj1GEpsIKxNZoLqmw,1881
+djangofobi_email_router/locale/fr/LC_MESSAGES/django.mo,sha256=w2M7xjrOYDpiNB7KKg_uZMx6XOOWb1gprPowpy2N53A,811
+djangofobi_email_router/locale/fr/LC_MESSAGES/django.po,sha256=uacb38c4i8lAVkQxmF6YxIKLT7CFsGX_GkkiObid8So,1034
+djangofobi_email_router/templates/email_router/plugin_data_repr.html,sha256=Efh7kSW5BYvT-cxrIt8Qjvagp3l3cQ4lRsmFwoD75W8,162
+djangofobi_email_router-1.0.1.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+djangofobi_email_router-1.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+djangofobi_email_router-1.0.1.dist-info/METADATA,sha256=DMAYf9_WYudTHy5TVHdQigWxt-3v_Sy8FvHA0zCpR5A,572
+djangofobi_email_router-1.0.1.dist-info/RECORD,,
