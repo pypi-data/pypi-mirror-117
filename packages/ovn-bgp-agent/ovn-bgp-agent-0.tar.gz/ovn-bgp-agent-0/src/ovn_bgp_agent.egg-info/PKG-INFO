@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ovn-bgp-agent
+Version: 0
+Summary: BGP Agent targets to expose VMs/Containers through BGP on OVN environments.
+Home-page: https://github.com/luis5tb/bgp-agent
+Author: OpenStack
+Author-email: openstack-discuss@lists.openstack.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+=============
+OVN BGP AGENT
+=============
+
+BGP Agent targets to expose VMs/Containers through BGP on OVN environments.
+
+
