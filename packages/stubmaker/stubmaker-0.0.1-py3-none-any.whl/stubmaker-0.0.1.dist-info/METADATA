@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: stubmaker
+Version: 0.0.1
+Summary: Tool for generating python stubs
+Home-page: UNKNOWN
+Author: Vladimir Losev
+Author-email: losev@yandex-team.ru
+License: UNKNOWN
+Project-URL: Source, https://github.com/Toloka/stubmaker
+Platform: UNKNOWN
+Requires-Python: >=3.7.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: docstring-parser
+
+# Stubmaker
+
+Stubmaker is an easy-to-use tool for generating [python stubs](https://www.python.org/dev/peps/pep-0484/#stub-files).
+
+Requirements
+------------
+- Stubmaker is to be run under Python 3.7.4+
+- No side effects during module imports
+- Must contain `__all__` (this restriction will be removed in upcomming releases)
+
+How to use
+----------
+```bash
+pip install stubmaker
+stubmaker --help
+```
+
+License
+-------
+© YANDEX LLC, 2020-2021. Licensed under the Apache License, Version 2.0. See LICENSE file for more details.
+
+
