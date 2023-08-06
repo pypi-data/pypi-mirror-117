@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: data-enum
+Version: 1.0.0
+Summary: An alternative to the built-in Python `enum` implementation
+Home-page: https://github.com/chasefinch/data-enum
+Author: Chase Finch
+Author-email: chase@finch.email
+License: UNKNOWN
+Description: # Data Enums
+        
+        An alternative to the built-in Python `enum` implementation. Data enums allow you to:
+        
+        - Associate data with enum members
+        - Add secondary unique keys
+        - Lookup enum members by secondary unique keys
+        
+        ## Testing, etc.
+        
+        Sort imports (Requires Python >= 3.6):
+        
+        	make format
+        
+        Lint (Requires Python >= 3.6):
+        
+        	make lint
+        
+        Test:
+        
+        	make test
+Keywords: Enum,Enumeration
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
