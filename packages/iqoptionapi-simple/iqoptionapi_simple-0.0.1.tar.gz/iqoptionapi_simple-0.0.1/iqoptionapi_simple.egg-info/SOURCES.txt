@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+iqoptionapi_simple/__init__.py
+iqoptionapi_simple.egg-info/PKG-INFO
+iqoptionapi_simple.egg-info/SOURCES.txt
+iqoptionapi_simple.egg-info/dependency_links.txt
+iqoptionapi_simple.egg-info/not-zip-safe
+iqoptionapi_simple.egg-info/requires.txt
+iqoptionapi_simple.egg-info/top_level.txt
