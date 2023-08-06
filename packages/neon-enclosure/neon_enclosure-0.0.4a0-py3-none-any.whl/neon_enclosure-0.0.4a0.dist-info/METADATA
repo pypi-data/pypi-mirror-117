@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: neon-enclosure
+Version: 0.0.4a0
+Summary: Neon Enclosure Module
+Home-page: https://github.com/NeonGeckoCom/neon-enclosure
+Author: Neongecko
+Author-email: developers@neon.ai
+License: NeonAI License v1.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: mycroft-messagebus-client (>=0.9)
+Requires-Dist: neon-utils (>=0.5.7)
+Requires-Dist: tornado (==6.0.3)
+Requires-Dist: RPi.GPIO (==0.7.0)
+Requires-Dist: smbus2 (==0.4.0)
+Requires-Dist: pulsectl (~=21.5)
+
+# neon-enclosure
+Enclosure module
+
+
