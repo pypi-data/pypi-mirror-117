@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "flimit"
+version = "1.0.0"
+description = "Limit time and memory usage from a function"
+authors = ["Quentin Fortier <qpfortier@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/fortierq/flimit"
+repository = "https://github.com/fortierq/flimit"
+keywords = ["limit", "time", "memory", "function"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+psutil = "^5.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
