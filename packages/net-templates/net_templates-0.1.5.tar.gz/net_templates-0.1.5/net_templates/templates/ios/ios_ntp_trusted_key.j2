@@ -1,0 +1,5 @@
+{% if params | default(none) is not none %}
+{%   if params.trusted | default(none) is sameas true %}
+ntp trusted-key {{ params.key_id }}
+{%   endif %}
+{% endif %}

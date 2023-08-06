@@ -1,0 +1,47 @@
+{% if params | default(none) is not none %}
+ service instance {{ params.si_id }} ethernet
+{%   if params.description | default(none) is not none %}
+  description {{ params.description }}
+{%   endif %}
+{# Encapsulation section #}
+{%   if params.encapsulation | default(none) is not none %}
+{%     if params.encapsulation.encapsulation_type == 'dot1q' %}
+{%       with params = params.encapsulation %}
+{%         include 'ios_interface_service_instance_dot1q_encapsulation.j2' %}
+{%       endwith %}
+{# Rewrite Section #}
+{%       if params.rewrite | default(none) is not none %}
+{%       with params = params.rewrite %}
+{%         include 'ios_interface_service_instance_dot1q_rewrite.j2' %}
+{%       endwith %}
+{%       endif %}
+{%     elif params.encapsulation.encapsulation_type == 'untagged' %}
+  encapsulation untagged
+{%     endif %}
+{%   endif %}
+{# L2 Protocol Section #}
+{%   if params.l2_protocol | default(none) is not none %}
+{%     if params.l2_protocol.forward | default(none) is not none %}
+  l2protocol forward{% for protocol in params.l2_protocol.forward %} {{ protocol }}{% endfor %}
+
+{%     endif %}
+{%     if params.l2_protocol.peer | default(none) is not none %}
+  l2protocol peer{% for protocol in params.l2_protocol.peer %} {{ protocol }}{% endfor %}
+
+{%     endif %}
+{%   endif %}
+{%   if params.bridge_domain | default(none) is not none %}
+  bridge-domain {{ params.bridge_domain }}
+{%   endif %}
+{# Service Policy Section #}
+{%   if params.service_policy is not none %}
+{%     with params = params.service_policy, indent = 2 %}
+{%       include 'ios_interface_service_policy.j2'  %}
+{%     endwith %}
+{%   endif %}
+{%   if params.enabled | default(none) is not none %}
+{%     if params.enabled is sameas False %}
+  shutdown
+{%     endif %}
+{%   endif %}
+{% endif %}

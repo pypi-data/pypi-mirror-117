@@ -1,0 +1,18 @@
+{% if params | default(none) is not none %}
+{# Transmit #}
+{%   if params.transmit | default(none) is sameas true %}
+{%     if INCLUDE_DEFAULTS | default(false) is sameas true %}
+ lldp transmit
+{%     endif %}
+{%   elif params.transmit | default(none) is sameas false %}
+ no lldp transmit
+{%   endif %}
+{# Receive #}
+{%   if params.receive | default(none) is sameas true %}
+{%     if INCLUDE_DEFAULTS | default(false) is sameas true %}
+ lldp receive
+{%     endif %}
+{%   elif params.receive | default(none) is sameas false %}
+ no lldp receive
+{%   endif %}
+{% endif %}{# endif params is defined #}

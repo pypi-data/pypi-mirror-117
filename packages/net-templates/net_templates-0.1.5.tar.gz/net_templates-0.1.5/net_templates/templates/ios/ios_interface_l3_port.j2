@@ -1,0 +1,35 @@
+{% if params | default(none) is not none %}
+{# Encapsulation #}
+{%   if params.encapsulation | default(none) is not none %}
+{%     if params.encapsulation.encapsulation == 'dot1q' %}
+ encapsulation dot1q {{ params.encapsulation.tag }}{% if params.encapsulation.native | default(none) is sameas true %} native{% endif %}
+
+{%     endif %}
+{%   endif %}
+{# VRF #}
+{%   if params.vrf | default(none) is not none %}
+ vrf forwarding {{ params.vrf }}
+{%   endif %}
+{# IP MTU #}
+{%   if params.ip_mtu | default(none) is not none %}
+ ip mtu {{ params.ip_mtu }}
+{%   endif %}
+{# OSPF Section #}
+{%   if params.ospf | default(none) is not none %}
+{%     with params = params.ospf %}
+{%       include 'ios_interface_ospf.j2' %}
+{%     endwith %}
+{%   endif %}
+{# ISIS Section #}
+{%   if params.isis | default(none) is not none %}
+{%     with params = params.isis %}
+{%       include 'ios_interface_isis.j2' %}
+{%     endwith %}
+{%   endif %}
+{# BFD Section #}
+{%   if params.bfd | default(none) is not none %}
+{%     with params = params.bfd %}
+{%       include 'ios_interface_bfd.j2' %}
+{%     endwith %}
+{%   endif %}
+{% endif %}

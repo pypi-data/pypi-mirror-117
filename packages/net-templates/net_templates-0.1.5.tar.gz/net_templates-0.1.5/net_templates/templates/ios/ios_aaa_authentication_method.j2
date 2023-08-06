@@ -1,0 +1,6 @@
+{% if params | default(none) is not none %}
+{%   if authentication_type | default(none) is not none %}
+aaa authentication {{ authentication_type }} {{ params.name }} {% with params = params.action_list %}{% include 'ios_aaa_action_list.j2' %}{% endwith %}
+
+{%   endif %}
+{% endif %}

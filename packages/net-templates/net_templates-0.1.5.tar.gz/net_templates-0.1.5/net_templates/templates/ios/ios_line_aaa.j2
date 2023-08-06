@@ -1,0 +1,49 @@
+{# AAA Config Section #}
+{% if params | default(none) is not none %}
+{# Authentication #}
+{%   if params.authentication | default(none) is not none %}
+{%     if params.authentication == 'default' and INCLUDE_DEFAULTS | default(false) is sameas true %}
+ login authentication default
+{%     elif params.authentication != 'default' %}
+ login authentication {{ params.authentication }}
+{%     endif %}
+{%   endif %}
+{# Authorization #}
+{%   if params.authorization | default(none) is not none %}
+{%     if params.authorization.exec | default(none) is not none %}
+{%       if params.authorization.exec == 'default' and INCLUDE_DEFAULTS | default(false) is sameas true %}
+ authorization exec default
+{%       elif params.authorization.exec != 'default' %}
+ authorization exec {{ params.authorization.exec }}
+{%       endif %}
+{%     endif %}
+{%     if params.authorization.commands | default(none) is not none %}
+{%       for entry in params.authorization.commands %}
+{%         if entry.name == 'default' and INCLUDE_DEFAULTS | default(false) is sameas true %}
+ authorization commands {{ entry.level }} default
+{%         elif entry.name != 'default' %}
+ authorization commands {{ entry.level }} {{ entry.name }}
+{%         endif %}
+{%       endfor %}
+{%     endif %}
+{%   endif %}
+{# Accounting #}
+{%   if params.accounting | default(none) is not none %}
+{%     if params.accounting | default(none) is not none %}
+{%       if params.accounting.exec == 'default' and INCLUDE_DEFAULTS | default(false) is sameas true %}
+ accounting exec default
+{%       elif params.accounting.exec != 'default' %}
+ accounting exec {{ params.accounting.exec }}
+{%       endif %}
+{%     endif %}
+{%     if params.accounting.commands | default(none) is not none %}
+{%       for entry in params.accounting.commands %}
+{%         if entry.name == 'default' and INCLUDE_DEFAULTS | default(false) is sameas true %}
+ accounting commands {{ entry.level }} default
+{%         elif entry.name != 'default' %}
+ accounting commands {{ entry.level }} {{ entry.name }}
+{%         endif %}
+{%       endfor %}
+{%     endif %}
+{%   endif %}
+{% endif %}

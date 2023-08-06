@@ -1,0 +1,9 @@
+{# List of VRF Model #}
+{% if params | default(none) is not none and params is iterable %}
+{%   for entry in params %}
+{%     with params=entry %}
+{%       include 'ios_vrf_definition.j2' %}
+{%     endwith %}
+!
+{%   endfor %}
+{% endif %}

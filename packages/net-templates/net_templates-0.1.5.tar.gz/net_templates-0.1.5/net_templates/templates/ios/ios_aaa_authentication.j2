@@ -1,0 +1,14 @@
+{% if params | default(none) is not none %}
+{# Login #}
+{%   for method in params.login | default([]) %}
+{%     with authentication_type = 'login', params = method %}
+{%       include 'ios_aaa_authentication_method.j2' %}
+{%     endwith %}
+{%   endfor %}
+{# Enable #}
+{%   for method in params.enable | default([]) %}
+{%     with authentication_type = 'enable', params = method %}
+{%       include 'ios_aaa_authentication_method.j2' %}
+{%     endwith %}
+{%   endfor %}
+{% endif %}

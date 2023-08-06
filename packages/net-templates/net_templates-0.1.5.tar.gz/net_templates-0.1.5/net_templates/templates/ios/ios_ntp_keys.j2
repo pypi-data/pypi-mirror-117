@@ -1,0 +1,14 @@
+{% if params | default(none) is not none %}
+{%   for key in params %}
+{%     with params = key %}
+{%       include 'ios_ntp_authentication_key.j2' %}
+{%     endwith %}
+{%   endfor %}
+{%   for key in params %}
+{%     with params = key %}
+{%       if key.trusted | default(none) is sameas true %}
+{%         include 'ios_ntp_trusted_key.j2' %}
+{%       endif %}
+{%     endwith %}
+{%   endfor %}
+{% endif %}

@@ -1,0 +1,33 @@
+{% if params | default(none) is not none %}
+{%   if params.authenticate | default(none) is sameas true %}
+ntp authenticate
+{%   endif %}
+{%   if params.keys | default(none) is not none %}
+{%     with params = params.ntp_keys %}
+{%       include 'ios_ntp_keys.j2' %}
+{%     endwith %}
+{%   endif %}
+{%   if params.src_interface | default(none) is not none %}
+ntp source {{ params.src_interface }}
+{%   endif %}
+{%   include 'ios_ntp_access_groups.j2' %}
+{%   if params.servers | default(none) is not none %}
+{%     for server in params.servers %}
+{%       with session_type = 'server', params=server %}
+{%         include 'ios_ntp_session.j2' %}
+{%       endwith %}
+{%     endfor %}
+{%   endif %}
+{%   if params.peers | default(none) is not none %}
+{%     for peer in params.peers %}
+{%       with session_type = 'peer', params=peer %}
+{%         include 'ios_ntp_session.j2' %}
+{%       endwith %}
+{%     endfor %}
+{%   endif %}
+{%   if params.access_groups | default(none) is not none %}
+{%     with params = params.access_groups %}
+{%         include 'ios_ntp_access_groups.j2' %}
+{%     endwith %}
+{%   endif %}
+{% endif %}

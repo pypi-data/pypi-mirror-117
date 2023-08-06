@@ -1,0 +1,5 @@
+{% if params | default(none) is not none %}
+{% if params.template | default(none) is not none %}
+ bfd template {{ params.template }}
+{% endif %}
+{% endif %}

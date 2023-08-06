@@ -1,0 +1,6 @@
+{% if params | default(none) is not none %}
+{%   if authorization_type | default(none) is not none %}
+aaa authorization {{ authorization_type }} {% if authorization_type == 'commands' %}{{ params.level }} {% endif %}{{ params.name }} {% with params = params.action_list %}{% include 'ios_aaa_action_list.j2' %}{% endwith %}{% if params.if_authenticated | default(none) is sameas true %} if-authenticated{% endif %}
+
+{%   endif %}
+{% endif %}

@@ -1,0 +1,3 @@
+{% if params | default(none) is not none %}
+ntp authentication-key {{ params.key_id }} {{ params.method }} {{ params.value }} {{ params.encryption_type }}
+{% endif %}

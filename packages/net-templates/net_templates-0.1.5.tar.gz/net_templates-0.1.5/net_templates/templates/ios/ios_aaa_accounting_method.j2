@@ -1,0 +1,6 @@
+{% if params | default(none) is not none %}
+{%   if accounting_type | default(none) is not none %}
+aaa accounting {{ accounting_type }} {% if accounting_type == 'commands' %}{{ params.level }} {% endif %}{{ params.name }} {{ params.record }}{% if params.record != 'none' %}{% if params.broadcast | default(none) is sameas true %} broadcast{% endif %} {% with params = params.action_list %}{% include 'ios_aaa_action_list.j2' %}{% endwith %}{% endif %}
+
+{%   endif %}
+{% endif %}

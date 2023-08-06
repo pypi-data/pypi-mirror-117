@@ -1,0 +1,14 @@
+{% if params | default(none) is not none %}
+{# Exec #}
+{%   for method in params.exec | default([]) %}
+{%     with accounting_type = 'exec', params = method %}
+{%       include 'ios_aaa_accounting_method.j2' %}
+{%     endwith %}
+{%   endfor %}
+{# Commands #}
+{%   for method in params.commands | default([]) %}
+{%     with accounting_type = 'commands', params = method %}
+{%       include 'ios_aaa_accounting_method.j2' %}
+{%     endwith %}
+{%   endfor %}
+{% endif %}

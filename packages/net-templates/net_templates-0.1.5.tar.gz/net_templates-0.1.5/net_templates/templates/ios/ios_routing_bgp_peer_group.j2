@@ -1,0 +1,15 @@
+{% if params %}
+{%   if PEERGROUP_DEFINITION_ALLOWED is sameas true %}
+{{ ' ' * indent }}neighbor {{ params.name }} peer-group
+{%     if params.asn is defined %}
+{{ ' ' * indent }}neighbor {{ params.name }} remote-as {{ params.asn }}
+{%     endif%}
+{%     with params=params, id=params.name, is_peergroup=true %}
+{%       include 'ios_routing_bgp_neighbor_definition.j2'%}
+{%     endwith %}
+{%   elif PEERGROUP_DEFINITION_ALLOWED is sameas false %}
+{%   endif %}
+{%   with neighbor = params, id = params.name %}
+{%     include 'ios_routing_bgp_neighbor_options.j2' %}
+{%   endwith %}
+{% endif %}

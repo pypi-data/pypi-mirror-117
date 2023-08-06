@@ -1,0 +1,14 @@
+{% if params %}
+radius server {{ params.name }}
+ address {{ params.address_version }} {{ params.server }}
+ key {{ params.key.encryption_type }} {{ params.key.value }}
+{%   if params.timeout %}
+ timeout {{ params.timeout }}
+{%   endif %}
+{%   if params.retransmit %}
+ retransmit {{ params.retransmit }}
+{%   endif %}
+{%   if params.single_connection %}
+ single-connection
+{%   endif %}
+{% endif %}

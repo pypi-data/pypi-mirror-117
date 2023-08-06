@@ -1,0 +1,19 @@
+{# IosAaaConfig #}
+{% if params | default(none) is not none %}
+aaa new-model
+{%   if params.authentication | default(none) is not none %}
+{%     with params = params.authentication %}
+{%       include 'ios_aaa_authentication.j2' %}
+{%     endwith %}
+{%   endif %}
+{%   if params.authorization | default(none) is not none %}
+{%     with params = params.authorization %}
+{%       include 'ios_aaa_authorization.j2' %}
+{%     endwith %}
+{%   endif %}
+{%   if params.accounting | default(none) is not none %}
+{%     with params = params.accounting %}
+{%       include 'ios_aaa_accounting.j2' %}
+{%     endwith %}
+{%   endif %}
+{% endif %}

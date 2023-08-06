@@ -1,0 +1,61 @@
+{% macro getNeighborId(params, inventory) %}
+{%   set id = 'UNDEFINED' %}
+{%   if params.address %}
+{%     set id = params.address %}
+{{- id -}}
+{%   else %}
+{%     if params.name %}{# If name, lookup in Global Neighbor #}
+{%       with global_params = bgp_params.neighbors | json_query("[?name == '{}']".format(params.name)) | first %}
+{%         if global_params.address %}
+{%           set id = global_params.address %}
+{{- id -}}
+{%         else %}{# Global Neighbor does not have address #}
+{%           if inventory[global_params.name].interfaces[global_params.dest_interface].l3_port.ipv4.addresses[0].address %}
+{%             with id = inventory[global_params.name].interfaces[global_params.dest_interface].l3_port.ipv4.addresses[0].address | ipaddr('address') %}
+{{- id -}}
+{%             endwith %}
+{%           else %}
+UNDEFINED
+{%           endif %}
+{%         endif %}
+{%       endwith %}
+{%     else %}{# Lookup based on interface #}
+{%       if inventory[params.name].interfaces[params.dest_interface].l3_port.ipv4.addresses[0].address %}
+{%         with id = inventory[params.name].interfaces[params.dest_interface].l3_port.ipv4.addresses[0].address | ipaddr('address') %}
+{{- id -}}
+{%         endwith %}
+{%       else %}
+UNDEFINED
+{%       endif %}
+{%     endif %}
+{%   endif %}
+{% endmacro %}
+{% macro getNeighborASN(params) %}
+{%   if params.asn is defined %}
+{%     set asn = params.asn %}
+{%   else %}{# params.asn is not defined #}
+{%     set asn = hostvars[params.name].routing.bgp.asn %}
+{%   endif %}{# params.asn is defined or not#}
+{{- asn -}}
+{% endmacro %}
+{# ---------- Macros end here ---------- #}
+{% if params %}
+{%   set id = getNeighborId(params, inventory | default({}) ) %}
+{%   if NEIGHBOR_DEFINITION_ALLOWED is sameas true %}
+{%     if params.peer_group | default(none) is not none  %}
+{%       set peer_group = peer_groups | json_query("[?name == '{}']".format(params.peer_group)) | first %}
+{%       if peer_group.asn | default(none) is none %}
+{%         set asn = getNeighborASN(params) %}
+{{ ' ' * indent }}neighbor {{ id }} remote-as {{ asn }}
+{%       endif %}
+{{ ' ' * indent }}neighbor {{ id }} peer-group {{ params.peer_group }}
+{%     else %}
+{%       set asn = getNeighborASN(params) %}
+{{ ' ' * indent }}neighbor {{ id }} remote-as {{ asn }}
+{%     endif %}{# endif params.peer_group #}
+{%     include 'ios_routing_bgp_neighbor_definition.j2'%}
+{%   elif NEIGHBOR_DEFINITION_ALLOWED is sameas false %}
+{{ ' ' * indent }}neighbor {{ id }} activate
+{%   endif %}
+{%   include 'ios_routing_bgp_neighbor_options.j2' %}
+{% endif %}

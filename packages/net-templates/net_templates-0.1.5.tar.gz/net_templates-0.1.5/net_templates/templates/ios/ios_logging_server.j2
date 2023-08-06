@@ -1,0 +1,4 @@
+{% if params | default(none) is not none %}
+logging host {{ params.server }}{% if params.vrf is defined %} vrf {{ params.vrf }}{% endif %}{% if params.protocol is defined and params.port is defined %} transport {{ params.protocol }} port {{ params.port }}{% endif %}
+
+{% endif %}
