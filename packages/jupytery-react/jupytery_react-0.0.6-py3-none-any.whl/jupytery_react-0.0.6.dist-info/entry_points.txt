@@ -1,0 +1,3 @@
+[console_scripts]
+jupytery-react = jupytery_react.application:main
+
