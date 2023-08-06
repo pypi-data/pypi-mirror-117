@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ultimate-mock-wrapper
+Version: 0.0.5
+Summary: An amazing mock lib for unit testing for mocking integration that provides testing utils for the AAA (arrange act assert) phases in a single test lifecycle
+Home-page: https://github.com/nielsen-oss/ultimate-mock-wrapper
+Author: Ofek Israel
+Author-email: ofek.israel@nielsen.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/nielsen-oss/ultimate-mock-wrapper/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+UNKNOWN
+
