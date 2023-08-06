@@ -1,0 +1,13 @@
+handystuff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handystuff/imports.py,sha256=6chcU1t2eMR2-2rv_l0T3lqMv1NBVVMZn0JR10z0Z3s,7324
+handystuff/loaders.py,sha256=tPXBj2QlTaVrWEprWnvWlaMQe8-6VwnWUgZJLR8B1fM,1059
+handystuff/logs.py,sha256=wJxWvEp7jyC5_epk8tlfjFwsX8sS7gmJOPd-JL6boFE,2026
+handystuff/prints.py,sha256=_KbhSpQIRvqhJhGSVG3IPCgjoih4rRds4kwr9A36OxQ,704
+handystuff/registry.py,sha256=DRq-X0uYEt4iTeEIJtusDNbPBWfXx7Wq-sf5rhLGX3I,1860
+handystuff/stats.py,sha256=pV228vH2xqDUZF5KYPMMuNaFvGYIjYi2y_DlLkl9EyY,970
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handystuff-0.0.1.dist-info/METADATA,sha256=qf5jVKutNocUgdaKt4OzwkuF4zmzCh0WUHVX4uS5sVg,977
+handystuff-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+handystuff-0.0.1.dist-info/top_level.txt,sha256=EFz9RJNjvQv9mc4Erm8Pnz9RfD8hQ0qfq_0rJHzunec,11
+handystuff-0.0.1.dist-info/RECORD,,
