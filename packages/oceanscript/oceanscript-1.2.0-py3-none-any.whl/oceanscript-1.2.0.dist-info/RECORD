@@ -1,0 +1,11 @@
+oceanscript/__init__.py,sha256=7gFcfvoKh0ok9rxRKiFQl0TTD8naxLf_ZbGTWpltaXY,3288
+oceanscript/__main__.py,sha256=gPDHztaHLekPiT6Y_fVQ5zw7yrb5ySYQMnIGphOBWwE,2185
+oceanscript/converters.py,sha256=E9i6Oz9eAomRtyXU3WVXIobdm2TxbVKYVNKwylMV3u8,3016
+oceanscript/errors.py,sha256=sGix9tcRokVVwzLNYqh-bbHQuaRk8Zz7wGI9LCVZr6I,969
+oceanscript-1.2.0.dist-info/LICENSE,sha256=-IysawMkTZ3yD3cOwF8sJGQvQg0W8TOtNjzRQ7yKMhg,1091
+oceanscript-1.2.0.dist-info/LICENSE.ocs,sha256=ZOKlzFZmgqc35ZabdFyi7IUV3fszGiH4R_p0tp7cHP4,3590
+oceanscript-1.2.0.dist-info/METADATA,sha256=hW7PpjaXft79iEOsrGU1mAq2-ho6OOKXxHwNzmBBAUQ,5940
+oceanscript-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+oceanscript-1.2.0.dist-info/entry_points.txt,sha256=vewr1BckzrvDqTcDW0OL0cQ1AMnSTex8qULRToOEwXY,59
+oceanscript-1.2.0.dist-info/top_level.txt,sha256=MhzCy2j-b8FSPGEFsWEsom2oTI11tSQOe00KPEawRYs,12
+oceanscript-1.2.0.dist-info/RECORD,,
