@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: jinjaMarkdown
+Version: 0.0.3
+Summary: A package containing a markdown filter for jinja2
+Home-page: https://github.com/later/
+Author: Anthony Lazar
+Author-email: alazar@uwaterloo.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+will write more once published
+
+pypi-AgENdGVzdC5weXBpLm9yZwIkMjI5NWIzODQtNDkyYi00ZWM0LTk2YjEtYzM0YWE2OWMwYzBkAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiAaYJf1UN6xIcYKVnHvplphKWy_aJhiAX0SvR5c0eZmFA
+
