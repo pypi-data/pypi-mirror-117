@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mge-lpips
+Version: 0.1.0
+Summary: LPIPS Similarity Metric for MegEngine
+Home-page: https://github.com/insomnia250/MegEngine-LPIPS
+Author: Chi Zhang
+Author-email: zhangchi04@megvii.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.5.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torchvision
+Requires-Dist: typing-extensions ; python_version == "3.6"
+
+# LPIPS for MegEngine
+
+MegEngine port for [LPIPS](https://github.com/richzhang/PerceptualSimilarity) metric.
+
+## Get Started
+
+Run `pip3 install mge-lpips` to install this package. The provided `mge_lpips.LPIPS` is a normal MegEngine `M.Module` which can be used as a metric or a loss function.
+
+```python
+import numpy as np
+import megengine as mge
+from mge_lpips import LPIPS
+
+metric_lpips = LPIPS(net="alex")
+
+in1 = np.random.uniform(-1, 1, size=(2, 3, 256, 256)).astype(np.float32)
+in2 = np.random.uniform(-1, 1, size=(2, 3, 256, 256)).astype(np.float32)
+
+d = metric_lpips(mge.Tensor(in1), mge.Tensor(in2))
+```
+
+
+## Acknowledgements
+
+The code of this project is modified from the original LPIPS project. The backbone model code is modified from torchvision.
+The weights are from the origian LPIPS project and torchvision.
+
