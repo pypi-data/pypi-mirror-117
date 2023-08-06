@@ -1,0 +1,8 @@
+easydict
+PyYAML
+torch
+torchvision
+pandas
+wandb
+sklearn
+tqdm
