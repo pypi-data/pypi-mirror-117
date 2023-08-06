@@ -1,0 +1,3 @@
+[console_scripts]
+subscribe = package_src.main:main
+
