@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tribun
+Version: 0.9
+Summary: Add configuration revision for Consul
+Home-page: https://www.github.com/aubustou/tribun
+Author: aubustou
+Author-email: survivalfr@yahoo.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click (==8.0.0)
+Requires-Dist: python-consul2 (==0.1.5)
+Requires-Dist: dataclasses (==0.8) ; python_version < "3.7"
+
+UNKNOWN
+
+
