@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+gitfiler/__init__.py
+gitfiler/__main__.py
+gitfiler/app.py
+gitfiler/exceptions.py
+gitfiler.egg-info/PKG-INFO
+gitfiler.egg-info/SOURCES.txt
+gitfiler.egg-info/dependency_links.txt
+gitfiler.egg-info/top_level.txt
