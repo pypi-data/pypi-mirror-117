@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/Aletheia.py
+src/AletheiaPy.egg-info/PKG-INFO
+src/AletheiaPy.egg-info/SOURCES.txt
+src/AletheiaPy.egg-info/dependency_links.txt
+src/AletheiaPy.egg-info/requires.txt
+src/AletheiaPy.egg-info/top_level.txt
