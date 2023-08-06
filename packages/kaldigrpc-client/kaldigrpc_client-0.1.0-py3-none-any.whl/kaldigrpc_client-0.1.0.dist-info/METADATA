@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: kaldigrpc-client
+Version: 0.1.0
+Summary: 
+Author: Giorgos Paraskevopoulos
+Author-email: geopar@central.ntua.gr
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: grpcio (>=1.39.0,<2.0.0)
+Requires-Dist: grpcio-tools (>=1.39.0,<2.0.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
