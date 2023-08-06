@@ -1,0 +1,3 @@
+[console_scripts]
+readmemd2txt=readmemd2txt.readmemd2txt:main
+
