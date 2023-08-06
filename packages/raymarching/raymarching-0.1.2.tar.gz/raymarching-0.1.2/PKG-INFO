@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: raymarching
+Version: 0.1.2
+Summary: Module for ray marching GLSL fragment shaders generation.
+Home-page: https://github.com/NamorNiradnug/raymarching
+Author: NamorNiradnug
+Author-email: roma57linux@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/NamorNiradnug/raymarching/issues
+Project-URL: Source, https://github.com/NamorNiradnug/raymarching
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# raymarching
+Python module which provide easy way to generate shaders for rendering scenes with ray marching.
+This module mainly uses in [RayMarcher](https://github.com/NamorNiradnug/RayMarcher). But it generates usual GLSL's fragment shaders and can be used independently.
+## Installing
+`raymarching` is published on [pypi.org](https://pypi.org/project/raymarching) and can be installed via `pip`:
+```bash
+$ pip install raymarching
+```
+
+
