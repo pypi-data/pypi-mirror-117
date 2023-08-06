@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/octopus/__init__.py
+src/octopus/resource.py
+src/octopus/tool.py
+src/octopusdpy.egg-info/PKG-INFO
+src/octopusdpy.egg-info/SOURCES.txt
+src/octopusdpy.egg-info/dependency_links.txt
+src/octopusdpy.egg-info/requires.txt
+src/octopusdpy.egg-info/top_level.txt
