@@ -1,0 +1,6 @@
+[console_scripts]
+analyze=scripts.project_helper:run_analyzer
+drive=balancerv2cad.main:run
+stubs=scripts.project_helper:stub_gen
+tests=scripts.project_helper:run_tests
+
