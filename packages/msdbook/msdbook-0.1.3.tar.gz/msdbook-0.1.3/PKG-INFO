@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: msdbook
+Version: 0.1.3
+Summary: Jupyter notebook support for the MSD ebook
+Home-page: https://github.com/IMMM-SFA/msd_uncertainty_ebook
+Author: Chris R. Vernon
+Author-email: chris.vernon@pnnl.gov
+License: BSD-2-Clause
+Description: [![linux](https://github.com/IMMM-SFA/msd_uncertainty_ebook/actions/workflows/linux.yml/badge.svg)](https://github.com/IMMM-SFA/msd_uncertainty_ebook/actions/workflows/linux.yml) [![osx](https://github.com/IMMM-SFA/msd_uncertainty_ebook/actions/workflows/osx.yml/badge.svg)](https://github.com/IMMM-SFA/msd_uncertainty_ebook/actions/workflows/osx.yml) [![windows](https://github.com/IMMM-SFA/msd_uncertainty_ebook/actions/workflows/windows.yml/badge.svg)](https://github.com/IMMM-SFA/msd_uncertainty_ebook/actions/workflows/windows.yml) [![codecov](https://codecov.io/gh/IMMM-SFA/msd_uncertainty_ebook/branch/dev/graph/badge.svg?token=sc7PduW907)](https://codecov.io/gh/IMMM-SFA/msd_uncertainty_ebook) 
+        
+        ## Addressing Uncertainty in MultiSector Dynamics Research
+        
+        ### Install the supporting Python package
+        
+        ```bash
+        pip install msdbook
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.*, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
