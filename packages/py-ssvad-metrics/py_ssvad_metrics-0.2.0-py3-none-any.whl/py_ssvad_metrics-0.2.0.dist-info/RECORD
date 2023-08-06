@@ -1,0 +1,11 @@
+ssvad_metrics/VERSION,sha256=kR_AxIywxwYB21d1qb7xt0DcTMn5tGOJufBWP-frlNc,5
+ssvad_metrics/__init__.py,sha256=e05QFvrZV6mLPItqQKMmXeZJ8joaGtC84tr63YyPbqw,209
+ssvad_metrics/criteria.py,sha256=noI4zqS1DwBZsCkwGjv3-Lo7IfL12jqcgAS51crInto,19647
+ssvad_metrics/data_schema.py,sha256=R9f-VmFIew73RSBjyhuLYptI7XgM3DOabr9N897Ko9c,5211
+ssvad_metrics/metrics.py,sha256=O5eHgJbhdU001jmMAAFwS5hRTTBzvnH2dxhRDlx2tm0,5632
+ssvad_metrics/utils.py,sha256=S_L7_YQGIryZuEGLNeFHEAv9w0mID0nF0YnihfOSubI,3033
+py_ssvad_metrics-0.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+py_ssvad_metrics-0.2.0.dist-info/METADATA,sha256=BCFN3nPeTFOJ3FNeqcCI1i_EBZWhwuhvmJQsWGX0m_c,2569
+py_ssvad_metrics-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+py_ssvad_metrics-0.2.0.dist-info/top_level.txt,sha256=eK6ZKlWEi-8cn72hsjGrUwYImXol5cRK5AnjjHCPlNQ,14
+py_ssvad_metrics-0.2.0.dist-info/RECORD,,
