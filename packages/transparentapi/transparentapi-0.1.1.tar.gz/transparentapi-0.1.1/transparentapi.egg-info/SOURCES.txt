@@ -1,0 +1,17 @@
+Dockerfile
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+transparentapi/__init__.py
+transparentapi/api.py
+transparentapi/exceptions.py
+transparentapi/projects.py
+transparentapi/tasks.py
+transparentapi/utils.py
+transparentapi.egg-info/PKG-INFO
+transparentapi.egg-info/SOURCES.txt
+transparentapi.egg-info/dependency_links.txt
+transparentapi.egg-info/top_level.txt
