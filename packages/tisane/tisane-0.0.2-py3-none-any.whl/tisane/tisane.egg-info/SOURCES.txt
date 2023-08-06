@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+tisane.egg-info/PKG-INFO
+tisane.egg-info/SOURCES.txt
+tisane.egg-info/dependency_links.txt
+tisane.egg-info/requires.txt
+tisane.egg-info/top_level.txt
