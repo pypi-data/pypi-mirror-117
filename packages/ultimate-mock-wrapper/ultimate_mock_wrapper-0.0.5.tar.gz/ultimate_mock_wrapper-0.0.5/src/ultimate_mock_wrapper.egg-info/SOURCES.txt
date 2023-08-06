@@ -1,0 +1,12 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+setup.py
+src/ultimate_mock_wrapper/__init__.py
+src/ultimate_mock_wrapper/base_wrapper.py
+src/ultimate_mock_wrapper/cacheable_meta_type.py
+src/ultimate_mock_wrapper/list_mock.py
+src/ultimate_mock_wrapper.egg-info/PKG-INFO
+src/ultimate_mock_wrapper.egg-info/SOURCES.txt
+src/ultimate_mock_wrapper.egg-info/dependency_links.txt
+src/ultimate_mock_wrapper.egg-info/top_level.txt
