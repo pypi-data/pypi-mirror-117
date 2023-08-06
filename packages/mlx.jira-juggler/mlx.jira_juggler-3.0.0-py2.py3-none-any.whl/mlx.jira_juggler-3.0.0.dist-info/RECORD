@@ -1,0 +1,11 @@
+mlx.jira_juggler-3.0.0-py3.7-nspkg.pth,sha256=UsVvor4_T6srpv6IW6vGvM-hxEOev1mrVeFhjvLCrwk,524
+mlx/__version__.py,sha256=wHHy6LuoZqyDon4bfioB3iTAgnAa-rEc6Y0BAchQOAA,142
+mlx/jira_juggler.py,sha256=qEZ2JJBtxJeT-Ku-1UaBups-1sbcFZ49QRk8DMi8tKo,26902
+mlx.jira_juggler-3.0.0.dist-info/LICENSE,sha256=1HQuKwfZfgMV13JhG1mkHmOe_NlCwysH9kxJ3gYuq5o,11338
+mlx.jira_juggler-3.0.0.dist-info/METADATA,sha256=8ibwDP1VvMceHWWq9Cnyn3g6xmaUwwsOlFS6ya82EdM,2783
+mlx.jira_juggler-3.0.0.dist-info/NOTICE,sha256=3aihrouLR-9_xmn8cNKinopicRBL5kf96OUBqW_NdJU,195
+mlx.jira_juggler-3.0.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+mlx.jira_juggler-3.0.0.dist-info/entry_points.txt,sha256=sXyJfa1OQaSLBwXmBXMiLVX7bTwP3pH-UOl9ywUWuxk,62
+mlx.jira_juggler-3.0.0.dist-info/namespace_packages.txt,sha256=NCVZzyms-obPlDq2Sa--m3oyfnnmLma38KCnE6gmcFE,4
+mlx.jira_juggler-3.0.0.dist-info/top_level.txt,sha256=NCVZzyms-obPlDq2Sa--m3oyfnnmLma38KCnE6gmcFE,4
+mlx.jira_juggler-3.0.0.dist-info/RECORD,,
