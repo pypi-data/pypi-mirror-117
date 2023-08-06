@@ -1,0 +1,31 @@
+DataKund Scraper is a library that makes it easy to scrape information from any HTML page. You don't have to inspect any web elements to find tags, xpath id etc.
+It learns from the data given by you & builds a scraper. Then you can use it to get JSON data out of the HTML.
+
+### Train Scraper
+We train scraper by passing two similiar htmls, which gives us a unique id. That id can be used for runing the scraper and fetching out data.
+You can save this id to run the scraper next time, so that you don't need to train the scraper everytime for that HTMLs.
+```sh
+from datakund_ai_scraper import *
+html1='<html>.....</html>'
+html2='<html>.....</html>'
+response=scraper.parse(html1,html2)
+#response={"id":"esfdesd342","success":True}
+```
+
+### Run Scraper
+We run scraper by passing html and bot id which we fetched earlier and gives us a structured data in return.
+```sh
+from datakund_ai_scraper import *
+html1='<html>.....</html>'
+response=scraper.run(html=html1,id="esfdesd342")
+#response={"Results":[{"title":"","link":""},...]}
+```
+
+### What are similiar HTMLs?
+Similiar htmls here refers to the web pages having same structure but different data. For example, pypi search results page for two different keywords.
+Once the scraper is trained over the pypi search results page, now you can pass any keyword's search results in run function without training on that page.
+Once trained on results page, you can run scraper over any pypi search results page.
+Below are some of the examples on which you can run autoscraper:-
+1. Pypi Search Results [https://pypi.org/search/?q=firebase,https://pypi.org/search/?q=sql]
+2. Amazon Search Results [https://www.amazon.com/s?k=shoes&ref=nb_sb_noss,https://www.amazon.com/s?k=shoes+for+men&crid=XSYZ3H3YZ2D7&sprefix=shoes%2Caps%2C474&ref=nb_sb_ss_ts-doa-p_1_5]
+3. Wordpress Themes [https://wordpress.org/themes/skt-green/,https://wordpress.org/themes/redio-writers/]
