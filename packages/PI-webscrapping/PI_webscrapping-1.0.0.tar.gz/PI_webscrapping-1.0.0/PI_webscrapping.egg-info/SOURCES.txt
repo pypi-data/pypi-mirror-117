@@ -1,0 +1,7 @@
+Download_PI.py
+Download_pdf.py
+setup.py
+PI_webscrapping.egg-info/PKG-INFO
+PI_webscrapping.egg-info/SOURCES.txt
+PI_webscrapping.egg-info/dependency_links.txt
+PI_webscrapping.egg-info/top_level.txt
