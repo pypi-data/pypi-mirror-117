@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: TTFootprints
+Version: 0.0.2
+Summary: A library for working with exported data from the Footprints ticketing system.
+Home-page: https://gitlab.uvm.edu/whunt1/libfp
+Author: Willem Hunt
+Author-email: whunt1@uvm.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Information Technology
+Requires-Python: >=3.6
+
+UNKNOWN
+
