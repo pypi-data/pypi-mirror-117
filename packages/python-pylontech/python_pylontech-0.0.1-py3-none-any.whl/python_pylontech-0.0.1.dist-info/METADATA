@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: python-pylontech
+Version: 0.0.1
+Summary: Interfaces with Pylontech Batteries using RS485 protocol
+Home-page: http://github.com/Frankkkkk/python-pylontech
+Author: Frank Villaro-Dixon
+Author-email: frank@villaro-dixon.eu
+License: MIT
+Keywords: pylontech pylon rs485 lithium battery US2000 US2000C US3000
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: construct
+Requires-Dist: pyserial
+
+UNKNOWN
+
+
