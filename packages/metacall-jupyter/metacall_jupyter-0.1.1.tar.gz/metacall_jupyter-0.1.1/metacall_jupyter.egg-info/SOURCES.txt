@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+metacall_jupyter.egg-info/PKG-INFO
+metacall_jupyter.egg-info/SOURCES.txt
+metacall_jupyter.egg-info/dependency_links.txt
+metacall_jupyter.egg-info/requires.txt
+metacall_jupyter.egg-info/top_level.txt
