@@ -1,0 +1,7 @@
+README.md
+setup.py
+czgbyer_example_pkg/__init__.py
+czgbyer_example_pkg.egg-info/PKG-INFO
+czgbyer_example_pkg.egg-info/SOURCES.txt
+czgbyer_example_pkg.egg-info/dependency_links.txt
+czgbyer_example_pkg.egg-info/top_level.txt
