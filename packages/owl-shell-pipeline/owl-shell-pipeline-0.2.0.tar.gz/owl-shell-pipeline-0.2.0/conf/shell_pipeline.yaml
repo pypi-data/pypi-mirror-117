@@ -1,0 +1,18 @@
+version: 1.2
+
+extra_pip_packages: owl-shell-pipeline
+name: shell
+
+# Directory where the command is writing data to (optional)
+# output_dir: /tmp/output
+
+command: ["sleep", "300"]
+
+# use dask (optional, see docs)
+# use_dask: false
+
+resources:
+  workers: 1
+  memory: 8
+  threads: 1
+

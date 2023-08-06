@@ -1,0 +1,3 @@
+[owl.pipelines]
+shell = shell_pipeline
+
