@@ -1,0 +1,3 @@
+[console_scripts]
+shellcode=e4l.__main__:main
+
