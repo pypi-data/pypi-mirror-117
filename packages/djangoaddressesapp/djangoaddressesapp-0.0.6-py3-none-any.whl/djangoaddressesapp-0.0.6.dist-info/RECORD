@@ -1,0 +1,14 @@
+djangoaddressesapp/__init__.py,sha256=gHET48VoXGMRrvn8eTZo5Uu3956UMk0mLZb0PK68e-Q,86
+djangoaddressesapp/admin.py,sha256=SBOxZugdZrVn_yMJjqX164AZN2sF7nAOcZMcHrvdFsc,2390
+djangoaddressesapp/apps.py,sha256=3BI0OXvXvm2s75j7yEDjrBee_bHY_ExvxujG6byvN24,257
+djangoaddressesapp/models.py,sha256=2HDtdmJkxYrRNIgwzNlxNRDU3czFaxpDpk0-DwB0XVU,3787
+djangoaddressesapp/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoaddressesapp/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoaddressesapp/management/commands/addresses_initialize_database.py,sha256=cEF9aFcweybTOC_6VNZZus-MDsOcCxyLvROOyNvsoXU,978
+djangoaddressesapp/migrations/0001_initial.py,sha256=hwyeATct3F5wQw5rwZQkgD-nyfT4I0dzN7R2u2tEJ5U,3210
+djangoaddressesapp/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoaddressesapp-0.0.6.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+djangoaddressesapp-0.0.6.dist-info/METADATA,sha256=xykQ2gNmErkZVv_7H4qy1Uv4zsgnXEh9qxNSoYM0bKY,1936
+djangoaddressesapp-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+djangoaddressesapp-0.0.6.dist-info/top_level.txt,sha256=dXu_QfkeH3vaNzsh31fLnwpECz-M8qeB2XpNRmcLeZ4,19
+djangoaddressesapp-0.0.6.dist-info/RECORD,,
