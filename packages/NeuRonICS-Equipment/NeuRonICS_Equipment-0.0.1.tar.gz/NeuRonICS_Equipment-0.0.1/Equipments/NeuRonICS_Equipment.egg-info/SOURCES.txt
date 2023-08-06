@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Equipments/NeuRonICS_Equipment.egg-info/PKG-INFO
+Equipments/NeuRonICS_Equipment.egg-info/SOURCES.txt
+Equipments/NeuRonICS_Equipment.egg-info/dependency_links.txt
+Equipments/NeuRonICS_Equipment.egg-info/top_level.txt
