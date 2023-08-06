@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/codemetrics_report/__init__.py
+src/codemetrics_report/cli.py
+src/codemetrics_report/codemetrics_template.html
+src/codemetrics_report/filter.py
+src/codemetrics_report/report.py
+src/codemetrics_report/vis.py
+src/codemetrics_report.egg-info/PKG-INFO
+src/codemetrics_report.egg-info/SOURCES.txt
+src/codemetrics_report.egg-info/dependency_links.txt
+src/codemetrics_report.egg-info/entry_points.txt
+src/codemetrics_report.egg-info/requires.txt
+src/codemetrics_report.egg-info/top_level.txt
