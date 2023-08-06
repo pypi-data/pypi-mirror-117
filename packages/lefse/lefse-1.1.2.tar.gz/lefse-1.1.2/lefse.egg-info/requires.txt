@@ -1,0 +1,4 @@
+numpy
+matplotlib
+biom-format
+rpy2
