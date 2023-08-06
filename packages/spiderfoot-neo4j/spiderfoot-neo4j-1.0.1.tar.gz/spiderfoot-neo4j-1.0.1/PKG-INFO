@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: spiderfoot-neo4j
+Version: 1.0.1
+Summary: Import, visualize, and analyze SpiderFoot scans in Neo4j, a graph database
+Home-page: https://github.com/blacklanternsecurity/spiderfoot-neo4j
+License: GPL-3.0
+Author: TheTechromancer
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: py2neo (>=2021.1.5,<2022.0.0)
+Requires-Dist: tld (>=0.12.6,<0.13.0)
+Project-URL: Repository, https://github.com/blacklanternsecurity/spiderfoot-neo4j
