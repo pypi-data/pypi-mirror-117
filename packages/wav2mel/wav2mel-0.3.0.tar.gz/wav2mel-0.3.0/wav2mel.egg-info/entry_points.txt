@@ -1,0 +1,4 @@
+[console_scripts]
+mel2wav = wav2mel.griffin_lim.main
+wav2mel = wav2mel.__main__:main
+
