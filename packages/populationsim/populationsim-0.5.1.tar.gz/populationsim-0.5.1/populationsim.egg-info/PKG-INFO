@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: populationsim
+Version: 0.5.1
+Summary: Population Synthesis
+Home-page: https://github.com/ActivitySim/populationsim
+Author: contributing authors
+Author-email: ben.stabler@rsginc.com
+License: BSD-3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE.txt
+
+UNKNOWN
+
