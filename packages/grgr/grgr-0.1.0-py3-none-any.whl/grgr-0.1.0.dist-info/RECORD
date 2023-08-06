@@ -1,0 +1,12 @@
+grgr/__init__.py,sha256=a552Ki2cEwoQ9m5PH-a7ycH4dbKvXUYDd0MdUIY8414,209
+grgr/dev/__init__.py,sha256=YGtMu7VPrpHRP1STGr-4iQZBPO-M8wRiQGTsJEI-2FA,2349
+grgr/dev/typing.py,sha256=PZJbksneIQ2YcpgZtkMqn9XdaJ7f5KP1xLy8iu333fQ,638
+grgr/ggplot2/__init__.py,sha256=gHI0vY7XKZ5MMMPMPeQairy21IqtU1SQVwsCyyHEfSc,8398
+grgr/ggplot2/basic.py,sha256=FotOnnFJ1MebelNHYQ6g-kFgzGrUK43w0AsoKqSvNyc,1547
+grgr/ggplot2/facet.py,sha256=csQYklS_-a29bj5GhQK-7eLz8JIGIfeh0uqTeaYKhJQ,794
+grgr/ggplot2/layer.py,sha256=NxKKVQaIgtCgq9KcyayQwDuc7eUkdmy5qY96TiTyjYY,941
+grgr/ggplot2/scale.py,sha256=ej5QiPzlCqE_eruyw_qcgX8LgdmpaSpxOLhajs_dhOQ,879
+grgr/ggplot2/theme.py,sha256=ZgNQk9bqFh3l3TVYJwmiiplw-fzCQua-aiVCVYgNHl0,1346
+grgr-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+grgr-0.1.0.dist-info/METADATA,sha256=6fJ7p-tEvw6fTWhQXAJc7K7jltmxbcdRwBniKFVdS9Y,1487
+grgr-0.1.0.dist-info/RECORD,,
