@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vigenpy
+Version: 0.1.0
+Summary: # vigenpy Video Generation Package 
+Home-page: https://github.com/vermavinay982/vigenpy
+Author: Vinay Verma
+Author-email: vermavinay982@gmail.com
+Maintainer: Vinay Verma
+Maintainer-email: vermavinay982@gmail.com
+License: Proprietary
+Platform: Windows
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+# vigenpy
+Video Generation Package
+
+
