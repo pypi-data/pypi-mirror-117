@@ -1,0 +1,519 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Novel Projects &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Novel Structure" href="project_structure.html" />
+    <link rel="prev" title="Project Format Changes" href="usage_projectformat.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Novel Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#project-roots">Project Roots</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#deleted-documents">Deleted Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#archived-documents-outtakes">Archived Documents (Outtakes)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recovered-documents">Recovered Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-lockfile">Project Lockfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-folders-in-the-project-tree">Using Folders in the Project Tree</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project-documents">Project Documents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#word-counts">Word Counts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project-settings">Project Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#settings-tab">Settings Tab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#status-and-importance-tabs">Status and Importance Tabs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#auto-replace-tab">Auto-Replace Tab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#backup">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-statistics">Writing Statistics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Novel Projects</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/project_overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="novel-projects">
+<span id="a-proj"></span><h1>Novel Projects<a class="headerlink" href="#novel-projects" title="Permalink to this headline">¶</a></h1>
+<p>New projects can be created from the <span class="guilabel">Project</span> menu by selecting <span class="guilabel">New Project</span>.
+This will open the <span class="guilabel">New Project Wizard</span> that will assist you in creating a barebone
+project suited to your needs. A novelWriter project requires a dedicated folder for storing its
+files on the local file system. See <a class="reference internal" href="tech_storage.html#a-storage"><span class="std std-ref">How Data is Stored</span></a> for further details on how files are
+organised.</p>
+<p>A list of recently opened projects is maintained, and displayed in the <span class="guilabel">Open Project</span>
+dialog. A project can be removed from this list by selecting it and pressing the <kbd class="kbd docutils literal notranslate">Del</kbd> key or
+by clicking the <span class="guilabel">Remove</span> button.</p>
+<p>Project-specific settings are available in <span class="guilabel">Project Settings</span> in the <span class="guilabel">Project</span>
+menu. See further details below in the <a class="reference internal" href="#a-proj-settings"><span class="std std-ref">Project Settings</span></a> section. Details about the project,
+including word counts, and a table of contents with word and page counts, is available through the
+<span class="guilabel">Project Details</span> dialog.</p>
+<div class="section" id="project-roots">
+<span id="a-proj-roots"></span><h2>Project Roots<a class="headerlink" href="#project-roots" title="Permalink to this headline">¶</a></h2>
+<p>Projects are structured into a set of top level folders called “Root Folders”. They are visible in
+the project tree at the left side of the main window.</p>
+<p>The novel documents go into a root folder of type <span class="guilabel">Novel</span>. Project notes go into the
+other root folders. These other root folder types are intended for your notes on the various
+elements of your story. Using them is of course entirely optional.</p>
+<p>A new project may not have all of the root folders present, but you can add the ones you want from
+<span class="guilabel">Create Root Folder</span> in the <span class="guilabel">Project</span> menu.</p>
+<p>Each root folder has one or more reference keyword associated with it that can be used to reference
+content in your notes from other documents and notes. The intended usage of each type of root
+folder is listed below. However, aside from the <span class="guilabel">Novel</span> folder, no restrictions are
+applied by the application. You can use them however you want.</p>
+<dl class="simple">
+<dt><span class="guilabel">Novel</span></dt><dd><p>This is the root folder of all text that goes into the final novel. This class of documents have
+other rules and features than other documents in the project. See <a class="reference internal" href="project_structure.html#a-struct"><span class="std std-ref">Novel Structure</span></a> for more
+details.</p>
+</dd>
+<dt><span class="guilabel">Plot</span></dt><dd><p>This is the root folder where main plots can be outlined. It is optional, but adding at least
+brief notes can be useful in order to tag plot elements for the Outline view. Tags in this
+folder can be references using the <code class="docutils literal notranslate"><span class="pre">&#64;plot</span></code> keyword.</p>
+</dd>
+<dt><span class="guilabel">Characters</span></dt><dd><p>Character notes go in this root folder. These are especially important if one wants to use the
+Outline view to see which character appears where, and which part of the story is told from a
+specific character’s point-of-view or focusing on a particular character’s storyline. Tags in
+this folder can be referenced using the <code class="docutils literal notranslate"><span class="pre">&#64;pov</span></code> keyword for point-of-view characters,
+<code class="docutils literal notranslate"><span class="pre">&#64;focus</span></code> for a focus character, or the <code class="docutils literal notranslate"><span class="pre">&#64;char</span></code> keyword for any other characters.</p>
+</dd>
+<dt><span class="guilabel">Locations</span></dt><dd><p>The locations folder is for various scene locations that you want to track. Tags in this folder
+can be references using the <code class="docutils literal notranslate"><span class="pre">&#64;location</span></code> keyword.</p>
+</dd>
+<dt><span class="guilabel">Timeline</span></dt><dd><p>If the story has multiple plot timelines or jumps in time within the same plot, this class of
+notes can be used to track this. Tags in this folder can be references using the <code class="docutils literal notranslate"><span class="pre">&#64;time</span></code>
+keyword.</p>
+</dd>
+<dt><span class="guilabel">Objects</span></dt><dd><p>Important objects in the story, for instance important objects that change hands often, can be
+tracked here. Tags in this folder can be references using the <code class="docutils literal notranslate"><span class="pre">&#64;object</span></code> keyword.</p>
+</dd>
+<dt><span class="guilabel">Entities</span></dt><dd><p>Does your plot have many powerful organisations or companies? Or other entities that are part of
+the plot? They can be organised here. Tags in this folder can be references using the
+<code class="docutils literal notranslate"><span class="pre">&#64;entity</span></code> keyword.</p>
+</dd>
+<dt><span class="guilabel">Custom</span></dt><dd><p>The custom root folder can be used for tracking anything else not covered by the above options.
+Tags in this folder can be references using the <code class="docutils literal notranslate"><span class="pre">&#64;custom</span></code> keyword.</p>
+</dd>
+</dl>
+<p>The root folders correspond to the categories of tags that can be used to reference them. For more
+information about the tags listed, see <a class="reference internal" href="project_structure.html#a-struct-tags"><span class="std std-ref">Tag References</span></a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can rename root folders to whatever you want. However, this doesn’t change the reference
+keyword.</p>
+</div>
+<div class="section" id="deleted-documents">
+<span id="a-proj-roots-del"></span><h3>Deleted Documents<a class="headerlink" href="#deleted-documents" title="Permalink to this headline">¶</a></h3>
+<p>Deleted documents will be moved into a special <span class="guilabel">Trash</span> root folder. Documents in the
+trash folder can then be deleted permanently, either individually, or by emptying the trash from
+the menu. Documents in the trash folder are removed from the project index and cannot be
+referenced.</p>
+<p>Folders and root folders can only be deleted when they are empty. Recursive deletion is not
+supported. A document or a folder can be deleted from the <span class="guilabel">Project</span> menu, or by pressing
+<kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">Shift</kbd><kbd class="kbd docutils literal notranslate">Del</kbd>.</p>
+</div>
+<div class="section" id="archived-documents-outtakes">
+<span id="a-proj-roots-out"></span><h3>Archived Documents (Outtakes)<a class="headerlink" href="#archived-documents-outtakes" title="Permalink to this headline">¶</a></h3>
+<p>If you don’t want to delete a document, or put it in the <span class="guilabel">Trash</span> folder where it may be
+deleted, but still want it out of your main project tree, you can create an <span class="guilabel">Outtakes</span>
+root folder from the <span class="guilabel">Project</span> menu. You are not allowed to move entire folders to this
+root folder, only documents. If you need folders in it to organise your documents, you can of
+course create new ones there.</p>
+<p>You can drag any document to this folder and preserve its settings. The document will always be
+excluded from the <span class="guilabel">Build Novel Project</span> builds. It is also removed from the project
+index, so the tags and references defined in it will not show up anywhere else.</p>
+</div>
+<div class="section" id="recovered-documents">
+<span id="a-proj-roots-orph"></span><h3>Recovered Documents<a class="headerlink" href="#recovered-documents" title="Permalink to this headline">¶</a></h3>
+<p>If novelWriter crashes or otherwise exits without saving the project state, or if you’re using a
+file synchronisation tool that runs out of sync, there may be files in the project folder that
+aren’t tracked in the core project file. These files, when discovered, are recovered and added back
+into the project if possible.</p>
+<p>The discovered files are scanned for meta information that give clues as to where the document may
+previously have been located in the project. The project loading routines will try to put them back
+as close as possible to this location, if it still exists. Generally, it will be appended to the
+end of the folder where it previously was located. If that folder doesn’t exist, it will try to add
+it to the correct root folder. If it cannot figure out which root folder is correct, the document
+will be added to the <span class="guilabel">Novel</span> root folder. Only if the <span class="guilabel">Novel</span> folder is
+missing will it give up.</p>
+<p>If the title of the document can be recovered, the word “Recovered:” will be added as a prefix. If
+the title cannot be determined, the document will be named “Recovered File N” where N is a
+sequential number.</p>
+</div>
+<div class="section" id="project-lockfile">
+<span id="a-proj-roots-lock"></span><h3>Project Lockfile<a class="headerlink" href="#project-lockfile" title="Permalink to this headline">¶</a></h3>
+<p>To prevent lost documents caused by file conflicts when novelWriter projects are synced with file
+synchronisation tools, a project lockfile is written to the project folder. If you try to open a
+project which has such a file present, you will be presented with a warning, and some information
+about where else novelWriter thinks the project is also open. You will be give the option to ignore
+this warning, and continue opening the project at your own risk.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If, for some reason, novelWriter crashes, the lock file may remain even if there are no other
+instances keeping the project open. In such a case it is safe to ignore the lock file warning
+when re-opening the project.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you choose to ignore the warning and continue opening the project, and multiple instances of
+the project are in fact open, you are likely to cause inconsistencies and create diverging
+project files, potentially resulting in loss of data and orphaned files. You are not likely to
+lose any actual text unless both instances have the same document open in the editor, and
+novelWriter will try to resolve inconsistencies the next time you open the project.</p>
+</div>
+</div>
+<div class="section" id="using-folders-in-the-project-tree">
+<span id="a-proj-roots-dirs"></span><h3>Using Folders in the Project Tree<a class="headerlink" href="#using-folders-in-the-project-tree" title="Permalink to this headline">¶</a></h3>
+<p>Folders, aside from root folders, have no structural significance to the project. When novelWriter
+is processing the documents in the novel, like for instance during export, these folders are
+ignored. Only the order of the documents themselves matter.</p>
+<p>The folders are there purely as a way for the user to organise the documents in meaningful sections
+and to be able to collapse and hide them in the project tree when you’re not working on those
+documents.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can use folders to sort your scene documents into chapters. You will still need to add a
+chapter document as the first item of your chapter folder, and the scene documents as the
+following items. Other ways to use folders is to make a folder for each act or part.</p>
+</div>
+</div>
+</div>
+<div class="section" id="project-documents">
+<span id="a-proj-files"></span><h2>Project Documents<a class="headerlink" href="#project-documents" title="Permalink to this headline">¶</a></h2>
+<p>New documents can be created from the <span class="guilabel">Document</span> menu, or by pressing <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">N</kbd>
+while in the project tree. This will create a new, empty document, and open the <span class="guilabel">Item
+Settings</span> dialog where the document label and various other settings can be changed. This dialog
+can also be opened again later from either the <span class="guilabel">Project</span> menu, selecting <span class="guilabel">Edit
+Project Item</span>, or by pressing <kbd class="kbd docutils literal notranslate">F2</kbd> with the item selected.</p>
+<p>The layout of the document is also defined here. The two options available are <span class="guilabel">Novel
+Document</span> and <span class="guilabel">Project Note</span>. These behave differently when the project is built. A
+project note is never treated as part of the novel, no matter where in the project it is located.
+See <a class="reference internal" href="project_structure.html#a-struct-layout"><span class="std std-ref">Document Layout</span></a> for more details.</p>
+<p>You can also select whether the document is by default included when building the project. This
+setting can be overridden in the <span class="guilabel">Build Novel Project</span> tool if you wish to include them
+anyway. This is covered in the <a class="reference internal" href="project_export.html#a-export-files"><span class="std std-ref">File Selection</span></a> section. You can also toggle the included
+state of a document from the right-click context menu.</p>
+<div class="section" id="word-counts">
+<span id="a-proj-files-counts"></span><h3>Word Counts<a class="headerlink" href="#word-counts" title="Permalink to this headline">¶</a></h3>
+<p>A character, word and paragraph count is maintained for each document, as well as for each section
+of a document following a header. The word count, and change of words in the current session, is
+displayed in the footer of any document open in the editor, and all stats are shown in the details
+panel below the project tree for any document selected in the project or novel tree.</p>
+<p>The word counts are not updated in real time, but run in the background every few seconds for as
+long as the document is being actively edited.</p>
+<p>A total project word count is displayed in the status bar. The total count depends on the sum of
+the values in the project tree, which again depend on an up to date index. If the counts seem
+wrong, a full project word recount can be initiated by rebuilding the project’s index. Either form
+the <span class="guilabel">Tools</span> menu, or by pressing <kbd class="kbd docutils literal notranslate">F9</kbd>.</p>
+</div>
+</div>
+<div class="section" id="project-settings">
+<span id="a-proj-settings"></span><h2>Project Settings<a class="headerlink" href="#project-settings" title="Permalink to this headline">¶</a></h2>
+<p>The <span class="guilabel">Project Settings</span> can be accessed from the <span class="guilabel">Project</span> menu, or by pressing
+<kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">Shift</kbd><kbd class="kbd docutils literal notranslate">,</kbd>. This will open a dialog box, with a set of tabs.</p>
+<div class="section" id="settings-tab">
+<h3>Settings Tab<a class="headerlink" href="#settings-tab" title="Permalink to this headline">¶</a></h3>
+<p>The <span class="guilabel">Settings</span> tab holds the project title and author settings.</p>
+<p>The <span class="guilabel">Working Title</span> can be set to a different title than the <span class="guilabel">Book Title</span>. The
+difference between them is simply that the <span class="guilabel">Working Title</span> is used for the GUI (main
+window title) and for generating the backup files. The intention is that the <span class="guilabel">Working
+Title</span> should remain unchanged throughout the project, otherwise the name of exported files and
+backup files may change too.</p>
+<p>The <span class="guilabel">Book Title</span> and <span class="guilabel">Book Authors</span> settings are currently not used for
+anything, so setting them is just for the benefit of the author. Future features may use them, and
+they are exported on some export formats in the <span class="guilabel">Build Novel Project</span> tool.</p>
+<p>If your project is in a different language than your main spell checking is set to, you can
+override the default spell checking language here. You can also override the automatic backup
+setting.</p>
+</div>
+<div class="section" id="status-and-importance-tabs">
+<h3>Status and Importance Tabs<a class="headerlink" href="#status-and-importance-tabs" title="Permalink to this headline">¶</a></h3>
+<p>Each document or folder of type <span class="guilabel">Novel</span> can be given a status level, signified by a
+coloured icon, and each document or folder of the remaining types can be given an importance level.
+These are colour coded icons and labels that can be applied to each document or folder.</p>
+<p>These are purely there for the user’s convenience, and you are not required to use them for any
+other features to work. No other part of novelWriter accesses this information. The intention is to
+use these to indicate at what stage of completion each novel document is, or how important the
+content of a note is to the plot. You don’t have to use them this way, that’s just what they were
+intended for, but you can make them whatever you want.</p>
+<p>See also <a class="reference internal" href="usage_interface.html#a-ui-tree-status"><span class="std std-ref">Document Importance and Status</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The status or importance level currently in use by one or more documents cannot be deleted, but
+they can be edited.</p>
+</div>
+</div>
+<div class="section" id="auto-replace-tab">
+<h3>Auto-Replace Tab<a class="headerlink" href="#auto-replace-tab" title="Permalink to this headline">¶</a></h3>
+<p>A set of automatically replaced keywords can be added in this tab. The keywords in the left column
+will be replaced by the text in the right column when documents are opened in the viewer. They will
+also be applied to exports.</p>
+<p>The auto-replace feature will replace text in angle brackets that are in this list. The syntax
+highlighter will add an alternate colour to text marching the syntax, but it doesn’t check if the
+text is in this list.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A keyword cannot contain spaces. The angle brackets are added by default, and when used in the
+text are a part of the keyword to be replaced. This is to ensure that parts of the text aren’t
+unintentionally replaced by the content of the list.</p>
+</div>
+</div>
+</div>
+<div class="section" id="backup">
+<span id="a-proj-backup"></span><h2>Backup<a class="headerlink" href="#backup" title="Permalink to this headline">¶</a></h2>
+<p>An automatic backup system is built into novelWriter. In order to use it, a backup path to where
+the backup files are to be stored must be provided in <span class="guilabel">Preferences</span>.</p>
+<p>Backups can be run automatically when a project is closed, which also implies it is run when the
+application itself is closed. Backups are date stamped zip files of the entire project folder, and
+are stored in a subfolder of the backup path. The subfolder will have the same name as the project
+<span class="guilabel">Working Title</span> set in <a class="reference internal" href="#a-proj-settings"><span class="std std-ref">Project Settings</span></a>.</p>
+<p>The backup feature, when configured, can also be run manually from the <span class="guilabel">Tools</span> menu.
+It is also possible to disable automated backups for a given project in <span class="guilabel">Project
+Settings</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the backup to be able to run, the <span class="guilabel">Working Title</span> must be set in
+<span class="guilabel">Project Settings</span>. This value is used to generate the folder name for the zip files.
+Without it, the backup will not run at all, but it will produce a warning message.</p>
+</div>
+</div>
+<div class="section" id="writing-statistics">
+<span id="a-proj-stats"></span><h2>Writing Statistics<a class="headerlink" href="#writing-statistics" title="Permalink to this headline">¶</a></h2>
+<p>When you work on a project, a log file records when you opened it, when you closed it, and the
+total word counts of your novel documents and notes at the end of the session. You can view this
+file in the <code class="docutils literal notranslate"><span class="pre">meta</span></code> folder in the directory where you saved your project. The file is named
+<code class="docutils literal notranslate"><span class="pre">sessionStats.log</span></code>.</p>
+<p>A tool to view the content of this file is available in the <span class="guilabel">Tools</span> menu under
+<span class="guilabel">Writing Statistics</span>. You can also launch it by pressing <kbd class="kbd docutils literal notranslate">F6</kbd>.</p>
+<p>The tool will show a list of all your sessions, and a set of filters to apply to the data. You can
+also export the filtered data to a JSON file or to a CSV file that can be opened by a spreadsheet
+application like for instance Libre Office Calc.</p>
+<p>As of version 1.2, the log file also stores how much of the session time was spent idle. The
+definition of idle here is that the novelWriter main window loses focus, or the user hasn’t made
+any changes to the currently open document in five minutes. The number of minutes can be altered in
+<span class="guilabel">Preferences</span>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="project_structure.html" class="btn btn-neutral float-right" title="Novel Structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage_projectformat.html" class="btn btn-neutral float-left" title="Project Format Changes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

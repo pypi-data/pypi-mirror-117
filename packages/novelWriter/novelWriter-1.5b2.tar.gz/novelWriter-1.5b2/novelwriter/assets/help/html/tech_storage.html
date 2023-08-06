@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>How Data is Stored &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Running Tests" href="tech_tests.html" />
+    <link rel="prev" title="Exporting Projects" href="project_export.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How Data is Stored</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#project-structure">Project Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#main-project-file">Main Project File</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project-documents">Project Documents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-file-saving-process">The File Saving Process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project-meta-data">Project Meta Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-project-index">The Project Index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cached-gui-options">Cached GUI Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#session-stats">Session Stats</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project-cache">Project Cache</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>How Data is Stored</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/tech_storage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-data-is-stored">
+<span id="a-storage"></span><h1>How Data is Stored<a class="headerlink" href="#how-data-is-stored" title="Permalink to this headline">¶</a></h1>
+<p>This section contains details of how novelWriter stores and handles the project data.</p>
+<div class="section" id="project-structure">
+<h2>Project Structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h2>
+<p>All novelWriter files are written with utf-8 encoding. Since Python automatically converts Unix
+line endings to Windows line endings on Windows systems, novelWriter does not make any adaptations
+to the formatting on Windows systems. This is handled entirely by the Python standard library.
+Python also handles this fairly well when working on the same files on both Windows and Unix-based
+operating systems.</p>
+<div class="section" id="main-project-file">
+<h3>Main Project File<a class="headerlink" href="#main-project-file" title="Permalink to this headline">¶</a></h3>
+<p>The project itself requires a dedicated folder for storing its files where novelWriter will create
+its own “file system” where the folder and file hierarchy is described in a project XML file. This
+is the main project file in the project’s root folder with the name <code class="docutils literal notranslate"><span class="pre">nwProject.nwx</span></code>. This file
+also contains all the meta data required for the project, and a number of related project settings.</p>
+<p>If this file is lost or corrupted, the structure of the project is lost, although not the text
+itself. It is important to keep this file backed up, either through the built-in backup tool, or
+your own backup solution.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The novelWriter project folder is structured so that it can easily be added to a version control
+system like git. If you do so, you may want to add a <cite>.gitignore</cite> file to exclude files with the
+extensions <cite>.json</cite> as JSON files are used to cache the index and various run-time settings and
+are generally large files that change often. You’d also want to exclude the <code class="docutils literal notranslate"><span class="pre">cache</span></code> folder.</p>
+</div>
+<p>The project XML file is indent-formatted, and is suitable for diff tools and version control since
+most of the file will stay static, although a timesetamp is set in the meta section on line 2, and
+various meta data entries incremented, on each save.</p>
+</div>
+</div>
+<div class="section" id="project-documents">
+<h2>Project Documents<a class="headerlink" href="#project-documents" title="Permalink to this headline">¶</a></h2>
+<p>All the project documents are saved in a folder in the main project folder named <code class="docutils literal notranslate"><span class="pre">content</span></code>. Each
+document has a file handle taken from the first 13 characters of a SHA256 hash of the system time
+when the document was first created, plus an incremented number. The documents are saved with a
+filename assembled from this hash and the file extension <code class="docutils literal notranslate"><span class="pre">.nwd</span></code>.</p>
+<p>If you wish to find the file system location of a document in the project, you can either look it
+up in the project XML file, select <span class="guilabel">Show File Details</span> from the <span class="guilabel">Document</span> menu
+when having the document open, or look in the <code class="docutils literal notranslate"><span class="pre">ToC.txt</span></code> file in the root of the project folder.
+The <code class="docutils literal notranslate"><span class="pre">ToC.txt</span></code> file has a list of all documents in the project, referenced by their label, and
+where they are saved.</p>
+<p>The reason for this cryptic file naming is to avoid issues with file naming conventions and
+restrictions on different operating systems, and also to have a file name that does not depend on
+what the user names the document within the project, or changes it to.</p>
+<p>Each document file contains a plain text version of the text from the editor. The file can in
+principle be edited in any text editor, and is suitable for diffing and version control if so
+desired. Just make sure the file remains in utf-8 encoding, otherwise unicode characters may
+become mangled when the file is opened in novelWriter again.</p>
+<p>Editing these files is generally not recommended outside of special circumstances, whatever they
+may be. The reason for this is that the index will not be automatically updated when doing so,
+which means novelWriter doesn’t know you’ve altered the file. If you do edit a file in this manner,
+you should rebuild the index when you next open the project in novelWriter.</p>
+<p>The first lines of the file may contain some meta data starting with the characters <code class="docutils literal notranslate"><span class="pre">%%~</span></code>. These
+lines are mainly there to restore some information if it is lost from the project file, and the
+information may be helpful if you do open the file in an external editor as it contains the
+document label and the document class and layout. The lines can be deleted without any consequences
+to the rest of the content of the file, and will be added back the next time the document is saved
+in novelWriter.</p>
+<div class="section" id="the-file-saving-process">
+<h3>The File Saving Process<a class="headerlink" href="#the-file-saving-process" title="Permalink to this headline">¶</a></h3>
+<p>When saving the project file, or any of the documents, the data is first saved to a temporary file.
+If successful, the old data file is then removed, and the temporary file becomes the new file. This
+ensures that the previously saved data is only replaced when the new data has been successfully
+saved to the storage medium.</p>
+<p>For the project XML file, a <code class="docutils literal notranslate"><span class="pre">.bak</span></code> file is in addition kept, which will always contain the
+previous version of the file, although when auto-save is enabled, they may have the same content.
+If the opening of a project file fails, novelWriter will automatically try to open the <code class="docutils literal notranslate"><span class="pre">.bak</span></code>
+file instead.</p>
+</div>
+</div>
+<div class="section" id="project-meta-data">
+<h2>Project Meta Data<a class="headerlink" href="#project-meta-data" title="Permalink to this headline">¶</a></h2>
+<p>The project folder contains a subfolder named <code class="docutils literal notranslate"><span class="pre">meta</span></code>, containing a number of files. The meta
+folder contains semi-important files. That is, they can be lost with only minor impact to the
+project.</p>
+<p>If you use version control software on your project, you can exclude this folder, although you may
+want to track the session log file. The JSON files within this folder can safely be ignored as they
+will be automatically regenerated if lost.</p>
+<div class="section" id="the-project-index">
+<h3>The Project Index<a class="headerlink" href="#the-project-index" title="Permalink to this headline">¶</a></h3>
+<p>Between writing sessions, the project index is saved in a JSON file in <code class="docutils literal notranslate"><span class="pre">meta/tagsIndex.json</span></code>.
+This file is not critical. If it is lost, it can be rebuilt from within novelWriter from the
+<span class="guilabel">Tools</span> menu.</p>
+<p>The index is maintained and updated whenever a document or note is saved in the editor. It contains
+all references and tags in documents and notes, as well as the location of all headers in the
+project, and the word counts within each header section.</p>
+<p>The integrity of the index is checked when the file is loaded. It is possible to corrupt the index
+if the file is manually edited and manipulated, so the check is important to avoid sudden crashes
+of novelWriter. If the file contains errors, novelWriter will automatically build it anew. If the
+check somehow fails and novelWriter keeps crashing, you can delete the file manually and rebuild
+the index. If this too fails, you have likely encountered a bug.</p>
+</div>
+<div class="section" id="cached-gui-options">
+<h3>Cached GUI Options<a class="headerlink" href="#cached-gui-options" title="Permalink to this headline">¶</a></h3>
+<p>A file named <code class="docutils literal notranslate"><span class="pre">meta/guiOptions.json</span></code> contains the latest state of various GUI buttons, switches,
+dialog window sizes, column sizes, etc, from the GUI. These are the GUI settings that are specific
+to the project. Global GUI settings are stored in the main config file.</p>
+<p>The file is not critical, but if it is lost, all such GUI options will revert back to their default
+settings.</p>
+</div>
+<div class="section" id="session-stats">
+<h3>Session Stats<a class="headerlink" href="#session-stats" title="Permalink to this headline">¶</a></h3>
+<p>The writing progress is saved in the <code class="docutils literal notranslate"><span class="pre">meta/sessionStats.log</span></code> file. This file records the length
+and word counts of each writing session on the given project. The file is used by the
+<span class="guilabel">Writing Statistics</span> tool. If this file is lost, the history it contains is also lost,
+but it has otherwise no impact on the project.</p>
+</div>
+</div>
+<div class="section" id="project-cache">
+<h2>Project Cache<a class="headerlink" href="#project-cache" title="Permalink to this headline">¶</a></h2>
+<p>The project <code class="docutils literal notranslate"><span class="pre">cache</span></code> folder contains non-critical files. If these files are lost, there is no
+impact on the functionality of novelWriter or the history of the project. It contains temporary
+files, like the preview document in the <span class="guilabel">Build Novel Project</span> tool.</p>
+<p>It should be excluded from version control tools if such are used.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="tech_tests.html" class="btn btn-neutral float-right" title="Running Tests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="project_export.html" class="btn btn-neutral float-left" title="Exporting Projects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

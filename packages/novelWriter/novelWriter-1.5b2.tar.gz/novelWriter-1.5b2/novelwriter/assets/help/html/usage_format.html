@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Formatting Your Text &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Keyboard Shortcuts" href="usage_shortcuts.html" />
+    <link rel="prev" title="User Interface Overview" href="usage_interface.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Formatting Your Text</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#headings">Headings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#text-paragraphs">Text Paragraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#text-emphasis">Text Emphasis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comments-and-synopsis">Comments and Synopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tags-and-references">Tags and References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#paragraph-alignment-and-indentation">Paragraph Alignment and Indentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vertical-space-and-page-breaks">Vertical Space and Page Breaks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Formatting Your Text</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/usage_format.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="formatting-your-text">
+<span id="a-fmt"></span><h1>Formatting Your Text<a class="headerlink" href="#formatting-your-text" title="Permalink to this headline">¶</a></h1>
+<p>The editor itself is a plain text editor that uses formatting codes for setting meta data values
+and allowing for some text formatting. The syntax is based on Markdown, but novelWriter is <em>not</em> a
+Markdown editor. It supports basic formatting like emphasis (italic), strong importance (bold)
+and strikethrough text, as well as four levels of headings.</p>
+<p>In addition to formatting codes, novelWriter allows for comments, a synopsis tag, and a set of
+keyword and value sets used for tags and references. There are also some codes that apply two whole
+paragraphs. See <a class="reference internal" href="#a-fmt-text"><span class="std std-ref">Text Paragraphs</span></a> below for more details.</p>
+<div class="section" id="headings">
+<span id="a-fmt-head"></span><h2>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h2>
+<p>Four levels of headings are allowed. For project notes they are free to be used as you see fit.
+That is, novelWriter doesn’t assign the different headings any importance. However, for novel
+documents they indicate the structural level of the novel and must be used correctly to produce the
+intended result. See <a class="reference internal" href="project_structure.html#a-struct-heads"><span class="std std-ref">Importance of Headings</span></a> for more details.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">Title</span> <span class="pre">Text</span></code></dt><dd><p>Heading level one. For novel documents, the header level indicates the start of a new partition.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">Title</span> <span class="pre">Text</span></code></dt><dd><p>Heading level two. For novel documents, the header level indicates the start of a new chapter.
+Chapter numbers can be inserted automatically when exporting the manuscript.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Title</span> <span class="pre">Text</span></code></dt><dd><p>Heading level three. For novel documents, the header level indicates the start of a new scene.
+Scene numbers or scene separators can be inserted automatically when exporting the manuscript,
+so you can use the title field as a working title for your scenes if you wish.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">Title</span> <span class="pre">Text</span></code></dt><dd><p>Heading level four. For novel documents, the header level indicates the start of a new section.
+Section titles can be replaced by separators or removed completely when exporting the
+manuscript.</p>
+</dd>
+</dl>
+<p>For headers level one and two, adding a <code class="docutils literal notranslate"><span class="pre">!</span></code> modifies the behaviour of the heading:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">#!</span> <span class="pre">Title</span> <span class="pre">Text</span></code></dt><dd><p>This tells the build tool that the level one heading is intended to be used for the novel’s
+main title, like for instance on the front page. When exporting, this will use a different
+styling and will exclude the title from for instance a Table of Contents in Libre Office.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">##!</span> <span class="pre">Title</span> <span class="pre">Text</span></code></dt><dd><p>This tells the build tool to not assign a chapter number to this chapter title if automatic
+chapter numbers are being used. Such titles are useful for a prologue for instance. See
+<a class="reference internal" href="project_structure.html#a-struct-heads-unnum"><span class="std std-ref">Unnumbered Chapter Headings</span></a> for more details.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The space after the <code class="docutils literal notranslate"><span class="pre">#</span></code> or <code class="docutils literal notranslate"><span class="pre">!</span></code> character is mandatory. The syntax highlighter will change
+colour and font size when the heading is correctly formatted.</p>
+</div>
+</div>
+<div class="section" id="text-paragraphs">
+<span id="a-fmt-text"></span><h2>Text Paragraphs<a class="headerlink" href="#text-paragraphs" title="Permalink to this headline">¶</a></h2>
+<p>A text paragraph is indicated by a blank line. That is, you need two line breaks to separate two
+fragments of text into two paragraphs. Single line breaks are treated as line breaks within a
+paragraph.</p>
+<p>In addition, the editor supports a few additional types of whitespaces:</p>
+<ul class="simple">
+<li><p>A non-breaking space can be inserted with <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">K</kbd>, <kbd class="kbd docutils literal notranslate">Space</kbd>.</p></li>
+<li><p>Thin spaces are also supported, and can be inserted with <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">K</kbd>,
+<kbd class="kbd docutils literal notranslate">Shift</kbd><kbd class="kbd docutils literal notranslate">Space</kbd>.</p></li>
+<li><p>Non-breaking thin space can be inserted  with <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">K</kbd>, <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">Space</kbd>.</p></li>
+</ul>
+<p>These are all insert features, and the <span class="guilabel">Insert</span> menu has more. They are also listed
+in <a class="reference internal" href="usage_shortcuts.html#a-kb-ins"><span class="std std-ref">Insert Shortcuts</span></a>.</p>
+<p>Non-breaking spaces are highlighted by the syntax highlighter with an alternate coloured
+background, depending on the selected theme.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Non-breaking spaces are the correct type of space to separate a number from its unit. Generally,
+it prevents the line wrapping algorithms from adding line breaks where it shouldn’t.</p>
+</div>
+</div>
+<div class="section" id="text-emphasis">
+<span id="a-fmt-emph"></span><h2>Text Emphasis<a class="headerlink" href="#text-emphasis" title="Permalink to this headline">¶</a></h2>
+<p>A minimal set of text emphasis styles are supported.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">_text_</span></code></dt><dd><p>The text is rendered as emphasised text (italicised).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">**text**</span></code></dt><dd><p>The text is rendered as strongly important text (bold).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">~~text~~</span></code></dt><dd><p>Strikethrough text.</p>
+</dd>
+</dl>
+<p>In markdown guides it is often recommended to differentiate between strong importance and emphasis
+by using <code class="docutils literal notranslate"><span class="pre">**</span></code> for strong and <code class="docutils literal notranslate"><span class="pre">_</span></code> for emphasis, although markdown generally also supports <code class="docutils literal notranslate"><span class="pre">__</span></code>
+for strong and <code class="docutils literal notranslate"><span class="pre">*</span></code> for emphasis. However, since the differentiation makes the highlighting and
+conversion significantly simpler and faster, in novelWriter this is a rule, not just a
+recommendation.</p>
+<p>In addition, the following rules apply:</p>
+<ol class="arabic simple">
+<li><p>The emphasis and strikethrough formatting tags do not allow spaces between the words and the tag
+itself. That is, <code class="docutils literal notranslate"><span class="pre">**text**</span></code> is valid, <code class="docutils literal notranslate"><span class="pre">**text</span> <span class="pre">**</span></code> is not.</p></li>
+<li><p>More generally, the delimiters must be on the outer edge of words. That is, <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">**text</span> <span class="pre">in</span>
+<span class="pre">bold**</span> <span class="pre">here</span></code> is valid, <code class="docutils literal notranslate"><span class="pre">some**</span> <span class="pre">text</span> <span class="pre">in</span> <span class="pre">bold**</span> <span class="pre">here</span></code> is not.</p></li>
+<li><p>If using both <code class="docutils literal notranslate"><span class="pre">**</span></code> and <code class="docutils literal notranslate"><span class="pre">_</span></code> to wrap the same text, the underscore must be the inner wrapper.
+This is due to the underscore also being a valid word character, so if they are on the outside,
+they violate rule 2.</p></li>
+<li><p>Text emphasis does not span past line breaks. If you need to add emphasis to multiple lines or
+paragraphs, you must apply it to each of them in turn.</p></li>
+</ol>
+</div>
+<div class="section" id="comments-and-synopsis">
+<span id="a-fmt-comm"></span><h2>Comments and Synopsis<a class="headerlink" href="#comments-and-synopsis" title="Permalink to this headline">¶</a></h2>
+<p>In addition to these standard markdown features, novelWriter also allows for comments in documents.
+The text of a comment is ignored by the word counter. The text can also be filtered out when
+exporting or viewing the document.</p>
+<p>If the first word of a comment is <code class="docutils literal notranslate"><span class="pre">Synopsis:</span></code> (with the colon included), the comment is treated
+specially and will show up in the <a class="reference internal" href="usage_interface.html#a-ui-outline"><span class="std std-ref">Project Outline View</span></a> in a dedicated column. The word <code class="docutils literal notranslate"><span class="pre">synopsis</span></code>
+is not case sensitive. If it is correctly formatted, the syntax highlighter will indicate this by
+altering the colour of the word.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">text...</span></code></dt><dd><p>This is a comment. The text is not exported by default (this can be overridden), seen in the
+document viewer, or counted towards word counts.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">Synopsis:</span> <span class="pre">text...</span></code></dt><dd><p>This is a synopsis comment. It is generally treated in the same way as a regular comment, except
+that it is also captured by the indexing algorithm and displayed in the <a class="reference internal" href="usage_interface.html#a-ui-outline"><span class="std std-ref">Project Outline View</span></a>. It
+can also be filtered separately when exporting the project to for instance generate an outline
+document of the whole project.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only one comment can be flagged as a synopsis comment for each heading. If multiple comments are
+flagged as synopsis comments, the last one will be used and the rest ignored.</p>
+</div>
+</div>
+<div class="section" id="tags-and-references">
+<span id="a-fmt-tags"></span><h2>Tags and References<a class="headerlink" href="#tags-and-references" title="Permalink to this headline">¶</a></h2>
+<p>The document editor supports a minimal set of keywords used for setting tags, and making references
+between documents. The tags and references can be set once per section defined by a heading. Using
+them multiple times under the same heading will just override the previous setting.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;keyword:</span> <span class="pre">value</span></code></dt><dd><p>A keyword argument followed by a value, or a comma separated list of values.</p>
+</dd>
+</dl>
+<p>The available tag and reference keywords are listed in the <a class="reference internal" href="project_structure.html#a-struct-tags"><span class="std std-ref">Tag References</span></a> section. They can
+also be inserted at the cursor position in the editor via the <span class="guilabel">Insert</span> menu.</p>
+</div>
+<div class="section" id="paragraph-alignment-and-indentation">
+<span id="a-fmt-align"></span><h2>Paragraph Alignment and Indentation<a class="headerlink" href="#paragraph-alignment-and-indentation" title="Permalink to this headline">¶</a></h2>
+<p>All documents have the text by default aligned to the left or justified, depending on your
+Preferences.</p>
+<p>You can override the default text alignment on individual paragraphs by specifying alignment tags.
+These tags are double angle brackets. Either <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">&lt;&lt;</span></code>. You put them either before or after
+the paragraph, and they will “push” the text towards the edge the brackets point towards. This
+should be fairly intuitive.</p>
+<p>Indentation uses a similar syntax. But here you use a single <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> to push the text away
+from the edge.</p>
+<p>Examples:</p>
+<table class="colwidths-given tight-table docutils align-default" id="id1">
+<caption><span class="caption-text">Text Alignment and Indentation</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Syntax</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Right</span> <span class="pre">aligned</span> <span class="pre">text</span></code></p></td>
+<td><p>The text paragraph is right-aligned.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">aligned</span> <span class="pre">text</span> <span class="pre">&lt;&lt;</span></code></p></td>
+<td><p>The text paragraph is left-aligned.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Centred</span> <span class="pre">text</span> <span class="pre">&lt;&lt;</span></code></p></td>
+<td><p>The text paragraph is centred.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">Indented</span> <span class="pre">text</span></code></p></td>
+<td><p>The text has an increased left margin.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Indented</span> <span class="pre">text</span> <span class="pre">&lt;</span></code></p></td>
+<td><p>The text has an increased right margin.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">Indented</span> <span class="pre">text</span> <span class="pre">&lt;</span></code></p></td>
+<td><p>The text has an both margins increased.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The text editor will not show the alignment and indentation live. But the viewer will show them
+when you open the document there. It will of course also be reflected in the document generated
+from the build tool as long as the format supports paragraph alignment.</p>
+</div>
+</div>
+<div class="section" id="vertical-space-and-page-breaks">
+<span id="a-fmt-break"></span><h2>Vertical Space and Page Breaks<a class="headerlink" href="#vertical-space-and-page-breaks" title="Permalink to this headline">¶</a></h2>
+<p>Adding more than one line break between paragraphs will <em>not</em> increase the space between those
+paragraphs when exporting the project. To add additional space between paragraphs, add the text
+<code class="docutils literal notranslate"><span class="pre">[VSPACE]</span></code> on a line of its own, and the build tool will insert a blank paragraph in its place.</p>
+<p>If you need multiple blank paragraphs just add a colon and a number to the above code. For
+instance, writing <code class="docutils literal notranslate"><span class="pre">[VSPACE:3]</span></code> will insert three blank paragraphs.</p>
+<p>Normally, the build tool will insert a page break before all headers of level one and for all
+headers of level two for novel documents, i.e. chapters, but not for project notes.</p>
+<p>If you need to add a page break somewhere else, put the text <code class="docutils literal notranslate"><span class="pre">[NEW</span> <span class="pre">PAGE]</span></code> on a line by itself
+before the text you wish to start on a new page.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="usage_shortcuts.html" class="btn btn-neutral float-right" title="Keyboard Shortcuts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage_interface.html" class="btn btn-neutral float-left" title="User Interface Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

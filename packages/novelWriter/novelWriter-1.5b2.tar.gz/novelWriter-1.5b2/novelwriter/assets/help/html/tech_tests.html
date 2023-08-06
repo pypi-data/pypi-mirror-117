@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Running Tests &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="How Data is Stored" href="tech_storage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Running Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simple-test-run">Simple Test Run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-options">Advanced Options</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Running Tests</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/tech_tests.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="running-tests">
+<span id="a-pytest"></span><h1>Running Tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h1>
+<p>The novelWriter source code is well covered by tests. The test framework used for the development
+is <code class="docutils literal notranslate"><span class="pre">pytest</span></code> with the use of an extension for Qt.</p>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>The dependencies for running the tests can be installed with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -r requirements-dev.txt</span>
+</pre></div>
+</div>
+<p>This will install a couple of extra packages for coverage and test management. The minimum
+requirement is just <code class="docutils literal notranslate"><span class="pre">pytest</span></code> and <code class="docutils literal notranslate"><span class="pre">pytest-qt</span></code>.</p>
+</div>
+<div class="section" id="simple-test-run">
+<h2>Simple Test Run<a class="headerlink" href="#simple-test-run" title="Permalink to this headline">¶</a></h2>
+<p>To run the tests, you simply need to execute the following from the root of the source folder:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pytest</span>
+</pre></div>
+</div>
+<p>Since several of the tests involve opening up the novelWriter GUI, you may want to disable the GUI
+for the duration of the test run. Moving your mouse while the tests are running may otherwise
+interfere with the execution of some tests.</p>
+<p>You can disable the renderring of the GUI by setting the flag <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">QT_QPA_PLATFORM=offscreen</span></code>,
+or alternatively run the tests with the <code class="docutils literal notranslate"><span class="pre">xvfb</span></code> package, like so:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">xvfb-run pytest</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="advanced-options">
+<h2>Advanced Options<a class="headerlink" href="#advanced-options" title="Permalink to this headline">¶</a></h2>
+<p>Adding the flag <code class="docutils literal notranslate"><span class="pre">-v</span></code> to the <code class="docutils literal notranslate"><span class="pre">pytest</span></code> command will increase verbosity of the test execution.</p>
+<p>You can also add coverage report generation. For instance to HTML:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">xvfb-run pytest -v --cov=novelwriter --cov-report=html</span>
+</pre></div>
+</div>
+<p>Other useful report formats are <code class="docutils literal notranslate"><span class="pre">xml</span></code>, and <code class="docutils literal notranslate"><span class="pre">term</span></code> for terminal output.</p>
+<p>You can also run tests per subpackage of novelWriter with the <code class="docutils literal notranslate"><span class="pre">-m</span></code> command. The available
+subpackage groups are <code class="docutils literal notranslate"><span class="pre">base</span></code>, <code class="docutils literal notranslate"><span class="pre">core</span></code>, and <code class="docutils literal notranslate"><span class="pre">gui</span></code>. Consider for instance:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">xvfb-run pytest -v --cov=novelwriter --cov-report=html -m core</span>
+</pre></div>
+</div>
+<p>This will only run the tests of the “core” package, that is, all the classes that deal with the
+project data of a novelWriter project. The “gui” tests, likewise, will run the tests for the GUI
+components, and the “base” tests cover the bits in-between.</p>
+<p>You can also filter the tests with the <code class="docutils literal notranslate"><span class="pre">-k</span></code> switch. The following will do the same as
+<code class="docutils literal notranslate"><span class="pre">-m</span> <span class="pre">core</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">xvfb-run pytest -v --cov=novelwriter --cov-report=html -k testCore</span>
+</pre></div>
+</div>
+<p>All tests are named in such a way that you can filter them by adding more bits of the test names.
+They all start with the word “test”. Then comes the group: “Core”, “Base”, “Dlg”, “Tool”, or “Gui”.
+Finally comes the name of the class or module, which generally corresponds to a single source code
+file. For instance, running the following will run all tests for the document editor:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">xvfb-run pytest -v --cov=novelwriter --cov-report=html -k testGuiEditor</span>
+</pre></div>
+</div>
+<p>To run a single test, simply add the full test name to the <code class="docutils literal notranslate"><span class="pre">-k</span></code> switch.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="tech_storage.html" class="btn btn-neutral float-left" title="How Data is Stored" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

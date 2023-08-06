@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Setup on Windows &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="User Interface Overview" href="usage_interface.html" />
+    <link rel="prev" title="Setup on macOS" href="setup_mac.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setup on Windows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-installer">Using the Installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-from-source">Running from Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-installing-python">Step 1: Installing Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-dependencies-and-icons">Step 2: Dependencies and Icons</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#uninstalling">Uninstalling</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Setup on Windows</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/setup_windows.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setup-on-windows">
+<span id="a-setup-win"></span><h1>Setup on Windows<a class="headerlink" href="#setup-on-windows" title="Permalink to this headline">¶</a></h1>
+<p>This is a brief guide to how you can get novelWriter running on a Windows computer.</p>
+<p>Unlike other operating systems, Windows does not come prepared with an environment to run Python
+applications, so you must first install Python. After that, running novelWriter is straightforward.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you have any problems, you can always open a question on the project’s <a class="reference external" href="https://github.com/vkbo/novelWriter/discussions">discussions</a> page.
+This requires a GitHub account.</p>
+</div>
+<div class="section" id="using-the-installer">
+<span id="a-setup-win-installer"></span><h2>Using the Installer<a class="headerlink" href="#using-the-installer" title="Permalink to this headline">¶</a></h2>
+<p>The installer for Windows is no longer provided. See the <a class="reference external" href="https://github.com/vkbo/novelWriter/issues/640">installer issue</a> for more info on why.
+You can still create the installer yourself if you want to. It can be generated with the provided
+<code class="docutils literal notranslate"><span class="pre">setup.py</span></code> script. use the script’s <code class="docutils literal notranslate"><span class="pre">help</span></code> command to get further instructions.</p>
+<p>Please use the “Running from Source” option below instead. It has been improved and a script has
+been added that does nearly the same thing.</p>
+</div>
+<div class="section" id="running-from-source">
+<span id="a-setup-win-source"></span><h2>Running from Source<a class="headerlink" href="#running-from-source" title="Permalink to this headline">¶</a></h2>
+<p>To run novelWriter from source, download the latest source zip file from the release page on
+<a class="reference external" href="https://github.com/vkbo/novelWriter/releases">GitHub</a>, or from the <a class="reference external" href="https://novelwriter.io">main website</a>. You can download the “Minimal Windows” zip file. It is a
+minimal version of the source that contains only the files needed for running on Windows. You can
+also download the full source if you wish.</p>
+<p>In order to make novelWriter run on your system, you must first have Python installed (Step 1).
+Thereafter, a script will do the rest of the job (Step 2). Alternatively, you can run this step
+manually from the command prompt if you wish to.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your system already has all the dependencies installed, you can run novelWriter directly from
+the extracted folder by double-clicking the <code class="docutils literal notranslate"><span class="pre">novelWriter.pyw</span></code> file. However, running the
+script also adds start icons.</p>
+</div>
+<div class="section" id="step-1-installing-python">
+<h3>Step 1: Installing Python<a class="headerlink" href="#step-1-installing-python" title="Permalink to this headline">¶</a></h3>
+<p>If you already have Python installed, you can skip this step. If you don’t have it installed, you
+can download it from the <a class="reference external" href="https://www.python.org/downloads/windows">python.org</a> website. novelWriter should work with Python 3.6 or higher,
+but it is recommended that you install the latest version of Python.</p>
+<p>Make sure you select the “Add Python to PATH” option during installation, otherwise the <code class="docutils literal notranslate"><span class="pre">python</span></code>
+command will not work in the command line window.</p>
+<a class="reference internal image-reference" href="_images/python_win_install.png"><img alt="_images/python_win_install.png" src="_images/python_win_install.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="step-2-dependencies-and-icons">
+<h3>Step 2: Dependencies and Icons<a class="headerlink" href="#step-2-dependencies-and-icons" title="Permalink to this headline">¶</a></h3>
+<p><strong>Alternative A: By Script</strong></p>
+<p>Open the folder where you extracted novelWriter, and double-click the file named
+<code class="docutils literal notranslate"><span class="pre">windows_install.bat</span></code>. This should open a command line window and run the setup script to install
+dependencies, and add desktop and start menu icons.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you downloaded the full source package, the file may be in the <code class="docutils literal notranslate"><span class="pre">setup</span></code> subfolder.</p>
+</div>
+<p>The script will also check that it can find Python on your system and alert you if it cannot run
+it. If you are sure you have installed it, but the script cannot find it, you probably didn’t
+install it with the “Add Python to PATH” option mentioned in Step 1.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you upgrade Python to a newer version and the path to <code class="docutils literal notranslate"><span class="pre">pythonw.exe</span></code> has therefore changed,
+you may need to run this script again. You can also run it to upgrade dependencies to the latest
+version.</p>
+</div>
+<p><strong>Alternative B: Manual Installation</strong></p>
+<p>The above alternative can also be run manually.</p>
+<p>Open the windows command prompt. It can be launched by pressing the <kbd class="kbd docutils literal notranslate">Win</kbd> key and typing “cmd”.
+The “Command Prompt” app should then be in the list of applications.</p>
+<p>With the command prompt open, navigate to the folder where you extracted the novelWriter source,
+and run the following commands:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install --user pywin32 -r requirements.txt</span>
+<span class="go">python setup.py win-install</span>
+</pre></div>
+</div>
+<p>The first command will install the dependencies on your system from the <a class="reference external" href="https://pypi.org/">Python Package Index</a>,
+and the second command will create a desktop icon and a start menu icon. That should be all that
+you need.</p>
+</div>
+</div>
+<div class="section" id="uninstalling">
+<h2>Uninstalling<a class="headerlink" href="#uninstalling" title="Permalink to this headline">¶</a></h2>
+<p><strong>Alternative A: By Script</strong></p>
+<p>Open the folder where you keep the novelWriter files, and double-click the file named
+<code class="docutils literal notranslate"><span class="pre">windows_uninstall.bat</span></code>. This should open a command line window and run the setup script to
+remove the main dependency packages and remove desktop and start menu icons.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you downloaded the full source package, the file may be in the <code class="docutils literal notranslate"><span class="pre">setup</span></code> subfolder.</p>
+</div>
+<p>If you plan to also remove Python from your system, you must run the above script first as it needs
+Python in order to run.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Due to limitations of the <code class="docutils literal notranslate"><span class="pre">pip</span></code> installer, dependencies of the dependencies will not be
+removed, only the ones the setup script directly installed.</p>
+</div>
+<p><strong>Alternative B: Manual Uninstallation</strong></p>
+<p>Like for the install process, the script just runs two commands. You can of course run them
+yourself if you wish. They are:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python setup.py win-uninstall</span>
+<span class="go">pip uninstall -r requirements.txt</span>
+</pre></div>
+</div>
+<p>There may be other packages on your system installed by <code class="docutils literal notranslate"><span class="pre">pip</span></code>. To list all packages, run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip freeze --user</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="usage_interface.html" class="btn btn-neutral float-right" title="User Interface Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="setup_mac.html" class="btn btn-neutral float-left" title="Setup on macOS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

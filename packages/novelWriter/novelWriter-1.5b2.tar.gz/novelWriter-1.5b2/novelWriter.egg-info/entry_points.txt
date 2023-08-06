@@ -1,0 +1,6 @@
+[console_script]
+novelWriter-cli = novelwriter:main
+
+[gui_scripts]
+novelWriter = novelwriter:main
+
