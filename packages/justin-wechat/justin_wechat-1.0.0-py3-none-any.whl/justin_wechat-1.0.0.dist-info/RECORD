@@ -1,0 +1,11 @@
+justin_wechat/__init__.py,sha256=VueXZul0Tn_PQmZ9mK00U3JajXVariHZtBvixwNPZu0,77
+justin_wechat/access_token.py,sha256=9pWMfZzJcqGt89Ivvae5yZqbMDE4m68Uhn476_l_Gys,481
+justin_wechat/customer.py,sha256=bRi11_R90jK0NHrLQhsE9Rk5ADD3FjSBHVJScjSbHJo,2148
+justin_wechat/department.py,sha256=AXTMNA9J9MurupEQcwdiDVSmdAYamXLPjSwIHKklJOU,2663
+justin_wechat/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+justin_wechat/message.py,sha256=YFg1ExP8hVvijeYSspPdYMNHrsskADBj1H3jBQc7iX8,12371
+justin_wechat/user.py,sha256=o8wo5SZQsZkxkgUbN-wr-m3VpcCrHNSxvPPYNXmYa5Q,7534
+justin_wechat-1.0.0.dist-info/METADATA,sha256=RbcOAZYndS9kLmFRQTme5vrEm4Xok1fbE-c19WYjKUA,233
+justin_wechat-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+justin_wechat-1.0.0.dist-info/top_level.txt,sha256=7fiiQQDc_OIV7amexY6OVJff6rJLTP_Q3UK8PvruVuM,14
+justin_wechat-1.0.0.dist-info/RECORD,,
