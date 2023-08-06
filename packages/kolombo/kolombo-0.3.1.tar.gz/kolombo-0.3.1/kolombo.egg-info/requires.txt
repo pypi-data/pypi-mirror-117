@@ -1,0 +1,11 @@
+aiosqlite==0.17.0
+cryptography==3.4.8
+databases==0.4.3
+docker==5.0.0
+ormar==0.10.16
+rich==10.7.0
+shellingham==1.4.0
+typer==0.3.2
+
+[:python_version < "3.9"]
+importlib-resources==5.2.2
