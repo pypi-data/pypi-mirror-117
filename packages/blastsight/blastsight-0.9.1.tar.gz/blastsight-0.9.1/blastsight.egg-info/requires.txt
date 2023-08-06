@@ -1,0 +1,16 @@
+numpy
+dxfgrabber
+PyOpenGL
+pandas
+qtpy
+h5py
+tables
+meshcut
+colour
+freetype-py
+
+[pyqt5]
+pyqt5
+
+[pyside2]
+pyside2
