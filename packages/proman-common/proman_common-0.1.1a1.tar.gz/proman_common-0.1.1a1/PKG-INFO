@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: proman-common
+Version: 0.1.1a1
+Summary: GitHub based package manager.
+Author: Jesse P. Johnson
+Author-email: jpj6652@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: gnome
+Provides-Extra: kde
+Requires-Dist: SecretStorage (>=3.3.1,<4.0.0); (sys_platform == "linux") and (extra == "gnome")
+Requires-Dist: compendium[toml] (>=0.1.1-alpha.0,<0.2.0)
+Requires-Dist: dataclasses (>=0.8,<0.9); python_version >= "3.6" and python_version < "3.7"
+Requires-Dist: dbus-python (>=1.2.16,<2.0.0); (sys_platform == "linux") and (extra == "kde")
+Requires-Dist: keyring (>=23.0.1,<24.0.0)
