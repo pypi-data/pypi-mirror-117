@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gbif-blocking-occurrence-download"
+packages = [
+    { include = "./gbif_blocking_occurrences_download.py" }
+]
+version = "0.1.1"
+description = ""
+authors = ["Nicolas Noé <nicolas.noe@inbo.be>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+pytest = "^6.2.4"
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+vcrpy = "^4.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
