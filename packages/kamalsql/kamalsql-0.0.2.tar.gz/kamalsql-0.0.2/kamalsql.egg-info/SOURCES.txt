@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kamalsql/__init__.py
+kamalsql/kamalsql.py
+kamalsql.egg-info/PKG-INFO
+kamalsql.egg-info/SOURCES.txt
+kamalsql.egg-info/dependency_links.txt
+kamalsql.egg-info/requires.txt
+kamalsql.egg-info/top_level.txt
