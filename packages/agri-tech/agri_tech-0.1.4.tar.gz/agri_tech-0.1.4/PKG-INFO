@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: agri_tech
+Version: 0.1.4
+Summary: Loading and using Lidardata
+Home-page: https://github.com/Kibika/Agritech/agri_tech
+Author: Stella Kibika
+Author-email: steshykibika@gmail.com
+License: MIT license
+Keywords: agri_tech
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=========
+agri_tech
+=========
+
+
+.. image:: https://img.shields.io/pypi/v/agri_tech.svg
+        :target: https://pypi.python.org/pypi/agri_tech
+
+.. image:: https://img.shields.io/travis/Kibika/agri_tech.svg
+        :target: https://travis-ci.com/Kibika/agri_tech
+
+.. image:: https://readthedocs.org/projects/agri-tech/badge/?version=latest
+        :target: https://agri-tech.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/Kibika/agri_tech/shield.svg
+     :target: https://pyup.io/repos/github/Kibika/agri_tech/
+     :alt: Updates
+
+
+
+Loading and using Lidardata
+
+
+* Free software: MIT license
+* Documentation: https://agri-tech.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-08-16)
+------------------
+
+* First release on PyPI.
+
+
