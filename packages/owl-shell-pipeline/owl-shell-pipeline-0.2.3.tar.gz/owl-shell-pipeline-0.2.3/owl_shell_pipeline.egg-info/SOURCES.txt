@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+owl_shell_pipeline.egg-info/PKG-INFO
+owl_shell_pipeline.egg-info/SOURCES.txt
+owl_shell_pipeline.egg-info/dependency_links.txt
+owl_shell_pipeline.egg-info/entry_points.txt
+owl_shell_pipeline.egg-info/not-zip-safe
+owl_shell_pipeline.egg-info/requires.txt
+owl_shell_pipeline.egg-info/top_level.txt
+shell_pipeline/__init__.py
+shell_pipeline/main.py
+shell_pipeline/schema.py
