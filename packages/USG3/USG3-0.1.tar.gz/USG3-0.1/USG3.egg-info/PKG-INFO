@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: USG3
+Version: 0.1
+Summary: USG3 Data API
+Home-page: https://github.com/Blvisse/USG3-DataEngineering
+Author: Blaise Papa
+Author-email: blaisepke@gmail.com
+License: UNKNOWN
+Description: This project creates a python package that is able to fetch,process and visualize geospatial data from the usg3 amazon dataset
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

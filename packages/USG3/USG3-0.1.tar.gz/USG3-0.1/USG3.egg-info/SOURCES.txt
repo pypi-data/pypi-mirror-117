@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+USG3/__init__.py
+USG3/classification.py
+USG3/elevation.py
+USG3/elevation_data.py
+USG3/generate.py
+USG3/reprojection.py
+USG3/visualize.py
+USG3.egg-info/PKG-INFO
+USG3.egg-info/SOURCES.txt
+USG3.egg-info/dependency_links.txt
+USG3.egg-info/top_level.txt
