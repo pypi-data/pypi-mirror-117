@@ -1,0 +1,12 @@
+TwitterAPI/BearerAuth.py,sha256=xGUCGRSb7V6FJtgLw8I7esKqZ2rNHcyHN4T0KhnUHps,2225
+TwitterAPI/TwitterAPI.py,sha256=0gs8sefRnYC-6hd8n86MdQ5HmsXvrg-p9ja93QGhbF8,18968
+TwitterAPI/TwitterError.py,sha256=ztLfCaj0YLQZbDD7TBMgirx7aTLNDZUjI-n_Bp65bEs,1347
+TwitterAPI/TwitterOAuth.py,sha256=xZ321dCNo5uviu4UWxLA9C12Ed7VE7djLpi5bkYzFZw,2376
+TwitterAPI/TwitterPager.py,sha256=yyJ2NflXwG24p-CHHfv2NF1L5kiMfCd5Cdt1Qwi2x1M,5917
+TwitterAPI/__init__.py,sha256=O2sN-nrFxQ2gDQRvoIJWxRw20EKKsJYdIB-GuM1EZ24,664
+TwitterAPI/constants.py,sha256=Hc45qmSOw2fkjFcWlDpaKqGosrOWHabNuEZyEdhO_Xc,17032
+TwitterAPI/credentials.txt,sha256=Sr60Q3rUZc-Fz3Gs-USKLd2wC1CBgWaIYGrszUsLDPc,70
+TwitterAPI_dylancaponi-2.7.5.dist-info/METADATA,sha256=bsVmIXqN-H2rwSRKqlUAIkusIsHGFonHtd_z9RJz178,451
+TwitterAPI_dylancaponi-2.7.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TwitterAPI_dylancaponi-2.7.5.dist-info/top_level.txt,sha256=CkYGto0ON6290T3T2KDEQWgwEPjZ1v1bcP__JSF-S-c,11
+TwitterAPI_dylancaponi-2.7.5.dist-info/RECORD,,
