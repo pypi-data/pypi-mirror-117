@@ -1,0 +1,54 @@
+# DRAGONS
+
+[![Tests](https://github.com/kilonzi/dragons/actions/workflows/package-build.yml/badge.svg?branch=main)](https://github.com/kilonzi/dragons/actions/workflows/package-build.yml)
+
+
+`Our biggest fears are like dragons, guarding our deepest treasures.
+`
+Releases the dragons to test the performance of Portal and Motorcade. This repository builds to a python package https://pypi.org/project/dragons-fire/
+
+## Installation
+You can install this package in Motorcade or Portal or any other independent virtual environment by running the following
+
+`pip install --upgrade dragons-fire`
+
+## Setup
+
+`dragon setup -u your_username -p your_password -s https://dev_portal_url.com`
+
+## List tests available
+
+`dragon test list`
+
+## Running a test
+
+`dragon test sample_test`
+
+where sample_test is the name of the test
+
+# Extending
+
+You can be able to create and add additional tests to the package
+
+## Setup development
+
+`git clone git@github.com:broadinstitute/dragons.git`
+
+## Add tests :
+
+1. All additional files are added in the dragon sub-folder in the name of the .py 
+respond to the category of request as indicated in the portal
+2. Each test must be in its own class and must implement a setup, submit_test_form and fill_in_form_values methods
+3. Add unit tests as appropriate
+4. Add data files needed(attachments, e.t.c) in the data folder
+5. Navigate to helpers and define the name of the test and class to be run for the test
+6. #### Change the version number in the setup.py (increment by one for minor changes)
+7. Push changes to your own branch
+8. After approval, merge to master
+9. A new version (version number above) should be available automatically 
+
+
+#Security warning
+
+Do not commit or push password/secrets to master. Since pypi index is public anyone in the world can see them
+

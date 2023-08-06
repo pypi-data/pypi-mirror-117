@@ -1,0 +1,2 @@
+chipwell_barcode	version
+201812345_R01C01	2

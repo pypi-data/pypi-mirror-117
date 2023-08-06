@@ -1,0 +1,2 @@
+project	collaborator_sample_id	version	data_type	new_file_name	delivery_option
+G94794	-CHMI_CHMI3_WGS2		WGS	test_clinical	AUTOMATIC

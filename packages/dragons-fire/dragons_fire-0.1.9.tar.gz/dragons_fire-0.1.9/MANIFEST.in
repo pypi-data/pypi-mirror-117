@@ -1,0 +1,2 @@
+include dragon/data/*.txt
+recursive-include dragon *.txt
