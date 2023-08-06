@@ -1,0 +1,3 @@
+[console_scripts]
+submanager = submanager.__main__:main
+
