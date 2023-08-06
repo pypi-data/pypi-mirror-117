@@ -1,0 +1,16 @@
+atoMEC/__init__.py,sha256=j2SG13MIZANLnNn5r0_GjtSF3Po_YXuS9FCL1PG4cLo,6380
+atoMEC/check_inputs.py,sha256=8HOq3UUaiGqJn8wfUeRFTCzpZiiOcrv9TcaiYpWOPy8,30182
+atoMEC/config.py,sha256=Q26VbegN6t4qtL--N4pUhWdf5Al3FYyJSj7uCXiEtVA,770
+atoMEC/convergence.py,sha256=PfuJ_tIzEcyWiyggGqqvecRobuFaTmh8kQznnFXH_RY,3479
+atoMEC/mathtools.py,sha256=SE9qIKKzGz51WXjpG2MtPVw_zWFXpX8I_eVtm4Sm_eE,10418
+atoMEC/models.py,sha256=MiEMhRWPLijIz928AIicNH7KPuu_4DicAo0Vz6RupWQ,17871
+atoMEC/numerov.py,sha256=N2G1ooLw78ejQ3-2p3Uw90LJVQoe6ziT_8CX_gPgxzQ,10106
+atoMEC/staticKS.py,sha256=ATG-pTkfLFCQDxSRp9xBuqrOkgpwerz5sCxB1QGzFy0,31656
+atoMEC/unitconv.py,sha256=TehVAOQqslihhaws47sg0BAZxhYdR4EsZXKChg3yNLs,182
+atoMEC/writeoutput.py,sha256=Etj8XgAm5jQqcU2u2zS2-LtGepWZTC3uLVXkrUayBWI,16693
+atoMEC/xc.py,sha256=uszsnVSZ9k0bTqSJ1ulr2naaxloImi3BDh3UGsbsASM,8800
+atoMEC-1.0.0.dist-info/LICENSE,sha256=KaZMxIqe5wq6pQDeF_1645OZz0xXyGnZE29ARg3LKAo,1570
+atoMEC-1.0.0.dist-info/METADATA,sha256=oK--otoxg1Vz4NcE1kIl5defDxGm5MRSizElU_Z5G8M,6948
+atoMEC-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+atoMEC-1.0.0.dist-info/top_level.txt,sha256=z1Avt870-752s72Vs-4EDDwZ5UBZ1ajENVBrr1eL2ms,7
+atoMEC-1.0.0.dist-info/RECORD,,
