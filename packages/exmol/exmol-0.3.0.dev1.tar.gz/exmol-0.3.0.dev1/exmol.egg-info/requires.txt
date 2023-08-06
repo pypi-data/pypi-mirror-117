@@ -1,0 +1,7 @@
+selfies
+numpy
+requests
+tqdm
+rdkit-pypi
+matplotlib
+scikit-learn
