@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+test_gaussian_binomial_Udacity_project/Binomialdistribution.py
+test_gaussian_binomial_Udacity_project/Gaussiandistribution.py
+test_gaussian_binomial_Udacity_project/Generaldistribution.py
+test_gaussian_binomial_Udacity_project/__init__.py
+test_gaussian_binomial_Udacity_project.egg-info/PKG-INFO
+test_gaussian_binomial_Udacity_project.egg-info/SOURCES.txt
+test_gaussian_binomial_Udacity_project.egg-info/dependency_links.txt
+test_gaussian_binomial_Udacity_project.egg-info/not-zip-safe
+test_gaussian_binomial_Udacity_project.egg-info/top_level.txt
