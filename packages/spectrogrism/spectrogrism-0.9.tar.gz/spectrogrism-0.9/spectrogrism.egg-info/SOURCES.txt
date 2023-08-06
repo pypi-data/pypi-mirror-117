@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+spectrogrism/__init__.py
+spectrogrism/distortion.py
+spectrogrism/mcmc.py
+spectrogrism/nisp.py
+spectrogrism/polyfit.py
+spectrogrism/snifs.py
+spectrogrism/spectrogrism.py
+spectrogrism.egg-info/PKG-INFO
+spectrogrism.egg-info/SOURCES.txt
+spectrogrism.egg-info/dependency_links.txt
+spectrogrism.egg-info/not-zip-safe
+spectrogrism.egg-info/requires.txt
+spectrogrism.egg-info/top_level.txt
