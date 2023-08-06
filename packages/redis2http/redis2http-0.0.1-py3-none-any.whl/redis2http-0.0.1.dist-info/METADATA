@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: redis2http
+Version: 0.0.1
+Summary: Simple HTTP client which takes request data from redis
+Home-page: https://github.com/yaroslaff/redis2http
+Author: Yaroslav Polyakov
+Author-email: yaroslaff@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: redis
+Requires-Dist: requests
+
+# redis2http
+
+Redis2http takes request data from redis and performs HTTP request.
+Mostly used to implement web-hook calls
+
+## Why not requests.get/requests.post ?
+Most likely you want main program to run fast and spend very short time on calling hook. HTTP requests are not good for it - it may fail or be slow in many reasons. But putting data to local redis (LPUSH) is very quick.
+
+## Install
+
+~~~
+pip3 install redis2http
+~~~
+
+If you want to start on boot (as root or sudo):
+~~~
+cp /usr/local/redis2http/redis2http.service /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable redis2http
+systemctl start redis2http
+~~~
+
+## Usage for CLI
+CLI is not main purpose for redis2http, but it's good for testing. Examples:
+
+~~~
+redis2http.py --send GET https://google.com/
+~~~
+
+## Usage from Python or from whatever (via redis)
+
+Put JSON-encoded data structure to `http_requests_queue` list (or use `-q` for other key name). Python example:
+~~~python
+data = {
+    'method': 'GET',
+    'url': 'https://example.com/hook',
+    'payload': None
+}
+request = json.dumps(data)
+redis_connection.lpush('http_requests_queue', request)
+~~~
+
+
