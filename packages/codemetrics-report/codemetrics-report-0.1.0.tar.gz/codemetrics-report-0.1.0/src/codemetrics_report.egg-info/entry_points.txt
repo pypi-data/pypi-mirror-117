@@ -1,0 +1,3 @@
+[console_scripts]
+generate-codemetrics-report = codemetrics_report.cli:generate_codemetrics_report
+
