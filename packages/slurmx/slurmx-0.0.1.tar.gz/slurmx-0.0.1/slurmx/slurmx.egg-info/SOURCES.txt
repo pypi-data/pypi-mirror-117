@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+slurmx/slurmx.egg-info/PKG-INFO
+slurmx/slurmx.egg-info/SOURCES.txt
+slurmx/slurmx.egg-info/dependency_links.txt
+slurmx/slurmx.egg-info/top_level.txt
