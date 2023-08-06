@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: autosparksql
+Version: 1.0.0
+Summary: create sql from config files
+Home-page: UNKNOWN
+Author: Henry Liu
+Author-email: 2224546920@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5.1
+Description-Content-Type: text/markdown
