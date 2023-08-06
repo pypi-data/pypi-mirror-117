@@ -1,0 +1,47 @@
+{% set version = "4.0.1" %}
+
+package:
+  name: caspo
+  version: {{ version }}
+
+source:
+  path: ../
+
+build:
+  number: 0
+  script: python setup.py install
+  noarch: python
+  entry_points:
+    - caspo = caspo.console.main:run
+
+requirements:
+  build:
+    - python >=3
+  run:
+    - python >=3
+    - pandas
+    - scipy
+    - scikit-learn
+    - networkx
+    - seaborn
+    - graphviz
+    - pyparsing
+    - pydot
+    - joblib
+    - clingo 5.5.*
+
+test:
+  commands:
+    - caspo --help
+    - caspo test --fatal --testcase LiverDREAM
+
+about:
+  home: http://bioasp.github.io/caspo
+  license: GPL 3
+  license_file: LICENSE
+  summary: Reasoning on the response of logical networks families
+
+extra:
+  recipe-maintainers:
+    - svidela
+
