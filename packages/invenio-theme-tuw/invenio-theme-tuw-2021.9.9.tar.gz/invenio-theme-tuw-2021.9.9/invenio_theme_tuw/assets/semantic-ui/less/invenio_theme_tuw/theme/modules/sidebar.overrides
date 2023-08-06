@@ -1,0 +1,14 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.pusher {
+    overflow: unset !important;
+    height: auto !important;
+    background-color: @white !important;
+}
+
+.pushable {
+    overflow: unset !important;
+    height: auto !important;
+}
