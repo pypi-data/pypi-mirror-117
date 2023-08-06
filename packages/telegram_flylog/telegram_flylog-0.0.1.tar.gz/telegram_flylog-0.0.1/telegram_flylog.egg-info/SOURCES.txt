@@ -1,0 +1,9 @@
+setup.py
+telegram_flylog.egg-info/PKG-INFO
+telegram_flylog.egg-info/SOURCES.txt
+telegram_flylog.egg-info/dependency_links.txt
+telegram_flylog.egg-info/requires.txt
+telegram_flylog.egg-info/top_level.txt
+telegramlog/__init__.py
+telegramlog/constants.py
+telegramlog/setup.py
