@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: tracardi-discord-webhook
+Version: 0.1
+Summary: This plugin calls discord webhook.
+Home-page: UNKNOWN
+Author: Risto Kowaczewski
+Author-email: risto.kowaczewski@gmail.com
+License: UNKNOWN
+Keywords: tracardi,plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: tracardi-plugin-sdk
+Requires-Dist: pydantic (~=1.8.2)
+Requires-Dist: asyncio (~=3.4.3)
+Requires-Dist: aiohttp (~=3.7.4.post0)
+
+# Discord webhook plugin
+
+This plugin calls remote API.
+
+# Configuration
+
+```json
+{
+  "url": "https://discord.com/api/webhooks/879132030/kXYSPpId..."
+}
+```
+
+This configuration requires discord webhook url.
+
+# Payload
+
+Payload for this plugin defines a message to be sent. 
+
+Example:
+
+```json
+{
+  "message": "this is test message",
+  "username": "user name"
+}
+```
+
+# Result
+
+This plugin returns either the response (on response port) or and error on error port.
+
+Valid response is:
+
+```json
+{
+  "status": 204
+}
+```
+
+
