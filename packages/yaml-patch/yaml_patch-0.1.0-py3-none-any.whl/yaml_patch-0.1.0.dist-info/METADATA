@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: yaml-patch
+Version: 0.1.0
+Summary: Patch yaml strings
+License: MIT
+Author: Diogo de Campos
+Author-email: campos.ddc@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.11,<0.18.0)

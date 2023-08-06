@@ -1,0 +1,6 @@
+yaml_patch/__init__.py,sha256=HMh3VyW5xiSUC3RnNjyJAVK1Bt1mKgW36a8Yzh0_y7k,46
+yaml_patch/patch.py,sha256=bzoH3PWjyZScee6581qf9mR1MA7-iRg55DHkCiRsa80,3465
+yaml_patch-0.1.0.dist-info/LICENSE,sha256=7v-fKsm20anj7ai0jxNRkDbcuTmVytdvUaSZOO-aWCI,1069
+yaml_patch-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+yaml_patch-0.1.0.dist-info/METADATA,sha256=fxfRDpEHSMMLgHtgUEBm-g1U8gNEf0vxjJ_e2U0cV6Q,416
+yaml_patch-0.1.0.dist-info/RECORD,,
