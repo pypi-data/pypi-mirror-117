@@ -1,0 +1,54 @@
+[tool]
+[tool.poetry]
+name = "panel_auth0_oidc"
+version = "0.1.3"
+homepage = "https://github.com/jmosbacher/panel_auth0_oidc"
+description = "Top-level package for Panel Auth0 Oidc."
+authors = ["Yossi Mosbacher <joe.mosbacher@gmail.com>"]
+readme = "README.rst"
+license =  "MIT"
+classifiers=[
+    'Development Status :: 2 - Pre-Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+]
+packages = [
+    { include = "panel_auth0_oidc" },
+    { include = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+panel = "*"
+
+[tool.poetry.dev-dependencies]
+bumpversion = "*"
+coverage = "*"
+flake8 = "*"
+isort = "*"
+pylint = "*"
+dephell = "*"
+pytest = "*"
+sphinx = "*"
+tox = "*"
+yapf = "*"
+sphinx-material = "*"
+nbsphinx = "*"
+invoke = "^1.6.0"
+
+
+[build-system]
+requires = ["poetry>=0.12", "setuptools"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.plugins] 
+[tool.poetry.plugins."panel.auth"]
+"auth0_oidc" = "panel_auth0_oidc.panel_auth0_oidc:OidcAuth0Handler"
+
+[tool.dephell.main]
+versioning = "semver"
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
