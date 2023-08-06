@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+src/dp_translation/__init__.py
+src/dp_translation/key_logic.py
+src/dp_translation/model_mixin.py
+src/dp_translation/models.py
+src/dp_translation.egg-info/PKG-INFO
+src/dp_translation.egg-info/SOURCES.txt
+src/dp_translation.egg-info/dependency_links.txt
+src/dp_translation.egg-info/requires.txt
+src/dp_translation.egg-info/top_level.txt
