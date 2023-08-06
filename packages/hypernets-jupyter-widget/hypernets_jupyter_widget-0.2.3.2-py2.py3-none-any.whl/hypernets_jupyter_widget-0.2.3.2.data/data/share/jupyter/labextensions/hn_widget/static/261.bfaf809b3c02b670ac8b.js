@@ -1,0 +1,1 @@
+(self.webpackChunkhn_widget=self.webpackChunkhn_widget||[]).push([[261],{261:(e,t,i)=>{var n=i(568),r=i(337);e.exports={id:"hn_widget:plugin",requires:[r.IJupyterWidgetRegistry],activate:function(e,t){t.registerWidget({name:"hn_widget",version:n.version,exports:n})},autoStart:!0}}}]);
