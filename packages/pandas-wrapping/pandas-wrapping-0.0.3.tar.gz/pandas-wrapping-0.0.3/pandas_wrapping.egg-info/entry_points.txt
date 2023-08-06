@@ -1,0 +1,3 @@
+[console_scripts]
+pandas_wrapping = pandas_wrapping.cli:main
+
