@@ -1,0 +1,809 @@
+Metadata-Version: 2.1
+Name: puck-me
+Version: 0.3.0
+Summary: Puck Me is a python package for scraping NHL stats from the internet.
+Home-page: https://github.com/nsaccon/hockey_ref_scraper
+Keywords: nhl,hockey,python
+Author: Nathan
+Author-email: nathansaccon10@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: html5lib (>=1.1,<2.0)
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
+Requires-Dist: pandas (>=1.3.1,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Repository, https://github.com/nsaccon/hockey_ref_scraper
+Description-Content-Type: text/markdown
+
+# Puck Me
+
+Puck Me is a python package for scraping NHL stats from the internet.
+
+---
+
+### Basic Usage
+
+```
+from puck_me.players import Players
+
+year = "2020"
+
+skaters = Players.all_skaters(year)
+goalies = Players.all_goalies(year)
+
+# Print name of first three skaters
+for skater in skaters[:3]:
+    print(skater.name)
+
+# Print name of first three goalies
+for goalie in goalies[:3]:
+    print(goalie.name)
+```
+
+Output:
+
+```
+>>> Justin Abdelkader
+>>> Pontus Aberg
+>>> Vitaly Abramov
+>>> Jake Allen
+>>> Frederik Andersen
+>>> Craig Anderson
+```
+
+---
+
+## Skater
+
+#### Name
+
+`skater.name` -> `str`
+
+#### Games Played
+
+`skater.games_played()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Goals
+
+`skater.goals()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Assists
+
+`skater.assists()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Points
+
+`skater.points()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Plus Minus
+
+`skater.plus_minus()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Penalty Minutes
+
+`skater.penalty_minutes()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Even-Strength Goals
+
+`skater.goals_even_strength()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Power-Play Goals
+
+`skater.goals_power_play()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Short-Handed Goals
+
+`skater.goals_short_handed()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Game Winning Goals
+
+`skater.goals_game_winning()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Shots
+
+`skater.shots()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Shooting Percentage
+
+`skater.shooting_percentage()` -> `float`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Shifts
+
+`skater.shifts()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Average Time On Ice
+
+`skater.time_on_ice_per_game()` -> `str`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Total Time On Ice
+
+`skater.time_on_ice_total()` -> `str`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Game Log
+
+`skater.gamelog()` -> `list[SkaterGame]`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+Basic Usage:
+
+```
+from puck_me.players import Players
+
+year = "2020"
+skaters = Players.all_skaters(year)
+crosby = list(filter(lambda s: s.name == "Sidney Crosby", skaters))[0]
+
+for game in crosby.gamelog()[:5]:
+    print(
+        f"On {game.date} at arena '{game.arena}' {crosby.name} scored {game.points} points."
+    )
+```
+
+Output:
+
+```
+>>> On 2019-10-03 at arena 'Home' Sidney Crosby scored 1 points.
+>>> On 2019-10-05 at arena 'Home' Sidney Crosby scored 2 points.
+>>> On 2019-10-08 at arena 'Home' Sidney Crosby scored 1 points.
+>>> On 2019-10-10 at arena 'Home' Sidney Crosby scored 2 points.
+>>> On 2019-10-12 at arena 'Away' Sidney Crosby scored 2 points.
+```
+
+#### Playoff Game Log
+
+`skater.gamelog_playoffs()` -> `list[SkaterGame]`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Regular Season Game Log
+
+`skater.gamelog_regular_season()` -> `list[SkaterGame]`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Split Data
+
+`skater.splits()` -> `list[SkaterSplit]`
+
+params:
+
+- `required: split_type` | `see SplitType`
+- `optional: year` | `example: "2009"`
+
+Basic Usage:
+
+```
+from puck_me.players import Players
+from puck_me.lib.split_types import SplitType
+
+year = "2020"
+skaters = Players.all_skaters(year)
+crosby = list(filter(lambda s: s.name == "Sidney Crosby", skaters))[0]
+
+for division_split in crosby.splits(SplitType.DIVISION):
+    print(
+        f"Against the {division_split.value} division {crosby.name} scored {division_split.goals} goals."
+    )
+```
+
+Output:
+
+```
+>>> Against the Atlantic division Sidney Crosby scored 7 goals.
+>>> Against the Metropolitan division Sidney Crosby scored 4 goals.
+>>> Against the Central division Sidney Crosby scored 4 goals.
+>>> Against the Pacific division Sidney Crosby scored 1 goals.
+```
+
+---
+
+## SkaterGame
+
+#### Date
+
+`game.date` -> `str`
+
+#### Age
+
+`game.age` -> `str`
+
+#### Team
+
+`game.team` -> `str`
+
+#### Arena
+
+`game.arena` -> `str`
+
+#### Opponent
+
+`game.opponent` -> `str`
+
+#### Result
+
+`game.result` -> `str`
+
+#### Game Won
+
+`game.is_win` -> `bool`
+
+#### Penalty Minutes
+
+`game.pim` -> `int`
+
+#### Time On Ice
+
+`game.time_on_ice` -> `str`
+
+#### Goals
+
+`game.goals` -> `int`
+
+#### Power Play Goals
+
+`game.goals_pp` -> `int`
+
+#### Even Strength Goals
+
+`game.goals_ev` -> `int`
+
+#### Short Handed Goals
+
+`game.goals_sh` -> `int`
+
+#### Game Winning Goals
+
+`game.goals_gw` -> `int`
+
+#### Assists
+
+`game.assists` -> `int`
+
+#### Even Strength Assists
+
+`game.assists_ev` -> `int`
+
+#### Power Play Assists
+
+`game.assists_pp` -> `int`
+
+#### Short Handed Assists
+
+`game.assists_sh` -> `int`
+
+#### Points
+
+`game.points` -> `int`
+
+#### Plus Minus
+
+`game.plus_minus` -> `int`
+
+#### Shots
+
+`game.shots` -> `int`
+
+#### Shot Percentage
+
+`game.shot_pct` -> `float`
+
+#### Shifts
+
+`game.shifts` -> `int`
+
+#### Hits
+
+`game.hits` -> `int`
+
+#### Blocks
+
+`game.blocks` -> `int`
+
+#### Face-Off Wins
+
+`game.faceoff_wins` -> `int`
+
+#### Face-Off Losses
+
+`game.faceoff_loss` -> `int`
+
+#### Face-Off Percentage
+
+`game.faceoff_pct` -> `float`
+
+---
+
+## SkaterSplit
+
+#### Value
+
+`split.value` -> `str`
+
+#### Games Played
+
+`split.games_played` -> `int`
+
+#### Goals
+
+`split.goals` -> `int`
+
+#### Assists
+
+`split.assists` -> `int`
+
+#### Points
+
+`split.points` -> `int`
+
+#### Plus Minus
+
+`split.plus_minus` -> `int`
+
+#### Penalty Minutes
+
+`split.penalty_minutes` -> `int`
+
+#### Even Strength Goals
+
+`split.goals_ev` -> `int`
+
+#### Power Play Goals
+
+`split.goals_pp` -> `int`
+
+#### Short Handed Goals
+
+`split.goals_sh` -> `int`
+
+#### Game Winning Goals
+
+`split.goals_gw` -> `int`
+
+#### Shots
+
+`split.shots` -> `int`
+
+#### Shooting Percentage
+
+`split.shooting_pct` -> `float`
+
+#### Shifts
+
+`split.shifts` -> `int`
+
+#### Total Time On Ice
+
+`split.time_on_ice_total` -> `str`
+
+#### Average Time On Ice
+
+`split.time_on_ice_average` -> `str`
+
+---
+
+## Goalie
+
+#### Name
+
+`goalie.name` -> `str`
+
+#### Games Played
+
+`goalie.games_played()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Wins
+
+`goalie.wins()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Losses
+
+`goalie.losses()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Tie Losses
+
+`goalie.tie_losses()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Goals Against
+
+`goalie.goals_against()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Shots Faced
+
+`goalie.shots_faced()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Saves
+
+`goalie.save_percent()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Goals Against Average
+
+`goalie.goals_against_avg()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Shutouts
+
+`goalie.shutouts()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Penalty Minutes
+
+`goalie.penalty_mins()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Time On Ice
+
+`goalie.time_on_ice()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Even Strength Goals Against
+
+`goalie.goals_against_ev()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Power Play Goals Against
+
+`goalie.goals_against_pp()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Short Handed Goals Against
+
+`goalie.goals_against_sh()` -> `int`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Game Log
+
+`goalie.gamelog()` -> `list[GoalieGame]`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+Basic Usage:
+
+```
+from puck_me.players import Players
+
+year = "2020"
+goalies = Players.all_goalies(year)
+lundqvist = list(filter(lambda g: g.name == "Henrik Lundqvist", goalies))[0]
+
+for game in lundqvist.gamelog()[:5]:
+    print(
+        f"On {game.date} at arena '{game.arena}' {lundqvist.name} made {game.saves} saves."
+    )
+```
+
+Output:
+
+```
+>>> On 2019-10-03 at arena 'Home' Henrik Lundqvist made 43 saves.
+>>> On 2019-10-12 at arena 'Home' Henrik Lundqvist made 23 saves.
+>>> On 2019-10-18 at arena 'Away' Henrik Lundqvist made 29 saves.
+>>> On 2019-10-20 at arena 'Home' Henrik Lundqvist made 40 saves.
+>>> On 2019-10-24 at arena 'Home' Henrik Lundqvist made 31 saves.
+```
+
+#### Playoff Game Log
+
+`goalie.gamelog_playoffs()` -> `list[GoalieGame]`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Regular Season Game Log
+
+`goalie.gamelog_regular_season()` -> `list[GoalieGame]`
+
+params:
+
+- `optional: year` | `example: "2009"`
+
+#### Split Data
+
+`goalie.splits()` -> `list[GoalieSplit]`
+
+params:
+
+- `required: split_type` | `see SplitType`
+- `optional: year` | `example: "2009"`
+
+Basic Usage:
+
+```
+from puck_me.players import Players
+from puck_me.lib.split_types import SplitType
+
+year = "2020"
+goalies = Players.all_goalies(year)
+lundqvist = list(filter(lambda g: g.name == "Henrik Lundqvist", goalies))[0]
+
+for division_split in lundqvist.splits(SplitType.DIVISION):
+    print(
+        f"Against the {division_split.value} division {crosby.name} scored {division_split.goals} goals."
+    )
+```
+
+Output:
+
+```
+>>> Against the Atlantic division Henrik Lundqvist made 256 saves.
+>>> Against the Metropolitan division Henrik Lundqvist made 235 saves.
+>>> Against the Central division Henrik Lundqvist made 105 saves.
+>>> Against the Pacific division Henrik Lundqvist made 203 saves.
+```
+
+---
+
+## GoalieGame
+
+#### Date
+
+`game.date` -> `str`
+
+#### Age
+
+`game.age` -> `str`
+
+#### Team
+
+`game.team` -> `str`
+
+#### Arena
+
+`game.arena` -> `str`
+
+#### Opponent
+
+`game.opponent` -> `str`
+
+#### Result
+
+`game.result` -> `str`
+
+#### Game Won
+
+`game.is_win` -> `bool`
+
+#### Penalty Minutes
+
+`game.pim` -> `int`
+
+#### Time On Ice
+
+`game.time_on_ice` -> `str`
+
+#### Decision
+
+`game.decision` -> `str`
+
+#### Goals Against
+
+`game.goals_against` -> `int`
+
+#### Shots Against
+
+`game.shots_against` -> `int`
+
+#### Saves
+
+`game.saves` -> `int`
+
+#### Save Pct
+
+`game.save_pct` -> `int`
+
+#### Shutouts
+
+`game.shutouts` -> `int`
+
+---
+
+## GoalieSplit
+
+#### Value
+
+`split.value` -> `str`
+
+#### Games Played
+
+`split.games_played` -> `int`
+
+#### Wins
+
+`split.wins` -> `int`
+
+#### Losses
+
+`split.losses` -> `int`
+
+#### Tie Losses
+
+`split.tie_losses` -> `int`
+
+#### Goals Against
+
+`split.goals_against` -> `int`
+
+#### Shots Faced
+
+`split.shots_faced` -> `int`
+
+#### Saves
+
+`split.saves` -> `int`
+
+#### Save Percent
+
+`split.save_percent` -> `float`
+
+#### Average Goals Against
+
+`split.goals_against_avg` -> `float`
+
+#### Shutouts
+
+`split.shutouts` -> `int`
+
+#### Penalty Minutes
+
+`split.penalty_mins` -> `int`
+
+#### Time On Ice
+
+`split.time_on_ice` -> `str`
+
+#### Even Strength Goals Against
+
+`split.goals_against_ev` -> `int`
+
+#### Power Play Goals Against
+
+`split.goals_against_pp` -> `int`
+
+#### Short Handed Goals Against
+
+`split.goals_against_sh` -> `int`
+
+---
+
+## SplitType
+
+Split type is an enum.
+
+#### Values
+
+`SplitType.SEASON`
+
+`SplitType.ARENA`
+
+`SplitType.ALL_STAR` (for splitting before and after All-Star break)
+
+`SplitType.RESULT`
+
+`SplitType.MONTH`
+
+`SplitType.CONFERENCE`
+
+`SplitType.DIVISION`
+
+`SplitType.OPPONENT`
+
