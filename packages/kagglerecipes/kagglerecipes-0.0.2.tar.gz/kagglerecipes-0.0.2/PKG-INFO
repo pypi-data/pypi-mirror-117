@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: kagglerecipes
+Version: 0.0.2
+Summary: Useful code for different Kaggle competitions. Currently covering RSNA-MICCAI Brain Tumor Radiogenomic Classification Kaggle competition.
+Home-page: https://github.com/ayulockin/kagglerecipes/tree/main/
+Author: W&B Internal Team
+Author-email: mein2work@gmail.com
+License: MIT License
+Description: # Kaggle Recipes
+        
+        
+        
+        
+        ![kaggle_wandb.png](nbs\data\images\kaggle_wandb.png)
+        
+        ## What's New
+        
+        #### Aug 27, 2021
+        
+        - Released the library on PyPI.
+        
+        - Easily create voxel manipulated dataset for RSNA-MICCAI Brain Tumor Classification competition. 
+        
+        - Extract dicom metadata. 
+        
+        - Added utilities to log dataframe as tables and files/directory as artifacts. 
+        
+        - Added utiities to log basic W&B charts (line, bar, and scatter).
+        
+        ## Kaggle Competitions
+        
+        - [RSNA-MICCAI Brain Tumor Radiogenomic Classification](https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification)
+        
+        ## Code & Scripts
+        
+        
+        
+        #### RSNA-MICCAI Brain Tumor Radiogenomic Classification
+        
+        - LINK TO NOTEBOOK
+        
+        ## Install
+        
+        `pip install kagglerecipes`
+        
+        ## Sample Datasets 
+        
+        We have also logged smaller subsets of Kaggle commpeition datasets local development and fast prototyping. 
+        
+        #### RSNA-MICCAI Brain Tumor Radiogenomic Classification
+        * Download it manually from [here](https://wandb.ai/wandb_fc/rsna-miccai-brain/artifacts/dataset/sample/0c38392ee79fd5f85e97/files).
+        * Or download it using this code snippet.
+          ```
+          import wandb
+          run = wandb.init()
+          artifact = run.use_artifact('wandb_fc/rsna-miccai-brain/sample:v0', type='dataset')
+          artifact_dir = artifact.download()
+          ```
+        
+Keywords: wandb kaggle-competition brain-tumor-classification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
