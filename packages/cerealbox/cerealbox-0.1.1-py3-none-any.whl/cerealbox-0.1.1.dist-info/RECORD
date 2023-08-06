@@ -1,0 +1,8 @@
+cerealbox/__init__.py,sha256=cCltlSxhg2FKAopbcJUD6dMDqyggs3VmswPLSW7iNP8,36
+cerealbox/cereal.py,sha256=yMoXBnRgstPgV-2zwEd75j2C-Pj6Jz70D0YqauShKNo,1520
+cerealbox/dynamo.py,sha256=hk2P6tWmUl-UnBtIqtxVv2HjeVANqTirTFmGwYf7Pe4,4849
+cerealbox/jsonable.py,sha256=MArpTeLNdsu1L16zrgpB4YpKlOQNT40j3n8eLrehiGA,1547
+cerealbox-0.1.1.dist-info/LICENSE,sha256=eGXtXVXWr5er3QV4L5Fvu3zlNv052ss9K_C9_XNpn8U,1063
+cerealbox-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+cerealbox-0.1.1.dist-info/METADATA,sha256=k5oWKkvL7psIbZnnUQEwefMyHpYooGCdTOB4TmCHDLk,8465
+cerealbox-0.1.1.dist-info/RECORD,,
