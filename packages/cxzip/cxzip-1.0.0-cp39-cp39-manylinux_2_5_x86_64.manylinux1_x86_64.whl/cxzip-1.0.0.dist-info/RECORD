@@ -1,0 +1,10 @@
+czipdecrypter.cpython-39-x86_64-linux-gnu.so,sha256=sGkDKtPmFUrw0CbLwPendnDT50jWYq0712ef-MTUsrk,211984
+cxzip-1.0.0.dist-info/top_level.txt,sha256=HOS0YAtWrCr_A2_twkBxwSVp9in6Q_c_3jKdqTlkDqw,14
+cxzip-1.0.0.dist-info/METADATA,sha256=jni3Ito8KOktr-duC7O_JVIpIyzr0HwF1VnApE1RNxQ,520
+cxzip-1.0.0.dist-info/WHEEL,sha256=iuJampfqNHu8Jql92HARcx0WcRybGD95leoevPxbuW4,144
+cxzip-1.0.0.dist-info/RECORD,,
+cxzip-1.0.0.dist-info/LICENSE,sha256=bLMb_CNMWPiV30muPsyNz85bq7PKI3woAzduyFeQB14,761
+cxzip-1.0.0.data/data/czipdecrypter.c,sha256=0i_xOjEMLuRad1-kt-ToDFbQfZ1WaGbXOF-O4hP7Yio,177858
+cxzip-1.0.0.data/data/czipdecrypter.pyx,sha256=BMJyiFXeUki-8vZWzgWxw4VrqXk0nkB74RHRVyrK8JY,834
+cxzip-1.0.0.data/data/crctable.c,sha256=bpqJfj2_8xNRUk5vb2nNQaxayGpQpFSCCZd4D_dze7I,3212
+cxzip-1.0.0.data/data/cfunc.c,sha256=QowMCiXTzUXq0emss0b4cKKKPYvDyfSxSH4oPpM7gyY,482
