@@ -1,0 +1,12 @@
+mlnotify/__init__.py,sha256=EO5NjDf0UDr2HtMAUY317jdymawU3mtvrQtyBzDE0_0,208
+mlnotify/hooks.py,sha256=ymcqnG4fvIW5w3YNzgJzFeMIM2a1_oAiZjz72e0_6oc,4556
+mlnotify/logger.py,sha256=v7yfqYrMbWkG9PTD-vf-6mAqE8iKusgzefblDT_PL-M,815
+mlnotify/mlnotify.py,sha256=BFDOVmiA5Emq9jy2nIBUYqIbi3ZU69NsDI6MlF3r-_0,457
+mlnotify/plugin_manager.py,sha256=rk-Q82E9z7F8fk1OK00zjaudiBxgiiIkOYrVWG2V-Pk,1455
+mlnotify/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlnotify/plugins/base.py,sha256=BR4SWKZgmxZtSC23TEckNo85axSA1mBiusaNjn8sAk4,378
+mlnotify/plugins/notify.py,sha256=eJm8IfY-vZvuOeAV1R82svKg669blU4E5GiRY7VMM6k,2873
+mlnotify/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlnotify-1.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+mlnotify-1.0.0.dist-info/METADATA,sha256=jmcQ5pCKSouGc8B1hrNMMloTqCa8JpsUin0hL9jJyEo,721
+mlnotify-1.0.0.dist-info/RECORD,,
