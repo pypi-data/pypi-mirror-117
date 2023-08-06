@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: typpy
+Version: 0.1.0
+Summary: Python Static Type Checker
+Home-page: https://github.com/frapa/typpy
+Author: Francesco Pasa
+Author-email: francescopasa@gmail.com
+License: GPL3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Typpy - Python Type Checker
+
+Typpy is an experimental type checker for Python. It's similar to mypy,
+but instead of statically checking the code, it dynamically imports the
+modules and is therefore able to perform type check that mypy is unable
+to perform. This particularly includes decorated classes and functions.
+
+## Requirements
+
+Typpy support Python 3.6 and newer. It does not have dependencies outside
+the standard library.
+
+## Quick Start
+
+```bash
+typpy path/to/file.py
+```
+
+
