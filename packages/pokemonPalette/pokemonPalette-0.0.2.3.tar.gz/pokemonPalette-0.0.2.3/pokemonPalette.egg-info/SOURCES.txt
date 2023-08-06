@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pokemonPalette/__ini__.py
+pokemonPalette/__main__.py
+pokemonPalette/pokePalette.py
+pokemonPalette.egg-info/PKG-INFO
+pokemonPalette.egg-info/SOURCES.txt
+pokemonPalette.egg-info/dependency_links.txt
+pokemonPalette.egg-info/top_level.txt
