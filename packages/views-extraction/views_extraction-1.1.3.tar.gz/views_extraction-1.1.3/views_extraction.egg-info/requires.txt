@@ -1,0 +1,13 @@
+Cython
+getpass4
+selenium
+pandas
+webdriver-manager
+numpy
+python-dateutil
+setuptools
+openpyxl
+tqdm
+psutil
+colorama
+simple_term_menu
