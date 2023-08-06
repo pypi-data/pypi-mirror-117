@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pelican_to_sqlite/__init__.py
+pelican_to_sqlite/cli.py
+pelican_to_sqlite/settings.py
+pelican_to_sqlite.egg-info/PKG-INFO
+pelican_to_sqlite.egg-info/SOURCES.txt
+pelican_to_sqlite.egg-info/dependency_links.txt
+pelican_to_sqlite.egg-info/entry_points.txt
+pelican_to_sqlite.egg-info/requires.txt
+pelican_to_sqlite.egg-info/top_level.txt
