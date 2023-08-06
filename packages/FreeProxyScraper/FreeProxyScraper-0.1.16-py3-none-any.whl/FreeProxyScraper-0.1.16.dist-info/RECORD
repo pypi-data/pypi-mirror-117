@@ -1,0 +1,17 @@
+FreeProxyScraper/__init__.py,sha256=bE0YYjzmB0slFRzaOJNdyzEvDFCAOmo8gI8mwbJv6Lw,2038
+FreeProxyScraper/plugins/FreeProxy.py,sha256=t-iy0C8_n25KpABqQfj0vasSuZqO4xn9UsOvvOSxloI,1660
+FreeProxyScraper/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FreeProxyScraper/plugins/examplePlugin.py,sha256=EpdW5nwT-Of8RzhzsRvV_C2N2we1oCryiQ06skDhg9E,2985
+FreeProxyScraper/plugins/geonode.py,sha256=wyTL2T1LtqxHfXYhoWwA6J9KxUsXdPcLko_OFiOYwcE,1103
+FreeProxyScraper/plugins/hidemy.py,sha256=h2oQd-GJlUeL35_fph8e83DmoJI2DLAyperoTNjm5uc,959
+FreeProxyScraper/plugins/spysone.py,sha256=qd_hNsLHmFZ-cFVniU4UU9sf4R6Mpvba0hxyQ9vZnwQ,4279
+FreeProxyScraper/plugins/sslproxies.py,sha256=XllGQKZBLjJs9yg2vfIkPe5nJKAeW4GAzUhsldFK364,896
+FreeProxyScraper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FreeProxyScraper/utils/decos.py,sha256=VgGKKpttSKxUdm7kac8yV_yr0s2Y46dcuUZ-1mkEkDM,684
+FreeProxyScraper/utils/plugins.py,sha256=Br4EPQg_vzLXJaBDvzF_jRsp6pfgQ0uNJGumZKozepI,5516
+FreeProxyScraper/utils/soup.py,sha256=hdDT7ZNinrSLpKvZ08qnXZhndaZvbpZ48SdgHji2-Y0,721
+FreeProxyScraper-0.1.16.dist-info/LICENSE,sha256=6s07DDiC8n144axr_XEKOq157rm9N94YoZrNxSYbNZ8,1089
+FreeProxyScraper-0.1.16.dist-info/METADATA,sha256=z1o36DOy379Px-abZYcHUmEWG15fzvGzv4N9QidWG6w,2978
+FreeProxyScraper-0.1.16.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+FreeProxyScraper-0.1.16.dist-info/top_level.txt,sha256=2aNSN9LGdIG0SQSx3fa8CYF6W26_SWFE_ucuBUKL-bg,17
+FreeProxyScraper-0.1.16.dist-info/RECORD,,
