@@ -1,0 +1,7 @@
+setup.py
+src/ezpython/__init__.py
+src/ezpython/ezpython.py
+src/ezpython.egg-info/PKG-INFO
+src/ezpython.egg-info/SOURCES.txt
+src/ezpython.egg-info/dependency_links.txt
+src/ezpython.egg-info/top_level.txt
