@@ -1,0 +1,13 @@
+treex/__init__.py,sha256=a4DwN6P73wcSX0Yj5Ro0WlqTo_Hsit8fcocUXjzUwBg,149
+treex/module.py,sha256=YR6-lfSt7SCfy8srUwahiaiNwSkzTj-bYuPhPi722R8,5975
+treex/nn/__init__.py,sha256=76i3_KvA-K0SzM8yDQ9LQrlIZbn9BGlpbJBJWXZZG64,144
+treex/nn/batch_norm.py,sha256=9Hd1ZAhpmx9x9NdzloRjmy_8x8fgVegsf4hzI8efu4o,5584
+treex/nn/conv.py,sha256=6d95sp04YXb8woNCNdsBY6UEf7DL9NRRf9YsRE6EwXc,4980
+treex/nn/dropout.py,sha256=caOHiZuPTC-ImT23dkjoapcfg8If4ZyfsHQUx6GbIOM,2549
+treex/nn/linear.py,sha256=4acYG1yNATALlfs0RfNtKCzPmO73EaIzFanpKYaLUiI,2906
+treex/nn/sequence.py,sha256=RR94glNzfQum-TIvhinfxiJDzSrswHYJTK2mtSkylpA,291
+treex/types.py,sha256=CyZeep9t9Jiw8edWbyjhcSb5jXZmbpC5lkYkTd5Sxp4,1336
+treex-0.2.0.dist-info/LICENSE,sha256=oadd5dRC-7kwmULtjMEw5gX3reNHDWcG9FhTtQW5mQM,1072
+treex-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+treex-0.2.0.dist-info/METADATA,sha256=SyyU7pXnoNHnMvteLlh1MLlMLxthhMD-l2FF6zdMKFc,359
+treex-0.2.0.dist-info/RECORD,,
