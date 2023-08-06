@@ -1,0 +1,4 @@
+tweepy==3.10.0
+click==8.0.1
+twitterobserver==0.0.1
+emoji==1.4.2

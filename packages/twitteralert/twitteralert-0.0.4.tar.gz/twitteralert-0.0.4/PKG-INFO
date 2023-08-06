@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: twitteralert
+Version: 0.0.4
+Summary: A package to alert from follower info in Twitter
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Twitter alert
+
+Twitter alert is part of the twitter alert ecosystem that uses a custom
+sqlite database and the access to the twitter platform through an API
+to log and track a list of users and their activity in friendships
+(aka users that one acount follows).
+
+For each change detected within the resolution of the tracked data,
+twitter alert makes a tweet (or prints into the console) the update.
+
+## Quick start
+
+To **install** the package you can either download it from pip or clone this
+repository and install it locally.
+
+```bash
+# from pip
+pip install twitteralert
+```
+
+Once installed, check that the installation was correct running 
+
+```bash
+$ talert info --version
+Debug mode is off
+twitteralert version: 0.0.1
+```
+
+Then, assuming that you already have a friends database from twitterobserver
+(`friends.sqlite`) and a `secrets.json` file your API credentials for your twitter account
+you can just run the following. 
+
+```bash
+talert friends -d friends.sqlite -S state.json -s secrets.json
+```
+
+**Note** that the  `state.json` file if not present
+will be generated but containing the last query in the database. Thus, you
+will need to run the tobserver again to generate a new query. You can also
+potentially make a state file manually.
+
+## Usage
+
+The excutable contains multiple subcommands.
+
+- `info` -> displays information such as the version of the package
+- `friends` -> reports updates in the friendships from the selected users, it can also tweet them directly 
+
+### info
+
+
+
+### friends
+
+
+
