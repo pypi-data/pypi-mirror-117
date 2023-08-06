@@ -1,0 +1,13 @@
+stannetflow/__init__.py,sha256=pmm-IMX-X9ZYex-LPN27tAEY_Yw0hEaTD6zIncnq_zw,372
+stannetflow/analyze_functions.py,sha256=MeoPBozGFTvVNVmW7PoGEeMTLDpellsVzmSKa7ZYGAA,10140
+stannetflow/preprocess.py,sha256=t588bEy-dcL3T87VZh-66T-xbI8py4FA4QXhK82Ffxg,1531
+stannetflow/artificial/__init__.py,sha256=syprDqC8DE6-q9Zskjub8LabyebYGGMaEi54KCjPBiY,266
+stannetflow/artificial/datamaker.py,sha256=NCXf6DKv5ABDdxo3aPyAD6KiTcSUEibF0bFcJKP_AXg,1909
+stannetflow/synthesizers/__init__.py,sha256=IhGaU155ffvLGZcP9bwXb7gmHN6P3bHz3aSGA2j2UUY,353
+stannetflow/synthesizers/nets.py,sha256=I5wO2YlRL4bVZ7NFEChZy5h5KhcQBke1bdSvAjsIjsQ,9321
+stannetflow/synthesizers/stan.py,sha256=qknJTXfU_1f4uxXX6NXz9iBs9WxEmjtwYefApVi8hYI,23269
+stannetflow-0.0.1.dist-info/LICENSE,sha256=J-NpsidgTXHvWO6iGtrXZRrGB7lJ6u1RIyUIgpIao1U,1068
+stannetflow-0.0.1.dist-info/METADATA,sha256=gK7IX0-yD9ncyYHBQ6coF5EqXUteBSBgMIFxZgoQVQI,4725
+stannetflow-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stannetflow-0.0.1.dist-info/top_level.txt,sha256=TePDMKA2pXil1KUMQnxwDLOnz2b02X-xgfmq3ZNK8M4,12
+stannetflow-0.0.1.dist-info/RECORD,,
