@@ -1,0 +1,6 @@
+rillrate-0.38.0_rc.1.dist-info/METADATA,sha256=9aGUXMkAUNHzPOpolGATAbAPbilHNl7wtolAHRDH3Po,1068
+rillrate-0.38.0_rc.1.dist-info/WHEEL,sha256=f1T6ecs3HrxrO4f0hbTRKA988nRMCEW9-iuj1BzRxh8,103
+rillrate/__init__.py,sha256=ypSFsf3qQmtZr0lR95gpT5N1YH678HeEFw_WQMcP_6M,385
+rillrate/expansion.py,sha256=Tf2UisfpwxqEmHdUB8LmmiSAKMbdEKB41ZYkxa0iQUg,1600
+rillrate/rillrate.cpython-38-darwin.so,sha256=0a9cO0NnWB-K6usQrm6qd6LbCyszsRPcQWYQcd0bzuw,9517632
+rillrate-0.38.0_rc.1.dist-info/RECORD,,
