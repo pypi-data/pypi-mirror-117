@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: por
+Version: 0.1.2
+Summary: The unofficial programmatic POR
+Home-page: https://github.com/the-scouts/por
+Author: Adam Turner
+License: MIT
+Keywords: standards,semantic,scouts
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: docutils
+Requires-Dist: Sphinx
+
+# Policy, Organisation & Rules
+
+The ***por*** project aims to automatically generate 
+the Scouts' *[Policy, Organisation and Rules](https://scouts.org.uk/por)*. 
+
+## Notice
+
+This is ***not*** an official resource, but a prototype of automatically 
+generating POR.
+
+## Where to get it
+
+The source code for the project is hosted on GitHub at 
+[the-scouts/por](https://github.com/the-scouts/por)
+
+## Dependencies
+
+- [requests](https://github.com/psf/requests) - for intuitive HTTP requests
+- [lxml](https://lxml.de/) - for parsing HTML documents
+- [Sphinx](https://github.com/sphinx-doc/sphinx/) - for rendering text 
+
+## License
+
+***por*** is naturally 
+[open source](https://github.com/the-scouts/por) and is 
+licensed under the **[MIT license](https://choosealicense.com/licenses/mit/)**.
+
+The copyright of Policy, Organisation and Rules remains with The Scout Association.
+
+
