@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+tfw.egg-info/PKG-INFO
+tfw.egg-info/SOURCES.txt
+tfw.egg-info/dependency_links.txt
+tfw.egg-info/top_level.txt
