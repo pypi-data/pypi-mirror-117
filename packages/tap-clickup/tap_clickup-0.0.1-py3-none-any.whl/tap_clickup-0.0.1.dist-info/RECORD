@@ -1,0 +1,12 @@
+tap_clickup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_clickup/auth.py,sha256=nG32VUJJdBzMyuvzuXNWQR-Igjn4uK3OCeO7hvne0eI,103
+tap_clickup/client.py,sha256=xR6mNZ7OQ3Jocuw5qJculRQE7tGQ-3rfRXeSoc97BJs,3259
+tap_clickup/schemas/team.json,sha256=L3NIHe7QVAzoTSYtFTrf4RnUXVSoSrBXA5wlzrQOiN8,2991
+tap_clickup/streams.py,sha256=6UXhCOpscIWj_YQz5Jhh5B2IAYopI6DpNWlSdcPEWNM,967
+tap_clickup/tap.py,sha256=8FjG3epF1dNVmLtzn3v5RizyE1-vfQGOstdxZABkKVI,920
+tap_clickup/tests/__init__.py,sha256=hKavTzkie2EXWA_EfIR32YSnNbMesvc4BiCD7xYwneI,34
+tap_clickup/tests/test_core.py,sha256=MrPcidgKt10ov6RVw8xkJMz5jo66dJ0NoDkT6lagIYo,651
+tap_clickup-0.0.1.dist-info/entry_points.txt,sha256=01KxnVmlJ8KVnQavteupz_-AQlZuQG3QD3JM8gA5uRU,62
+tap_clickup-0.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+tap_clickup-0.0.1.dist-info/METADATA,sha256=E0KSDlJmSE18SW_Nal6h0oiP-wwaM-OdIb-GbzZZs6Q,385
+tap_clickup-0.0.1.dist-info/RECORD,,
