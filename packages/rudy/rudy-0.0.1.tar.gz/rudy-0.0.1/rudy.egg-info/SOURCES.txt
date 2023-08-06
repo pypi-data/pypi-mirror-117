@@ -1,0 +1,12 @@
+README.md
+setup.py
+bin/rudy
+rudy/__init__.py
+rudy/callbacks.py
+rudy/data.py
+rudy/main.py
+rudy.egg-info/PKG-INFO
+rudy.egg-info/SOURCES.txt
+rudy.egg-info/dependency_links.txt
+rudy.egg-info/requires.txt
+rudy.egg-info/top_level.txt
