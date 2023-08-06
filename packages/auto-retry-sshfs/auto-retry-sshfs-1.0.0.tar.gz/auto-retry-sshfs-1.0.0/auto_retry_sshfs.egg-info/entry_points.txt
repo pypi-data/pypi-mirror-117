@@ -1,0 +1,3 @@
+[console_scripts]
+auto-retry-sshfs = auto_retry_sshfs.cli:cli
+

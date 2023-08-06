@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: auto-retry-sshfs
+Version: 1.0.0
+Summary: Ridiculous tool that automatically retries sshfs for you over an unreliable connection.
+Home-page: https://github.com/kavigupta/auto-retry-sshfs
+Author: Kavi Gupta
+Author-email: autoretrysshfs@kavigupta.org
+License: UNKNOWN
+Description: 
+        # Idea
+        
+        Allows you to run sshfs in such a way that you don't have to worry about it crashing for whatever reason. Automatically will unmount and remount your sshfs drive if it crashes. Great for if you're using sshfs over a noisy connection or over kerebros or something.
+        
+        # Usage
+        
+        ```
+        auto-retry-sshfs --source-server user@server --source-path /path --target-path /path
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
