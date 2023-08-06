@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cadlabs-ethereum-economic-model
+Version: 0.0.6a0
+Summary: 
+Author: BenSchZA
+Author-email: BenSchZA@users.noreply.github.com
+Requires-Python: >=3.7,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cadCAD-tools (==0.0.1.4)
+Requires-Dist: diskcache (==5.2.1)
+Requires-Dist: ipython-autotime (==0.3.1)
+Requires-Dist: ipywidgets (==7.6.3)
+Requires-Dist: jupyter-dash (==0.4.0)
+Requires-Dist: matplotlib (==3.3.4)
+Requires-Dist: notebook (==6.3.0)
+Requires-Dist: numpy (==1.21.2)
+Requires-Dist: plotly (==4.14.3)
+Requires-Dist: radcad (==0.8.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: scipy (>=1.7.1,<2.0.0)
+Requires-Dist: stochastic (==0.6.0)
+Requires-Dist: tqdm (==4.61.0)
+Requires-Dist: typing-extensions (==3.7.4.3)
