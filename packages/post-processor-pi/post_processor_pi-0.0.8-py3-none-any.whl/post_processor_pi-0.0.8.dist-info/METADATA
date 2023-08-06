@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: post-processor-pi
+Version: 0.0.8
+Summary: Post processor for Document AI
+Home-page: https://github.com/paoloitaliani/post-processor-pi
+Author: Paolo Italiani
+Author-email: paoita@hotmail.it
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
