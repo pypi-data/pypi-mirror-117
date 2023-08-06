@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+cfunc.c
+crctable.c
+czipdecrypter.c
+czipdecrypter.pyx
+pyproject.toml
+setup.py
+cxzip.egg-info/PKG-INFO
+cxzip.egg-info/SOURCES.txt
+cxzip.egg-info/dependency_links.txt
+cxzip.egg-info/top_level.txt
