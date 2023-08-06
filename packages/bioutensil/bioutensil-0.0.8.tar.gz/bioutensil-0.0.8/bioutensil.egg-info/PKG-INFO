@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bioutensil
+Version: 0.0.8
+Summary: Bioinformatics utensil
+Home-page: https://github.com/paprikachan/bioutensil
+Author: Lingxi Chen
+Author-email: chanlingxi@gmail.com
+License: UNKNOWN
+Description: Bioutensil
+        ----------
+        
+        Bioinformatic analysis utensils.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
