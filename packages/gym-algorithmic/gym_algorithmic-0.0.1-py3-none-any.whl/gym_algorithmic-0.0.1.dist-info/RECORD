@@ -1,0 +1,11 @@
+gym_algorithmic/__init__.py,sha256=0lY7YqnekoxDcZHkQHkf4lV301WCwLZAzfmi8cqu7uo,1221
+gym_algorithmic/algorithmic_env.py,sha256=xp1bGofue4KL4qCUIebUIY4fPl5HYlPt8X5uEFXwG18,12467
+gym_algorithmic/copy_.py,sha256=zAEqZtAz3p9SjZfd-7qnEZA04BfRv6VsDHtNvuQB950,384
+gym_algorithmic/duplicated_input.py,sha256=-cR6feS1TwdnJQJErwWMbEiSxbbV0W-zY5RFsHGRCLk,832
+gym_algorithmic/repeat_copy.py,sha256=Kpc0u4OJmTWS1bvEsBUBsjYuRxmrXK5g2A49uT3iUUE,510
+gym_algorithmic/reverse.py,sha256=K6HWv7V911KIQL9EZsr2KsK6zEQB0_tgOgm_S_xvSks,468
+gym_algorithmic/reversed_addition.py,sha256=SSoa1sQ1bj16NpsXA0ofC8nRSx3YUEEDkgeF1yYZgyw,1119
+gym_algorithmic-0.0.1.dist-info/METADATA,sha256=jO_5JDcTBj3QaonoXuLI1FFrNOuSgdutrkrlZ4y_-b0,1959
+gym_algorithmic-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gym_algorithmic-0.0.1.dist-info/top_level.txt,sha256=W0efa2juRw5a-G-aczBFqYhfyqh73jI-6k6VKLF59iI,16
+gym_algorithmic-0.0.1.dist-info/RECORD,,
