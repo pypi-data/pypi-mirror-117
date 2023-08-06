@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: polyp
+Version: 1.0.1
+Summary: A renderer that creates gdsII files from an all-ascii human-readble layout language 
+Home-page: UNKNOWN
+Author: zaphB
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# `polyp` - a human-readble ascii to gdsII converter
+
+A renderer that creates gdsII files from an all-ascii human-readble layout language.
+
+
