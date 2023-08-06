@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: lattice-stocks-data
+Version: 1.0.0
+Summary: An API for gathering RapidAPI stock info
+Home-page: UNKNOWN
+Author: ashkon@lattice.dev
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
