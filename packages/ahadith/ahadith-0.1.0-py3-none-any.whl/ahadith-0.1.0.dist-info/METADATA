@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ahadith
+Version: 0.1.0
+Summary: A module which helps you to retrieve (sahih) ahadith
+Home-page: https://github.com/4thel00z/ahadith
+License: GPL-3
+Author: 4thel00z
+Author-email: 4thel00z@gmail.com
+Requires-Python: >=3.6.2,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# ahadith
+
+## Motivation
+
+A little python library to consume [hadith.json](https://github.com/4thel00z/hadith.json).
+## License
+
+This project is licensed under the GPL-3 license.
+
