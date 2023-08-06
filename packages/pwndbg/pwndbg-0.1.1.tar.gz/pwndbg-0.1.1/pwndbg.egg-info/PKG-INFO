@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pwndbg
+Version: 0.1.1
+Summary: Go to https://pwndbg.com for installation instructions
+Home-page: https://pwndbg.com
+Author: Pwndbg
+Author-email: zachriggle@gmail.com
+License: MIT
+Download-URL: https://pwndbg.com
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Security
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Intended Audience :: Developers
