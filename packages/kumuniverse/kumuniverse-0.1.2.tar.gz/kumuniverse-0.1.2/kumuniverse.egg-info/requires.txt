@@ -1,0 +1,5 @@
+pymongo
+pymongo[srv]
+pymongo[aws]
+requests
+UnleashClient
