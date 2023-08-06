@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: simple_event_bus
+Version: 0.0.4
+Summary: a simple python event bus
+Home-page: https://github.com/AngusWG/simple-event-bus
+Author: AngusWG
+Author-email: z740713651@outlook.com
+License: MIT license
+Keywords: simple_event_bus
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev_require
+License-File: LICENSE
+
+# simple-event-bus
+
+--- 
+
+a simple python event bus
+
+## Install:
+
+``` bash
+pip install simple_event_bus
+```
+
+## Example:
+
+```bash
+import asyncio
+
+from simple_event_bus import AsyncEventBus, Event, run_simple_event_source_async
+
+app = AsyncEventBus()
+tick_list = []
+
+
+@app.listening("HeartBeat")
+async def tick_collector(event: Event) -> None:
+    print(event.now)
+    tick_list.append(event)
+    if len(tick_list) > 5:
+        await app.publish_event("close_loop")
+
+
+asyncio.get_event_loop().run_until_complete(run_simple_event_source_async(app))
+```
+
+## Features
+
+* EventBus
+* AsyncEventBus
+* EventBus.run_forever function
+* EventBus.publish_event accept Event , EVENT_TYPE and str.
+* Event can get current_app
+* listening function args check
+* add remove method
+* allow no param method to listening
+* [x] Independent event sources
+* [ ] add before event listener and after event listener
+
+---
+
+* [Black formatter](https://github.com/psf/black)
+
+> This project use black, please set `Continuation indent` = 4  
+> Pycharm - File - Settings - Editor - Code Style - Python - Tabs and Indents
+
+* [Flake8 lint](https://github.com/PyCQA/flake8)
+
+> Use flake8 to check your code style.
+
+* This project is made by [AngusWG/cookiecutter-py-package](https://github.com/AngusWG/cookiecutter-py-package.git)
+
+
+## simple_event_bus history
+
+### 0.0.4
+
+* fix error package
+
+### 0.0.3
+
+* independent event sources
+* add remove method
+* allow no param method to listening
+
+### 0.0.2
+
+* fix publish_event can not accept str event.
+
+### 0.0.1
+
+* Basic functions completed
+
+### 0.0.0
+
+* first commit
+
+
