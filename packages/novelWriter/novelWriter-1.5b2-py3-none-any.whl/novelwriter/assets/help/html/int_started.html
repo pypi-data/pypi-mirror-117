@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Getting Started &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Setup on Linux" href="setup_linux.html" />
+    <link rel="prev" title="Introduction" href="int_introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-from-source-or-pypi">Installing from Source or PyPi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-the-translation-files">Building the Translation Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-the-documentation">Building the Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/int_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<span id="a-started"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This section contains brief guides to how you can get novelWriter running on your computer. These
+are the methods currently supported by the developer. Packages may also be available in other
+package managers, but those are not managed by the developer. No installers are provided at this
+time, but it is fairly straightforward to set up novelWriter with the provided install scripts.</p>
+<p>As novelWriter matures, more options for how to install it and get it running will be added. For
+non-Windows users the install process is at the present time best suited for people used to working
+with the command line. But even if you’re not, the install process is fairly straightforward.</p>
+<p>The next pages have specific install instructions for the various operating systems novelWriter can
+run on. The instructions below are supplementary information, instructions for alterbative methods,
+and additional build options.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The text below assumes the command <code class="docutils literal notranslate"><span class="pre">python</span></code> corresponds to a Python 3 executable. Python 2 is
+now deprecated, but many systems still have both Python 2 and 3. For such systems, the command
+<code class="docutils literal notranslate"><span class="pre">python3</span></code> may be needed instead. On Linux, the scripts can also be made executable and run
+without the <code class="docutils literal notranslate"><span class="pre">python</span></code> command. Likewise, <code class="docutils literal notranslate"><span class="pre">pip</span></code> may need to be replaced with <code class="docutils literal notranslate"><span class="pre">pip3</span></code>.</p>
+</div>
+<div class="section" id="dependencies">
+<span id="a-started-depend"></span><h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>novelWriter has been designed to rely on as few dependencies as possible. Aside from the packages
+needed to communicate with the Qt GUI libraries, only one package is required for handling the XML
+format of the main project file. Everything else is handled with standard Python libraries.</p>
+<p>The following Python packages are needed to run novelWriter:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pyqt5</span></code> – needed for connecting with the Qt5 libraries.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lxml</span></code> – needed for full XML support.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pyenchant</span></code> – needed for efficient spell checking (optional).</p></li>
+</ul>
+<p>PyQt/Qt should be at least 5.3, but ideally 5.10 or higher for nearly all features to work. For
+instance, searching using regular expressions with full Unicode support requires 5.13. There is no
+known minimum version requirement for package <code class="docutils literal notranslate"><span class="pre">lxml</span></code>, but the code was originally written with
+4.2, which is therefore set as the minimum. It may work on lower versions. You have to test it.</p>
+<p>Optionally, a package can be installed to interface with the Enchant spell checking libaries, but
+this isn’t strictly required. If no external spell checking library is available, novelWriter falls
+back to using the internal <code class="docutils literal notranslate"><span class="pre">difflib</span></code> of Python to check spelling. This is a slower and less
+sophisticated spell checker than the full spell checking libaries. The spell check library must be
+at least 3.0 to work with Windows. On Linux, 2.0 also works fine.</p>
+<p>If you do use the internal spell checker, you also have to provide a text file with a list of all
+words correctly spelled. One word on each line. Dictionary files for English is included with
+novelWriter. For other languages, you will need to add more files yourself.</p>
+<p>If you install from PyPi, these dependencies should be installed automatically. If you install from
+source, dependencies can still be installed from PyPi with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -r requirements.txt</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="installing-from-source-or-pypi">
+<span id="a-started-install"></span><h2>Installing from Source or PyPi<a class="headerlink" href="#installing-from-source-or-pypi" title="Permalink to this headline">¶</a></h2>
+<p>You can download the latest version of novelWriter from the source repository on <a class="reference external" href="https://github.com/vkbo/novelWriter/releases">GitHub</a>. You can
+also install novelWriter from <a class="reference external" href="https://pypi.org/project/novelWriter/">PyPi</a>.</p>
+<p>If you’re running novelWriter from source, the main setup script has a number of options that may
+be useful to you. You can list them by running:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python setup.py --help</span>
+</pre></div>
+</div>
+<p>To install from PyPi you must first have the <code class="docutils literal notranslate"><span class="pre">python</span></code> and <code class="docutils literal notranslate"><span class="pre">pip</span></code> commands available on your
+system. If you don’t, see specific instructions for your operating system in this documentation.
+To install novelWriter from PyPi, use the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install novelwriter</span>
+</pre></div>
+</div>
+<p>To upgrade an existing installation, use:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install --upgrade novelwriter</span>
+</pre></div>
+</div>
+<p>When installing via pip, novelWriter can be launched from command line with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">novelWriter</span>
+</pre></div>
+</div>
+<p>Make sure the install location for pip is in your PATH variable. This is not always the case by
+default.</p>
+</div>
+<div class="section" id="building-the-translation-files">
+<span id="a-started-i18n"></span><h2>Building the Translation Files<a class="headerlink" href="#building-the-translation-files" title="Permalink to this headline">¶</a></h2>
+<p>If you installed novelWriter from a package, the translation files should be pre-built and
+included. If you’re running novelWriter from the source code, you will need to generate the files
+yourself. The files you need will be written to the <code class="docutils literal notranslate"><span class="pre">novelwriter/assets/i18n</span></code> folder, and will
+have the <code class="docutils literal notranslate"><span class="pre">.qm</span></code> file extension.</p>
+<p>You can build the <code class="docutils literal notranslate"><span class="pre">.qm</span></code> files with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python3 setup.py qtlrelease</span>
+</pre></div>
+</div>
+<p>This requires that the Qt Linguist tool is installed on your system. On Ubuntu and Debian, the
+needed package is called <cite>qttools5-dev-tools</cite>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to improve novelWriter with translation files for another language, or update an
+existing translation, instructions for how to contribute can be found in the README.md file in
+the <code class="docutils literal notranslate"><span class="pre">i18n</span></code> folder of the source code.</p>
+</div>
+</div>
+<div class="section" id="building-the-documentation">
+<span id="a-started-docs"></span><h2>Building the Documentation<a class="headerlink" href="#building-the-documentation" title="Permalink to this headline">¶</a></h2>
+<p>If you installed novelWriter from a package, the documentation should be pre-built and included. If
+you’re running novelWriter from the source code, a local copy of this documentation can be
+generated. It requires the following Python packages on Debian and Ubuntu.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">python3-sphinx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python3-sphinx-rtd-theme</span></code></p></li>
+</ul>
+<p>Or from PyPi:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install sphinx sphinx-rtd-theme</span>
+</pre></div>
+</div>
+<p>The documentation can then be built from the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder in the source code by running:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">make html</span>
+</pre></div>
+</div>
+<p>If successful, the documentation should be available in the <code class="docutils literal notranslate"><span class="pre">docs/build/html</span></code> folder and you can
+open the <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file in your browser.</p>
+<p>You can also build the PDF documentation locally using the setup script:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python setup.py pdfdocs</span>
+</pre></div>
+</div>
+<p>This will build the documentation as a PDF using LaTeX. The file will then be copied into the
+assets folder and made available in the <span class="guilabel">Help</span> menu in novelWriter. The Sphinx build
+system has a few extra dependencies when building the PDF. Please check the <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx Docs</a> if you
+have any issues.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="setup_linux.html" class="btn btn-neutral float-right" title="Setup on Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="int_introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

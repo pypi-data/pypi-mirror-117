@@ -1,0 +1,449 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>User Interface Overview &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Formatting Your Text" href="usage_format.html" />
+    <link rel="prev" title="Setup on Windows" href="setup_windows.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Interface Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-project-tree">The Project Tree</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-novel-tree">The Novel Tree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#document-importance-and-status">Document Importance and Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-tree-drag-drop">Project Tree Drag &amp; Drop</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-and-viewing-documents">Editing and Viewing Documents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#search-replace">Search &amp; Replace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#auto-replace-as-you-type">Auto-Replace as You Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-outline-view">Project Outline View</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>User Interface Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/usage_interface.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-interface-overview">
+<span id="a-ui"></span><h1>User Interface Overview<a class="headerlink" href="#user-interface-overview" title="Permalink to this headline">¶</a></h1>
+<p>The user interface is kept as simple as possible to avoid distractions when writing. This page
+lists all the main GUI elements, and explains what they do.</p>
+<div class="section" id="the-project-tree">
+<span id="a-ui-tree"></span><h2>The Project Tree<a class="headerlink" href="#the-project-tree" title="Permalink to this headline">¶</a></h2>
+<p>The main window contains a project tree in the left-most panel. It shows the entire structure of
+the project. It has four columns:</p>
+<dl class="simple">
+<dt><strong>Column 1</strong></dt><dd><p>The first column shows the icon and label of each folder, document, or note in your project. The
+label is not the same as the title you set inside the document. However, the document’s label
+will appear in the header above the document text itself so you know where in the project an
+open document belongs.</p>
+</dd>
+<dt><strong>Column 2</strong></dt><dd><p>The second column shows the word count of the document, or the sum of words of the child items
+for folders. If the counts seem incorrect, they can be updated by rebuilding the project index
+from the <span class="guilabel">Tools</span> menu, or by pressing <kbd class="kbd docutils literal notranslate">F9</kbd>.</p>
+</dd>
+<dt><strong>Column 3</strong></dt><dd><p>The third column indicates whether the document is included in the final project build or not.
+You may want to filter out documents that you no longer want to keep in the final manuscript,
+but want to keep in the project for reference.</p>
+</dd>
+<dt><strong>Column 4</strong></dt><dd><p>The fourth column shows the user-defined status or importance labels you’ve assigned to each
+project item. See <a class="reference internal" href="#a-ui-tree-status"><span class="std std-ref">Document Importance and Status</span></a> for more details. By default, both the icon and the
+label text is shown, but you can turn off the text label from <span class="guilabel">Preferences</span>. If the
+text label is off, the text will instead appear in a tooltip when you hover your mouse over the
+icon.</p>
+</dd>
+</dl>
+<p>Right-clicking an item in the project tree will open a context menu under the cursor, displaying
+a selection of actions that can be performed on the selected item.</p>
+<p>The label, status or importance setting, the layout, and the include flag can all be edited using
+the <span class="guilabel">Item Settings</span> dialog box. The dialog can be opened from the <span class="guilabel">Project</span>
+menu, or by pressing <kbd class="kbd docutils literal notranslate">F2</kbd> with the item selected.</p>
+<p>Below the project tree you will find a small details panel showing the full information of the
+currently selected item. This panel also includes the latest paragraph and character counts in
+addition to the word count.</p>
+<div class="section" id="the-novel-tree">
+<span id="a-ui-tree-novel"></span><h3>The Novel Tree<a class="headerlink" href="#the-novel-tree" title="Permalink to this headline">¶</a></h3>
+<p>An alternative way to view the project structure is the novel tree. You can switch to this view by
+selecting the <span class="guilabel">Novel</span> tab under the project tree. This view is a simplified version of
+the view in the <span class="guilabel">Outline</span>. It is convenient when you want to browse the structure of the
+story itself rather than the document files.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You cannot reorganise the entries in the novel tree, or add any new ones, as that would imply
+restructuring the content of the document files.</p>
+</div>
+</div>
+<div class="section" id="document-importance-and-status">
+<span id="a-ui-tree-status"></span><h3>Document Importance and Status<a class="headerlink" href="#document-importance-and-status" title="Permalink to this headline">¶</a></h3>
+<p>Each document or folder in your project can have either a “Status” or “Importance” flag set. These
+are flags that you control and define yourself. To modify the labels, go to their respective tabs
+in <span class="guilabel">Project Settings</span>.</p>
+<p>The “Status” flag is intended to tag a Novel document as for instance a draft or as completed, and
+the “Importance” flag is intended to tag character notes, or other notes, as for instance a main,
+major or minor character.</p>
+<p>Whether a document uses a “Status” or “Importance” flag depends on which root folder it lives in.
+If it’s in the <span class="guilabel">Novel</span> folder, it uses the “Status” flag, otherwise it uses an
+“Importance” flag. Some folders, like <span class="guilabel">Trash</span> and <span class="guilabel">Outtakes</span> allow both.</p>
+</div>
+<div class="section" id="project-tree-drag-drop">
+<span id="a-ui-tree-dnd"></span><h3>Project Tree Drag &amp; Drop<a class="headerlink" href="#project-tree-drag-drop" title="Permalink to this headline">¶</a></h3>
+<p>The project tree allows drag &amp; drop to a certain extent. This feature is primarily intended for
+reordering your documents within each root folder. Moving a document in the project tree will also
+put it in a different place when you build the novel project.</p>
+<p>Drag &amp; drop has only limited support for moving documents. In general, bulk actions are not
+allowed. This is deliberate to avoid accidentally messing up your project. If you make a mistake,
+the last move action can be undone by pressing <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">Shift</kbd><kbd class="kbd docutils literal notranslate">Z</kbd>.</p>
+<p>Documents and their folders can be rearranged freely within their root folders. Novel documents
+cannot be moved out of the <span class="guilabel">Novel</span> folder, except to <span class="guilabel">Trash</span> and the
+<span class="guilabel">Outtakes</span> folders. Notes can be moved freely between all root folders, but keep in mind
+that if you move a note into a <span class="guilabel">Novel</span>, its “Importance” setting will be reset to the
+default “Status” setting. See <a class="reference internal" href="#a-ui-tree-status"><span class="std std-ref">Document Importance and Status</span></a>.</p>
+<p>Folders cannot be moved at all outside their root tree. Neither can a folder containing documents
+be deleted. You must first delete the containing documents.</p>
+<p>Root folders in the project tree cannot be dragged &amp; dropped at all. If you want to reorder them,
+you can move them up or down with respect to eachother from the <span class="guilabel">Project</span> menu, the
+right-click context menu, or by pressing <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">Shift</kbd> and the <kbd class="kbd docutils literal notranslate">Up</kbd> or <kbd class="kbd docutils literal notranslate">Down</kbd>
+key.</p>
+</div>
+</div>
+<div class="section" id="editing-and-viewing-documents">
+<span id="a-ui-edit"></span><h2>Editing and Viewing Documents<a class="headerlink" href="#editing-and-viewing-documents" title="Permalink to this headline">¶</a></h2>
+<p>To edit a document, double-click it in the project tree, or press the <kbd class="kbd docutils literal notranslate">Return</kbd> key while
+having it selected. This will open the document in the document editor. The editor uses a
+markdown-like syntax for some features, and a novelWriter-specific syntax for others. The syntax
+format is described in the <a class="reference internal" href="usage_format.html#a-fmt"><span class="std std-ref">Formatting Your Text</span></a> section below. The editor has a maximise button (toggles
+the <span class="guilabel">Focus Mode</span>) and a close button in the top–right corner. On the top–left side you
+will find an edit button that opens the <span class="guilabel">Item Settings</span> dialog for the currently open
+document, and a search button to open the search dialog.</p>
+<p>Any document in the project tree can also be viewed in parallel in a right hand side document
+viewer. To view a document, press <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">R</kbd>, or select <span class="guilabel">View Document</span> in the
+menu. If you have a middle mouse button, middle-clicking on the document will also open it in the
+viewer. The document viewed does not have to be the same document as currently being edited.
+However, If you <em>are</em> viewing the same document, pressing <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">R</kbd> again will update the
+document with your latest changes. You can also press the reload button in the top–right corner of
+the view panel, next to the close button, to achieve the same thing.</p>
+<p>Both the document editor and viewer will show the label of the document in the header at the top of
+the edit or view panel. Optionally, the full project path to the document can be shown. This can be
+set in <span class="guilabel">Preferences</span>. Clicking on the document title bar will select and reveal its
+location in the project tree, making it easier to locate in a large project.</p>
+<p>Any tag reference in the editor can be opened in the viewer by moving the cursor to the label and
+pressing <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">Return</kbd>. You can also control-click them with your mouse. In the viewer,
+the references become clickable links. Clicking them will replace the content of the viewer with
+the content of the document the reference points to.</p>
+<p>The document viewer keeps a history of viewed documents, which you can navigate through with the
+arrow buttons in the top–left corner of the viewer. If your mouse has back and forward navigation
+buttons, these can be used as well. They work just like the backward and forward features in a
+browser.</p>
+<p>At the bottom of the view panel there is a <span class="guilabel">References</span> panel. (If it is hidden, click
+the icon to reveal it.) This panel will show links to all documents referring back to the one
+you’re currently viewing, if any has been defined. The <span class="guilabel">Sticky</span> button will freeze the
+content of the panel to the current document, even if you navigate to another document. This is
+convenient if you want to quickly look through all documents in the list in the
+<span class="guilabel">References</span> panel without losing the list in the process.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <span class="guilabel">References</span> panel relies on an up-to-date index of the project. The index is
+maintained automatically. However, if anything is missing, or seems wrong, the index can always
+be rebuilt by selecting <span class="guilabel">Rebuild Index</span> from the <span class="guilabel">Tools</span> menu, or by
+pressing <kbd class="kbd docutils literal notranslate">F9</kbd>.</p>
+</div>
+<div class="section" id="search-replace">
+<span id="a-ui-edit-search"></span><h3>Search &amp; Replace<a class="headerlink" href="#search-replace" title="Permalink to this headline">¶</a></h3>
+<p>The document editor has a search and replace tool that can be activated with <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">F</kbd>
+for search mode or <kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">H</kbd> for search and replace mode.</p>
+<p>Pressing <kbd class="kbd docutils literal notranslate">Return</kbd> while in the search box will search for the next occurrence of the word, and
+<kbd class="kbd docutils literal notranslate">Shift</kbd><kbd class="kbd docutils literal notranslate">Return</kbd> for the previous. Pressing <kbd class="kbd docutils literal notranslate">Return</kbd> in the replace box, will replace
+the highlighted text and move to the next result.</p>
+<p>There are a number of settings for the search tool available as toggle switches above the search
+box. They allows you to search for, in order: matched case only, whole word results only, search
+using regular expressions, loop search when reaching the end of the document, and move to the next
+document when reaching the end. There is also a switch that will try to match the case of the word
+when the replacement is made. That is, it will try to keep the word upper, lower, or capitalised to
+match the word being replaced.</p>
+<p>The regular expression search is somewhat dependant on which version of Qt your system has. If you
+have Qt 5.13 or higher, there is better support for unicode symbols in the search.</p>
+</div>
+</div>
+<div class="section" id="auto-replace-as-you-type">
+<span id="a-ui-edit-auto"></span><h2>Auto-Replace as You Type<a class="headerlink" href="#auto-replace-as-you-type" title="Permalink to this headline">¶</a></h2>
+<p>A few auto-replace features are supported by the editor. You can control every aspect of the
+auto-replace feature from <span class="guilabel">Preferences</span>. You can also disable this feature entirely if
+you wish.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you don’t like auto-replacement, all symbols inserted by this feature are also available in
+the <span class="guilabel">Insert</span> menu, and via convenient <a class="reference internal" href="usage_shortcuts.html#a-kb-ins"><span class="std std-ref">Insert Shortcuts</span></a>. You may also be using a
+<a class="reference external" href="https://en.wikipedia.org/wiki/Compose_key">Compose Key</a> setup, which means you may not need the auto-replace feature.</p>
+</div>
+<p>The editor is able to replace two and three hyphens with short and long dashes, triple points with
+ellipsis, and replace straight single and double quotes with user-defined quote symbols. It will
+also try to determine whether to use the opening or closing symbol, although this feature isn’t
+always accurate. Especially distinguishing between closing single quote and apostrophe can be
+tricky for languages that use the same symbol for these, like English does.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the auto-replace feature changes a symbol when you did not want it to change, pressing
+<kbd class="kbd docutils literal notranslate">Ctrl</kbd><kbd class="kbd docutils literal notranslate">Z</kbd> immediately after the auto-replacement will undo it without undoing the
+character you typed.</p>
+</div>
+</div>
+<div class="section" id="project-outline-view">
+<span id="a-ui-outline"></span><h2>Project Outline View<a class="headerlink" href="#project-outline-view" title="Permalink to this headline">¶</a></h2>
+<p>The project’s Outline view is available as the second tab on the right hand side of the main window
+labelled <span class="guilabel">Outline</span>. The outline provides an overview of the novel structure, displaying a
+tree hierarchy of the elements of the novel, that is, the level 1 to 4 headings representing
+partitions, chapters, scenes and sections.</p>
+<p>The document containing the heading can also be displayed as a separate column, as well as the line
+number where it occurs. Double-clicking an entry will open the corresponding document in the
+editor.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since the internal structure of the novel does not depend directly on the folder and document
+structure of the project tree, these will not necessarily look the same, depending on how you
+choose to organise your documents. See the <a class="reference internal" href="project_structure.html#a-struct"><span class="std std-ref">Novel Structure</span></a> page for more details.</p>
+</div>
+<p>Various meta data and information extracted from tags can be displayed in columns in the outline.
+A default set of such columns is visible, but you can turn on or off more columns by right clicking
+the header and selecting the columns you want to show. The order of the columns can also be
+rearranged by dragging them to a different position.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <span class="guilabel">Title</span> column cannot be disabled or moved.</p>
+</div>
+<p>The information viewed in the outline is based on the project’s main index. While novelWriter does
+its best to keep the index up to date when contents change, you can always rebuild it manually by
+pressing <kbd class="kbd docutils literal notranslate">F9</kbd> if something isn’t right.</p>
+<p>The outline view itself can be regenerated by pressing <kbd class="kbd docutils literal notranslate">F10</kbd>. You can also enable automatic
+updating in the <span class="guilabel">Tools</span> menu, which will trigger an update whenever the index is updated
+and the <span class="guilabel">Outline</span> tab is active. You may want to disable this feature if your project is
+very large,</p>
+<p>The <span class="guilabel">Synopsis</span> column of the outline view takes its information from a specially
+formatted comment. See <a class="reference internal" href="usage_format.html#a-fmt-comm"><span class="std std-ref">Comments and Synopsis</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="usage_format.html" class="btn btn-neutral float-right" title="Formatting Your Text" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="setup_windows.html" class="btn btn-neutral float-left" title="Setup on Windows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

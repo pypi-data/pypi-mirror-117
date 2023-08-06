@@ -1,0 +1,396 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Novel Structure &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Project Notes" href="project_notes.html" />
+    <link rel="prev" title="Novel Projects" href="project_overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Novel Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#importance-of-headings">Importance of Headings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#novel-title-and-front-matter">Novel Title and Front Matter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unnumbered-chapter-headings">Unnumbered Chapter Headings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tag-references">Tag References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-layout">Document Layout</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Novel Structure</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/project_structure.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="novel-structure">
+<span id="a-struct"></span><h1>Novel Structure<a class="headerlink" href="#novel-structure" title="Permalink to this headline">¶</a></h1>
+<p>This section covers the structure of a novel project.</p>
+<p>It concerns documents under the <span class="guilabel">Novel</span> type root folder only. There are some
+restrictions and features that only apply to these types of documents.</p>
+<div class="section" id="importance-of-headings">
+<span id="a-struct-heads"></span><h2>Importance of Headings<a class="headerlink" href="#importance-of-headings" title="Permalink to this headline">¶</a></h2>
+<p>Subfolders under root folders have no impact on the structure of the novel itself. The structure is
+instead dictated by the heading level of the headers within the documents.</p>
+<p>Four levels of headings are supported, signified by the number of hashes (<code class="docutils literal notranslate"><span class="pre">#</span></code>) preceding the
+title. See also the <a class="reference internal" href="usage_format.html#a-fmt"><span class="std std-ref">Formatting Your Text</span></a> section for more details about the markdown syntax.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The header levels are not only important when generating the exported novel file, they are also
+used by the indexer when building the outline tree in the <span class="guilabel">Outline</span> tab as well as the
+<span class="guilabel">Novel</span> tab of the project tree. Each heading also starts a new region where new
+references and tags can be defined.</p>
+</div>
+<p>The syntax for the four basic header types, and the two special header types, is listed in section
+<a class="reference internal" href="usage_format.html#a-fmt-head"><span class="std std-ref">Headings</span></a>. The meaning of the four levels for the structure of your novel is as follows:</p>
+<dl class="simple">
+<dt><strong>Header Level 1</strong></dt><dd><p>This header level signifies that the text refers to a top level partition. This is useful when
+you want to split the manuscript up into books, parts, or acts. These headings are not required.
+The novel title itself should use the special header level one code explained in
+<a class="reference internal" href="usage_format.html#a-fmt-head"><span class="std std-ref">Headings</span></a>.</p>
+</dd>
+<dt><strong>Header Level 2</strong></dt><dd><p>This header level signifies a chapter level partition. Each time you want to start a new
+chapter, you must add such a heading. If you choose to split your manuscript up into one
+document per scene, you need a single chapter document with just the heading. You can of course
+also add a synopsis and reference keywords to the chapter document. If you want to open the
+chapter with a quote or other introductory text that isn’t part of a scene, this is also where
+you’d put that text.</p>
+</dd>
+<dt><strong>Header Level 3</strong></dt><dd><p>This header level signifies a scene level partition. You must provide a title text, but the
+title text can be replaced with a scene separator or just skipped entirely when you export your
+manuscript.</p>
+</dd>
+<dt><strong>Header Level 4</strong></dt><dd><p>This header level signifies a sub-scene level partition, usually called a “section” in the
+documentation and the user interface. These can be useful if you want to change tag references
+mid-scene, like if you change the point-of-view character. You are free to use sections as you
+wish, and can filter them out of the final manuscript just like with scene titles.</p>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>There are multiple options of how to process novel titles when exporting the manuscript. For
+instance, chapter numbers can be applied automatically, and so can scene numbers if you want
+them in a draft manuscript. See the <a class="reference internal" href="project_export.html#a-export"><span class="std std-ref">Exporting Projects</span></a> page for more details.</p>
+</div>
+<div class="section" id="novel-title-and-front-matter">
+<span id="a-struct-heads-title"></span><h3>Novel Title and Front Matter<a class="headerlink" href="#novel-title-and-front-matter" title="Permalink to this headline">¶</a></h3>
+<p>It is recommended that you add a document at the very top of your project with the novel title as
+the first line. You should modify the level 1 header format code with an <code class="docutils literal notranslate"><span class="pre">!</span></code> in order to render
+it as a document title that is excluded from any automatic Table of Content in an exported
+document, like so:</p>
+<p><code class="docutils literal notranslate"><span class="pre">#!</span> <span class="pre">My</span> <span class="pre">Novel</span></code></p>
+<p>The title is by default centred on the page when exported. You can add more text to the page as you
+wish, like for instance the author’s name and details.</p>
+<p>If you want an additional page inserted after the title page, starting on a fresh page, you can add
+<code class="docutils literal notranslate"><span class="pre">[NEW</span> <span class="pre">PAGE]</span></code> on a line by itself, and continue the text after it. This will insert a page break
+when the project is exported.</p>
+</div>
+<div class="section" id="unnumbered-chapter-headings">
+<span id="a-struct-heads-unnum"></span><h3>Unnumbered Chapter Headings<a class="headerlink" href="#unnumbered-chapter-headings" title="Permalink to this headline">¶</a></h3>
+<p>If you use the automatic numbering feature for your chapters, but you want to keep some special
+chapters separate from this, you cam add a <code class="docutils literal notranslate"><span class="pre">!</span></code> to the level 2 header formatting code to tell the
+build tool to skip these chapters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">##!</span> <span class="pre">Unnumbered</span> <span class="pre">Chapter</span> <span class="pre">Title</span></code></p>
+<p>There is a separate formatting feature for such chapters in the <span class="guilabel">Build Novel Project</span>
+tool as well. See the <a class="reference internal" href="project_export.html#a-export"><span class="std std-ref">Exporting Projects</span></a> page for more details.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Previously, you could also disable the automatic numbering of a chapter by adding an <code class="docutils literal notranslate"><span class="pre">*</span></code> as
+the first character of the chapter title itself. This feature has been dropped in favour of the
+current format in order to keep level 1 and 2 headers consistent. Please update your chapter
+headings if you’ve used this syntax.</p>
+</div>
+</div>
+</div>
+<div class="section" id="tag-references">
+<span id="a-struct-tags"></span><h2>Tag References<a class="headerlink" href="#tag-references" title="Permalink to this headline">¶</a></h2>
+<p>Each text partition, indicated by a heading of any level, can contain references to tags set in the
+supporting notes of the project. The references are gathered by the indexer and used to generate an
+outline view on the <span class="guilabel">Outline</span> tab of how the different parts of the novel are connected.
+This section covers how to set references to tags. See <a class="reference internal" href="project_notes.html#a-notes-tags"><span class="std std-ref">Tags in Notes</span></a> for how to define tags
+the references can point to.</p>
+<p>References and tags are also clickable in the document editor and viewer, making it easy to
+navigate between reference notes while writing. Clicked links are always opened in the view panel.</p>
+<p>References are set as a keyword and a list of corresponding tags. The valid keywords are listed
+below. The format of a reference line is <code class="docutils literal notranslate"><span class="pre">&#64;keyword:</span> <span class="pre">value1,</span> <span class="pre">[value2]</span> <span class="pre">...</span> <span class="pre">[valueN]</span></code>. All keywords
+allow multiple values.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;pov</span></code></dt><dd><p>The point-of-view character for the current section. The target must be a note tag in the
+<span class="guilabel">Character</span> type root folder.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;focus</span></code></dt><dd><p>The character that has the focus for the current section. This can be used in cases where the
+focus is not a point-of-view character. The target must be a note tag in the
+<span class="guilabel">Character</span> type root folder.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;char</span></code></dt><dd><p>Other characters in the current section. The target must be a note tag in the
+<span class="guilabel">Character</span> type root folder. This should not include the point-of-view character.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;plot</span></code></dt><dd><p>The plot or subplot advanced in the current section. The target must be a note tag in the
+<span class="guilabel">Plot</span> type root folder.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;time</span></code></dt><dd><p>The timelines touched by the current section. The target must be a note tag in the
+<span class="guilabel">Timeline</span> type root folder.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;location</span></code></dt><dd><p>The location the current section takes place in. The target must be a note tag in the
+<span class="guilabel">Locations</span> type root folder.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;object</span></code></dt><dd><p>Objects present in the current section. The target must be a note tag in the <span class="guilabel">Object</span>
+type root folder.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;entity</span></code></dt><dd><p>Entities present in the current section. The target must be a note tag in the
+<span class="guilabel">Entities</span> type root folder.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;custom</span></code></dt><dd><p>Custom references in the current section. The target must be a note tag in a <span class="guilabel">Custom</span>
+type root folder. You can add more than one Custom folder, but they all use the same reference
+keyword.</p>
+</dd>
+</dl>
+<p>The syntax highlighter will alert the user that the tags and references are used correctly, and
+that the tags referenced exist.</p>
+<p>The highlighter may be mistaken if the index of defined tags is out of date. If so, press <kbd class="kbd docutils literal notranslate">F9</kbd>
+to regenerate it, or select <span class="guilabel">Rebuild Index</span> from the <span class="guilabel">Tools</span> menu. In general,
+the index for a document is regenerated when it is saved, so this shouldn’t normally be necessary.</p>
+</div>
+<div class="section" id="document-layout">
+<span id="a-struct-layout"></span><h2>Document Layout<a class="headerlink" href="#document-layout" title="Permalink to this headline">¶</a></h2>
+<p>All documents in the project can have a layout format set. Previously, there were multiple layouts
+available to change how the documents where formatted on export. These have now been reduced to
+just two layouts: <span class="guilabel">Novel Document</span> and <span class="guilabel">Project Note</span>.</p>
+<p>Novel documents can only live in the <span class="guilabel">Novel</span> root folder. You can also move them to
+<span class="guilabel">Outtakes</span> and <span class="guilabel">Trash</span> of course. Project notes can be added anywhere in the
+project.</p>
+<p>Depending on which icon theme you’re using, the project tree can distinguish between the different
+layouts and header levels of the documents to help indicate which are project notes and which are
+novel documents containing a partition, chapter, or scene. If the icon theme you’ve selected
+doesn’t show a difference, you can still see the layout description in the details panel below the
+project tree.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can always start writing with a coarse setup with one or a few documents, and then later use
+the split tool to automatically split the documents into separate chapter and scene documents.
+You can split a document on any of the four header levels.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="project_notes.html" class="btn btn-neutral float-right" title="Project Notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="project_overview.html" class="btn btn-neutral float-left" title="Novel Projects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Setup on macOS &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Setup on Windows" href="setup_windows.html" />
+    <link rel="prev" title="Setup on Linux" href="setup_linux.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setup on macOS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#running-from-source">Running from Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-installing-dependencies">Step 1: Installing Dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-install-package-optional">Step 2: Install Package (Optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_export.html">Exporting Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Setup on macOS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/setup_mac.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setup-on-macos">
+<span id="a-setup-mac"></span><h1>Setup on macOS<a class="headerlink" href="#setup-on-macos" title="Permalink to this headline">¶</a></h1>
+<p>This is a brief guide to how you can get novelWriter running on macOS. There are currently no
+install package of novelWriter for macOS, so it is recommended that you download either the full
+source or minimal package and extract it to a practical location on your system and
+run it.</p>
+<div class="section" id="running-from-source">
+<h2>Running from Source<a class="headerlink" href="#running-from-source" title="Permalink to this headline">¶</a></h2>
+<p>To run novelWriter from source, download the latest source package from the release page on
+<a class="reference external" href="https://github.com/vkbo/novelWriter/releases">GitHub</a> or the <a class="reference external" href="https://novelwriter.io">main website</a>, or if you have git running on your computer, you can also clone the
+repository.</p>
+<div class="section" id="step-1-installing-dependencies">
+<h3>Step 1: Installing Dependencies<a class="headerlink" href="#step-1-installing-dependencies" title="Permalink to this headline">¶</a></h3>
+<p>These instructions assume you’re using brew, and have Python and pip set up. If not, see the
+<a class="reference external" href="https://docs.brew.sh/Homebrew-and-Python">brew docs</a> for help. Main requirements are installed via the requirements file. You also need to
+install the <code class="docutils literal notranslate"><span class="pre">pyobjc</span></code> package, so you should run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip3 install --user -r requirements.txt</span>
+<span class="go">pip3 install --user pyobjc</span>
+</pre></div>
+</div>
+<p>For spell checking you may also need to install the enchant package. It comes with a lot of default
+dictionaries.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">brew install enchant</span>
+</pre></div>
+</div>
+<p>With the dependencies in place, you can launch the <code class="docutils literal notranslate"><span class="pre">novelWriter.py</span></code> script directly to run
+novelWriter.</p>
+</div>
+<div class="section" id="step-2-install-package-optional">
+<h3>Step 2: Install Package (Optional)<a class="headerlink" href="#step-2-install-package-optional" title="Permalink to this headline">¶</a></h3>
+<p>You can install novelWriter to the correct location for Python packages with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">./setup.py install --user</span>
+</pre></div>
+</div>
+<p>This requires that the package <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> is installed on your system. If not, it can be
+installed with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip3 install --user setuptools</span>
+</pre></div>
+</div>
+<p>This is method of install is equivalent to what the <code class="docutils literal notranslate"><span class="pre">pip</span></code> installer does. It puts novelWriter in
+the location on your system where Python packages are usually kept. This is not really the best
+suited location for a GUI application like novelWriter, so you may instead copy the entire source
+to a suiteable location yourself.</p>
+<p>After this, you should be able to launch novelWriter by running <code class="docutils literal notranslate"><span class="pre">novelWriter</span></code> in a command line
+window.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Right now there isn’t a better integration with macOS available. Contributions from someone more
+familiar with macOS would be very much appreciated.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="setup_windows.html" class="btn btn-neutral float-right" title="Setup on Windows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="setup_linux.html" class="btn btn-neutral float-left" title="Setup on Linux" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Exporting Projects &mdash; novelWriter 1.5-beta1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How Data is Stored" href="tech_storage.html" />
+    <link rel="prev" title="Project Notes" href="project_notes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/novelwriter.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_linux.html">Setup on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_mac.html">Setup on macOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_windows.html">Setup on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using novelWriter</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_interface.html">User Interface Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Formatting Your Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Typographical Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_projectformat.html">Project Format Changes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Organising Your Project</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Novel Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Novel Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_notes.html">Project Notes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exporting Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#header-formatting">Header Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scene-separators">Scene Separators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-selection">File Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#printing">Printing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#export-formats">Export Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-export-options">Additional Export Options</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Under the Hood</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">How Data is Stored</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Running Tests</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">novelWriter</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Exporting Projects</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/project_export.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="exporting-projects">
+<span id="a-export"></span><h1>Exporting Projects<a class="headerlink" href="#exporting-projects" title="Permalink to this headline">¶</a></h1>
+<p>The novelWriter project can be exported in various formats using the build tool available from
+<span class="guilabel">Build Novel Project</span> in the <span class="guilabel">Tools</span> menu, or by pressing <kbd class="kbd docutils literal notranslate">F5</kbd>.</p>
+<div class="section" id="header-formatting">
+<span id="a-export-headers"></span><h2>Header Formatting<a class="headerlink" href="#header-formatting" title="Permalink to this headline">¶</a></h2>
+<p>The titles for the five types of titles (the chapter headings come in a numbered and unnumbered
+version) of story structure can be formatted collectively in the build tool. This is done through
+a series of keyword–replace steps. They are all on the format <code class="docutils literal notranslate"><span class="pre">%keyword%</span></code>.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">%title%</span></code></dt><dd><p>This keyword will always be replaced with the title text you put after the <code class="docutils literal notranslate"><span class="pre">#</span></code> characters in
+your document.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%ch%</span></code></dt><dd><p>This will be replaced by a chapter number. The number is incremented by one each time the build
+tool sees a new heading of level two in a document, unless the heading formatting code has the
+added <code class="docutils literal notranslate"><span class="pre">!</span></code>. In the latter case, the counter is <em>not</em> incremented. This is useful for for
+instance Prologue and Epilogue chapters.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%chw%</span></code></dt><dd><p>Behaves like <code class="docutils literal notranslate"><span class="pre">%ch%</span></code>, but the number is represented as a number word. You can select between a
+number of different languages.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%chi%</span></code></dt><dd><p>Begaves like <code class="docutils literal notranslate"><span class="pre">%ch%</span></code>, but represented as a lower case Roman number from 1 to 4999.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%chI%</span></code></dt><dd><p>Behaves like <code class="docutils literal notranslate"><span class="pre">%ch%</span></code>, but represented as an upper case Roman number from 1 to 4999.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%sc%</span></code></dt><dd><p>This is the number counter equivalent for scenes. These are incremented each time a heading of
+level three is encountered, but reset to 1 each time a chapter is encountered. They can thus be
+used for counting scenes within a chapter.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%sca%</span></code></dt><dd><p>Behaves like <code class="docutils literal notranslate"><span class="pre">%sc%</span></code>, but the number is <em>not</em> reset to 1 for each chapter. Instead it runs from
+1 from the beginning of the novel to produce an absolute scene count.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">\\</span></code></dt><dd><p>This inserts a line break within the title.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Header formatting only applies to novel documents. Headings in notes will be left as-is.</p>
+</div>
+<p><strong>Example</strong></p>
+<ul class="simple">
+<li><p>The format <code class="docutils literal notranslate"><span class="pre">%title%</span></code> just reproduces the title you set in the document.</p></li>
+<li><p>The format <code class="docutils literal notranslate"><span class="pre">Chapter</span> <span class="pre">%ch%:</span> <span class="pre">%title%</span></code> produces something like “Chapter 1: My Chapter Title”.</p></li>
+<li><p>The format <code class="docutils literal notranslate"><span class="pre">Scene</span> <span class="pre">%ch%.%sc%</span></code> produces something like “Scene 1.2” for scene 2 in chapter 1.</p></li>
+</ul>
+</div>
+<div class="section" id="scene-separators">
+<span id="a-export-scenes"></span><h2>Scene Separators<a class="headerlink" href="#scene-separators" title="Permalink to this headline">¶</a></h2>
+<p>If you don’t want any titles for your scenes (or for your sections if you have them), you can leave
+the formatting boxes empty. If so, an empty paragraph will be inserted between the scenes or
+sections instead resulting in a gap in the text.</p>
+<p>Alternatively, if you want a separator between them, like the common <code class="docutils literal notranslate"><span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span></code>, you can enter the
+desired separator text in the formatting box. In fact, if the format is a piece of static text, it
+will always be treated as a separator.</p>
+</div>
+<div class="section" id="file-selection">
+<span id="a-export-files"></span><h2>File Selection<a class="headerlink" href="#file-selection" title="Permalink to this headline">¶</a></h2>
+<p>Which documents and notes are selected for export can be controlled from the options on the left
+side of the dialog window. The switch for <span class="guilabel">Include novel files</span> will enable or disable
+inclusion of novel documents, and the switch for <span class="guilabel">Include note files</span> will do the same
+for project notes. This allows for exporting just the novel, just your notes, or both, as you wish.</p>
+<p>In addition, you can select to export the synopsis comments, regular comments, keywords, and even
+exclude the body text itself.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you for instance want to export a document with an outline of the novel, you can enable
+keywords and synopsis export and disable body text, thus getting a document with each heading
+followed by the tags and references and the synopsis.</p>
+</div>
+<p>If you need to exclude specific documents from your exports, like draft documents or documents you
+want to take out of your manuscript, but don’t want to delete, you can un-check the
+<span class="guilabel">Include when building project</span> option for each such document in the project tree. An
+included document has a checkmark after in the third column of the project tree. The
+<span class="guilabel">Build Novel Project</span> tool has a switch to ignore this flag if you need to collectively
+override these settings.</p>
+</div>
+<div class="section" id="printing">
+<span id="a-export-print"></span><h2>Printing<a class="headerlink" href="#printing" title="Permalink to this headline">¶</a></h2>
+<p>The print button allows you to print the content in the preview window. You can either print to one
+of your system’s printers, or print directly to a file as PDF. You can also print to file from the
+regular print dialog. The direct to file option is just a shortcut.</p>
+</div>
+<div class="section" id="export-formats">
+<span id="a-export-formats"></span><h2>Export Formats<a class="headerlink" href="#export-formats" title="Permalink to this headline">¶</a></h2>
+<p>Currently, six formats are supported for exporting.</p>
+<dl class="simple">
+<dt>Open Document Format</dt><dd><p>The Build tool can produce either an <code class="docutils literal notranslate"><span class="pre">.odt</span></code> file, or an <code class="docutils literal notranslate"><span class="pre">.fodt</span></code> file. The latter is just a
+flat version of the document format as a single XML file. Most rich text editors support the
+former, and a few the latter.</p>
+</dd>
+<dt>novelWriter HTML</dt><dd><p>The HTML export format writes a single <code class="docutils literal notranslate"><span class="pre">.htm</span></code> file with minimal style formatting. The exported
+HTML document is suitable for further processing by document conversion tools like Pandoc, for
+importing in word processors, or for printing from browser.</p>
+</dd>
+<dt>novelWriter Markdown</dt><dd><p>This is simply a concatenation of the project documents selected by the filters. The documents
+are stacked together in the order they appear in the project tree, with comments, tags, etc.
+included if they are selected. This is a useful format for exporting the project for later
+import back into novelWriter.</p>
+</dd>
+<dt>Standard/GitHub Markdown</dt><dd><p>The Markdown export format comes in both Standard and GitHub flavour. The <em>only</em> difference in
+terms of novelWriter functionality is the support for strikethrough text, which is not supported
+by the Standard flavour, but <em>is</em> supported by the GitHub flavour.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="additional-export-options">
+<span id="a-export-options"></span><h2>Additional Export Options<a class="headerlink" href="#additional-export-options" title="Permalink to this headline">¶</a></h2>
+<p>In addition to the above document formats, the novelWriter HTML and Markdown formats can also be
+wrapped in a JSON file. These files will have a meta data entry and a body entry. For HTML, also
+the accompanying css styles are exported.</p>
+<p>The text body is saved in a two-level list. The outer list contains one entry per exported
+document, in the order they appear in the project tree. Each document is then split up into a list
+as well, with one entry per paragraph it contains.</p>
+<p>These files are mainly intended for scripted post-processing for those who want that option. A JSON
+file can be imported directly into a Python dict object or a PHP array, to mentions a few options.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="tech_storage.html" class="btn btn-neutral float-right" title="How Data is Stored" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="project_notes.html" class="btn btn-neutral float-left" title="Project Notes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018–2021, Veronica Berglyd Olsen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
