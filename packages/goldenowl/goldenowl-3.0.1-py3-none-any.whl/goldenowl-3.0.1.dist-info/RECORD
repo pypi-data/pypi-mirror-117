@@ -1,0 +1,11 @@
+goldenowl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goldenowl/asset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goldenowl/asset/asset.py,sha256=FIP1S1AQIgGjFPDivxEZd0adCs9y5D-40JvlA1pSdtU,2116
+goldenowl/portfolio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goldenowl/portfolio/holding.py,sha256=rbrT8i69xU9KteYzvI1zGpeeaNqcf3z2GWZiL0AuG9Q,2598
+goldenowl/portfolio/portfolio.py,sha256=gjoFq5uvLhduMtkd4Wxs8MIad1MoPKpGm-31ym7slj0,3050
+goldenowl-3.0.1.dist-info/LICENSE,sha256=_t1i-D4piAlNowb-H0bGw1I2yZ1LtUTwDiGVeu5xuk4,1065
+goldenowl-3.0.1.dist-info/METADATA,sha256=yn-Dd58C9nVI7TESH89kPz51gO5Ik7h9-OeL0nIgz9I,1669
+goldenowl-3.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+goldenowl-3.0.1.dist-info/top_level.txt,sha256=-x4BL-pPwKM0IHgfngigSlDQbZdiRMG-erTzUI0kaJo,10
+goldenowl-3.0.1.dist-info/RECORD,,
