@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+AgriTech.egg-info/PKG-INFO
+AgriTech.egg-info/SOURCES.txt
+AgriTech.egg-info/dependency_links.txt
+AgriTech.egg-info/entry_points.txt
+AgriTech.egg-info/top_level.txt
+package/__init__.py
+package/fetch_data.py
