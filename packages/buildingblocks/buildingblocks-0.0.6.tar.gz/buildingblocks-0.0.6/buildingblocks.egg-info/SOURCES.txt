@@ -1,0 +1,6 @@
+setup.py
+buildingblocks.egg-info/PKG-INFO
+buildingblocks.egg-info/SOURCES.txt
+buildingblocks.egg-info/dependency_links.txt
+buildingblocks.egg-info/requires.txt
+buildingblocks.egg-info/top_level.txt
