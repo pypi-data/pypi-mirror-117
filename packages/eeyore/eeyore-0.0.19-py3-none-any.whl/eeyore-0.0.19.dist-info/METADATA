@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: eeyore
+Version: 0.0.19
+Summary: MCMC methods for neural networks
+Home-page: https://github.com/papamarkou/eeyore
+Author: Theodore Papamarkou
+Author-email: theodore.papamarkou@gmail.com
+License: MIT
+Download-URL: https://github.com/papamarkou/eeyore/archive/v0.0.19.tar.gz
+Keywords: Bayesian inference,Bayesian neural networks,convergence diagnostics,Markov chain Monte Carlo,posterior predictive distribution
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: torch (>=1.9.0)
+Requires-Dist: kanga (>=0.0.19)
+
+![](https://github.com/papamarkou/eeyore/workflows/eeyore/badge.svg)
+
+MCMC methods for neural networks.
+
+To install eeyore using pip, run
+```
+pip install eeyore
+```
+
+
