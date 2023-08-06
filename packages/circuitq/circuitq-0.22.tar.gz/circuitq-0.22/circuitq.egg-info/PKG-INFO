@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: circuitq
+Version: 0.22
+Summary: Automated design of superconducting qubits
+Home-page: https://github.com/PhilippAumann/circuitq
+Author: CircuitQ Team
+Author-email: philipp.aumann@uibk.ac.at
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
