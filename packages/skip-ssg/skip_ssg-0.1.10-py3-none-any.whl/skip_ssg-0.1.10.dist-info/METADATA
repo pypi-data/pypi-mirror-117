@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: skip-ssg
+Version: 0.1.10
+Summary: A simple python-based static site generator
+Home-page: https://github.com/heldridge/skip
+License: MIT
+Keywords: ssg,static-site-generator,markdown
+Author: Harry Eldridge
+Author-email: heldridge@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.0.1,<4.0.0)
+Requires-Dist: Markdown (>=3.3.4,<4.0.0)
+Requires-Dist: Pygments (>=2.9.0,<3.0.0)
+Requires-Dist: arrow (>=1.1.1,<2.0.0)
+Requires-Dist: gitignore-parser (>=0.0.8,<0.0.9)
+Requires-Dist: python-frontmatter (>=1.0.0,<2.0.0)
+Requires-Dist: watchgod (>=0.7,<0.8)
+Project-URL: Repository, https://github.com/heldridge/skip
+Description-Content-Type: text/markdown
+
+# Skip
+
+Skip is a Python-based data-forward static site generator inspired by [Eleventy](https://11ty.dev)
+
+## Why should I use Skip?
+
+- You like Python and the Jinja2 templating engine
+- You want a simple static site generator that makes no assumptions about how your project should be structured
+- You want to use data files, including dynamically computed data (like reading from a database or API)
+
+## Quickstart
+
+``` bash
+pip install skip-ssg
+echo '# Hello World' > index.md
+skip
+```
+
+To see more, check out the [documentation](skip.harryeldridge.com)
+

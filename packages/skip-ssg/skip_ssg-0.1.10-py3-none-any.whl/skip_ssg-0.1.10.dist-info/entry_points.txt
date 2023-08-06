@@ -1,0 +1,3 @@
+[console_scripts]
+skip=skip_ssg.skip:main
+
