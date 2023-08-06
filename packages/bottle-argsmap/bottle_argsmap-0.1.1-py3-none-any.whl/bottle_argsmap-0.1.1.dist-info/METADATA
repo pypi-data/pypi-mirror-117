@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: bottle-argsmap
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/Cologler/bottle_argsmap-python
+License: MIT
+Author: Cologler
+Author-email: skyoflw@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: anyioc (>=0.11.1,<0.12.0)
+Requires-Dist: bottle (>=0.12.19,<0.13.0)
+Description-Content-Type: text/markdown
+
+# bottle_argsmap
+
+Auto inject arguments via a `dict` like pattern.
+
+## Usage
+
+``` py
+from bottle import Bottle
+from bottle_argsmap import ArgsMapPlugin
+
+app = Bottle()
+plugin = try_install(app)
+
+# inject via singleton
+plugin.set_value('value', '1544')
+
+# or inject via factory, dynamic creation is allowed
+# e.g. you can to inject database connection from a database pool
+plugin.set_factory('value',
+    lambda param_name, route: ...,
+    context_manager=True,         # auto call `__exit__` on the value after responsed
+)
+
+# finally, inject it
+@app.get('/path')
+def get_it(value): # value is injected
+    return dict(value=value)
+```
+
+## More
+
+`ArgsMapPlugin().ioc` is a instance of type `anyioc.ServiceProvider`, which means you can use all features from `anyioc`.
+
