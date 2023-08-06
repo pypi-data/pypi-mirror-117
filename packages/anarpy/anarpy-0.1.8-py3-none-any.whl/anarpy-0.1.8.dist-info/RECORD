@@ -1,0 +1,16 @@
+anarpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anarpy/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anarpy/models/HuberBraun/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anarpy/models/HuberBraun/netwHBIh2.py,sha256=5tg10Lxw-mEHPmCHTq2J_F3ArtIaR73I5Er3FaG6T_Y,10463
+anarpy/models/WilsonCowan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anarpy/models/WilsonCowan/netwWilsonCowan.py,sha256=OU5HxMWRRBKlgvSY17vZK-w2qrteJq90t-Wyo_COCxI,6111
+anarpy/models/WilsonCowan/netwWilsonCowanFull.py,sha256=pdDgZS0mtaKG0Y_5liTXdGC6U7BjS8RWHUC_-Jc_QZc,6124
+anarpy/models/WilsonCowan/netwWilsonCowanPlastic.py,sha256=e3gilB_0vRK8d1z98ZU7WMjb6Dl8rD5kA67gR6KqXrY,6599
+anarpy/models/others/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anarpy/models/others/netEIF_EImix.py,sha256=nU_wayvfIOXRsN5aIT81MLoEdWzrbBhhl18D0XDisss,10025
+anarpy/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anarpy-0.1.8.dist-info/LICENSE,sha256=xumChf2_IhlKD_Oy0L8FgtxmT4z0vx_Q6Svo1sppaYs,1106
+anarpy-0.1.8.dist-info/METADATA,sha256=CDuRaJXzX9l0A5gjqt1jb6cUwgCllqEwrD48JnsM8qg,1403
+anarpy-0.1.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+anarpy-0.1.8.dist-info/top_level.txt,sha256=i-LPEAbCLb8T089lt6uEtjFPMInBP7yvGnkXhrThxeM,7
+anarpy-0.1.8.dist-info/RECORD,,
