@@ -1,0 +1,9 @@
+ansys/tools/example_coverage/__init__.py,sha256=gwUp4gCumHAJgxHxVPnutA6ZuUZ_AiSVhhOk6tXQMTs,80
+ansys/tools/example_coverage/__main__.py,sha256=maxdlpptpEeLCe3AtirHunSXb0ltzYaI3Gr396KCk4A,451
+ansys/tools/example_coverage/_version.py,sha256=AwGyoceLuFcAPQKAtvt7Qj_N1CVYoIFqMjceWfKEdnk,315
+ansys/tools/example_coverage/example_coverage.py,sha256=cEQd5zdcXkR11m8_nQ7qTb3OyLrxHtrnkuua57pA17w,6456
+ansys_tools_example_coverage-0.1.dev0.dist-info/LICENSE,sha256=1WMYOMWP9lWW8BF7c7a9DrYl-DUHqloVjVO2dof4ta4,1111
+ansys_tools_example_coverage-0.1.dev0.dist-info/METADATA,sha256=C9wEqDZ4IkwZih9GfBqGUxDAL6avPB8gY94TY9-WBto,2285
+ansys_tools_example_coverage-0.1.dev0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ansys_tools_example_coverage-0.1.dev0.dist-info/top_level.txt,sha256=9rw0UJ0mtof2GA3U8RpqYo6EmbpfE8-wo3NoX6SlYtg,6
+ansys_tools_example_coverage-0.1.dev0.dist-info/RECORD,,
