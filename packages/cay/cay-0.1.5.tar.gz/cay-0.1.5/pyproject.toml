@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "cay"
+version = "0.1.5"
+description = "Simple calculator implemented in Python"
+repository = "https://github.com/conao3/cay"
+readme = "README.org"
+authors = ["Naoya Yamashita <conao3@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.scripts]
+cay = "cay.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-icdiff = "^0.5"
+black = "^21.7b0"
+autoflake = "^1.4"
+isort = "^5.9.3"
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+profile = 'black'
+line_length = 119
+
+[tool.pytest.ini_options]
+doctest_optionflags = ['NORMALIZE_WHITESPACE', 'IGNORE_EXCEPTION_DETAIL']
