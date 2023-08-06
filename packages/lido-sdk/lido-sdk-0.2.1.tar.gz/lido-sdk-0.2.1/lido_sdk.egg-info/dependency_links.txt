@@ -1,0 +1,1 @@
+https://github.com/ethereum/eth2.0-deposit-cli/@v1.2.0#egg=eth2_deposit-1.2.0

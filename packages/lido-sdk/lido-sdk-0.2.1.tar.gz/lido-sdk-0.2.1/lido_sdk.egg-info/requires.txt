@@ -1,0 +1,5 @@
+multicall==0.1.2
+web3==5.23.0
+blspy==1.0.5
+eth2_deposit==1.2.0
+ssz==0.2.4
