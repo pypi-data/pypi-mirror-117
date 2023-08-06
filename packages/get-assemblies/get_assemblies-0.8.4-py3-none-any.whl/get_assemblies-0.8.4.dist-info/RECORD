@@ -1,0 +1,11 @@
+get_assemblies/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+get_assemblies/__main__.py,sha256=6sv8HN6tPuhvqv8frwVMP7pH8d3Ou0j-T58u6l0arOw,39334
+get_assemblies/__main__attr.py,sha256=o2B36B228FynvHezPKdJnrd9HtQMy1UX5PI8xqyCHtw,35054
+get_assemblies/__version__.py,sha256=PtH7P3DXedvpK4LWSSxCTW38cmEXvmG6EvUpXZC-eLo,22
+get_assemblies/pbar.py,sha256=cNLXwfjHpPFXhKVfDhFtUmiNeHKloxcFTxjB7D7PZgo,1909
+get_assemblies-0.8.4.dist-info/LICENSE,sha256=Wnd6IBeIo4oyX7m_srcHl8nvGYldGvaFMw67ZJsFxsA,1682
+get_assemblies-0.8.4.dist-info/METADATA,sha256=01Me1b9EFz6yE5IX58VkNTjuOClmcmGP8wJ-huLw32w,15058
+get_assemblies-0.8.4.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+get_assemblies-0.8.4.dist-info/entry_points.txt,sha256=QtzK1-Z_1h3f68BdmosOWOi0HZchyl6y3UHWnRteJ74,65
+get_assemblies-0.8.4.dist-info/top_level.txt,sha256=RDzz2sCUyZ63DseEzMB4TEq6VI1TZ5_OGTc2CE9q35s,15
+get_assemblies-0.8.4.dist-info/RECORD,,
