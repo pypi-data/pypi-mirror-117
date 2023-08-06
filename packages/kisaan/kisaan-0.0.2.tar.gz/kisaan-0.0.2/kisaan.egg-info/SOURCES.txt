@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+calculate_price.py
+cart.py
+order.py
+setup.py
+subscription.py
+kisaan.egg-info/PKG-INFO
+kisaan.egg-info/SOURCES.txt
+kisaan.egg-info/dependency_links.txt
+kisaan.egg-info/requires.txt
+kisaan.egg-info/top_level.txt

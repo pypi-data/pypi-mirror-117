@@ -1,0 +1,3 @@
+wheel
+pymongo[srv]
+datetime
