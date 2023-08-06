@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: char-pic
+Version: 0.1.3
+Summary: generate char pic demo.
+Home-page: http://api.xiaodeng.site:8888/
+License: Apache-2.0
+Keywords: char,pic,xioadeng
+Author: xiaodeng
+Author-email: xiaodengteacher@qq.com
+Maintainer: xiaodeng2
+Maintainer-email: xiaodengteacher2@qq.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Freeware
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications
+Requires-Dist: cowpy (>=1.1.0,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Documentation, http://api.xiaodeng.site:8888/
+Project-URL: Repository, https://github.com/psf/requests
+Description-Content-Type: text/x-rst
+
+这是一个生成字符图案的项目
+
+如下是使用说明：
+
