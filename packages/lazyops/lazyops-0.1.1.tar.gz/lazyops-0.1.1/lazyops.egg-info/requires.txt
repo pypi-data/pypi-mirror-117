@@ -1,0 +1,8 @@
+file-io>=0.2.0
+requests
+dateparser
+aiohttp
+aiocache
+aiofiles
+asgiref
+six
