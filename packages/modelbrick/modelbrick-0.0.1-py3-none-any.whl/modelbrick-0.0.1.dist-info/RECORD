@@ -1,0 +1,9 @@
+modelbrick/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelbrick/layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelbrick/layers/layers.py,sha256=L8ztDwFTUHYjXdxfawnZ54k56E6Qm0Cg1tjnmz6e8OE,3112
+modelbrick/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelbrick/models/models.py,sha256=9cBTQ0IX7lnDd7-FTligWKdyBHsewzyOyKzRp0U129c,1557
+modelbrick-0.0.1.dist-info/METADATA,sha256=s6qMnf7ilnTP7X1k_lw2cwmFxE30upkigdsWVdkFsik,487
+modelbrick-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+modelbrick-0.0.1.dist-info/top_level.txt,sha256=TUmDi-XyMFo2_wO2SWtYTlxz7sWD2PwDsTFCW6Hq5wY,11
+modelbrick-0.0.1.dist-info/RECORD,,
