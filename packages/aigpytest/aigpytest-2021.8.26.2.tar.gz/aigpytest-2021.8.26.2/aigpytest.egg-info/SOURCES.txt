@@ -1,0 +1,9 @@
+setup.py
+aigpytest/__init__.py
+aigpytest/main.py
+aigpytest.egg-info/PKG-INFO
+aigpytest.egg-info/SOURCES.txt
+aigpytest.egg-info/dependency_links.txt
+aigpytest.egg-info/entry_points.txt
+aigpytest.egg-info/requires.txt
+aigpytest.egg-info/top_level.txt
