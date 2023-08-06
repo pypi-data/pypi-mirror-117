@@ -1,0 +1,10 @@
+README.md
+setup.py
+pycococt/__init__.py
+pycococt/cococt.py
+pycococt/test.py
+pycococt.egg-info/PKG-INFO
+pycococt.egg-info/SOURCES.txt
+pycococt.egg-info/dependency_links.txt
+pycococt.egg-info/requires.txt
+pycococt.egg-info/top_level.txt
