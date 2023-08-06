@@ -1,0 +1,186 @@
+name: Test, build, publish docs and release
+
+on:
+  push:
+    tags:
+      - v*
+    branches-ignore:
+      - "gh-pages"
+
+jobs:
+  build-and-test:
+    name: Install, test, build package and build docs
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: [3.7, 3.8, 3.9]
+        compas-version-specifier: [false]
+        include:
+          - os: windows-latest
+            python-version: 3.7
+            compas-version-specifier: ==0.17.2
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install wheel  # https://stackoverflow.com/questions/34819221
+          python -m pip install cython --install-option='--no-cython-compile'
+          if [[ $COMPAS_VERSION_SPECIFIER != 'false' ]] ; then
+            python -m pip install "compas$COMPAS_VERSION_SPECIFIER"
+          fi
+          python -m pip install --no-cache-dir -e .[dev]
+        env:
+          COMPAS_VERSION_SPECIFIER: ${{ matrix.compas-version-specifier }}
+
+      - name: Test import
+        run: python -m compas_mobile_robot_reloc
+
+      - name: Test
+        run: invoke test
+
+      - name: Build docs
+        run: invoke docs
+
+      - name: Build package
+        run: invoke build
+
+  ironpython-test:
+    name: windows-ironpython
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+
+      - name: Set up CPython 3.8 (RPC tests)
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies for CPython (RPC tests)
+        run: |
+          python -m pip install --upgrade pip
+          pip install wheel  # https://stackoverflow.com/questions/34819221
+          pip install cython --install-option='--no-cython-compile'
+
+      - name: Install package for CPython (RPC tests)
+        run: |
+          pip install --no-cache-dir .
+
+      - name: Install dependencies
+        run: |
+          choco install ironpython --version=2.7.8.1
+          ipy -X:Frames -m ensurepip
+          curl -o compas.tar.gz -LJO https://pypi.debian.net/compas/latest
+          ipy -X:Frames -m pip install --no-deps compas.tar.gz
+          curl -o ironpython-pytest.tar.gz -LJO https://pypi.debian.net/ironpython-pytest/latest
+          ipy -X:Frames -m pip install --no-deps ironpython-pytest.tar.gz
+
+      - name: Test import
+        run: |
+          ipy -m compas_mobile_robot_reloc
+        env:
+          IRONPYTHONPATH: ./src
+
+      - name: Run tests
+        run: |
+          ipy tests/ipy_test_runner.py
+        env:
+          IRONPYTHONPATH: ./src
+
+  publish-docs:
+    name: Publish docs
+    needs: build-and-test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+
+      - name: Install
+        run: |
+          pip install --upgrade pip
+          pip install wheel  # https://stackoverflow.com/questions/34819221
+          pip install cython --install-option='--no-cython-compile'
+          python -m pip install --no-cache-dir -e .[dev]
+
+      - name: Build docs
+        run: invoke docs
+
+      - name: Publish docs on branch gh-pages
+        uses: crazy-max/ghaction-github-pages@db4476a01402e1a7ce05f41832040eef16d14925
+        with:
+          target_branch: gh-pages
+          build_dir: docs
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish-package:
+    name: Publish package
+    needs: build-and-test
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get version from tag
+        id: tag_name
+        run: |
+          echo ::set-output name=current_version::${GITHUB_REF#refs/tags/v}
+
+      - name: Checkout repo
+        uses: actions/checkout@v2.3.4
+
+      - name: Get Changelog Entry
+        id: changelog_reader
+        uses: mindsers/changelog-reader-action@v2
+        with:
+          version: ${{ steps.tag_name.outputs.current_version }}
+          path: ./CHANGELOG.md
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install
+        run: |
+          pip install --upgrade pip
+          pip install wheel  # https://stackoverflow.com/questions/34819221
+          pip install cython --install-option='--no-cython-compile'
+          python -m pip install --no-cache-dir -e .[dev]
+
+      - name: Build package
+        run: invoke build
+
+      - name: Upload and release package on PyPi
+        uses: pypa/gh-action-pypi-publish@v1.4.2
+        if: steps.changelog_reader.outputs.status == 'released'
+        with:
+          user: __token__
+          password: ${{ secrets.pypi_password }}
+
+      - name: Create GitHub release and upload assets
+        uses: softprops/action-gh-release@fb0163a75bee697a9cfec2c931801de7c7f10042
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            dist/*.whl
+            dist/*.tar.gz
+          body: ${{ steps.changelog_reader.outputs.changes }}
+          prerelease: ${{ steps.changelog_reader.outputs.status == 'prereleased' }}
+          draft: ${{ steps.changelog_reader.outputs.status == 'unreleased' }}

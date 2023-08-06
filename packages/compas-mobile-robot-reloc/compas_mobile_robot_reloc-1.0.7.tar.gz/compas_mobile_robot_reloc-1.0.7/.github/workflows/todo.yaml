@@ -1,0 +1,17 @@
+name: "Issues from todo comments"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  todo:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v2.3.4"
+      
+      - name: "TODO to Issue"
+        uses: "alstr/todo-to-issue-action@9e47839bcaed1fc37f2c81d9258e08aa8423ecdb"
+        with:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
