@@ -1,0 +1,7 @@
+setup.py
+AiraTranslation/__init__.py
+AiraTranslation/service.py
+AiraTranslation.egg-info/PKG-INFO
+AiraTranslation.egg-info/SOURCES.txt
+AiraTranslation.egg-info/dependency_links.txt
+AiraTranslation.egg-info/top_level.txt
