@@ -1,0 +1,12 @@
+run_elmer/__init__.py,sha256=-MoDEf3VQHeYIBC-2zYomYuAtVQ_A97MX_9jgqSXfw8,2089
+run_elmer/export.py,sha256=pySXICj9upGFkDJZ8NaCxpXtCB4e1WfXrGAZGZbiqHQ,3386
+run_elmer/run.py,sha256=ZjBbqP5x1ECDeJSWMOB7DpBQiixz6lih98oZBNwv6Gc,909
+run_elmer/runners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+run_elmer/runners/docker.py,sha256=cbT7FScZjlLkFKeJMi4HqU_3B9l0Axzw2V72Zod2T08,4342
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_mesh.py,sha256=ExrcphSe885ohGRJG84r3dkc66MKuZQKB6mm2q4uurM,1075
+run_elmer-0.2.0.dist-info/LICENSE,sha256=1a_BlQSk26XoDJSFhXK-8HLz6jCkvU2EnXRfjk-p3Nw,1054
+run_elmer-0.2.0.dist-info/METADATA,sha256=9KNzAQpwXXDmY7Vywehy7iHMfwUXTotWTg9QBQUStFE,2991
+run_elmer-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+run_elmer-0.2.0.dist-info/top_level.txt,sha256=3MnH_N0O2g1_O8ljtlA48I9UVImNKfWrAVljFzOXw54,16
+run_elmer-0.2.0.dist-info/RECORD,,
