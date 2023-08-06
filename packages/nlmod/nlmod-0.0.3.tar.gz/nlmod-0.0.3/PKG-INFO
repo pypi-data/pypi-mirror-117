@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: nlmod
+Version: 0.0.3
+Summary: nlmod module by Artesia
+Home-page: https://github.com/ArtesiaWater/nlmod
+Author: Artesia
+License: MIT
+Description: [![nlmod](https://github.com/ArtesiaWater/nlmod/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ArtesiaWater/nlmod/actions/workflows/ci.yml)
+        
+        # nlmod
+        
+        Python code to process, build and visualise MODFLOW models in the Netherlands. 
+        Model data is stored in an xarray Datastore as much as possible.
+        
+        ## Installation
+        
+        The package is not (yet) available on PyPi. 
+        
+        You can install the package by cloning the repository and
+        typing `pip install -e .` from the package root directory.
+        
+Platform: Windows
+Platform: Mac OS-X
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
