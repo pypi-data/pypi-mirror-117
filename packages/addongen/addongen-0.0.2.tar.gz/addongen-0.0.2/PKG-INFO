@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: addongen
+Version: 0.0.2
+Summary: for minecraft bedrock addon
+Home-page: https://github.com/KAIYOHUGO/addon-gen
+Author: kaiyo hugo
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/KAIYOHUGO/addon-gen/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# a minecraft bedrock addon framework for python
+
