@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: nagios-core-api
+Version: 0.1.1
+Summary: A python wrapper for querying nagios core monitoring
+Home-page: https://github.com/sajalshres/nagios-core-api
+Author: Sajal Shrestha
+Author-email: sajal.shres@gmail.com
+License: MIT
+Keywords: nagios,api,rest,wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# nagios-core-api
+A python wrapper for querying nagios core monitoring
+
+## Note:
+This module is *work-in-progress*.
+
+## Usage:
+
+
+```python
+from nagios import Nagios
+
+with Nagios(
+    url="https://nagios.monitor.com/nagios",
+    username="nagiosuser",
+    password="nagiospassword",
+) as client:
+    response = client.status.service_list(hostname="machine1")
+    print(response)
+```
+
+
