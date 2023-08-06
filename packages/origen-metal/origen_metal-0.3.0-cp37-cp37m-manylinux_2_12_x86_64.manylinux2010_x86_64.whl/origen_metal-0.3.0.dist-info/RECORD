@@ -1,0 +1,8 @@
+origen_metal-0.3.0.dist-info/METADATA,sha256=TVpwWJN47Kwlm8ohK_G-eqFuWwRigcp3qSrce15w7kA,75
+origen_metal-0.3.0.dist-info/WHEEL,sha256=-FjkVrAelEc3GsG9MUKl1AkB1INqEXay5Vquvei6vns,136
+origen_metal/__init__.py,sha256=hgUm3shm-220tIka3hJPnQajJ6WBKSrYAQVjXy-XOyU,109
+origen_metal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+origen_metal/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+origen_metal/utils/differ/__init__.py,sha256=QF7eYe042tDBf8Q0CgMDR9ZVImxgp0tTtLlT47j-rkQ,997
+origen_metal/_origen_metal.cpython-37m-x86_64-linux-gnu.so,sha256=81oP0fjyOgkF_vJdo5sD9EfQjADpEbnPwGkz_HVQgUE,5051912
+origen_metal-0.3.0.dist-info/RECORD,,
