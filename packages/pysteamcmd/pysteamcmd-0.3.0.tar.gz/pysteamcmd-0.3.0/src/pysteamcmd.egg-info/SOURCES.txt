@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pysteamcmd/__init__.py
+src/pysteamcmd/steamcmd.py
+src/pysteamcmd.egg-info/PKG-INFO
+src/pysteamcmd.egg-info/SOURCES.txt
+src/pysteamcmd.egg-info/dependency_links.txt
+src/pysteamcmd.egg-info/top_level.txt
+src/pysteamcmd/tests/__init__.py
