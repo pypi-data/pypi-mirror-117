@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "char_pic"
+version = "0.1.2"
+description = ""
+authors = ["xiaodeng <xiaodengteacher@qq.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cowpy = "^1.1.0"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "douban"
+url = "https://pypi.doubanio.com/simple"
