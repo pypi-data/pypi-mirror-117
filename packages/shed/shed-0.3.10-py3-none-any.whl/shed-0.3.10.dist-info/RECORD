@@ -1,0 +1,10 @@
+shed/__init__.py,sha256=nELptsY_KSH3IbBe2JJDON760pyM57GqxQoIfn9sAls,7777
+shed/__main__.py,sha256=lKkDjwYvvj2-TpGM8NpbGixALUzt6KReJvBSSpT34jQ,230
+shed/_cli.py,sha256=hwn48TFJN65yMBoJZttGO9ZWnTt40OuI3bP1k6zuUo8,4011
+shed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shed-0.3.10.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+shed-0.3.10.dist-info/METADATA,sha256=cBDlNXKHHPJBBFz7f9PmlfFX7Qr7wj47b9fZicB4BB8,3556
+shed-0.3.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+shed-0.3.10.dist-info/entry_points.txt,sha256=SYwoiZZ3PD73m51Pm02niEh3VSAuyr_kLuJIW3OOtvY,40
+shed-0.3.10.dist-info/top_level.txt,sha256=_ftMOy3wF-2yPM3eeavOB1T0kyXtk507s486dZ7N_Vs,5
+shed-0.3.10.dist-info/RECORD,,
