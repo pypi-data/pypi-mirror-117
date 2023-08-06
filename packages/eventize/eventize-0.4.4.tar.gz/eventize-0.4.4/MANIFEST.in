@@ -1,0 +1,5 @@
+include README.rst
+include LICENCE
+graft eventize/doc
+include *.txt
+include *.py
