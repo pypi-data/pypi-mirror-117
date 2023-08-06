@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PyProtWorm
+Version: 0.1.0
+Summary: A python package to find amino acid residues in the literature
+Home-page: https://github.com/duenti/PyProtWorm
+Author: Neli Fonseca
+Author-email: nelijfjr@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyProtWorm
+Python package to obtain amino acid residue information from the literature
+
+Testing
+
+Testing again
+
+Test description
+
+
