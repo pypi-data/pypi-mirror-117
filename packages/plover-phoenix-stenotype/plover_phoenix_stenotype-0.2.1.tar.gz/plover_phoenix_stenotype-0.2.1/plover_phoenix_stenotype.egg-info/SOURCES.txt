@@ -1,0 +1,12 @@
+LICENSE
+README.md
+plover_phoenix_stenotype.py
+setup.cfg
+setup.py
+plover_phoenix_stenotype.egg-info/PKG-INFO
+plover_phoenix_stenotype.egg-info/SOURCES.txt
+plover_phoenix_stenotype.egg-info/dependency_links.txt
+plover_phoenix_stenotype.egg-info/entry_points.txt
+plover_phoenix_stenotype.egg-info/requires.txt
+plover_phoenix_stenotype.egg-info/top_level.txt
+plover_phoenix_stenotype.egg-info/zip-safe

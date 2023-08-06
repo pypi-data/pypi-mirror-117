@@ -1,0 +1,3 @@
+[plover.system]
+Phoenix Stenotype = plover_phoenix_stenotype
+
