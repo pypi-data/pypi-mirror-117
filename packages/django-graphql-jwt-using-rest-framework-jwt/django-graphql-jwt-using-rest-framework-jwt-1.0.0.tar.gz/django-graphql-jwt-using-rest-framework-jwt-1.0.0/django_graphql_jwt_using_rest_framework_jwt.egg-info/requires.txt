@@ -1,0 +1,4 @@
+Django
+PyJWT
+djangorestframework-simplejwt
+graphene_django
