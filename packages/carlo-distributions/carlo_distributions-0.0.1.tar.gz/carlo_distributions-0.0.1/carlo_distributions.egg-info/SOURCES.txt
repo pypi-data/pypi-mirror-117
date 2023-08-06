@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+carlo_distributions/Binomialdistribution.py
+carlo_distributions/Gaussiandistribution.py
+carlo_distributions/Generaldistribution.py
+carlo_distributions/__init__.py
+carlo_distributions.egg-info/PKG-INFO
+carlo_distributions.egg-info/SOURCES.txt
+carlo_distributions.egg-info/dependency_links.txt
+carlo_distributions.egg-info/not-zip-safe
+carlo_distributions.egg-info/top_level.txt

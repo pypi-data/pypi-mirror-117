@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: carlo_distributions
+Version: 0.0.1
+Summary: Basic Gaussian and Binomial distributions classes
+Home-page: UNKNOWN
+Author: John Carlo Roberto
+Author-email: john.devera.roberto@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+carlo-distributions
+=========
+
+carlo-distributions provides two probability distribution classes: Gaussian and Binomial. It provides functions to read in a file and provide the mean, standard deviation, and its corresponding probability density/mass function distribution.
+
