@@ -1,0 +1,12 @@
+klarify/Kustomizer.py,sha256=oj-DbwCVSUgwbdCEvBDhi_WQ7NkIWOtcWN_DR-U0ZDs,1287
+klarify/Parser.py,sha256=hBCBL0ybBT1rjr5BKznJiftI50HZhlkdke9Jb_8WRqY,2127
+klarify/Resource.py,sha256=E3aoQtGqy4d5cSKuywKR6R2RyAtF9ksO-yNx_zfYPNE,1439
+klarify/Sorter.py,sha256=PC4mSUiqgG0s0a4Ep3gVnokwJkSnGKV8RXH7oHoVrmw,1425
+klarify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klarify/__main__.py,sha256=Z6NRaCWfSa-qgCbtOCgXqaUy-y91yh3uz8hMPksvLDw,2082
+klarify-0.0.1.dist-info/LICENSE,sha256=f01udsPGP6ofZUhD0iz_5BH-BA2kEJ3z5QWPv8R1sS8,1054
+klarify-0.0.1.dist-info/METADATA,sha256=fvt9PSvFR4KcQmr6-DIRHoDW_MY64Xa71eAV6-1l-Aw,1147
+klarify-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+klarify-0.0.1.dist-info/entry_points.txt,sha256=_lfnky2_9T9rXaJ2pX3u2TLdicJvfk5_M3uQ6QLBBt0,51
+klarify-0.0.1.dist-info/top_level.txt,sha256=gD41lP5DaYhDcgLG7c7dyLFkig_ofWiPD0zGL2BR8kM,8
+klarify-0.0.1.dist-info/RECORD,,
