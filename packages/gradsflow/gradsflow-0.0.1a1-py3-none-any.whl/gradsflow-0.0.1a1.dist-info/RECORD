@@ -1,0 +1,14 @@
+gradsflow/__init__.py,sha256=HR-jwt3J7dA20p7BnIV4JrKDWACUyaoXFWTSf_Coyuo,88
+gradsflow/logging.py,sha256=ApeVmQOZrkUOSEmQd3-iF8RoGA4WA2P5rNYoyxOzqsY,26
+gradsflow/autoclassifier/__init__.py,sha256=ATwi5vluhr7sUXeX5cQXISFaNlmBAyR-KquIYzEtwZg,76
+gradsflow/autoclassifier/base.py,sha256=IjgzKDs603h4YkljxvoXmHbh0mUnHbaFWe8gBBCeq7Y,2096
+gradsflow/autoclassifier/image.py,sha256=K2vaT7x1QnbXnAlkjXFjxzXPlduV4qMUyZzVt1j8F8w,1743
+gradsflow/autoclassifier/text.py,sha256=4tyZlvPpXTOvJQ2vfAUdHIHOwWYgAXKUvE0jwLixMkQ,1839
+gradsflow/automodel/__init__.py,sha256=6jxiukvTvut4IFfmOwXNsqZbKG5lkGVAZ_GyNs9RZYk,33
+gradsflow/automodel/automodel.py,sha256=RSrDHGjpjvLcLpHxkqG6ej3ZwViqjacudnrfKPM_q3E,2749
+gradsflow/utility/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gradsflow/utility/common.py,sha256=w8aGpGocNgVt2rU7oqjS5CcePPh2ufUVlgp9cq09Kxg,706
+gradsflow-0.0.1a1.dist-info/LICENSE,sha256=LS6y8GHuPEy7d3vK8MkicRHHXRlk1JULw_1QwDNEMCk,11361
+gradsflow-0.0.1a1.dist-info/WHEEL,sha256=o-Q2E8s7BKkCJ1EC2uQdaymZVVu2aUt1e8uTTFpzHVs,81
+gradsflow-0.0.1a1.dist-info/METADATA,sha256=qwamtDYKbYd8hWWSV3QuDCf8udrnQdXAwGagz8_4WZw,3762
+gradsflow-0.0.1a1.dist-info/RECORD,,
