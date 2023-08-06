@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/KiMoPack/__init__.py
+src/KiMoPack/example.py
+src/KiMoPack.egg-info/PKG-INFO
+src/KiMoPack.egg-info/SOURCES.txt
+src/KiMoPack.egg-info/dependency_links.txt
+src/KiMoPack.egg-info/top_level.txt
