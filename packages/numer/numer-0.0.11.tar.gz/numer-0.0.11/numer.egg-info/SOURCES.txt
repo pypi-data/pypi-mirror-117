@@ -1,0 +1,8 @@
+setup.py
+numer/__init__.py
+numer/cmath.py
+numer/mpz.py
+numer.egg-info/PKG-INFO
+numer.egg-info/SOURCES.txt
+numer.egg-info/dependency_links.txt
+numer.egg-info/top_level.txt
