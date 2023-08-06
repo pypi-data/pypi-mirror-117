@@ -1,0 +1,13 @@
+depcheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depcheck/depchecker.py,sha256=LK2njOeGoRYrMRKqPGPofOH9Zsh96KEpvkXDsZgtVc4,1499
+depcheck/depchecker_test.py,sha256=y8n4hVL50tkUUHbEQeWF6cROL8Jn2VzSVgHMhWaF9-c,6641
+depcheck/main.py,sha256=WEUtOd93uLDYYvCHpbYcBUwKnY_CFIRrZ4FZUbKbWY0,1087
+depcheck/models.py,sha256=-eSuxzq57PRe4Qxc62aHjhuuunAz9wotBt6Dn8d6r8s,2720
+depcheck/readers.py,sha256=nrtb_nxRWOtx5FpvXMa0DBBqJOuYI42MNbagwUEmlLE,1333
+depcheck/util.py,sha256=56tjvcv0IsKUN9y3hB2jSkqwFq8wnRoX-5BVXkduQG8,139
+depcheck/util_test.py,sha256=PLWPZB8aR-h0LTbtt1gwA9roN-5HZ57UdbwHa1GG234,417
+depcheck-0.2.0.dist-info/entry_points.txt,sha256=ba4PuNFEyv9dnfCO0JQVIMlcDj_2BlfWjvhylB2qN-g,47
+depcheck-0.2.0.dist-info/LICENSE.md,sha256=K91nY2D12UGK_Uz_wxun4fzGp0q95RRYc8cH93yAYKo,1084
+depcheck-0.2.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+depcheck-0.2.0.dist-info/METADATA,sha256=T3zZuXtswOUDbm-u9FI3cotFsp_rH_Zs5XYWoRrzloM,2649
+depcheck-0.2.0.dist-info/RECORD,,
