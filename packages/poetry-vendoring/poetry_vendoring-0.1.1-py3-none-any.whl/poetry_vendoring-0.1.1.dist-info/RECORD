@@ -1,0 +1,6 @@
+poetry_vendoring/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+poetry_vendoring/plugin.py,sha256=5bSyupBCbrOIKQARWdfGjTv2WKFLGt6ioi-J52fxo3s,502
+poetry_vendoring-0.1.1.dist-info/entry_points.txt,sha256=GZXaPBZqnGuc7etlJFZCK-JNpQQz7knzntHIVTPJ7y0,73
+poetry_vendoring-0.1.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+poetry_vendoring-0.1.1.dist-info/METADATA,sha256=ne1eSaDAVZiZrpayf33fhnbPBoYXU7F2YHm9r06vU5Y,398
+poetry_vendoring-0.1.1.dist-info/RECORD,,

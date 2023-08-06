@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: poetry-vendoring
+Version: 0.1.1
+Summary: 
+Author: mohamedarzikiwm
+Author-email: mohamed.a@wemaintain.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: poetry (>=1.1.8,<2.0.0)
