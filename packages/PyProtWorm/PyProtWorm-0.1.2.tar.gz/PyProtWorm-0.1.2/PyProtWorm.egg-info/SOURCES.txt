@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PyProtWorm/__init__.py
+PyProtWorm/finder.py
+PyProtWorm.egg-info/PKG-INFO
+PyProtWorm.egg-info/SOURCES.txt
+PyProtWorm.egg-info/dependency_links.txt
+PyProtWorm.egg-info/top_level.txt
