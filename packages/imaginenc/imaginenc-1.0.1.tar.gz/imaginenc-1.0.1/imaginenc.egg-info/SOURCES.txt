@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+imaginenc/__init__.py
+imaginenc/__main__.py
+imaginenc/imaginenc.py
+imaginenc.egg-info/PKG-INFO
+imaginenc.egg-info/SOURCES.txt
+imaginenc.egg-info/dependency_links.txt
+imaginenc.egg-info/entry_points.txt
+imaginenc.egg-info/requires.txt
+imaginenc.egg-info/top_level.txt
+tests/__init__.py
+tests/test_imaginenc.py
