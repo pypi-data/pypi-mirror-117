@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PydeequDynamicParser/Parser.py
+PydeequDynamicParser/__init__.py
+PydeequDynamicParser.egg-info/PKG-INFO
+PydeequDynamicParser.egg-info/SOURCES.txt
+PydeequDynamicParser.egg-info/dependency_links.txt
+PydeequDynamicParser.egg-info/top_level.txt
