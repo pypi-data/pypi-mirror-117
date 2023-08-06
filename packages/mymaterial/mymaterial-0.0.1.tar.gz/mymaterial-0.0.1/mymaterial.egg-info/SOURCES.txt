@@ -1,0 +1,6 @@
+setup.py
+mymaterial.egg-info/PKG-INFO
+mymaterial.egg-info/SOURCES.txt
+mymaterial.egg-info/dependency_links.txt
+mymaterial.egg-info/entry_points.txt
+mymaterial.egg-info/top_level.txt
