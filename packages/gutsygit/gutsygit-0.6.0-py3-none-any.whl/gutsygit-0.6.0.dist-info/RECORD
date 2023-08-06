@@ -1,0 +1,9 @@
+gutsygit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gutsygit/client.py,sha256=hh1sfKydfdI8ZP8o86iDTEdZs0gd5K8TCfatpgUYV88,9795
+gutsygit/main.py,sha256=iJm3ykJAn_6EpwdHh5XpsGAQPXcmBmCenyfTS7gnDW8,2172
+gutsygit/utils.py,sha256=k4gcBVulPFbDcnZFaFtzaiq5tEIYAblBosPt2a0MUCc,353
+gutsygit-0.6.0.dist-info/entry_points.txt,sha256=RC4ZNfBfY2eu_KQOyvDqRGUY3007Dy372RDYJDh336U,40
+gutsygit-0.6.0.dist-info/LICENSE,sha256=mZRFKnyFc826JjGA5YMhWRerpx6N5DyDqVBPWBTdGlw,1289
+gutsygit-0.6.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+gutsygit-0.6.0.dist-info/METADATA,sha256=Owwoo_826tz1ltGkKuTzDiFWH564CZccaIUtV0SkKE8,3112
+gutsygit-0.6.0.dist-info/RECORD,,
