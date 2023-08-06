@@ -1,0 +1,12 @@
+simplematrixbotlib/__init__.py,sha256=pi9j6sfjzoKZ_gM1j1B-HnuRWAhtkY6J2RLdLhoz3KU,269
+simplematrixbotlib/api.py,sha256=g8Js7IcDfdVJj1vR244gNG0Z-px4P1cU2lpg1JQsViU,5122
+simplematrixbotlib/auth.py,sha256=KnFTtzBFXaf42de2y5PwXPew2zHq56HsW__SHPh7O9A,3488
+simplematrixbotlib/bot.py,sha256=pZbEAKwDbC6EsXLCH57NnY0u8zz4N7uhf2lJFocw_Vw,1291
+simplematrixbotlib/callbacks.py,sha256=nTIIRd6LzsBgQwv2YBJJO5vmsNVh9Tp_00hnTLn2NiQ,1549
+simplematrixbotlib/listener.py,sha256=nd-AE_-Rw3VO5_ktKlhKeEnq-W2B4ooFKAH8XMngxYw,741
+simplematrixbotlib/match.py,sha256=s9ZbGA1-Tc9CRYLu5Zm0I_fpm0wV4x8YqIBC1023ZEM,4121
+simplematrixbotlib-2.1.0.dist-info/LICENSE,sha256=g3MalBoET6en2ni6dkVwABvO2QWJN3tgzhlLunSwgPI,1072
+simplematrixbotlib-2.1.0.dist-info/METADATA,sha256=8AaBE0HkL_zscdH8j5jyOxmWwjvH2IjaI6tgZBYGUUc,2254
+simplematrixbotlib-2.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simplematrixbotlib-2.1.0.dist-info/top_level.txt,sha256=NrJx57bIhk64R3WLGCBpafGl51UHw1wUdSz1bvKn75Q,19
+simplematrixbotlib-2.1.0.dist-info/RECORD,,
