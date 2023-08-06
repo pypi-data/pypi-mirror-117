@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: supercls
+Version: 1.0
+Summary: Supercls is a Python package that allows you to easily make a clear on the console that works on most Python-compatible platforms by just typing a command.
+Home-page: https://github.com/scidroid/supercls
+Author: Scidroid
+Author-email: scidroid@scidroid.me
+License: UNKNOWN
+Download-URL: https://github.com/scidroid/supercls/tarball/1.0
+Description: UNKNOWN
+Keywords: testing,logging,example
+Platform: UNKNOWN
