@@ -1,0 +1,11 @@
+apicuron_client/__init__.py,sha256=ktiPRt07URqGN7Fs5EMcz6BXOZHfEmAGWi1tJ1kXDhI,381
+apicuron_client/__main__.py,sha256=ITx3FQ0qLN7HAw13g6DP150K5dLG9TooT7YW0wm6QQg,332
+apicuron_client/api.py,sha256=VTm3fLuM3iHcBLq5iM4f6SZ-To2b5Dw7uDbfOmnnr30,2406
+apicuron_client/cli.py,sha256=Ndi1nn6Yf2zhoAxAn93SW-FIqhwNVnewAPgJUpHW2dw,895
+apicuron_client/version.py,sha256=kFU622KDF2jSC55fr0ERNTIxFzJ_rL7H8hALJ8WCyFc,1023
+apicuron_client-0.0.1.dist-info/LICENSE,sha256=GzLA83qaovFgoZWRYwaAmY-lkHZyDySJHU-YKE9NdVs,1076
+apicuron_client-0.0.1.dist-info/METADATA,sha256=sqgQ2mCsrsDFeacYTVV5zioBeIQooH4L6g2_PU7DqrE,9459
+apicuron_client-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+apicuron_client-0.0.1.dist-info/entry_points.txt,sha256=gKJyMD_vB61TkTuH81atSLZXI27qupCVKLnNtbR3Sqw,62
+apicuron_client-0.0.1.dist-info/top_level.txt,sha256=3Tri-zj2_bM-yS7fBk6qYjJ6jGIS7mDM71Yr19lmESs,16
+apicuron_client-0.0.1.dist-info/RECORD,,
