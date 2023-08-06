@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: TitleBar
+Version: 2021.8.26.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: maplelost
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+
+配合pyqt可以生成一个标题栏
+仅支持3.7以上
+
