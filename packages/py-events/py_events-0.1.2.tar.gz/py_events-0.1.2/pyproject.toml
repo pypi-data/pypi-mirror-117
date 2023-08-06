@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "py_events"
+version = "0.1.2"
+description = "Basic event system for python"
+authors = ["Jordan Cottle <jordancottle622@gmail.com>"]
+keywords = ["event"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Jordan-Cottle/Events"
+repository = "https://github.com/Jordan-Cottle/Events"
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.9.6"
+black = "^21.7b0"
+pytest = "^6.2.4"
+mypy = "^0.910"
+pytest-cov = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+    "--cov",
+    "-vv",
+    "--stepwise",
+]
+log_cli = true
+log_cli_level = "DEBUG"
+testpaths = [
+    "tests",
+]
+
+[tool.pylint.messages_control]
+disable = """
+logging-fstring-interpolation,
+"""
+
+[tool.pylint.basic]
+
+good-names = [
+    "CustomEvent"
+]
