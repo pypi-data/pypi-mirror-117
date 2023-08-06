@@ -1,0 +1,7 @@
+recursive-exclude rsnapsim/ssa_cpp/*
+recursive-exclude rsnapsim/ssa_cpp
+recursive-exclude trna_ssa *
+recursive-exclude models *
+recursive-exclude test *
+
+prune ssa_cpp/
