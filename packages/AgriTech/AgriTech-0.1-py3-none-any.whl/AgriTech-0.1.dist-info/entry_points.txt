@@ -1,0 +1,3 @@
+[console_scripts]
+AgriTech = package.fetch_data:main
+
