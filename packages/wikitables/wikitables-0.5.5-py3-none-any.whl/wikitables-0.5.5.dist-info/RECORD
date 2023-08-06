@@ -1,0 +1,14 @@
+wikitables/__init__.py,sha256=q3g_dLxukUG922fus62G75iaLTEtfVrXPxTiqfcSsUU,4005
+wikitables/cli.py,sha256=Kr-tGWhxjgH_DxnKGEnlXNRZ4vniTP2uCe6LD44FKMI,1418
+wikitables/client.py,sha256=ctt87uOUdxNU7fRyqeuwkHRD1MtPBDYZwfoSaYh5W2U,1166
+wikitables/models.py,sha256=Uw7sxrKE3fLvtNz5Us_UA1ON2oskQjR4wfPWqVVvu9I,1105
+wikitables/readers.py,sha256=wQOPWs_KTxeORD_l34A4s7fUbUHdY4y1HfWOogbQLDc,4536
+wikitables/templates.py,sha256=FiztDDoF2fdejdhuzg_ycEazu0s9BAhr6Tv0FoIiPYs,1737
+wikitables/util.py,sha256=gPENQLQFJyYlrtSZJQKXQUl3_BcmZm6zsKR4pLB1ABU,1093
+wikitables/version.py,sha256=Av64m4yVuYVnk4PQRxx3J3rGoQeRlFUBqVaSl4OvBnI,59
+wikitables-0.5.5.dist-info/LICENSE,sha256=V0JKNtNdEvWiG0NEhCVFyOBXx9zK_u8J-sV5klypJ7Y,1110
+wikitables-0.5.5.dist-info/METADATA,sha256=vZfgTi2f7lITlVjC2u2q_Aq6B07EnhapsY5-wuwNS8A,730
+wikitables-0.5.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wikitables-0.5.5.dist-info/entry_points.txt,sha256=FHxx_mLPyA0JKuasSmUiVNd5gnJxow8jjES7R4om2JQ,52
+wikitables-0.5.5.dist-info/top_level.txt,sha256=nKctwJc1iMKbh_5Xm705cy0bqktorSxuipxdlbsvzhc,11
+wikitables-0.5.5.dist-info/RECORD,,
