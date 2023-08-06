@@ -1,0 +1,11 @@
+Dockerfile*
+.dockerignore
+.git
+.gitignore
+.env
+*/bin
+*/obj
+.vscode
+doc/
+test_data/
+data/
