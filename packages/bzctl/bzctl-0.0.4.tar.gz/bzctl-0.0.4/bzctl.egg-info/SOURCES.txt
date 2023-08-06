@@ -1,0 +1,7 @@
+README.md
+bzctl
+setup.py
+bzctl.egg-info/PKG-INFO
+bzctl.egg-info/SOURCES.txt
+bzctl.egg-info/dependency_links.txt
+bzctl.egg-info/top_level.txt

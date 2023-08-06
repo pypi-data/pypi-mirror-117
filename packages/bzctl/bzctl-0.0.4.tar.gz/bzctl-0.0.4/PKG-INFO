@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: bzctl
+Version: 0.0.4
+Summary: What that this script done is if you pass a run and the bunch of other arguments it collects the other arguments and putting the right arguments in right places on the yaml template.
+Home-page: https://bag.org.tr/proje/bulutzincir/bzctl
+Author: Ahmet Yusuf Birinci
+Author-email: ayb84870@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# BZCTL
+
+ - This tool can be downloaded with ``` pip install bzctl ```
+ 
+ - It adds dirs named ``` ~/bzctl ``` and ``` ~/bzctl/config ```
+ 
+ - Simply check ``` bzctl -h ```
+ 
+ - # Uses
+
+ - bzctl token --prefix {prefix} --save_token {token}
+
+ - bzctl host --save_host {host}
+ 
+ - bzctl run --image imagename --version imageversion --argument --argument ..
+ 
+ - bzctl delete --image imagename
+ 
+ - bzctl delete-all
+ 
+ - # Example
+ 
+ - ``` bzctl token --prefix Bearer --save_token eyJhbGciOi..... ```
+
+ - ``` bzctl host --save_host http://127.0.0.1:8080/ ```
+
+ - ``` bzctl run --image geth2 --version v0.0.1 --http --http.corsdomain https://remix.ethereum.org --http.api personal,eth,net,web3```
+ 
+ - ``` bzctl delete --image geth2 ```
+ 
+ - ``` bzctl delete-all ```
+
+

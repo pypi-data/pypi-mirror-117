@@ -1,0 +1,221 @@
+#!/usr/bin/env python3
+
+import asyncio
+import sys
+import os
+import argparse
+import json
+import yaml
+
+import time
+import kubernetes.client
+from kubernetes.client.models import v1_pod
+from kubernetes.client.rest import ApiException
+from pprint import pprint
+
+home = os.path.expanduser("~")
+
+
+def run(args, configuration):
+
+    listofargs = []
+    print("Given arguments: ")
+    for argss in sys.argv[2:]:
+        listofargs.append(argss)
+        print(argss)
+
+    # Enter a context with an instance of the API kubernetes.client
+    with kubernetes.client.ApiClient(configuration) as api_client:
+        # Create an instance of the API class
+        api_instance = kubernetes.client.CoreV1Api(api_client)
+        namespace = 'default' # str | object name and auth scope, such as for teams and projects
+    body = kubernetes.client.V1Pod(
+        api_version= "v1",
+        kind= "Pod",
+        metadata= {
+            "name": f"{args.image}-app",
+            "labels": {
+                "app": "web"
+            }
+        },
+        spec= {
+            "containers": [
+                {
+                    "name": f"{args.image}",
+                    "image": f"jozzy008/{args.image}:{args.version}",
+                    "args": listofargs[4:],
+                    "ports": [
+                        {
+                            "containerPort": 80
+                        }
+                    ]
+                }
+            ]
+        }
+    ) # V1Pod | 
+    try:
+        api_response = api_instance.create_namespaced_pod(namespace, body)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling CoreV1Api->create_namespaced_pod: %s\n" % e)
+
+
+def delete(args, configuration, all):
+    listofargs = []
+    
+    
+    if not all:
+    
+        print("Given arguments: ")
+        for argss in sys.argv[2:]:
+            listofargs.append(argss)
+            print(argss)
+
+        # Enter a context with an instance of the API kubernetes.client
+        with kubernetes.client.ApiClient(configuration) as api_client:
+            # Create an instance of the API class
+            api_instance = kubernetes.client.CoreV1Api(api_client)
+            name = f'{args.image}-app' # str | name of the Pod
+        namespace = 'default' # str | object name and auth scope, such as for teams and projects
+
+        try:
+            api_response = api_instance.delete_namespaced_pod(name, namespace)
+            pprint(api_response)
+        except ApiException as e:
+            print("Exception when calling CoreV1Api->delete_namespaced_pod: %s\n" % e)
+
+
+    else:
+         # Enter a context with an instance of the API kubernetes.client
+        with kubernetes.client.ApiClient(configuration) as api_client:
+            # Create an instance of the API class
+            api_instance = kubernetes.client.CoreV1Api(api_client)
+            name = '' # str | name of the Pod
+        namespace = 'default' # str | object name and auth scope, such as for teams and projects
+
+        try:
+            api_response = api_instance.delete_namespaced_pod(name, namespace)
+            pprint(api_response)
+        except ApiException as e:
+            print("Exception when calling CoreV1Api->delete_namespaced_pod: %s\n" % e)
+    
+
+def save_token(args):
+    document=f"""{args.save_token}"""
+
+    with open(f'{home}/bzctl/config/{args.prefix}.json', 'w', encoding='utf-8') as f:
+        json.dump(yaml.load(document, Loader=yaml.FullLoader),
+                  f, ensure_ascii=False, indent=4)
+
+def save_host(args):
+    document=f"""{args.save_host}"""
+
+    with open(f'{home}/bzctl/config/host.json', 'w', encoding='utf-8') as f:
+        json.dump(yaml.load(document, Loader=yaml.FullLoader),
+                  f, ensure_ascii=False, indent=4)
+
+
+def configuration():
+
+    if os.path.isfile(f"{home}/bzctl/config/Bearer.json") or os.path.isfile(f"{home}/bzctl/config/bearer.json") : prefix = 'Bearer'
+    else: print("You must first define your token with its prefix and host. Use token --prefix {prefix} --save_token '{token}'. Use -h for help."); exit(0)
+    
+
+    with open(f'{home}/bzctl/config/{prefix}.json') as f:
+        token = json.load(f) 
+
+    with open(f'{home}/bzctl/config/host.json') as f:
+        host = json.load(f) 
+
+
+    configuration = kubernetes.client.Configuration()
+    # Configure API key authorization: BearerToken
+    configuration.api_key['authorization'] = token
+    # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+    configuration.api_key_prefix['authorization'] = prefix
+
+    # Defining host is optional and default to http://localhost
+    configuration.host = host
+
+    return configuration
+
+
+
+def main():
+
+    if not os.path.isdir(f"{home}/bzctl"): os.makedirs(f"{home}/bzctl")
+    
+
+#region Prefix Correction
+    if len(sys.argv) > 1 and sys.argv[1][0] != '-':
+
+        if sys.argv[1] == 'run':
+            sys.argv[1] = "---run"
+
+        if sys.argv[1] == 'delete':
+            sys.argv[1] = "---delete"
+
+        if sys.argv[1] == 'delete-all':
+            sys.argv[1] = "---delete_all"
+        
+        if sys.argv[1] == 'token':
+            sys.argv[1] = "---token"
+
+        if sys.argv[1] == 'host':
+            sys.argv[1] = "---host"
+#endregion
+    
+    PARSER = argparse.ArgumentParser()
+
+# region PARSER
+    PARSER.add_argument(
+        '---run',               help='Use this if you want to deploy a pod', action='store_true')
+    PARSER.add_argument(
+        '---delete',            help='Use this if you want to delete a pod', action='store_true')
+    PARSER.add_argument(
+        '---delete_all',        help='Use this if you want to delete all of your pods', action='store_true')
+    PARSER.add_argument(
+        '---token',             help='Use this to save the token and the prefix into a file.', action='store_true')
+    PARSER.add_argument(
+        '---host',              help='Use this to save the host into a file.', action='store_true')
+    PARSER.add_argument(
+        '--image',      '-i',   help="Specify the image's name that will be pulled", type=str)
+    PARSER.add_argument(
+        '--prefix',     '-p',   help="Prefix of the token", type=str)
+    PARSER.add_argument(
+        '--save_token', '-st',  help="Type the thing to be saved", type=str)
+    PARSER.add_argument(
+        '--save_host',  '-sh',  help="Type the thing to be saved", type=str)
+    PARSER.add_argument(
+        '--version',    '-v',   help="Specify the image's version that will be pulled", type=str)    
+    PARSER.add_argument(
+        '--http',               help='This is a geth command. Enable the HTTP-RPC server', action='store_true')
+    PARSER.add_argument(
+        '--http.corsdomain',    help='Comma separated list of domains from which to accept cross origin requests (browser enforced)', type=str)
+    PARSER.add_argument(
+        '--http.api',           help="API's offered over the HTTP-RPC interface", type=str)
+    PARSER.add_argument(
+        '--rpc',                help="Enable the HTTP-RPC server (deprecated and will be removed June 2021, use --http)", action='store_true')
+    PARSER.add_argument(
+        '--rpccorsdomain',      help="Comma separated list of domains from which to accept cross origin requests (browser enforced) (deprecated and will be removed June 2021, use --http.corsdomain)", type=str)
+# endregion
+
+    args = PARSER.parse_args()
+
+    if args.run:
+        run(args, configuration())
+
+    if args.delete:
+        delete(args, configuration(), all=False)
+
+    if args.delete_all:
+        delete(args, configuration(), all=True)
+
+    if args.token:
+        save_token(args)
+
+    if args.host:
+        save_host(args)
+
+
+main()
