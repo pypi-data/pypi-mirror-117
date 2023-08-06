@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jupy5_mcintyre.egg-info/PKG-INFO
+src/jupy5_mcintyre.egg-info/SOURCES.txt
+src/jupy5_mcintyre.egg-info/dependency_links.txt
+src/jupy5_mcintyre.egg-info/requires.txt
+src/jupy5_mcintyre.egg-info/top_level.txt
+src/p5/__init__.py
+src/p5/sketch.py
+src/p5/templates/sketch.html
