@@ -1,0 +1,2 @@
+include requirements.txt
+include markdown_predictions/default_files/*.json
