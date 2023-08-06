@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mac_notifier/__init__.py
+mac_notifier/main.py
+mac_notifier.egg-info/PKG-INFO
+mac_notifier.egg-info/SOURCES.txt
+mac_notifier.egg-info/dependency_links.txt
+mac_notifier.egg-info/entry_points.txt
+mac_notifier.egg-info/requires.txt
+mac_notifier.egg-info/top_level.txt
