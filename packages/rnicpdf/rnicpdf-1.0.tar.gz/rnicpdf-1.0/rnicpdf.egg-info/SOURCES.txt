@@ -1,0 +1,9 @@
+README.md
+setup.py
+rnicpdf/__init__.py
+rnicpdf/pdf2image.py
+rnicpdf/pdf2text.py
+rnicpdf.egg-info/PKG-INFO
+rnicpdf.egg-info/SOURCES.txt
+rnicpdf.egg-info/dependency_links.txt
+rnicpdf.egg-info/top_level.txt
