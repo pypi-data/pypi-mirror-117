@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: lin-algebra
+Version: 1.0.0
+Summary: This package includes functions which can help with many linear algebra problems.
+Home-page: https://github.com/Kabanosk/lin_algebra
+Author: Wojciech Fiolka
+Author-email: fiolkawojciech@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Kabanosk/lin_algebra/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+This package includes functions which can help with many linear algebra problems.
+
