@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+wumpy/__init__.py
+wumpy.egg-info/PKG-INFO
+wumpy.egg-info/SOURCES.txt
+wumpy.egg-info/dependency_links.txt
+wumpy.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+[project]
+name = "Wumpy"
+version = "0.0.0"
+description = "Imagine an efficient and extensible Discord API wrapper"
+
+license = {file = "LICENSE"}
+authors = [{name = "Bluenix", email = "bluenixdev@gmail.com"}]
+
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+
+[project.urls]
+repository = "https://github.com/Bluenix2/wumpy"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
