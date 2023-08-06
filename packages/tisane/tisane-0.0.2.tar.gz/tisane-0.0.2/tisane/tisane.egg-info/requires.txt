@@ -1,0 +1,17 @@
+pandas
+networkx
+z3-solver
+statsmodels
+more-itertools
+pydot
+tweedie
+Flask
+plotly
+dash
+dash-bootstrap-components
+dash-daq
+patsy
+coverage
+pytest-cov
+pytest
+black
