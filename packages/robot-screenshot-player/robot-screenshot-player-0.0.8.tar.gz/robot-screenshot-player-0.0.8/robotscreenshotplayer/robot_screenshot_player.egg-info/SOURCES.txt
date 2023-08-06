@@ -1,0 +1,7 @@
+README.md
+setup.py
+robotscreenshotplayer/ScreenShotPlayer.py
+robotscreenshotplayer/robot_screenshot_player.egg-info/PKG-INFO
+robotscreenshotplayer/robot_screenshot_player.egg-info/SOURCES.txt
+robotscreenshotplayer/robot_screenshot_player.egg-info/dependency_links.txt
+robotscreenshotplayer/robot_screenshot_player.egg-info/top_level.txt
