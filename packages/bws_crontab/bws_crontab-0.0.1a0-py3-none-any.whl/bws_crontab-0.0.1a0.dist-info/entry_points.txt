@@ -1,0 +1,4 @@
+[console_scripts]
+bws-crontab=bws_crontab:crontab_cli
+flit=flit:main
+
