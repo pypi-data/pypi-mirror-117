@@ -1,0 +1,10 @@
+fitz/__init__.py,sha256=srgzzWYVzOvR27EWGcMPHwf6Rrio4DTFRkwv9_UqWOQ,19953
+fitz/fitz.py,sha256=K3TfTZwXFrBXg1bGzK84844EM6os0t3qd3tHxLVKtns,305851
+fitz/utils.py,sha256=P5v6C8Qza1JIg7uPnOy5IggU2xaSmzxMlbY69mblhMs,170899
+fitz/_fitz.cpython-39-x86_64-linux-gnu.so,sha256=1hOM5teTMpldqSSDIUD0Vz1yDN0Wl8_Z1J8mx3hmYcg,13627496
+fitz/__main__.py,sha256=U0q0jgsyxHJR-QAo_6QGODTXTKUo8WIB-qh6IgQoEx8,39683
+PyMuPDF-1.18.17.dist-info/top_level.txt,sha256=9uNJ8fT1ilNpuUmRTaqNxkoxurvePTMyiCdNodpKY4I,5
+PyMuPDF-1.18.17.dist-info/WHEEL,sha256=u068djhQadWB5Cpg73zJkoU_srgtd6zcF9RJVkaqWXU,148
+PyMuPDF-1.18.17.dist-info/METADATA,sha256=0lZMvR4d9C-La6pBE80AClsRaLkG5AUtgdCBlEFWSdA,4976
+PyMuPDF-1.18.17.dist-info/COPYING,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+PyMuPDF-1.18.17.dist-info/RECORD,,
