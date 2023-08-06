@@ -1,0 +1,13 @@
+kvcd/__init__.py,sha256=Jk6UqWmNaebt4JjlYeM4kSnswtQXkUX94Zws8SjAIeY,114
+kvcd/config.py,sha256=MIupZfHGByqXyF4mVAr1fcGx6FaTlIR0FQiizwq6f6g,1763
+kvcd/main.py,sha256=76Ja3QTtCG96SMLkGyRXXpWoNggLe2YcsrP4J1HfINk,2519
+kvcd/utils.py,sha256=PFYOo51EqiORrM7RjpUZUKsJAqZZ1erlLJ0NjYsDZqw,943
+kvcd/vmware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kvcd/vmware/vcloud_helper.py,sha256=YJHXNsIENpOUD7nnsv5jSjxNzinliOfRF7BOju0t3Bc,4555
+kvcd/vmware/vcloud_vapp.py,sha256=WdzFlZO8y2p5GrjGwaYrrzC2hzhvtbEFVkgaCfMcBYI,25463
+kvcd-0.1.0.dist-info/AUTHORS.md,sha256=O1rpA-8Fwg2qnwz_QpSLTgubJMUvfDEjzo2hnAy7cUE,102
+kvcd-0.1.0.dist-info/LICENSE,sha256=zg6AaPOR6skL38Uv0aEDMOX75tYUnV8qitzS9ZAjD0E,1076
+kvcd-0.1.0.dist-info/METADATA,sha256=HYjpQedoUi0JoZUXpnZ_YUWLMWBFNCHY0rhCIlHSNNA,7870
+kvcd-0.1.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+kvcd-0.1.0.dist-info/top_level.txt,sha256=Uww5hvAe79AYQA9cJRK4dL0Rc79H7Wg9_yQtmJK3FJA,5
+kvcd-0.1.0.dist-info/RECORD,,
