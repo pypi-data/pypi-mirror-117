@@ -1,0 +1,3 @@
+[console_scripts]
+maper = maper.__main__:entry
+

@@ -1,0 +1,15 @@
+README.md
+setup.py
+maper/__init__.py
+maper/__main__.py
+maper/bibtex.py
+maper/create.py
+maper/main.py
+maper/show.py
+maper/util.py
+maper.egg-info/PKG-INFO
+maper.egg-info/SOURCES.txt
+maper.egg-info/dependency_links.txt
+maper.egg-info/entry_points.txt
+maper.egg-info/requires.txt
+maper.egg-info/top_level.txt
