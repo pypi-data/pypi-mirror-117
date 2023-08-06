@@ -1,0 +1,14 @@
+crossedwires/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossedwires/base_class.py,sha256=JB3p6CPecawPk3N6Po0rzR5yXa0qHB0Dea9UHNSafOU,5792
+crossedwires/cifar10/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossedwires/cifar10/densenet121/__init__.py,sha256=HtlT1jzNm-9k2O4NXdkotKVoD1vbsugSpkM06vKA-xs,119
+crossedwires/cifar10/densenet121/densenet121_results.py,sha256=1m8tCM71jvzCM_if-q_YgvhfAoSgEgK6iNg598uqd0I,2222
+crossedwires/cifar10/resnet50/__init__.py,sha256=iTZGncKrk1Av8oUafBFGu0Z-e5_t6vTtANpuyFMdwhU,7
+crossedwires/cifar10/resnet50/resnet50_results.py,sha256=Bn9lqEiKXMdR-w7AF981kQSiDBwFN-lstSE55g_zgRE,2223
+crossedwires/cifar10/vgg16/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crossedwires/cifar10/vgg16/vgg16_results.py,sha256=xzLYLftQIcL-6kcMIrvWAg5hMTrkXt2g_bMbdUNYvC8,2243
+crossedwires-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+crossedwires-0.0.1.dist-info/METADATA,sha256=q7KGnsxnRZrctTQygIRn2_ABfKI-md_CapS7qpaxPsw,840
+crossedwires-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+crossedwires-0.0.1.dist-info/top_level.txt,sha256=dVn-pzspYC1QMoPObCVY6NNc-VQP3bgJaGb8p-H0H1Y,13
+crossedwires-0.0.1.dist-info/RECORD,,
