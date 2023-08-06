@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: histogram-py
+Version: 0.1.1
+Summary: A pandas extension to open Dataframes & Series in histogram.dev
+Home-page: https://histogram.dev
+Keywords: pandas,histogram,plot,histogram.dev
+Author: Tyler Cosgrove
+Author-email: tyler@datawhys.ai
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas (>=1.0,<2.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Repository, https://github.com/datawhys/histogram-py
+Description-Content-Type: text/markdown
+
+# Histogram
+
+A pandas extension to open Dataframes & Series in histogram.de
+
+
+## Usage/Examples
+
+```python
+import histogram # Import at least once, anywhere
+
+df.histogram.plot()
+
+```
+
+
