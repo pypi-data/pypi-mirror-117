@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+RPi_water_tools.egg-info/PKG-INFO
+RPi_water_tools.egg-info/SOURCES.txt
+RPi_water_tools.egg-info/dependency_links.txt
+RPi_water_tools.egg-info/requires.txt
+RPi_water_tools.egg-info/top_level.txt
+test/test.py
+water_tools/__init__.py
+water_tools/monitors.py
+water_tools/ph_control.py
