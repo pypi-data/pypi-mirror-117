@@ -1,0 +1,7 @@
+weconnect
+HAP-python[qrcode]==4.1.0
+sqlalchemy==1.4.23
+psycopg2-binary
+requests
+flask
+flask_wtf
