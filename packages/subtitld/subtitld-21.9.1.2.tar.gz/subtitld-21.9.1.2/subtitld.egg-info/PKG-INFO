@@ -1,0 +1,61 @@
+Metadata-Version: 1.1
+Name: subtitld
+Version: 21.9.1.2
+Summary: Subtitld
+Home-page: https://subtitld.org
+Author: Jonatã Bolzan Loss
+Author-email: subtitld@jonata.org
+License: Proprietary
+Description: 
+        ```
+        sudo apt install ffmpeg libmpv1
+        ```
+        
+        Also, Subtitld is written using Python version 3. The majority of modern Linux distributions already have this version installed or at lease available. Make sure you have Python 3 on your system. Windows users will need to install it.
+        
+        ### Running from source
+        
+        You will need to download Subtitld source code. You can download a Zip or Tar package from GitLab project page, but maybe an easier way to download the source code is using `git clone` command, like this:
+        
+        ```
+        git clone https://gitlab.com/jonata/subtitld.git
+        ```
+        
+        Considering that you have `ffmpeg` and `libmpv` installed, and Python 3 is available on your system, you can install all needed packages using `pip`.
+        
+        Using the terminal, go to the subtitld folder you just downloaded or cloned and run the `pip install` command:
+        
+        ```
+        sudo python3 -m pip install -r requirements.txt
+        ```
+        
+        Now you are able to run Subtitld from source. Run the following code:
+        
+        ```
+        python3 subtitld.py
+        ```
+        
+        ## Made possible mainly by
+        
+        * [PyQt5](https://www.riverbankcomputing.com/software/pyqt/) - The Qt5 GUI library for Python
+        * [ffmpeg](https://ffmpeg.org/) - The absolute solution for media manipulation
+        * [libmpv](https://github.com/mpv-player/mpv) - The powerful MPV media playback engine
+        
+        ## Contributing
+        
+        If you find a bug or want to suggest a new feature, feel free to [report an issue](https://gitlab.com/jonata/subtitld/-/issues). Also, consider [supporting the project](https://subtitld.jonata.org/support).
+        
+        ## License
+        
+        This project is licensed under the GPL3 License - see the [LICENSE](LICENSE) file for details
+        
+Keywords: subtitld
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Multimedia
+Classifier: Programming Language :: Python :: 3 :: Only

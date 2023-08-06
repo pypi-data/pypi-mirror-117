@@ -1,0 +1,3 @@
+[gui_scripts]
+subtitld = subtitld.__main__:main
+
