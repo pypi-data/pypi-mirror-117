@@ -1,0 +1,7 @@
+README.md
+setup.py
+dlc2action.egg-info/PKG-INFO
+dlc2action.egg-info/SOURCES.txt
+dlc2action.egg-info/dependency_links.txt
+dlc2action.egg-info/requires.txt
+dlc2action.egg-info/top_level.txt
