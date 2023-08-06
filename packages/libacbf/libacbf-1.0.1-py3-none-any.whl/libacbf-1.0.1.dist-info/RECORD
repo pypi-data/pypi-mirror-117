@@ -1,0 +1,16 @@
+libacbf/__init__.py,sha256=0HNzhztni0B1i7qT2jt4cPlLRtOh2KgldtzYQt2iLTo,49
+libacbf/archivereader.py,sha256=-Xr9Pk3C7AIVPpxQfB9KN4sv6k43XlGgj4hqC12iRdc,12436
+libacbf/body.py,sha256=64We73XPCx3YyigSXTVFPk4gwpMOpP5YhTMlqYcSXU8,14387
+libacbf/bookdata.py,sha256=PvZLURdOcJWVfEvM_PGEyLYUX8gVRYzCjqnZ1rO6xAw,988
+libacbf/constants.py,sha256=rVkjNB3IIkJWssLvIGsksGUkwj4H6FiXuciwMnn-4es,2520
+libacbf/exceptions.py,sha256=jIf_Lgk1QtrAK8gMJozhgqC6WEh_OTffx59Kgi4qkqU,483
+libacbf/helpers.py,sha256=UjM5vHtDhEbl7yMod3VoTDbwuxvRlcN4hPSE44fFh_w,2268
+libacbf/libacbf.py,sha256=nAL4b7XcNv-JwR7ndyddgnYgFJ2jC3B4CMiMLM2HnJs,58502
+libacbf/metadata.py,sha256=1boWf7GXRDbvvV8d0TJmSIEbKpWkZZeQUZZ05a5dGsQ,7731
+libacbf/schema/acbf-1.0.xsd,sha256=uK0zYeb9yhD6aA6VwBc-IxFmVV8sf6_OK_AxQ-vu-uU,30142
+libacbf/schema/acbf-1.1.xsd,sha256=YoEQqXieeyvUNGNMoFfF95cxS4kCBgvA1_TrU-mYFZw,35093
+libacbf-1.0.1.dist-info/LICENSE,sha256=EHIWtUtSt_n1A9jDJn6f3x-7NmKJQZkYC1KBHVgUsc0,1516
+libacbf-1.0.1.dist-info/METADATA,sha256=jxqDcoHd3Zx0VrGOe55cucXyhgBtaUqAm5TM4ESAZJ8,1630
+libacbf-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+libacbf-1.0.1.dist-info/top_level.txt,sha256=RRi7Ex2X7lqhSEWFv21tDsRqiQoNRd0oTS48zSMai8I,8
+libacbf-1.0.1.dist-info/RECORD,,
