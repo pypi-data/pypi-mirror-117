@@ -1,0 +1,7 @@
+[console_scripts]
+actorinfo = converter.ContextMenu:main
+dtb = converter.DatapackToBoth:main
+dtc = converter.DatapackToCCPacks:main
+dtm = converter.DatapackToMod:main
+dto = converter.DatapackToOrigins:main
+
