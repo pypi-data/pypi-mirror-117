@@ -1,0 +1,10 @@
+README.md
+setup.py
+PyTerminalColor/TerminalColor.py
+PyTerminalColor/__init__.py
+PyTerminalColor/__main__.py
+PyTerminalColor.egg-info/PKG-INFO
+PyTerminalColor.egg-info/SOURCES.txt
+PyTerminalColor.egg-info/dependency_links.txt
+PyTerminalColor.egg-info/requires.txt
+PyTerminalColor.egg-info/top_level.txt
