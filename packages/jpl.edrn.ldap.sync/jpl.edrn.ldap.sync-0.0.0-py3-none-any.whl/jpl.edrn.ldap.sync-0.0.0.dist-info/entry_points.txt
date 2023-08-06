@@ -1,0 +1,3 @@
+[console_scripts]
+all-edrn-sync = jpl.edrn.ldap.sync.main:main
+
