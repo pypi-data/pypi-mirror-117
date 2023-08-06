@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: wagtailpurge
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Andy Babic
+Author-email: andyjbabic@gmail.com
+License: MIT
+Keywords: wagtail cms cache caches purge clear invalidate renditions utility
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 2
+Requires-Python: >=3.6
+Provides-Extra: lint
+Provides-Extra: test
+License-File: LICENSE
+
+# wagtail-purge
+Trigger cache purges from within the Wagtail CMS
+
+
