@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aiorocksdb
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/xdusongwei/aiorocksdb
+Author: songwei
+Author-email: songwei@songwei.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.0
+Provides-Extra: test
