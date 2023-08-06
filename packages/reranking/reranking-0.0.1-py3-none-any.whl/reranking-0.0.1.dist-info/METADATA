@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: reranking
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/yuanlonghao/reranking
+Author: Longhao Yuan
+Author-email: yuanlonghao1013@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# reranking
+Re-rank items returned by a machine learned model to satisfy any specified attribute distribution of items.
+
+## TODOs:
+- Refactor `metrics.py` and add more evaluation metrics.
+- Write documentations.
+- Pytest.
+- Wrap a package and publish.
+
+
