@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/doiowa.egg-info/PKG-INFO
+src/doiowa.egg-info/SOURCES.txt
+src/doiowa.egg-info/dependency_links.txt
+src/doiowa.egg-info/entry_points.txt
+src/doiowa.egg-info/requires.txt
+src/doiowa.egg-info/top_level.txt
