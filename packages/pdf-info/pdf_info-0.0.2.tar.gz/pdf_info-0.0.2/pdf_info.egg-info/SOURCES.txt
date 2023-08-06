@@ -1,0 +1,7 @@
+setup.py
+pdf_info/__init__.py
+pdf_info.egg-info/PKG-INFO
+pdf_info.egg-info/SOURCES.txt
+pdf_info.egg-info/dependency_links.txt
+pdf_info.egg-info/requires.txt
+pdf_info.egg-info/top_level.txt
