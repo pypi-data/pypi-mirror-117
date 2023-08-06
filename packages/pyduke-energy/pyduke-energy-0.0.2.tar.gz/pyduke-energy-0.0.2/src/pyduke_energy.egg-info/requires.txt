@@ -1,0 +1,6 @@
+aiohttp
+asyncio
+python-dateutil
+
+[example]
+jsonpickle
