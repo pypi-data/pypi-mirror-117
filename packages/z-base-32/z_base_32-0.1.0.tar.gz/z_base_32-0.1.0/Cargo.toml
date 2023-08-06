@@ -1,0 +1,31 @@
+[package]
+name = "z-base-32"
+version = "0.1.0"
+edition = "2018"
+authors = ["Matus Ferech <matus.ferech@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/matusf/z-base-32"
+readme = "README.md"
+description = "z-base-32: human-oriented base-32 encoding"
+keywords = ["zbase32", "base32", "encode", "decode", "python"]
+categories = ["encoding"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "zbase32"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+python = ["pyo3"]
+
+[dependencies]
+
+[dependencies.pyo3]
+version = "0.14.2"
+features = ["extension-module"]
+optional = true
+
+[dev-dependencies]
+quickcheck = "1"

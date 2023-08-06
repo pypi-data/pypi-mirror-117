@@ -1,0 +1,4 @@
+- write doc: https://doc.rust-lang.org/rustdoc/how-to-write-documentation.html
+- add GH actions: pyo3 issue with example
+	- publish via GH actions & maturin
+
