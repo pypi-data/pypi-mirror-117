@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: token_authn
+Version: 0.3.4
+Summary: Token Authentication
+Home-page: https://github.com/aravindalbert/authentication
+Author: Aravind R
+Author-email: aravind.gradient@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: Authentication
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
