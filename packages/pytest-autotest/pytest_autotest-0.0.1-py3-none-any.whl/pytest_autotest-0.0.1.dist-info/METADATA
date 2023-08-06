@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytest-autotest
+Version: 0.0.1
+Summary: This fixture provides a configured "driver" for Android Automated Testing, using uiautomator2.
+Home-page: https://github.com/fanite/pytest-autotest
+Author: fanite
+Author-email: fanite@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+Requires-Dist: pytest-html
+Requires-Dist: Appium-Python-Client
+Requires-Dist: opencv-python
+Requires-Dist: aircv
+
+sadasd
+
+
