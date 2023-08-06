@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/lin_algebra/Matrix.py
+src/lin_algebra/Vector.py
+src/lin_algebra/__init__.py
+src/lin_algebra.egg-info/PKG-INFO
+src/lin_algebra.egg-info/SOURCES.txt
+src/lin_algebra.egg-info/dependency_links.txt
+src/lin_algebra.egg-info/top_level.txt
