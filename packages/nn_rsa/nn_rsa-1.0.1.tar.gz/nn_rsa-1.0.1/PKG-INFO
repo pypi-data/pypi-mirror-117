@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: nn_rsa
+Version: 1.0.1
+Summary: rsa加密
+Home-page: http://www.nnzhp.cn/
+Author: HanyangNiu
+Author-email: niuhanyang@163.com
+License: MIT
+Description: 这是一个基于rsa模块模块封装的加密模块
+Keywords: rsa nn_rsa
+
+关于当前包的一些关键字，方便PyPI进行分类。
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
