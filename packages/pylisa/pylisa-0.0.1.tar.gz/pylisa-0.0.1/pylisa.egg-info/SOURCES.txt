@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+pylisa.egg-info/PKG-INFO
+pylisa.egg-info/SOURCES.txt
+pylisa.egg-info/dependency_links.txt
+pylisa.egg-info/not-zip-safe
+pylisa.egg-info/top_level.txt

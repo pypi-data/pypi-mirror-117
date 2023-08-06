@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pylisa
+Version: 0.0.1
+Summary: Lidar light scattering augmentation
+Home-page: UNKNOWN
+Author: Velat Kilic
+Author-email: velatkilic@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: lidar,augmentation,scattering,lidar augmentation
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
