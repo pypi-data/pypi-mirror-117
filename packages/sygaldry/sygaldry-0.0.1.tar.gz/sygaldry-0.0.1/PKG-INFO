@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sygaldry
+Version: 0.0.1
+Summary: It's Sygaldry
+Author-email: "Rohan B. Dalton" <rohan@rohandalton.io>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/RohanDalton/sygaldry
+
+# Sygaldry
+
+> whereby an artificer uses runes and delicate metalwork to create items capable of amazing feats.
+
+Sygaldry is a library for creating Python objects from configuration files.
+
+
