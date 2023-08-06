@@ -1,0 +1,9 @@
+jupytery_federation-0.0.5.data/data/etc/jupyter/jupyter_server_config.d/jupytery_federation.json,sha256=rSffV83LMWsZdypVcIaD7svcsxD34QcW9CoA1LNOtB4,112
+jupytery_federation-0.0.5.data/data/jupytery_federation/static/favicon.ico,sha256=u12CyQk0yCFEgwsB72k82CNtJUw_zevFuJqncWExafY,4286
+jupytery_federation-0.0.5.data/data/jupytery_federation/templates/error.html,sha256=nhrch5S_3q41SZ-0kAQMjrV-KmHnyLhYCmNM3hnIyB4,457
+jupytery_federation-0.0.5.data/data/jupytery_federation/templates/page.html,sha256=d50I6PSrAHO4E3yjg714j8kY8s58or9-QqxOHj5AN3E,591
+jupytery_federation-0.0.5.dist-info/METADATA,sha256=ZAJTauLNEJYXLb52eOkEKaAKKHAEGRgp4Xf5kdfNO2I,468
+jupytery_federation-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jupytery_federation-0.0.5.dist-info/entry_points.txt,sha256=o2muJzkESmqsbs6LXjeNh3US34POy3JNFctf1r2FSeM,78
+jupytery_federation-0.0.5.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+jupytery_federation-0.0.5.dist-info/RECORD,,
