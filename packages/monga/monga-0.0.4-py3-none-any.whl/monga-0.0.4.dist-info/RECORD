@@ -1,0 +1,14 @@
+monga/__init__.py,sha256=3E6d3Inf5mdEO4BHEhb51h0M6h7QKG8kbuu1PXgAdZU,82
+monga/aggregate.py,sha256=2SAELqgtncPEIzkm_xFr_3AYnaOt32TAet-zyQr4WxY,203
+monga/count.py,sha256=bC5Va9DSRtKjrpNGc33oiVm691f-2jIEBpgftM771AU,265
+monga/filter.py,sha256=GvbE6Orv6LoDQre1jYG0a2DgLJBPZG1LLe1k2qAi3Ks,223
+monga/find.py,sha256=ZpRojq9kajmf5K-V11mgCcZKRs6SZ9KK3tpy5xrniYA,168
+monga/find_one.py,sha256=26KR-EWSLiKcicIZHDlWyTFTYNRakHvW8PjRN0NYBsg,169
+monga/find_one_and_update.py,sha256=XkYeTN1knGR_xkW9c-dAaK1wusDw-DQ5l-lFMvjhvt8,327
+monga/insert_one.py,sha256=aGn0e45sgzViwjymoE2FKpTRlqqHyY3xha4GxG1BZPU,751
+monga/monga.py,sha256=IlnLe_5oOtQlXwKq59mCCkX82IoIsh16v7O-D2G-tCs,993
+monga-0.0.4.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+monga-0.0.4.dist-info/METADATA,sha256=aznSeB-WLVzSfINwhl3VOUU4Mewbwfg1Wl5U7SPj1lQ,546
+monga-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+monga-0.0.4.dist-info/top_level.txt,sha256=sQZTDpCbbw3WO7JuyGCiiqGD7AcXc2D0pwVrCUGVkNI,6
+monga-0.0.4.dist-info/RECORD,,
