@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: TypeTools
+Version: 1.1.5
+Summary: Help with enforcing types.
+Home-page: UNKNOWN
+Author: Alan Bagel
+Author-email: jiuprogrammer@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0.0
+Requires-Dist: setuptools (>=24.2.0)
+Requires-Dist: pip (>=9.0.0)
+
+Help with enforcing types.
+
