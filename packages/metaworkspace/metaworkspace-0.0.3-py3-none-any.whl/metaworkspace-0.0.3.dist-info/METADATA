@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: metaworkspace
+Version: 0.0.3
+Summary: Python tool simplyfing work with Metacity Modules
+Home-page: https://github.com/MetacitySuite/Metacity-Workspace
+Author: Metacity
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi (>=0.68.1)
+Requires-Dist: metacity (>=0.0.11)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: uvicorn (>=0.15.0)
+
+# Metacity Workspace
+
+Metacity Workspace is a Python package, which is also the main Metacity application. For easy installation, follow the instructions described here.
+
+https://github.com/MetacitySuite/Metacity-Guide
+

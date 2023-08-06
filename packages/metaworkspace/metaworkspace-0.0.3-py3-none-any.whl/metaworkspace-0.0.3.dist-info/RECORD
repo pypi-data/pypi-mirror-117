@@ -1,0 +1,15 @@
+metaworkspace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metaworkspace/__main__.py,sha256=MNMhejxD9dL-V44I0UobSYH9qAk6GjaVo3NsWWzowRU,769
+metaworkspace/init.py,sha256=4vuc2QMs8VBHwZJGngSogpxYTy6vtTEK_UO0rl27XBo,189
+metaworkspace/install.py,sha256=2hkCFiS1vXcuv75sdDzQ_BbXfczXkNjvgwSswRGQu74,2513
+metaworkspace/run.py,sha256=tDQ7LJ9xrx5pAb6NBf4ptxbEeBrzjUX1Md8zLl_mioY,529
+metaworkspace/tree.py,sha256=p2es0QzSCO0qaWgxef21bMIexOsEzn0_U2SEPKVAVT4,1014
+metaworkspace/workspace.py,sha256=_FWgHq8MtyOFsg4BFi2zUzkCy-njhbhdZ2TwFV5JwEs,1178
+metaworkspace/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metaworkspace/api/api.py,sha256=XCv00Dd_YOE_neguZ3Gxl8iWKw8fZ6yVsGQancD7zXQ,692
+metaworkspace/api/project.py,sha256=2gC2dHHGXjJFA1FoAypfXFWHtOFOXLJZ8w4j2H73hEw,536
+metaworkspace/api/workspace.py,sha256=__TV7Ljt3c4A7etQ-8_nr2gokwRd1dHHSOUrYx6qQ5s,452
+metaworkspace-0.0.3.dist-info/METADATA,sha256=IpTCwsqP8-lFMpm1vI8NpfCa2GS332H_O8SvdiMKW8g,798
+metaworkspace-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+metaworkspace-0.0.3.dist-info/top_level.txt,sha256=GuuEuDoUUVvaWDgeESw-7y3JnNOk_faMC6cMwTNFZnI,14
+metaworkspace-0.0.3.dist-info/RECORD,,
