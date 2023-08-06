@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+aws_xray_sqs_lambda_segment_shim.egg-info/PKG-INFO
+aws_xray_sqs_lambda_segment_shim.egg-info/SOURCES.txt
+aws_xray_sqs_lambda_segment_shim.egg-info/dependency_links.txt
+aws_xray_sqs_lambda_segment_shim.egg-info/requires.txt
+aws_xray_sqs_lambda_segment_shim.egg-info/top_level.txt
