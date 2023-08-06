@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: target-localjson
+Version: 0.1.1
+Summary: A Singer Target for save data to local json files
+Author: Wallace Prado
+Author-email: wprado@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: singer-python (>=5.12.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+# target-localjson
+
+## Intro
+
+This Singer Target implements a simple way persist data as local json files.
+
+## Install
+
+pip install target-localjson
+
+## Config
+
+To execute the Tap in Sync Mode you have to provide a config.json file.
+
+There is only one required key: dest_dir. It must be a string and represents the destination directory where json files will be persisted. 
+
+For each stream received, the Target creates a subdirectory and puts the json files there.
+
+**Requires write permission on dest_dir.**
+
+## Run Target
+
+e.g.
+
+    tap-<your-choice> -c tap_sample_config.json | target-localjson -c sample_config.json
