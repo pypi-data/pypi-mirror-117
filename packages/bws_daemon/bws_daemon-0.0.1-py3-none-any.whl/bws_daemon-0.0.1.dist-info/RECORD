@@ -1,0 +1,10 @@
+bws_daemon/__init__.py,sha256=CGd08mEBKk-YLI7ge0yV_dw16tS6-nPdb1PgTfrK_f8,233
+bws_daemon/cli.py,sha256=Wef1LRTrWMlk0OptSaut9YWvKt3nGuMgiEbNE5y02Ow,1975
+bws_daemon/daemon.py,sha256=tR1z3uh44IASCJ-S75nB4fVlF0wm4g7gF7_U_iQtGPM,4302
+bws_daemon/manager.py,sha256=ypYMLNH6sB4KWrnS2pMgfF_RL3fkAPk1gh2-13gjRtg,4627
+bws_daemon/utils.py,sha256=GuncE30kNvawp8y3zwWGHK4_7L6AZGQg4LKJX5EYJyE,725
+bws_daemon-0.0.1.dist-info/entry_points.txt,sha256=wmrIaSAgI8bb_VsTIEs-BglCxgl2fDUis0QNsfJNuKw,71
+bws_daemon-0.0.1.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+bws_daemon-0.0.1.dist-info/WHEEL,sha256=VUbF57hf4yRZWWrOOjp25Fr4BQX9EtnVSbnP2vNxHDM,81
+bws_daemon-0.0.1.dist-info/METADATA,sha256=eCsSmp0iDvg_XPtSslgGIqMiHvJdTBKjJhmXKim1KSw,656
+bws_daemon-0.0.1.dist-info/RECORD,,

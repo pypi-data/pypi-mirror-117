@@ -1,0 +1,4 @@
+[console_scripts]
+bws-daemon=bws_daemon:bws_daemon_cli
+flit=flit:main
+
