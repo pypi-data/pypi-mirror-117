@@ -1,0 +1,3 @@
+[console_scripts]
+pxdgen = _pxdgen:main
+
