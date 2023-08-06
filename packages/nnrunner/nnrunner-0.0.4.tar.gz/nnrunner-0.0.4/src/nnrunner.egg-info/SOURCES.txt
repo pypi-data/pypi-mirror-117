@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/nnrunner/__init__.py
+src/nnrunner/main.py
+src/nnrunner/new.py
+src/nnrunner.egg-info/PKG-INFO
+src/nnrunner.egg-info/SOURCES.txt
+src/nnrunner.egg-info/dependency_links.txt
+src/nnrunner.egg-info/requires.txt
+src/nnrunner.egg-info/top_level.txt
