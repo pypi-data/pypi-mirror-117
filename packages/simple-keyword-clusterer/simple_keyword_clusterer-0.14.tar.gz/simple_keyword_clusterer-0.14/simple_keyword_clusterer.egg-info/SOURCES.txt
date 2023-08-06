@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+sample.py
+sample_jobs.txt
+setup.py
+simple_keyword_clusterer/clustering.py
+simple_keyword_clusterer/preprocessing.py
+simple_keyword_clusterer/simple_keyword_clusterer.py
+simple_keyword_clusterer.egg-info/PKG-INFO
+simple_keyword_clusterer.egg-info/SOURCES.txt
+simple_keyword_clusterer.egg-info/dependency_links.txt
+simple_keyword_clusterer.egg-info/requires.txt
+simple_keyword_clusterer.egg-info/top_level.txt
