@@ -1,0 +1,15 @@
+numpy
+pandas
+seaborn
+matplotlib
+tensorflow>=2.0
+tensorflow-probability>=0.12
+arviz
+scipy
+anndata
+patsy
+sklearn
+scanpy
+statsmodels
+rpy2
+scikit-bio
