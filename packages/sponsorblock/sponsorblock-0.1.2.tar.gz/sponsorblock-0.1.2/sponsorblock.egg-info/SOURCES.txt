@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+sponsorblock.egg-info/PKG-INFO
+sponsorblock.egg-info/SOURCES.txt
+sponsorblock.egg-info/dependency_links.txt
+sponsorblock.egg-info/requires.txt
+sponsorblock.egg-info/top_level.txt
