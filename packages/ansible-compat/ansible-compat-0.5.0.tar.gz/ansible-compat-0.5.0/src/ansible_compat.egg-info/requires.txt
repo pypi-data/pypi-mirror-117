@@ -1,0 +1,13 @@
+PyYAML
+
+[:python_version <= "3.7"]
+cached_property~=1.5
+
+[test]
+coverage
+flaky
+pip-tools
+pytest
+pytest-markdown
+pytest-mock
+pytest-plus
