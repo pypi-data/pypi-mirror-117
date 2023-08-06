@@ -1,0 +1,8 @@
+MANIFEST.in
+README.txt
+setup.py
+krithicprimefinder/__init__.py
+krithicprimefinder.egg-info/PKG-INFO
+krithicprimefinder.egg-info/SOURCES.txt
+krithicprimefinder.egg-info/dependency_links.txt
+krithicprimefinder.egg-info/top_level.txt
