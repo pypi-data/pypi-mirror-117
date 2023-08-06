@@ -1,0 +1,12 @@
+spud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spud/__main__.py,sha256=g-_wUM1dWO-BO1SwMVkMtDe5zXrYtnfmmiiOfgx5HFw,5334
+spud/api.py,sha256=-fX1bsquxxLfbw2zOdV2yyF-uarrcT5ir9CCVb5f3lY,4932
+spud/settings.py,sha256=iIL8Up5rS0tEre-KQYGdlyFBpzLP75qnzqQmyVUJiBQ,144
+spud/types.py,sha256=nN7bqeqUNC-KwERtygRJUYb9mo4Sw7QR49tzxEvuPEs,456
+spud/utils.py,sha256=kII_BWBg4zQ0-GVOcLYPsVJhyf-0rq5_QAoP82z-vYA,4519
+spud_mc-1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+spud_mc-1.0.dist-info/METADATA,sha256=QJ9zLQTfgTRetP0iH0zxPPQEzQ73SBSAl439HhcFvkk,2080
+spud_mc-1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+spud_mc-1.0.dist-info/entry_points.txt,sha256=Bs7Tq-de6gdNMQ1pep6Gz8NFs7tA7PYWYCgfvWI1S-g,45
+spud_mc-1.0.dist-info/top_level.txt,sha256=sKnJPX1Z6zmvB6P2wc9pO7l_GNtZzeqLYSAAL-HTr44,5
+spud_mc-1.0.dist-info/RECORD,,
