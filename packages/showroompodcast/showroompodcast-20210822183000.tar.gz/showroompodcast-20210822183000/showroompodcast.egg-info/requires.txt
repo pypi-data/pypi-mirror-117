@@ -1,0 +1,5 @@
+asynccpu
+asyncffmpeg
+click>=7.0
+slack-sdk
+yamldataclassconfig
