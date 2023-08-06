@@ -1,0 +1,235 @@
+root_dir: '/data/rajewsky/home/marjens/slide_seq'
+microscopy_root: '/data/rajewsky/slideseq_microscopy'
+microscopy_out: '/data/rajewsky/slideseq_microscopy/qc/'
+bin_dir: '/data/rajewsky/shared_bins'
+temp_dir: '/tmp'
+
+external_bin:
+    dropseq_tools: '/data/rajewsky/shared_bins/Drop-seq_tools-2.4.0'
+    picard_tools: '/data/rajewsky/shared_bins/picard-tools-2.9.0/picard.jar'
+
+puck_data:
+    barcode_file: predictions_ml.csv
+
+basecall_folders:
+    - '/data/rajewsky/sequencing/nextSeqRaw'
+    - '/data/remote/basecalls'
+
+barcode_flavor: 
+    dropseq:
+        projects:
+            - dss_020
+    #         - sts_079
+    # visium:
+    #     projects:
+    #         - cdr1as_ko_visium
+    # slideseq_14bc:
+    #     samples:
+    #         - slideseq_v2_mouse_hippo
+    #         - slideseq_v2_e12
+
+    # drop_noUMI:
+    #     projects:
+    #         - test_003
+    #     samples:
+    #         - test_003_1
+
+    # comb1:
+    #     samples:
+            # - test_002_1
+            # - sts_067_3pb
+            # - sts_067_3
+            # - sts_067_5
+
+    comb2.1:
+        samples:
+            - sts_083_1
+
+downstream_analysis_variables:
+    default:
+        expected_n_beads: 100000
+        umi_cutoff: [100, 300]
+        clean_dge: True
+    visium:
+        expected_n_beads: 10000
+        umi_cutoff: [500]
+        clean_dge: False
+    less_beads:
+        expected_n_beads: 60000
+        umi_cutoff: [10, 20, 50, 100]
+        clean_dge: True
+    slideseq:
+        expected_n_beads: 100000
+        umi_cutoff: [50, 100, 300]
+        clean_dge: False
+
+additional_projects:
+    - project_id: sts_083
+      sample_id: sts_083_1
+      puck_id: NoOptical
+      species: mouse
+      R1: /data/rajewsky/projects/slide_seq/projects/sts_083/raw_data/illumina/reads/raw/sts_083_1_R1.fastq.gz
+      R2: /data/rajewsky/projects/slide_seq/projects/sts_083/raw_data/illumina/reads/raw/sts_083_1_R2.fastq.gz
+      # downstream_analysis_type: 'dropseq'
+    - project_id: dss_020
+      sample_id: dss_020-1
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_020-1.R1.fastq.gz
+      R2: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_020-1.R2.fastq.gz
+    - project_id: dss_020
+      sample_id: dss_020-4
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_020-4.R1.fastq.gz
+      R2: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_020-4.R2.fastq.gz
+    - project_id: dss_020
+      sample_id: dss_020-5
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_020-5.R1.fastq.gz
+      R2: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_020-5.R2.fastq.gz
+    - project_id: dss_020
+      sample_id: dss_020-8
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_020-8.R1.fastq.gz
+      R2: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_020-8.R2.fastq.gz
+    - project_id: dss_021
+      sample_id: dss_021-1
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_021-1.R1.fastq.gz
+      R2: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_021-1.R2.fastq.gz
+    - project_id: dss_021
+      sample_id: dss_021-2
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_021-2.R1.fastq.gz
+      R2: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_021-2.R2.fastq.gz
+    - project_id: dss_021
+      sample_id: dss_021-3
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_021-3.R1.fastq.gz
+      R2: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_021-3.R2.fastq.gz
+    - project_id: dss_021
+      sample_id: dss_021-4
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_021-4.R1.fastq.gz
+      R2: /data/rajewsky/projects/sc_smRNA_marvin/fastq/dss_021-4.R2.fastq.gz
+
+    - project_id: ds_055
+      # This is an older dropseq run that worked (Nikos recommended), used as positive control
+      # Muscle satellite cells
+      sample_id: ds_055_1
+      puck_id: NoOptical
+      species: human
+      R1: /data/rajewsky/sequencing/human/dropseq_runs/ds_055_056_muscle_satellite_cells/ds_055_1_1.fastq.gz
+      R2: /data/rajewsky/sequencing/human/dropseq_runs/ds_055_056_muscle_satellite_cells/ds_055_1_2.fastq.gz
+
+      
+      # downstream_analysis_type: 'dropseq'
+
+# downsample and saturation analysis
+downsample: 
+    projects:
+        - slideseq_v2
+    samples:
+        - sts_079_1
+        - sts_079_3
+        - sts_079_5
+
+# in the output each will have an merged_ prepended to their root directory
+# samples_to_merge:`
+
+adapters:
+    smart: 'AAGCAGTGGTATCAACGCAGAGTGAATGGG'
+    optical_primer: 'GAATCACGATACGTACACCA'
+
+knowledge:
+    annotations:
+        human: /data/rajewsky/home/nkarais/hg38_GRCh38_gencode.v32_STAR_2.7.1a/gencode.v32.primary_assembly.annotation.gtf
+        mouse: /data/rajewsky/home/nkarais/mm10_GRCm38.p5_gencode.vM23_STAR_2.7.1a/gencode.vM23.primary_assembly.annotation.gtf
+        ercc: /data/rajewsky/home/nkarais/ercc_STAR_2.7.1a/ERCC92.gtf
+        erccgfp: /data/rajewsky/home/nkarais/ercc_gfp_STAR_2.7.1a/ercc_gfp.gtf
+        celegans: /data/rajewsky/annotation/filippos_sucks/ce11/ce11_filtered.gtf
+        humancelegans: /data/rajewsky/home/nkarais/hg38_GRCh38.84_ce11_STAR_2.7.1a/MegaAnnotation.gtf
+        humanmouse: /data/rajewsky/annotation/GRCh38.p13_GRCm38.p6/GRCh38.p13_GRCm38.p6.gtf
+
+    genomes:
+        human: /data/rajewsky/home/nkarais/hg38_GRCh38_gencode.v32_STAR_2.7.1a/GRCh38.primary_assembly.genome.fa
+        mouse: /data/rajewsky/home/nkarais/mm10_GRCm38.p5_gencode.vM23_STAR_2.7.1a/GRCm38.primary_assembly.genome.fa
+        ercc: /data/rajewsky/home/nkarais/ercc_STAR_2.7.1a/ERCC92.fa
+        erccgfp: /data/rajewsky/home/nkarais/ercc_gfp_STAR_2.7.1a/ercc_gfp.fa
+        celegans: /data/rajewsky/genomes/ce11_public/ce11.fa
+        humancelegans: /data/rajewsky/home/nkarais/hg38_GRCh38.84_ce11_STAR_2.7.1a/MegaGenome.fa
+        humanmouse: /data/rajewsky/genomes/GRCh38_GRCm38_mixed_species/GRCh38_GRCm38.fa
+
+    indices:
+        human:
+            star: /data/rajewsky/home/nkarais/hg38_GRCh38_gencode.v32_STAR_2.7.1a/STAR_index
+            bt2: /data/local/rajewsky/indices/hg38_GRCh38_gencode.v32_bowtie2.3.5.1/hg38_GRCh38_bt2_index
+            bt2_rRNA: /data/rajewsky/indices/hsa_rrna_ncbi_bowtie_2.3.2/hsa_rrna_ncbi 
+        mouse:
+            star: /data/rajewsky/home/nkarais/mm10_GRCm38.p5_gencode.vM23_STAR_2.7.1a/STAR_index
+            bt2_rRNA: /data/rajewsky/indices/mm10_rRNA_bowtie2_2.3.3.1/mouse_rRNA
+            bt2: /data/local/rajewsky/indices/mm10_GRCm38.p5_gencode.vM23_bowtie2.3.5.1/mm10_GRCm38_bt2_index
+            bt2_rRNA: /data/rajewsky/indices/mm10_rRNA_bowtie2_2.3.3.1/mouse_rRNA
+        ercc:
+            star: /data/rajewsky/home/nkarais/ercc_STAR_2.7.1a/STAR_index
+        erccgfp:
+            star: /data/rajewsky/home/nkarais/ercc_gfp_STAR_2.7.1a/STAR_index
+            bt2: /data/local/rajewsky/indices/erccgfp_bowtie2.3.5.1/erccgfp_bt2_index
+        celegans:
+            star: /data/rajewsky/indices/ce11_star_2.7.1a
+        humancelegans:
+            star: /data/rajewsky/home/nkarais/hg38_GRCh38.84_ce11_STAR_2.7.1a/STAR_index
+        humanmouse:
+            star: /data/rajewsky/indices/GRCh38_GRCm38_STAR_2.7.1a
+            # for now only map to mouse
+            bt2: /data/local/rajewsky/indices/erccgfp_bowtie2.3.5.1/erccgfp_bt2_index
+
+    barcode_flavor:
+        dropseq:
+            cell: "r1[0:12]"
+            UMI: "r1[12:20]"
+            bam_tags: "CR:{cell},CB:{cell},MI:{UMI},RG:{assigned}"
+        slideseq_14bc:
+            cell: "r1[0:14]"
+            UMI: "r1[14:23]"
+            bam_tags: "CR:{cell},XC:{cell},XM:{UMI},RG:{assigned}"
+        slideseq_15bc:
+            cell: "r1[0:14]"
+            UMI: "r1[15:23]"
+            bam_tags: "CR:{cell},XC:{cell},XM:{UMI},RG:{assigned}"
+        drop_noUMI:
+            cell: "r1[0:12][::-1]"
+            UMI: "r2[0:8]"
+            bam_tags: "CR:{cell},CB:{cell},MI:{UMI},RG:{assigned}"
+        visium:
+            cell: "r1[0:16]"
+            UMI: "r1[16:28]"
+            bam_tags: "CR:{cell},CB:{cell},MI:{UMI},RG:{assigned}"
+        comb1:
+            segments: 2
+            bc1_ref: "/data/rajewsky/projects/combbeads/two_segments/illumina/index_BC1_96.fa"
+            bc2_ref: "/data/rajewsky/projects/combbeads/two_segments/illumina/index_BC2_96_var.fa"
+            bc1_cache: "/data/rajewsky/projects/combbeads/two_segments/illumina/bc1_cache.tsv"
+            bc2_cache: "/data/rajewsky/projects/combbeads/two_segments/illumina/bc2_cache.tsv"
+            score_threshold: 0.5
+            cell: "BC1[::-1][0:6]+BC2[::-1][0:6]"
+            cell_raw: bc1[::-1]+"_"+bc2[::-1]
+            UMI: "r2[0:8]"
+            bam_tags: "CR:{raw},CB:{cell},MI:{UMI},RG:{assigned}"
+        comb2.1:
+            segments: 1
+            UMI: "r2[0:8]"
+            bam_tags: "CR:{raw},CB:{cell},MI:{UMI},RG:{assigned}"
+            cell: "BC1[::-1]"
+            cell_raw: "bc1[::-1]"
+            bc1_ref: "/data/rajewsky/projects/combbeads/three_segments/rev1.fa"
+            bc2_ref: ""
+            score_threshold: 0.5
+            min_opseq_score: 16
