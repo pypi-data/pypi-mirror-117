@@ -1,0 +1,11 @@
+README.md
+setup.py
+spank/__init__.py
+spank/functions.py
+spank/spank.py
+spank.egg-info/PKG-INFO
+spank.egg-info/SOURCES.txt
+spank.egg-info/dependency_links.txt
+spank.egg-info/not-zip-safe
+spank.egg-info/requires.txt
+spank.egg-info/top_level.txt
