@@ -1,0 +1,5 @@
+setup.py
+bybitWrapper.egg-info/PKG-INFO
+bybitWrapper.egg-info/SOURCES.txt
+bybitWrapper.egg-info/dependency_links.txt
+bybitWrapper.egg-info/top_level.txt
