@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: holodex
+Version: 0.4.3
+Summary: Holodex api wrapper
+Home-page: https://github.com/ombe1229/holodex
+Author: ombe1229
+Author-email: h3236516@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# holodex
+
+> Holodex api wrapper
+
+## Example
+
+```py
+import asyncio
+from holodex.client import HolodexClient
+
+
+async def main():
+    async with HolodexClient() as client:
+        channel = await client.channel_info("UCoSrY_IQQVpmIRZ9Xf-y93g")
+        print(channel.name)
+        print(channel.clip_count)
+        print(channel.subscriber_count)
+
+
+asyncio.run(main())
+
+
+# Gawr Gura Ch. hololive-EN
+# 6943
+# 3240000
+```
+
+## Installation
+
+```
+python -m pip install holodex
+```
+
+## Todo
+
+- [x] Support `/live` endpoint
+- [x] Make easy to get channel id
+- [ ] Support `/videos` endpoint
+
+
