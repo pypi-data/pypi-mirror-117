@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/sample/__init__.py
+src/sample/package_data.dat
+src/sample/simple.py
+src/sampleproject_twine.egg-info/PKG-INFO
+src/sampleproject_twine.egg-info/SOURCES.txt
+src/sampleproject_twine.egg-info/dependency_links.txt
+src/sampleproject_twine.egg-info/entry_points.txt
+src/sampleproject_twine.egg-info/requires.txt
+src/sampleproject_twine.egg-info/top_level.txt
