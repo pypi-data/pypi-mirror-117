@@ -1,0 +1,8 @@
+ch_requester/__init__.py,sha256=E4ejertdU50VimM5mxY09m3gFRb5bDn95IKoC3Yp_98,125
+ch_requester/nc_requester.py,sha256=-CAWuzOlmdkBq2WArBRjuzsV1SgQiL71-Hk97LnvK-c,4859
+ch_requester/url_requester.py,sha256=wVbuWuus3ugaWpHMUyXIkTPtKm9vKU8MKhyK6gL2jDQ,2242
+CHRequester-0.0.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+CHRequester-0.0.1.dist-info/METADATA,sha256=k92i62puqwG7FxteADsl5xEWS2FQAs9IhW9_rpZD2sg,5213
+CHRequester-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+CHRequester-0.0.1.dist-info/top_level.txt,sha256=udfJZraxK5PsjfQ-oiGKRR3gDgzfwRj51m-2jLiO424,13
+CHRequester-0.0.1.dist-info/RECORD,,
