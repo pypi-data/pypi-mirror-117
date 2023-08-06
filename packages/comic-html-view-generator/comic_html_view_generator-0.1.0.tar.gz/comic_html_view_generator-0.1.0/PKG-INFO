@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: comic_html_view_generator
+Version: 0.1.0
+Summary: HTML generator to view comic books
+Home-page: https://github.com/lelandbatey/comic_html_view_generator
+Author: Leland Batey
+Author-email: lelandbatey@lelandbatey.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Multimedia :: Graphics :: Viewers
+Classifier: Topic :: Text Processing :: Markup :: HTML
+License-File: LICENSE
+
+
+comic_html_view_generator
+-------------------------
+
+comic_html_view_generator is a command-line tool and library for creating
+static HTML files for viewing comic books. Given a directory with images or
+.cbz files in it, it'll create HTML files which embed those images in order,
+and an overall "browse all the comics here" HTML page which will list all the
+comics books which have had a readable HTML file generated from them.
+
+
