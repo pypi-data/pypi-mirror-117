@@ -1,0 +1,3 @@
+[console_scripts]
+rexam-item-editor = rexam_item_editor.__main__:run
+
