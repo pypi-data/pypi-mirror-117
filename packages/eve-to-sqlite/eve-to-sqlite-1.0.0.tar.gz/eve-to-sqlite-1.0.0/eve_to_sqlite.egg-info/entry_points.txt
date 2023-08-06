@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        eve-to-sqlite=eve_to_sqlite.cli:cli
+    
