@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: ctrlx-datalayer
+Version: 1.5.0
+Summary: ctrlX Data Layer API for Python
+Home-page: https://github.com/boschrexroth/
+Author: Bosch Rexroth AG
+Author-email: support.ctrlx@boschrexroth.de
+License: UNKNOWN
+Platform: linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flatbuffers (~=1.12)
+
+# Python Wrapper for ctrlX Data Layer
+
+This project provides ctrlX Data Layer access via Python.
+It wraps the original Data Layer SDK written in C++.
+
+## Setup
+
+Set up a virtual python environment
+
+```bash
+virtualenv -p python3 venv && source venv/bin/activate
+```
+
+## Installation
+
+Use the package manager [pip3](https://pip.pypa.io/en/stable/) to install ctrlx-datalayer.
+
+```bash
+pip3 install ctrlx-datalayer
+```
+## Usage
+
+See [examples](https://github.com/boschrexroth/)
+
+## License
+
+Python Wrapper for ctrlX Data Layer is licensed under [T&C](https://dc-corp.resource.bosch.com/media/xc/boschrexroth_tac_delivery.pdf) or see 'boschrexroth_tac_delivery.txt' as part of this package.
+
