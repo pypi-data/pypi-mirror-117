@@ -1,0 +1,546 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>galleryfield.widgets &mdash; django-galleryfield 1.2.6-beta documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> django-galleryfield
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about_demo.html">Behind the demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../customize.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fields.html">Model field and form field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../views.html">Image handling views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../widget.html">GalleryWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc.html">MISC</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">django-galleryfield</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>galleryfield.widgets</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for galleryfield.widgets</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">django</span> <span class="kn">import</span> <span class="n">forms</span>
+<span class="kn">from</span> <span class="nn">django.core.exceptions</span> <span class="kn">import</span> <span class="n">ImproperlyConfigured</span>
+
+<span class="kn">from</span> <span class="nn">galleryfield</span> <span class="kn">import</span> <span class="n">conf</span><span class="p">,</span> <span class="n">defaults</span>
+<span class="kn">from</span> <span class="nn">galleryfield.utils</span> <span class="kn">import</span> <span class="p">(</span><span class="n">convert_dict_to_plain_text</span><span class="p">,</span>
+                                <span class="n">get_formatted_thumbnail_size</span><span class="p">,</span> <span class="n">get_url_from_str</span><span class="p">,</span>
+                                <span class="n">logger</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="GalleryWidget"><a class="viewcode-back" href="../../widget.html#galleryfield.widgets.GalleryWidget">[docs]</a><span class="k">class</span> <span class="nc">GalleryWidget</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">HiddenInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This is the default widget used by :class:`galleryfield.fields.GalleryFormField`.</span>
+
+<span class="sd">    :param upload_url: An URL name or an URL of the upload handler</span>
+<span class="sd">           view used by the widget instance, defaults to `None`.</span>
+<span class="sd">           When not set, this param will be auto-configured if the parent</span>
+<span class="sd">           :class:`galleryfield.fields.GalleryFormField` is used by</span>
+<span class="sd">           a :class:`galleryfield.fields.GalleryField`, and the value will follow</span>
+<span class="sd">           the :ref:`naming rule &lt;image_handling_url_naming_rule&gt;`. </span>
+<span class="sd">           The value can also be `None` if set explicitly by::</span>
+<span class="sd">           </span>
+<span class="sd">               self.fields[&quot;images&quot;].widget.upload_url = None</span>
+
+<span class="sd">           In this case, upload ui won&#39;t show upload buttons.</span>
+<span class="sd">    :type upload_url: str, optional</span>
+<span class="sd">    :param fetch_url: An URL name or an URL for fetching the existing</span>
+<span class="sd">           images in the gallery instance, defaults to `None`.</span>
+<span class="sd">           When not set, this param will be auto-configured if the parent</span>
+<span class="sd">           :class:`galleryfield.fields.GalleryFormField` is used by</span>
+<span class="sd">           a :class:`galleryfield.fields.GalleryField`, the value wil. follow</span>
+<span class="sd">           the :ref:`naming rule &lt;image_handling_url_naming_rule&gt;`.</span>
+<span class="sd">    :type fetch_url: str, optional</span>
+<span class="sd">    :param multiple: Whether allow to select multiple image files in the </span>
+<span class="sd">           file picker. Defaults to ``True``.</span>
+<span class="sd">    :type multiple: bool, optional</span>
+<span class="sd">    :param thumbnail_size: The thumbnail size (both width and height), defaults </span>
+<span class="sd">           to ``defaults.DEFAULT_THUMBNAIL_SIZE``, which can be overridden by</span>
+<span class="sd">           ``settings.DJANGO_GALLERY_FIELD_CONFIG[&quot;thumbnails&quot;][&quot;size&quot;]``.</span>
+<span class="sd">           The value can be set after the widget is initialized.</span>
+<span class="sd">    :type thumbnail_size: int, optional</span>
+<span class="sd">    :param template: The path of template which is used to render the widget.</span>
+<span class="sd">           defaults to ``galleryfield/widget.html``, which support template </span>
+<span class="sd">           inheritance.</span>
+<span class="sd">    :type template: str, optional</span>
+<span class="sd">    :param attrs: Html attribute when rendering the field (Which is a </span>
+<span class="sd">           :class:`django.forms.HiddenInput`), defaults to `None`. See </span>
+<span class="sd">           `Django docs &lt;https://docs.djangoproject.com/en/dev/ref/forms/widgets/#django.forms.Widget.attrs&gt;`_.</span>
+<span class="sd">    :type attrs: dict, optional</span>
+<span class="sd">    :param options: Other options when rendering the widget. Implemented options:</span>
+
+<span class="sd">           * **accepted_mime_types** (`list`, `optional`) - A list of MIME types</span>
+<span class="sd">             used to filter files when picking files with file picker, defaults to ``[&#39;image/*&#39;]``</span>
+<span class="sd">    :type options: dict, optional</span>
+<span class="sd">    :param jquery_file_upload_ui_options: The default template is using </span>
+<span class="sd">           blueimp/jQuery-File-Upload package to render the ui and dealing with</span>
+<span class="sd">           AJAX upload. See :setting:`jquery_file_upload_ui_options` for more information.</span>
+<span class="sd">    :type jquery_file_upload_ui_options: dict, optional</span>
+<span class="sd">    :param disable_fetch: Whether disable fetching existing images of the</span>
+<span class="sd">           form instance (if any), defaults to `False`. If True, the validity of</span>
+<span class="sd">           ``fetch_url`` will not be checked.</span>
+<span class="sd">    :type disable_fetch: bool, optional</span>
+<span class="sd">    :param disable_server_side_crop: Whether disable server side cropping of </span>
+<span class="sd">           uploaded images, defaults to `False`.</span>
+<span class="sd">    :type disable_server_side_crop: bool, optional</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>  <span class="c1"># noqa</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">upload_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">fetch_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">multiple</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">thumbnail_size</span><span class="o">=</span><span class="n">conf</span><span class="o">.</span><span class="n">DEFAULT_THUMBNAIL_SIZE</span><span class="p">,</span>
+            <span class="n">template</span><span class="o">=</span><span class="s2">&quot;galleryfield/widget.html&quot;</span><span class="p">,</span>
+            <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">jquery_file_upload_ui_options</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">disable_fetch</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">disable_server_side_crop</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="nb">super</span><span class="p">(</span><span class="n">GalleryWidget</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">attrs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">multiple</span> <span class="o">=</span> <span class="n">multiple</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_thumbnail_size</span> <span class="o">=</span> <span class="n">get_formatted_thumbnail_size</span><span class="p">(</span><span class="n">thumbnail_size</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">template</span> <span class="o">=</span> <span class="n">template</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">disable_fetch</span> <span class="o">=</span> <span class="n">disable_fetch</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">disable_server_side_crop</span> <span class="o">=</span> <span class="n">disable_server_side_crop</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">upload_url</span> <span class="o">=</span> <span class="n">upload_url</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="kc">None</span> <span class="k">if</span> <span class="n">disable_fetch</span> <span class="k">else</span> <span class="n">fetch_url</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">jquery_file_upload_ui_options</span> <span class="o">=</span> <span class="n">jquery_file_upload_ui_options</span> <span class="ow">or</span> <span class="p">{}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">options</span> <span class="ow">and</span> <span class="n">options</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="ow">or</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">&quot;accepted_mime_types&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;image/*&#39;</span><span class="p">])</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">thumbnail_size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_thumbnail_size</span>
+
+    <span class="nd">@thumbnail_size</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">thumbnail_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_thumbnail_size</span> <span class="o">=</span> <span class="n">get_formatted_thumbnail_size</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">jquery_file_upload_ui_options</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_jquery_file_upload_ui_options</span>
+                <span class="ow">or</span> <span class="n">conf</span><span class="o">.</span><span class="n">JQUERY_FILE_UPLOAD_UI_DEFAULT_OPTIONS</span><span class="p">)</span>
+
+    <span class="nd">@jquery_file_upload_ui_options</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">jquery_file_upload_ui_options</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">options</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">ImproperlyConfigured</span><span class="p">(</span>
+                <span class="s2">&quot;</span><span class="si">%(obj)s</span><span class="s2">: &#39;jquery_file_upload_ui_options&#39; must be a dict&quot;</span> <span class="o">%</span> <span class="p">{</span>
+                    <span class="s2">&quot;obj&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+                <span class="p">}</span>
+            <span class="p">)</span>
+        <span class="n">ju_settings</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">conf</span><span class="o">.</span><span class="n">JQUERY_FILE_UPLOAD_UI_DEFAULT_OPTIONS</span><span class="o">.</span><span class="n">copy</span><span class="p">())</span>
+        <span class="n">ju_settings</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s2">&quot;maxNumberOfFiles&quot;</span> <span class="ow">in</span> <span class="n">ju_settings</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                <span class="s2">&quot;</span><span class="si">%(obj)s</span><span class="s2">: &#39;maxNumberOfFiles&#39; in &#39;jquery_file_upload_ui_options&#39; &quot;</span>
+                <span class="s2">&quot;will be overridden later by the formfield. You should set that &quot;</span>
+                <span class="s2">&quot;value in the formfield it belongs to, e.g. </span><span class="se">\n</span><span class="s2">&quot;</span>
+                <span class="s2">&quot;self.fields[&#39;my_gallery_field&#39;].max_number_of_images = </span><span class="si">%(value)s</span><span class="s2">&quot;</span>
+                <span class="o">%</span> <span class="p">{</span><span class="s2">&quot;obj&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                   <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">ju_settings</span><span class="p">[</span><span class="s2">&quot;maxNumberOfFiles&quot;</span><span class="p">])}</span>
+            <span class="p">)</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="s2">&quot;singleFileUploads&quot;</span> <span class="ow">in</span> <span class="n">ju_settings</span>
+                <span class="ow">and</span> <span class="nb">str</span><span class="p">(</span><span class="n">ju_settings</span><span class="p">[</span><span class="s2">&quot;singleFileUploads&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;false&quot;</span><span class="p">):</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                <span class="s2">&quot;</span><span class="si">%(obj)s</span><span class="s2">: &#39;singleFileUploads=False&#39; in &quot;</span>
+                <span class="s2">&quot;&#39;jquery_file_upload_ui_options&#39; is not allowed and will be &quot;</span>
+                <span class="s2">&quot;ignored.&quot;</span>
+                <span class="o">%</span> <span class="p">{</span><span class="s2">&quot;obj&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">}</span>
+            <span class="p">)</span>
+
+        <span class="k">if</span> <span class="s2">&quot;previewMaxWidth&quot;</span> <span class="ow">in</span> <span class="n">ju_settings</span> <span class="ow">or</span> <span class="s2">&quot;previewMaxHeight&quot;</span> <span class="ow">in</span> <span class="n">ju_settings</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                <span class="s2">&quot;</span><span class="si">%(obj)s</span><span class="s2">: &#39;previewMaxWidth&#39; and &#39;previewMaxHeight&#39; in &quot;</span>
+                <span class="s2">&quot;&#39;jquery_file_upload_ui_options&#39; are ignored. You should set &quot;</span>
+                <span class="s2">&quot;the value by the &#39;thumbnail_size&#39; option, e.g., &quot;</span>
+                <span class="s2">&quot;thumbnail_size=&#39;120x60&#39;&quot;</span>
+                <span class="o">%</span> <span class="p">{</span><span class="s2">&quot;obj&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">}</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_jquery_file_upload_ui_options</span> <span class="o">=</span> <span class="n">ju_settings</span>
+
+    <span class="k">def</span> <span class="nf">set_and_check_urls</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># We now then the URL names into an actual URL, that</span>
+        <span class="c1"># can&#39;t be down in __init__ because url_conf is not</span>
+        <span class="c1"># loaded when doing the system check, and will result</span>
+        <span class="c1"># in failure to start.</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">upload_url</span> <span class="o">=</span> <span class="n">get_url_from_str</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">upload_url</span><span class="p">,</span> <span class="n">require_urlconf_ready</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ImproperlyConfigured</span><span class="p">(</span>
+                <span class="s2">&quot;&#39;upload_url&#39; is invalid: </span><span class="si">%s</span><span class="s2"> is neither &quot;</span>
+                <span class="s2">&quot;a valid URL nor a valid URL name.&quot;</span>
+                <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">upload_url</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">disable_fetch</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span> <span class="o">=</span> <span class="n">get_url_from_str</span><span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span><span class="p">,</span> <span class="n">require_urlconf_ready</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ImproperlyConfigured</span><span class="p">(</span>
+                    <span class="s2">&quot;&#39;fetch_url&#39; is invalid: </span><span class="si">%s</span><span class="s2"> is neither &quot;</span>
+                    <span class="s2">&quot;a valid URL nor a valid URL name.&quot;</span>
+                    <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span><span class="p">)</span>
+
+        <span class="c1"># In the following we validate update the urls from url names (if it is</span>
+        <span class="c1"># not an url) and check the potential conflicts of init params</span>
+        <span class="c1"># of the widget with the target_image_model set to the widget.</span>
+        <span class="c1"># For validation of urls, because those urls are assigned by reverse_lazy,</span>
+        <span class="c1"># the result of which will only be validated until evaluation, we</span>
+        <span class="c1"># can only do that until the request context is available.</span>
+        <span class="c1"># For checking conflicts, the logic is: if the target_image_model is not</span>
+        <span class="c1"># using the built-in model, i.e., defaults.DEFAULT_TARGET_IMAGE_MODEL,</span>
+        <span class="c1"># then the upload, crop and fetch views should not use the built-in ones.</span>
+        <span class="c1"># Because those views are using defaults.DEFAULT_TARGET_IMAGE_MODEL</span>
+        <span class="c1"># as the target image model.</span>
+        <span class="c1"># BTW, this check can&#39;t be done at the model/field check stage or formfield</span>
+        <span class="c1"># init stage, because we should allow the widget be changed after the form</span>
+        <span class="c1"># is initialized. So, we have to do this before rendering the widget,</span>
+        <span class="c1"># and throw the error if any.</span>
+
+        <span class="n">target_image_model</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;image_model&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+        <span class="n">image_model_is_default</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">target_image_model</span> <span class="o">==</span> <span class="n">defaults</span><span class="o">.</span><span class="n">DEFAULT_TARGET_IMAGE_MODEL</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">image_model_is_default</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="n">conflict_config</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">upload_url_is_default</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">upload_url</span>
+            <span class="o">==</span> <span class="n">get_url_from_str</span><span class="p">(</span><span class="n">defaults</span><span class="o">.</span><span class="n">DEFAULT_UPLOAD_URL_NAME</span><span class="p">,</span>
+                                <span class="n">require_urlconf_ready</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">upload_url_is_default</span><span class="p">:</span>
+            <span class="n">conflict_config</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="p">{</span><span class="s2">&quot;param&quot;</span><span class="p">:</span> <span class="s2">&quot;upload_url&quot;</span><span class="p">,</span>
+                 <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">upload_url</span><span class="p">})</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span><span class="p">:</span>
+            <span class="n">fetch_url_is_default</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span>
+                <span class="o">==</span> <span class="n">get_url_from_str</span><span class="p">(</span><span class="n">defaults</span><span class="o">.</span><span class="n">DEFAULT_FETCH_URL_NAME</span><span class="p">,</span>
+                                    <span class="n">require_urlconf_ready</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">fetch_url_is_default</span><span class="p">:</span>
+                <span class="n">conflict_config</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                    <span class="p">{</span><span class="s2">&quot;param&quot;</span><span class="p">:</span> <span class="s2">&quot;fetch_url&quot;</span><span class="p">,</span>
+                     <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span><span class="p">})</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">conflict_config</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="n">widget_is_servicing</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;widget_is_servicing&quot;</span><span class="p">)</span>
+        <span class="n">msgs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&#39;</span><span class="si">%(obj)s</span><span class="s2">&#39; is using &#39;</span><span class="si">%(used_model)s</span><span class="s2">&#39; &quot;</span>
+                <span class="s2">&quot;instead of built-in &#39;</span><span class="si">%(default_model)s</span><span class="s2">&#39;, while &quot;</span>
+                <span class="o">%</span> <span class="p">{</span><span class="s2">&quot;obj&quot;</span><span class="p">:</span> <span class="n">widget_is_servicing</span><span class="p">,</span>
+                   <span class="s2">&quot;used_model&quot;</span><span class="p">:</span> <span class="n">target_image_model</span><span class="p">,</span>
+                   <span class="s2">&quot;default_model&quot;</span><span class="p">:</span> <span class="n">defaults</span><span class="o">.</span><span class="n">DEFAULT_TARGET_IMAGE_MODEL</span><span class="p">}</span>
+                <span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">cc</span> <span class="ow">in</span> <span class="n">conflict_config</span><span class="p">:</span>
+            <span class="n">msgs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="s2">&quot;&#39;</span><span class="si">%(param)s</span><span class="s2">&#39; is using built-in value &#39;</span><span class="si">%(value)s</span><span class="s2">&#39;, &quot;</span> <span class="o">%</span> <span class="n">cc</span><span class="p">)</span>
+
+        <span class="n">msgs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="s2">&quot;which use built-in &#39;</span><span class="si">%(default_model)s</span><span class="s2">&#39;. You need to write &quot;</span>
+            <span class="s2">&quot;your own views for your image model.&quot;</span> <span class="o">%</span> <span class="p">{</span>
+                <span class="s2">&quot;default_model&quot;</span><span class="p">:</span> <span class="n">defaults</span><span class="o">.</span><span class="n">DEFAULT_TARGET_IMAGE_MODEL</span>
+            <span class="p">})</span>
+
+        <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">msgs</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">ImproperlyConfigured</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>
+        <span class="n">js</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">conf</span><span class="o">.</span><span class="n">JS</span><span class="p">)</span>
+        <span class="n">css</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">conf</span><span class="o">.</span><span class="n">CSS</span><span class="p">)}</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_hidden</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">get_stringfied_jquery_file_upload_ui_options</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># See blueimp/jQuery-File-Upload</span>
+        <span class="c1"># https://github.com/blueimp/jQuery-File-Upload/wiki/Options</span>
+
+        <span class="c1"># We copy the options as the actual context used in rendering</span>
+        <span class="c1"># so as to avoid logger warnings</span>
+        <span class="n">ui_options</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">jquery_file_upload_ui_options</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+        <span class="c1"># Remove the option (i.e., use default False)</span>
+        <span class="n">ui_options</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;singleFileUploads&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+        <span class="c1"># Remove other options which we are using default but</span>
+        <span class="c1"># don&#39;t allow user to change</span>
+        <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;fileInput&quot;</span><span class="p">,</span> <span class="s2">&quot;formData&quot;</span><span class="p">]:</span>
+            <span class="n">ui_options</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">option</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+        <span class="c1"># Fixme: this is hardcoded</span>
+        <span class="n">ui_options</span><span class="p">[</span><span class="s2">&quot;paramName&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&#39;files[]&#39;&quot;</span>
+
+        <span class="c1"># override maxNumberOfFiles</span>
+        <span class="n">ui_options</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;maxNumberOfFiles&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="n">max_number_of_images</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;max_number_of_images&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">max_number_of_images</span><span class="p">:</span>
+            <span class="n">ui_options</span><span class="p">[</span><span class="s2">&quot;maxNumberOfFiles&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">max_number_of_images</span>
+
+        <span class="c1"># override previewMaxWidth and previewMaxHeight</span>
+
+        <span class="n">_width</span><span class="p">,</span> <span class="n">_height</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_size</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+        <span class="n">ui_options</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
+            <span class="p">{</span><span class="s2">&quot;previewMaxWidth&quot;</span><span class="p">:</span> <span class="n">_width</span><span class="p">,</span>
+             <span class="s2">&quot;previewMaxHeight&quot;</span><span class="p">:</span> <span class="n">_height</span><span class="p">,</span>
+
+             <span class="c1"># This is used as a CSS selector to fine the input field</span>
+             <span class="s2">&quot;hiddenFileInput&quot;</span><span class="p">:</span> <span class="s2">&quot;&#39;.</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="n">conf</span><span class="o">.</span><span class="n">FILES_FIELD_CLASS_NAME</span><span class="p">,</span>
+             <span class="p">})</span>
+
+        <span class="k">return</span> <span class="n">convert_dict_to_plain_text</span><span class="p">(</span><span class="n">ui_options</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_and_check_urls</span><span class="p">()</span>
+
+        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;input_string&#39;</span><span class="p">:</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">,</span> <span class="n">renderer</span><span class="p">),</span>
+            <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+            <span class="s1">&#39;multiple&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">multiple</span> <span class="ow">and</span> <span class="mi">1</span> <span class="ow">or</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s1">&#39;thumbnail_size&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_size</span><span class="p">),</span>
+            <span class="s1">&#39;prompt_alert_on_window_reload_if_changed&#39;</span><span class="p">:</span>
+                <span class="n">conf</span><span class="o">.</span><span class="n">PROMPT_ALERT_ON_WINDOW_RELOAD_IF_CHANGED</span>
+        <span class="p">}</span>
+
+        <span class="c1"># Do not fill in empty value to hidden inputs</span>
+        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+            <span class="n">context</span><span class="p">[</span><span class="s2">&quot;pks&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="n">context</span><span class="p">[</span><span class="s2">&quot;fetch_url&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch_url</span>
+
+        <span class="n">_context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">_context</span><span class="p">[</span><span class="s2">&quot;widget&quot;</span><span class="p">][</span><span class="s2">&quot;attrs&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;disabled&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+                <span class="ow">or</span> <span class="n">_context</span><span class="p">[</span><span class="s2">&quot;widget&quot;</span><span class="p">][</span><span class="s2">&quot;attrs&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;readonly&quot;</span><span class="p">)):</span>
+            <span class="n">context</span><span class="p">[</span><span class="s2">&quot;uploader_disabled&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+                <span class="s2">&quot;upload_url&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">upload_url</span><span class="p">,</span>
+                <span class="s2">&quot;accepted_mime_types&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;accepted_mime_types&quot;</span><span class="p">],</span>
+                <span class="s2">&quot;disable_server_side_crop&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">disable_server_side_crop</span>
+            <span class="p">})</span>
+        <span class="n">context</span><span class="p">[</span><span class="s2">&quot;widget&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_context</span><span class="p">[</span><span class="s2">&quot;widget&quot;</span><span class="p">]</span>
+
+        <span class="n">context</span><span class="p">[</span><span class="s2">&quot;jquery_fileupload_ui_options&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_stringfied_jquery_file_upload_ui_options</span><span class="p">())</span>
+
+        <span class="k">return</span> <span class="n">renderer</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">template_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">template</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">context</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dong Zhuang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

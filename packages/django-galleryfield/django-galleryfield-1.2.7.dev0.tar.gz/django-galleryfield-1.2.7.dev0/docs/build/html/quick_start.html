@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Quick Start &mdash; django-galleryfield 1.2.6-beta documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="intro.html" />
+    <link rel="prev" title="Welcome to django-galleryfield’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-galleryfield
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-version">Python version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configurations">Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-the-demo">Run the demo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_demo.html">Behind the demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customize.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fields.html">Model field and form field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="views.html">Image handling views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="widget.html">GalleryWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">MISC</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-galleryfield</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Quick Start</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/quick_start.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="quick-start">
+<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>You can install with pip from <a class="reference external" href="https://pypi.org/project/django-galleryfield/">PyPi</a> via:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">django</span><span class="o">-</span><span class="n">galleryfield</span>
+</pre></div>
+</div>
+<p>Or for the latest dev version, via:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">dzhuang</span><span class="o">/</span><span class="n">django</span><span class="o">-</span><span class="n">galleryfield</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</section>
+<section id="python-version">
+<h2>Python version<a class="headerlink" href="#python-version" title="Permalink to this headline">¶</a></h2>
+<p>Gallery-widget is compatible with Python 3 (3.6 or later were tested).</p>
+</section>
+<section id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Python dependencies include:</p>
+<ul class="simple">
+<li><p>Django 3.1 or later</p></li>
+<li><p><a class="reference external" href="https://github.com/sorl/sorl-thumbnail">sorl-thumbnail</a> (auto installed)</p></li>
+<li><p><a class="reference external" href="https://github.com/python-imaging/Pillow">pillow</a> (auto installed)</p></li>
+<li><p>django-npm (for managing statics, you need to have <code class="docutils literal notranslate"><span class="pre">npm</span></code> installed in your OS)</p></li>
+</ul>
+<p>Static dependencies:</p>
+<ul class="simple">
+<li><p>Bootstrap 3</p></li>
+<li><p>jQuery 1.7 or later</p></li>
+<li><p>jQuery UI</p></li>
+<li><p><a class="reference external" href="https://github.com/blueimp/jQuery-File-Upload">blueimp/jQuery-File-Upload</a></p></li>
+<li><p><a class="reference external" href="https://github.com/blueimp/Gallery">blueimp/Gallery</a></p></li>
+<li><p><a class="reference external" href="https://fengyuanchen.github.io/cropper">cropper</a> by Chen Fengyuan</p></li>
+</ul>
+<p>The static dependencies can be installed by command <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code>.</p>
+</section>
+<section id="configurations">
+<h2>Configurations<a class="headerlink" href="#configurations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">settings.py</span></code>, add 3 lines in you <code class="docutils literal notranslate"><span class="pre">INSTALLED_APP</span></code>:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="o">...</span><span class="p">,</span>
+    <span class="s1">&#39;sorl.thumbnail&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;galleryfield&#39;</span><span class="p">,</span>
+    <span class="o">...</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">DJANGO_GALLERY_CONFIG</span> <span class="o">=</span> <span class="o">...</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>We strongly propose using <code class="docutils literal notranslate"><span class="pre">django-npm</span></code> to manage the static dependencies,
+add the following lines in <code class="docutils literal notranslate"><span class="pre">settings.py</span></code>:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.conf.global_settings</span> <span class="kn">import</span> <span class="n">STATICFILES_FINDERS</span>
+
+<span class="n">STATICFILES_FINDERS</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">STATICFILES_FINDERS</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s2">&quot;npm.finders.NpmFinder&quot;</span><span class="p">,)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">urls.py</span></code>, add the following lines:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">include</span><span class="p">,</span> <span class="n">path</span>
+
+<span class="n">urlpatterns</span> <span class="o">+=</span> <span class="p">[</span><span class="n">path</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;images-handler/&quot;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s2">&quot;galleryfield.urls&quot;</span><span class="p">))]</span>
+<span class="n">urlpatterns</span> <span class="o">+=</span> <span class="n">static</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">MEDIA_URL</span><span class="p">,</span> <span class="n">document_root</span><span class="o">=</span><span class="n">settings</span><span class="o">.</span><span class="n">MEDIA_ROOT</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul>
+<li><p>The sync the database:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span> <span class="n">galleryfield</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="run-the-demo">
+<h2>Run the demo<a class="headerlink" href="#run-the-demo" title="Permalink to this headline">¶</a></h2>
+<p>The best way to have a glance of how django-galleryfield works is to run the demo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/dzhuang/django-galleryfield.git
+<span class="nb">cd</span> django-galleryfield
+<span class="nb">cd</span> demo
+pip install -r requirements.txt
+<span class="nb">cd</span> ..
+npm install  <span class="c1"># or yarn, install the CSS and JS modules</span>
+python manage.py migrate
+python manage.py createsuperuser <span class="c1"># Create a superuser account so that you can upload images</span>
+python manage.py runserver
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>In your browser navigate to <a class="reference external" href="http://127.0.0.1:8000/admin">http://127.0.0.1:8000/admin</a>, login and navigate to  <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You might need to install JSON1 extension for SQLite for this the demo to run properly.
+See <a class="reference external" href="https://code.djangoproject.com/wiki/JSON1Extension">Enabling JSON1 extension on SQLite</a>.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="intro.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to django-galleryfield’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dong Zhuang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Introduction &mdash; django-galleryfield 1.2.6-beta documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Behind the demo" href="about_demo.html" />
+    <link rel="prev" title="Quick Start" href="quick_start.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-galleryfield
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#motivation">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compared-to-peer-apps">Compared to peer apps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about_demo.html">Behind the demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customize.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fields.html">Model field and form field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="views.html">Image handling views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="widget.html">GalleryWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">MISC</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-galleryfield</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>In this Django reusable app, we introduced a model field <a class="reference internal" href="fields.html#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryField</span></code></a>
+along with a corresponding formfield <a class="reference internal" href="fields.html#galleryfield.fields.GalleryFormField" title="galleryfield.fields.GalleryFormField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryFormField</span></code></a> and default
+widget <a class="reference internal" href="widget.html#galleryfield.widgets.GalleryWidget" title="galleryfield.widgets.GalleryWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.widgets.GalleryWidget</span></code></a>. The model field
+make it easy for image management at a collection level (i.e., what we called gallery or album),
+while the widget make it easy to upload images via AJAX, allowing order the sequence arbitrarily,
+and cropping images at both client and server side.</p>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A model field <code class="docutils literal notranslate"><span class="pre">GalleryField</span></code>, and its formfield <code class="docutils literal notranslate"><span class="pre">GalleryFormField</span></code> along with the default
+widget <code class="docutils literal notranslate"><span class="pre">GalleryWidget</span></code>.</p></li>
+<li><p>Drag &amp; drop file uploading via AJAX</p></li>
+<li><p>Uploading multiple images with progress bar</p></li>
+<li><p>Drag &amp; drop reordering</p></li>
+<li><p>Client / server side cropping (before/after upload).</p></li>
+<li><p>Integrates with Django Admin</p></li>
+<li><p>Admin user-proof, i.e., allowing non-staff user upload and manage gallery.</p></li>
+</ul>
+</section>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>This package was created for some scenarios, when users were required to upload
+multiple images by a form, where the images can be <strong>arbitrarily</strong> ordered, and can
+be cropped before or after uploaded.</p>
+<p>For instance, students were required to upload limited number of hand-written photos on an
+CMS platform as assignments. That requires:</p>
+<ul class="simple">
+<li><p>Students can upload images through web UI (not Admin) and preview instantly.</p></li>
+<li><p>Students can order the uploaded images as they will, instead of upload time or file name.</p></li>
+<li><p>Students can do some basic edit to images, like rotate and cropping.</p></li>
+<li><p>There can be a limit on the number of images, and the number differs between assignments.</p></li>
+<li><p>The upload widget can be disabled (readonly), in this case, when deadline reaches.</p></li>
+<li><p>Only the instructor and the student himself may do the CRUD of the images,
+with storage support, for example, via
+<a class="reference external" href="https://github.com/moggers87/django-sendfile2">django-sendfile2</a>.</p></li>
+</ul>
+<p>For years, we’ve searched but failed to find Django apps which can meet all the requirements.</p>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The widget make it hard for image model instance to have extra attributes like
+<code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">descriptions</span></code>, which limited the potential use case of the app.
+We were trying to find a way to enable adding/editing those attributes via the
+widget. Currently, the workaround I can think of is to introduce a foreign
+field to save the information of the images, and that require write more views
+by users.</p></li>
+<li><p>Kind of hard to use, for fresh developers in django, in terms of customization.
+We’ve tried hard to design some class-based views to make that easier.</p></li>
+<li><p>Currently, no actual delete of image model instance will be done through the web UI.
+However, as each image saved as an image model instance, we propose a workaround
+strategy to identify and delete the <cite>orphaned</cite> images instances (see in FAQ).</p></li>
+<li><p>There’s no direct way to add an image in a gallery to another gallery through the web
+UI, although the data models allow doing so.</p></li>
+</ul>
+</section>
+<section id="compared-to-peer-apps">
+<h2>Compared to peer apps<a class="headerlink" href="#compared-to-peer-apps" title="Permalink to this headline">¶</a></h2>
+<p>Just name a few popular apps that have similar functionality with django-galleryfield.
+Please correct me if I am wrong.</p>
+<ul>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/richardbarran/django-photologue">django-photologue</a></dt><dd><p>A popular app for managing photos and galleries, with built-in abstract models for
+photo objects, gallery and photo effects. The package
+requires images uploaded via admin, and multiple images need to be packed into a zip
+file before uploading. Besides, the images were sorted using
+<a class="reference external" href="https://github.com/jazzband/django-sortedm2m">django-sortedm2m</a>, which means arbitrary
+sorting is impossible to implement without introducing extra fields.
+Those features make it hard to meet the demand of our use case.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><a class="reference external" href="https://github.com/TND/django-files-widget">django-files-widget</a></dt><dd><p>In this app, images/files are managed and stored as <code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code> objects,
+which is actually the relative path of the files in the <code class="docutils literal notranslate"><span class="pre">MEDIA_ROOT</span></code>. That means only a
+few user with granted permissions can upload files to the server, or delete files uploaded
+to the server. Moreover, its working logic need to conduct physical operations with image
+files, which make it impossible to store the files on storage like S3.</p>
+<p>In django-galleryfield, images are stored in <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.ImageField</span></code>, which
+means we can store the images to various kind of storage (not just <code class="xref py py-class docutils literal notranslate"><span class="pre">FileSystemStorage</span></code>),
+and it possible for better permission management with regards to
+who can CRUD which images through views, and that expand the use case of the widget.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/Alem/django-jfu">django-jfu</a></dt><dd><p>A good demo on how to use <code class="docutils literal notranslate"><span class="pre">blueimp/jQuery-File-Upload</span></code> widget in Django. However,
+it only met the demand of upload images via AJAX, not in terms of Gallery, and there is
+a long way for the demo to be integrated into an app, e.g., in terms of <code class="docutils literal notranslate"><span class="pre">required</span></code>,
+<code class="docutils literal notranslate"><span class="pre">readonly</span></code> attribute of form fields.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/morlandi/django-upload-form">django-upload-form</a></dt><dd><p>It solved the problem of uploading multiple images from the frontend via a form.
+But the form is handling images, not the collection of images.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/pielgrzym/django-imaging">django-imaging</a></dt><dd><p>It also introduced a new type of field called <code class="docutils literal notranslate"><span class="pre">ImagingField</span></code>, however, it doesn’t
+support more than one <code class="docutils literal notranslate"><span class="pre">ImagingField</span></code> per model.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="about_demo.html" class="btn btn-neutral float-right" title="Behind the demo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="quick_start.html" class="btn btn-neutral float-left" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dong Zhuang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

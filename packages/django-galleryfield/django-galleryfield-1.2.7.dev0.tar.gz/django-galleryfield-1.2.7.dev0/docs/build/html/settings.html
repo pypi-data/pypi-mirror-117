@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Settings &mdash; django-galleryfield 1.2.6-beta documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MISC" href="misc.html" />
+    <link rel="prev" title="GalleryWidget" href="widget.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-galleryfield
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_demo.html">Behind the demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customize.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fields.html">Model field and form field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="views.html">Image handling views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="widget.html">GalleryWidget</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#django-gallery-field-config">DJANGO_GALLERY_FIELD_CONFIG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#assets">assets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thumbnails">thumbnails</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jquery-file-upload-ui-options">jquery_file_upload_ui_options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">MISC</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-galleryfield</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Settings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/settings.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="settings">
+<h1>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
+<p>Settings related to the package were included in a dict named <code class="docutils literal notranslate"><span class="pre">DJANGO_GALLERY_FIELD_CONFIG</span></code>.</p>
+<section id="django-gallery-field-config">
+<span id="std-setting-DJANGO_GALLERY_FIELD_CONFIG"></span><span id="std:setting-DJANGO_GALLERY_FIELD_CONFIG"></span><h2>DJANGO_GALLERY_FIELD_CONFIG<a class="headerlink" href="#django-gallery-field-config" title="Permalink to this headline">¶</a></h2>
+<p>Default:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;assets&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;jquery.js&quot;</span><span class="p">:</span> <span class="s2">&quot;jquery/dist/jquery.min.js&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;jquery-ui.js&quot;</span><span class="p">:</span> <span class="s2">&quot;jquery-ui-dist/jquery-ui.min.js&quot;</span><span class="p">,</span>
+       <span class="o">...</span>
+        <span class="s2">&quot;extra_js&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="s2">&quot;extra_css&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="p">},</span>
+
+    <span class="s2">&quot;thumbnails&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;120x120&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;quality&quot;</span><span class="p">:</span> <span class="mi">80</span>
+    <span class="p">},</span>
+
+    <span class="s2">&quot;widget_hidden_input_css_class&quot;</span><span class="p">:</span> <span class="s2">&quot;django-galleryfield&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;prompt_alert_if_changed_on_window_reload&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">&quot;jquery_file_upload_ui_options&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;autoUpload&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;imageMaxWidth&quot;</span><span class="p">:</span> <span class="mi">1024</span><span class="p">,</span>
+        <span class="s2">&quot;imageMaxHeight&quot;</span><span class="p">:</span> <span class="mi">1024</span><span class="p">,</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>See details below.</p>
+<section id="assets">
+<span id="std-setting-settings_default_assets"></span><span id="std:setting-settings_default_assets"></span><h3>assets<a class="headerlink" href="#assets" title="Permalink to this headline">¶</a></h3>
+<p>Default:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+
+    <span class="s2">&quot;jquery.js&quot;</span><span class="p">:</span> <span class="s2">&quot;jquery/dist/jquery.min.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery-ui.js&quot;</span><span class="p">:</span> <span class="s2">&quot;jquery-ui-dist/jquery-ui.min.js&quot;</span><span class="p">,</span>
+    <span class="o">...</span>
+    <span class="s2">&quot;extra_js&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="s2">&quot;extra_css&quot;</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The first part is the static assets required to render the
+<a class="reference internal" href="widget.html#galleryfield.widgets.GalleryWidget" title="galleryfield.widgets.GalleryWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.widgets.GalleryWidget</span></code></a>.
+The value includes 2 parts. The second part, i.e., <code class="docutils literal notranslate"><span class="pre">extra_js</span></code> and
+<code class="docutils literal notranslate"><span class="pre">extra_css</span></code> allow user to add customized static files when customize
+the rendering of the widget. The first part is the static assets required to render
+the <a class="reference internal" href="widget.html#galleryfield.widgets.GalleryWidget" title="galleryfield.widgets.GalleryWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.widgets.GalleryWidget</span></code></a>. The default value for this part
+is listed in <code class="docutils literal notranslate"><span class="pre">galleryfield.defaults.DEFAULT_ASSETS</span></code>.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="galleryfield.defaults.DEFAULT_ASSETS">
+<span class="sig-prename descclassname"><span class="pre">galleryfield.defaults.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_ASSETS</span></span><a class="headerlink" href="#galleryfield.defaults.DEFAULT_ASSETS" title="Permalink to this definition">¶</a></dt>
+<dd><p>dict: The default assets used to render the <code class="xref py py-class docutils literal notranslate"><span class="pre">GalleryWidget</span></code> instance.</p>
+</dd></dl>
+
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DEFAULT_ASSETS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># js assets</span>
+    <span class="s2">&quot;jquery.js&quot;</span><span class="p">:</span> <span class="s2">&quot;jquery/dist/jquery.min.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery-ui.js&quot;</span><span class="p">:</span> <span class="s2">&quot;jquery-ui-dist/jquery-ui.min.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.ui.widget.min.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/js/vendor/jquery.ui.widget.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blueimp-tmpl.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-tmpl/js/tmpl.min.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;load-image.all.min.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-load-image/js/load-image.all.min.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blueimp-canvas-to-blob.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-canvas-to-blob/js/canvas-to-blob.min.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;bootstrap.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;bootstrap/dist/js/bootstrap.min.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.iframe-transport.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/js/jquery.iframe-transport.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload.js&quot;</span><span class="p">:</span> <span class="s2">&quot;blueimp-file-upload/js/jquery.fileupload.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload-process.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/js/jquery.fileupload-process.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload-image.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/js/jquery.fileupload-image.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload-audio.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/js/jquery.fileupload-audio.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload-video.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/js/jquery.fileupload-video.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload-validate.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/js/jquery.fileupload-validate.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload-ui.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/js/jquery.fileupload-ui.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.blueimp-gallery.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-gallery/js/jquery.blueimp-gallery.min.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blueimp-gallery-fullscreen.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-gallery/js/blueimp-gallery-fullscreen.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blueimp-gallery-indicator.js&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-gallery/js/blueimp-gallery-indicator.js&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cropper.js&quot;</span><span class="p">:</span> <span class="s2">&quot;cropper/dist/cropper.min.js&quot;</span><span class="p">,</span>
+
+    <span class="c1"># css assets</span>
+    <span class="s2">&quot;bootstrap.css&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap/dist/css/bootstrap.min.css&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery-ui.theme.css&quot;</span><span class="p">:</span> <span class="s2">&quot;jquery-ui-dist/jquery-ui.theme.min.css&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload.css&quot;</span><span class="p">:</span> <span class="s2">&quot;blueimp-file-upload/css/jquery.fileupload.css&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jquery.fileupload-ui.css&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-file-upload/css/jquery.fileupload-ui.css&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blueimp-gallery.css&quot;</span><span class="p">:</span> <span class="s2">&quot;blueimp-gallery/css/blueimp-gallery.min.css&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blueimp-gallery-indicator.css&quot;</span><span class="p">:</span>
+        <span class="s2">&quot;blueimp-gallery/css/blueimp-gallery-indicator.css&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;font-awesome.css&quot;</span><span class="p">:</span> <span class="s2">&quot;font-awesome/css/font-awesome.min.css&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cropper.css&quot;</span><span class="p">:</span> <span class="s2">&quot;cropper/dist/cropper.min.css&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This project relies heavily on CSS and JS frameworks/packages, so we strongly
+suggest using <code class="docutils literal notranslate"><span class="pre">django-npm</span></code> to manage the static assets for convenience. If
+you have other options, for example, not willing to have a local copy of those assets,
+you need to make sure ALL the items in <code class="docutils literal notranslate"><span class="pre">galleryfield.defaults.DEFAULT_ASSET</span></code>
+properly configure in this setting and
+can be accessed properly.</p>
+<p>BTW, trying to ignore some commonly used framework such as
+<cite>Bootstrap</cite> (because you already has it in your instance) will result in failure in
+rendering the widget in Admin.</p>
+</div>
+</section>
+<section id="thumbnails">
+<span id="std-setting-settings_thumbnails"></span><span id="std:setting-settings_thumbnails"></span><h3>thumbnails<a class="headerlink" href="#thumbnails" title="Permalink to this headline">¶</a></h3>
+<p>Default:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;thumbnails&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;120x120&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;quality&quot;</span><span class="p">:</span> <span class="mi">80</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>We use <a class="reference external" href="https://github.com/jazzband/sorl-thumbnail">sorl.thumbnail</a> to generate the thumbnails
+in the project. The term <code class="docutils literal notranslate"><span class="pre">size</span></code> correspond to
+<a class="reference external" href="https://sorl-thumbnail.readthedocs.io/en/latest/template.html#geometry">geometry</a> in <code class="docutils literal notranslate"><span class="pre">sorl.thumbnail</span></code>.
+Currently, we accept the following format of size:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;120x80&#39;</span>
+<span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>  <span class="c1"># same as &#39;120x80&#39;</span>
+<span class="p">(</span><span class="s1">&#39;120&#39;</span><span class="p">,</span> <span class="s1">&#39;80&#39;</span><span class="p">)</span>  <span class="c1"># same as &#39;120x80&#39;</span>
+<span class="p">[</span><span class="mi">120</span><span class="p">,</span> <span class="mi">80</span><span class="p">]</span>  <span class="c1"># same as &#39;120x80&#39;</span>
+<span class="p">[</span><span class="s1">&#39;120&#39;</span><span class="p">,</span> <span class="s1">&#39;80&#39;</span><span class="p">]</span> <span class="c1"># same as &#39;120x80&#39;</span>
+<span class="mi">120</span>  <span class="c1"># same as &#39;120x120&#39;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">size</span></code> can be overridden when initializing <a class="reference internal" href="widget.html#galleryfield.widgets.GalleryWidget" title="galleryfield.widgets.GalleryWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.widgets.GalleryWidget</span></code></a> via
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">thumbnail_size</span></code>.</p>
+<p>For quality, please refer to
+<a class="reference external" href="https://sorl-thumbnail.readthedocs.io/en/latest/template.html#quality">quality option</a> in
+<a class="reference external" href="https://github.com/jazzband/sorl-thumbnail">sorl.thumbnail</a>.</p>
+</section>
+<section id="jquery-file-upload-ui-options">
+<span id="std-setting-jquery_file_upload_ui_options"></span><span id="std:setting-jquery_file_upload_ui_options"></span><h3>jquery_file_upload_ui_options<a class="headerlink" href="#jquery-file-upload-ui-options" title="Permalink to this headline">¶</a></h3>
+<p>The default value is listed in <code class="docutils literal notranslate"><span class="pre">galleryfield.defaults.JQUERY_FILE_UPLOAD_UI_DEFAULT_OPTIONS</span></code>.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="galleryfield.defaults.JQUERY_FILE_UPLOAD_UI_DEFAULT_OPTIONS">
+<span class="sig-prename descclassname"><span class="pre">galleryfield.defaults.</span></span><span class="sig-name descname"><span class="pre">JQUERY_FILE_UPLOAD_UI_DEFAULT_OPTIONS</span></span><a class="headerlink" href="#galleryfield.defaults.JQUERY_FILE_UPLOAD_UI_DEFAULT_OPTIONS" title="Permalink to this definition">¶</a></dt>
+<dd><p>dict: The default options for jQuery-File-Upload module.</p>
+</dd></dl>
+
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">JQUERY_FILE_UPLOAD_UI_DEFAULT_OPTIONS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;autoUpload&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">&quot;imageMaxWidth&quot;</span><span class="p">:</span> <span class="mi">1024</span><span class="p">,</span>
+    <span class="s2">&quot;imageMaxHeight&quot;</span><span class="p">:</span> <span class="mi">1024</span><span class="p">,</span>
+    <span class="s2">&quot;loadImageFileTypes&quot;</span><span class="p">:</span> <span class="sa">r</span><span class="s2">&quot;/^image\/(gif|jpeg|png|bmp|svg\+xml)$/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sequentialUploads&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;acceptFileTypes&quot;</span><span class="p">:</span> <span class="sa">r</span><span class="s2">&quot;/(\.|\/)(png|gif|bmp|jpe?g)$/i&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;imageOrientation&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">&quot;maxFileSize&quot;</span><span class="p">:</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span>  <span class="c1"># 1.5Mb</span>
+    <span class="s2">&quot;minFileSize&quot;</span><span class="p">:</span> <span class="mf">0.0001</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span>  <span class="c1"># 0.0001Mb</span>
+    <span class="s2">&quot;disableImageResize&quot;</span><span class="p">:</span> <span class="s2">&quot;/Android(?!.*Chrome)|Opera/.test(window.navigator &quot;</span>
+                          <span class="s2">&quot;&amp;&amp; navigator.userAgent)&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd><p>The value can be overridden when initializing <a class="reference internal" href="widget.html#galleryfield.widgets.GalleryWidget" title="galleryfield.widgets.GalleryWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.widgets.GalleryWidget</span></code></a> via
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">jquery_file_upload_ui_options</span></code>.
+Please refer to <a class="reference external" href="https://github.com/blueimp/jQuery-File-Upload/wiki/Options#general-options">available options</a>
+for the details and more options.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Options <code class="docutils literal notranslate"><span class="pre">previewMaxWidth</span></code> and <code class="docutils literal notranslate"><span class="pre">previewMaxHeight</span></code> were ignored in favor of
+<a class="reference internal" href="#std-setting-settings_thumbnails"><code class="xref std std-setting docutils literal notranslate"><span class="pre">thumbnail</span> <span class="pre">settings</span></code></a>.
+Option <code class="docutils literal notranslate"><span class="pre">maxNumberOfFiles</span></code> will be ignored and should be configured in the formfield.
+See example in <a class="reference internal" href="fields.html#galleryfield.fields.GalleryFormField" title="galleryfield.fields.GalleryFormField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryFormField</span></code></a>.
+Options <code class="docutils literal notranslate"><span class="pre">fileInput</span></code>, <code class="docutils literal notranslate"><span class="pre">paramName</span></code> and <code class="docutils literal notranslate"><span class="pre">singleFileUploads</span></code> were also
+ignored (overridden).</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="misc.html" class="btn btn-neutral float-right" title="MISC" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="widget.html" class="btn btn-neutral float-left" title="GalleryWidget" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dong Zhuang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

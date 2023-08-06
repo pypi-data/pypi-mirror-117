@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Customization &mdash; django-galleryfield 1.2.6-beta documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Model field and form field" href="fields.html" />
+    <link rel="prev" title="Behind the demo" href="about_demo.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-galleryfield
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_demo.html">Behind the demo</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Customization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#image-model-and-views">Image model and views</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-valid-target-image-model">A valid target image model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#three-views-for-handling-the-image-model-objects">Three views for handling the image model objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#naming-rule-for-urls-of-image-handling-views">Naming rule for urls of image handling views</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#galleryfield-rendering-customization">GalleryField rendering customization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#template-customization">Template customization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fields.html">Model field and form field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="views.html">Image handling views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="widget.html">GalleryWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">MISC</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-galleryfield</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Customization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/customize.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="customization">
+<h1>Customization<a class="headerlink" href="#customization" title="Permalink to this headline">¶</a></h1>
+<p>Although the built-in image model, along with the image processing views
+demonstrated in the demo, might have met the basic needs for some apps,
+advance users might require more features in terms of image storage,
+permission control, template inheritance, and Image model (fields)
+customization.</p>
+<p>Before that, we need to address how this app is working.</p>
+<section id="image-model-and-views">
+<h2>Image model and views<a class="headerlink" href="#image-model-and-views" title="Permalink to this headline">¶</a></h2>
+<p>Until now, Django didn’t supply any type of <cite>Field</cite> which can store unknown
+length of images or files. However, the introduction of <code class="docutils literal notranslate"><span class="pre">JsonField</span></code>
+(since Django 3) made it possible workaround the issue by storing the <code class="docutils literal notranslate"><span class="pre">pk</span></code>
+of image model instances as a Json list in a custom <code class="docutils literal notranslate"><span class="pre">JsonField</span></code>.</p>
+<p>The first obstacle we met is: how to map the <code class="docutils literal notranslate"><span class="pre">pks</span></code> to the actual image model instances?
+Our workaround is saving the
+<a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/applications/#django.apps.apps.get_model">app_label.model_name</a>
+of the image model (which we called <code class="docutils literal notranslate"><span class="pre">target_model</span></code> throughout the app and docs)
+in <a class="reference internal" href="fields.html#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryField</span></code></a>.</p>
+<p>Following that, there should be three basic views to handle image model instances,
+before saving their <code class="docutils literal notranslate"><span class="pre">pks</span></code> to the <code class="docutils literal notranslate"><span class="pre">GalleryField</span></code>:
+Create (which we called <strong>upload</strong> operation),
+List (which we called <strong>fetch</strong> operation)
+and Update (which we mean <strong>crop</strong> operation).
+The potential problems include: users will have to write 3 image handling views each time when
+a new <code class="docutils literal notranslate"><span class="pre">target_model</span></code> is introduced for a new type of gallery/album,
+is there any shortcut that we don’t need to write much code to achieve that?
+And, can a image model automatically know what default url name they should look for
+(to find the views) when trying to do the 3 operations?
+We finally introduced a class-based views for each operation, and
+set a <a class="reference internal" href="#image-handling-url-naming-rule"><span class="std std-ref">naming rule</span></a> for the naming of the url names
+for the 3 operations.</p>
+<p>Therefore, a model level customization (for image model) involves:</p>
+<section id="a-valid-target-image-model">
+<span id="customize-valid-image-model"></span><h3>A valid target image model<a class="headerlink" href="#a-valid-target-image-model" title="Permalink to this headline">¶</a></h3>
+<p>Image model is where we actually save the image uploaded. To be a valid target image model,
+it need to meet one of the following 2 requirements:</p>
+<ol class="arabic simple">
+<li><p>It has a <code class="docutils literal notranslate"><span class="pre">django.db.models.ImageField</span></code> named <code class="docutils literal notranslate"><span class="pre">image</span></code>.</p></li>
+<li><p>It has a <code class="docutils literal notranslate"><span class="pre">django.db.models.ImageField</span></code> which not named <code class="docutils literal notranslate"><span class="pre">image</span></code>
+but the field can be accessed by a <code class="docutils literal notranslate"><span class="pre">classmethod</span></code> named <code class="docutils literal notranslate"><span class="pre">get_image_field</span></code>.
+For example, in an app named <code class="docutils literal notranslate"><span class="pre">my_app</span></code>, we can have the following valid target image model in
+<code class="docutils literal notranslate"><span class="pre">my_app.models.py</span></code>:</p></li>
+</ol>
+<div class="highlight-python snippet"><div class="snippet-filename">my_app/models.py</div>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyImage</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+     <span class="n">photo</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ImageField</span><span class="p">(</span>
+         <span class="n">upload_to</span><span class="o">=</span><span class="s2">&quot;my_images&quot;</span><span class="p">,</span> <span class="n">storage</span><span class="o">=</span><span class="n">default_storage</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s2">&quot;Image&quot;</span><span class="p">))</span>
+     <span class="n">creator</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span>
+             <span class="n">settings</span><span class="o">.</span><span class="n">AUTH_USER_MODEL</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                     <span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Creator&#39;</span><span class="p">),</span> <span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">)</span>
+     <span class="n">creation_time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">now</span><span class="p">(),</span> <span class="n">blank</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+     <span class="nd">@classmethod</span>
+     <span class="k">def</span> <span class="nf">get_image_field</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+         <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">get_field</span><span class="p">(</span><span class="s2">&quot;photo&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the example above, when defining the <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_image_field()</span></code>,
+we can’t simply <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">cls.photo</span></code> because it
+returns a <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.fields.files.ImageFieldFile</span></code>
+object instead of a <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.ImageField</span></code> object.</p>
+</div>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.models.BuiltInGalleryImage</span></code> is using the first style (
+with <code class="docutils literal notranslate"><span class="pre">target_model=&quot;garllery_widget.BuiltInGalleryImage&quot;</span></code>).
+However, if you don’t want to do much change to your existing models
+(e.g., avoiding migrations of existing model),
+the second style is more sounding.</p>
+<p>In the following, we will use the above model in a <a class="reference internal" href="fields.html#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryField</span></code></a>
+with <code class="docutils literal notranslate"><span class="pre">target_model</span> <span class="pre">=</span> <span class="pre">&quot;my_app.MyImage&quot;</span></code>.</p>
+</section>
+<section id="three-views-for-handling-the-image-model-objects">
+<h3>Three views for handling the image model objects<a class="headerlink" href="#three-views-for-handling-the-image-model-objects" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Three views for handling the image model objects (upload, fetch and crop). We provided 3
+class-based-views for these views to enable the built-in views.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="views.html#galleryfield.image_views.ImageCreateView" title="galleryfield.image_views.ImageCreateView"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.ImageCreateView</span></code></a></p></li>
+<li><p><a class="reference internal" href="views.html#galleryfield.image_views.ImageListView" title="galleryfield.image_views.ImageListView"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.ImageListView</span></code></a></p></li>
+<li><p><a class="reference internal" href="views.html#galleryfield.image_views.ImageCropView" title="galleryfield.image_views.ImageCropView"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.ImageCropView</span></code></a></p></li>
+</ul>
+<p>See <a class="reference internal" href="views.html#built-in-image-views"><span class="std std-ref">Built-in Image handling Views</span></a> for more detail. We hope users can subclass
+the views above without much coding work. We think the 3 views
+handling built-in image model (i.e., <code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.BuiltInImageCreateView</span></code>,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.BuiltInImageListView</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.BuiltInImageCropView</span></code> were good examples of how to used them.</p>
+</li>
+</ul>
+</section>
+<section id="naming-rule-for-urls-of-image-handling-views">
+<span id="image-handling-url-naming-rule"></span><h3>Naming rule for urls of image handling views<a class="headerlink" href="#naming-rule-for-urls-of-image-handling-views" title="Permalink to this headline">¶</a></h3>
+<p>Generally, the widget need to know the urls for image handling views (see <a class="reference internal" href="widget.html#widget-docs"><span class="std std-ref">GalleryWidget docs</span></a>).
+We may specify the url name manually in gallery modelform fields widget configurations.
+Alternatively, we can also let the widget infer what urls it should use for those views, by
+following a naming rules for those views in <code class="docutils literal notranslate"><span class="pre">URL_CONF</span></code>.
+The default url names are the lower cased model_name, suffixed by <code class="docutils literal notranslate"><span class="pre">-upload</span></code>, <code class="docutils literal notranslate"><span class="pre">-fetch</span></code> and <code class="docutils literal notranslate"><span class="pre">-crop</span></code>,
+respectively. For example, if you have a <code class="docutils literal notranslate"><span class="pre">target_model</span></code> named <code class="docutils literal notranslate"><span class="pre">my_app.MyImage</span></code>, then the default
+url names are <code class="docutils literal notranslate"><span class="pre">myimage-upload</span></code>, <code class="docutils literal notranslate"><span class="pre">myimage-fetch</span></code> and <code class="docutils literal notranslate"><span class="pre">myimage-crop</span></code>. In this way, you don’t
+need to specify in the <code class="docutils literal notranslate"><span class="pre">GalleryWidget</span></code> the param <code class="docutils literal notranslate"><span class="pre">upload_url</span></code> and <code class="docutils literal notranslate"><span class="pre">fetch_url</span></code>,
+and no need to specify the <code class="docutils literal notranslate"><span class="pre">crop_url_name</span></code> in each of the 3 class-based views.</p>
+<p>Until now, we were talking about image model instance handling.</p>
+</section>
+</section>
+<section id="galleryfield-rendering-customization">
+<h2>GalleryField rendering customization<a class="headerlink" href="#galleryfield-rendering-customization" title="Permalink to this headline">¶</a></h2>
+<p>Now we turn to the customization of gallery model.
+Back to the demo, when dealing with the gallery model instance, there isn’t much magic about
+<code class="xref py py-class docutils literal notranslate"><span class="pre">demo.views.GalleryCreateView</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">demo.views.GalleryUpdateView</span></code>.
+Here, we need to address <code class="xref py py-class docutils literal notranslate"><span class="pre">demo.views.GalleryDetailView</span></code>, on how it rendering the
+<a class="reference internal" href="fields.html#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryField</span></code></a>.</p>
+<p>With the <code class="docutils literal notranslate"><span class="pre">MyImage</span></code> in previous example as the <code class="docutils literal notranslate"><span class="pre">target_model</span></code>, we can have a gallery model named <code class="docutils literal notranslate"><span class="pre">MyGallery</span></code>:</p>
+<div class="highlight-python snippet"><div class="snippet-filename">my_app/models.py</div>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyGallery</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+     <span class="n">album</span> <span class="o">=</span> <span class="n">GalleryField</span><span class="p">(</span><span class="n">target_model</span><span class="o">=</span><span class="s2">&quot;my_app.MyImage&quot;</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;My photos&#39;</span><span class="p">))</span>
+     <span class="n">owner</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span>
+             <span class="n">settings</span><span class="o">.</span><span class="n">AUTH_USER_MODEL</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                     <span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Owner&#39;</span><span class="p">),</span> <span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>By subclassing <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.detail.DetailView</span></code>, we can have a gallery detail view like:</p>
+<div class="highlight-python snippet"><div class="snippet-filename">my_app/views.py</div>
+<div class="highlight"><pre><span></span> <span class="kn">from</span> <span class="nn">django.views.generic.detail</span> <span class="kn">import</span> <span class="n">DetailView</span>
+ <span class="kn">from</span> <span class="nn">my_app.models</span> <span class="kn">import</span> <span class="n">MyGallery</span>
+
+ <span class="k">class</span> <span class="nc">MyGalleryDetailView</span><span class="p">(</span><span class="n">DetailView</span><span class="p">):</span>
+     <span class="n">model</span> <span class="o">=</span> <span class="n">MyGallery</span>
+</pre></div>
+</div>
+<p>Then we add a template file named <code class="docutils literal notranslate"><span class="pre">mygallery_detail.html</span></code> to folder <code class="docutils literal notranslate"><span class="pre">my_app/templates/my_app/</span></code>,
+with the following code block:</p>
+<div class="highlight-html snippet"><div class="snippet-filename">my_app/templates/my_app/mygallery_detail.html</div>
+<div class="highlight"><pre><span></span> {% extends &#39;base.html&#39; %}
+ {% load static %}
+
+ ...
+
+ {% for obj in object.album.objects.all %}
+     <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;{{ obj.photo.url}}&quot;</span><span class="p">&gt;</span>
+ {% endfor %}
+
+ ...
+</pre></div>
+</div>
+<p>And add the url of the view:</p>
+<div class="highlight-python snippet"><div class="snippet-filename">my_app/urls.py</div>
+<div class="highlight"><pre><span></span> <span class="kn">from</span> <span class="nn">my_apps</span> <span class="kn">import</span> <span class="n">views</span>
+
+ <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+     <span class="o">...</span>
+     <span class="n">path</span><span class="p">(</span><span class="s1">&#39;album-detail/&lt;int:pk&gt;&#39;</span><span class="p">,</span>
+          <span class="n">views</span><span class="o">.</span><span class="n">MyGalleryDetailView</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;my_gallery-detail&#39;</span><span class="p">),</span>
+ <span class="p">]</span>
+</pre></div>
+</div>
+<p>Then we can navigate to see the images in a specific gallery.</p>
+<p>As you might guess from the first line in the template snippet,
+the <code class="docutils literal notranslate"><span class="pre">GalleryField</span></code> provide a <code class="docutils literal notranslate"><span class="pre">Queryset</span></code> API for the image model
+instances it related to. No wonder, you can do the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">first_gallery</span> <span class="o">=</span> <span class="n">MyGallery</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">photos_in_first_gallery</span> <span class="o">=</span> <span class="n">first_gallery</span><span class="o">.</span><span class="n">album</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">photos_before_2021</span> <span class="o">=</span> <span class="n">photos_in_first_gallery</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">creation_time__lt</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">01</span><span class="p">,</span> <span class="mi">01</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>More over, the demo provide an  example of <a class="reference external" href="https://github.com/dzhuang/django-galleryfield/blob/main/demo/templates/demo/demogallery_detail.html">how to render</a>
+the field using <code class="docutils literal notranslate"><span class="pre">sorl.thumbnail</span></code> and <code class="docutils literal notranslate"><span class="pre">Blueimp</span> <span class="pre">Gallery</span></code> package.</p>
+<p>Finally, it’s your opportunity to show your skills on customizing the gallery/album frontend, which is beyond the scope of this package.</p>
+</section>
+<section id="template-customization">
+<h2>Template customization<a class="headerlink" href="#template-customization" title="Permalink to this headline">¶</a></h2>
+<p>TODO</p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="fields.html" class="btn btn-neutral float-right" title="Model field and form field" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="about_demo.html" class="btn btn-neutral float-left" title="Behind the demo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dong Zhuang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

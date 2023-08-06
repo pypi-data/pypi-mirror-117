@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Behind the demo &mdash; django-galleryfield 1.2.6-beta documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Customization" href="customize.html" />
+    <link rel="prev" title="Introduction" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-galleryfield
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Behind the demo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-it-handles-the-images">How it handles the images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-it-handles-the-gallery">How it handles the gallery</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="customize.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fields.html">Model field and form field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="views.html">Image handling views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="widget.html">GalleryWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">MISC</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-galleryfield</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Behind the demo</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/about_demo.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="behind-the-demo">
+<h1>Behind the demo<a class="headerlink" href="#behind-the-demo" title="Permalink to this headline">¶</a></h1>
+<p>The code in the demo seems very simple, with only a model field <a class="reference internal" href="fields.html#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryField</span></code></a>
+imported in <code class="docutils literal notranslate"><span class="pre">demo.models</span></code> to construct the gallery model. Actually, there’re some logic falls behind the
+code.</p>
+<section id="how-it-handles-the-images">
+<h2>How it handles the images<a class="headerlink" href="#how-it-handles-the-images" title="Permalink to this headline">¶</a></h2>
+<p>Although we didn’t explicitly specified in the code, the demo is actually using
+built-in <code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.models.BuiltInGalleryImage</span></code> as the image model for
+creating, listing, and updating images.
+The image model has 2 fields: a <a class="reference internal" href="fields.html#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryField</span></code></a> named <code class="docutils literal notranslate"><span class="pre">image</span></code>
+and an <code class="docutils literal notranslate"><span class="pre">User</span></code> field named <code class="docutils literal notranslate"><span class="pre">creator</span></code>. We think whatever it called, an <code class="docutils literal notranslate"><span class="pre">User</span></code>
+field is needed because that’s the basis for the server to determine the
+whether requested users are qualified to modify or potentially delete existing
+image instances.</p>
+<p>Further, If you look into <code class="docutils literal notranslate"><span class="pre">galleryfield.urls</span></code> and <code class="docutils literal notranslate"><span class="pre">galleryfield.image_views</span></code>,
+you will see 3 class-based views:</p>
+<ul class="simple">
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.BuiltInImageCreateView</span></code> for uploading images,
+requires login.
+Following the <a class="reference internal" href="customize.html#image-handling-url-naming-rule"><span class="std std-ref">naming rule</span></a>, The url name is <code class="docutils literal notranslate"><span class="pre">builtingalleryimage-upload</span></code>.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.BuiltInImageListView</span></code> for fetching existing images,
+restricted to the owner of the images or superuser, with url name
+<code class="docutils literal notranslate"><span class="pre">builtingalleryimage-fetch</span></code>.</p></li>
+<li><p>and <code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.image_views.BuiltInImageCropView</span></code> for server side cropping
+of uploaded images, restricted to the owner of the images or superuser, with url
+name <code class="docutils literal notranslate"><span class="pre">builtingalleryimage-crop</span></code>.</p></li>
+</ul>
+</section>
+<section id="how-it-handles-the-gallery">
+<h2>How it handles the gallery<a class="headerlink" href="#how-it-handles-the-gallery" title="Permalink to this headline">¶</a></h2>
+<p>In <code class="docutils literal notranslate"><span class="pre">demo.models</span></code>, we defined a gallery model named <code class="xref py py-class docutils literal notranslate"><span class="pre">DemoGallery</span></code>, which contains
+a <a class="reference internal" href="fields.html#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryField</span></code></a> named <code class="docutils literal notranslate"><span class="pre">images</span></code>, and again an <code class="docutils literal notranslate"><span class="pre">User</span></code> field named
+<code class="docutils literal notranslate"><span class="pre">owner</span></code> which is also used to guarantee permissions of requested user to create and update
+gallery instances.</p>
+<p>The handling of galleries is fairly simple as compared to images. The views for galleries
+were in <code class="docutils literal notranslate"><span class="pre">demo.views</span></code> and its <code class="docutils literal notranslate"><span class="pre">URL_CONF</span></code> were in <code class="docutils literal notranslate"><span class="pre">demo.urls</span></code>. Three views were provided:</p>
+<ul class="simple">
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">demo.views.GalleryCreateView</span></code> is responsible for creating new gallery instances, restricted to owner and superuser.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">demo.views.GalleryUpdateView</span></code> is responsible for updating existing gallery instances (add/delete/order images), restricted to owner and superuser.</p></li>
+<li><p>and <code class="xref py py-class docutils literal notranslate"><span class="pre">demo.views.GalleryDetailView</span></code>, which is responsible for rendering the gallery, requires no authentication.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="customize.html" class="btn btn-neutral float-right" title="Customization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dong Zhuang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>galleryfield.fields &mdash; django-galleryfield 1.2.6-beta documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> django-galleryfield
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about_demo.html">Behind the demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../customize.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fields.html">Model field and form field</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../views.html">Image handling views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../widget.html">GalleryWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc.html">MISC</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">django-galleryfield</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>galleryfield.fields</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for galleryfield.fields</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">django</span> <span class="kn">import</span> <span class="n">forms</span>
+<span class="kn">from</span> <span class="nn">django.core.exceptions</span> <span class="kn">import</span> <span class="n">ImproperlyConfigured</span><span class="p">,</span> <span class="n">ValidationError</span>
+<span class="kn">from</span> <span class="nn">django.core.validators</span> <span class="kn">import</span> <span class="n">BaseValidator</span>
+<span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+<span class="kn">from</span> <span class="nn">django.db.models</span> <span class="kn">import</span> <span class="n">Case</span><span class="p">,</span> <span class="n">IntegerField</span><span class="p">,</span> <span class="n">Value</span><span class="p">,</span> <span class="n">When</span>
+<span class="kn">from</span> <span class="nn">django.db.models.query_utils</span> <span class="kn">import</span> <span class="n">DeferredAttribute</span>
+<span class="kn">from</span> <span class="nn">django.utils.deconstruct</span> <span class="kn">import</span> <span class="n">deconstructible</span>
+<span class="kn">from</span> <span class="nn">django.utils.translation</span> <span class="kn">import</span> <span class="n">gettext_lazy</span> <span class="k">as</span> <span class="n">_</span>
+<span class="kn">from</span> <span class="nn">django.utils.translation</span> <span class="kn">import</span> <span class="n">ngettext_lazy</span>
+
+<span class="kn">from</span> <span class="nn">galleryfield</span> <span class="kn">import</span> <span class="n">conf</span>
+<span class="kn">from</span> <span class="nn">galleryfield</span> <span class="kn">import</span> <span class="n">defaults</span> <span class="k">as</span> <span class="n">_defaults</span>
+<span class="kn">from</span> <span class="nn">galleryfield.utils</span> <span class="kn">import</span> <span class="n">apps</span><span class="p">,</span> <span class="n">get_or_check_image_field</span><span class="p">,</span> <span class="n">logger</span>
+<span class="kn">from</span> <span class="nn">galleryfield.widgets</span> <span class="kn">import</span> <span class="n">GalleryWidget</span>
+
+
+<span class="nd">@deconstructible</span>
+<span class="k">class</span> <span class="nc">MaxNumberOfImageValidator</span><span class="p">(</span><span class="n">BaseValidator</span><span class="p">):</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">ngettext_lazy</span><span class="p">(</span>
+        <span class="s1">&#39;Number of images exceeded, only </span><span class="si">%(limit_value)d</span><span class="s1"> allowed&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Number of images exceeded, only </span><span class="si">%(limit_value)d</span><span class="s1"> allowed&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;limit_value&#39;</span><span class="p">)</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;max_number_of_images&#39;</span>
+
+    <span class="k">def</span> <span class="nf">compare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>
+
+    <span class="k">def</span> <span class="nf">clean</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">GalleryDescriptor</span><span class="p">(</span><span class="n">DeferredAttribute</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Used django.db.models.fields.files.FileDescriptor as an example.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__set__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="n">instance</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">attname</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="bp">cls</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">image_list</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">image_list</span><span class="p">,</span> <span class="n">GalleryImages</span><span class="p">):</span>
+            <span class="n">attr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">attr_class</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="p">,</span> <span class="n">image_list</span><span class="p">)</span>
+            <span class="n">instance</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">attr</span>
+
+        <span class="k">return</span> <span class="n">instance</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">name</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="GalleryImages"><a class="viewcode-back" href="../../fields.html#galleryfield.fields.GalleryImages">[docs]</a><span class="k">class</span> <span class="nc">GalleryImages</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">field_value</span><span class="p">):</span>
+        <span class="c1"># When field_value is None,</span>
+        <span class="c1"># (This happens when the GalleryField was saved as null)</span>
+        <span class="n">field_value</span> <span class="o">=</span> <span class="n">field_value</span> <span class="ow">or</span> <span class="p">[]</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">field_value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_field</span> <span class="o">=</span> <span class="n">field</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">instance</span> <span class="o">=</span> <span class="n">instance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_value</span> <span class="o">=</span> <span class="n">field_value</span> <span class="ow">or</span> <span class="p">[]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">objects</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">apps</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_field</span><span class="o">.</span><span class="n">target_model</span><span class="p">)</span>
+
+        <span class="c1"># Preserving the order of image using id__in=pks</span>
+        <span class="c1"># https://stackoverflow.com/a/37146498/3437454</span>
+        <span class="n">cases</span> <span class="o">=</span> <span class="p">[</span><span class="n">When</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">then</span><span class="o">=</span><span class="n">Value</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_value</span><span class="p">)]</span>
+        <span class="n">case</span> <span class="o">=</span> <span class="n">Case</span><span class="p">(</span><span class="o">*</span><span class="n">cases</span><span class="p">,</span> <span class="n">output_field</span><span class="o">=</span><span class="n">IntegerField</span><span class="p">())</span>
+        <span class="n">filter_kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;id__in&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value</span><span class="p">}</span>
+        <span class="n">queryset</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="o">**</span><span class="n">filter_kwargs</span><span class="p">)</span>
+        <span class="n">queryset</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="n">_order</span><span class="o">=</span><span class="n">case</span><span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;_order&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">queryset</span></div>
+
+
+<div class="viewcode-block" id="GalleryField"><a class="viewcode-back" href="../../fields.html#galleryfield.fields.GalleryField">[docs]</a><span class="k">class</span> <span class="nc">GalleryField</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">JSONField</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This is a model field which saves the id of images.</span>
+
+<span class="sd">    :param target_model: A string in the form of ``&quot;app_label.model_name&quot;``,</span>
+<span class="sd">           which can be loaded by :meth:`django.apps.get_model` (see </span>
+<span class="sd">           `Django docs &lt;https://docs.djangoproject.com/en/dev/ref/applications/#django.apps.apps.get_model&gt;`_),</span>
+<span class="sd">           defaults to `None`. If `None`, :class:`galleryfield.BuiltInGalleryImage` will be used.</span>
+<span class="sd">           If set, it should be :ref:`a valid image model &lt;customize-valid-image-model&gt;`.</span>
+
+<span class="sd">    :type target_model: str, optional.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>  <span class="c1"># noqa</span>
+
+    <span class="n">attr_class</span> <span class="o">=</span> <span class="n">GalleryImages</span>
+    <span class="n">descriptor_class</span> <span class="o">=</span> <span class="n">GalleryDescriptor</span>
+
+    <span class="k">def</span> <span class="nf">contribute_to_class</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">private_only</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">contribute_to_class</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">private_only</span><span class="p">)</span>
+        <span class="nb">setattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">attname</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">descriptor_class</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target_model</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_init_target_model</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">target_model</span> <span class="o">=</span> <span class="n">target_model</span>
+        <span class="k">if</span> <span class="n">target_model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">target_model</span> <span class="o">=</span> <span class="n">_defaults</span><span class="o">.</span><span class="n">DEFAULT_TARGET_IMAGE_MODEL</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">target_model_image_field</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_get_image_field_or_test</span><span class="p">(</span><span class="n">is_checking</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_get_image_field_or_test</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">is_checking</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">get_or_check_image_field</span><span class="p">(</span>
+            <span class="n">obj</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">target_model</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_init_target_model</span><span class="p">,</span>
+            <span class="n">check_id_prefix</span><span class="o">=</span><span class="s2">&quot;gallery_field&quot;</span><span class="p">,</span>
+            <span class="n">is_checking</span><span class="o">=</span><span class="n">is_checking</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">errors</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_check_target_model</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">errors</span>
+
+    <span class="k">def</span> <span class="nf">_check_target_model</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_image_field_or_test</span><span class="p">(</span><span class="n">is_checking</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">deconstruct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">name</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">deconstruct</span><span class="p">()</span>
+        <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;target_model&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">target_model</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
+
+    <span class="k">def</span> <span class="nf">formfield</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">defaults</span> <span class="o">=</span> <span class="p">({</span>
+            <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+
+            <span class="c1"># The following 2 params will be passed to GalleryWidget</span>
+            <span class="c1"># to check if there&#39;re potential conflicts between</span>
+            <span class="c1"># target_model and upload_url and fetch_url.</span>
+            <span class="c1"># see GalleryWidget.set_and_check_urls()</span>
+            <span class="s2">&quot;target_model&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">target_model</span><span class="p">,</span>
+            <span class="s2">&quot;model_field&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="p">})</span>
+        <span class="n">defaults</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">formfield</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">formfield</span><span class="p">(</span><span class="o">**</span><span class="p">{</span>
+            <span class="s1">&#39;form_class&#39;</span><span class="p">:</span> <span class="n">GalleryFormField</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">defaults</span><span class="p">,</span>
+        <span class="p">})</span>
+        <span class="k">return</span> <span class="n">formfield</span></div>
+
+
+<div class="viewcode-block" id="GalleryFormField"><a class="viewcode-back" href="../../fields.html#galleryfield.fields.GalleryFormField">[docs]</a><span class="k">class</span> <span class="nc">GalleryFormField</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">JSONField</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The default formfield for :class:`galleryfield.fields.GalleryField`.</span>
+
+<span class="sd">    :param max_number_of_images: Max allowed number of images, defaults</span>
+<span class="sd">           to `None`, which means unlimited.</span>
+<span class="sd">    :type max_number_of_images: int, optional.</span>
+
+<span class="sd">    :param kwargs: Besides the options from parent class, the following were added:</span>
+
+<span class="sd">           * target_model: str, a valid target image model which can be loaded by</span>
+<span class="sd">             ``apps.get_model``. When this field is used in the model form,</span>
+<span class="sd">             it is auto configured by the model instance.</span>
+
+<span class="sd">             However, if this field is used as a non-model form field, when</span>
+<span class="sd">             not specified, it will use the built-in default target image</span>
+<span class="sd">             model ``galleryfield.BuiltInGalleryImage``.</span>
+
+<span class="sd">           * widget: if not specified, defaults to ``GalleryWidget`` with default</span>
+<span class="sd">             values.</span>
+
+
+<span class="sd">    .. note:: If `target_model` not specified when initializing, an info will</span>
+<span class="sd">       be logged to the stdout, which can be turned off by adding</span>
+<span class="sd">       ``gallery_form_field.I001`` in ``settings.SILENCED_SYSTEM_CHECKS``.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">default_error_messages</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;required&#39;</span><span class="p">:</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;The submitted file is empty.&quot;</span><span class="p">),</span>
+        <span class="s1">&#39;invalid&#39;</span><span class="p">:</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;The submitted images are invalid.&quot;</span><span class="p">),</span>
+    <span class="p">}</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">max_number_of_images</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="c1"># The following 2 are used to validate GalleryWidget params</span>
+        <span class="c1"># see GalleryWidget.defaults_checks()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_image_model</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;target_model&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="n">image_model_not_configured</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_image_model</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># This happens when the formfield is used in a Non-model form</span>
+            <span class="n">image_model_not_configured</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_image_model</span> <span class="o">=</span> <span class="n">_defaults</span><span class="o">.</span><span class="n">DEFAULT_TARGET_IMAGE_MODEL</span>
+
+        <span class="c1"># Make sure the model is valid target image model</span>
+        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_image_model</span> <span class="o">!=</span> <span class="n">_defaults</span><span class="o">.</span><span class="n">DEFAULT_TARGET_IMAGE_MODEL</span>
+                <span class="ow">or</span> <span class="n">image_model_not_configured</span><span class="p">):</span>
+            <span class="n">errors</span> <span class="o">=</span> <span class="n">get_or_check_image_field</span><span class="p">(</span>
+                <span class="n">obj</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+                <span class="n">target_model</span><span class="o">=</span><span class="p">(</span>
+                    <span class="kc">None</span> <span class="k">if</span> <span class="n">image_model_not_configured</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_image_model</span><span class="p">),</span>
+                <span class="n">check_id_prefix</span><span class="o">=</span><span class="s2">&quot;gallery_form_field&quot;</span><span class="p">,</span>
+                <span class="n">is_checking</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">error</span> <span class="ow">in</span> <span class="n">errors</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">error</span><span class="o">.</span><span class="n">is_serious</span><span class="p">():</span>
+                    <span class="k">raise</span> <span class="n">ImproperlyConfigured</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">error</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">error</span><span class="o">.</span><span class="n">is_silenced</span><span class="p">():</span>
+                        <span class="k">continue</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">error</span><span class="p">))</span>
+
+        <span class="c1"># This is used for widget to identify which object the widget is servicing.</span>
+        <span class="c1"># That information will be used when raising errors.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_widget_is_servicing</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;model_field&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_number_of_images</span> <span class="o">=</span> <span class="n">max_number_of_images</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="n">_widget</span> <span class="o">=</span> <span class="n">GalleryWidget</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">widget</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_widget</span>
+
+    <span class="nd">@widget</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">widget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="c1"># Property and setter are used to make sure the attributes will</span>
+        <span class="c1"># be passed to new widget instance when the widget instance</span>
+        <span class="c1"># is changed.</span>
+        <span class="nb">setattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;max_number_of_images&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_number_of_images</span><span class="p">)</span>
+        <span class="nb">setattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;image_model&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_image_model</span><span class="p">)</span>
+        <span class="nb">setattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;widget_is_servicing&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_widget_is_servicing</span><span class="p">)</span>
+
+        <span class="c1"># Re-initialize the widget</span>
+        <span class="n">value</span><span class="o">.</span><span class="n">is_localized</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">localize</span><span class="p">)</span>
+        <span class="n">value</span><span class="o">.</span><span class="n">is_required</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">required</span>
+        <span class="n">extra_attrs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">widget_attrs</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">or</span> <span class="p">{}</span>
+        <span class="n">value</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">extra_attrs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_widget</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">widget</span><span class="p">,</span> <span class="n">GalleryWidget</span><span class="p">):</span>
+            <span class="k">return</span>
+
+        <span class="c1"># We set the upload_url and fetch_url</span>
+        <span class="c1"># when the widget didn&#39;t specify them.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_widget_upload_url</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_widget_fetch_url</span><span class="p">()</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">_target_model_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_image_model</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">_set_widget_upload_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">upload_url</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Here we required a target_model should have a upload_url</span>
+        <span class="c1"># name in url_conf in the form of modelname-upload in lower case</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">upload_url</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-upload&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_target_model_name</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="nf">_set_widget_fetch_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">disable_fetch</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">fetch_url</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Here we required a target_model should have a fetch_url</span>
+        <span class="c1"># name in url_conf in the form of modelname-fetch in lower case</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">fetch_url</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-fetch&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_target_model_name</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">max_number_of_images</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_number_of_images</span>
+
+    <span class="nd">@max_number_of_images</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">max_number_of_images</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+                    <span class="s2">&quot;&#39;max_number_of_images&#39; expects a positive integer, &quot;</span>
+                    <span class="s2">&quot;got </span><span class="si">%s</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_number_of_images</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_widget</span><span class="o">.</span><span class="n">max_number_of_images</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">validators</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="n">MaxNumberOfImageValidator</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)))</span>
+
+    <span class="k">def</span> <span class="nf">widget_attrs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+        <span class="c1"># If BootStrap is loaded, &quot;hiddeninput&quot; is added by BootStrap.</span>
+        <span class="c1"># However, we need that css class to check changes of the form,</span>
+        <span class="c1"># so we added it manually.</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="p">[</span><span class="n">conf</span><span class="o">.</span><span class="n">FILES_FIELD_CLASS_NAME</span><span class="p">,</span> <span class="s2">&quot;hiddeninput&quot;</span><span class="p">])</span>
+        <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="n">converted</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">to_python</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">converted</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_values</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">converted</span>
+
+        <span class="c1"># Make sure the json is a list of pks</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">converted</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="s1">&#39;invalid&#39;</span><span class="p">],</span>
+                <span class="n">code</span><span class="o">=</span><span class="s1">&#39;invalid&#39;</span><span class="p">,</span>
+                <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="n">converted</span><span class="p">},</span>
+            <span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">_pk</span> <span class="ow">in</span> <span class="n">converted</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">str</span><span class="p">(</span><span class="n">_pk</span><span class="p">)</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+                <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="s1">&#39;invalid&#39;</span><span class="p">],</span>
+                    <span class="n">code</span><span class="o">=</span><span class="s1">&#39;invalid&#39;</span><span class="p">,</span>
+                    <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="n">converted</span><span class="p">},</span>
+                <span class="p">)</span>
+
+        <span class="c1"># Make sure all pks exists</span>
+        <span class="n">image_model</span> <span class="o">=</span> <span class="n">apps</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_image_model</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">image_model</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+                <span class="n">pk__in</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">converted</span><span class="p">)))</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+                <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">converted</span><span class="p">)):</span>
+            <span class="n">converted_copy</span> <span class="o">=</span> <span class="n">converted</span><span class="p">[:]</span>
+            <span class="n">converted</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">pk</span> <span class="ow">in</span> <span class="n">converted_copy</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">image_model</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">pk</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">():</span>
+                    <span class="n">converted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pk</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">converted</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dong Zhuang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

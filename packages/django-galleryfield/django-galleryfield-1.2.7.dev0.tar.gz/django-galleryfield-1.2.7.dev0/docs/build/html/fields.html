@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Model field and form field &mdash; django-galleryfield 1.2.6-beta documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Image handling views" href="views.html" />
+    <link rel="prev" title="Customization" href="customize.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-galleryfield
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_demo.html">Behind the demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customize.html">Customization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Model field and form field</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#galleryfield">GalleryField</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#galleryfield-and-galleryimages"><code class="docutils literal notranslate"><span class="pre">GalleryField</span></code> and <code class="docutils literal notranslate"><span class="pre">GalleryImages</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#galleryformfield">GalleryFormField</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="views.html">Image handling views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="widget.html">GalleryWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">MISC</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-galleryfield</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Model field and form field</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/fields.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="model-field-and-form-field">
+<h1>Model field and form field<a class="headerlink" href="#model-field-and-form-field" title="Permalink to this headline">¶</a></h1>
+<section id="galleryfield">
+<h2>GalleryField<a class="headerlink" href="#galleryfield" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="galleryfield.fields.GalleryField">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">galleryfield.fields.</span></span><span class="sig-name descname"><span class="pre">GalleryField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/galleryfield/fields.html#GalleryField"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#galleryfield.fields.GalleryField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.fields.json.JSONField</span></code></p>
+<p>This is a model field which saves the id of images.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>target_model</strong> (<em>str</em><em>, </em><em>optional.</em>) – A string in the form of <code class="docutils literal notranslate"><span class="pre">&quot;app_label.model_name&quot;</span></code>,
+which can be loaded by <code class="xref py py-meth docutils literal notranslate"><span class="pre">django.apps.get_model()</span></code> (see 
+<a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/applications/#django.apps.apps.get_model">Django docs</a>),
+defaults to <cite>None</cite>. If <cite>None</cite>, <code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.BuiltInGalleryImage</span></code> will be used.
+If set, it should be <a class="reference internal" href="customize.html#customize-valid-image-model"><span class="std std-ref">a valid image model</span></a>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<section id="galleryfield-and-galleryimages">
+<h3><code class="docutils literal notranslate"><span class="pre">GalleryField</span></code> and <code class="docutils literal notranslate"><span class="pre">GalleryImages</span></code><a class="headerlink" href="#galleryfield-and-galleryimages" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="galleryfield.fields.GalleryImages">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">galleryfield.fields.</span></span><span class="sig-name descname"><span class="pre">GalleryImages</span></span><a class="reference internal" href="_modules/galleryfield/fields.html#GalleryImages"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#galleryfield.fields.GalleryImages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>When you access a <a class="reference internal" href="#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">GalleryField</span></code></a> on a model, you are
+given an instance of <a class="reference internal" href="#galleryfield.fields.GalleryImages" title="galleryfield.fields.GalleryImages"><code class="xref py py-class docutils literal notranslate"><span class="pre">GalleryImages</span></code></a> as a proxy for accessing the
+underlying images. Basically, a <a class="reference internal" href="#galleryfield.fields.GalleryImages" title="galleryfield.fields.GalleryImages"><code class="xref py py-class docutils literal notranslate"><span class="pre">GalleryImages</span></code></a> instance
+is a list of <code class="xref py py-attr docutils literal notranslate"><span class="pre">pk</span></code> of the image model instances defined by
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">target_model</span></code>. That means we can manipulate the field value with
+method such as <code class="docutils literal notranslate"><span class="pre">slice</span></code>, <code class="docutils literal notranslate"><span class="pre">append()</span></code> and <code class="docutils literal notranslate"><span class="pre">extend()</span></code>.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">g</span> <span class="o">=</span> <span class="n">Demogallery</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">images</span>
+<span class="go">[2, 1, 3]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">images</span><span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>  <span class="c1"># assuming there is BuiltInGalleryImage with pk=4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">images</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Besides that, <a class="reference internal" href="#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">GalleryField</span></code></a> includes an <code class="xref py py-attr docutils literal notranslate"><span class="pre">objects</span></code> attribute:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="galleryfield.fields.GalleryImages.objects">
+<span class="sig-prename descclassname"><span class="pre">GalleryImages.</span></span><span class="sig-name descname"><span class="pre">objects</span></span><a class="headerlink" href="#galleryfield.fields.GalleryImages.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>An queryset of image instances.</p>
+<p>That means we can do chained query to the attribute. Sample usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">images</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="go">&lt;QuerySet [&lt;BuiltInGalleryImage: BuiltInGalleryImage object (2)&gt;, &lt;BuiltInGalleryImage:</span>
+<span class="go">BuiltInGalleryImage object (1)&gt;, &lt;BuiltInGalleryImage: BuiltInGalleryImage object (3)&gt;,</span>
+<span class="go">&lt;BuiltInGalleryImage: BuiltInGalleryImage object (4)&gt;]&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">images</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pk__lte</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">&lt;QuerySet [&lt;BuiltInGalleryImage: BuiltInGalleryImage object (2)&gt;, &lt;BuiltInGalleryImage:</span>
+<span class="go">BuiltInGalleryImage object (1)&gt;]&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">images</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pk__gte</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="go">&lt;QuerySet []&gt;</span>
+</pre></div>
+</div>
+<p>With the <code class="xref py py-attr docutils literal notranslate"><span class="pre">objects</span></code> attribute, it’s also handy to render images
+contained in the field. For example, we use code like to the following snippet
+in the template which renders detailed view of <code class="xref py py-class docutils literal notranslate"><span class="pre">demo.models.DemoGallery</span></code>
+instances:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>{% for obj in object.images.objects.all %}
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ obj.image.url }}&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+{% endfor %}
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">object</span></code> is an instance of <code class="xref py py-class docutils literal notranslate"><span class="pre">demo.models.DemoGallery</span></code>.</p>
+</section>
+</section>
+<section id="galleryformfield">
+<h2>GalleryFormField<a class="headerlink" href="#galleryformfield" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="galleryfield.fields.GalleryFormField">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">galleryfield.fields.</span></span><span class="sig-name descname"><span class="pre">GalleryFormField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_number_of_images</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/galleryfield/fields.html#GalleryFormField"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#galleryfield.fields.GalleryFormField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.forms.fields.JSONField</span></code></p>
+<p>The default formfield for <a class="reference internal" href="#galleryfield.fields.GalleryField" title="galleryfield.fields.GalleryField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryField</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>max_number_of_images</strong> (<em>int</em><em>, </em><em>optional.</em>) – Max allowed number of images, defaults
+to <cite>None</cite>, which means unlimited.</p></li>
+<li><p><strong>kwargs</strong> – <p>Besides the options from parent class, the following were added:</p>
+<ul>
+<li><p>target_model: str, a valid target image model which can be loaded by
+<code class="docutils literal notranslate"><span class="pre">apps.get_model</span></code>. When this field is used in the model form,
+it is auto configured by the model instance.</p>
+<p>However, if this field is used as a non-model form field, when
+not specified, it will use the built-in default target image
+model <code class="docutils literal notranslate"><span class="pre">galleryfield.BuiltInGalleryImage</span></code>.</p>
+</li>
+<li><p>widget: if not specified, defaults to <code class="docutils literal notranslate"><span class="pre">GalleryWidget</span></code> with default
+values.</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <cite>target_model</cite> not specified when initializing, an info will
+be logged to the stdout, which can be turned off by adding
+<code class="docutils literal notranslate"><span class="pre">gallery_form_field.I001</span></code> in <code class="docutils literal notranslate"><span class="pre">settings.SILENCED_SYSTEM_CHECKS</span></code>.</p>
+</div>
+</dd></dl>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="#galleryfield.fields.GalleryFormField" title="galleryfield.fields.GalleryFormField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryFormField</span></code></a> is not supposed to be used independently
+(i.e., as a non-modelform field). The most possible cases for us to access the formfield are
+in the modelform configurations. For example:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyGalleryForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">MyGallery</span>
+        <span class="n">fields</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;images&quot;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s2">&quot;images&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">required</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s2">&quot;images&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max_number_of_images</span> <span class="o">=</span> <span class="mi">2</span>
+
+        <span class="c1"># from django.forms.widgets import Textarea</span>
+        <span class="c1"># self.fields[&quot;images&quot;].widget = Textarea()  # Use Textarea as widget</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you want to use <a class="reference internal" href="#galleryfield.fields.GalleryFormField" title="galleryfield.fields.GalleryFormField"><code class="xref py py-class docutils literal notranslate"><span class="pre">galleryfield.fields.GalleryFormField</span></code></a> as a non-modelform
+field, remember to initialize the
+field with a key word argument like <code class="docutils literal notranslate"><span class="pre">target_model=&quot;my_app.MyImage&quot;</span></code>, otherwise it will use
+<code class="docutils literal notranslate"><span class="pre">galleryfield.BuiltInGalleryImage</span></code> as the <code class="docutils literal notranslate"><span class="pre">target_model</span></code>. Also, keep in mind that
+the <code class="docutils literal notranslate"><span class="pre">cleaned_data</span></code> of the field only contains the <code class="docutils literal notranslate"><span class="pre">pk</span></code> of the image model instances.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="views.html" class="btn btn-neutral float-right" title="Image handling views" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="customize.html" class="btn btn-neutral float-left" title="Customization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Dong Zhuang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
