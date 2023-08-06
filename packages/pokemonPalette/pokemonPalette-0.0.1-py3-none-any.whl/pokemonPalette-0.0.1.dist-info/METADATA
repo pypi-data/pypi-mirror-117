@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pokemonPalette
+Version: 0.0.1
+Summary: The pokemonPalette is a python library generate a color palette based on the colors of a chosen pokemon.
+Home-page: https://github.com/MilanCalegari/pokemonPalette
+Author: Rodrigo M Calegari
+Author-email: rodrigomcalegari@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pokebase
+Requires-Dist: sklearn
+
+UNKNOWN
+
