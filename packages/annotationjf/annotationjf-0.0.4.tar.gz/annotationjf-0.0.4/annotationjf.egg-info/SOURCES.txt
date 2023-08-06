@@ -1,0 +1,8 @@
+setup.py
+annotationjf/__init__.py
+annotationjf.egg-info/PKG-INFO
+annotationjf.egg-info/SOURCES.txt
+annotationjf.egg-info/dependency_links.txt
+annotationjf.egg-info/entry_points.txt
+annotationjf.egg-info/requires.txt
+annotationjf.egg-info/top_level.txt
