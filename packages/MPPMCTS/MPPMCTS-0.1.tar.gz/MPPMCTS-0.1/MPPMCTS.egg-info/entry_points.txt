@@ -1,0 +1,3 @@
+[console_scripts]
+mppmcts = MPPMCTS.run:run
+

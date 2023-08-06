@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: MPPMCTS
+Version: 0.1
+Summary: Multi-Player-Parallel MCTS for ILs design
+Home-page: UNKNOWN
+Author: Kexin Zhang
+Author-email: zhangkx2@shanghaitech.edu.cn
+License: MIT
+Description: UNKNOWN
+Keywords: computational chemistry,AI,ML,COSMO,MCTS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
