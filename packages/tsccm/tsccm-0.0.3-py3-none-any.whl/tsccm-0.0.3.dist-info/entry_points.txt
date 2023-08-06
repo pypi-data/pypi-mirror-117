@@ -1,0 +1,3 @@
+[console_scripts]
+tsccm = tsccm.__main__:main
+

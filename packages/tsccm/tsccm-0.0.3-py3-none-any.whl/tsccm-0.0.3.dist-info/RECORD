@@ -1,0 +1,11 @@
+tsccm/__init__.py,sha256=VaRfo14QGCP7FuX8QNTF5IboS0ydEgTYf8l8MPMHhuo,40
+tsccm/__main__.py,sha256=tsC_rCJFAb7kbdOSP5rOKwLP2V9lgbqoDQxY5SyAByU,23265
+tsccm/_version.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+tsccm/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsccm/modules/tscapi/__init__.py,sha256=y-1pIDQaCYyhRFyfnyRE_n1iDjj-863H7NidTmCskhw,2570
+tsccm-0.0.3.dist-info/LICENSE,sha256=Bi8ESc9FUT-Bzim8rdUkFdl_JvJcerKLooU_qROEqWY,1089
+tsccm-0.0.3.dist-info/METADATA,sha256=uQ41RzMK2SL0sCpkAhtotxFXU7hhPZ0j_PticKqWTH4,2408
+tsccm-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tsccm-0.0.3.dist-info/entry_points.txt,sha256=yis2Nnm3QYq4uVzxcbMr7IaACbSnv3hFQgUxn-zuqeY,47
+tsccm-0.0.3.dist-info/top_level.txt,sha256=FShsBONS5h0cCOn1hT-MacpMGmRfNjKyaSU2F2wNyns,6
+tsccm-0.0.3.dist-info/RECORD,,
