@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+gawain/__init__.py
+gawain/gawain.py
+gawain.egg-info/PKG-INFO
+gawain.egg-info/SOURCES.txt
+gawain.egg-info/dependency_links.txt
+gawain.egg-info/requires.txt
+gawain.egg-info/top_level.txt
