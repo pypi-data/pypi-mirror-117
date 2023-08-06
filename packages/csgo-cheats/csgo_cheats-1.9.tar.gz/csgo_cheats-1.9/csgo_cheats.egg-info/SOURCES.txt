@@ -1,0 +1,7 @@
+setup.py
+csgo_cheats/__init__.py
+csgo_cheats.egg-info/PKG-INFO
+csgo_cheats.egg-info/SOURCES.txt
+csgo_cheats.egg-info/dependency_links.txt
+csgo_cheats.egg-info/not-zip-safe
+csgo_cheats.egg-info/top_level.txt
