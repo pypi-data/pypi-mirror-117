@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: phjokes
+Version: 0.0.1
+Summary: A python package that generates pinoy jokes  
+Home-page: https://github.com/Tmpts21/phjokes
+Author: Ian Vincent A. Tampos 
+Author-email: mivatampos@tip.edu.ph
+License: MIT
+Description: ## Pinoyjokes python package 
+        
+        Documentation :  https://github.com/Tmpts21/phjokes/
+        
+Keywords: jokes,filipino,pinoy,tagalog,bisaya
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

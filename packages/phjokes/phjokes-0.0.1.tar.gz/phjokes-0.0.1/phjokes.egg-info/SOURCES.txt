@@ -1,0 +1,13 @@
+LICENCE.md
+README.md
+setup.py
+phjokes/__init__.py
+phjokes/main.py
+phjokes.egg-info/PKG-INFO
+phjokes.egg-info/SOURCES.txt
+phjokes.egg-info/dependency_links.txt
+phjokes.egg-info/top_level.txt
+phjokes/jokes/__init__.py
+phjokes/jokes/jokes.py
+phjokes/utils/__init__.py
+phjokes/utils/helpers.py
