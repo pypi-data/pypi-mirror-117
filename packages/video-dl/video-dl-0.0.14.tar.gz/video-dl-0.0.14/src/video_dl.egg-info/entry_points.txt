@@ -1,0 +1,3 @@
+[console_scripts]
+video-dl = video_dl.entry:main
+
