@@ -1,0 +1,11 @@
+spud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spud/__main__.py,sha256=iv0jR2GSXiWcWp7L8j3Lk-LTT002lL6OI1QGux_GWxI,4011
+spud/api.py,sha256=S6aEdk49eqH7eGXRQz0nJCaf8bkf0JgVID0C3RfK0fM,4633
+spud/settings.py,sha256=1JOBJVXY7etr8P_G2MSDHsl8-obXqhxkjyvN64moOig,146
+spud/utils.py,sha256=duVeCDV7_xzyYeQ_qauYg20zb_VV5jk2aRU2bSL8sDM,4294
+spud_mc-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+spud_mc-0.3.0.dist-info/METADATA,sha256=BInDT6mauc-VL8DYlz_6p6nSXKIhm8ubBdnCut4et-0,1993
+spud_mc-0.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+spud_mc-0.3.0.dist-info/entry_points.txt,sha256=Bs7Tq-de6gdNMQ1pep6Gz8NFs7tA7PYWYCgfvWI1S-g,45
+spud_mc-0.3.0.dist-info/top_level.txt,sha256=sKnJPX1Z6zmvB6P2wc9pO7l_GNtZzeqLYSAAL-HTr44,5
+spud_mc-0.3.0.dist-info/RECORD,,
