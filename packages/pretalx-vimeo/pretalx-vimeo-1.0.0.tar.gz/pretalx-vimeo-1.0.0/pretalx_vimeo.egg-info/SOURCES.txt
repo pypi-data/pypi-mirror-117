@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pretalx_vimeo.egg-info/PKG-INFO
+pretalx_vimeo.egg-info/SOURCES.txt
+pretalx_vimeo.egg-info/dependency_links.txt
+pretalx_vimeo.egg-info/entry_points.txt
+pretalx_vimeo.egg-info/top_level.txt
+pretalx_vimeo/locale/de_DE/LC_MESSAGES/.gitkeep
+pretalx_vimeo/locale/fr_FR/LC_MESSAGES/.gitkeep
+pretalx_vimeo/static/pretalx_vimeo/.gitkeep
+pretalx_vimeo/templates/pretalx_vimeo/.gitkeep
+pretalx_vimeo/templates/pretalx_vimeo/settings.html
