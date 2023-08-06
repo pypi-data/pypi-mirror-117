@@ -1,0 +1,9 @@
+appdirs
+attrdict
+Pygments
+PySide2
+QDarkStyle
+QtPy
+shiboken2
+six
+toml

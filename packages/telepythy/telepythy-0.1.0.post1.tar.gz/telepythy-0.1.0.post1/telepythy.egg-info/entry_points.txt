@@ -1,0 +1,4 @@
+[console_scripts]
+telepythy = telepythy.gui.__main__:main
+telepythy-service = telepythy.__main__:main
+
