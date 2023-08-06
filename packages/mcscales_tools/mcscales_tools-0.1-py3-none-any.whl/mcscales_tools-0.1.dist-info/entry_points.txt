@@ -1,0 +1,4 @@
+[console_scripts]
+mcscales-partition-pdf=mcscales_tools.partition:main
+mcscales-theory-driven=mcscales_tools.theory_driven:main
+
