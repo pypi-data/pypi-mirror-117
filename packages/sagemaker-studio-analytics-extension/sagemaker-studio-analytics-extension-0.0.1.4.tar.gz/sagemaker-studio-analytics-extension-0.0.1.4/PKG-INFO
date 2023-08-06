@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sagemaker-studio-analytics-extension
+Version: 0.0.1.4
+Summary: SageMaker Studio Analytics Extension
+Home-page: https://aws.amazon.com/sagemaker
+Author: Amazon Web Services
+License: Apache 2.0
+Description: #SageMaker Studio Analytics Extension
+        ## TODO: add content.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
