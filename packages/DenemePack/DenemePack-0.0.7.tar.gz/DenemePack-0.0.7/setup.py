@@ -1,0 +1,22 @@
+import setuptools
+
+with open("README.md", "r") as fh:
+    description = fh.read()
+from setuptools import setup, find_packages
+setuptools.setup(
+    name="DenemePack",
+    version="0.0.7",
+    author="berre",
+    packages=["Phi"],
+    package_data={'': ['*.dll'],'':['src']},  # This is the most important line.
+    zip_safe=False,
+    include_package_data=True,
+    author_email="berreergunn@gmail.com",
+    description="A sample test package",
+    long_description=description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/gituser/test-tackage",
+    license='MIT',
+    python_requires='>=2',
+    install_requires=[]
+)
