@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: asyncio-backport
+Version: 0.1.0
+Summary: A backport of asyncio features from newer versions
+Author-email: Thomas Grainger <asyncio-backport@graingert.co.uk>
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: coverage_conditional_plugin ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: mypy ; extra == "test"
+Project-URL: Home, https://github.com/graingert/asyncio-backport
+Provides-Extra: test
