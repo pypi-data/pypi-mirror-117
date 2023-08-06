@@ -1,0 +1,7 @@
+agentfive_middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agentfive_middleware/middleware.py,sha256=fhgE25T4EBYcSCmNcdigofSnZZSpdK9eBu7rj3e8gs0,3068
+scrapy_agentfive_middleware-0.0.1.dist-info/LICENSE.txt,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+scrapy_agentfive_middleware-0.0.1.dist-info/METADATA,sha256=HCns0yw29qxJD0YDYfyVneb4SD0p2d9dSDnAVlr1078,3272
+scrapy_agentfive_middleware-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+scrapy_agentfive_middleware-0.0.1.dist-info/top_level.txt,sha256=ClZyal4Pw2FjwsoAPakrOACCmDnivFB8G9LTuE0ifSc,21
+scrapy_agentfive_middleware-0.0.1.dist-info/RECORD,,
