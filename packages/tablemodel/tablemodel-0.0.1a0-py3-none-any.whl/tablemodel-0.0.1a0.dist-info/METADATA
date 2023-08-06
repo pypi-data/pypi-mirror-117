@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tablemodel
+Version: 0.0.1a0
+Summary: GNU Tools for python
+Home-page: https://github.com/JeanMaximilienCadic/tablemodel
+Author: Jean Maximilien Cadic
+Author-email: git@cadic.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: sqlmodel
+
+UNKNOWN
+
+
