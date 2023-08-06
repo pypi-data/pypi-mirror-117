@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-01-16 08:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "01_title"
+msgstr "Pas de pauvreté"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "02_title"
+msgstr "Faim \"zéro\""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "03_title"
+msgstr "Bonne santé et bien-être"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "04_title"
+msgstr "Éducation de qualité"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "05_title"
+msgstr "Égalité entre les sexes"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "06_title"
+msgstr "Eau propre et assainissement"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "07_title"
+msgstr "Énergie propre et d'un coût abordable"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "08_title"
+msgstr "Travail décent et croissance économique"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "09_title"
+msgstr "Industrie, innovation et infrastructure"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "10_title"
+msgstr "Inégalités réduites"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "11_title"
+msgstr "Villes et communautés durables"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "12_title"
+msgstr "Consommation et production responsables"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "13_title"
+msgstr "Mesures relatives à la lutte contre les changements climatiques"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "14_title"
+msgstr "Vie aquatique"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "15_title"
+msgstr "Vie terrestre"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "16_title"
+msgstr "Paix, justice et institutions efficaces"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "17_title"
+msgstr "Partenariats pour la réalisation des objectifs"
+
+#: collective/behavior/sdg/behaviors/sustainable_development_goals.py:24
+msgid "SDG"
+msgstr "O.D.D."
+
+#: collective/behavior/sdg/profiles/default/registry.xml
+msgid "Sustainable development goals"
+msgstr "Objectifs de développement durable"

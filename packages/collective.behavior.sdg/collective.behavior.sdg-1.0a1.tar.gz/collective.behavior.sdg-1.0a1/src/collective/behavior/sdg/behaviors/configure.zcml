@@ -1,0 +1,24 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="plone">
+
+    <include package="plone.behavior" file="meta.zcml"/>
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <plone:behavior
+        name="collective.behavior.sdg.sustainable_development_goals"
+        title="SustainableDevelopmentGoals"
+        description="Provides a select field to choose sustainable development goal"
+        provides=".sustainable_development_goals.ISustainableDevelopmentGoals"
+        factory=".sustainable_development_goals.SustainableDevelopmentGoals"
+        marker=".sustainable_development_goals.ISustainableDevelopmentGoalsMarker"
+        />
+
+    <!-- Marker interface definition = showed in zmi -->
+    <interface interface="collective.behavior.sdg.behaviors.sustainable_development_goals.ISustainableDevelopmentGoalsMarker" />
+
+</configure>

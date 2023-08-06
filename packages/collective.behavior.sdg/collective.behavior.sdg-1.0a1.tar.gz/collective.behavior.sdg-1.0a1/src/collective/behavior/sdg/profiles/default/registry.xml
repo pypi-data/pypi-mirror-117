@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<registry
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.behavior.sdg">
+
+  <!--Lasting objectives values-->
+  <record name="collective.behavior.sdg.sdgs">
+    <field type="plone.registry.field.Dict">
+      <title i18n:translate="">Sustainable development goals</title>
+      <key_type type="plone.registry.field.TextLine" />
+      <value_type type="plone.registry.field.Dict">
+        <key_type type="plone.registry.field.TextLine" />
+        <value_type type="plone.registry.field.TextLine" />
+      </value_type>
+    </field>
+    <value purge="false">
+      <element key="01">
+        <element key="url">https://www.sdgs.be/fr/sdgs/1-pas-de-pauvrete</element>
+      </element>
+      <element key="02">
+        <element key="url">https://www.sdgs.be/fr/sdgs/2-faim-zero</element>
+      </element>
+      <element key="03">
+        <element key="url">https://www.sdgs.be/fr/sdgs/3-bonne-sante-et-bien-etre</element>
+      </element>
+      <element key="04">
+        <element key="url">https://www.sdgs.be/fr/sdgs/4-education-de-qualite</element>
+      </element>
+      <element key="05">
+        <element key="url">https://www.sdgs.be/fr/sdgs/5-egalite-entre-les-sexes</element>
+      </element>
+      <element key="06">
+        <element key="url">https://www.sdgs.be/fr/sdgs/6-eau-propre-et-lassainissement</element>
+      </element>
+      <element key="07">
+        <element key="url">https://www.sdgs.be/fr/sdgs/7-energie-propre-et-dun-cout-durable</element>
+      </element>
+      <element key="08">
+        <element key="url">https://www.sdgs.be/fr/sdgs/8-travail-decent-et-croissance-economique</element>
+      </element>
+      <element key="09">
+        <element key="url">https://www.sdgs.be/fr/sdgs/9-industrie-innovation-et-infrastructure</element>
+      </element>
+      <element key="10">
+        <element key="url">https://www.sdgs.be/fr/sdgs/10-inegalites-reduites</element>
+      </element>
+      <element key="11">
+        <element key="url">https://www.sdgs.be/fr/sdgs/11-villes-et-communautes-durables</element>
+      </element>
+      <element key="12">
+        <element key="url">https://www.sdgs.be/fr/sdgs/12-consommation-et-production-responsables</element>
+      </element>
+      <element key="13">
+        <element key="url">https://www.sdgs.be/fr/sdgs/13-mesures-relatives-la-lutte-contre-les-changements-climatiques</element>
+      </element>
+      <element key="14">
+        <element key="url">https://www.sdgs.be/fr/sdgs/14-vie-aquatique</element>
+      </element>
+      <element key="15">
+        <element key="url">https://www.sdgs.be/fr/sdgs/15-vie-terrestre</element>
+      </element>
+      <element key="16">
+        <element key="url">https://www.sdgs.be/fr/sdgs/16-paix-justice-et-institutions-efficaces</element>
+      </element>
+      <element key="17">
+        <element key="url">https://www.sdgs.be/fr/sdgs/17-partenariats-pour-la-realisation-des-objectifs</element>
+      </element>
+    </value>
+  </record>
+
+</registry>

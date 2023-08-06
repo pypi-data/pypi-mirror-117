@@ -1,0 +1,94 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-01-16 08:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.behavior.sdg\n"
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "01_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "02_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "03_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "04_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "05_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "06_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "07_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "08_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "09_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "10_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "11_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "12_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "13_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "14_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "15_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "16_title"
+msgstr ""
+
+#: collective/behavior/sdg/vocabularies/s_d_g_vocabulary.py
+msgid "17_title"
+msgstr ""
+
+#: collective/behavior/sdg/behaviors/sustainable_development_goals.py:24
+msgid "SDG"
+msgstr ""
+
+#: collective/behavior/sdg/profiles/default/registry.xml
+msgid "Sustainable development goals"
+msgstr ""

@@ -1,0 +1,9 @@
+graft src/collective
+graft docs
+include *.GPL
+include *.rst
+include *.txt
+include *.yml
+include Makefile
+include tox.ini
+global-exclude *.pyc

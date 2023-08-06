@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="collective.behavior.sdg"
+      interface="collective.behavior.sdg.interfaces.ICollectiveBehaviorSdgLayer"
+      />
+</layers>
