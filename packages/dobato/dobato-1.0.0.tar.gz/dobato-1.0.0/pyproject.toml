@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dobato"
+version = "1.0.0"
+description = "Simple tool for discord BOT"
+authors = ["himkt <himkt@klis.tsukuba.ac.jp>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.782"
+flake8 = "^3.8.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
