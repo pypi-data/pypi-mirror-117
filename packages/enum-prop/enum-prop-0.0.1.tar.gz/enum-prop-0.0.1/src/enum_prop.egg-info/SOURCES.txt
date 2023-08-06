@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/enum_prop/__init__.py
+src/enum_prop/base.py
+src/enum_prop/py.typed
+src/enum_prop.egg-info/PKG-INFO
+src/enum_prop.egg-info/SOURCES.txt
+src/enum_prop.egg-info/dependency_links.txt
+src/enum_prop.egg-info/requires.txt
+src/enum_prop.egg-info/top_level.txt

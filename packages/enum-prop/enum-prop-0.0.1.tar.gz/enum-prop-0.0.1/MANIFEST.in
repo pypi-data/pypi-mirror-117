@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+recursive-include src *.py
+recursive-include src py.typed
+recursive-exclude tests *
+exclude *.yaml
+exclude *.yml
