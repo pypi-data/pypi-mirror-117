@@ -1,0 +1,6 @@
+pykka
+boto3
+psutil
+matplotlib
+click
+termcolor
