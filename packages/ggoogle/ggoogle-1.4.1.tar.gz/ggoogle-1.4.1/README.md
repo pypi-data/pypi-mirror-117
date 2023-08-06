@@ -1,0 +1,19 @@
+# python-ggoogle
+
+
+simple cli utility to search from terminal
+***
+private mode works only with firefox yet
+***
+### installation
+- install [geckodriver](https://github.com/mozilla/geckodriver/releases) to $PATH
+- run ```pip install selenium ggoogle```
+- add ```~/.local/bin``` to $PATH
+or
+- run ```sudo ln -s /home/$USER/.local/bin/g /usr/sbin/g```
+***
+### usage
+- ```g some query``` will open new firefox tab with 'some query' in google search
+- ```g -p some query``` will do same but in private tab
+- ```g``` will open google search page
+***
