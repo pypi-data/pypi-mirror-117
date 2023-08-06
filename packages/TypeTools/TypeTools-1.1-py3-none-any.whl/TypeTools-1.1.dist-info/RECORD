@@ -1,0 +1,10 @@
+typetools/__init__.py,sha256=Egh6KzK50LrxrJD_pBPid6cXVDvRLYy-LGgog7cTCWE,269
+typetools/_broadtypes.py,sha256=9pIbeDv_1GmFworFoTEbO-Q7C6Edka06erWIZZaIX4k,2201
+typetools/_descriptor.py,sha256=ilMP9Dx7uprMhKXyMWjohE0CwGdbQ1A4yXFW8eMbY4w,262
+typetools/_test_typetools.py,sha256=o7D7qlbB5PzkJXQN5p_ONdhRHOhtPRqEBTMybcH3mDM,1751
+typetools/_typed.py,sha256=86zg_ov9F6KBS9GY4TMlfv9qj-jVC1OiKypKymMmYi8,323
+typetools/_types.py,sha256=XAZJ0P1KI3Wb2vSR6zXUcZVUfrt-oh-s85Sn_3gk7ig,346
+TypeTools-1.1.dist-info/METADATA,sha256=B5FEbOOalB108KMFuENZwkbygzBoHCw7Bcqdn7v7gy0,227
+TypeTools-1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TypeTools-1.1.dist-info/top_level.txt,sha256=KMT-vuinmk0oTqnkTdlstW16PIWUX3aiQCpPxyO4L4U,10
+TypeTools-1.1.dist-info/RECORD,,
