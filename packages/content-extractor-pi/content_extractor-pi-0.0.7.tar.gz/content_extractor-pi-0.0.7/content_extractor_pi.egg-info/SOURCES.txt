@@ -1,0 +1,9 @@
+README.md
+setup.py
+content_extractor/__init__.py
+content_extractor/contextractor.py
+content_extractor_pi.egg-info/PKG-INFO
+content_extractor_pi.egg-info/SOURCES.txt
+content_extractor_pi.egg-info/dependency_links.txt
+content_extractor_pi.egg-info/requires.txt
+content_extractor_pi.egg-info/top_level.txt
