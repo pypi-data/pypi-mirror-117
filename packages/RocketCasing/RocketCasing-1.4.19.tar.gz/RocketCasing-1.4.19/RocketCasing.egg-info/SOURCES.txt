@@ -1,0 +1,14 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+Casing/RocketCasing.py
+Casing/__init__.py
+Casing/__main__.py
+Casing/materials.py
+Casing/teste.py
+RocketCasing.egg-info/PKG-INFO
+RocketCasing.egg-info/SOURCES.txt
+RocketCasing.egg-info/dependency_links.txt
+RocketCasing.egg-info/requires.txt
+RocketCasing.egg-info/top_level.txt
