@@ -1,0 +1,13 @@
+healpix_alchemy/__init__.py,sha256=4yq2npg8N5mHGBG6WNeBlQBBgUqNNZnpm6XwoSfqknE,98
+healpix_alchemy/healpix.py,sha256=IGnRebMdxVqo8D5bDHYVT7bwND9c2dGzzXuoMoJTzXY,3958
+healpix_alchemy/point.py,sha256=-XcCYxJmxdMWcO8Kt2HIhqu5RClg4_qGFEbiiwIt6Bo,2772
+healpix_alchemy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+healpix_alchemy/tests/conftest.py,sha256=sIPls-d7oyTX8YwxsDzZcYvSpP__-DZZ6BUwtcRcPtk,2135
+healpix_alchemy/tests/test_point.py,sha256=UeUl5WG5MBCkEf1Akmk40fNs4vw7isESSpf-1ZSsQQk,4244
+healpix_alchemy/tests/test_regions.py,sha256=9-lI0SerN7wTWDM21DijH8D2f9sGwlxdw_pHamR80cA,3518
+healpix_alchemy/tests/test_util.py,sha256=MbIXpMvOGE-aldxighvD2FHm7K_S_CU6M0BsIc52SPU,874
+healpix_alchemy/util.py,sha256=ZO9wTB0-q1mB1kvkCojmYdkjAcHNjyiwli_wxeCMUs4,2131
+healpix_alchemy-0.2.0.dist-info/LICENSE,sha256=FfpLfig8j5RmY33RS0_mVFsxjREa54JlRVvVJUoRaMQ,1528
+healpix_alchemy-0.2.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+healpix_alchemy-0.2.0.dist-info/METADATA,sha256=O3kVJ0IHZ-ONEdn8j1ffQPud_odXZrzWFHKmLzeTkIU,2917
+healpix_alchemy-0.2.0.dist-info/RECORD,,
