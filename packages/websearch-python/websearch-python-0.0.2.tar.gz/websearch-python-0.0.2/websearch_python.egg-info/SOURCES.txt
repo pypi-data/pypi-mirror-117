@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+websearch/__init__.py
+websearch/script.py
+websearch/utils.py
+websearch_python.egg-info/PKG-INFO
+websearch_python.egg-info/SOURCES.txt
+websearch_python.egg-info/dependency_links.txt
+websearch_python.egg-info/requires.txt
+websearch_python.egg-info/top_level.txt
