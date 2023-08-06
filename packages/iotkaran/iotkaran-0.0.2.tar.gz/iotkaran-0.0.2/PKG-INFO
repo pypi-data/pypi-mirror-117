@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: iotkaran
+Version: 0.0.2
+Summary: library for connect to server iotkaran 
+Home-page: https://github.com/pypa/iotkaran
+Author: reza behjani
+Author-email: iotkaran2020@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/iotkaran/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Project description
+this library for connect to server iotkaran and send data to dashboard 
+
+Addres Dashboard :https://dashboard.iotkaran.ir 
+> Automatic Installation
+```
+pip3 install iotkaran
+```
+www.iotkaran.ir
+
+[GitHub](http://github.com/iotkaran/python)
+
+> Example
+
+> Automatic Installation
+```
+>>> from iotkaran import Client
+>>> iotk = Client("server.iotkaran.ir", 2323)
+```
+
