@@ -1,0 +1,14 @@
+include *.in
+include *.ini
+include *.rst
+include *.txt
+include data/fig/*.png
+include data/img/*.png
+include iprs/utils/*.xml
+
+include LICENSE
+
+
+global-exclude __pycache__ *.py[cod]
+
+
