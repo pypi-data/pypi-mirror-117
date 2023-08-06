@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: content_extractor-pi
+Version: 0.0.5
+Summary: Content extractor for files containing text
+Home-page: https://gitlab.com/qarik/data-science/gcp_docunderstanding_spike/-/tree/content_extractor
+Author: Paolo Italiani
+Author-email: paoita@hotmail.it
+License: MIT
+Description: **content-extractor-pi** is a Python module which aims
+        to extract a certain piece of content defined by the user in a set of documents. 
+        This piece of content can be a paragraph that deals with a certain topic, 
+        headers, page numbers et cetera. **content-extractor-pi** does need some examples of the desired 
+        content, supplied by a domain expert, but our focus on few shot learning means ~10 
+        examples is usually enough out a corpus that may contain 1000s of documents. 
+        
+        Installation
+        ------------
+        
+        The easiest way to install content-extractor-pi is using pip:
+        
+            pip install content-extractor-pi
+        
+        Documentation
+        ------------
+        The main object of content-extractor-pi is ContentExtractor and its only attribute that it expects 
+        is a pre-trained word embedding model. In the following example I'm using the pre-trained
+        google news word-2-vec model available [here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing).
+        
+        ```python
+        from content_extractor import contextractor as cte
+        from gensim.models import KeyedVectors
+        
+        W2V_MODEL = KeyedVectors.load_word2vec_format('/your/path/to/GoogleNews-vectors-negative300.bin.gz',
+                                                      binary=True)
+        cont_ext = cte.ContentExtractor(W2V_MODEL)
+        ```
+        #### ContentExtractor.train_model method  
+        
+        The **train_model** method extracts and scales features for the provided text examples contained
+        in train_df, creates synthetic samples of the target class, and trains
+        the model at the core of content_extractor.
+        
+        ##### Parameters
+        
+        - **train_df**: pandas DataFrame containing the text examples in one column and the corresponding 
+          labels in the other one
+        - **train_additional_features, default=None**: pandas DataFrame containing additional features 
+          describing the text examples contained in train_df
+        - **y_name, default="label"**: column name of train_df where the labels are stored
+        - **text_name, default="text"**: column name of train_df where the text examples are stored
+        - **use_pca, default=False**: apply Principal component analysis to the scaled extracted features,
+          more info can be find [here](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html).
+        - **gamma, default=1**: Kernel coefficient for [sklearn.svm.SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)
+        - **C, default=0.1**: Regularization parameter for [sklearn.svm.SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)
+        
+        #### ContentExtractor.extract_content method  
+        
+        The extract_content method 
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
