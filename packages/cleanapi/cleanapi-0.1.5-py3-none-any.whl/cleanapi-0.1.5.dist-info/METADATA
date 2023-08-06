@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: cleanapi
+Version: 0.1.5
+Summary: Pretty tornado wrapper for making lightweight REST API services
+Home-page: https://github.com/vlakir/cleanapi.git
+Author: Vladimir Kirievskiy
+Author-email: vlakir1234@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tornado (>=6.1)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: asgiref (>=3.3.4)
+Requires-Dist: docutils (>=0.17.1)
+Requires-Dist: cryptography (>=3.4.7)
+Requires-Dist: keyring (>=23.1.0)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: colorama (>=0.4.4)
+Requires-Dist: rfc3986 (>=1.5.0)
+Requires-Dist: pkginfo (>=1.7.1)
+Requires-Dist: tqdm (>=4.62.2)
+Requires-Dist: urllib3 (>=1.26.6)
+Requires-Dist: six (>=1.16.0)
+Requires-Dist: webencodings (>=0.5.1)
+Requires-Dist: packaging (>=21.0)
+Requires-Dist: bleach (>=4.0.0)
+Requires-Dist: certifi (>=2021.5.30)
+Requires-Dist: jeepney (>=0.7.1)
+Requires-Dist: SecretStorage (>=3.3.1)
+Requires-Dist: idna (>=3.2)
+Requires-Dist: Pygments (>=2.10.0)
+Requires-Dist: pyparsing (>=2.4.7)
+Requires-Dist: pycparser (>=2.20)
+Requires-Dist: zipp (>=3.5.0)
+
+# cleanapi
+Pretty tornado wrapper for making lightweight REST API services
+
+____
+## Installation:
+```
+pip install cleanapi
+```
+____
+## Example:
+
+### Project folders structure:
+```
+.
+├── handlers
+│   └── example_handler.py
+├── log
+├── ssl
+│   ├── ca.csr
+│   └── ca.key
+├── static_html
+│   └── index.html
+└── server_example.py
+```
+
+### server_example.py
+```python
+from cleanapi import server
+
+if __name__ == '__main__':
+    # uses http protocol
+    server.start('http', 8080, '/', './handlers', './static_html')
+
+    # # uses https protocol
+    # server.start('https', 8443, '/', './handlers', './static_html',
+    #              path_to_ssl='./ssl', ssl_certfile_name='ca.csr', ssl_keyfile_name='ca.key')
+```
+
+### example_handler.py
+```python
+from cleanapi import BaseHandler
+
+url_tail = '/example.json'
+
+
+# noinspection PyAbstractClass
+class Handler(BaseHandler):
+    """
+    Test API request handler
+    """
+    async def get(self):
+        self.set_status(200)
+        self.write({'status': 'working'})
+```
+
+### index.html
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cleanapy demo</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+ </head>
+<body>
+
+<h1>Cleanapy demo page</h1>
+
+<p>Everything OK</p>
+
+</body>
+</html>
+```
+You also may put 'favicon.ico' file to the 'static_html' folder, but it is not necessary.
+
+Then you can test server responses on [http://localhost:8080](http://localhost:8080) and [http://localhost:8080/example.json](http://localhost:8080/example.json)
+
+See log/cleanapi.log for information about externel access to the server
+____
+
+
