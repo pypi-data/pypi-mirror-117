@@ -1,0 +1,15 @@
+bettersis/__init__.py,sha256=u6YmDRFK9eSn4rdIG5QHMa1njf_YPs0QqeOqLKzWVdw,161
+bettersis/__main__.py,sha256=ne2C4KIhvuTdquMkFvxvIs3GzxYVTUKwwN9CCu8Eefk,308
+bettersis/_version.py,sha256=VZNfFUsZqWSIZNfyhmPBoY1o6nkWz88pExb8wDGYG6g,80
+bettersis/bettersis.py,sha256=zoORdccEmBZdtZDC8mVKp3a8MicqieSOMvJDHg1c-Fc,28068
+bettersis/history_utils.py,sha256=Q627lPU7mrhKKTwwpYrjQqQCbMRDT1eGbwiMZkLuGNo,3861
+bettersis/siscompleter.py,sha256=jKhcv9w5vNtaYTf03lOUGHtCxSXkcHJzf8xVMOpB3_o,10136
+bettersis/texteditor.py,sha256=-ZD-U4yOJ6tQbdUNX9bMLPeuPzMO-NMnYdDrcxS-Jfg,6231
+bettersis/update_checker.py,sha256=lqRdmm4Liv9mNRlKBDj7lmh8F3CtCTFa0LZIAqgz2U4,5476
+bettersis/web_utils.py,sha256=59E6W49D8TTCiPSrY5r4tUBAu0XQ0MMRW_XX0qNT2Dw,1984
+bettersis-1.2.0.dist-info/LICENSE.txt,sha256=Jp5jAkxqI0XbGj3uELf89TyXPxUqmHC_gOMiNHgxEHU,1062
+bettersis-1.2.0.dist-info/METADATA,sha256=xVsPI3SzLfMAf7CWlm5piU7LFlN15-48jWK9vbw1fdo,15895
+bettersis-1.2.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+bettersis-1.2.0.dist-info/entry_points.txt,sha256=-72vbluwe_sU7LdVBUTiVOcVUo0dIjO1dUqrKkosd4c,56
+bettersis-1.2.0.dist-info/top_level.txt,sha256=CVn0-ks1DUn9KGiYT-PVJj70MAC9HtAg2lVZJEs_bUs,10
+bettersis-1.2.0.dist-info/RECORD,,
