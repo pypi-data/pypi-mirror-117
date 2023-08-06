@@ -1,0 +1,9 @@
+LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+NOTICES.rst,sha256=7mpvBWfi3AifExZdGcr0ekdoIDqT5jjRA39pOk-PGyU,365
+aws_custom_ews_kafka_resources/__init__.py,sha256=uInvJIh-4IAkdffnKlbJNauyTDZAt3SdW303AExV1gY,652
+aws_custom_ews_kafka_resources/custom.py,sha256=naqLJZBMHFne_Rfe1EyD85hdWe7ArkJPohsFJQxMjEE,1886
+aws_custom_ews_kafka_resources/resource.py,sha256=X1JfoRse6KVdQ65XxQAHeZkay30kkmpeUke1JZ2ahW4,1740
+aws_custom_ews_kafka_resources-0.2.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+aws_custom_ews_kafka_resources-0.2.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+aws_custom_ews_kafka_resources-0.2.0.dist-info/METADATA,sha256=os-spgJfSS0Lkwp1irr1ge4bXg-sC7GF7aYAcwo52Cw,2504
+aws_custom_ews_kafka_resources-0.2.0.dist-info/RECORD,,
