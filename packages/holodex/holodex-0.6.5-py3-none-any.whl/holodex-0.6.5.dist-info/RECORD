@@ -1,0 +1,17 @@
+holodex/__init__.py,sha256=KDgkBrBsBSUzbLgrOZ89YsNN06fU4j5bmcuEwo6q5pg,22
+holodex/client.py,sha256=QkFmJAzeaULB4XWJH1Ya8ziZBigW9RKOPMmidoEzJEU,1879
+holodex/http.py,sha256=mYkGkTgO_NT7B4gCUequo-lC_DT0Q27CfAZ6rDG7hcA,1365
+holodex/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+holodex/model/autocomplete.py,sha256=viWuNPL5GtGQ44zGYkELAsrvh84nuvmh9ZaT0lF9Lwg,613
+holodex/model/channel.py,sha256=K4g_rjOBoHPYc1YyGNAGuR2nYQUTM6j0PbtYgivwsTo,2627
+holodex/model/live.py,sha256=tTT0bY9PlYGlcu1s695JE78on2O54cJ06x_JkEAFwwA,1638
+holodex/model/video.py,sha256=YJxH-Wrs_DdRtv9C0nb0g5ZYdnSVeng5x-XSlQLHQrE,4694
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_autocomplete.py,sha256=GKSOG8z7PAh-P3WIscZ-7dcGm9n7pFPYDhFKDXEb2aA,282
+tests/test_channel.py,sha256=7mBp7Cd37CLofX4yiwcqzcrReBS83O6Ncz6AhOy851A,282
+tests/test_video.py,sha256=vt0nkkRVXMBspiU5E0N6lmAOjLH8Plw3wWJtDhKhiP4,253
+holodex-0.6.5.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+holodex-0.6.5.dist-info/METADATA,sha256=FwzhRgXnY9Y_jnFu3zoWn4qZKyoM5fW6poFGrwZZFSA,1337
+holodex-0.6.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+holodex-0.6.5.dist-info/top_level.txt,sha256=4pG0GveTa0Fekn8Qj7qsorNyF1XPJpyQ6qJJkKL5nHM,14
+holodex-0.6.5.dist-info/RECORD,,
