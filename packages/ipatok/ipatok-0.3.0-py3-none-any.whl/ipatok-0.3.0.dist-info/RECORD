@@ -1,0 +1,14 @@
+ipatok/__init__.py,sha256=CEzQMl7TGaeOocALd16rb3uDgDfQWmVEaGlsvZ6OXOw,65
+ipatok/__version__.py,sha256=2xdoC16vkdi5tUg0hDD561JkZDaSNy88XJ7zXvxT6Og,18
+ipatok/ipa.py,sha256=_O-6B1e8orLNWLsKkCNMfTmIHdzj56ygdKH5tKbM0Xw,5366
+ipatok/tokens.py,sha256=tCLMetV7pLviDqEFw8U6bHm3EhgpjyESIJMqdZF4xQg,5609
+ipatok/data/ipa_2015.tsv,sha256=pW9N9BwjMemJkOqyVnk0shFhvOxkKnkw8zDJVEN9hSI,4543
+ipatok/data/replacements.tsv,sha256=Jlen5pFZIfbEmgZWDlpraajg2hEtvmoZAHwwBUCU-5E,232
+ipatok/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipatok/tests/test_ipa.py,sha256=wp7VlGPolCZdLARl6YMo3Y6G6Rp-FDwYMBFmH3CNy2g,6980
+ipatok/tests/test_tokens.py,sha256=Z-g-Jdk1z-MihswNSluXxbJOQYWaQWJZqzJwYVy57yI,8573
+ipatok-0.3.0.dist-info/LICENSE,sha256=SBhPss1JitezDdZHqkNYAi5Lk0YDjH0gfDPF8lgb3NU,1072
+ipatok-0.3.0.dist-info/METADATA,sha256=_pJroWGs_C_MMVO0mGCLsGu-ptcn4jqddnix5kBhJCs,6181
+ipatok-0.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ipatok-0.3.0.dist-info/top_level.txt,sha256=2rnO8kjFWwE-FSaF3_FXj0fxQLp9V5OATCAyjM61tCc,7
+ipatok-0.3.0.dist-info/RECORD,,
