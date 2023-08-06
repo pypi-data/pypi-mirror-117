@@ -1,0 +1,14 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+dependencies = ["crayons","colorama","pygments"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "request_tester"
+authors = [{name = "nejdetckenobi", email = "nejdetyucesoy@gmail.com"}]
+readme = "README.md"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://github.com/nejdetckenobi/request_tester"
