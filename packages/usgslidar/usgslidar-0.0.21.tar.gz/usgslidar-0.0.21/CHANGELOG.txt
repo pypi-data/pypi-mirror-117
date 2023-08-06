@@ -1,0 +1,10 @@
+Change Log 
+
+===============
+0.0.17
+    fixes logs directory and import error when running get_data script
+0.0.18
+
+0.0.19
+    Fixes FileNotFoundError: [Errno 2] No such file or directory: 'get_data.json'
+        json PDAL pipeline wasnt getting packaged properly this version fixes that
