@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nlpapi/__init__.py
+nlpapi/__version__.py
+nlpapi/cli.py
+nlpapi.egg-info/PKG-INFO
+nlpapi.egg-info/SOURCES.txt
+nlpapi.egg-info/dependency_links.txt
+nlpapi.egg-info/entry_points.txt
+nlpapi.egg-info/requires.txt
+nlpapi.egg-info/top_level.txt
