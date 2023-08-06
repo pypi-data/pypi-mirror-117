@@ -1,0 +1,11 @@
+mosaik==2.6.0
+mosaik_api==2.4.2
+palaestrai
+
+[dev]
+tox
+black
+coverage
+sphinx
+pysimmods
+midas-mosaik
