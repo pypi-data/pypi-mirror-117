@@ -1,0 +1,9 @@
+exceptions.py,sha256=KWHBgnotFvHr89EbX3G_xK9uXJlzuEjMeWkSItZvlPo,966
+generators.py,sha256=2N2LatRViURw1cx3-NeNOZ9MtPkMofk_D0DRzmtLA0A,490
+manager.py,sha256=y8V18UbWEY0EgVBEw8mvcYP0EUiT3ANuIiU0iEkZZo8,21319
+services.py,sha256=JSaNZM32DBSfW_nWfEnG_JkIyGn_CWDG2vsLdau-qws,32759
+recaptcha_manager-0.0.1.dist-info/LICENSE.txt,sha256=trv6ZODZPH6dtzZqeNDUaMB-O7xNMIdj9009fliKYlM,1092
+recaptcha_manager-0.0.1.dist-info/METADATA,sha256=u8FND5fHtluwyNLmhMU5pbQ5Rp-SHtsqv0ztU0j9jpE,2691
+recaptcha_manager-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+recaptcha_manager-0.0.1.dist-info/top_level.txt,sha256=4yP_4Kk71eNWsDv7k6zrRTEFIgQk65XGfCJLjb082Gs,39
+recaptcha_manager-0.0.1.dist-info/RECORD,,

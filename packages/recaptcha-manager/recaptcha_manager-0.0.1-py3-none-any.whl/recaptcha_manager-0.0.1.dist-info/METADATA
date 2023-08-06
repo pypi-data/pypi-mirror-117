@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: recaptcha-manager
+Version: 0.0.1
+Summary: Reduce waiting time for solving recaptchas to less than a second
+Home-page: https://www.github.com/charxhit/recaptcha-manager
+Author: Charchit Agarwal
+Author-email: charchit.a00@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests-futures (>=1.0.0) ; platform_system == "Windows"
+Requires-Dist: multiprocess ; platform_system == "Windows"
+
+# recaptcha-manager
+## _Reduce waiting time for solving recaptchas to less than a second_
+
+
+recaptcha-manager is a python package which handles the requesting and solving of google recaptchas according to the usage of your particular application. More specifically, it mathematically analyses relevant factors to pre-send captcha requests to solving services in the background such that whenever you request a captcha, there is already one ready. Since this pre-sending is adapted to your application's captcha usage statistics, it can make accurate predictions so that there won't be any expired captchas as an expense for the low waiting time. 
+
+Here's a quick rundown of its other core features
+
+- __Quick Integration__ - Supports API of popular captcha solving services like Anticaptcha and 2Captcha
+- __Flexibility__ - Works equally well on applications requiring 2-3 captchas a minute as well as those requiring 40+ captchas a minute
+- __Adaptability__ - Can readjust even if your applications' rate of requesting captchas drastically changes midway
+- __Unification__ - If you use multiple captcha solving services, then you can use all of them simultaneously using recaptcha-manager, or switch between them incase of an error. 
+
+However, recaptcha-manager is not suitable for all applications. Some things to keep in mind:
+- Only supports Python 3
+- Only recaptcha-v2 and recaptcha-v3 are supported
+- Only practical for use cases which repeatedly require captcha tokens for the same site
+
+## Installation
+
+You can install the package from pypi like below:
+```python
+pip install recaptcha_manager
+```
+
+## Development
+
+Want to contribute? Great!
+
+Here are a few ways you can help:
+
+- Report bugs that you come across
+- Help integrate API of other captcha solving services (documentation to help do that will be updated soon)
+- Submit feature requests that you think would be helpful
+
+
