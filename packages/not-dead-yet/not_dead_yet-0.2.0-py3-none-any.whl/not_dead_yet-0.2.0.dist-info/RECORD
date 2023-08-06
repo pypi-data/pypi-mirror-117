@@ -1,0 +1,10 @@
+not_dead_yet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+not_dead_yet/__main__.py,sha256=i1YkByqRAtoh5capYR4JNTupDqNZ2WYW1fBmfKZctrM,804
+not_dead_yet/app.py,sha256=fwHMLaO1q0IAF25f6nUapEg631gpYQ-yVyNFMr1Xqvw,1397
+not_dead_yet/notifier.py,sha256=jkgX8wXsEYuovUMrUBcHpEgNeqX2Ustg6hqMpWkibxQ,1635
+not_dead_yet/resource.py,sha256=XQn7_2aKuZ4Dh8MtnblOpV6EI6-7-lwSxogdxQxD5pI,1113
+not_dead_yet/ws.py,sha256=E89K3troB0kmEfFuyoir3-frbPw6XYhBf4KahnReJbI,972
+not_dead_yet-0.2.0.dist-info/entry_points.txt,sha256=irnYWSxr4l9JWX5a2Fw4EufwnB97oiCqiYMFsTrZ_V0,50
+not_dead_yet-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+not_dead_yet-0.2.0.dist-info/METADATA,sha256=sEtPe-JLw9-3g4fdX_3RvFP2XU-yzITIWWT2LNLLVvw,388
+not_dead_yet-0.2.0.dist-info/RECORD,,
