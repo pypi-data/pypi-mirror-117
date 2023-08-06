@@ -1,0 +1,4 @@
+mutagen
+pycryptodomex
+requests
+tqdm
