@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: git-forest
+Version: 0.1.post1
+Summary: manage subtree
+Home-page: https://github.com/ceccocats/git-forest
+Author: Francesco Gatti
+Author-email: gattifrancesco@hotmail.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: argcomplete
+Requires-Dist: argparse
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+

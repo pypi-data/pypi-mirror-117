@@ -1,0 +1,74 @@
+#!python
+# PYTHON_ARGCOMPLETE_OK
+import argcomplete, argparse, yaml
+import os
+
+def runCommand(cmd):
+    return os.system(cmd)
+
+def readData():
+    try:
+        with open(".gitforest", 'r') as config:
+            try:
+                return yaml.safe_load(config)
+            except yaml.YAMLError as exc:
+                print(exc)
+                return None
+    except FileNotFoundError as exc:
+        print("this folder does not contain a .gitforest file")
+
+def doCmdOnRepo(cmd, repo, branch, data):
+    print(cmd + " repo: " + repo + " branch: " + branch)
+    if repo in data.keys():
+        prefix = data[repo]["prefix"]
+        url = data[repo]["url"]
+        full_cmd = "git subtree " + cmd + " --prefix " + prefix + " " + url + " " + branch 
+        print(full_cmd)
+        return runCommand(full_cmd)
+    else:
+        print(repo, "not in .gitforest, please add")
+    return -1
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    subparsers = parser.add_subparsers(dest='subparser')
+
+    parser_list = subparsers.add_parser('list', help="list all avaible repos")
+    parser_list.add_argument('-v', '--verbose', action="store_true")
+
+    parser_pull = subparsers.add_parser('pull', help="pull from specified repo")
+    parser_pull.add_argument('repo', help='repo to pull (\"all\" to pull from all in list)')
+    parser_pull.add_argument("branch", help='branch to pull')
+    
+    parser_push = subparsers.add_parser('push', help="push from specified repo")
+    parser_push.add_argument('repo', help='repo to push')
+    parser_push.add_argument("branch", help='branch to pull')
+
+    args = parser.parse_args()
+
+    data = readData()
+    if data is None:
+        exit()
+    
+
+    if(args.subparser == "list"):
+        for k in data.keys():
+            print(k)
+            if(args.verbose):
+                print("\t", data[k]["prefix"], "->", data[k]["url"])
+
+    elif(args.subparser == "pull"):
+        if(args.repo == "all"):
+            for k in data.keys():
+                if doCmdOnRepo("pull", k, args.branch, data) != 0:
+                    break
+        else:
+            doCmdOnRepo("pull", args.repo, args.branch, data)
+
+    elif(args.subparser == "push"):
+        if(args.repo == "all"):
+            for k in data.keys():
+                if doCmdOnRepo("push", k, args.branch, data) != 0:
+                    break
+        else:
+            doCmdOnRepo("push", args.repo, args.branch, data)
