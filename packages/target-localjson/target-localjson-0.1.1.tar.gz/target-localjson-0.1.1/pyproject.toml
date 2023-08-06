@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "target-localjson"
+version = "0.1.1"
+description = "A Singer Target for save data to local json files"
+authors = ["Wallace Prado <wprado@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+singer-python = "^5.12.1"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.10.2"
+tap-randomdata = "^0.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+target-localjson = "target_localjson:main"
