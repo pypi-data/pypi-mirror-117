@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: console-widgets
+Version: 0.0.603
+Summary: A Python package for displaying terminal based widgets.
+Home-page: https://github.com/bornagojsic/console-widgets
+Author: Borna Gojšić
+Author-email: bornagojsic@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/bornagojsic/console-widgets/issues
+Description: # console-widgets
+        
+        A Python package for displaying terminal based widgets.
+        
+        ![image](https://img.shields.io/github/languages/top/bornagojsic/console-widgets) ![image](https://img.shields.io/pypi/v/console-widgets) ![image](https://img.shields.io/pypi/l/console-widgets) 
+        <!--- ![image](https://img.shields.io/pypi/dd/console-widgets) --->
+        
+        -   Github repo: <https://github.com/bornagojsic/console-widgets>
+        -   Free software: MIT license
+        -   Documentation: <https://console-widgets.readthedocs.io>.
+        
+        
+        Installation
+        ------------
+        
+        Download the package using pip:
+        
+            pip install console-widgets
+        
+        
+        Usage
+        -----
+        
+        To use console-widgets in a project:
+        
+            import console_widgets
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
