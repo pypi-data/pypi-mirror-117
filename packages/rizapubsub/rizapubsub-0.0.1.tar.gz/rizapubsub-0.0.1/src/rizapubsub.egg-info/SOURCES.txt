@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/rizapubsub/__init__.py
+src/rizapubsub/demo_pub.py
+src/rizapubsub/demo_sub.py
+src/rizapubsub/pubsub.py
+src/rizapubsub.egg-info/PKG-INFO
+src/rizapubsub.egg-info/SOURCES.txt
+src/rizapubsub.egg-info/dependency_links.txt
+src/rizapubsub.egg-info/top_level.txt
