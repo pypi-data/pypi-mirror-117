@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+extended_preprocessors.egg-info/PKG-INFO
+extended_preprocessors.egg-info/SOURCES.txt
+extended_preprocessors.egg-info/dependency_links.txt
+extended_preprocessors.egg-info/requires.txt
+extended_preprocessors.egg-info/top_level.txt
+test/test_categorical_discretizer.py
+test/test_coef_maker.py
+test/test_feature_discretizer.py
