@@ -1,0 +1,8 @@
+numpy
+scipy
+praatio~=4.1
+librosa
+pyraat
+
+[testing]
+pytest
