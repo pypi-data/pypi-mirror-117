@@ -1,0 +1,10 @@
+cibw/python/python.3.9.1/tools/Lib/site-packages/openblas.dll,sha256=cL7UQ863cWy6IhHhi4CsFobvGiqn9YwD6Y05nQZ9N_A,25319424
+librapid/__init__.py,sha256=8iKLIyXeq5ozuIvTyhdkbUdgZ2a4jKIAlxkOQXbr0SA,1731
+librapid/_librapid.cp39-win_amd64.pyd,sha256=83rOOmGNZNKIYGAVdgY_WxbD7JYBMerKzkyp1hFCRuY,228864
+librapid-0.2.7.data/data/openblas.dll,sha256=cL7UQ863cWy6IhHhi4CsFobvGiqn9YwD6Y05nQZ9N_A,25319424
+librapid-0.2.7.data/data/lib/site-packages/librapid/openblas.dll,sha256=cL7UQ863cWy6IhHhi4CsFobvGiqn9YwD6Y05nQZ9N_A,25319424
+librapid-0.2.7.dist-info/LICENSE,sha256=vrjkLp1rQoTgMwTQWoGgdVIAqWX8jQpeCuoehM-AXW4,1361
+librapid-0.2.7.dist-info/METADATA,sha256=R9IAf2qOlP-SR8qc3nwHTT94_i1sPHXFej_5RR20oCc,8759
+librapid-0.2.7.dist-info/WHEEL,sha256=YeCcUN9U7qYyLIv_Bv3_AQqjzji7aj2GjeyxNCjgb-8,94
+librapid-0.2.7.dist-info/top_level.txt,sha256=Zy1k91fqAOGCubeF3wqdeufpRPHuQFK3ZuchWqSrUTs,9
+librapid-0.2.7.dist-info/RECORD,,
