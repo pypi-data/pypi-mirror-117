@@ -1,0 +1,3 @@
+[console_scripts]
+ale-import-roms = ale_py.roms.import_roms:main
+
