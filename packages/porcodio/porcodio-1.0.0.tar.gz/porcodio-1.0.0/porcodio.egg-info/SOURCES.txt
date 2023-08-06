@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+porcodio/__init__.py
+porcodio/ascii_list.py
+porcodio/porcodio.py
+porcodio.egg-info/PKG-INFO
+porcodio.egg-info/SOURCES.txt
+porcodio.egg-info/dependency_links.txt
+porcodio.egg-info/top_level.txt
+tests/__init__.py
+tests/test_get_porcodio.py
