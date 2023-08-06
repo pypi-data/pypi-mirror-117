@@ -1,0 +1,3 @@
+[console_scripts]
+bifrost_tracing = bifrost_tracing.cli:main
+
