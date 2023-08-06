@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: jp-holiday
+Version: 1.0.3
+Summary: pandasのデータフレームに日本の日付フラグを与えて，データフレームを返します。
+Home-page: https://github.com/kyasby/jp_holiday
+Author: kyasby
+Author-email: kryo.iryo.tryo@gmail.com
+License: MIT
+Keywords: holiday japan pandas dataframe
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: jpholiday
+
+# Japnese Holiday
+日付が含まれるデータフレームを入れると，祝日フラグを与えてデータフレームを返します。
+
+引数には以下を指定してください。
+
+- 第一引数 => データフレーム
+- 第二引数 => データフレーム内の，日付が入っているカラム名
+- 第三引数 => 新しく作られる祝日フラグのカラム名
+
+を入れてください。
+
+＊第三引数はデフォルト値が`holiday`です。
+
+```python
+
+from jp_holiday import jp_holiday
+
+df_with_holiday = jp_holiday.is_holidy(df, "date", "is_holiday")
+
+```
+
+
