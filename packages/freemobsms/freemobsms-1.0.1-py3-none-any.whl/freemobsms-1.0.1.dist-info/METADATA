@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: freemobsms
+Version: 1.0.1
+Summary: Free mobile sms notifier.
+Home-page: UNKNOWN
+Author: h2d
+Author-email: h2d2021@protonmail.com
+License: GNU Affero General Public License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Dist: requests
+
+This module aim is to allow sending notifications as SMS messages.
+
+Note that the only targeted provider is Free Mobile and that the sms notification option must be enabled by the subscriber interface (https://mobile.free.fr).
+
+The module can be used at the command line as a program or as a function.
+
+The author of this module is not in any manner related to Free SAS.
+
