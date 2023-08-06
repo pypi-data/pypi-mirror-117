@@ -1,0 +1,9 @@
+README.md
+setup.py
+sorda/__init__.py
+sorda/configurable.py
+sorda/sorda.py
+sorda.egg-info/PKG-INFO
+sorda.egg-info/SOURCES.txt
+sorda.egg-info/dependency_links.txt
+sorda.egg-info/top_level.txt
