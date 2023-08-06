@@ -1,0 +1,16 @@
+{
+    "all_clusters_libraries": [
+    ],
+    "clusters": [
+        {
+            "cluster_name": "DataEngineering-Interactive",
+            "libraries": [
+                {
+                    "pypi": {
+                        "package": "snowflake-connector-python"
+                    }
+                }
+            ]
+        }
+    ]
+}

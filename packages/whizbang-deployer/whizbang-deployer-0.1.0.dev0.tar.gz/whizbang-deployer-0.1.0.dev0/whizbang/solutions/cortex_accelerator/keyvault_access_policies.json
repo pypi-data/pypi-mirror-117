@@ -1,0 +1,37 @@
+{
+    "keyvaults": [
+        {
+            "name": "kv",
+            "acls": [
+                {
+                    "name": "datafactory",
+                    "lookup_type": "datafactory",
+                    "lookup_value": "df",
+                    "permissions": {
+                        "keys": [],
+                        "secrets": [
+                            "Get",
+                            "List",
+                            "Set"
+                        ],
+                        "certificates": []
+                    }
+                },
+                {
+                    "name": "CortexServicePrincipal",
+                    "lookup_type": "serviceprincipal",
+                    "lookup_value": "CortexDevelopment",
+                    "permissions": {
+                        "keys": [],
+                        "secrets": [
+                            "Get",
+                            "List",
+                            "Set"
+                        ],
+                        "certificates": []
+                    }
+                }
+            ]
+        }
+    ]
+}

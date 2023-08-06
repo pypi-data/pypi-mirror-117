@@ -1,0 +1,22 @@
+[
+  {
+    "database": "master",
+    "scripts": [
+      "create-master-credentials"
+    ]
+  },
+  {
+    "database": "cortex-statedb",
+    "scripts": [
+      "create-statedb-users",
+      "08-create-or-alter-sproc-script"
+    ]
+  },
+  {
+    "database": "cortex-dw",
+    "scripts": [
+      "create-dw-users",
+      "03-configure-sql-adw"
+    ]
+  }
+]

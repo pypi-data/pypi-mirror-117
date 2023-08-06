@@ -1,0 +1,107 @@
+{
+  "jobs": [
+    {
+      "settings": {
+        "notebook_task": {
+          "revision_timestamp": 0,
+          "notebook_path": "/DataEngineering/OptimizeDelta"
+        },
+        "existing_cluster_name": "DataEngineering-Interactive",
+        "name": "OptimizeDelta",
+        "schedule": {
+          "timezone_id": "US/Central",
+          "quartz_cron_expression": "0 0 0 * * ?"
+        },
+        "max_concurrent_runs": 1,
+        "timeout_seconds": 0,
+        "email_notifications": {
+          "on_failure": [
+            "dscott@hitachisolutions.com"
+          ]
+        }
+      },
+      "grants": [
+        {
+          "user_id": 2775753776354678,
+          "permission": "VIEW"
+        }
+      ]
+    },
+    {
+      "settings": {
+        "notebook_task": {
+          "revision_timestamp": 0,
+          "notebook_path": "/DataEngineering/CreateMountPoints",
+          "base_parameters": {
+            "ForceRemount": "FALSE"
+          }
+        },
+        "existing_cluster_name": "DataEngineering-Interactive",
+        "name": "IaC - OneTimeMountSetup",
+        "timeout_seconds": 900,
+        "max_concurrent_runs": 1,
+        "email_notifications": {}
+      },
+      "grants": [
+        {
+          "user_id": 2775753776354678,
+          "permission": "VIEW"
+        }
+      ]
+    },
+    {
+      "settings": {
+        "notebook_task": {
+          "revision_timestamp": 0,
+          "notebook_path": "/DataEngineering/Grant Permissions"
+        },
+        "existing_cluster_name": "CTX-Interactive",
+        "name": "IaC - GrantDatabasePermissions",
+        "schedule": {
+          "timezone_id": "US/Central",
+          "quartz_cron_expression": "0 0 8 * * ?"
+        },
+        "max_concurrent_runs": 1,
+        "timeout_seconds": 0,
+        "email_notifications": {
+          "on_failure": [
+            "dscott@hitachisolutions.com"
+          ]
+        }
+      },
+      "grants": [
+        {
+          "user_id": 2775753776354678,
+          "permission": "VIEW"
+        }
+      ]
+    },
+    {
+      "settings": {
+        "name": "Vacuum Delta Tables",
+        "existing_cluster_name": "DataEngineering-Interactive",
+        "email_notifications": {
+          "on_failure": [
+            "dscott@hitachisolutions.com"
+          ],
+          "no_alert_for_skipped_runs": false
+        },
+        "timeout_seconds": 0,
+        "schedule": {
+          "quartz_cron_expression": "0 0 2 ? * 1",
+          "timezone_id": "US/Central"
+        },
+        "notebook_task": {
+          "notebook_path": "/DataEngineering/VacuumDelta"
+        },
+        "max_concurrent_runs": 1
+      },
+      "grants": [
+        {
+          "user_id": 2775753776354678,
+          "permission": "VIEW"
+        }
+      ]
+    }
+  ]
+}
