@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+import os
+import readline
+import sys
+import termios
+import time
+
+command = "/usr/bin/systemd-run"
+arguments = "-q -t --property=Type=exec --no-ask-password --property=DynamicUser=yes --property=StateDirectory=botd botctl "
+
+wd = "/var/lib/botd/"
+
+from bot.obj import fmt, keys, spl
+from bot.run import Client, Runtime
+from bot.tbl import Table
+from bot.trc import get_exception
+
+import bot.all
+import botd.all
+
+class Kernel(Runtime):
+
+    def error(self, txt):
+        print(txt)
+        sys.stdout.flush()
+        
+    def log(self, txt):
+        if self.cfg.verbose:
+            print(txt)
+            sys.stdout.flush()
+
+class CLI(Client):
+
+    def handle(self, clt, e):
+        k.put(e)
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+clt = CLI()
+k = Kernel()
+tbl = Table()
+
+
+def wrap(func):
+    import termios
+    fd = sys.stdin.fileno()
+    old = termios.tcgetattr(fd)
+    try:
+        func()
+    except KeyboardInterrupt:
+        pass
+    except PermissionError as ex:
+        print(str(ex))
+    except Exception as ex:
+        print(get_exception())
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, old)
+
+
+def exec(cmd, txt):
+    return os.execv(cmd, txt.split())
+
+def popen(txt):
+    for l in os.popen(txt, "r").readlines():
+        print(l.rstrip())
+
+def cmd(event):
+    event.reply(",".join(keys(tbl.modnames)))
+
+def cycle(event):
+    stop(event)
+    start(event)
+    status(event)
+
+def enable(event):
+    popen("systemctl enable botd --now")
+
+def kill(event):
+    popen("kill -9 %s" % k.pid())
+
+def log(event):
+    popen("cat /var/log/syslog")
+    
+def start(event):
+    popen("systemctl start botd")
+
+def stop(event):
+    popen("systemctl stop botd")
+
+def status(event):
+    popen("systemctl status botd")
+
+
+def main(): 
+    k.parse_cli()
+    id = os.environ.get("INVOCATION_ID", None)
+    import __main__
+    if not id and k.cfg.cmd not in dir(__main__):
+        arg = " ".join(sys.argv[1:])
+        if not arg:
+             return
+        return exec(command, command + " " + arguments + arg)
+    tbl.scan("bot")
+    tbl.scan("botd")
+    tbl.scan("__main__")
+    k.cmd(k.cfg.otxt)
+
+main()
