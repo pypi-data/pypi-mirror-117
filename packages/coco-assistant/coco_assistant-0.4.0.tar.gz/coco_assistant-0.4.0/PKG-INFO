@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: coco-assistant
+Version: 0.4.0
+Summary: Helper for dealing with MS-COCO annotations.
+Home-page: https://github.com/ashnair1/coco_assistant
+License: MIT
+Author: Ashwin Nair
+Author-email: ashnair0007@gmail.com
+Requires-Python: >=3.7.1,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+Requires-Dist: black (==20.8b1); extra == "test"
+Requires-Dist: coco-ash (>=2.0.2,<3.0.0)
+Requires-Dist: coverage (>=5.5,<6.0); extra == "test"
+Requires-Dist: flake8 (==3.8.4); extra == "test"
+Requires-Dist: flake8-docstrings (>=1.6.0,<2.0.0); extra == "test"
+Requires-Dist: isort (==5.6.4); extra == "test"
+Requires-Dist: livereload[doc] (>=2.6.3,<3.0.0); extra == "doc"
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: mkdocs (>=1.1.2,<2.0.0); extra == "doc"
+Requires-Dist: mkdocs-autorefs (==0.1.1); extra == "doc"
+Requires-Dist: mkdocs-gen-files[doc] (>=0.3.3,<0.4.0); extra == "doc"
+Requires-Dist: mkdocs-include-markdown-plugin (>=1.0.0,<2.0.0); extra == "doc"
+Requires-Dist: mkdocs-literate-nav[doc] (>=0.4.0,<0.5.0); extra == "doc"
+Requires-Dist: mkdocs-material (>=7.1.0,<8.0.0); extra == "doc"
+Requires-Dist: mkdocs-material-extensions (>=1.0.1,<2.0.0)
+Requires-Dist: mkdocs-section-index[doc] (>=0.3.1,<0.4.0); extra == "doc"
+Requires-Dist: mkdocstrings (>=0.13.6,<0.14.0); extra == "doc"
+Requires-Dist: pandas (>=1.3.1,<2.0.0)
+Requires-Dist: pip (>=20.3.1,<21.0.0); extra == "dev"
+Requires-Dist: pre-commit (>=2.12.0,<3.0.0); extra == "dev"
+Requires-Dist: pytest (>=6.2.0,<7.0.0); extra == "test"
+Requires-Dist: pytest-cov (>=2.10.1,<3.0.0); extra == "test"
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: seaborn (>=0.11.1,<0.12.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0); extra == "dev"
+Requires-Dist: tox (>=3.20.1,<4.0.0); extra == "dev"
+Requires-Dist: tqdm (>=4.62.0,<5.0.0)
+Requires-Dist: twine (>=3.3.0,<4.0.0); extra == "dev"
+Requires-Dist: virtualenv (>=20.2.2,<21.0.0); extra == "dev"
+Description-Content-Type: text/markdown
+
+# COCO-Assistant
+
+![CircleCI](https://img.shields.io/circleci/build/github/ashnair1/COCO-Assistant?&label=Build&logo=CircleCI)
+[![Codacy Badge](https://img.shields.io/codacy/grade/5299d18c95da4991b4f3a6ae6e8a0b7a/master?label=Code%20Quality&logo=Codacy)](https://app.codacy.com/gh/ashnair1/COCO-Assistant/dashboard)
+[![Code style: black](https://img.shields.io/badge/Code%20Style-black-000000.svg)](https://github.com/psf/black)
+[![PyPi License](https://img.shields.io/pypi/v/coco-assistant?branch=master&label=PyPi%20Version&logo=PyPi&logoColor=ffffff&labelColor=306998&color=FFD43B&style=flat)](https://pypi.org/project/coco-assistant/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://img.shields.io/github/license/ashnair1/COCO-Assistant?color=yellow&label=License&logo=MIT)
+
+Helper for dealing with MS-COCO annotations.
+
+## Overview
+
+The MS COCO annotation format along with the pycocotools library is quite
+popular among the computer vision community. Yet I for one found it difficult to
+play around with the annotations. Deleting a specific category, combining
+multiple mini datasets to generate a larger dataset, viewing distribution of
+classes in the annotation file are things I would like to do without writing a
+separate script for each scenario.
+
+The COCO Assistant is designed (or being designed) to assist with this problem.
+**Please note that currently, the Assistant can only help out with object
+detection datasets**. Any contributions and/or suggestions are welcome.
+
+## Package features
+
+COCO-Assistant currently supports the following features:
+
+-   Merge datasets.
+-   Remove specfiic category from dataset.
+-   Generate annotations statistics - distribution of object areas and category distribution.
+-   Annotation visualiser for viewing the entire dataset.
+
