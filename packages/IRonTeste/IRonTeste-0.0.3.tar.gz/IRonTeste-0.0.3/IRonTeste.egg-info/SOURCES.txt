@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+IRonTeste.egg-info/PKG-INFO
+IRonTeste.egg-info/SOURCES.txt
+IRonTeste.egg-info/dependency_links.txt
+IRonTeste.egg-info/top_level.txt
+Phi/__init__.py
+Phi/finished_methods.py
