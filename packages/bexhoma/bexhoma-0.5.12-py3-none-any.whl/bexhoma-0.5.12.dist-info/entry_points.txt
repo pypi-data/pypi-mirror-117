@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        tpch=bexhoma.scripts.tpch:do_benchmark
+        bexperiments=bexhoma.scripts.experimentsmanager:manage
+    
