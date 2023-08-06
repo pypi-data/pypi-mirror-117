@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: fly-log
+Version: 0.1.21
+Summary: a simple log for small project
+Home-page: https://github.com/zero-space-man-community/fly_log
+Author: flythinker
+Author-email: flythinker@qq.com
+License: MIT License
+Description:  fly_log
+        ========
+        
+        最简单的日志，比 print 函数，多了时间与源文件信息。用于比较小的python项目，是适合的。
+        
+        特点
+        ========
+        
+        功能少，与print函数一致
+        
+        安装说明
+        ========
+        
+        代码对 Python 3 兼容
+        
+        全自动安装：``pip install fly_log`` 
+         
+        
+Keywords: fly log debug
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
