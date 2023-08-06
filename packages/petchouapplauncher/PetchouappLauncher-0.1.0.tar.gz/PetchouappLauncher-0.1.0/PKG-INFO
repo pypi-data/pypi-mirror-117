@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: petchouapplauncher
+Version: 0.1.0
+Summary: A nice way to launch my other projects
+Author: PetchouHelper
+Author-email: petchou91d@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Kivy (>=2.0.0,<3.0.0)
+Requires-Dist: morpion (>=0.3.3,<0.4.0)
