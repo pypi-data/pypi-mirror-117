@@ -1,0 +1,14 @@
+README.md
+setup.py
+resizePixel/__init__.py
+resizePixel/resizePixel.py
+resizePixel/version.py
+resizePixel.egg-info/PKG-INFO
+resizePixel.egg-info/SOURCES.txt
+resizePixel.egg-info/dependency_links.txt
+resizePixel.egg-info/requires.txt
+resizePixel.egg-info/top_level.txt
+tests/__init__.py
+tests/unit/__init__.py
+tests/unit/test_resizePixel.py
+tests/unit/test_version.py

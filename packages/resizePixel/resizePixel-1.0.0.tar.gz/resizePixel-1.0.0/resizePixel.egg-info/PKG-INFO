@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: resizePixel
+Version: 1.0.0
+Summary: Python Resize Pixel
+Home-page: UNKNOWN
+Author: mkshgh
+Author-email: <mukesh.ghimire@outlook.com>
+License: UNKNOWN
+Description: resizePixel
+        ==========================
+        
+        [![Build Status](https://travis-ci.org/mtchavez/python-package-boilerplate.png?branch=master)](https://travis-ci.org/mtchavez/python-package-boilerplate)
+        [![Requires.io](https://requires.io/github/mtchavez/python-package-boilerplate/requirements.svg?branch=master)](https://requires.io/github/mtchavez/python-package-boilerplate/requirements?branch=master)
+        
+        change quality of the image
+        
+        ## Package
+        
+        Basic structure of package is
+        
+        ```
+        .
+        â”œâ”€â”€ CHANGELOG.md
+        â”œâ”€â”€ CONTRIBUTING.md
+        â”œâ”€â”€ LICENSE
+        â”œâ”€â”€ README.md
+        â”œâ”€â”€ resizePixel
+        â”‚   â”œâ”€â”€ __init__.py
+        â”‚   â”œâ”€â”€ resizePixel.py
+        â”‚   â””â”€â”€ version.py
+        â”œâ”€â”€ script
+        â”‚   â””â”€â”€ test
+        â”œâ”€â”€ setup.py
+        â””â”€â”€ tests
+            â”œâ”€â”€ __init__.py
+            â”œâ”€â”€ __pycache__
+            â”‚   â””â”€â”€ __init__.cpython-39.pyc
+            â”œâ”€â”€ img
+            â”‚   â””â”€â”€ test.png
+            â””â”€â”€ unit
+                â”œâ”€â”€ __init__.py
+                â”œâ”€â”€ test_resizePixel.py
+                â””â”€â”€ test_version.py
+        ```
+        
+        ## Requirements
+        
+        Package requirements are handled using pip. To install them do
+        
+        ```
+        pip install -r requirements.txt
+        ```
+        
+        ## Tests
+        
+            Start the tests
+        
+        
+        ## Usage
+        
+        <code>
+        
+            # import library 
+        
+            from resizePixel.resizePixel import rpImage,reduce_qualtiy
+            from PIL import Image
+            import os
+            # image path
+            image_path = r"C:\Users\mkshgh\Downloads\img.png"
+            # I am saving in the same directory 
+            # img_path,img_name > C:\Users\mkshgh\Downloads, img.png
+            img_path,img_name = os.path.split(image_path)
+            output_img_name = 'output_'+img_name
+        
+            # open the image and check the current quality
+            image_file = Image.open(image_path)
+            my_image = rpImage(image_path,image_file)
+            info = my_image.get_image_meta()
+            print(info)
+        
+            # decrease quality explained above
+            # Use quality from 1 to 99; 99 being the best and 1 being the worst quality
+            # If the quality of the image is already low use 1 to 20; works great with larger files.
+            new_image = reduce_qualtiy(output_img_name,image_file,quality=50,outputdir=img_path)
+            print(new_image)
+        </code>
+        
+Keywords: python,image,image quality,reduce,increase,frustrated
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
