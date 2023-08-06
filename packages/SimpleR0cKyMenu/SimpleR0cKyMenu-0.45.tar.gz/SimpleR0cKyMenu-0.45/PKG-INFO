@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: SimpleR0cKyMenu
+Version: 0.45
+Summary: Creating Simple Menu for your program
+Home-page: https://github.com/R3GG3/menu
+Author: R0cKy
+Author-email: konrad.soczi@gmail.com
+License: MIT
+Download-URL: https://github.com/R3GG3/menu/archive/refs/tags/0.2.tar.gz
+Description: UNKNOWN
+Keywords: MENU,SIMPLE,PYTHON,R0cKy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
