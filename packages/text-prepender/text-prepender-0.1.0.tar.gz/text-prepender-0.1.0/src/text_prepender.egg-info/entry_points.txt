@@ -1,0 +1,3 @@
+[console_scripts]
+text-prepender = textprepender.__main__:main
+
