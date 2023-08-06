@@ -1,0 +1,11 @@
+inotify
+netifaces
+paramiko
+posttroll>=1.5.1
+pyinotify
+pyyaml
+pyzmq
+scp
+six
+trollsift
+watchdog
