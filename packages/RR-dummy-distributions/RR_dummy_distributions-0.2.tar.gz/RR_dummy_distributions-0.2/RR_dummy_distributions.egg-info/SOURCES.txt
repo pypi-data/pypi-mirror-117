@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+RR_dummy_distributions/Binomialdistribution.py
+RR_dummy_distributions/Gaussiandistribution.py
+RR_dummy_distributions/Generaldistribution.py
+RR_dummy_distributions/__init__.py
+RR_dummy_distributions.egg-info/PKG-INFO
+RR_dummy_distributions.egg-info/SOURCES.txt
+RR_dummy_distributions.egg-info/dependency_links.txt
+RR_dummy_distributions.egg-info/not-zip-safe
+RR_dummy_distributions.egg-info/top_level.txt

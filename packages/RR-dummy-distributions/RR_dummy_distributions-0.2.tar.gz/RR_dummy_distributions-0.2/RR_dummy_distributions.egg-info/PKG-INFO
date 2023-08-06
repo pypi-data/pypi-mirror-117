@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: RR-dummy-distributions
+Version: 0.2
+Summary: Gaussian distributions
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # RR Dummy Distributions
+        
+        RR Dummy Distributions is a dummy stat. distribution Python library.
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install RR Dummy Distributions.
+        
+        ```bash
+        pip install RR_dummy_distributions
+        ```
+        
+        ## Usage
+        
+        ```python
+        from RR_dummy_distributions import Gaussian, Binomial
+        
+        _dist = Gaussian(mu=10, sigma=3)
+        print(_dist)
+        ```
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        Please make sure to update tests as appropriate.
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
