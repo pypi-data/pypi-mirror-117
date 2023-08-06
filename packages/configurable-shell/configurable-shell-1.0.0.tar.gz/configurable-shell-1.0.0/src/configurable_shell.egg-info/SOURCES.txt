@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/configurable_shell/Shell.py
+src/configurable_shell/__init__.py
+src/configurable_shell.egg-info/PKG-INFO
+src/configurable_shell.egg-info/SOURCES.txt
+src/configurable_shell.egg-info/dependency_links.txt
+src/configurable_shell.egg-info/requires.txt
+src/configurable_shell.egg-info/top_level.txt
