@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyTRML.egg-info/PKG-INFO
+pyTRML.egg-info/SOURCES.txt
+pyTRML.egg-info/dependency_links.txt
+pyTRML.egg-info/requires.txt
+pyTRML.egg-info/top_level.txt
+trml/__init__.py
+trml/color.py
+trml/lexer.py
