@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: raymond
+Version: 0.0.2
+Summary: Suite of utilities created by Raymond Tunstill.
+Home-page: https://raymondkirk.github.io/raymond/
+Author: Raymond Tunstill
+Author-email: ray.tunstill@live.co.uk
+License: GNU GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# raymond
+
+![](https://github.com/RaymondKirk/raymond/workflows/build/badge.svg)
+
+Utility package for raymond specific functions.
+
+## Documentation
+
+Please refer to the [documentation](https://raymondkirk.github.io/raymond/) for installation instructions and API usage.
+
+## Citing raymond
+
+
+If you use raymond in your research please use the following BibTeX entry and any BibTeX entries for used functions.
+
+```BibTeX
+@misc{rk2020raymond,
+  author =       {Raymond Kirk},
+  title =        {raymond},
+  howpublished = {\url{https://github.com/RaymondKirk/raymond}},
+  year =         {2020}
+}
+```
+
+
