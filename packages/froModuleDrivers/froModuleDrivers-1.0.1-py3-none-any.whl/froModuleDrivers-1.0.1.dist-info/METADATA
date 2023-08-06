@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: froModuleDrivers
+Version: 1.0.1
+Summary: A package for easy use of fro net device application
+Home-page: https://gitee.com/shaorong/fro-k12-python-driver.git
+Author: roger
+Author-email: mrshaorong@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
