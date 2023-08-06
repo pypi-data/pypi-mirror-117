@@ -1,0 +1,3 @@
+[console_scripts]
+pymkdocs = pymkdocs.main:main
+
