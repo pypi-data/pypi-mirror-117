@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/iotkaran/Client.py
+src/iotkaran/__init__.py
+src/iotkaran.egg-info/PKG-INFO
+src/iotkaran.egg-info/SOURCES.txt
+src/iotkaran.egg-info/dependency_links.txt
+src/iotkaran.egg-info/top_level.txt
