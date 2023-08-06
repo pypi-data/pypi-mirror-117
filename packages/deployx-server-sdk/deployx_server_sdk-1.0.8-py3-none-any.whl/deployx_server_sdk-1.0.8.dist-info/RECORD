@@ -1,0 +1,9 @@
+dxclient/__init__.py,sha256=77ge0FnkRNrDwJoERnTOwxQ5FhUaLjVxOZ4t8AUUpA0,3231
+dxclient/client.py,sha256=j8qJQifODiErcOcTVbYxrMZdXUjFMQQM3_KIS953GgU,4259
+dxclient/config.py,sha256=eRNpha5KrbOJrIKZFSIgDGqyNf9Ig0A66vHP0NARnRM,1836
+dxclient/store.py,sha256=I0C338Mw_3WAMoneXj6-J4INnYmKUQwkm-7zf5HpHN0,1652
+deployx_server_sdk-1.0.8.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+deployx_server_sdk-1.0.8.dist-info/METADATA,sha256=PSP-wqysJf_QryDVgM9_eSyeew9vXhKr0pTdl-G9AYs,773
+deployx_server_sdk-1.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+deployx_server_sdk-1.0.8.dist-info/top_level.txt,sha256=gv1mUDP1fjOpp8-llJ-EzLkAxu9stpCRTpjd0yW7t-w,9
+deployx_server_sdk-1.0.8.dist-info/RECORD,,
