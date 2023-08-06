@@ -1,0 +1,10 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+tracardi_discord_webhook/plugin.py
+tracardi_discord_webhook.egg-info/PKG-INFO
+tracardi_discord_webhook.egg-info/SOURCES.txt
+tracardi_discord_webhook.egg-info/dependency_links.txt
+tracardi_discord_webhook.egg-info/requires.txt
+tracardi_discord_webhook.egg-info/top_level.txt
