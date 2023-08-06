@@ -1,0 +1,3 @@
+[pymodaq.plugins]
+stellarnet = pymodaq_plugins_stellarnet
+
