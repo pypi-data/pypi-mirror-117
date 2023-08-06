@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pypika-orm
+Version: 0.0.1
+Summary: Async ORM based on pypika
+Home-page: https://github.com/klen/pypika-orm
+Author: Kirill Klenov
+Author-email: horneds@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/klen/pypika-orm
+Project-URL: Source code, https://github.com/klen/pypika-orm
+Project-URL: Issue tracker, https://github.com/klen/pypika-orm/issues
+Keywords: asyncio,pypika,orm
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Trio
+Requires-Python: >=3.7
+Requires-Dist: aio-databases (>=0.0.9)
+Requires-Dist: pypika
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-aio ; extra == 'tests'
+Requires-Dist: pytest-mypy ; extra == 'tests'
+Requires-Dist: aiosqlite ; extra == 'tests'
+
+UNKNOWN
+
+
