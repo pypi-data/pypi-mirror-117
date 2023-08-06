@@ -1,0 +1,13 @@
+dotmatrix/__init__.py,sha256=yfugf6uMNGfIRI87Lq3W7QUroR0flCtw7u8epcKmy1c,107
+dotmatrix/_types.py,sha256=NgPfwYpuR8XrRL7oY5GqJ0WRYy3GUMlKQVbKcro585I,2151
+dotmatrix/algorithms.py,sha256=qQxJGtR4thLWLLp2D6zBmPX-tQHylzij7t3OqqafR-Q,3251
+dotmatrix/displays/__init__.py,sha256=0IvDmDhfQEp0vOzCcewYfmhe3dgJU0EnytsAhAvAaH0,117
+dotmatrix/displays/block.py,sha256=4zrKWhGvny6iQARPWmKBuiALSVVFXsbe5doCm-318Ag,2879
+dotmatrix/displays/braille.py,sha256=SHAIzH8ZDegIOu6-qtMoiSVC-bM3BJrOd-SMupyPO0M,2728
+dotmatrix/displays/unit.py,sha256=6GOUgsRjQUDhUADS2-puCa7VXlxhKPloVRLuupejrhY,2326
+dotmatrix/matrix.py,sha256=_hKxOsjOi-HdLJAKZNxo6wdvOCgKLZ32LX7eTen5jbQ,10904
+dotmatrix/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotmatrix-0.2.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+dotmatrix-0.2.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+dotmatrix-0.2.0.dist-info/METADATA,sha256=Dl-4Rju-YzDvnGV4E2DVVWdDR_ESeotLv32qMPrR_Hk,13645
+dotmatrix-0.2.0.dist-info/RECORD,,
