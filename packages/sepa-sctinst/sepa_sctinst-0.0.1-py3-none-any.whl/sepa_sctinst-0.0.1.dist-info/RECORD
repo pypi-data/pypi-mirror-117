@@ -1,0 +1,10 @@
+sepa_sctinst/__init__.py,sha256=J5s0xWLmrqT_uyU6KPG-_NTgTy4GQx-phup40hTugHc,4920
+sepa_sctinst/schema_validation.py,sha256=oTXHk02lvGoz8D_PiIjffgS9SFviieg1Lyg8zPxs9YA,1161
+sepa_sctinst/sct_inst_c2b.py,sha256=e59P9FUsASvWGBH2LlhCjmQaOYb3DEAXc6MQOb9rwF8,10352
+sepa_sctinst/sct_inst_common.py,sha256=Hu3sQJTkgubv_rzQbSB3AUn9pKKaSO7VjQNEfMSxE5c,2155
+sepa_sctinst/sct_inst_interbank.py,sha256=Cmip8A1MwjjVZD9RRwe28pcFiG0Hmd1aT75XWjD2o_0,7985
+sepa_sctinst-0.0.1.dist-info/LICENSE,sha256=KD6mzCmXoacNoASeCa35MXu2DKG1Enm2UZa4OmnhmWs,11323
+sepa_sctinst-0.0.1.dist-info/METADATA,sha256=dT2ilPeCO4DpWdGZPc_Iy1BTQbbKNaajathbxYKQx7Q,2752
+sepa_sctinst-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sepa_sctinst-0.0.1.dist-info/top_level.txt,sha256=_Qb8_yv8Zpqo34CkP_9gGHZZ31Oa8kJHirKg9Rtj2eQ,13
+sepa_sctinst-0.0.1.dist-info/RECORD,,
