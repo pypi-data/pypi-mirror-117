@@ -1,0 +1,15 @@
+bs/__init__.py,sha256=PqC217c0XT7FBvfxCAOB4Zqziq9z7UAEMeyjuIsnuMM,189
+bs/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bs/abc.py,sha256=YthX_4GKd-RZcTGiXy6KJB51JnTHAov_ysf0-DIa6kE,1257
+bs/client.py,sha256=b8bJQEoE5ficH7AEpssBNOTMBXcgRnT6T1spec5qv7I,4412
+bs/clubs.py,sha256=j8vy0ep9xH2Z6tIPOv2NDTO3MZ-rSOx4b7gPhKbnvhA,1513
+bs/errors.py,sha256=Jbglf9Xch91WAgtlk2ibGSoKav5vJTzIM7Afk5XHw0U,2490
+bs/http.py,sha256=6Ul2r9MG3KDl6UhaFxfYw4Jb84Nqpv93AXGtPA8fn5E,16602
+bs/login.py,sha256=YstRoACWSA9QTQjcseqMeqsx3JxoRIgzenfxlfsCxYg,209
+bs/players.py,sha256=cx1L6xCXVTKABViCMzGFsmIfPpS0CQMKApvpOm6CXX4,1888
+bs/utils.py,sha256=QJCcX4eP4bxRoUdJx0wuhPZfsqpYW7JdPmUsnC4MNV4,4332
+bs.py-0.0.1b1.dist-info/LICENSE,sha256=GrNM8-enZtfdziRFYZeAsAJmzPsYfcQTimE_B9AMEfc,1075
+bs.py-0.0.1b1.dist-info/METADATA,sha256=r-x0zjwl12qi7Y6pklUlToqzCTTcqwJQfQABwejSUjM,885
+bs.py-0.0.1b1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bs.py-0.0.1b1.dist-info/top_level.txt,sha256=acW2fUHUO2wtKE2RJ2fJPdBXGA0u7dj4SqduWEeGFhU,3
+bs.py-0.0.1b1.dist-info/RECORD,,
