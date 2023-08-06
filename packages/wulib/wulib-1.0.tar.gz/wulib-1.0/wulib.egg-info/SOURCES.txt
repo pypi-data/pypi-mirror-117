@@ -1,0 +1,8 @@
+setup.py
+wu/__init__.py
+wu/foobar.py
+wu/tools.py
+wulib.egg-info/PKG-INFO
+wulib.egg-info/SOURCES.txt
+wulib.egg-info/dependency_links.txt
+wulib.egg-info/top_level.txt
