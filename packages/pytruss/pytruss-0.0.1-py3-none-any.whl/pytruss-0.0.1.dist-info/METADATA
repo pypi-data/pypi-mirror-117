@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pytruss
+Version: 0.0.1
+Summary: A simple Finite Element package for various truss analysis.
+Home-page: https://github.com/RealEnigneeringGames/truss
+Author: RealEngineeringGames
+Author-email: twestergaard_89@hotmail.com
+License: MIT license
+Keywords: Finite Element
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# PyTruss
+A simple Finite Element package for various truss analysis in 2D.
+
+## Status on implemented analysis
+
+- [x] Linear elastic
+- [ ] Rigid plastic - Lower bound
+- [ ] Rigid plastic- Upper bound
+- [ ] Elasto-plasic
+- [ ] Buckling
+- [ ] Dynamics ...
+
+...
+
