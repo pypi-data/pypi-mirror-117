@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: settree
+Version: 0.1.0
+Summary: A framework for learning tree-based models over sets
+Home-page: https://github.com/TAU-MLwell/Set-Tree
+Author: Roy Hirsch
+Author-email: royhirsch@mail.tau.ac.il
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is the official repository for the paper: "Trees with Attention for Set Prediction Tasks" (ICML21).
+This repository contains a prototypical implementation of Set-Tree and GBeST (Gradient Boosted Set-Tree) algorithms.
+In many machine learning applications, each record represents a set of items. A set is an unordered group of items, the number of items may differ between different sets. Problems comprised from sets of items are present in diverse fields, from particle physics and cosmology to statistics and computer graphics. In this work, we present a novel tree-based algorithm for processing sets.
+
+Set-Tree model comprised from two components:
+Set-compatible split criteria: we specifically support the family of split criteria defined by the following equation and parametrized by alpha and beta.
+Attention-Sets: a mechanism for criteria the split criteria to subsets of the input. The attention-sets are derived from previous split-criteria and allows the model to learn more complex set-functions.
+For more details, please refer to the official repository: https://github.com/TAU-MLwell/Set-Tree
+Or the paper: Trees with Attention for Set Prediction Tasks, http://proceedings.mlr.press/v139/hirsch21a.html
+
