@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hrhr
+Version: 0.0.3
+Summary: HRHR model
+Home-page: https://github.com/nt409/HRHR
+Author: Nick Taylor
+Author-email: nt409@cam.ac.uk
+License: MIT
+Description: # HRHR model
+        
+        This is the model description
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
