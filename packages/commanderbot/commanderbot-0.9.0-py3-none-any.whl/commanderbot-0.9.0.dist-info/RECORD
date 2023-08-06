@@ -1,0 +1,13 @@
+commanderbot/__init__.py,sha256=K0kNy26Vm6A-1V5lST3ily6yVsNLUbiqk6AZDFm2nJI,20
+commanderbot/__main__.py,sha256=fimrUAZOxcoT6MoB2VhePuNz5Ee6NbJheAy8IoTDUGc,45
+commanderbot/core/__init__.py,sha256=VbL4tq2o07dHVKj6LIfYfL7HemNLdK2W7mmlAy5Y4vE,61
+commanderbot/core/bot/__init__.py,sha256=9U6XoVwAR3-yURZxvvOM2m4ycebd-fa_VLVQHH4pwjU,48
+commanderbot/core/bot/abc/__init__.py,sha256=ENygRDirH4nT3UYkjccN--Fhbp2E2_R2gbLz37HyNm4,34
+commanderbot/core/bot/abc/commander_bot_base.py,sha256=tK1k3BBDkNopmO21ts5i0sZu9StGu_Ivq2nT1Pft-J8,592
+commanderbot/core/bot/commander_bot.py,sha256=O5DxqM5y2aMsLbpgJ6Eyn2Z49Im0eGflToFXNlVsxYU,5931
+commanderbot/core/cli.py,sha256=vLbf0ijG2oCGgq7IC7uBDe_9m9FjCQAPEBLKF0i4rSs,1916
+commanderbot/core/logging.py,sha256=_o4Mdvn_Q4x75BGKoEjS_v26C93ktSlvU8Pj1HRq6Eg,1642
+commanderbot-0.9.0.dist-info/LICENSE.txt,sha256=Oi2KMg1GweU4FoPFXZC6JFjHRHmClr_T0XzKU-07qA8,1077
+commanderbot-0.9.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+commanderbot-0.9.0.dist-info/METADATA,sha256=UJgI_SHdUseAkJ05-nuWmjdjsslp_8tbDFFSXUqv-SE,2830
+commanderbot-0.9.0.dist-info/RECORD,,
