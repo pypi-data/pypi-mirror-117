@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: edc-mnsi
+Version: 0.1.3
+Summary: MNSI form/model for the clinicedc/edc and other django projects
+Home-page: https://github.com/clinicedc/edc-mnsi
+Author: Erik van Widenfelt
+Author-email: ew2789@gmail.com
+License: GPL license, see LICENSE
+Keywords: django edc mnsi
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.9
+
+|pypi| |actions| |codecov| |downloads|
+
+edc-mnsi
+--------
+
+Django classes for the Michigan Neuropathy Screening Instrument (MNSI).
+
+* https://pubmed.ncbi.nlm.nih.gov/7821168/
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3641573/ (omits monofilament testing)
+* https://medicine.umich.edu/sites/default/files/downloads/MNSI_howto.pdf
+
+MNSI scores are calculated in ``signals.py`` through a call to the ``MnsiCalculator`` and stored in two calculated fields on the model. The two calculated fields can also be viewed as read only on the form in Admin.
+
+See also:
+
+* https://github.com/clinicedc/edc
+* https://github.com/meta-trial/meta-edc
+
+Sample usage:
+
+.. code-block:: python
+
+    # models.py
+    from edc_mnsi.model_mixins import MnsiModelMixin
+    from edc_model import models as edc_models
+
+    class Mnsi(
+        MnsiModelMixin,
+        edc_models.BaseUuidModel,
+    ):
+        class Meta(MnsiModelMixin.Meta, edc_models.BaseUuidModel.Meta):
+            verbose_name = "Michigan Neuropathy Screening Instrument (MNSI)"
+            verbose_name_plural = "Michigan Neuropathy Screening Instrument (MNSI)"
+
+.. code-block:: python
+
+    # forms.py
+    from django import forms
+    from edc_form_validators import FormValidatorMixin
+    from edc_mnsi.form_validator import MnsiFormValidator
+
+    from .models import Mnsi
+
+
+    class MnsiForm(FormValidatorMixin, forms.ModelForm):
+
+        form_validator_cls = MnsiFormValidator
+
+        class Meta:
+            model = Mnsi
+            fields = "__all__"
+
+.. code-block:: python
+
+    # admin.py
+    from edc_mnsi.admin import MnsiModelAdminMixin
+    from edc_mnsi.fieldsets import get_fieldsets
+
+    from .forms import MnsiForm
+
+    @admin.register(Mnsi, site=admin)
+    class MnsiAdmin(
+        MnsiModelAdminMixin,
+        SimpleHistoryAdmin,
+    ):
+
+        form = MnsiForm
+
+        fieldsets = get_fieldsets()
+
+
+
+.. |pypi| image:: https://img.shields.io/pypi/v/edc-mnsi.svg
+    :target: https://pypi.python.org/pypi/edc-mnsi
+
+.. |actions| image:: https://github.com/clinicedc/edc-mnsi/workflows/build/badge.svg?branch=develop
+  :target: https://github.com/clinicedc/edc-mnsi/actions?query=workflow:build
+
+.. |codecov| image:: https://codecov.io/gh/clinicedc/edc-mnsi/branch/develop/graph/badge.svg
+    :target: https://codecov.io/gh/clinicedc/edc-mnsi
+
+.. |downloads| image:: https://pepy.tech/badge/edc-mnsi
+    :target: https://pepy.tech/project/edc-mnsi
+
+
