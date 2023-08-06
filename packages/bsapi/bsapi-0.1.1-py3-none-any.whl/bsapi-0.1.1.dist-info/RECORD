@@ -1,0 +1,17 @@
+bsapi/__init__.py,sha256=cpGdw9I6KDk_xAhWuk2QhTAdaJ1Z4HqR-SNwg214XGI,225
+bsapi/base.py,sha256=JtFqIM6Fo3ZmoowkDte0I7KKW55t_w6NkNPQFCKnGLY,871
+bsapi/settings.py,sha256=z3JG9_tHZlihJVKF_-8QiDlbjBTlM6NYEsqLx21tWMQ,1078
+bsapi/app_automate/__init__.py,sha256=g72zwOmx5rmqi-hicKE1Dtg82TvxMUzakxW-aqOQi2E,54
+bsapi/app_automate/appium/__init__.py,sha256=GaPYtnHZfaDcPDD9-C_2HOVa-IS4KtmRkS_Lz573yGI,262
+bsapi/app_automate/appium/apps.py,sha256=nTAGwPnKG1zcR7Qvqy9pPLEoL-qcpTneTSNu8t28nns,7289
+bsapi/app_automate/appium/builds.py,sha256=HkBFa8Tvf8Pz0YQYspB8MhSCQ-3d4WlwtNiM33exGtg,6421
+bsapi/app_automate/appium/devices.py,sha256=tBQe1RV1gRL9avi5p9zNdq2Ibhb-j4VfMB7jvy0CE5k,1434
+bsapi/app_automate/appium/plans.py,sha256=-1cFQuCR3ZkPQfdq2J2Ylli2fG4MQXcLcLuW-axUNX8,2143
+bsapi/app_automate/appium/projects.py,sha256=cikwK9L4KQQEH0eK3jPu4VvhRGb7oKSqSZNz2IvKtGc,9312
+bsapi/app_automate/appium/responses.py,sha256=hKLaf6JSPOiNnt0iHMSwzhvYN50Xo1cR4I8BGonXENs,305
+bsapi/app_automate/appium/sessions.py,sha256=LtUiwWRsccmeLXkx7mQj9Pb58dKywrvwDjEYsMptWQw,21382
+bsapi-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bsapi-0.1.1.dist-info/METADATA,sha256=qetBdrqSPgCqyntzwb1gH3K0lW_DV6W-5bJ014bdOXg,2529
+bsapi-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bsapi-0.1.1.dist-info/top_level.txt,sha256=on9svSZJYVTJ-E-5_CCHG9m5e6jhz8xzMdA3jf1MJOk,6
+bsapi-0.1.1.dist-info/RECORD,,
