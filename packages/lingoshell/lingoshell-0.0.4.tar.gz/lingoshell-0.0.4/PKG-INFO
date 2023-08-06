@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lingoshell
+Version: 0.0.4
+Summary: The LingoScript programming language
+Home-page: UNKNOWN
+Author: Gav H
+Author-email: hi@lingoshell.com
+License: UNKNOWN
+Description: A programming language that allows you to write in different human languages
+Keywords: language
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
