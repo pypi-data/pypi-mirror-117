@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ankistats/__init__.py
+ankistats/db_class.py
+ankistats.egg-info/PKG-INFO
+ankistats.egg-info/SOURCES.txt
+ankistats.egg-info/dependency_links.txt
+ankistats.egg-info/requires.txt
+ankistats.egg-info/top_level.txt
