@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1069</width>
+    <height>762</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PyXPad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="sourceTab">
+       <attribute name="title">
+        <string>&amp;Sources</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="shotLabel">
+            <property name="text">
+             <string>Shot:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="lastShotButton">
+            <property name="toolTip">
+             <string>Get last shot number</string>
+            </property>
+            <property name="text">
+             <string>&amp;Last shot</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="7">
+           <widget class="QLineEdit" name="tracePattern">
+            <property name="placeholderText">
+             <string>Filter traces with wildcards</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="9">
+           <widget class="QCheckBox" name="availableSignals">
+            <property name="text">
+             <string>Show available signals only</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="readDataButton">
+            <property name="text">
+             <string>&amp;Read</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="shotInput"/>
+          </item>
+          <item row="0" column="8">
+           <widget class="QCheckBox" name="sourceDescription">
+            <property name="text">
+             <string>Show description</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <widget class="QLabel" name="traceLabel">
+            <property name="text">
+             <string>Trace:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="getAvailableSignalsButton">
+            <property name="text">
+             <string>Get signals</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QSplitter" name="splitter">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="QTreeWidget" name="treeView">
+           <property name="columnCount">
+            <number>1</number>
+           </property>
+           <attribute name="headerVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="headerDefaultSectionSize">
+            <number>200</number>
+           </attribute>
+           <attribute name="headerStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string notr="true">Source</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QTableWidget" name="sourceTable">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string>List of available signals</string>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>true</bool>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::MultiSelection</enum>
+           </property>
+           <property name="showGrid">
+            <bool>true</bool>
+           </property>
+           <property name="columnCount">
+            <number>1</number>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>200</number>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>29</number>
+           </attribute>
+           <column/>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="dataTab">
+       <attribute name="title">
+        <string>&amp;Data</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QSplitter" name="splitter_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QTableWidget" name="dataTable">
+           <property name="contextMenuPolicy">
+            <enum>Qt::CustomContextMenu</enum>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>true</bool>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::MultiSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <property name="showGrid">
+            <bool>false</bool>
+           </property>
+           <property name="gridStyle">
+            <enum>Qt::SolidLine</enum>
+           </property>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>29</number>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Source</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Trace</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Comments</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QTextEdit" name="textOutput">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Command:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="ConsoleWidget" name="commandInput"/>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="commandButton">
+              <property name="text">
+               <string>Run</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="plotTab">
+       <attribute name="title">
+        <string>&amp;Plot</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1069</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuAdd_source">
+     <property name="title">
+      <string>&amp;Add source</string>
+     </property>
+     <addaction name="actionNetCDF_file"/>
+     <addaction name="actionXPAD_tree"/>
+     <addaction name="actionBOUT_data"/>
+    </widget>
+    <addaction name="menuAdd_source"/>
+    <addaction name="separator"/>
+    <addaction name="actionLoadState"/>
+    <addaction name="actionSaveState"/>
+    <addaction name="separator"/>
+    <addaction name="actionWrite_ASCII"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuPlot">
+    <property name="title">
+     <string>&amp;Graphics</string>
+    </property>
+    <addaction name="actionPlot"/>
+    <addaction name="actionOPlot"/>
+    <addaction name="actionMPlot"/>
+    <addaction name="actionZPlot"/>
+    <addaction name="actionXYPlot"/>
+    <addaction name="actionContour"/>
+    <addaction name="actionContour_filled"/>
+    <addaction name="actionClearFig"/>
+   </widget>
+   <widget class="QMenu" name="menuCommand">
+    <property name="title">
+     <string>&amp;Command</string>
+    </property>
+    <addaction name="actionDeleteTrace"/>
+    <addaction name="separator"/>
+    <addaction name="actionChop"/>
+    <addaction name="separator"/>
+    <addaction name="actionIntegrate"/>
+    <addaction name="actionDf_dt"/>
+    <addaction name="actionSmooth"/>
+    <addaction name="actionBand_pass_filter"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd"/>
+    <addaction name="actionSubtract"/>
+    <addaction name="actionMultiply"/>
+    <addaction name="actionDivide"/>
+    <addaction name="separator"/>
+    <addaction name="actionFFTP"/>
+    <addaction name="actionRunFFT"/>
+    <addaction name="separator"/>
+    <addaction name="actionReciprocal"/>
+    <addaction name="actionExponential"/>
+    <addaction name="actionAbsolute"/>
+    <addaction name="actionArctan"/>
+    <addaction name="actionNlog"/>
+    <addaction name="actionNorm"/>
+    <addaction name="actionInvert"/>
+    <addaction name="actionAddCon"/>
+    <addaction name="actionSubCon"/>
+    <addaction name="actionMulCon"/>
+    <addaction name="actionDivCon"/>
+    <addaction name="actionPowCon"/>
+    <addaction name="actionChangeName"/>
+    <addaction name="actionChangeUnits"/>
+    <addaction name="actionClip"/>
+    <addaction name="actionStats"/>
+    <addaction name="actionTimeOff"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPlot"/>
+   <addaction name="menuCommand"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoadState">
+   <property name="text">
+    <string>&amp;Load state</string>
+   </property>
+  </action>
+  <action name="actionSaveState">
+   <property name="text">
+    <string>&amp;Save state</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit pyXpad</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionXPAD_tree">
+   <property name="text">
+    <string>XPAD tree</string>
+   </property>
+   <property name="toolTip">
+    <string>Load a tree of XPAD items</string>
+   </property>
+  </action>
+  <action name="actionNetCDF_file">
+   <property name="text">
+    <string>NetCDF file</string>
+   </property>
+  </action>
+  <action name="actionPlot">
+   <property name="text">
+    <string>&amp;Plot</string>
+   </property>
+  </action>
+  <action name="actionOPlot">
+   <property name="text">
+    <string>&amp;OPlot</string>
+   </property>
+  </action>
+  <action name="actionMPlot">
+   <property name="text">
+    <string>&amp;MPlot</string>
+   </property>
+  </action>
+  <action name="actionXYPlot">
+   <property name="text">
+    <string>&amp;XYPlot</string>
+   </property>
+  </action>
+  <action name="actionZPlot">
+   <property name="text">
+    <string>&amp;ZPlot</string>
+   </property>
+  </action>
+  <action name="actionBOUT_data">
+   <property name="text">
+    <string>BOUT++ data</string>
+   </property>
+   <property name="toolTip">
+    <string>Read BOUT++ data directory</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionContour">
+   <property name="text">
+    <string>&amp;Contour</string>
+   </property>
+  </action>
+  <action name="actionContour_filled">
+   <property name="text">
+    <string>Contour &amp;filled</string>
+   </property>
+  </action>
+  <action name="actionClearFig">
+   <property name="text">
+    <string>C&amp;lear Figure</string>
+   </property>
+  </action>
+  <action name="actionWrite_ASCII">
+   <property name="text">
+    <string>&amp;Write ASCII</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="text">
+    <string>X+Y (Sum Channels)</string>
+   </property>
+  </action>
+  <action name="actionSubtract">
+   <property name="text">
+    <string>X-Y</string>
+   </property>
+  </action>
+  <action name="actionMultiply">
+   <property name="text">
+    <string>X*Y</string>
+   </property>
+  </action>
+  <action name="actionDivide">
+   <property name="text">
+    <string>X/Y</string>
+   </property>
+  </action>
+  <action name="actionChop">
+   <property name="text">
+    <string>Chop</string>
+   </property>
+  </action>
+  <action name="actionIntegrate">
+   <property name="text">
+    <string>Integrate</string>
+   </property>
+  </action>
+  <action name="actionDf_dt">
+   <property name="text">
+    <string>df/dt</string>
+   </property>
+  </action>
+  <action name="actionSmooth">
+   <property name="text">
+    <string>Smooth</string>
+   </property>
+  </action>
+  <action name="actionLow_pass_filter">
+   <property name="text">
+    <string>Low pass filter</string>
+   </property>
+  </action>
+  <action name="actionHigh_pass_filter">
+   <property name="text">
+    <string>High pass filter</string>
+   </property>
+  </action>
+  <action name="actionBand_pass_filter">
+   <property name="text">
+    <string>Band pass filter</string>
+   </property>
+  </action>
+  <action name="actionFFTP">
+   <property name="text">
+    <string>FFTP</string>
+   </property>
+  </action>
+  <action name="actionRunFFT">
+   <property name="text">
+    <string>Running FFT</string>
+   </property>
+  </action>
+  <action name="actionReciprocal">
+   <property name="text">
+    <string>1/X</string>
+   </property>
+  </action>
+  <action name="actionExponential">
+   <property name="text">
+    <string>exp</string>
+   </property>
+  </action>
+  <action name="actionAbsolute">
+   <property name="text">
+    <string>abs</string>
+   </property>
+  </action>
+  <action name="actionArctan">
+   <property name="text">
+    <string>arctan</string>
+   </property>
+  </action>
+  <action name="actionNlog">
+   <property name="text">
+    <string>ln</string>
+   </property>
+  </action>
+  <action name="actionNorm">
+   <property name="text">
+    <string>Normalise</string>
+   </property>
+  </action>
+  <action name="actionInvert">
+   <property name="text">
+    <string>Invert</string>
+   </property>
+  </action>
+  <action name="actionAddCon">
+   <property name="text">
+    <string>X+C</string>
+   </property>
+  </action>
+  <action name="actionSubCon">
+   <property name="text">
+    <string>X-C</string>
+   </property>
+  </action>
+  <action name="actionMulCon">
+   <property name="text">
+    <string>X*C</string>
+   </property>
+  </action>
+  <action name="actionDivCon">
+   <property name="text">
+    <string>X/C</string>
+   </property>
+  </action>
+  <action name="actionPowCon">
+   <property name="text">
+    <string>X^C</string>
+   </property>
+  </action>
+  <action name="actionChangeName">
+   <property name="text">
+    <string>Change Name</string>
+   </property>
+  </action>
+  <action name="actionChangeUnits">
+   <property name="text">
+    <string>Change Units</string>
+   </property>
+  </action>
+  <action name="actionClip">
+   <property name="text">
+    <string>Clip</string>
+   </property>
+  </action>
+  <action name="actionStats">
+   <property name="text">
+    <string>Statistics</string>
+   </property>
+  </action>
+  <action name="actionTimeOff">
+   <property name="text">
+    <string>Time Offset</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionDeleteTrace">
+   <property name="text">
+    <string>&amp;Delete Trace</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ConsoleWidget</class>
+   <extends>QLineEdit</extends>
+   <header>.console_widget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
