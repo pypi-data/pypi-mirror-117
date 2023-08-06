@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: zhhmathmodel
+Version: 1.1.0
+Summary: {'Contains data vision, excel file operations and function Operation', 'A common math modeling tool for students'}
+Home-page: https://www.python.org/
+Author: ZHANG HAOHAN
+Author-email: hh.zhang@openbayes.com
+Maintainer: ZHANG HAOHAN
+License: ZJUT
+Keywords: mathematics modeling
+Platform: macOS
+Requires-Python: >=3.5
+License-File: LICENSE.txt
+Requires-Dist: xlrd
+Requires-Dist: xlwt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+UNKNOWN
+
