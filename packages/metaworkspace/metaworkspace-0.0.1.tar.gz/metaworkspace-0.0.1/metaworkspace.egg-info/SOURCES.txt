@@ -1,0 +1,12 @@
+README.md
+setup.py
+metaworkspace/__init__.py
+metaworkspace/__main__.py
+metaworkspace/init.py
+metaworkspace/install.py
+metaworkspace/workspace.py
+metaworkspace.egg-info/PKG-INFO
+metaworkspace.egg-info/SOURCES.txt
+metaworkspace.egg-info/dependency_links.txt
+metaworkspace.egg-info/requires.txt
+metaworkspace.egg-info/top_level.txt
