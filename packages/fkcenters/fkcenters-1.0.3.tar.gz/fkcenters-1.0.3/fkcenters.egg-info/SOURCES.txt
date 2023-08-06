@@ -1,0 +1,16 @@
+README.md
+setup.py
+FkCenters/FkCenters.py
+FkCenters/FuzzyClusteringAlgorithm.py
+FkCenters/Measure.py
+FkCenters/MeasureManager.py
+FkCenters/Overlap.py
+FkCenters/TDef.py
+FkCenters/TUlti.py
+FkCenters/__init__.py
+FkCenters/cvi.py
+FkCenters/fuzzy_cluster_validity_indices.py
+fkcenters.egg-info/PKG-INFO
+fkcenters.egg-info/SOURCES.txt
+fkcenters.egg-info/dependency_links.txt
+fkcenters.egg-info/top_level.txt
