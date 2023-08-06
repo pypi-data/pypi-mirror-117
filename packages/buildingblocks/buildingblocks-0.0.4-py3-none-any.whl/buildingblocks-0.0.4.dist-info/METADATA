@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: buildingblocks
+Version: 0.0.4
+Summary: Some useful mathematical tools
+Home-page: UNKNOWN
+Author: Pavan Kumar Naraharisetti
+Author-email: <naraharisetti@gmail.com>
+License: UNKNOWN
+Keywords: python,interpolate,data analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+Use the function *interpolate* to interpolate data. Xdata and Ydata are the first two arguments to the function *interpolate*. This (Xdata and Ydata) information is used to build a model and the third argument Xnew is the x-axis values of the interpolated data that the user wishes to have. The function returns Ynew for the given Xnew. The syntax is Ynew=interpolate(Xdata, Ydata, Xnew)
+
+
