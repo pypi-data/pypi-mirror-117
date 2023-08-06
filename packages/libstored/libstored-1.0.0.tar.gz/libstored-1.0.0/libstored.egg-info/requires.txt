@@ -1,0 +1,7 @@
+pyside2
+pyserial
+argparse
+pyzmq
+crcmod
+natsort
+heatshrink2
