@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: niota
+Version: 0.6.2
+Summary: Numbers PyOTA Wrapper
+Home-page: https://github.com/numbersprotocol/niota
+Author: Numbers Co., Inc
+Author-email: hi@numbersprotocol.io
+License: GPLv3
+Description: # NIOTA
+        
+        Make IOTA to be an integrity chain.
+        
+        Niota registers Asset history records to the integrity chain.
+        
+        # Installation
+        
+        The Python binding of [iota.rs](https://github.com/iotaledger/iota.rs/releases). You can download the latest version from the official [nightly.link service](https://nightly.link/iotaledger/iota.rs/workflows/python_binding_publish/dev).
+        
+        Two ways to install niota:
+        
+        1. Insatll by using PyPI (stable versoin)
+        
+            ```
+            $ python3 -m pip install niota
+            ```
+        
+        2. Install manually (latest version)
+        
+            ```
+            $ python3 setup.py bdist_wheel
+            $ python3 -m pip install dist/niota-<version>-py3-none-any.whl
+            ```
+        
+        # Unit Testing
+        
+        ```
+        $ python3 -m unittest discover -s tests
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
