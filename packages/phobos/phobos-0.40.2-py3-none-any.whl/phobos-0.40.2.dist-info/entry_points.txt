@@ -1,0 +1,3 @@
+[console_scripts]
+phobos=cli.phobos_cli:cli
+
