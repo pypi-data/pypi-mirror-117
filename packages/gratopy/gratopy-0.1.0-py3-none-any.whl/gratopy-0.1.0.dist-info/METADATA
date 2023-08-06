@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: gratopy
+Version: 0.1.0
+Summary: Gratopy - Graz accelerated tomographic projections for Python
+Home-page: https://github.com/kbredies/gratopy
+Author: Kristian Bredies, Richard Huber
+Author-email: kristian.bredies@uni-graz.at
+License: GPLv3
+Project-URL: Documentation, https://gratopy.readthedocs.io/
+Keywords: Radon transform,fanbeam transform,pixel-driven projection methods,computed tomography,image reconstruction,pyopencl
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: GPU
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.2.0)
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: pyopencl (>=2019.1)
+Requires-Dist: scipy (>=1.3.0)
+Requires-Dist: Pillow (>=6.0.0)
+Requires-Dist: mako (>=1.1.0)
+
+
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.5221442.svg)](https://doi.org/10.5281/zenodo.5221442)
+[![Documentation Status](https://readthedocs.org/projects/gratopy/badge/?version=latest)](https://gratopy.readthedocs.io/?badge=latest)
+
+The gratopy (**Gr**az **a**ccelerated **to**mographic projections for **Py**thon) toolbox is a Python3 software package for the efficient and high-quality computation of Radon transforms, fanbeam transforms as well as the associated backprojections. The included operators are based on pixel-driven projection methods which were shown to possess [favorable approximation properties](https://epubs.siam.org/doi/abs/10.1137/20M1326635). The toolbox offers a powerful parallel OpenCL/GPU implementation which admits high execution speed and allows for seamless integration into [PyOpenCL](https://documen.tician.de/pyopencl/). Gratopy can efficiently be combined with other PyOpenCL code and is well-suited for the development of iterative tomographic reconstruction approaches, in particular, for those involving optimization algorithms.
+
+## Highlights
+* Easy-to-use tomographic projection toolbox.
+* High-quality 2D projection operators.
+* Fast projection due to custom OpenCL/GPU implementation.
+* Seamless integration into PyOpenCL.
+* Basic iterative reconstruction schemes included (Landweber, CG, total variation).
+* Comprehensive documentation, tests and example code.
+
+See the [documentation](https://gratopy.readthedocs.io/) and the project's [GitHub page](https://github.com/kbredies/gratopy) for installation, usage, updates and further information.
+
+

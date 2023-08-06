@@ -1,0 +1,12 @@
+gratopy/__init__.py,sha256=70gkuShXCrUs_-VZWrIBiEvgIRRH8SFwG7m2f_oKpjQ,1307
+gratopy/fanbeam.cl,sha256=yLWksJB0GgkHEVuUWMxgZXmwHmcJGEKJxNmA6mdZAAA,22185
+gratopy/gratopy.py,sha256=n-GKePnwzhNzyCDHMWUbTL57juoPIMcCvkjl3dZBwGU,106441
+gratopy/phantom.py,sha256=Cl8rvWLxKyknEjgetr78GiP1ERi1VJarABVukYS5YPE,6525
+gratopy/radon.cl,sha256=o-e8hgID0er22dQulSaxLJ0PeCxfhLnSwiRFyTxVVqo,11781
+gratopy/total_variation.cl,sha256=PfkoBYq9uqyz5oaw4IcZsCZeqEIlMhDK2M0gY4IG_ro,5000
+gratopy/utilities.cl,sha256=gY5Gf7m1brWQy9rQYZDKjSX9ZGpszzKkGX7etL7IUPY,2968
+gratopy-0.1.0.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+gratopy-0.1.0.dist-info/METADATA,sha256=uyOsQ8aY6RR23VMgsXiSSwNTeNU3RqH0B5hM5iRaVjw,2993
+gratopy-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gratopy-0.1.0.dist-info/top_level.txt,sha256=XDDDv998RQIF9oQ-WXWvbOzFsKQoutN33kNb4uXFdc0,8
+gratopy-0.1.0.dist-info/RECORD,,
