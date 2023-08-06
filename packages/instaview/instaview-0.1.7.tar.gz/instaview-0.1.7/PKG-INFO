@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: instaview
+Version: 0.1.7
+Summary: this package is just a scrapper of insta-stories.online
+Author: nowhere man
+Author-email: man@nowhere.net
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: fire (>=0.4.0,<0.5.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)

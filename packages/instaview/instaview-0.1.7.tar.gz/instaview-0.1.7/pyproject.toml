@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "instaview"
+version = "0.1.7"
+description = "this package is just a scrapper of insta-stories.online"
+authors = ["nowhere man <man@nowhere.net>"]
+packages = [
+    { include = "instaview", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.25.1"
+bs4 = "^0.0.1"
+fire = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+instaview = "instaview.cli:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
