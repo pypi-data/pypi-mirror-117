@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "badgey"
+version = "0.2.1"
+description = "A library and a CLI to locally generate project badges"
+authors = ["Ruben Di Battista <rubendibattista@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+docopt = "^0.6.2"
+pybadges = "^2.2.1"
+GitPython = "^3.1.20"
+matplotlib = "^3.4.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+pytest-mypy = "^0.8.1"
+pytest-flake8 = "^1.0.7"
+types-docopt = "^0.6.3"
+types-Jinja2 = "^2.11.6"
+
+[tool.poetry.scripts]
+badgey = "badgey:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+
+[[tool.mypy.overrides]]
+module = [
+    "pybadges", 
+    "matplotlib.*", 
+]
+ignore_missing_imports = true
