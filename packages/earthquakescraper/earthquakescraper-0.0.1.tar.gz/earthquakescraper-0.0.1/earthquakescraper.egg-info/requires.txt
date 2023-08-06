@@ -1,0 +1,6 @@
+selenium
+pandas
+botocore
+boto3
+logging
+sqlalchemy
