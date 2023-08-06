@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+SciPhy.egg-info/PKG-INFO
+SciPhy.egg-info/SOURCES.txt
+SciPhy.egg-info/dependency_links.txt
+SciPhy.egg-info/requires.txt
+SciPhy.egg-info/top_level.txt
+physics/__init__.py
+physics/errors.py
+physics/quantities.py
+physics/utils.py
