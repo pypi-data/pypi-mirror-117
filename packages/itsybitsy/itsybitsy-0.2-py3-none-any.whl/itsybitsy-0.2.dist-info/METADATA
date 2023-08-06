@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: itsybitsy
+Version: 0.2
+Summary: A minimal, concurrent web scraper for Python
+Home-page: https://www.dhigroup.com
+Author: Dion Häfner
+Author-email: dimh@dhigroup.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: lxml
+Requires-Dist: aiohttp
+Requires-Dist: async-generator
+
+UNKNOWN
+
