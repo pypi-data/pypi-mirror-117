@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: arron-middleware
+Version: 1.0
+Summary: scrapy middlewares
+Home-page: https://github.com/WalkOnMars/arron_pypi.git
+Author: arron
+Author-email: 862187570@qq.com
+Maintainer: arron
+Maintainer-email: 862187570@qq.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE.md
+
+UNKNOWN
+
