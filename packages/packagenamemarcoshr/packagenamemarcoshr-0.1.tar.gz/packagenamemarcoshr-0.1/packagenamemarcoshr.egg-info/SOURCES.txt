@@ -1,0 +1,8 @@
+setup.py
+packagenamemarcoshr/__init__.py
+packagenamemarcoshr/python_code.py
+packagenamemarcoshr.egg-info/PKG-INFO
+packagenamemarcoshr.egg-info/SOURCES.txt
+packagenamemarcoshr.egg-info/dependency_links.txt
+packagenamemarcoshr.egg-info/not-zip-safe
+packagenamemarcoshr.egg-info/top_level.txt
