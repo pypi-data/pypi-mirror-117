@@ -1,0 +1,4 @@
+astropy
+matplotlib
+numpy>=1.15.4
+rerequests
