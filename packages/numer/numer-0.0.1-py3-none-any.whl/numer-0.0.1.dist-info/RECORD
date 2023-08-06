@@ -1,0 +1,7 @@
+numer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numer/cmath.py,sha256=KhIY5XMdHriqFxq5M7V9Jrhd-R0Jvj6UasPOXSW17uM,6449
+numer/mpz.py,sha256=D3DYyT7npvD2hb6thitIdSBgbKvtN8pvSQafsZ0bVa0,679
+numer-0.0.1.dist-info/METADATA,sha256=w7z1aKUr2ogvJVZjk9f1eAqZk3COFd6i2VZk8_gyGVM,580
+numer-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+numer-0.0.1.dist-info/top_level.txt,sha256=bvYuyB4N0Q40bYSwcvkyobiQY_HcZb2-s1HGXWZZxmM,6
+numer-0.0.1.dist-info/RECORD,,
