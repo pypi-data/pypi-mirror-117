@@ -1,0 +1,15 @@
+click
+more_click
+numpy
+pandas
+nodevectors
+sklearn
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+[tests]
+pytest
+coverage
