@@ -1,0 +1,13 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_passport_data.py,sha256=yLIEz04IG_Fdrh-rPe4fZa1vAhc8xdJvcUh5wXV3Xqw,1944
+test/test_visa_status.py,sha256=gKvhdV15WXoDNzyJqFbn6ToH3fAAY3yTnNAy7GfYfvo,1710
+visa_cli/__init__.py,sha256=OBBDZXCXlcsbpb41n8qFxMvs_7T2mDECQ1V1_Zc_JuY,5376
+visa_cli/visa_status.py,sha256=q9fv4bo-N8AS4cxZMMN1uci9uROuSbJX7ZO5ulhafQE,7643
+visa_cli/passport_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visa_cli/passport_data/passport_data.py,sha256=UIsDXjGhJIufDuqlL4V9bBz-f7Cry_zyezLxK9hIBFw,5417
+visa_cli-0.2.0.dist-info/LICENSE,sha256=g9WORZhf1UDYAYCUdFC7JgrDxHS1Rl2ZkjdzIJry2HA,1065
+visa_cli-0.2.0.dist-info/METADATA,sha256=ipK4QY2Z8Og8byJQle20tUJx4SGrVZKf5jORAfIF-Og,5537
+visa_cli-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+visa_cli-0.2.0.dist-info/entry_points.txt,sha256=lreRmJziN3N9pTi4sWYD_wD9kQognj--ua0RHd7kFvI,53
+visa_cli-0.2.0.dist-info/top_level.txt,sha256=4AavyP00qdLz0yrsjgrHQ9XVLaHFgYyWKWIgCt3dLDU,14
+visa_cli-0.2.0.dist-info/RECORD,,
