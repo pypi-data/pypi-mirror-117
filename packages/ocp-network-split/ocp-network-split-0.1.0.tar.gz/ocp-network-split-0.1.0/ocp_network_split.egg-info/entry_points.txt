@@ -1,0 +1,4 @@
+[console_scripts]
+ocp-network-split-sched = ocpnetsplit.main:main_sched
+ocp-network-split-setup = ocpnetsplit.main:main_setup
+

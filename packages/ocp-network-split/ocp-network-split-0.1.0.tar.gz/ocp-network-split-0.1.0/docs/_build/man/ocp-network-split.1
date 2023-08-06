@@ -1,0 +1,854 @@
+.\" Man page generated from reStructuredText.
+.
+.TH "OCP-NETWORK-SPLIT" "1" "Apr 19, 2021" "" "ocp-network-split"
+.SH NAME
+ocp-network-split \- ocp-network-split 
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.sp
+This simple project provides functionality to block (and unblock) network
+traffic between \fI\%k8s zones\fP of an \fI\%OpenShift 4\fP cluster for \fItesting
+purposes\fP, implemented by updating firewall rules on all RHEL CoreOS nodes of
+the cluster.
+.sp
+This is useful when you need to separate network between given zones, without
+affecting other traffic and with no assumptions about networking configuration
+of the platform the cluster is deployed on (under normal conditions, network
+separation like this could be done by tweaking network components between
+zones).
+.SH ASSUMPTIONS AND LIMITATIONS
+.sp
+We assume that the cluster has 3 zones.
+.sp
+There is no limitation on actuall zone names (values of
+\fBtopology.kubernetes.io/zone\fP label key).
+.sp
+We assume that the cluster is using IPv4 addresses only.
+.sp
+While Linux kernel of RHEL CoreOS (RHCOS) uses \fBnftables\fP internally, the
+\fBiptables\fP cli tool which uses \fBnftables\fP backed is preinstalled on RHCOS
+hosts of OCP 4 clusters. The firewall script thus assumes that \fBiptables\fP cli
+tool is available on the nodes of the cluster.
+.sp
+Nodes of openshift cluster keep it’s \fI\%time synchronized via ntp\fP\&.
+.sp
+We assume that there are only \fBmaster\fP and \fBworker\fP MachineConfigPools
+(which is the default state of OCP cluster). If you have created another
+machine config pool such as \fBinfra\fP, the network split configuration won’t
+be able to change firewall rules on nodes in this additional pool.
+.SH OVERVIEW OF THE APPROACH
+.sp
+A quick overview of what and how opc\-network\-split does to block network
+traffic between cluster zones.
+.SS Network split firewall script
+.sp
+Traffic from zone \fBa\fP to zone \fBb\fP is blocked by inserting \fBDROP\fP rules
+for each machine of zone \fBb\fP into \fBINPUT\fP and \fBOUTPUT\fP chains of default
+\fBiptables\fP table on all machines of zone \fBa\fP via \fBiptables\fP tool.
+.sp
+This is implemented via \fBnetwork\-split.sh\fP script, which consumes zone
+configuration via \fBZONE_A\fP, \fBZONE_B\fP and \fBZONE_C\fP env variables, detects
+zone it is running within and applies firewall changes based on the split
+configuration which it received from the command line.
+.sp
+Split configuration specifies list of zone tuples, and the network split is
+made for traffic between each zone tuple. For example:
+.INDENT 0.0
+.IP \(bu 2
+\fBab\fP means that traffic between zone \fBa\fP and \fBb\fP will be dropped in
+both directions (via changes in firewall configuration of zone \fBa\fP)
+.IP \(bu 2
+\fBab\-bc\fP means that communication in both directions is blocked between
+zone \fBa\fP and zone \fBb\fP, and also between zone \fBb\fP and zone \fBc\fP
+.UNINDENT
+.sp
+One can see what changes will be made via \fB\-d\fP option:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ export ZONE_A="10.1.161.27"
+$ export ZONE_B="10.1.160.175 10.1.160.180 10.1.160.188 10.1.160.198"
+$ export ZONE_C="10.1.161.115 10.1.160.192 10.1.160.174 10.1.160.208"
+$ ./network\-split.sh \-d setup ab\-ac
+ZONE_A="10.40.195.21"
+ZONE_B="10.1.160.175 10.1.160.180 10.1.160.188 10.1.160.198"
+ZONE_C="10.1.161.115 10.1.160.192 10.1.160.174 10.1.160.208"
+current zone: ZONE_A
+ab: ZONE_B will be blocked from ZONE_A
+iptables \-A INPUT \-s 10.1.160.175 \-j DROP \-v
+iptables \-A OUTPUT \-d 10.1.160.175 \-j DROP \-v
+iptables \-A INPUT \-s 10.1.160.180 \-j DROP \-v
+iptables \-A OUTPUT \-d 10.1.160.180 \-j DROP \-v
+iptables \-A INPUT \-s 10.1.160.188 \-j DROP \-v
+iptables \-A OUTPUT \-d 10.1.160.188 \-j DROP \-v
+iptables \-A INPUT \-s 10.1.160.198 \-j DROP \-v
+iptables \-A OUTPUT \-d 10.1.160.198 \-j DROP \-v
+ac: ZONE_C will be blocked from ZONE_A
+iptables \-A INPUT \-s 10.1.161.115 \-j DROP \-v
+iptables \-A OUTPUT \-d 10.1.161.115 \-j DROP \-v
+iptables \-A INPUT \-s 10.1.160.192 \-j DROP \-v
+iptables \-A OUTPUT \-d 10.1.160.192 \-j DROP \-v
+iptables \-A INPUT \-s 10.1.160.174 \-j DROP \-v
+iptables \-A OUTPUT \-d 10.1.160.174 \-j DROP \-v
+iptables \-A INPUT \-s 10.1.160.208 \-j DROP \-v
+iptables \-A OUTPUT \-d 10.1.160.208 \-j DROP \-v
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Systemd Units
+.sp
+The firewall script is not used directly, but through \fIstoppable oneshot
+service\fP template \fBnetwork\-split@.service\fP\&. To use it, we need to chose
+particular network split configuration, eg. \fBab\-bc\fP,  and then form so
+called “instantiated” service name \fBnetwork\-split@ab\-ac.service\fP\&.
+When such “instantiated” service is started, firewall changes to achieve
+selected network split are applied and since then systemd is tracking this
+service as started. Stopping the service reverts the firewall changes back,
+removing the network split. The logs from the firewall script available via
+journald as expected.
+.sp
+Example of starting network split for \fBab\-bc\fP and checking it’s status:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+# systemctl start  network\-split@ab\-bc
+# systemctl status network\-split@ab\-bc
+● network\-split@ab\-bc.service \- Firewall configuration for a network split
+   Loaded: loaded (/etc/systemd/system/network\-split@.service; disabled; vendor preset: disabled)
+   Active: active (exited) since Sat 2021\-03\-06 00:23:18 UTC; 4min 49s ago
+  Process: 16380 ExecStart=/usr/bin/bash \-c /etc/network\-split.sh setup ab\-bc (code=exited, status=0/SUCCESS)
+ Main PID: 16380 (code=exited, status=0/SUCCESS)
+      CPU: 8ms
+
+Mar 06 00:23:18 compute\-5 systemd[1]: Starting Firewall configuration for a network split...
+Mar 06 00:23:18 compute\-5 bash[16380]: ZONE_A="10.1.161.27"
+Mar 06 00:23:18 compute\-5 bash[16380]: ZONE_B="10.1.160.175 10.1.160.180 10.1.160.188 10.1.160.198"
+Mar 06 00:23:18 compute\-5 bash[16380]: ZONE_C="10.1.161.115 10.1.160.192 10.1.160.174 10.1.160.208"
+Mar 06 00:23:18 compute\-5 bash[16380]: current zone: ZONE_C
+Mar 06 00:23:18 compute\-5 bash[16380]: ab: ZONE_B will be blocked from ZONE_A
+Mar 06 00:23:18 compute\-5 bash[16380]: bc: ZONE_C will be blocked from ZONE_B
+Mar 06 00:23:18 compute\-5 systemd[1]: Started Firewall configuration for a network split.
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+This would work well on a single node, but in our case we need to apply this
+on multiple machines at the same time. Moreover we also need to make sure that
+the service is stopped after some time, reverting the network split issue.
+For this reason, we don’t start the network split service directly, but via
+systemd timers, which allows us to schedule start and stop of the network split
+service in advance at the same time on all nodes of the cluster.
+.sp
+For each network split configuration we have in stretch cluster test plan,
+there is one setup timer template which starts the service at given time:
+.INDENT 0.0
+.IP \(bu 2
+\fBnetwork\-split\-ab\-ac\-setup@.timer\fP
+.IP \(bu 2
+\fBnetwork\-split\-ab\-setup@.timer\fP
+.IP \(bu 2
+\fBnetwork\-split\-ab\-bc\-setup@.timer\fP
+.IP \(bu 2
+\fBnetwork\-split\-bc\-setup@.timer\fP
+.UNINDENT
+.sp
+And then single teardown timer template \fBnetwork\-split\-teardown@.timer\fP,
+which is used to schedule stop of any of the network split services to revert
+the firewall changes back into original state.
+.sp
+Parameter of these timer templates is a unix epoch timestamp of the time when
+we intend to start or stop the network split, eg.
+\fBnetwork\-split\-teardown@1614990498.timer\fP\&.
+.sp
+This is how a network split configuration is applied during test setup,
+and restored during test teardown.
+.sp
+References:
+.INDENT 0.0
+.IP \(bu 2
+\fI\%systemd.service(5)\fP
+(for details about service templates or example of stoppable oneshot service)
+.IP \(bu 2
+\fI\%systemd.timer(5)\fP
+.UNINDENT
+.SS MachineConfig
+.sp
+For the approach explained above to work, we need to deploy firewall script,
+file with \fBZONE_{A,B,C}\fP environment variables and systemd service and timer
+units. We achieve this via MachineConfig, which allows us to deploy files in
+\fB/etc\fP directory and system units on all nodes of both \fBmaster\fP and
+\fBworker\fP MachineConfigPools.
+.sp
+Using openshift interface has an advantage of better visibility of such
+changes, which can be easily inspected via machine config operator (MCO) API.
+Downside of this approach is that MCO is going to drain and reboot every node
+one by one, which increases time necessary to deploy the configuration.
+.sp
+For this reason, we use MachineConfig only to deploy the script and unit files,
+while scheduling of the timers to setup and teardown a network split is done
+via direct connection (using ssh or oc debug) to each node.
+.sp
+References:
+.INDENT 0.0
+.IP \(bu 2
+\fI\%How does Machine Config Pool work?\fP
+.IP \(bu 2
+\fI\%Post\-installation machine configuration tasks\fP
+.IP \(bu 2
+\fI\%machine\-config\-operator docs\fP
+.IP \(bu 2
+\fI\%Ignition Configuration Specification v3.1.0\fP
+.UNINDENT
+.SH USAGE
+.SS Assumptions about cluster zones
+.sp
+A \fI\%k8s zone\fP is a set of cluster nodes with the same value of \fI\%k8s label\fP key
+\fBtopology.kubernetes.io/zone\fP, see an example of zone \fBdata\-a\fP:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ oc get nodes \-l topology.kubernetes.io/zone=data\-a
+NAME              STATUS   ROLES    AGE     VERSION
+compute\-0         Ready    worker   7d14h   v1.20.0+bafe72f
+compute\-1         Ready    worker   7d14h   v1.20.0+bafe72f
+compute\-2         Ready    worker   7d14h   v1.20.0+bafe72f
+control\-plane\-0   Ready    master   7d14h   v1.20.0+bafe72f
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+We assume that there are 3 zones in the cluster, and that every node belongs to
+some zone, eg:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ oc get nodes \-L topology.kubernetes.io/zone
+NAME              STATUS   ROLES    AGE   VERSION           ZONE
+compute\-0         Ready    worker   8d    v1.20.0+bafe72f   data\-a
+compute\-1         Ready    worker   8d    v1.20.0+bafe72f   data\-a
+compute\-2         Ready    worker   8d    v1.20.0+bafe72f   data\-a
+compute\-3         Ready    worker   8d    v1.20.0+bafe72f   data\-b
+compute\-4         Ready    worker   8d    v1.20.0+bafe72f   data\-b
+compute\-5         Ready    worker   8d    v1.20.0+bafe72f   data\-b
+control\-plane\-0   Ready    master   8d    v1.20.0+bafe72f   data\-a
+control\-plane\-1   Ready    master   8d    v1.20.0+bafe72f   data\-b
+control\-plane\-2   Ready    master   8d    v1.20.0+bafe72f   arbiter
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+There is no limitation on the design of cluster zones or their names
+(values of \fBtopology.kubernetes.io/zone\fP label key). The ocp\-network\-split
+references zones under single letter names (such as \fBa\fP, \fBb\fP … see
+\fBocpnetsplit.zone.ZONES\fP), so that you will just need to
+create mapping between ocp\-network\-split names and actual zone names as shown
+in the following sections.
+.SS Command line tools
+.sp
+There are also 2 command line tools:
+.INDENT 0.0
+.IP \(bu 2
+\fBocp\-network\-split\-setup\fP: based on given zone name assignment, it fetches
+IP addresses of all nodes for every zone (to create env file with zone
+configuration), and creates \fBMachineConfig\fP yaml file to deploy the zone
+configuration along with firewall script and systemd unit files to every node
+of the cluster. This is done only once.
+.IP \(bu 2
+\fBocp\-network\-split\-sched\fP: schedules given network split configuration
+which will start at given time and stop after given number of minutes.
+.UNINDENT
+.sp
+Let’s have a look how the zone configuration generated by the setup script
+looks like (the example also shows how to define zone name mapping):
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ ocp\-network\-split\-setup \-a arbiter \-b data\-a \-c data\-b \-\-print\-env\-only
+ZONE_A="10.1.160.36"
+ZONE_B="10.1.160.127 10.1.160.158 10.1.160.160 10.1.160.163"
+ZONE_C="10.1.160.103 10.1.160.162 10.1.160.65 10.1.160.98"
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+If this looks good, we can go on and create \fBMachineConfig\fP yaml file, which
+you can inspect as well.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ ocp\-network\-split\-setup \-a foo\-arbiter \-b data\-a \-c data\-b \-o network\-split.yaml
+$ head network\-split.yaml
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  labels:
+    machineconfiguration.openshift.io/role: master
+  name: 99\-master\-network\-split
+spec:
+  config:
+    ignition:
+      version: 3.1.0
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Then you can use \fBoc create\fP to deploy the configuration:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ oc create \-f network\-split.yaml
+machineconfig.machineconfiguration.openshift.io/99\-master\-network\-split created
+machineconfig.machineconfiguration.openshift.io/99\-worker\-network\-split created
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+When the machine config is applied (check \fBoc get mcp\fP if both pools are
+updated), we can schedule 5 minute long network split of particular
+configuration \fBab\fP (cutting connection between zones \fBa\fP and \fBb\fP) at
+given time:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ ocp\-network\-split\-sched ab \-t 2021\-04\-09T16:30 \-\-split\-len 5
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+When the time details are omitted, the sched script will just list net split
+timers for given split configuration on all nodes. In the following example,
+we can see one split was schedule 26 minutes ago, while anoter is going to
+happen in about 4 minutes:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ ocp\-network\-split\-sched ab
+node/compute\-0
+NEXT                         LEFT          LAST                         PASSED    UNIT                                    ACTIVATES
+Fri 2021\-04\-09 14:30:00 UTC  3min 50s left n/a                          n/a       network\-split\-ab\-setup@1617978600.timer network\-split@ab.service
+n/a                          n/a           Fri 2021\-04\-09 14:00:00 UTC  26min ago network\-split\-ab\-setup@1617976800.timer network\-split@ab.service
+
+node/compute\-1
+NEXT                         LEFT          LAST                         PASSED    UNIT                                    ACTIVATES
+Fri 2021\-04\-09 14:30:00 UTC  3min 48s left n/a                          n/a       network\-split\-ab\-setup@1617978600.timer network\-split@ab.service
+n/a                          n/a           Fri 2021\-04\-09 14:00:00 UTC  26min ago network\-split\-ab\-setup@1617976800.timer network\-split@ab.service
+
+\&... rest of the output is ommited ...
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+You can schedule multiple splits in advance, or wait for one network split to
+end before going on with another one.
+.SS Python API
+.sp
+To use ocp\-network\-split in your python test script, see functions in module
+\fBocpnetsplit.main\fP which provides public API and implementation
+of the command line tools referenced in the previous section.
+.sp
+Quick high level overview of API usage:
+.INDENT 0.0
+.IP \(bu 2
+Generate list of dictionaries representing content of \fBMachineConfig\fP yaml,
+(which contains network split script and unit files) using
+\fBocpnetsplit.main.get_zone_config()\fP and
+\fBocpnetsplit.main.get_networksplit_mc_spec()\fP\&.
+.IP \(bu 2
+Deploy the \fBMachineConfig\fP generated in the previous step and wait for the
+configuration to be applied on all nodes. This needs to be done only once.
+.IP \(bu 2
+Pick desired network split configuration from
+\fBocpnetsplit.zone.NETWORK_SPLITS\fP\&.
+.IP \(bu 2
+Schedule selected network split disruption via
+\fBocpnetsplit.main.schedule_split()\fP, this will define 2 timers
+on each node, one to start the disruption and another one to stop it.
+.IP \(bu 2
+Wait for the 1st timer to trigger setup of the network split.
+.IP \(bu 2
+Wait for the 2nd timer to trigger teardown, restoring the network
+configuration back.
+.IP \(bu 2
+Optionally schedule another network split again.
+.UNINDENT
+.SH API REFERENCE
+.SS ocpnetsplit package
+.SS ocpnetsplit.machineconfig module
+.sp
+This module generates \fBMachineConfig\fP to deploy network\-split systemd units,
+which implements the network split functionality.
+.sp
+References:
+.INDENT 0.0
+.IP \(bu 2
+\fI\%MachineConfigDaemon\fP
+.IP \(bu 2
+\fI\%Ignition Configuration Specification v3.1.0\fP
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.machineconfig.create_file_dict(basename, content)
+Create Ignition config spec for given file basename and content, to be used
+in a \fBMachineConfig\fP spec. Files will be always placed in \fB/etc\fP
+directory (MCO can only change files in \fB/etc\fP and \fB/var\fP directories).
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBbasename\fP (\fIstr\fP) – basename of the file
+.IP \(bu 2
+\fBcontent\fP (\fIstr\fP) – content of the file
+.UNINDENT
+.TP
+.B Returns
+Ignition storage file config spec
+.TP
+.B Return type
+dict
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.machineconfig.create_mc_dict(role, zone_env)
+Create \fBMachineConfig\fP dict with network\-split systemd units and scripts.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBmcp\fP (\fIstring\fP) – name of \fBMachineConfig\fP role (and also
+\fBMachineConfigPool\fP) where the \fBMachineConfig\fP generated by
+this function should be deployed. Usually \fBmaster\fP or \fBworker\fP\&.
+.IP \(bu 2
+\fBzone_env\fP (\fIstring\fP) – content of \fBnetwork\-split.env\fP file with zone
+configuration, as created by
+\fI\%ocpnetsplit.zone.ZoneConfig.get_env_file()\fP
+.UNINDENT
+.TP
+.B Returns
+MachineConfig dict
+.TP
+.B Return type
+dict
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.machineconfig.create_unit_dict(name, content)
+Create Ignition config spec for given systemd unit name and content, to be
+used in a \fBMachineConfig\fP spec.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBname\fP (\fIstr\fP) – name of systemd unit
+.IP \(bu 2
+\fBcontent\fP (\fIstr\fP) – content of the file
+.UNINDENT
+.TP
+.B Returns
+Ignition systemd unit config spec
+.TP
+.B Return type
+dict
+.UNINDENT
+.UNINDENT
+.SS ocpnetsplit.main module
+.sp
+Module with a public API of ocp\-network\-split project. One can either use the
+command line tools (as implemented via main functions in this module), or to
+use the python functions defined here directly.
+.INDENT 0.0
+.TP
+.B ocpnetsplit.main.check_split(split_name)
+Checks status of split via \fBsystemctl list\-timers\fP on all nodes of the
+cluster.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBsplit_name\fP (\fIstr\fP) – network split configuration specification, eg.
+\fBab\fP, see \fI\%ocpnetsplit.zone.NETWORK_SPLITS\fP
+constant
+.TP
+.B Raises
+\fBValueError\fP – when invalid \fBsplit_name\fP is specified
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.main.get_networksplit_mc_spec(zone_env)
+Create \fBMachineConfig\fP spec to install network split firewall tweaking
+script and unit files on all cluster nodes.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBzone_env\fP (\fIstr\fP) – content of firewall zone env file specifying node ip
+addresses for each cluster zone, as created by
+\fI\%ocpnetsplit.zone.ZoneConfig.get_env_file()\fP
+.TP
+.B Returns
+list of dictionaries with \fBMachineConfig\fP spec
+.TP
+.B Return type
+machineconfig_spec
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.main.get_zone_config(zone_a, zone_b, zone_c, zone_x_addrs=None)
+For each valid ocp\-network\-split zone name (see
+\fI\%ocpnetsplit.zone.ZONES\fP), translate it’s given
+\fBtopology.kubernetes.io/zone\fP label into list of ip addresses of all
+nodes in the zone.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBzone_a\fP (\fIstr\fP) – value of zone \fBa\fP label
+.IP \(bu 2
+\fBzone_b\fP (\fIstr\fP) – value of zone \fBb\fP label
+.IP \(bu 2
+\fBzone_c\fP (\fIstr\fP) – value of zone \fBc\fP label
+.IP \(bu 2
+\fBzone_x_addrs\fP (\fIlist\fP) – list of ip addresses in external zone \fBx\fP
+.UNINDENT
+.TP
+.B Returns
+.INDENT 7.0
+.TP
+.B object with list of node ip addresses for each zone name
+\fIocp network split\fP works with (\fBa\fP, \fBb\fP, …),
+see \fI\%ocpnetsplit.zone.ZONES\fP).
+.UNINDENT
+
+.TP
+.B Return type
+ZoneConfig
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.main.main_sched()
+Simple command line interface to schedule given cluster network split.
+.sp
+Example usage:
+.INDENT 7.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ ocp\-network\-split\-sched ab\-bc \-t 2021\-03\-18T18:45 \-\-split\-len 30
+$ ocp\-network\-split\-sched ab\-bc
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.main.main_setup()
+Simple command line interface to generate MachineConfig yaml to deploy to
+make scheduling network splits possible.
+.sp
+Example usage:
+.INDENT 7.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ ocp\-network\-split\-setup \-a arbiter \-b d1 \-c d2 \-o mc.yaml
+$ oc create \-f mc.yaml
+$ oc get mcp
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.main.schedule_split(split_name, target_dt, target_length)
+Schedule start and stop of network split on all nodes of the cluster.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBsplit_name\fP (\fIstr\fP) – network split configuration specification, eg.
+\fBab\fP, see
+\fI\%ocpnetsplit.zone.NETWORK_SPLITS\fP constant
+.IP \(bu 2
+\fBtarget_dt\fP (\fIdatetime\fP) – requested start time of the network split
+.IP \(bu 2
+\fBtarget_length\fP (\fIint\fP) – number of minutes specifying how long the network
+split configuration should be active
+.UNINDENT
+.TP
+.B Raises
+\fBValueError\fP – in case invalid \fBsplit_name\fP or \fBtarget_dt\fP is
+    specified.
+.UNINDENT
+.UNINDENT
+.SS ocpnetsplit.ocp module
+.INDENT 0.0
+.TP
+.B ocpnetsplit.ocp.get_all_node_ip_addrs(node, kubeconfig=None, oc_executable=None)
+Get all ip addresses (both internal and external) of given node.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBnode\fP (\fIstr\fP) – name of OCP node
+.IP \(bu 2
+\fBkubeconfig\fP (\fIstr\fP) – file path to kubeconfig (optional, use only if you
+need to override the default)
+.IP \(bu 2
+\fBoc_executable\fP (\fIstr\fP) – file path of oc command (optional, use only if
+you need to override the default)
+.UNINDENT
+.TP
+.B Returns
+node ip addressess (as strings)
+.TP
+.B Return type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.ocp.list_cluster_nodes(zone_name=None, kubeconfig=None, oc_executable=None)
+Get cluster nodes of a whole cluster or from given zone only.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBzone_name\fP (\fIstr\fP) – name of k8s topology zone to list nodes within, if not
+specified, nodes from whole cluster will be listed
+.IP \(bu 2
+\fBkubeconfig\fP (\fIstr\fP) – file path to kubeconfig (optional, use only if you
+need to override the default)
+.IP \(bu 2
+\fBoc_executable\fP (\fIstr\fP) – file path of oc command (optional, use only if
+you need to override the default)
+.UNINDENT
+.TP
+.B Returns
+node ip addressess (as strings)
+.TP
+.B Return type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.ocp.run_oc(cmd_list, kubeconfig=None, oc_executable=None, timeout=600)
+Run given oc command and log all it’s output.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBcmd_list\fP (\fIlist\fP) – oc command to run, eg. \fB["get", "nodes"]\fP will
+execute \fBoc get nodes\fP process
+.IP \(bu 2
+\fBtimeout\fP (\fIint\fP) – command timeout specified in seconds, optional
+.IP \(bu 2
+\fBkubeconfig\fP (\fIstr\fP) – file path to kubeconfig (optional, use only if you
+need to override the default)
+.IP \(bu 2
+\fBoc_executable\fP (\fIstr\fP) – file path of oc command (optional, use only if
+you need to override the default)
+.UNINDENT
+.TP
+.B Returns
+stdout, stderr of the command executed
+.TP
+.B Return type
+tuple
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.ocp.run_oc_debug_node(cmd_list, node, kubeconfig=None, oc_executable=None)
+Run given command on given node via oc debug node.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBcmd_list\fP (\fIlist\fP) – a command to run, eg. \fB["uname", "\-a"]\fP will
+execute \fBuname \-a\fP process on the node
+.IP \(bu 2
+\fBnode\fP (\fIstr\fP) – name of k8s node where to execute the command, with or
+without \fBnode/\fP prefix
+.IP \(bu 2
+\fBkubeconfig\fP (\fIstr\fP) – file path to kubeconfig (optional, use only if you
+need to override the default)
+.IP \(bu 2
+\fBoc_executable\fP (\fIstr\fP) – file path of oc command (optional, use only if
+you need to override the default)
+.UNINDENT
+.TP
+.B Returns
+.INDENT 7.0
+.TP
+.B cmd_out (combined stdout and stderr of the executed command),
+oc_out (output from oc debug process itself)
+.UNINDENT
+
+.TP
+.B Return type
+tuple
+.UNINDENT
+.UNINDENT
+.SS ocpnetsplit.zone module
+.INDENT 0.0
+.TP
+.B ocpnetsplit.zone.NETWORK_SPLITS = (\(aqab\(aq, \(aqbc\(aq, \(aqab\-bc\(aq, \(aqab\-ac\(aq, \(aqax\(aq, \(aqax\-bx\-cx\(aq)
+Available network split configurations. For every valid network split value,
+there is a systemd timer unit named \fBnetwork\-split\-{split}\-setup@.timer\fP\&.
+Network split configuration consists of list of zone tuples, where each zone
+tuple represents a disrupted zone connection.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B ocpnetsplit.zone.ZONES = (\(aqa\(aq, \(aqb\(aq, \(aqc\(aq, \(aqx\(aq)
+Stable zone identifiers as defined and used by ocp\-network\-split.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B class ocpnetsplit.zone.ZoneConfig
+Bases: \fBobject\fP
+.sp
+ZoneConfig is tracking ip addresses of nodes in each cluster zone.
+.INDENT 7.0
+.TP
+.B add_node(zone, node)
+Add a node ip address into a zone.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBzone\fP (\fIstr\fP) – zone identification (one of \fBZONES\fP)
+.IP \(bu 2
+\fBnode\fP (\fIstr\fP) – ip address of a node
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B add_nodes(zone, nodes)
+Add list of node ip addresses into a zone.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBzone\fP (\fIstr\fP) – zone identification (one of \fBZONES\fP)
+.IP \(bu 2
+\fBnodes\fP (\fIlist\fP) – list of string representation of node ip addresses
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B get_env_file()
+Generate content of env file for firewall script.
+.INDENT 7.0
+.TP
+.B Returns
+content of firewall environment file with zone configuration
+.TP
+.B Return type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B get_nodes(zone)
+Return set of node ip addresses in given zone.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBzone\fP (\fIstr\fP) – zone identification (one of \fBZONES\fP)
+.TP
+.B Returns
+string representation of node ip addresses of given zone
+.TP
+.B Return type
+list
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SH INDICES AND TABLES
+.INDENT 0.0
+.IP \(bu 2
+genindex
+.IP \(bu 2
+modindex
+.IP \(bu 2
+search
+.UNINDENT
+.SH AUTHOR
+Martin Bukatovič
+.SH COPYRIGHT
+2021, Martin Bukatovič
+.\" Generated by docutils manpage writer.
+.
