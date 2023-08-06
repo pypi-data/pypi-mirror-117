@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bws_scheduler
+Version: 0.0.1
+Summary: BWS Scheduler
+Author: Jose Angel Delgado
+Author-email: esojangel@gmail.com
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
