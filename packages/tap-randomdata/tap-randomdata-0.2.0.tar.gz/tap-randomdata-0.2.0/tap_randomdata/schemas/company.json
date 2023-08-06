@@ -1,0 +1,210 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "selected": true,
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 4633,
+            "uid": "026a8fe1-b652-4de4-8045-4a610745fd52",
+            "business_name": "Mayert and Sons",
+            "suffix": "Group",
+            "industry": "Legislative Office",
+            "catch_phrase": "Public-key composite superstructure",
+            "buzzword": "Re-contextualized",
+            "bs_company_statement": "enable 24/365 portals",
+            "employee_identification_number": "82-2485718",
+            "duns_number": "38-145-3858",
+            "logo": "https://pigment.github.io/fake-logos/logos/medium/color/4.png",
+            "type": "Self-Employed",
+            "phone_number": "+226 1-859-803-0455",
+            "full_address": "4113 Johnson Extension, New Tadfurt, CO 39955",
+            "latitude": -7.88393381415365,
+            "longitude": -35.56779868126276
+        }
+    ],
+    "required": [
+        "id",
+        "uid",
+        "business_name",
+        "suffix",
+        "industry",
+        "catch_phrase",
+        "buzzword",
+        "bs_company_statement",
+        "employee_identification_number",
+        "duns_number",
+        "logo",
+        "type",
+        "phone_number",
+        "full_address",
+        "latitude",
+        "longitude"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                4633
+            ]
+        },
+        "uid": {
+            "$id": "#/properties/uid",
+            "type": "string",
+            "title": "The uid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "026a8fe1-b652-4de4-8045-4a610745fd52"
+            ]
+        },
+        "business_name": {
+            "$id": "#/properties/business_name",
+            "type": "string",
+            "title": "The business_name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Mayert and Sons"
+            ]
+        },
+        "suffix": {
+            "$id": "#/properties/suffix",
+            "type": "string",
+            "title": "The suffix schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Group"
+            ]
+        },
+        "industry": {
+            "$id": "#/properties/industry",
+            "type": "string",
+            "title": "The industry schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Legislative Office"
+            ]
+        },
+        "catch_phrase": {
+            "$id": "#/properties/catch_phrase",
+            "type": "string",
+            "title": "The catch_phrase schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Public-key composite superstructure"
+            ]
+        },
+        "buzzword": {
+            "$id": "#/properties/buzzword",
+            "type": "string",
+            "title": "The buzzword schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Re-contextualized"
+            ]
+        },
+        "bs_company_statement": {
+            "$id": "#/properties/bs_company_statement",
+            "type": "string",
+            "title": "The bs_company_statement schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "enable 24/365 portals"
+            ]
+        },
+        "employee_identification_number": {
+            "$id": "#/properties/employee_identification_number",
+            "type": "string",
+            "title": "The employee_identification_number schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "82-2485718"
+            ]
+        },
+        "duns_number": {
+            "$id": "#/properties/duns_number",
+            "type": "string",
+            "title": "The duns_number schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "38-145-3858"
+            ]
+        },
+        "logo": {
+            "$id": "#/properties/logo",
+            "type": "string",
+            "title": "The logo schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://pigment.github.io/fake-logos/logos/medium/color/4.png"
+            ]
+        },
+        "type": {
+            "$id": "#/properties/type",
+            "type": "string",
+            "title": "The type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Self-Employed"
+            ]
+        },
+        "phone_number": {
+            "$id": "#/properties/phone_number",
+            "type": "string",
+            "title": "The phone_number schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "+226 1-859-803-0455"
+            ]
+        },
+        "full_address": {
+            "$id": "#/properties/full_address",
+            "type": "string",
+            "title": "The full_address schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "4113 Johnson Extension, New Tadfurt, CO 39955"
+            ]
+        },
+        "latitude": {
+            "$id": "#/properties/latitude",
+            "type": "number",
+            "title": "The latitude schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                -7.88393381415365
+            ]
+        },
+        "longitude": {
+            "$id": "#/properties/longitude",
+            "type": "number",
+            "title": "The longitude schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                -35.56779868126276
+            ]
+        }
+    },
+    "additionalProperties": false
+}

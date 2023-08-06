@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tap-randomdata"
+version = "0.2.0"
+description = "Singer Tap to generate random data from https://random-data-api.com/"
+authors = ["Wallace Prado <wprado@gmail.com>"]
+repository = "https://github.com/wallace-prado/singer-demo"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+singer-python = "^5.12.1"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.10.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tap-randomdata = "tap_randomdata:main"

@@ -1,0 +1,76 @@
+{
+    "type": ["object", "null"],
+    "additionalProperties": false,
+    "selected": true,
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "uid": {
+        "type": "string"
+      },
+      "city": {
+        "type": "string"
+      },
+      "street_name": {
+        "type": "string"
+      },
+      "street_address": {
+        "type": "string"
+      },
+      "secondary_address": {
+        "type": "string"
+      },
+      "building_number": {
+        "type": "string"
+      },
+      "mail_box": {
+        "type": "string"
+      },
+      "community": {
+        "type": "string"
+      },
+      "zip_code": {
+        "type": "string"
+      },
+      "zip": {
+        "type": "string"
+      },
+      "postcode": {
+        "type": "string"
+      },
+      "time_zone": {
+        "type": "string"
+      },
+      "street_suffix": {
+        "type": "string"
+      },
+      "city_suffix": {
+        "type": "string"
+      },
+      "city_prefix": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string"
+      },
+      "state_abbr": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      },
+      "country_code": {
+        "type": "string"
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "full_address": {
+        "type": "string"
+      }
+    }
+  }
