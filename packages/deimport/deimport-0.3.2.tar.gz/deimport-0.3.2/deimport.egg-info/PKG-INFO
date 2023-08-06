@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: deimport
+Version: 0.3.2
+Summary: Simple package to deimport python modules
+Home-page: https://github.com/mjsml/deimport
+Author: Mahmoud Soliman
+Author-email: mjs@aucegypt.edu
+License: MIT
+Download-URL: https://github.com/mjsml/deimport/releases
+Keywords: setup,runtime,automation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+
