@@ -1,0 +1,79 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="Externaloauth2module")
+
+
+try:
+    from ..models import externalauthmodule
+except ImportError:
+    import sys
+
+    externalauthmodule = sys.modules[__package__ + "externalauthmodule"]
+
+
+@attr.s(auto_attribs=True)
+class Externaloauth2module(externalauthmodule.Externalauthmodule):
+    """ """
+
+    client_id: "Union[Unset, str]" = UNSET
+    client_secret: "Union[Unset, str]" = UNSET
+    redirect_uri: "Union[Unset, str]" = UNSET
+    icon_url: "Union[Unset, str]" = UNSET
+    extension_grant_type: "Union[Unset, str]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        client_id = self.client_id
+        client_secret = self.client_secret
+        redirect_uri = self.redirect_uri
+        icon_url = self.icon_url
+        extension_grant_type = self.extension_grant_type
+
+        field_dict: Dict[str, Any] = {}
+        _Externalauthmodule_dict = super().to_dict()
+        field_dict.update(_Externalauthmodule_dict)
+        field_dict.update({})
+        if client_id is not UNSET:
+            field_dict["clientId"] = client_id
+        if client_secret is not UNSET:
+            field_dict["clientSecret"] = client_secret
+        if redirect_uri is not UNSET:
+            field_dict["redirectUri"] = redirect_uri
+        if icon_url is not UNSET:
+            field_dict["iconUrl"] = icon_url
+        if extension_grant_type is not UNSET:
+            field_dict["extensionGrantType"] = extension_grant_type
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        d = src_dict.copy()
+
+        _Externalauthmodule_kwargs = super().from_dict(src_dict=d).to_dict()
+        _Externalauthmodule_kwargs.pop("$type")
+
+        client_id = d.pop("clientId", UNSET)
+
+        client_secret = d.pop("clientSecret", UNSET)
+
+        redirect_uri = d.pop("redirectUri", UNSET)
+
+        icon_url = d.pop("iconUrl", UNSET)
+
+        extension_grant_type = d.pop("extensionGrantType", UNSET)
+
+        externaloauth_2_module = cls(
+            client_id=client_id,
+            client_secret=client_secret,
+            redirect_uri=redirect_uri,
+            icon_url=icon_url,
+            extension_grant_type=extension_grant_type,
+            **_Externalauthmodule_kwargs,
+        )
+
+        return externaloauth_2_module
