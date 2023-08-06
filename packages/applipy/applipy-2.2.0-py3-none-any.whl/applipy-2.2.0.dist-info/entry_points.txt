@@ -1,0 +1,3 @@
+[console_scripts]
+applipy = applipy.__main__:entrypoint
+
