@@ -1,0 +1,14 @@
+knitkit/__init__.py,sha256=qkMvmOQWx8MvZ6g2Y8iMUyRy5JeJUoYgqrjHy_N0ivo,108
+knitkit/main.py,sha256=ACL-1LP31hvYGIgl-ILtN6yA1Ta572yK97da--5bWK8,12721
+knitkit/version.py,sha256=g-sfwnqPH5ZoF52e756_44WOXnbc3Lz27WsLdunhQzU,142
+knitkit/assets/Main.scala,sha256=3XsqnWSmJ68aRBKdcuXS8cEEjaDYA0LSioYLDwL-RyU,291
+knitkit/assets/build.sc,sha256=F-k6H4xORUCbNBS0aoTkCkSaWYKOxAyYXlP7dRdVOdk,517
+knitkit/assets/default.yaml,sha256=s21XrytqwvuPCC-8PjEtkJXwgya6s3ZJ7Kc8XmKdbLw,167
+knitkit/assets/project.mk,sha256=PsaQ005w54KG0Fj5F15wz-o53407wz7YdsxRuik1z2w,257
+knitkit/jars/knitkit.jar,sha256=CxXcCj8wPZDKyfvTY1GzyE1NPidMYHTPzXECA5OjiGw,6472243
+knitkit-0.1.4.dist-info/LICENSE,sha256=5uqk_820kN6IIx3VC165dYdM_6Mz4CJe3RgI5wyn1lg,11345
+knitkit-0.1.4.dist-info/METADATA,sha256=APC-XEExrcgyXCYF_pHg_uW8FzAwJOA9Msifc11R9sE,385
+knitkit-0.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+knitkit-0.1.4.dist-info/entry_points.txt,sha256=4TNncJPG85-1dOODDhW2Wnwyb1Gygrr8fxyBuW4MNJA,47
+knitkit-0.1.4.dist-info/top_level.txt,sha256=MNENHHKNcGGYz8c19Ky7gQs7pTr4IIY3zSQxfn46uVE,8
+knitkit-0.1.4.dist-info/RECORD,,
