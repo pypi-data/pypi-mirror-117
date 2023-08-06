@@ -1,0 +1,7 @@
+cccolutils>=1.4
+GitPython
+koji>=1.15
+pycurl>=7.19
+six>=1.9.0
+requests
+PyYAML
