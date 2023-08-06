@@ -1,0 +1,118 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="ProjectCustomField")
+
+
+@attr.s(auto_attribs=True)
+class ProjectCustomField:
+    """Represents custom field settings for the particular project."""
+
+    field: "Union[Unset, custom_field_m.CustomField]" = UNSET
+    project: "Union[Unset, project_m.Project]" = UNSET
+    can_be_empty: "Union[Unset, bool]" = UNSET
+    empty_field_text: "Union[Unset, str]" = UNSET
+    ordinal: "Union[Unset, int]" = UNSET
+    is_public: "Union[Unset, bool]" = UNSET
+    has_running_job: "Union[Unset, bool]" = UNSET
+    id: "Union[Unset, str]" = UNSET
+    type: "Union[Unset, str]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        field: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.field, Unset):
+            field = self.field.to_dict()
+
+        project: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.project, Unset):
+            project = self.project.to_dict()
+
+        can_be_empty = self.can_be_empty
+        empty_field_text = self.empty_field_text
+        ordinal = self.ordinal
+        is_public = self.is_public
+        has_running_job = self.has_running_job
+        id = self.id
+        type = self.type
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update({})
+        if field is not UNSET:
+            field_dict["field"] = field
+        if project is not UNSET:
+            field_dict["project"] = project
+        if can_be_empty is not UNSET:
+            field_dict["canBeEmpty"] = can_be_empty
+        if empty_field_text is not UNSET:
+            field_dict["emptyFieldText"] = empty_field_text
+        if ordinal is not UNSET:
+            field_dict["ordinal"] = ordinal
+        if is_public is not UNSET:
+            field_dict["isPublic"] = is_public
+        if has_running_job is not UNSET:
+            field_dict["hasRunningJob"] = has_running_job
+        if id is not UNSET:
+            field_dict["id"] = id
+        if type is not UNSET:
+            field_dict["$type"] = type
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import custom_field as custom_field_m
+            from ..models import project as project_m
+        except ImportError:
+            import sys
+
+            project_m = sys.modules[__package__ + "project"]
+            custom_field_m = sys.modules[__package__ + "custom_field"]
+
+        d = src_dict.copy()
+
+        _field = d.pop("field", UNSET)
+        field: Union[Unset, custom_field_m.CustomField]
+        if isinstance(_field, Unset):
+            field = UNSET
+        else:
+            field = custom_field_m.CustomField.from_dict(_field)
+
+        _project = d.pop("project", UNSET)
+        project: Union[Unset, project_m.Project]
+        if isinstance(_project, Unset):
+            project = UNSET
+        else:
+            project = project_m.Project.from_dict(_project)
+
+        can_be_empty = d.pop("canBeEmpty", UNSET)
+
+        empty_field_text = d.pop("emptyFieldText", UNSET)
+
+        ordinal = d.pop("ordinal", UNSET)
+
+        is_public = d.pop("isPublic", UNSET)
+
+        has_running_job = d.pop("hasRunningJob", UNSET)
+
+        id = d.pop("id", UNSET)
+
+        type = d.pop("$type", UNSET)
+
+        project_custom_field = cls(
+            field=field,
+            project=project,
+            can_be_empty=can_be_empty,
+            empty_field_text=empty_field_text,
+            ordinal=ordinal,
+            is_public=is_public,
+            has_running_job=has_running_job,
+            id=id,
+            type=type,
+        )
+
+        return project_custom_field

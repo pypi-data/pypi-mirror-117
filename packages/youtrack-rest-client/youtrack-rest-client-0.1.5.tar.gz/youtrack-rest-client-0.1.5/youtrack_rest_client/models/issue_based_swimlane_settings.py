@@ -1,0 +1,101 @@
+from typing import Any, Dict, List, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="IssueBasedSwimlaneSettings")
+
+
+try:
+    from ..models import swimlane_settings
+except ImportError:
+    import sys
+
+    swimlane_settings = sys.modules[__package__ + "swimlane_settings"]
+
+
+@attr.s(auto_attribs=True)
+class IssueBasedSwimlaneSettings(swimlane_settings.SwimlaneSettings):
+    """Swimlane settings for the case, when each swimlane is represented by an issue and contains this issue's subtasks."""
+
+    field: "Union[Unset, filter_field_m.FilterField]" = UNSET
+    default_card_type: "Union[Unset, swimlane_value_m.SwimlaneValue]" = UNSET
+    values: "Union[Unset, List[swimlane_value_m.SwimlaneValue]]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        field: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.field, Unset):
+            field = self.field.to_dict()
+
+        default_card_type: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.default_card_type, Unset):
+            default_card_type = self.default_card_type.to_dict()
+
+        values: Union[Unset, List[Dict[str, Any]]] = UNSET
+        if not isinstance(self.values, Unset):
+            values = []
+            for values_item_data in self.values:
+                values_item = values_item_data.to_dict()
+
+                values.append(values_item)
+
+        field_dict: Dict[str, Any] = {}
+        _SwimlaneSettings_dict = super().to_dict()
+        field_dict.update(_SwimlaneSettings_dict)
+        field_dict.update({})
+        if field is not UNSET:
+            field_dict["field"] = field
+        if default_card_type is not UNSET:
+            field_dict["defaultCardType"] = default_card_type
+        if values is not UNSET:
+            field_dict["values"] = values
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import filter_field as filter_field_m
+            from ..models import swimlane_value as swimlane_value_m
+        except ImportError:
+            import sys
+
+            swimlane_value_m = sys.modules[__package__ + "swimlane_value"]
+            filter_field_m = sys.modules[__package__ + "filter_field"]
+
+        d = src_dict.copy()
+
+        _SwimlaneSettings_kwargs = super().from_dict(src_dict=d).to_dict()
+        _SwimlaneSettings_kwargs.pop("$type")
+
+        _field = d.pop("field", UNSET)
+        field: Union[Unset, filter_field_m.FilterField]
+        if isinstance(_field, Unset):
+            field = UNSET
+        else:
+            field = filter_field_m.FilterField.from_dict(_field)
+
+        _default_card_type = d.pop("defaultCardType", UNSET)
+        default_card_type: Union[Unset, swimlane_value_m.SwimlaneValue]
+        if isinstance(_default_card_type, Unset):
+            default_card_type = UNSET
+        else:
+            default_card_type = swimlane_value_m.SwimlaneValue.from_dict(_default_card_type)
+
+        values = []
+        _values = d.pop("values", UNSET)
+        for values_item_data in _values or []:
+            values_item = swimlane_value_m.SwimlaneValue.from_dict(values_item_data)
+
+            values.append(values_item)
+
+        issue_based_swimlane_settings = cls(
+            field=field,
+            default_card_type=default_card_type,
+            values=values,
+            **_SwimlaneSettings_kwargs,
+        )
+
+        return issue_based_swimlane_settings
