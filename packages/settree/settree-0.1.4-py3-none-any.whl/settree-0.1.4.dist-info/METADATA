@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: settree
+Version: 0.1.4
+Summary: A framework for learning tree-based models over sets
+Home-page: https://github.com/TAU-MLwell/Set-Tree
+Author: Roy Hirsch
+Author-email: royhirsch@mail.tau.ac.il
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: scikit-learn (>=0.23.1)
+Requires-Dist: scipy (>=1.5.2)
+
+# Set-Tree
+TBD
+Official repo for the paper:  "Trees with Attention for Set Prediction Tasks"
+
+
