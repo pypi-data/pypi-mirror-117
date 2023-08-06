@@ -1,0 +1,6 @@
+asyncio_backport/__init__.py,sha256=wZsAeUaP46Z67JirmWhNUPd-iuNJDYYRwtJmzuKUaXQ,211
+asyncio_backport/_impl.py,sha256=nITxh2PX5YUvXc4C91P8EKYvqQr72Vlmpi1FaSlHkIw,5281
+asyncio_backport/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncio_backport-0.1.0.dist-info/WHEEL,sha256=2adPsdwavOXlr3i4h108dwQdqKgJbVa5zTEEuD11F08,99
+asyncio_backport-0.1.0.dist-info/METADATA,sha256=Iz6Q7Oo44ho3dSQnW_qR9sxoo3P_KZuEYApddXDVep8,454
+asyncio_backport-0.1.0.dist-info/RECORD,,
