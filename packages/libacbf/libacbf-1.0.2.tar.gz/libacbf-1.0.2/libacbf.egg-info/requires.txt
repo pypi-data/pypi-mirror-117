@@ -1,0 +1,8 @@
+wheel
+lxml
+python-magic
+py7zr
+rarfile
+requests
+langcodes
+python-dateutil
