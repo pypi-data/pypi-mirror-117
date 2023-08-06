@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: zhiming
+Version: 0.0.1
+Summary: A package for information and data analysis.
+Home-page: https://github.com/Li-Ming-Fan/zhiming
+Author: Ming-Fan Li
+Author-email: li_m_f@163.com
+Maintainer: Ming-Fan Li
+Maintainer-email: li_m_f@163.com
+License: UNKNOWN
+Description: # ZhiMing, 之明
+        
+        zhiming, 之明, become enlightened, sensible, judicious and wise.
+        
+        A package for information and data analysis.
+        
+        
+        </br>
+        
+        </br>
+        
+        
+Platform: any
+Description-Content-Type: text/markdown
