@@ -1,0 +1,6 @@
+pyvcloud
+kopf
+kubernetes
+PyYAML
+environ-config
+python-dotenv
