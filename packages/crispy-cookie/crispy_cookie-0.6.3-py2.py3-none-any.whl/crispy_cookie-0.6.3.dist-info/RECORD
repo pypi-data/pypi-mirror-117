@@ -1,0 +1,11 @@
+crispy_cookie/__init__.py,sha256=SGXF0O2iknYpv3Rwm8MTutO6gB_Je0sXV1pvxJO7aMk,133
+crispy_cookie/cli.py,sha256=vkLWN317p_T3CUMGxPhiCWxeI3UIBNVcMXXTETlbmss,22547
+crispy_cookie/core.py,sha256=IHAlPCD5l-luhAItoYkWqOVYoAaOg48rZWS4EpN97XA,5334
+crispy_cookie/rebase.py,sha256=ShNLyfDt5RaygPth5wzaYq8Jz11VYdoQntFk7fBgCNw,5077
+crispy_cookie-0.6.3.dist-info/AUTHORS.rst,sha256=J_JiomBb6g8v-l3IY-xx606W2b1OYr2ywVc8hughB0s,158
+crispy_cookie-0.6.3.dist-info/LICENSE,sha256=gROiH_qE9cgvjx5USySLe_fia75pP-Zli7hXBuPlRQ0,585
+crispy_cookie-0.6.3.dist-info/METADATA,sha256=VGSjst0NTS7m2QqY8dyxPRN8Sfra6BDiH1NlS6BCpBc,2181
+crispy_cookie-0.6.3.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+crispy_cookie-0.6.3.dist-info/entry_points.txt,sha256=dGeZejfWr0aBQmXUc6417b7pN3ul1fjx6G00ofirM_w,58
+crispy_cookie-0.6.3.dist-info/top_level.txt,sha256=8hj08aiNg0ufsfhmBHvSgfPf-e2eJ_7imDV-ekTnAUw,14
+crispy_cookie-0.6.3.dist-info/RECORD,,
