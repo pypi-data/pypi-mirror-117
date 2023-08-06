@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pypep/__init__.py
+pypep/client.py
+pypep/compat.py
+pypep_pepco.egg-info/PKG-INFO
+pypep_pepco.egg-info/SOURCES.txt
+pypep_pepco.egg-info/dependency_links.txt
+pypep_pepco.egg-info/top_level.txt
