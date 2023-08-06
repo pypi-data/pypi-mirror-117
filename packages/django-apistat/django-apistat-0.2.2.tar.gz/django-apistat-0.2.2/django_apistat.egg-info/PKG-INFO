@@ -1,0 +1,104 @@
+Metadata-Version: 1.1
+Name: django-apistat
+Version: 0.2.2
+Summary: Result JSON from sql report in db
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD 3-Clause License
+Description: ==================
+        Прочти меня
+        ==================
+        
+        О проекте
+        -----------------
+         
+        ApiStat - модуль генерирует json ответ на основе запроса из БД.
+        Хорошо пододйет для выдачи каких либо справочников или отчетов на основе sql зфпроса с параметрами
+        
+        Возможности
+        -----------------
+         - получить результат sql запроса к указанной БД в JSON формате
+         - задать параметры запроса через url  
+        
+        Требуется
+        -----------------
+        DJANGO
+        DJANGO_REST_FRAMEWORK
+        
+        Установка
+        -----------------
+        
+        1. pip install django-apistat
+        2. в setting.py добавляем наш модуль а так же необходимый rest_framework:
+        
+            INSTALLED_APPS = [
+              ...
+        
+              'rest_framework',
+        
+              'apistat'
+        
+              ...
+        
+            ]
+        
+        3. Добавляем в urls.py (путь 'stat/' может быть любой, на Ваше усмотрение)
+        
+            from django.urls import path, include
+        
+            urlpatterns = [
+              ...
+        
+        
+              path('stat/', include('apistat.urls', namespace='apistat')),
+        
+              ...
+        
+            ]
+        
+        4. Запускаем миграции py -3 manage.py nigrate 
+        
+        5. Заходим в админку и в таблицу Api stat sprs добавляем необходимые запросы 
+        
+        6. Пример с http://127.0.0.1/
+        
+           http://127.0.0.1:8000/spr/list/ - получаем список отчетов
+        
+           http://127.0.0.1:8000/spr/report/1 - получаем данные отчета с идентификатором 1
+        
+           http://127.0.0.1:8000/spr/report/1?start=5 - получаем данные отчета с идентификатором 1 с параметром start=5
+        
+        Планы
+        -----------------
+        
+        - постраничное получение данных
+        - выдача структуры полей, для заголовки отчеты (json в отдельном поле)
+        - выдача параметров отчета (json в отдельном поле, имя параметра и тип)
+        
+        ==================
+        История изменений
+        ==================
+         
+        MVP
+        -----------------
+        
+        22.08.2021 Первая версия пакета
+        
+        
+        ==================
+        Лицензия
+        ==================
+         
+        BSD
+        -----------------
+        
+        BSD 3-Clause License
+        
+        
+Keywords: json,sql,django,api,statistic
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
