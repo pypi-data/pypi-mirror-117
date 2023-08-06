@@ -1,0 +1,9 @@
+cdk8s_cluster_autoscaler_aws/__init__.py,sha256=1_0MiW0FjmJRulYo7s-TJkBP4tHAjPc4He1-FmdvgeE,16702
+cdk8s_cluster_autoscaler_aws/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk8s_cluster_autoscaler_aws/_jsii/__init__.py,sha256=Tz8XIyKblXZ6RnkUW9M_o-KKm_n4NIPMMWREQreIG44,493
+cdk8s_cluster_autoscaler_aws/_jsii/cdk8s-cluster-autoscaler-aws@0.0.4.jsii.tgz,sha256=Vjvm5gb6HcNAvwv9Uj2lTKnQ8H9SSXjYE29hQZdygBg,20661
+cdk8s_cluster_autoscaler_aws-0.0.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdk8s_cluster_autoscaler_aws-0.0.4.dist-info/METADATA,sha256=SraMfDKLUQ0TuafXoZApvtczpCDikZDoGwRZyvpdjeg,8916
+cdk8s_cluster_autoscaler_aws-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cdk8s_cluster_autoscaler_aws-0.0.4.dist-info/top_level.txt,sha256=wrha81-or4oOzTFFCxI0dMJt27TuEzw45R1VbCMy5k4,29
+cdk8s_cluster_autoscaler_aws-0.0.4.dist-info/RECORD,,
