@@ -1,0 +1,120 @@
+from typing import Any, Dict, List, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="CommentActivityItem")
+
+
+try:
+    from ..models import created_deleted_activity_item
+except ImportError:
+    import sys
+
+    created_deleted_activity_item = sys.modules[__package__ + "created_deleted_activity_item"]
+
+
+@attr.s(auto_attribs=True)
+class CommentActivityItem(created_deleted_activity_item.CreatedDeletedActivityItem):
+    """Represents a change in the comments of an issue."""
+
+    target: "Union[Unset, issue_comment_m.IssueComment]" = UNSET
+    removed: "Union[Unset, List[issue_comment_m.IssueComment]]" = UNSET
+    added: "Union[Unset, List[issue_comment_m.IssueComment]]" = UNSET
+    author_group: "Union[Unset, user_group_m.UserGroup]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        target: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.target, Unset):
+            target = self.target.to_dict()
+
+        removed: Union[Unset, List[Dict[str, Any]]] = UNSET
+        if not isinstance(self.removed, Unset):
+            removed = []
+            for removed_item_data in self.removed:
+                removed_item = removed_item_data.to_dict()
+
+                removed.append(removed_item)
+
+        added: Union[Unset, List[Dict[str, Any]]] = UNSET
+        if not isinstance(self.added, Unset):
+            added = []
+            for added_item_data in self.added:
+                added_item = added_item_data.to_dict()
+
+                added.append(added_item)
+
+        author_group: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.author_group, Unset):
+            author_group = self.author_group.to_dict()
+
+        field_dict: Dict[str, Any] = {}
+        _CreatedDeletedActivityItem_dict = super().to_dict()
+        field_dict.update(_CreatedDeletedActivityItem_dict)
+        field_dict.update({})
+        if target is not UNSET:
+            field_dict["target"] = target
+        if removed is not UNSET:
+            field_dict["removed"] = removed
+        if added is not UNSET:
+            field_dict["added"] = added
+        if author_group is not UNSET:
+            field_dict["authorGroup"] = author_group
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import issue_comment as issue_comment_m
+            from ..models import user_group as user_group_m
+        except ImportError:
+            import sys
+
+            user_group_m = sys.modules[__package__ + "user_group"]
+            issue_comment_m = sys.modules[__package__ + "issue_comment"]
+
+        d = src_dict.copy()
+
+        _CreatedDeletedActivityItem_kwargs = super().from_dict(src_dict=d).to_dict()
+        _CreatedDeletedActivityItem_kwargs.pop("$type")
+
+        _target = d.pop("target", UNSET)
+        target: Union[Unset, issue_comment_m.IssueComment]
+        if isinstance(_target, Unset):
+            target = UNSET
+        else:
+            target = issue_comment_m.IssueComment.from_dict(_target)
+
+        removed = []
+        _removed = d.pop("removed", UNSET)
+        for removed_item_data in _removed or []:
+            removed_item = issue_comment_m.IssueComment.from_dict(removed_item_data)
+
+            removed.append(removed_item)
+
+        added = []
+        _added = d.pop("added", UNSET)
+        for added_item_data in _added or []:
+            added_item = issue_comment_m.IssueComment.from_dict(added_item_data)
+
+            added.append(added_item)
+
+        _author_group = d.pop("authorGroup", UNSET)
+        author_group: Union[Unset, user_group_m.UserGroup]
+        if isinstance(_author_group, Unset):
+            author_group = UNSET
+        else:
+            author_group = user_group_m.UserGroup.from_dict(_author_group)
+
+        comment_activity_item = cls(
+            target=target,
+            removed=removed,
+            added=added,
+            author_group=author_group,
+            **_CreatedDeletedActivityItem_kwargs,
+        )
+
+        return comment_activity_item

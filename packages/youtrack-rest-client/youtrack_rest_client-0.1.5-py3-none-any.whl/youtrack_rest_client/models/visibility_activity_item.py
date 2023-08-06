@@ -1,0 +1,52 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="VisibilityActivityItem")
+
+
+try:
+    from ..models import multi_value_activity_item
+except ImportError:
+    import sys
+
+    multi_value_activity_item = sys.modules[__package__ + "multi_value_activity_item"]
+
+
+@attr.s(auto_attribs=True)
+class VisibilityActivityItem(multi_value_activity_item.MultiValueActivityItem):
+    """Represents the changes of properties responsible for visibility restriction.
+    Can be <a href="api-entity-VisibilityGroupActivityItem.xml">VisibilityGroupActivityItem</a> or <a href="api-entity-VisibilityUserActivityItem.xml">VisibilityUserActivityItem</a>"""
+
+    target_member: "Union[Unset, str]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        target_member = self.target_member
+
+        field_dict: Dict[str, Any] = {}
+        _MultiValueActivityItem_dict = super().to_dict()
+        field_dict.update(_MultiValueActivityItem_dict)
+        field_dict.update({})
+        if target_member is not UNSET:
+            field_dict["targetMember"] = target_member
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        d = src_dict.copy()
+
+        _MultiValueActivityItem_kwargs = super().from_dict(src_dict=d).to_dict()
+        _MultiValueActivityItem_kwargs.pop("$type")
+
+        target_member = d.pop("targetMember", UNSET)
+
+        visibility_activity_item = cls(
+            target_member=target_member,
+            **_MultiValueActivityItem_kwargs,
+        )
+
+        return visibility_activity_item

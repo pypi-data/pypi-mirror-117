@@ -1,0 +1,73 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="LocaleSettings")
+
+
+@attr.s(auto_attribs=True)
+class LocaleSettings:
+    """Represents the System Language settings."""
+
+    locale: "Union[Unset, locale_descriptor_m.LocaleDescriptor]" = UNSET
+    is_rtl: "Union[Unset, bool]" = UNSET
+    id: "Union[Unset, str]" = UNSET
+    type: "Union[Unset, str]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        locale: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.locale, Unset):
+            locale = self.locale.to_dict()
+
+        is_rtl = self.is_rtl
+        id = self.id
+        type = self.type
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update({})
+        if locale is not UNSET:
+            field_dict["locale"] = locale
+        if is_rtl is not UNSET:
+            field_dict["isRTL"] = is_rtl
+        if id is not UNSET:
+            field_dict["id"] = id
+        if type is not UNSET:
+            field_dict["$type"] = type
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import locale_descriptor as locale_descriptor_m
+        except ImportError:
+            import sys
+
+            locale_descriptor_m = sys.modules[__package__ + "locale_descriptor"]
+
+        d = src_dict.copy()
+
+        _locale = d.pop("locale", UNSET)
+        locale: Union[Unset, locale_descriptor_m.LocaleDescriptor]
+        if isinstance(_locale, Unset):
+            locale = UNSET
+        else:
+            locale = locale_descriptor_m.LocaleDescriptor.from_dict(_locale)
+
+        is_rtl = d.pop("isRTL", UNSET)
+
+        id = d.pop("id", UNSET)
+
+        type = d.pop("$type", UNSET)
+
+        locale_settings = cls(
+            locale=locale,
+            is_rtl=is_rtl,
+            id=id,
+            type=type,
+        )
+
+        return locale_settings

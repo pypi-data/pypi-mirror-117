@@ -1,0 +1,51 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="BuildBundleElement")
+
+
+try:
+    from ..models import bundle_element
+except ImportError:
+    import sys
+
+    bundle_element = sys.modules[__package__ + "bundle_element"]
+
+
+@attr.s(auto_attribs=True)
+class BuildBundleElement(bundle_element.BundleElement):
+    """Represents a build - a single element of a builds bundle."""
+
+    assemble_date: "Union[Unset, int]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        assemble_date = self.assemble_date
+
+        field_dict: Dict[str, Any] = {}
+        _BundleElement_dict = super().to_dict()
+        field_dict.update(_BundleElement_dict)
+        field_dict.update({})
+        if assemble_date is not UNSET:
+            field_dict["assembleDate"] = assemble_date
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        d = src_dict.copy()
+
+        _BundleElement_kwargs = super().from_dict(src_dict=d).to_dict()
+        _BundleElement_kwargs.pop("$type")
+
+        assemble_date = d.pop("assembleDate", UNSET)
+
+        build_bundle_element = cls(
+            assemble_date=assemble_date,
+            **_BundleElement_kwargs,
+        )
+
+        return build_bundle_element

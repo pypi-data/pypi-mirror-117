@@ -1,0 +1,87 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="CustomFieldDefaults")
+
+
+@attr.s(auto_attribs=True)
+class CustomFieldDefaults:
+    """Represents default project-related settings of the custom field. These settings are applied at the moment when the custom field is attached to a project. After that, any changes in default settings do not affect the field settings for this project."""
+
+    can_be_empty: "Union[Unset, bool]" = UNSET
+    empty_field_text: "Union[Unset, str]" = UNSET
+    is_public: "Union[Unset, bool]" = UNSET
+    parent: "Union[Unset, custom_field_m.CustomField]" = UNSET
+    id: "Union[Unset, str]" = UNSET
+    type: "Union[Unset, str]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        can_be_empty = self.can_be_empty
+        empty_field_text = self.empty_field_text
+        is_public = self.is_public
+        parent: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.parent, Unset):
+            parent = self.parent.to_dict()
+
+        id = self.id
+        type = self.type
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update({})
+        if can_be_empty is not UNSET:
+            field_dict["canBeEmpty"] = can_be_empty
+        if empty_field_text is not UNSET:
+            field_dict["emptyFieldText"] = empty_field_text
+        if is_public is not UNSET:
+            field_dict["isPublic"] = is_public
+        if parent is not UNSET:
+            field_dict["parent"] = parent
+        if id is not UNSET:
+            field_dict["id"] = id
+        if type is not UNSET:
+            field_dict["$type"] = type
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import custom_field as custom_field_m
+        except ImportError:
+            import sys
+
+            custom_field_m = sys.modules[__package__ + "custom_field"]
+
+        d = src_dict.copy()
+
+        can_be_empty = d.pop("canBeEmpty", UNSET)
+
+        empty_field_text = d.pop("emptyFieldText", UNSET)
+
+        is_public = d.pop("isPublic", UNSET)
+
+        _parent = d.pop("parent", UNSET)
+        parent: Union[Unset, custom_field_m.CustomField]
+        if isinstance(_parent, Unset):
+            parent = UNSET
+        else:
+            parent = custom_field_m.CustomField.from_dict(_parent)
+
+        id = d.pop("id", UNSET)
+
+        type = d.pop("$type", UNSET)
+
+        custom_field_defaults = cls(
+            can_be_empty=can_be_empty,
+            empty_field_text=empty_field_text,
+            is_public=is_public,
+            parent=parent,
+            id=id,
+            type=type,
+        )
+
+        return custom_field_defaults

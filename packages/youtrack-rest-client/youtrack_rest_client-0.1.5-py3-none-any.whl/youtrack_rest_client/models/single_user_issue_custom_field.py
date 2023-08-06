@@ -1,0 +1,65 @@
+from typing import Any, Dict, Type, TypeVar, Union
+
+import attr
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="SingleUserIssueCustomField")
+
+
+try:
+    from ..models import database_single_value_issue_custom_field
+except ImportError:
+    import sys
+
+    database_single_value_issue_custom_field = sys.modules[__package__ + "database_single_value_issue_custom_field"]
+
+
+@attr.s(auto_attribs=True)
+class SingleUserIssueCustomField(database_single_value_issue_custom_field.DatabaseSingleValueIssueCustomField):
+    """Represents the issue custom field of the `user` type that can only have a single value."""
+
+    value: "Union[Unset, user_m.User]" = UNSET
+
+    def to_dict(self) -> Dict[str, Any]:
+        value: Union[Unset, Dict[str, Any]] = UNSET
+        if not isinstance(self.value, Unset):
+            value = self.value.to_dict()
+
+        field_dict: Dict[str, Any] = {}
+        _DatabaseSingleValueIssueCustomField_dict = super().to_dict()
+        field_dict.update(_DatabaseSingleValueIssueCustomField_dict)
+        field_dict.update({})
+        if value is not UNSET:
+            field_dict["value"] = value
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+
+        try:
+            from ..models import user as user_m
+        except ImportError:
+            import sys
+
+            user_m = sys.modules[__package__ + "user"]
+
+        d = src_dict.copy()
+
+        _DatabaseSingleValueIssueCustomField_kwargs = super().from_dict(src_dict=d).to_dict()
+        _DatabaseSingleValueIssueCustomField_kwargs.pop("$type")
+
+        _value = d.pop("value", UNSET)
+        value: Union[Unset, user_m.User]
+        if isinstance(_value, Unset):
+            value = UNSET
+        else:
+            value = user_m.User.from_dict(_value)
+
+        single_user_issue_custom_field = cls(
+            value=value,
+            **_DatabaseSingleValueIssueCustomField_kwargs,
+        )
+
+        return single_user_issue_custom_field
