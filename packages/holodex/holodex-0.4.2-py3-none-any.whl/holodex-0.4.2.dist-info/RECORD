@@ -1,0 +1,12 @@
+holodex/__init__.py,sha256=6hfVa12Q-nXyUEXr6SyKpqPEDJW6vlRHyPxlA27PfTs,22
+holodex/client.py,sha256=Vp25fKFIiuSJBbg6zuOWMAv3lKUUEY8SgRAIx9r5SX8,897
+holodex/http.py,sha256=vEr1lDoq9NJ8aX8BJ7PbSbIntgwr9p-Z6dbaLPHl30A,1278
+holodex/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+holodex/model/autocomplete.py,sha256=viWuNPL5GtGQ44zGYkELAsrvh84nuvmh9ZaT0lF9Lwg,613
+holodex/model/channel_info.py,sha256=Kfqmsz6z5jGDPIAXIKrVvC2gmOLY2zFuyUmsL2xwp9E,2284
+holodex/model/live.py,sha256=iO8ODnbPyXzDaAAoZTPf5x05_8t6qLvaI31B4L6YVgA,2102
+holodex-0.4.2.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+holodex-0.4.2.dist-info/METADATA,sha256=KTDeItCzC6bfCwsuMGkqezQ9BmddjkgZcAbkEa5c89A,788
+holodex-0.4.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+holodex-0.4.2.dist-info/top_level.txt,sha256=U1OyRiADdkTVN8lKGwELReiJCstS9ZUp8gQI9sbIlD8,8
+holodex-0.4.2.dist-info/RECORD,,
