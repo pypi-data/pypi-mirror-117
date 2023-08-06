@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gpcrmining
+Version: 0.1.7
+Summary: Functions to scrape GPCR data from the web.
+Home-page: http://github.com/drorlab/GPCR-mining
+Author: Martin Voegele
+Author-email: martinvoegele1989@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: click
+Requires-Dist: requests
+
+UNKNOWN
+
+

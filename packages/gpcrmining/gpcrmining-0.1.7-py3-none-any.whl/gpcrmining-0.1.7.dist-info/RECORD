@@ -1,0 +1,9 @@
+gpcrmining/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpcrmining/gpcrdb/__init__.py,sha256=6hRl-jpxQaYbFoPf0z28ka-UHxi8ZPMLMwoQj6SDvKo,24
+gpcrmining/gpcrdb/__main__.py,sha256=ZxfJXPAVF3YAxgf8gosOtefVyKscppPokwXmqpPJvwU,1985
+gpcrmining/gpcrdb/sequence.py,sha256=g4SBfNGLFjjGvsVGCuRMTJnaAaaqp5yfPqFXISiuQPo,10009
+gpcrmining-0.1.7.dist-info/LICENSE,sha256=JZamrBw-ETqAcLYEVIZAZCfxiD_xMtHaJGML8E9nrQg,1065
+gpcrmining-0.1.7.dist-info/METADATA,sha256=WNdPV1Kxq-sAaSIRf_PCT2Q63tXd-vSLlqvedaC_oz4,493
+gpcrmining-0.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gpcrmining-0.1.7.dist-info/top_level.txt,sha256=-KMseiT0TceKqAQafkGfmeOuaS-pWmsDFL-DybQ624g,11
+gpcrmining-0.1.7.dist-info/RECORD,,
