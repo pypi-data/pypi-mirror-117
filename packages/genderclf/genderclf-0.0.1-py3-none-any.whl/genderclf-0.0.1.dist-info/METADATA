@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: genderclf
+Version: 0.0.1
+Summary: Gender Classifier ML Package for classifying gender using firstname
+Home-page: https://github.com/ankitlade12/genderclf
+Author: Ankit Hemant Lade
+Author-email: ankitlade12@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: joblib (>=0.14.0,<0.15.0)
+Requires-Dist: scikit-learn (>=0.22.0,<0.23.0)
+Project-URL: Repository, https://github.com/ankitlade12/genderclf
+Description-Content-Type: text/markdown
+
+## GenderClassifier Tool
++ For classifying gender of individuals using their first names
+
+### Installation
+```bash
+pip install genderclf
+```
+
+### Usage
+#### Basic usage
+```python
+>>> from genderclf import GenderClassifier
+>>> g = GenderClassifier()
+>>> g.name = 'Hemant'
+>>> g.predict()
+```
+
+#### Loading Different Models
+```python
+>>> from genderclf import GenderClassifier
+>>> g = GenderClassifier()
+>>> g.name = 'Hansa'
+>>> g.load('logit')
+>>> g.predict()
+```
+
+#### Using the Classify Method
+```python
+>>> from genderclf import GenderClassifier
+>>> g = GenderClassifier()
+>>> g.load('nb')
+>>> g.classify("Hemant")
+```
+
+#### Check Gender
+```python
+>>> from genderclf import GenderClassifier
+>>> g = GenderClassifier()
+>>> g.is_male("Hemant")
+```
+
+```python
+>>> from genderclf import GenderClassifier
+>>> g = GenderClassifier()
+>>> g.is_female("Hansa")
+```
+
+#### Requirements
++ Joblib
++ Scikit-learn
+
+#### Maintainer
++ Ankit Hemant Lade(ankitlade12@gmail.com)
+
