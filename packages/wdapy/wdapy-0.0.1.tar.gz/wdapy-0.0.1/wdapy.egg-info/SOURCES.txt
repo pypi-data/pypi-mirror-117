@@ -1,0 +1,15 @@
+AUTHORS
+ChangeLog
+LICENSE
+README.md
+requirements.txt
+setup.cfg
+setup.py
+wdapy/__init__.py
+wdapy.egg-info/PKG-INFO
+wdapy.egg-info/SOURCES.txt
+wdapy.egg-info/dependency_links.txt
+wdapy.egg-info/not-zip-safe
+wdapy.egg-info/pbr.json
+wdapy.egg-info/requires.txt
+wdapy.egg-info/top_level.txt
