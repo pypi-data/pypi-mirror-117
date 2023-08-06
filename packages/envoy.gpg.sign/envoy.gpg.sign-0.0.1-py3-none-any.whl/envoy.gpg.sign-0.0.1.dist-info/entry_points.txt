@@ -1,0 +1,3 @@
+[console_scripts]
+gpg-sign = envoy.gpg.sign.cmd:cmd
+
