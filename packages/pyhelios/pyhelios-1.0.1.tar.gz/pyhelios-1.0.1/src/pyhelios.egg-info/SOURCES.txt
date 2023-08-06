@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyhelios/__init__.py
+src/pyhelios/toto.py
+src/pyhelios.egg-info/PKG-INFO
+src/pyhelios.egg-info/SOURCES.txt
+src/pyhelios.egg-info/dependency_links.txt
+src/pyhelios.egg-info/top_level.txt
