@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pointofview/VERSION
+src/pointofview/__init__.py
+src/pointofview.egg-info/PKG-INFO
+src/pointofview.egg-info/SOURCES.txt
+src/pointofview.egg-info/dependency_links.txt
+src/pointofview.egg-info/top_level.txt
+tests/test_pointofview.py
