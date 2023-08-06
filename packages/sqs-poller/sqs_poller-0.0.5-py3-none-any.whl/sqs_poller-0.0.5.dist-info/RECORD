@@ -1,0 +1,7 @@
+sqs_poller/__init__.py,sha256=e49K0iSYc3ZCQBo_sWHNr8FTzJ5e5wQmxJpRlkKQQvM,34
+sqs_poller/sqs_poller.py,sha256=1SsSH1in_WI1HfyJen68w4lO5Ifc7MZrbArNWa4QGbY,5662
+sqs_poller-0.0.5.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqs_poller-0.0.5.dist-info/METADATA,sha256=i2_HaDthTZG2vnmp5pgbgWOR5EEqG8hUAU4kzLoU5kM,5252
+sqs_poller-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sqs_poller-0.0.5.dist-info/top_level.txt,sha256=Xqh_zXNfUVR_WH6ilVyTpT6EQadQnEUweQgrzeDqMzU,11
+sqs_poller-0.0.5.dist-info/RECORD,,
