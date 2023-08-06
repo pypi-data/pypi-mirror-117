@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "histogram-py"
+version = "0.1.2"
+description = "A pandas extension to open Dataframes & Series in histogram.dev"
+authors = ["Tyler Cosgrove <tyler@datawhys.ai>"]
+keywords = ["pandas", "histogram", "plot", "histogram.dev"]
+readme = "README.md"
+homepage = "https://histogram.dev"
+repository = "https://github.com/datawhys/histogram-py"
+packages = [
+  { include = "histogram" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+pandas = "^1.0"
+requests = "^2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
