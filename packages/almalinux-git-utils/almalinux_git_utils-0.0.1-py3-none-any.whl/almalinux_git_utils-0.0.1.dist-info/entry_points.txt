@@ -1,0 +1,4 @@
+[console_scripts]
+alma_blob_upload = almalinux.gitutils.blob_upload:main
+alma_get_sources = almalinux.gitutils.get_sources:main
+
