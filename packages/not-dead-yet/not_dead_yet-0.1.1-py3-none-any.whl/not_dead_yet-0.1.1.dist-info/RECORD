@@ -1,0 +1,10 @@
+not_dead_yet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+not_dead_yet/__main__.py,sha256=i1YkByqRAtoh5capYR4JNTupDqNZ2WYW1fBmfKZctrM,804
+not_dead_yet/app.py,sha256=PrglkovqW9Et6tWgBfcukzhqBrIo_iqPMlNZRsGIoyI,1465
+not_dead_yet/notifier.py,sha256=uPOW4Y0NWxJGrn9kvFdhmwQ9s2ijD9-fDxpTkHGR-Kw,1241
+not_dead_yet/resource.py,sha256=RmVP20SmT0FkF_KuzmYas9G8o2j037T2wAyWjjB4JRE,1232
+not_dead_yet/ws.py,sha256=hyHRxG7Qj0zz0mL4vv3NnyHfOs6WgdPqUWtHA8nvQKw,1085
+not_dead_yet-0.1.1.dist-info/entry_points.txt,sha256=irnYWSxr4l9JWX5a2Fw4EufwnB97oiCqiYMFsTrZ_V0,50
+not_dead_yet-0.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+not_dead_yet-0.1.1.dist-info/METADATA,sha256=L5O8ljrhfuW9ThoYygvu9WssFQYaRsJ-kPjljxJStTs,388
+not_dead_yet-0.1.1.dist-info/RECORD,,
