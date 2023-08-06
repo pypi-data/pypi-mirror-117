@@ -1,0 +1,11 @@
+scieconlib/__init__.py,sha256=jC-0HJLmXefGLFsaiQ9mWpYAEZUeFK6uTYovnZAg62M,48
+scieconlib/gametheory/__init__.py,sha256=ulny8oR8msADt68Isj3Q3FuYlmNMkuHDE6hcO7TmHZE,33
+scieconlib/gametheory/multi_armed_bandit/__init__.py,sha256=VW6okA2UwZdSCHBohncnUQCA7XxPMZAN6ZYdUP_WZAk,116
+scieconlib/gametheory/multi_armed_bandit/action.py,sha256=WCzWJH5dd_M7AhAu2r3vfrn0Ge2oxBK6TZGfhZ5rAd4,963
+scieconlib/gametheory/multi_armed_bandit/agent.py,sha256=e5Vhq8CunFmcFrIDLDQDy0MRxYHUP8aIiEBIzN-3dko,2591
+scieconlib/gametheory/multi_armed_bandit/distribution.py,sha256=eW3_-BAFQhUdbYBK_XyX0yftoQIjFWMtKVuQ1yNOSLk,1326
+scieconlib/gametheory/multi_armed_bandit/model.py,sha256=YX4oRTM6t_kEVeSdL1dnyyWf7tot4uCVariDYpen9PQ,1980
+scieconlib-0.0.4.dist-info/METADATA,sha256=35-S9OXKScSYEnkJs1v9Py1Kd8HdHSkhu_Dg-Xa3zRY,602
+scieconlib-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+scieconlib-0.0.4.dist-info/top_level.txt,sha256=O4Hzbee9yYEEKgLNRJOKkbl3umPYu3l2Rw0fDpkYZWk,11
+scieconlib-0.0.4.dist-info/RECORD,,
