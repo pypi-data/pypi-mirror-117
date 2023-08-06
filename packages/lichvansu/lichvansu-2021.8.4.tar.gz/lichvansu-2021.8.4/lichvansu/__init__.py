@@ -1,0 +1,1 @@
+from lichvansu import main
