@@ -1,0 +1,6 @@
+scipy
+numpy
+pandas
+tqdm
+cleanlog==0.1.7
+parmap
