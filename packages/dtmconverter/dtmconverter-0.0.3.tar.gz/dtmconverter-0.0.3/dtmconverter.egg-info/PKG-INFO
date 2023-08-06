@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dtmconverter
+Version: 0.0.3
+Summary: Tools for converting Datapacks to Mods
+Home-page: UNKNOWN
+Author: ThatRobin
+Author-email: ThatRobin3001@gmail.com
+License: UNKNOWN
+Description: # Datapack to Mod Converter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
