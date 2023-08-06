@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: XKT
+Version: 0.0.2
+Summary: This project aims to provide multiple knowledge tracing models.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: mxnet
+Requires-Dist: tqdm
+Requires-Dist: PyBaize (>=0.0.5)
+Provides-Extra: test
+Requires-Dist: pytest (>=4) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.6.0) ; extra == 'test'
+Requires-Dist: pytest-flake8 ; extra == 'test'
+Requires-Dist: EduData (>=0.0.4) ; extra == 'test'
+
+Refer to full documentation https://github.com/bigdata-ustc/XKT/blob/master/README.md for detailed information.
+
+
