@@ -1,0 +1,15 @@
+hebrew_python/__init__.py,sha256=rvUsPWS4Yq7tjFIi8BwC2FW2OEoiFgYbKvyeibFO8gk,109
+hebrew_python/__main__.py,sha256=0cwP_GyA_s3xBLlZjaGwzZLCQ0Hv7Rr-BrGDoJ4Pezs,414
+hebrew_python/error_hook.py,sha256=jm2Z_Yd3iBMWgAMAZMRNziXWpWmpUIVeOZKZiun40JU,1720
+hebrew_python/hebrew_builtins.json,sha256=U94PmwsQEvb_IOcYWPw3LMm-ya_Le9Y940EkhjjM6-4,252
+hebrew_python/hebrew_keywords.json,sha256=3L4icEGtuSf2uxjb0r5tq2vIt60-70u3FsyDMy6v5zw,703
+hebrew_python/hook.py,sha256=HjyhL-AAuBeUaTjLOa-Y-adfZM8PbHuWmxAz38MyMjI,5937
+hebrew_python/ipython.py,sha256=7QI-F0p2G_o6X7sy9xnPKssE6ilZKVaLIAb4nR76zp8,4403
+hebrew_python/LICENSE,sha256=oCMLJmPtPT0M0I7IYTDZixMr-oJb5t-3eAOeS3Pn_8A,1316
+hebrew_python/אקראי.py,sha256=DXs4RoXqoY5Zn7gmWcJxCTE8RMRtV8YHK-QqpKHUYfI,50
+hebrew_python/ממשק.py,sha256=w8DhSGIgs8gLSVxtLzsQYRdsks4NiyRBA_qB_ZBNRWk,1690
+hebrew_python/שגיאות.py,sha256=UsSpRvDJ_-s3FkjsehJYz-K1Z7O9uFlW81IPJvQfkmA,340
+hebrew_python-0.1.5.dist-info/entry_points.txt,sha256=-DXqD_qChXuU98ShTGuNfHRIGyIikEzb_kZ5yUL60fo,52
+hebrew_python-0.1.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+hebrew_python-0.1.5.dist-info/METADATA,sha256=YxCLUxuNumwl0Ii8NrOK-j9klzBhCBLEE9_1x7s5y08,3939
+hebrew_python-0.1.5.dist-info/RECORD,,
