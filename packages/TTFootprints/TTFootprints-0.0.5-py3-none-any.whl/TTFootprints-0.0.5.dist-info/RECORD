@@ -1,0 +1,9 @@
+footprints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+footprints/agent.py,sha256=kA08qVA5lvlDNi7-oq5UeDWvKPy7wtQZe5CpiLYA8kY,195
+footprints/ticket.py,sha256=WZZ8nuReDyDqEFp16E1ePixYQMTKdsQBc5SG7pCFBR4,1431
+footprints/timeline.py,sha256=ZPFxB7nEyYiSVphg49HLaFVLACXCaI2kEcNDhozZyzY,688
+footprints/util.py,sha256=shygxV3XP3u-1dDwye25ZO1YiXMCjhj7MZCK4kOoWxM,460
+TTFootprints-0.0.5.dist-info/METADATA,sha256=jBVe75wg3WjLVN0HWMlI6aoxkdbcDOIg1AeMe3YlIuE,796
+TTFootprints-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TTFootprints-0.0.5.dist-info/top_level.txt,sha256=NFQEsg0X1HdN67wkmGo0IubFidc3-12UtdwnAzyTsHE,11
+TTFootprints-0.0.5.dist-info/RECORD,,
