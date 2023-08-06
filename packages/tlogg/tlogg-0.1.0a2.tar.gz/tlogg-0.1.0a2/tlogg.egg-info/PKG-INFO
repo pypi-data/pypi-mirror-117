@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: tlogg
+Version: 0.1.0a2
+Summary: A fast, advanced log explorer
+Home-page: https://github.com/ceccopierangiolieugenio/tlogg
+Author: Eugenio Parodi
+Author-email: ceccopierangiolieugenio@googlemail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Terminals
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# tlogg
+A fast, advanced ascii log explorer.
+
+# QuickRun
+### Clone
+```bash
+git clone https://github.com/ceccopierangiolieugenio/tlogg.git
+cd tlogg
+```
+### Run
+```
+python3 -m tlogg  <File/s>
+```
+
+
+
