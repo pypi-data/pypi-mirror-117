@@ -1,0 +1,3 @@
+[console_scripts]
+boox-annotation-parser = boox_annotation_parser.cli:main
+
