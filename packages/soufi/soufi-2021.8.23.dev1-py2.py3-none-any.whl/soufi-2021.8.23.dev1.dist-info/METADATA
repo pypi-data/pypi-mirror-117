@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: soufi
+Version: 2021.8.23.dev1
+Summary: Source Finder
+Home-page: https://github.com/juledwar/soufi
+Maintainer: Julian Edwards
+Maintainer-email: juledwar@cisco.com
+License: Apache2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: cryptography (>=3.3.1)
+Requires-Dist: launchpadlib (>=1.10.13)
+Requires-Dist: lxml (>=4.6.3)
+Requires-Dist: repomd (>=0.2.1)
+Requires-Dist: requests-oauthlib (>=1.3.0)
+Requires-Dist: requests (>=2.25.1)
+
+Source finder CLI and API
+
+
