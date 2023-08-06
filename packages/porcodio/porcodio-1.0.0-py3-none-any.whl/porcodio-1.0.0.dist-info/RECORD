@@ -1,0 +1,10 @@
+porcodio/__init__.py,sha256=ZDe-FiWBCvSmmsGsthhyhnct-0SLo1kX5hozlVYJxRc,85
+porcodio/ascii_list.py,sha256=6VU25MQ6myoz_bFbuSoBWsyUv-yPsmtAQmAi3CLDZGg,10014
+porcodio/porcodio.py,sha256=ODbGNCQ6QRBLfDJPk8ntR2BJLQ9r6WAudR5REqfr5uY,107
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_get_porcodio.py,sha256=LcjOUjboimH5mGBSMT1rOKsDSextPPqnajAbHcuerPI,220
+porcodio-1.0.0.dist-info/LICENSE,sha256=fFidP21BH3UguV__7nDq-iquz7K2OQa7Vy36_Y7ZeaY,1068
+porcodio-1.0.0.dist-info/METADATA,sha256=VZZbB6xaVE0zEB0mzybGJoJ1aF7SXXlNzf1sKXWe-1M,528
+porcodio-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+porcodio-1.0.0.dist-info/top_level.txt,sha256=tR4w5hS8XI_pFh0531slqfoG6_u5BDxrSrtz7PG3TG4,15
+porcodio-1.0.0.dist-info/RECORD,,
