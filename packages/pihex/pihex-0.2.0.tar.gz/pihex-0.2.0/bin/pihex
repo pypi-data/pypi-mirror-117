@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+
+import re
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('input', nargs='+')
+parser.add_argument('--hex', dest='hex', action='store_true')
+parser.add_argument('--hex-bin',  dest='hbin',  nargs='?')
+parser.add_argument('--uint-bin', dest='ubin',  nargs='?')
+parser.add_argument('--bin-hex',  dest='bhex',  action='store_true')
+parser.add_argument('--bin-uint', dest='buint', action='store_true')
+args = parser.parse_args()
+
+if __name__ == '__main__':
+
+    if args.hbin:
+        print(format(int(args.hbin, 16),
+                            '0{}b'.format(int(args.input[0]))))
+        exit
+
+    if args.ubin:
+        print(format(int(args.ubin),
+                            '0{}b'.format(int(args.input[0]))))
+        exit
+
+
+    _base   = 10
+    _format = '{:02X}'
+
+    if args.hex:
+        _base   = 16
+        _format = '{}'
+
+    if args.bhex:
+        _base = 2
+
+    if args.buint:
+        _base = 2
+        _format = '{}'
+
+    for v in re.split('[.\s:,-/]', ' '.join(args.input)):
+        try:
+            print(_format.format(int(v, _base)), end=' ')
+        except ValueError:
+            print(v, end=' ')
+    print()
