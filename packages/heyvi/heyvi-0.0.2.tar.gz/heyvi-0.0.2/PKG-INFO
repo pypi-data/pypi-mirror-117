@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: heyvi
+Version: 0.0.2
+Summary: Visym Python Tools for Visual Dataset Transformation
+Home-page: https://github.com/visym/heyvi
+Author: Visym Labs
+Author-email: info@visym.com
+License: UNKNOWN
+Download-URL: https://github.com/visym/heyvi/archive/0.0.2.tar.gz
+Description: # "Hey Vi"
+        
+        Project Vi
+        
+Keywords: computer vision machine learning ML CV privacy video image
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
