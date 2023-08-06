@@ -1,0 +1,13 @@
+xarray_pickler/__init__.py,sha256=PKPWg56SuoyFNg0zEISslp_UNGTnoVEYZC8ZJx92vxg,569
+xarray_pickler/cli.py,sha256=aUeXOfhAynybqUCRIbdrm_uGI8lrGkfr8mcpf8RGJb4,661
+xarray_pickler/config.py,sha256=zlrtiOR3vbX14gNCn8tofniEZZ-5xJXQzXLn5ppl6j8,2794
+xarray_pickler/xarray_pickler.py,sha256=_ojvoumCxwtutEjfhTXUn9JepZtOmwN9GFPUuKfO7ho,4956
+xarray_pickler/etc/config.ini,sha256=951ZgXtGH8WLqBspaSwnpbb3IIBDky_dknIf7xCbhfg,540
+xarray_pickler/etc/logging.conf,sha256=NM1Bx6j2z71G9q2BbhZE3T4ykCtshRg9ou-sAQNCO7I,447
+xarray_pickler-0.1.1.dist-info/AUTHORS.rst,sha256=3MFzr0bGX1Tr0cjxQKhim4rsNTs_nh3MX_HyH-l3AEY,148
+xarray_pickler-0.1.1.dist-info/LICENSE,sha256=liHpF_-RlEDKYBnAmOgb5CVB_SyX5KqhpKL-7NFJVzM,1381
+xarray_pickler-0.1.1.dist-info/METADATA,sha256=u7bk2yipmYyJc7D9__Vpam0xUbmZb0L4K5P2wi7pGjc,3775
+xarray_pickler-0.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+xarray_pickler-0.1.1.dist-info/entry_points.txt,sha256=X19Tdo7nO_YdSbAR2BJQd2rJ-c4a7NhVcsJm0lzwhbM,60
+xarray_pickler-0.1.1.dist-info/top_level.txt,sha256=WILFJw1pHkK1irKrSevd02c3bt3vSOHQC4YpffJkP_8,15
+xarray_pickler-0.1.1.dist-info/RECORD,,

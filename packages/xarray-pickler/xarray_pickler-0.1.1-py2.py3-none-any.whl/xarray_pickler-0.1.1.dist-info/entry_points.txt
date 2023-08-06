@@ -1,0 +1,3 @@
+[console_scripts]
+xarray_pickler = xarray_pickler.cli:main
+
