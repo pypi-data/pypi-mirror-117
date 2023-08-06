@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: CyberFloodPythonClient
+Version: 1.2.0
+Summary: CyberFloodPythonClient: Front end for CyberFlood ReST API
+Home-page: https://github.com/matthewjefferson/CyberFloodPythonClient
+Author: Matthew Jefferson
+Author-email: matthew.jefferson@spirent.com
+License: http://www.opensource.org/licenses/mit-license.php
+Keywords: Cyber Flood API
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+
+See https://github.com/matthewjefferson/CyberFloodPythonClient
+
